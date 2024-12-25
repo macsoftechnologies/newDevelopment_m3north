@@ -1779,7 +1779,7 @@ export class NewRequestComponent implements OnInit {
         this.Requestdata.Site_Id = x["site_id"];
         this.updaterequestdata.Site_Id = x["site_id"];
         this.RequestForm.controls["Site"].setValue(
-          "M3 South"
+          "M3 Infrastructure"
         );
         // this.RequestForm.controls["Site"].setValue(x["site_name"]);
       }
@@ -1805,98 +1805,48 @@ export class NewRequestComponent implements OnInit {
       }
     });
     // console.log("Buildings", this.buildings)
-    if (event == '9') {
-      console.log("B1")
+    if (event == '13') {
+      console.log(event)
       this.floors = [
-        "LK1",
-        "L00",
-        "L01",
-        "L02",
-        "L03",
-        "L04",
-        "L05",
-        "L06",
-        "L07",
-        "L08",
-        "LTA",
-      ];
-    }
-    else if (event == '10') {
-      console.log("B2")
-      this.floors = [
-        "L00",
-        "L01",
-        "L02",
-        "L03",
-        "L04",
-        "L05",
-        "L06",
-        "L07",
-        "L08",
-        "LK1"
-      ];
-    }
-    else if (event == '11') {
-      console.log("B6")
-      this.floors = [
-        "L00A",
-        "L00B",
-        "L01A",
-        "L01B",
-        "L02A",
-        "L02B",
-        "L03A",
-        "L03B",
-        "L04",
-        "L05",
-        "L06",
-        "L07",
-        "L08",
-        "L09",
-        "LK1A",
-        "LK1B"
-      ];
-    }
-    else if (event == '12') {
-      console.log("B8")
-      this.floors = [
-        "L00",
-        "L01",
-        "L02",
-        "L03",
-        "L04",
-        "L05",
-        "L06",
-        "L07",
-        "L08",
-        "L09",
-        "LK1"
-      ];
-    }
-    else if (event == '13') {
-      console.log("JG")
-      this.floors = [
-        // "JG",
-        "JF - Ground Floor",
-        "JF - 1st Floor",
-        "JF- 2nd Floor",
-        "JF - Roof Plan",
+        'Zone 1 & Zone 2'
       ];
     }
     else if (event == '14') {
-      // console.log("JG")
+      
       this.floors = [
-        "External Areas",
-
+        'Zone1 & Zone2'
       ];
     }
     else if (event == '15') {
-      // console.log("JG")
+      
       this.floors = [
-        "MR - Ground Floor",
-        "MR - 1st Floor",
-        "MR - 2nd Floor",
-        "MR - Roof Plan",
+       'Zone-1 & Zone-2'
+      ];
+    }
+    else if (event == '16') {
+      
+      this.floors = [
+        'Zone 1&Zone 2'
+
+      ];
+    }
+    else if (event == '17') {
+      
+      this.floors = [
+        'NN East Site-Plan'
+     ];
+    }
+    else if (event == '18') {
+      
+      this.floors = [
+        'P-hus Site-Plan'
+
+      ];
+    }
+    else if (event == '19') {
+      
+      this.floors = [
+        'Rendsborg Park'
 
       ];
     }
@@ -1913,422 +1863,127 @@ export class NewRequestComponent implements OnInit {
   }
   Getselectedflooritem(event) {
     this.selectFloorBlocks = [];
-    console.log(this.selectFloorBlocks, 'clear floors')
-    console.log(event);
-    if (this.selectedbuilding == '9') {
-      console.log("B1 Drawing")
-      switch (event) {
-        case "LK1":
-          this.planType = "LK1";
-          this.pdfSrc = "assets/images/plans/LK1.pdf";
-          break;
-        case "L00":
-          this.planType = "L00";
-          this.pdfSrc = "assets/images/plans/L00.pdf";
-          break;
-        case "L01":
-          this.planType = "L01";
-          this.pdfSrc = "assets/images/plans/L01.pdf";
-          break;
-        case "L02":
-          this.planType = "L02";
-          this.pdfSrc = "assets/images/plans/L02.pdf";
-          break;
-        case "L03":
-          this.planType = "L03";
-          this.pdfSrc = "assets/images/plans/L03.pdf";
-          break;
-        case "L04":
-          this.planType = "L04";
-          this.pdfSrc = "assets/images/plans/L04.pdf";
-        case "L05":
-          this.planType = "L05";
-          this.pdfSrc = "assets/images/plans/L05.pdf";
-          break;
-        case "L06":
-          this.planType = "L06";
-          this.pdfSrc = "assets/images/plans/L06.pdf";
-          break;
-        case "L07":
-          this.planType = "L07";
-          this.pdfSrc = "assets/images/plans/L07.pdf";
-          break;
-        case "L08":
-          this.planType = "L08";
-          this.pdfSrc = "assets/images/plans/L08.pdf";
-          break;
-        case "LTA":
-          this.planType = "LTA";
-          this.pdfSrc = "assets/images/plans/LTA.pdf";
-
-        default:
-          break;
-      }
-    }
-    else if (this.selectedbuilding == '10') {
-      console.log("B2 Drwaing")
-      switch (event) {
-        case "LK1":
-          this.planType = "LK1";
-          this.pdfSrc = "assets/images/plans/B2_LK1.pdf";
-          break;
-        case "L00":
-          this.planType = "L00";
-          this.pdfSrc = "assets/images/plans/B2_L00.pdf";
-          break;
-        case "L01":
-          this.planType = "L01";
-          this.pdfSrc = "assets/images/plans/B2_L01.pdf";
-          break;
-        case "L02":
-          this.planType = "L02";
-          this.pdfSrc = "assets/images/plans/B2_L02.pdf";
-          break;
-        case "L03":
-          this.planType = "L03";
-          this.pdfSrc = "assets/images/plans/B2_L03.pdf";
-          break;
-        case "L04":
-          this.planType = "L04";
-          this.pdfSrc = "assets/images/plans/B2_L04.pdf";
-        case "L05":
-          this.planType = "L05";
-          this.pdfSrc = "assets/images/plans/B2_L05.pdf";
-          break;
-        case "L06":
-          this.planType = "L06";
-          this.pdfSrc = "assets/images/plans/B2_L06.pdf";
-          break;
-        case "L07":
-          this.planType = "L07";
-          this.pdfSrc = "assets/images/plans/B2_L07.pdf";
-          break;
-        case "L08":
-          this.planType = "L08";
-          this.pdfSrc = "assets/images/plans/B2_L08.pdf";
-          break;
-
-        default:
-          break;
-      }
-    }
-
-    else if (this.selectedbuilding == '11') {
-      console.log("B6 Drwaing")
-      switch (event) {
-        case "L00A":
-          this.planType = "L00A";
-          this.pdfSrc = "assets/images/plans/B6_L00A.pdf";
-          break;
-        case "L00B":
-          this.planType = "L00B";
-          this.pdfSrc = "assets/images/plans/B6_L00B.pdf";
-          break;
-        case "L01A":
-          this.planType = "L01A";
-          this.pdfSrc = "assets/images/plans/B6_L01A.pdf";
-          break;
-        case "L01B":
-          this.planType = "L01B";
-          this.pdfSrc = "assets/images/plans/B6_L01B.pdf";
-          break;
-        case "L02A":
-          this.planType = "L02A";
-          this.pdfSrc = "assets/images/plans/B6_L02A.pdf";
-          break;
-        case "L02B":
-          this.planType = "L02B";
-          this.pdfSrc = "assets/images/plans/B6_L02B.pdf";
-          break;
-        case "L03A":
-          this.planType = "L03A";
-          this.pdfSrc = "assets/images/plans/B6_L03A.pdf";
-          break;
-        case "L03B":
-          this.planType = "L03B";
-          this.pdfSrc = "assets/images/plans/B6_L03B.pdf";
-          break;
-        case "L04":
-          this.planType = "L04";
-          this.pdfSrc = "assets/images/plans/B6_L04.pdf";
-          break;
-        case "L05":
-          this.planType = "L05";
-          this.pdfSrc = "assets/images/plans/B6_L05.pdf";
-          break;
-        case "L06":
-          this.planType = "L06";
-          this.pdfSrc = "assets/images/plans/B6_L06.pdf";
-          break;
-        case "L07":
-          this.planType = "L07";
-          this.pdfSrc = "assets/images/plans/B6_L07.pdf";
-          break;
-        case "L08":
-          this.planType = "L08";
-          this.pdfSrc = "assets/images/plans/B6_L08.pdf";
-          break;
-        case "L09":
-          this.planType = "L09";
-          this.pdfSrc = "assets/images/plans/B6_L09.pdf";
-          break;
-        case "LK1A":
-          this.planType = "LK1A";
-          this.pdfSrc = "assets/images/plans/B6_LK1A.pdf";
-          break;
-        case "LK1B":
-          this.planType = "LK1B";
-          this.pdfSrc = "assets/images/plans/B6_LK1B.pdf";
-          break;
-
-        default:
-          break;
-      }
-    }
-
-    else if (this.selectedbuilding == '12') {
-      console.log("B8 Drwaing")
-      switch (event) {
-        case "L00":
-          this.planType = "L00";
-          this.pdfSrc = "assets/images/plans/B8_L00.pdf";
-          break;
-        case "L01":
-          this.planType = "L01";
-          this.pdfSrc = "assets/images/plans/B8_L01.pdf";
-          break;
-        case "L02":
-          this.planType = "L02";
-          this.pdfSrc = "assets/images/plans/B8_L02.pdf";
-          break;
-        case "L03":
-          this.planType = "L03";
-          this.pdfSrc = "assets/images/plans/B8_L03.pdf";
-          break;
-        case "L04":
-          this.planType = "L04";
-          this.pdfSrc = "assets/images/plans/B8_L04.pdf";
-          break;
-        case "L05":
-          this.planType = "L05";
-          this.pdfSrc = "assets/images/plans/B8_L05.pdf";
-          break;
-        case "L06":
-          this.planType = "L06";
-          this.pdfSrc = "assets/images/plans/B8_L06.pdf";
-          break;
-        case "L07":
-          this.planType = "L07";
-          this.pdfSrc = "assets/images/plans/B8_L07.pdf";
-          break;
-        case "L08":
-          this.planType = "L08";
-          this.pdfSrc = "assets/images/plans/B8_L08.pdf";
-          break;
-        case "L09":
-          this.planType = "L09";
-          this.pdfSrc = "assets/images/plans/B8_L09.pdf";
-          break;
-
-        case "LK1":
-          this.planType = "LK1";
-          this.pdfSrc = "assets/images/plans/B8_LK1.pdf";
-          break;
-
-
-        default:
-          break;
-      }
-    }
-
-    else if (this.selectedbuilding == '13') {
+    // console.log(this.selectFloorBlocks, 'clear floors')
+    // console.log(event);
+    if (this.selectedbuilding == '13') {
       // console.log("JG Drawings")
       switch (event) {
-        case "JG":
-          this.planType = "JG";
-          this.pdfSrc = "assets/images/plans/JF.pdf";
-          break;
-        case "JF - Ground Floor":
-          this.planType = "JF - Ground Floor";
-          this.pdfSrc = "assets/images/plans/JF/JF-GroundFloor.pdf";
+        case "Zone 1 & Zone 2":
+          this.planType = "Zone 1 & Zone 2";
+          this.pdfSrc = "assets/images/plans/BA-DD/BA.pdf";
           this.blocks = [
-            { name: "ZONE A", pdfSrc: "assets/images/plans/JF/JF-GroundFloor/JF-GroundFloor-ZoneA.pdf", className: 'jf-ground-zoneA', planType: 'JF - Ground Floor' },
-            { name: "ZONE B", pdfSrc: "assets/images/plans/JF/JF-GroundFloor/JF-GroundFloor-ZoneB.pdf", className: 'jf-ground-zoneB', planType: 'JF - Ground Floor' },
-            { name: "ZONE C", pdfSrc: "assets/images/plans/JF/JF-GroundFloor/JF-GroundFloor-ZoneC.pdf", className: 'jf-ground-zoneC', planType: 'JF - Ground Floor' },
-            { name: "ZONE D", pdfSrc: "assets/images/plans/JF/JF-GroundFloor/JF-GroundFloor-ZoneD.pdf", className: 'jf-ground-zoneD', planType: 'JF - Ground Floor' },
-            { name: "ZONE E", pdfSrc: "assets/images/plans/JF/JF-GroundFloor/JF-GroundFloor-ZoneE.pdf", className: 'jf-ground-zoneE', planType: 'JF - Ground Floor' },
-            { name: "ZONE F1", pdfSrc: "assets/images/plans/JF/JF-GroundFloor/JF-GroundFloor-ZoneF1.pdf", className: 'jf-ground-zoneF1', planType: 'JF - Ground Floor' },
-            { name: "ZONE F2", pdfSrc: "assets/images/plans/JF/JF-GroundFloor/JF-GroundFloor-ZoneF2.pdf", className: 'jf-ground-zoneF2', planType: 'JF - Ground Floor' }
-          ]
-          
+            { name: "ZONE 1", pdfSrc: "assets/images/plans/BA-DD/BA.pdf", className: 'ba-zone-1', planType: 'Zone 1 & Zone 2' },
+            { name: "ZONE 2", pdfSrc: "assets/images/plans/BA-DD/BA.pdf", className: 'ba-zone-2', planType: 'Zone 1 & Zone 2' },
+           ]
           break;
-        case "JF - 1st Floor":
-          this.planType = "JF - 1st Floor";
-          this.pdfSrc = "assets/images/plans/JF/JF-1stFloor.pdf";
-          this.blocks = [
-            { name: "ZONE A", pdfSrc: "assets/images/plans/JF/JF-FirstFloor/JF-FirstFloor-ZoneA.pdf", className: 'jf-first-zoneA', planType: "JF - 1st Floor" },
-            { name: "ZONE B", pdfSrc: "assets/images/plans/JF/JF-FirstFloor/JF-FirstFloor-ZoneB.pdf", className: 'jf-first-zoneB', planType: "JF - 1st Floor" },
-            { name: "ZONE C", pdfSrc: "assets/images/plans/JF/JF-FirstFloor/JF-FirstFloor-ZoneC.pdf", className: 'jf-first-zoneC', planType: "JF - 1st Floor" },
-            { name: "ZONE D", pdfSrc: "assets/images/plans/JF/JF-FirstFloor/JF-FirstFloor-ZoneD.pdf", className: 'jf-first-zoneD', planType: "JF - 1st Floor" },
-            { name: "ZONE E", pdfSrc: "assets/images/plans/JF/JF-FirstFloor/JF-FirstFloor-ZoneE.pdf", className: 'jf-first-zoneE', planType: "JF - 1st Floor" },
-            { name: "ZONE F1", pdfSrc: "assets/images/plans/JF/JF-FirstFloor/JF-FirstFloor-ZoneF1.pdf", className: 'jf-first-zoneF1', planType: "JF - 1st Floor" },
-            { name: "ZONE F2", pdfSrc: "assets/images/plans/JF/JF-FirstFloor/JF-FirstFloor-ZoneF2.pdf", className: 'jf-first-zoneF2', planType: "JF - 1st Floor" }
-          ]
-          break;
-        case "JF- 2nd Floor":
-          this.planType = "JF- 2nd Floor";
-          this.pdfSrc = "assets/images/plans/JF/JF-2ndFloor.pdf";
-          this.blocks = [
-            { name: "ZONE A", pdfSrc: "assets/images/plans/JF/JF-SecondFloor/JF-SecondFloor-ZoneA.pdf", className: 'jf-second-zoneA', planType: "JF- 2nd Floor" },
-            { name: "ZONE B", pdfSrc: "assets/images/plans/JF/JF-SecondFloor/JF-SecondFloor-ZoneB.pdf", className: 'jf-second-zoneB', planType: "JF- 2nd Floor" },
-            { name: "ZONE C", pdfSrc: "assets/images/plans/JF/JF-SecondFloor/JF-SecondFloor-ZoneC.pdf", className: 'jf-second-zoneC', planType: "JF- 2nd Floor" },
-            { name: "ZONE D", pdfSrc: "assets/images/plans/JF/JF-SecondFloor/JF-SecondFloor-ZoneD.pdf", className: 'jf-second-zoneD', planType: "JF- 2nd Floor" },
-            { name: "ZONE E", pdfSrc: "assets/images/plans/JF/JF-SecondFloor/JF-SecondFloor-ZoneE.pdf", className: 'jf-second-zoneE', planType: "JF- 2nd Floor" },
-            { name: "ZONE F1", pdfSrc: "assets/images/plans/JF/JF-SecondFloor/JF-SecondFloor-ZoneF1.pdf", className: 'jf-second-zoneF1', planType: "JF- 2nd Floor" },
-            { name: "ZONE F2", pdfSrc: "assets/images/plans/JF/JF-SecondFloor/JF-SecondFloor-ZoneF2.pdf", className: 'jf-second-zoneF2', planType: "JF- 2nd Floor" }
-          ]
-          break;
-        case "JF - Roof Plan":
-          this.planType = "JF - Roof Plan";
-          this.pdfSrc = "assets/images/plans/JF/JF-RoofPlan.pdf";
-          this.blocks = [
-            { name: "ZONE A", pdfSrc: "assets/images/plans/JF/JF-RoofFloor/JF-Roof-ZoneA.pdf", className: 'jf-Roof-zoneA', planType: "JF - Roof Plan" },
-            { name: "ZONE B", pdfSrc: "assets/images/plans/JF/JF-RoofFloor/JF-Roof-ZoneB.pdf", className: 'jf-Roof-zoneB', planType: "JF - Roof Plan" },
-            { name: "ZONE C", pdfSrc: "assets/images/plans/JF/JF-RoofFloor/JF-Roof-ZoneC.pdf", className: 'jf-Roof-zoneC', planType: "JF - Roof Plan" },
-            { name: "ZONE D", pdfSrc: "assets/images/plans/JF/JF-RoofFloor/JF-Roof-ZoneD.pdf", className: 'jf-Roof-zoneD', planType: "JF - Roof Plan" },
-            { name: "ZONE E", pdfSrc: "assets/images/plans/JF/JF-RoofFloor/JF-Roof-ZoneE.pdf", className: 'jf-Roof-zoneE', planType: "JF - Roof Plan" },
-            { name: "ZONE F1", pdfSrc: "assets/images/plans/JF/JF-RoofFloor/JF-Roof-ZoneF1.pdf", className: 'jf-Roof-zoneF1', planType: "JF - Roof Plan" },
-            { name: "ZONE F2", pdfSrc: "assets/images/plans/JF/JF-RoofFloor/JF-Roof-ZoneF2.pdf", className: 'jf-Roof-zoneF2', planType: "JF - Roof Plan" }
-          ]
-          break;
-
-        default:
+          default:
           break;
       }
     }
 
     else if (this.selectedbuilding == '14') {
-      console.log("JG Drawings")
       switch (event) {
-        case "External Areas":
-          this.spinner = true;
-          this.planType = "External Areas";
-          this.pdfSrc = "assets/images/plans/externalAreas/ExternalAreas.pdf";
+        case "Zone1 & Zone2":
+          this.planType = "Zone1 & Zone2";
+          this.pdfSrc = "assets/images/plans/EC/EC-JCP1.pdf";
           this.blocks = [
-            { name: "CM", pdfSrc: "assets/images/plans/externalAreas/externalAreas_blocks/CM.pdf", className: 'external-areas-cm', planType: 'External Areas' },
-            { name: "JE", pdfSrc: "assets/images/plans/externalAreas/externalAreas_blocks/JE.pdf", className: 'external-areas-je', planType: 'External Areas' },
-            { name: "JF", pdfSrc: "assets/images/plans/externalAreas/externalAreas_blocks/JF.pdf", className: 'external-areas-jf', planType: 'External Areas' },
-            { name: "JG", pdfSrc: "assets/images/plans/externalAreas/externalAreas_blocks/JG.pdf", className: 'external-areas-jg', planType: 'External Areas' },
-            { name: "MR", pdfSrc: "assets/images/plans/externalAreas/externalAreas_blocks/MR.pdf", className: 'external-areas-mr', planType: 'External Areas' },
-            { name: "JH-JX-JS", pdfSrc: "assets/images/plans/externalAreas/externalAreas_blocks/JH-JX-JS.pdf", className: 'external-areas-jh-jx-js', planType: 'External Areas' },
-            { name: "JJ", pdfSrc: "assets/images/plans/externalAreas/externalAreas_blocks/JJ.pdf", className: 'external-areas-jj', planType: 'External Areas' },
-            { name: "MP", pdfSrc: "assets/images/plans/externalAreas/externalAreas_blocks/MP.pdf", className: 'external-areas-mp', planType: 'External Areas' },
-            { name: "NH3-KF-MF", pdfSrc: "assets/images/plans/externalAreas/externalAreas_blocks/NH3-KF-MF.pdf", className: 'external-areas-nh3-kf-mf', planType: 'External Areas' },
-            { name: "Roads", pdfSrc: "assets/images/plans/externalAreas/externalAreas_blocks/Roads.pdf", className: 'external-areas-roads', planType: 'External Areas' },
-            { name: "Welfare", pdfSrc: "assets/images/plans/externalAreas/externalAreas_blocks/Welfare.pdf", className: 'external-areas-welfare', planType: 'External Areas' }
-          ]
+            { name: "ZONE 1", pdfSrc: "assets/images/plans/EC/EC-JCP1.pdf", className: 'ec-zone-1', planType: 'Zone1 & Zone2' },
+            { name: "ZONE 2", pdfSrc: "assets/images/plans/EC/EC-JCP1.pdf", className: 'ec-zone-2', planType: 'Zone1 & Zone2' },
+           ]
           break;
-        default:
+          default:
           break;
       }
     }
 
     else if (this.selectedbuilding == '15') {
-      // console.log("JG Drawings")
       switch (event) {
-        case "MR - Ground Floor":
-          this.planType = "MR - Ground Floor";
-          this.pdfSrc = "assets/images/plans/MR/MR-GroundFloor.pdf";
+        case "Zone-1 & Zone-2":
+          this.planType = "Zone-1 & Zone-2";
+          this.pdfSrc = "assets/images/plans/HovvejEast/HovvejEast.pdf";
           this.blocks = [
-            { name: "Zone 0.1_N", pdfSrc: "assets/images/plans/MR/MR-GroundFloor/MR-GroundFloor-Zone0.1_N.pdf", className: 'mr-ground-Zone0_1_N', planType: 'MR - Ground Floor' },
-            { name: "Zone 0.1_S", pdfSrc: "assets/images/plans/MR/MR-GroundFloor/MR-GroundFloor-Zone0.1_S.pdf", className: 'mr-ground-Zone0_1_S', planType: 'MR - Ground Floor' },
-            { name: "Zone 0.2_N", pdfSrc: "assets/images/plans/MR/MR-GroundFloor/MR-GroundFloor-Zone0.2_N.pdf", className: 'mr-ground-Zone0_2_N', planType: 'MR - Ground Floor' },
-            { name: "Zone 0.2_S", pdfSrc: "assets/images/plans/MR/MR-GroundFloor/MR-GroundFloor-Zone0.2_S.pdf", className: 'mr-ground-Zone0_2_S', planType: 'MR - Ground Floor' },
-            { name: "Zone 0.3_N", pdfSrc: "assets/images/plans/MR/MR-GroundFloor/MR-GroundFloor-Zone0.3_N.pdf", className: 'mr-ground-Zone0_3_N', planType: 'MR - Ground Floor' },
-            { name: "Zone 0.3_S", pdfSrc: "assets/images/plans/MR/MR-GroundFloor/MR-GroundFloor-Zone0.3_S.pdf", className: 'mr-ground-Zone0_3_S', planType: 'MR - Ground Floor' },
-            { name: "Zone 0.4_N", pdfSrc: "assets/images/plans/MR/MR-GroundFloor/MR-GroundFloor-Zone0.4_N.pdf", className: 'mr-ground-Zone0_4_N', planType: 'MR - Ground Floor' },
-            { name: "Zone 0.4_S", pdfSrc: "assets/images/plans/MR/MR-GroundFloor/MR-GroundFloor-Zone0.4_S.pdf", className: 'mr-ground-Zone0_4_S', planType: 'MR - Ground Floor' },
-            { name: "Zone 0.5_N", pdfSrc: "assets/images/plans/MR/MR-GroundFloor/MR-GroundFloor-Zone0.5_N.pdf", className: 'mr-ground-Zone0_5_N', planType: 'MR - Ground Floor' },
-            { name: "Zone 0.5_S", pdfSrc: "assets/images/plans/MR/MR-GroundFloor/MR-GroundFloor-Zone0.5_S.pdf", className: 'mr-ground-Zone0_5_S', planType: 'MR - Ground Floor' },
-            { name: "Zone 0.6_N", pdfSrc: "assets/images/plans/MR/MR-GroundFloor/MR-GroundFloor-Zone0.6_N.pdf", className: 'mr-ground-Zone0_6_N', planType: 'MR - Ground Floor' },
-            { name: "Zone 0.6_S", pdfSrc: "assets/images/plans/MR/MR-GroundFloor/MR-GroundFloor-Zone0.6_S.pdf", className: 'mr-ground-Zone0_6_S', planType: 'MR - Ground Floor' },
-            { name: "Zone 0.7_N", pdfSrc: "assets/images/plans/MR/MR-GroundFloor/MR-GroundFloor-Zone0.7_N.pdf", className: 'mr-ground-Zone0_7_N', planType: 'MR - Ground Floor' },
-            { name: "Zone 0.P1_N", pdfSrc: "assets/images/plans/MR/MR-GroundFloor/MR-GroundFloor-Zone0.P1_N.pdf", className: 'mr-ground-Zone0_P1_N', planType: 'MR - Ground Floor' },
-            { name: "Zone 0.P2_S", pdfSrc: "assets/images/plans/MR/MR-GroundFloor/MR-GroundFloor-Zone0.P2_S.pdf", className: 'mr-ground-Zone0_P2_S', planType: 'MR - Ground Floor' },
-          ]
+            { name: "ZONE 1", pdfSrc: "assets/images/plans/HovvejEast/HovvejEast.pdf", className: 'east-zone-1', planType: 'Zone-1 & Zone-2' },
+            { name: "ZONE 2", pdfSrc: "assets/images/plans/HovvejEast/HovvejEast.pdf", className: 'east-zone-2', planType: 'Zone-1 & Zone-2' },
+           ]
           break;
-        case "MR - 1st Floor":
-          this.planType = "MR - 1st Floor";
-          this.pdfSrc = "assets/images/plans/MR/MR-FirstFloor.pdf";
-          this.blocks = [
-            { name: "Zone 1.1_N", pdfSrc: "assets/images/plans/MR/MR-FirstFloor/MR-FirstFloor-Zone1.1_N.pdf", className: 'mr-first-Zone1_1_N', planType: "MR - 1st Floor" },
-            { name: "Zone 1.1_S", pdfSrc: "assets/images/plans/MR/MR-FirstFloor/MR-FirstFloor-Zone1.1_S.pdf", className: 'mr-first-Zone1_1_S', planType: "MR - 1st Floor" },
-            { name: "Zone 1.2_N", pdfSrc: "assets/images/plans/MR/MR-FirstFloor/MR-FirstFloor-Zone1.2_N.pdf", className: 'mr-first-Zone1_2_N', planType: "MR - 1st Floor" },
-            { name: "Zone 1.2_S", pdfSrc: "assets/images/plans/MR/MR-FirstFloor/MR-FirstFloor-Zone1.2_S.pdf", className: 'mr-first-Zone1_2_S', planType: "MR - 1st Floor" },
-            { name: "Zone 1.3_N", pdfSrc: "assets/images/plans/MR/MR-FirstFloor/MR-FirstFloor-Zone1.3_N.pdf", className: 'mr-first-Zone1_3_N', planType: "MR - 1st Floor" },
-            { name: "Zone 1.3_S", pdfSrc: "assets/images/plans/MR/MR-FirstFloor/MR-FirstFloor-Zone1.3_S.pdf", className: 'mr-first-Zone1_3_S', planType: "MR - 1st Floor" },
-            { name: "Zone 1.4_N", pdfSrc: "assets/images/plans/MR/MR-FirstFloor/MR-FirstFloor-Zone1.4_N.pdf", className: 'mr-first-Zone1_4_N', planType: "MR - 1st Floor" },
-            { name: "Zone 1.4_S", pdfSrc: "assets/images/plans/MR/MR-FirstFloor/MR-FirstFloor-Zone1.4_S.pdf", className: 'mr-first-Zone1_4_S', planType: "MR - 1st Floor" },
-            { name: "Zone 1.5_N", pdfSrc: "assets/images/plans/MR/MR-FirstFloor/MR-FirstFloor-Zone1.5_N.pdf", className: 'mr-first-Zone1_5_N', planType: "MR - 1st Floor" },
-            { name: "Zone 1.5_S", pdfSrc: "assets/images/plans/MR/MR-FirstFloor/MR-FirstFloor-Zone1.5_S.pdf", className: 'mr-first-Zone1_5_S', planType: "MR - 1st Floor" },
-            { name: "Zone 1.6_N", pdfSrc: "assets/images/plans/MR/MR-FirstFloor/MR-FirstFloor-Zone1.6_N.pdf", className: 'mr-first-Zone1_6_N', planType: "MR - 1st Floor" },
-            { name: "Zone 1.6_S", pdfSrc: "assets/images/plans/MR/MR-FirstFloor/MR-FirstFloor-Zone1.6_S.pdf", className: 'mr-first-Zone1_6_S', planType: "MR - 1st Floor" },
-            { name: "Zone 1.7_N", pdfSrc: "assets/images/plans/MR/MR-FirstFloor/MR-FirstFloor-Zone1.7_N.pdf", className: 'mr-first-Zone1_7_N', planType: "MR - 1st Floor" },
-            { name: "Zone 1.7_S", pdfSrc: "assets/images/plans/MR/MR-FirstFloor/MR-FirstFloor-Zone1.7_S.pdf", className: 'mr-first-Zone1_7_S', planType: "MR - 1st Floor" },
-            { name: "Zone 1.8_N", pdfSrc: "assets/images/plans/MR/MR-FirstFloor/MR-FirstFloor-Zone1.8_N.pdf", className: 'mr-first-Zone1_8_N', planType: "MR - 1st Floor" },
-            { name: "Zone 1.8_S", pdfSrc: "assets/images/plans/MR/MR-FirstFloor/MR-FirstFloor-Zone1.8_S.pdf", className: 'mr-first-Zone1_8_S', planType: "MR - 1st Floor" },
-            { name: "Zone 1.9_N", pdfSrc: "assets/images/plans/MR/MR-FirstFloor/MR-FirstFloor-Zone1.9_N.pdf", className: 'mr-first-Zone1_9_N', planType: "MR - 1st Floor" },
-            { name: "Zone 1.9_S", pdfSrc: "assets/images/plans/MR/MR-FirstFloor/MR-FirstFloor-Zone1.9_S.pdf", className: 'mr-first-Zone1_9_S', planType: "MR - 1st Floor" },
-            { name: "Zone 1.10_N", pdfSrc: "assets/images/plans/MR/MR-FirstFloor/MR-FirstFloor-Zone1.10_N.pdf", className: 'mr-first-Zone1_10_N', planType: "MR - 1st Floor" },
-            { name: "Zone 1.10_S", pdfSrc: "assets/images/plans/MR/MR-FirstFloor/MR-FirstFloor-Zone1.10_S.pdf", className: 'mr-first-Zone1_10_S', planType: "MR - 1st Floor" },
-            { name: "Zone 1.11_S", pdfSrc: "assets/images/plans/MR/MR-FirstFloor/MR-FirstFloor-Zone1.11_S.pdf", className: 'mr-first-Zone1_11_S', planType: "MR - 1st Floor" },
-            { name: "Zone 1.P1_N", pdfSrc: "assets/images/plans/MR/MR-FirstFloor/MR-FirstFloor-Zone1.P1_N.pdf", className: 'mr-first-Zone1_P1_N', planType: "MR - 1st Floor" },
-            { name: "Zone 1.P2_S", pdfSrc: "assets/images/plans/MR/MR-FirstFloor/MR-FirstFloor-Zone1.P2_S.pdf", className: 'mr-first-Zone1_P2_S', planType: "MR - 1st Floor" },
-          ]
-          break;
-        case "MR - 2nd Floor":
-          this.planType = "MR - 2nd Floor";
-          this.pdfSrc = "assets/images/plans/MR/MR-SecondFloor.pdf";
-          this.blocks = [
-            { name: "Zone 2.1_N", pdfSrc: "assets/images/plans/MR/MR-SecondFloor/MR-SecondFloor-Zone2.1_N.pdf", className: 'mr-second-Zone2_1_N', planType: "MR - 2nd Floor" },
-            { name: "Zone 2.1_S", pdfSrc: "assets/images/plans/MR/MR-SecondFloor/MR-SecondFloor-Zone2.1_S.pdf", className: 'mr-second-Zone2_1_S', planType: "MR - 2nd Floor" },
-            { name: "Zone 2.2_N", pdfSrc: "assets/images/plans/MR/MR-SecondFloor/MR-SecondFloor-Zone2.2_N.pdf", className: 'mr-second-Zone2_2_N', planType: "MR - 2nd Floor" },
-            { name: "Zone 2.2_S", pdfSrc: "assets/images/plans/MR/MR-SecondFloor/MR-SecondFloor-Zone2.2_S.pdf", className: 'mr-second-Zone2_2_S', planType: "MR - 2nd Floor" },
-            { name: "Zone 2.3_N", pdfSrc: "assets/images/plans/MR/MR-SecondFloor/MR-SecondFloor-Zone2.3_N.pdf", className: 'mr-second-Zone2_3_N', planType: "MR - 2nd Floor" },
-            { name: "Zone 2.3_S", pdfSrc: "assets/images/plans/MR/MR-SecondFloor/MR-SecondFloor-Zone2.3_S.pdf", className: 'mr-second-Zone2_3_S', planType: "MR - 2nd Floor" },
-            { name: "Zone 2.4_N", pdfSrc: "assets/images/plans/MR/MR-SecondFloor/MR-SecondFloor-Zone2.4_N.pdf", className: 'mr-second-Zone2_4_N', planType: "MR - 2nd Floor" },
-            { name: "Zone 2.4_S", pdfSrc: "assets/images/plans/MR/MR-SecondFloor/MR-SecondFloor-Zone2.4_S.pdf", className: 'mr-second-Zone2_4_S', planType: "MR - 2nd Floor" },
-            { name: "Zone 2.5_N", pdfSrc: "assets/images/plans/MR/MR-SecondFloor/MR-SecondFloor-Zone2.5_N.pdf", className: 'mr-second-Zone2_5_N', planType: "MR - 2nd Floor" },
-            { name: "Zone 2.6_N", pdfSrc: "assets/images/plans/MR/MR-SecondFloor/MR-SecondFloor-Zone2.6_N.pdf", className: 'mr-second-Zone2_6_N', planType: "MR - 2nd Floor" },
-            { name: "Zone 2.P1_N", pdfSrc: "assets/images/plans/MR/MR-SecondFloor/MR-SecondFloor-Zone2.P1_N.pdf", className: 'mr-second-Zone2_P1_N', planType: "MR - 2nd Floor" },
-            { name: "Zone 2.P2_S", pdfSrc: "assets/images/plans/MR/MR-SecondFloor/MR-SecondFloor-Zone2.P2_S.pdf", className: 'mr-second-Zone2_P2_S', planType: "MR - 2nd Floor" },
-
-          ]
-          break;
-        case "MR - Roof Plan":
-          this.planType = "MR - Roof Plan";
-          this.pdfSrc = "assets/images/plans/MR/MR-RoofPlan.pdf";
-          this.blocks = [
-            { name: "Zone R1", pdfSrc: "assets/images/plans/MR/MR-RoofPlan/MR-RoofPlan-ZoneR1.pdf", className: 'mr-Roof-ZoneR1', planType: "MR - Roof Plan" },
-            { name: "Zone R2", pdfSrc: "assets/images/plans/MR/MR-RoofPlan/MR-RoofPlan-ZoneR2.pdf", className: 'mr-Roof-ZoneR2', planType: "MR - Roof Plan" },
-            { name: "Zone R3", pdfSrc: "assets/images/plans/MR/MR-RoofPlan/MR-RoofPlan-ZoneR3.pdf", className: 'mr-Roof-ZoneR3', planType: "MR - Roof Plan" },
-            { name: "Zone R4", pdfSrc: "assets/images/plans/MR/MR-RoofPlan/MR-RoofPlan-ZoneR4.pdf", className: 'mr-Roof-ZoneR4', planType: "MR - Roof Plan" },
-            { name: "Zone R5", pdfSrc: "assets/images/plans/MR/MR-RoofPlan/MR-RoofPlan-ZoneR5.pdf", className: 'mr-Roof-ZoneR5', planType: "MR - Roof Plan" },
-            { name: "Zone R6", pdfSrc: "assets/images/plans/MR/MR-RoofPlan/MR-RoofPlan-ZoneR6.pdf", className: 'mr-Roof-ZoneR6', planType: "MR - Roof Plan" },
-            { name: "Zone R7", pdfSrc: "assets/images/plans/MR/MR-RoofPlan/MR-RoofPlan-ZoneR7.pdf", className: 'mr-Roof-ZoneR7', planType: "MR - Roof Plan" },
-            { name: "Zone R8", pdfSrc: "assets/images/plans/MR/MR-RoofPlan/MR-RoofPlan-ZoneR8.pdf", className: 'mr-Roof-ZoneR8', planType: "MR - Roof Plan" },
-            { name: "Zone R9", pdfSrc: "assets/images/plans/MR/MR-RoofPlan/MR-RoofPlan-ZoneR9.pdf", className: 'mr-Roof-ZoneR9', planType: "MR - Roof Plan" },
-            { name: "Zone R10", pdfSrc: "assets/images/plans/MR/MR-RoofPlan/MR-RoofPlan-ZoneR10.pdf", className: 'mr-Roof-ZoneR10', planType: "MR - Roof Plan" },
-            { name: "Zone R11", pdfSrc: "assets/images/plans/MR/MR-RoofPlan/MR-RoofPlan-ZoneR11.pdf", className: 'mr-Roof-ZoneR11', planType: "MR - Roof Plan" },
-            { name: "Zone R12", pdfSrc: "assets/images/plans/MR/MR-RoofPlan/MR-RoofPlan-ZoneR12.pdf", className: 'mr-Roof-ZoneR12', planType: "MR - Roof Plan" },
-            { name: "Zone R13", pdfSrc: "assets/images/plans/MR/MR-RoofPlan/MR-RoofPlan-ZoneR13.pdf", className: 'mr-Roof-ZoneR13', planType: "MR - Roof Plan" },
-          ]
-          break;
-
-        default:
+          default:
           break;
       }
     }
+
+    else if (this.selectedbuilding == '16') {
+      switch (event) {
+        case "Zone 1&Zone 2":
+          this.planType = "Zone 1&Zone 2";
+          this.pdfSrc = "assets/images/plans/HovvejWest/HovvejWest.pdf";
+          this.blocks = [
+            { name: "ZONE 1", pdfSrc: "assets/images/plans/HovvejWest/HovvejWest.pdf", className: 'west-zone-1', planType: 'Zone 1&Zone 2' },
+            { name: "ZONE 2", pdfSrc: "assets/images/plans/HovvejWest/HovvejWest.pdf", className: 'west-zone-2', planType: 'Zone 1&Zone 2' },
+           ]
+          break;
+          default:
+          break;
+      }
+    }
+
+    else if (this.selectedbuilding == '17') {
+      switch (event) {
+        case "NN East Site-Plan":
+          this.planType = "NN East Site-Plan";
+          this.pdfSrc = "assets/images/plans/NN-East/NN-East.pdf";
+          this.blocks = [
+            { name: "M3 North Zone 3", pdfSrc: "assets/images/plans/NN-East/NN-East.pdf", className: 'nn-east-zone-1', planType: 'NN East Site-Plan' },
+            { name: "M3 South Zone 2", pdfSrc: "assets/images/plans/NN-East/NN-East.pdf", className: 'nn-east-zone-2', planType: 'NN East Site-Plan' },
+            { name: "M3 South Zone 3", pdfSrc: "assets/images/plans/NN-East/NN-East.pdf", className: 'nn-east-zone-3', planType: 'NN East Site-Plan' },
+            { name: "Parking area", pdfSrc: "assets/images/plans/NN-East/NN-East.pdf", className: 'nn-east-zone-4', planType: 'NN East Site-Plan' },
+            { name: "NON M3 AREA", pdfSrc: "assets/images/plans/NN-East/NN-East.pdf", className: 'nn-east-zone-5', planType: 'NN East Site-Plan' },
+            // { name: "Gate entrance", pdfSrc: "assets/images/plans/NN-East/NN-East.pdf", className: 'nn-east-zone-6', planType: 'NN East Site-Plan' },
+           ]
+          break;
+          default:
+          break;
+      }
+    }
+
+    else if (this.selectedbuilding == '18') {
+      switch (event) {
+        case "P-hus Site-Plan":
+          this.planType = "P-hus Site-Plan";
+          this.pdfSrc = "assets/images/plans/P-hus/P-hus.pdf";
+          this.blocks = [
+            { name: "Zone 1", pdfSrc: "assets/images/plans/P-hus/P-hus.pdf", className: 'P-hus-zone-1', planType: 'P-hus Site-Plan' },
+            { name: "Zone 2", pdfSrc: "assets/images/plans/P-hus/P-hus.pdf", className: 'P-hus-zone-2', planType: 'P-hus Site-Plan' },
+            { name: "Zone 3", pdfSrc: "assets/images/plans/P-hus/P-hus.pdf", className: 'P-hus-zone-3', planType: 'P-hus Site-Plan' },
+            { name: "Zone 4", pdfSrc: "assets/images/plans/P-hus/P-hus.pdf", className: 'P-hus-zone-4', planType: 'P-hus Site-Plan' },
+
+           ]
+          break;
+          default:
+          break;
+      }
+    }
+
+    else if (this.selectedbuilding == '19') {
+      switch (event) {
+        case "Rendsborg Park":
+          this.planType = "Rendsborg Park";
+          this.pdfSrc = "assets/images/plans/RendsborgPark/RendsborgPark.pdf";
+          this.blocks = [
+            { name: "M3 North 2", pdfSrc: "assets/images/plans/RendsborgPark/RendsborgPark.pdf", className: 'RendsborgPark-North-2', planType: 'Rendsborg Park' },
+            { name: "M3 South 1", pdfSrc: "assets/images/plans/RendsborgPark/RendsborgPark.pdf", className: 'RendsborgPark-South-1', planType: 'Rendsborg Park' },
+            { name: "M3 North 1", pdfSrc: "assets/images/plans/RendsborgPark/RendsborgPark.pdf", className: 'RendsborgPark-North-1', planType: 'Rendsborg Park' },
+            { name: "Office & Welfare cabin area", pdfSrc: "assets/images/plans/RendsborgPark/RendsborgPark.pdf", className: 'Office-area', planType: 'Rendsborg Park' },
+            { name: "Rendsborg Parking 1", pdfSrc: "assets/images/plans/RendsborgPark/RendsborgPark.pdf", className: 'RendsborgPark-parking-1', planType: 'Rendsborg Park' },
+            { name: "Rendsborg Parking 2", pdfSrc: "assets/images/plans/RendsborgPark/RendsborgPark.pdf", className: 'RendsborgPark-parking-2', planType: 'Rendsborg Park' },            
+            { name: "Rendsborg Parking 3", pdfSrc: "assets/images/plans/RendsborgPark/RendsborgPark.pdf", className: 'RendsborgPark-parking-3', planType: 'Rendsborg Park' },
+
+           ]
+          break;
+          default:
+          break;
+      }
+    }
+
 
     // this.spinner = true;
     this.selectedfloor = event;
@@ -2362,7 +2017,7 @@ export class NewRequestComponent implements OnInit {
     let currentdate = this.datePipe.transform(this.Reqdate, "yyyy-MM-dd");
     this.RequestForm.controls["Requestdate"].setValue(currentdate);
     this.RequestForm.controls["Companyname"].setValue(
-      "M3 South"
+      "M3 Infrastructure"
     );
     // let blocks = this.selectFloorBlocks.map(item =>  {
     //   item.selectedBlock.forEach(element => {

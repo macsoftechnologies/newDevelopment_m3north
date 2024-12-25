@@ -38,7 +38,9 @@ export class ListActivityComponent implements OnInit {
     })
     dialogRef.afterClosed()
       .subscribe(res => {
+        this.spinner=true;
         this.GetAllDepartments();
+        this.spinner=false;
         if (!res) {
 
           // If user press cancel
