@@ -177,3 +177,56 @@ mat-checkbox ::ng-deep .mat-checkbox-inner-container {
   top: 50%;
   right: 26%;
 }
+
+.Park-tent-1{
+  position: absolute;
+  z-index: 9999;
+  top: 5%;
+  left: 6%;
+}
+
+.Park-tent-2{
+  position: absolute;
+  z-index: 9999;
+  top: 5%;
+  left: 31%;
+}
+.Park-tent-3{
+  position: absolute;
+  z-index: 9999;
+  top: 5%;
+  right: 30%;
+}
+.Park-tent-4{
+  position: absolute;
+  z-index: 9999;
+  top: 5%;
+  right: 7%;
+}
+
+.Park-tent-5{
+  position: absolute;
+  z-index: 9999;
+  bottom: 5%;
+  left: 6%;
+}
+
+.Park-tent-6{
+  position: absolute;
+  z-index: 9999;
+  bottom: 5%;
+  left: 31%;
+}
+
+.Park-tent-7{
+  position: absolute;
+  z-index: 9999;
+  bottom: 5%;
+  right: 31%;
+}
+.Park-tent-8{
+  position: absolute;
+  z-index: 9999;
+  bottom: 5%;
+  right: 7%;
+}

@@ -1808,25 +1808,25 @@ export class NewRequestComponent implements OnInit {
     if (event == '13') {
       console.log(event)
       this.floors = [
-        'Zone 1 & Zone 2'
+        'BA-DD Zone 1 - Zone 2'
       ];
     }
     else if (event == '14') {
       
       this.floors = [
-        'Zone1 & Zone2'
+        'EC-JCP1 Zone 1 - Zone 2'
       ];
     }
     else if (event == '15') {
       
       this.floors = [
-       'Zone-1 & Zone-2'
+       'HovvejEast Zone 1 - Zone 2'
       ];
     }
     else if (event == '16') {
       
       this.floors = [
-        'Zone 1&Zone 2'
+        'HovvejWest Zone 1 - Zone 2'
 
       ];
     }
@@ -1868,12 +1868,12 @@ export class NewRequestComponent implements OnInit {
     if (this.selectedbuilding == '13') {
       // console.log("JG Drawings")
       switch (event) {
-        case "Zone 1 & Zone 2":
-          this.planType = "Zone 1 & Zone 2";
+        case "BA-DD Zone 1 - Zone 2":
+          this.planType = "BA-DD Zone 1 - Zone 2";
           this.pdfSrc = "assets/images/plans/BA-DD/BA.pdf";
           this.blocks = [
-            { name: "ZONE 1", pdfSrc: "assets/images/plans/BA-DD/BA.pdf", className: 'ba-zone-1', planType: 'Zone 1 & Zone 2' },
-            { name: "ZONE 2", pdfSrc: "assets/images/plans/BA-DD/BA.pdf", className: 'ba-zone-2', planType: 'Zone 1 & Zone 2' },
+            { name: "ZONE 1", pdfSrc: "assets/images/plans/BA-DD/BA.pdf", className: 'ba-zone-1', planType: 'BA-DD Zone 1 - Zone 2' },
+            { name: "ZONE 2", pdfSrc: "assets/images/plans/BA-DD/BA.pdf", className: 'ba-zone-2', planType: 'BA-DD Zone 1 - Zone 2' },
            ]
           break;
           default:
@@ -1883,12 +1883,12 @@ export class NewRequestComponent implements OnInit {
 
     else if (this.selectedbuilding == '14') {
       switch (event) {
-        case "Zone1 & Zone2":
-          this.planType = "Zone1 & Zone2";
+        case "EC-JCP1 Zone 1 - Zone 2":
+          this.planType = "EC-JCP1 Zone 1 - Zone 2";
           this.pdfSrc = "assets/images/plans/EC/EC-JCP1.pdf";
           this.blocks = [
-            { name: "ZONE 1", pdfSrc: "assets/images/plans/EC/EC-JCP1.pdf", className: 'ec-zone-1', planType: 'Zone1 & Zone2' },
-            { name: "ZONE 2", pdfSrc: "assets/images/plans/EC/EC-JCP1.pdf", className: 'ec-zone-2', planType: 'Zone1 & Zone2' },
+            { name: "ZONE 1", pdfSrc: "assets/images/plans/EC/EC-JCP1.pdf", className: 'ec-zone-1', planType: 'EC-JCP1 Zone 1 - Zone 2' },
+            { name: "ZONE 2", pdfSrc: "assets/images/plans/EC/EC-JCP1.pdf", className: 'ec-zone-2', planType: 'EC-JCP1 Zone 1 - Zone 2' },
            ]
           break;
           default:
@@ -1898,12 +1898,12 @@ export class NewRequestComponent implements OnInit {
 
     else if (this.selectedbuilding == '15') {
       switch (event) {
-        case "Zone-1 & Zone-2":
-          this.planType = "Zone-1 & Zone-2";
+        case "HovvejEast Zone 1 - Zone 2":
+          this.planType = "HovvejEast Zone 1 - Zone 2";
           this.pdfSrc = "assets/images/plans/HovvejEast/HovvejEast.pdf";
           this.blocks = [
-            { name: "ZONE 1", pdfSrc: "assets/images/plans/HovvejEast/HovvejEast.pdf", className: 'east-zone-1', planType: 'Zone-1 & Zone-2' },
-            { name: "ZONE 2", pdfSrc: "assets/images/plans/HovvejEast/HovvejEast.pdf", className: 'east-zone-2', planType: 'Zone-1 & Zone-2' },
+            { name: "ZONE 1", pdfSrc: "assets/images/plans/HovvejEast/HovvejEast.pdf", className: 'east-zone-1', planType: 'HovvejEast Zone 1 - Zone 2' },
+            { name: "ZONE 2", pdfSrc: "assets/images/plans/HovvejEast/HovvejEast.pdf", className: 'east-zone-2', planType: 'HovvejEast Zone 1 - Zone 2' },
            ]
           break;
           default:
@@ -1913,12 +1913,12 @@ export class NewRequestComponent implements OnInit {
 
     else if (this.selectedbuilding == '16') {
       switch (event) {
-        case "Zone 1&Zone 2":
-          this.planType = "Zone 1&Zone 2";
+        case "HovvejWest Zone 1 - Zone 2":
+          this.planType = "HovvejWest Zone 1 - Zone 2";
           this.pdfSrc = "assets/images/plans/HovvejWest/HovvejWest.pdf";
           this.blocks = [
-            { name: "ZONE 1", pdfSrc: "assets/images/plans/HovvejWest/HovvejWest.pdf", className: 'west-zone-1', planType: 'Zone 1&Zone 2' },
-            { name: "ZONE 2", pdfSrc: "assets/images/plans/HovvejWest/HovvejWest.pdf", className: 'west-zone-2', planType: 'Zone 1&Zone 2' },
+            { name: "ZONE 1", pdfSrc: "assets/images/plans/HovvejWest/HovvejWest.pdf", className: 'west-zone-1', planType: 'HovvejWest Zone 1 - Zone 2' },
+            { name: "ZONE 2", pdfSrc: "assets/images/plans/HovvejWest/HovvejWest.pdf", className: 'west-zone-2', planType: 'HovvejWest Zone 1 - Zone 2' },
            ]
           break;
           default:
@@ -1976,6 +1976,9 @@ export class NewRequestComponent implements OnInit {
             { name: "Rendsborg Parking 1", pdfSrc: "assets/images/plans/RendsborgPark/RendsborgPark.pdf", className: 'RendsborgPark-parking-1', planType: 'Rendsborg Park' },
             { name: "Rendsborg Parking 2", pdfSrc: "assets/images/plans/RendsborgPark/RendsborgPark.pdf", className: 'RendsborgPark-parking-2', planType: 'Rendsborg Park' },            
             { name: "Rendsborg Parking 3", pdfSrc: "assets/images/plans/RendsborgPark/RendsborgPark.pdf", className: 'RendsborgPark-parking-3', planType: 'Rendsborg Park' },
+
+            { name: "Rendsborg Tent", pdfSrc: "assets/images/plans/RendsborgPark/RendsborgTent.pdf", className: 'RendsborgPark-tent', planType: 'Rendsborg Park' },
+            
 
            ]
           break;

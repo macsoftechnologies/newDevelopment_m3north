@@ -4324,3 +4324,13 @@ input {
   padding: 0;
   z-index: 9999999;
 }
+
+.RendsborgPark-tent{
+  position: absolute;
+  bottom: 19%;
+  left: 37%;
+  width: 23%;
+  height: 9%;
+  padding: 0;
+  z-index: 9999999;
+}

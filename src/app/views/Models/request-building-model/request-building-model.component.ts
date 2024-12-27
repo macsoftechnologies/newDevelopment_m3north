@@ -18,7 +18,7 @@ export class RequestBuildingModelComponent implements OnInit {
   ngOnInit(): void {
     let selectedBlockData = this.data.selectFloorBlocks.find(item => (item.planType == this.data.floor.planType) && (item.floorName == this.data.floor.name))
     console.log(selectedBlockData, "selectedBlockData")
-    if (this.data.floor.name == 'ZONE 1' && this.data.floor.planType == 'Zone 1 & Zone 2') {
+    if (this.data.floor.name == 'ZONE 1' && this.data.floor.planType == 'BA-DD Zone 1 - Zone 2') {
 
       this.floorBlock = [
         {
@@ -35,7 +35,7 @@ export class RequestBuildingModelComponent implements OnInit {
         }
       }
     }
-    else if (this.data.floor.name == 'ZONE 2' && this.data.floor.planType == 'Zone 1 & Zone 2') {
+    else if (this.data.floor.name == 'ZONE 2' && this.data.floor.planType == 'BA-DD Zone 1 - Zone 2') {
       this.floorBlock = [
         {
           value: 'ZONE 2',
@@ -51,7 +51,7 @@ export class RequestBuildingModelComponent implements OnInit {
         }
       }
     }
-    else if (this.data.floor.name == 'ZONE 1' && this.data.floor.planType == 'Zone1 & Zone2') {
+    else if (this.data.floor.name == 'ZONE 1' && this.data.floor.planType == 'EC-JCP1 Zone 1 - Zone 2') {
       this.floorBlock = [
         {
           value: 'ZONE 1',
@@ -67,7 +67,7 @@ export class RequestBuildingModelComponent implements OnInit {
         }
       }
     }
-    else if (this.data.floor.name == 'ZONE 2' && this.data.floor.planType == 'Zone1 & Zone2') {
+    else if (this.data.floor.name == 'ZONE 2' && this.data.floor.planType == 'EC-JCP1 Zone 1 - Zone 2') {
       this.floorBlock = [
         {
           value: 'ZONE 2',
@@ -85,7 +85,7 @@ export class RequestBuildingModelComponent implements OnInit {
     }
 
     // Hovvej east
-    else if (this.data.floor.name == 'ZONE 1' && this.data.floor.planType == 'Zone-1 & Zone-2') {
+    else if (this.data.floor.name == 'ZONE 1' && this.data.floor.planType == 'HovvejEast Zone 1 - Zone 2') {
       this.floorBlock = [
         {
           value: 'ZONE 1',
@@ -101,7 +101,7 @@ export class RequestBuildingModelComponent implements OnInit {
         }
       }
     }
-    else if (this.data.floor.name == 'ZONE 2' && this.data.floor.planType == 'Zone-1 & Zone-2') {
+    else if (this.data.floor.name == 'ZONE 2' && this.data.floor.planType == 'HovvejEast Zone 1 - Zone 2') {
       this.floorBlock = [
         {
           value: 'ZONE 2',
@@ -119,7 +119,7 @@ export class RequestBuildingModelComponent implements OnInit {
     }
 
     // Hovvej west
-    else if (this.data.floor.name == 'ZONE 1' && this.data.floor.planType == 'Zone 1&Zone 2') {
+    else if (this.data.floor.name == 'ZONE 1' && this.data.floor.planType == 'HovvejWest Zone 1 - Zone 2') {
       this.floorBlock = [
         {
           value: 'ZONE 1',
@@ -135,7 +135,7 @@ export class RequestBuildingModelComponent implements OnInit {
         }
       }
     }
-    else if (this.data.floor.name == 'ZONE 2' && this.data.floor.planType == 'Zone 1&Zone 2') {
+    else if (this.data.floor.name == 'ZONE 2' && this.data.floor.planType == 'HovvejWest Zone 1 - Zone 2') {
       this.floorBlock = [
         {
           value: 'ZONE 2',
@@ -326,7 +326,7 @@ export class RequestBuildingModelComponent implements OnInit {
     else if (this.data.floor.name == 'M3 South 1' && this.data.floor.planType == 'Rendsborg Park') {
       this.floorBlock = [
         {
-          value: 'M3 South 2',
+          value: 'M3 South 1',
           className: "M3-South-2",
           isSelected: false
         },
@@ -414,6 +414,58 @@ export class RequestBuildingModelComponent implements OnInit {
         {
           value: 'Rendsborg Parking 3',
           className: "Parking-3",
+          isSelected: false
+        },
+
+      ]
+      if (selectedBlockData) {
+        if ((selectedBlockData.floorName == this.data.floor.name) && (selectedBlockData.planType == this.data.floor.planType)) {
+          console.log(selectedBlockData, "2")
+          this.floorBlock = selectedBlockData.selectedBlock;
+        }
+      }
+    }
+
+    else if (this.data.floor.name == 'Rendsborg Tent' && this.data.floor.planType == 'Rendsborg Park') {
+      this.floorBlock = [
+        {
+          value: 'Tent 1',
+          className: "Park-tent-1",
+          isSelected: false
+        },
+        {
+          value: 'Tent 2',
+          className: "Park-tent-2",
+          isSelected: false
+        },
+        {
+          value: 'Tent 3',
+          className: "Park-tent-3",
+          isSelected: false
+        },
+        {
+          value: 'Tent 4',
+          className: "Park-tent-4",
+          isSelected: false
+        },
+        {
+          value: 'Tent 5',
+          className: "Park-tent-5",
+          isSelected: false
+        },
+        {
+          value: 'Tent 6',
+          className: "Park-tent-6",
+          isSelected: false
+        },
+        {
+          value: 'Tent 7',
+          className: "Park-tent-7",
+          isSelected: false
+        },
+        {
+          value: 'Tent 8',
+          className: "Park-tent-8",
           isSelected: false
         },
 

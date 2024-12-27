@@ -173,15 +173,13 @@ export class ListRequestComponent implements OnInit {
   // ];
 
     getFloors = [
-    "External Areas",
-    "JF - Ground Floor",
-    "JF - 1st Floor",
-    "JF - 2nd Floor",
-    "JF - Roof Plan",
-    "MR - Ground Floor",
-    "MR - 1st Floor",
-    "MR - 2nd Floor",
-    "MR - Roof Plan"
+    "BA-DD Zone 1 - Zone 2",
+    "EC-JCP1 Zone 1 - Zone 2",
+    "HovvejEast Zone 1 - Zone 2",
+    "HovvejWest Zone 1 - Zone 2",
+    "NN East Site-Plan",
+    "P-hus Site-Plan",
+    "Rendsborg Park",
   ];
 
   getHras = [

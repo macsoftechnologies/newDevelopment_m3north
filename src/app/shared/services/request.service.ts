@@ -24,7 +24,7 @@ export class RequestService {
   generateBulidFloorData() {
     this.bulidingFloorData = [
       {
-        planType: "Zone 1 & Zone 2",
+        planType: "BA-DD Zone 1 - Zone 2",
         zoneList: [
           {
             floorName: 'ZONE 1',
@@ -50,7 +50,7 @@ export class RequestService {
         ]
       },
       {
-        planType: "Zone1 & Zone2",
+        planType: "EC-JCP1 Zone 1 - Zone 2",
         zoneList: [
           {
             floorName: 'ZONE 1',
@@ -77,7 +77,7 @@ export class RequestService {
       },
 
       {
-        planType: "Zone-1 & Zone-2",
+        planType: "HovvejEast Zone 1 - Zone 2",
         zoneList: [
           {
             floorName: 'ZONE 1',
@@ -104,7 +104,7 @@ export class RequestService {
       },
       
       {
-        planType: "Zone 1&Zone 2",
+        planType: "HovvejWest Zone 1 - Zone 2",
         zoneList: [
           {
             floorName: 'ZONE 1',
@@ -256,7 +256,7 @@ export class RequestService {
             floorName: 'M3 South 1',
             zoneSubList: [
               {
-                value: 'M3 South 2',
+                value: 'M3 South 1',
                 className: "M3-South-2",
                 isSelected: false
               },
@@ -311,6 +311,52 @@ export class RequestService {
                 className: "Parking-3",
                 isSelected: false
               },
+            ]
+          },
+          {
+            floorName: 'Rendsborg Tent',
+            zoneSubList: [
+              {
+                value: 'Tent 1',
+                className: "Park-tent-1",
+                isSelected: false
+              },
+              {
+                value: 'Tent 2',
+                className: "Park-tent-2",
+                isSelected: false
+              },
+              {
+                value: 'Tent 3',
+                className: "Park-tent-3",
+                isSelected: false
+              },
+              {
+                value: 'Tent 4',
+                className: "Park-tent-4",
+                isSelected: false
+              },
+              {
+                value: 'Tent 5',
+                className: "Park-tent-5",
+                isSelected: false
+              },
+              {
+                value: 'Tent 6',
+                className: "Park-tent-6",
+                isSelected: false
+              },
+              {
+                value: 'Tent 7',
+                className: "Park-tent-7",
+                isSelected: false
+              },
+              {
+                value: 'Tent 8',
+                className: "Park-tent-8",
+                isSelected: false
+              },
+      
             ]
           },
           
