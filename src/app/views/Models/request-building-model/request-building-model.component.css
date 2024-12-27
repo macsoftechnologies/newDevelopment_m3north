@@ -12,221 +12,254 @@ mat-checkbox ::ng-deep .mat-checkbox-inner-container {
   cursor: pointer;
 }
 
-.zone-1-1-ba {
+.CT_Dark_Red_Zones-1 {
   position: absolute;
   z-index: 9999;
-  top: 35%;
-  left: 33%;
-}
-
-.zone-2-1-ba {
-  position: absolute;
-  z-index: 9999;
-  top: 68%;
-  right: 8%;
-}
-
-.zone-1-1-ec {
-  position: absolute;
-  z-index: 9999;
-  top: 34%;
-  left: 15%;
-}
-
-.zone-2-1-ec {
-  position: absolute;
-  z-index: 9999;
-  top: 60%;
-  right: 15%;
-}
-
-.zone-1-1-east {
-  position: absolute;
-    z-index: 9999;
-    bottom: 34%;
-    right: 34%;
-}
-
-.zone-2-1-east {
-  position: absolute;
-  z-index: 9999;
-  top: 38%;
-  right: 11%;
-
-}
-
-.zone-1-1-west {
-  position: absolute;
-  z-index: 9999;
-  bottom: 30%;
-  left: 22%;
-}
-
-.zone-2-1-west {
-  position: absolute;
-  z-index: 9999;
-  top: 58%;
-  right: 11%;
-}
-
-.M3NorthZone3{
-  position: absolute;
-  z-index: 9999;
-  top: 26%;
-  right: 9%;
-}
-.M3SouthZone2{
-  position: absolute;
-  z-index: 9999;
-  top: 37%;
-  right: 4%;
-
-}
-.M3SouthZone3{
-  position: absolute;
-  z-index: 9999;
-  top: 57%;
-  right: 9%;
-
-}
-.Parkingarea{
-  position: absolute;
-  z-index: 9999;
-  top: 57%;
-  left: 26%;
-}
-.NONM3AREA{
-  position: absolute;
-  z-index: 9999;
-  top: 57%;
-  right: -84%;
-}
-
-.Zone-1-phus{
-  position: absolute;
-  z-index: 9999;
-  top: 45%;
-  left: 27%;
-}
-.Zone-2-phus{
-
-  position: absolute;
-  z-index: 9999;
-  top: 55%;
-  right: 23%;
-  
-}
-.Zone-3-phus{
-  position: absolute;
-  z-index: 9999;
-  top: 65%;
-  right: -12%;
-}
-.Zone-4-phus{
-  position: absolute;
-  z-index: 9999;
-  top: 53%;
-  right: 21%;
-
-}
-
-.M3-North-2{
-  position: absolute;
-  z-index: 9999;
-  bottom: 22%;
+  top: 25%;
   left: 21%;
 }
 
-.M3-South-2{
+.CT_Dark_Red_Zones-2 {
   position: absolute;
   z-index: 9999;
-  bottom: 32%;
+  top: 35%;
+  left: 50%;
+}
+
+.CT_Dark_Red_Zones-3 {
+  position: absolute;
+  z-index: 9999;
+  top: 58%;
+  right: -7%;
+}
+
+.CT_Dark_Red_Zones-4 {
+  position: absolute;
+  z-index: 9999;
+  top: 39%;
+  right: -59%;
+}
+
+.CT_Dark_Cool_tower {
+  position: absolute;
+  z-index: 9999;
+  top: 30%;
+  right: -10%;
+}
+
+/* Ma--I */
+
+.MA_I_Blue_Zones-1 {
+  position: absolute;
+  z-index: 9999;
+  top: 2%;
+  left: 16%;
+}
+
+.MA_I_Blue_Zones-2 {
+  position: absolute;
+  z-index: 9999;
+  top: 2%;
+  right: 19%;
+}
+
+.MA_I_Blue_Zones-3 {
+  position: absolute;
+  z-index: 9999;
+  top: 24%;
+  left: 11%;
+}
+
+.MA_I_Blue_Zones-4 {
+  position: absolute;
+  z-index: 9999;
+  top: 18%;
+  left: 38%;
+}
+
+.MA_I_Blue_Zones-5 {
+  position: absolute;
+  z-index: 9999;
+  top: 35%;
+  right: 18%;
+}
+
+.MA_I_Blue_Zones-6 {
+  position: absolute;
+  z-index: 9999;
+  top: 35%;
+  left: 18%;
+}
+
+.MA_I_Blue_Zones-7 {
+  position: absolute;
+  z-index: 9999;
+  bottom: 31%;
+  left: 18%;
+}
+
+.MA_I_Blue_Zones-8 {
+  position: absolute;
+  z-index: 9999;
+  bottom: 34%;
+  left: 45%;
+}
+
+.MA_I_Blue_Zones-9 {
+  position: absolute;
+  z-index: 9999;
+  bottom: 39%;
+  right: 20%;
+}
+
+.MA_I_Blue_Zones-10 {
+  position: absolute;
+  z-index: 9999;
+  bottom: 17%;
+  left: 20%;
+
+}
+
+.MA_I_Blue_Zones-11 {
+  position: absolute;
+  z-index: 9999;
+  bottom: 9%;
   left: 31%;
 }
 
-.M3-North-1{
+.MA_I_Blue_Zones-12 {
   position: absolute;
   z-index: 9999;
-  bottom: 32%;
-  left: 43%;
+  bottom: 19%;
+  right: 15%;
 }
 
-.Office-Welfare{
+/* ends MA-II */
+
+/* start Area MA-II */
+
+.MA_II_Red_Zones-1 {
   position: absolute;
   z-index: 9999;
-  bottom: 32%;
-  left: 53%;
+  top: 2%;
+  left: 28%;
 }
 
-.Parking-1{
+.MA_II_Red_Zones-2 {
   position: absolute;
   z-index: 9999;
-  top: 32%;
-  right: 35%;
+  top: 2%;
+  right: 23%;
 }
 
-.Parking-2{
+.MA_II_Red_Zones-3 {
   position: absolute;
   z-index: 9999;
-  top: 50%;
-  right: 40%;
-}
-.Parking-3{
-  position: absolute;
-  z-index: 9999;
-  top: 50%;
-  right: 26%;
+  top: 19%;
+  left: 29%;
 }
 
-.Park-tent-1{
+.MA_II_Red_Zones-4 {
   position: absolute;
   z-index: 9999;
-  top: 5%;
-  left: 6%;
+  top: 43%;
+  right: 20%;
 }
 
-.Park-tent-2{
+.MA_II_Red_Zones-5 {
   position: absolute;
   z-index: 9999;
-  top: 5%;
-  left: 31%;
-}
-.Park-tent-3{
-  position: absolute;
-  z-index: 9999;
-  top: 5%;
-  right: 30%;
-}
-.Park-tent-4{
-  position: absolute;
-  z-index: 9999;
-  top: 5%;
-  right: 7%;
+  bottom: 37%;
+  right: 20%;
+
 }
 
-.Park-tent-5{
+.MA_II_Red_Zones-6 {
   position: absolute;
   z-index: 9999;
-  bottom: 5%;
-  left: 6%;
-}
-
-.Park-tent-6{
-  position: absolute;
-  z-index: 9999;
-  bottom: 5%;
+  bottom: 33%;
   left: 31%;
 }
 
-.Park-tent-7{
+.MA_II_Red_Zones-7 {
   position: absolute;
   z-index: 9999;
-  bottom: 5%;
-  right: 31%;
+  bottom: 8%;
+  right: 3%;
 }
-.Park-tent-8{
+
+.MA_II_Red_Zones-8 {
   position: absolute;
   z-index: 9999;
-  bottom: 5%;
-  right: 7%;
+  bottom: 2%;
+  right: 47%;
 }
+
+/* end Area MA-II */
+
+/* start MA_III_Yellow_Zones-1 */
+
+.MA_III_Yellow_Zones-1 {
+  position: absolute;
+  z-index: 9999;
+  top: 2%;
+  left: 11%;
+}
+
+.MA_III_Yellow_Zones-2 {
+  position: absolute;
+  z-index: 9999;
+  top: 2%;
+  left: 49%;
+}
+
+.MA_III_Yellow_Zones-3 {
+  position: absolute;
+  z-index: 9999;
+  top: 10%;
+  right: 10%;
+}
+
+.MA_III_Yellow_Zones-4 {
+  position: absolute;
+  z-index: 9999;
+  top: 22%;
+  right: 10%;
+}
+
+.MA_III_Yellow_Zones-5 {
+  position: absolute;
+  z-index: 9999;
+  top: 41%;
+  right: 25%;
+}
+
+.MA_III_Yellow_Zones-6 {
+  position: absolute;
+  z-index: 9999;
+  top: 41%;
+  right: 44%;
+}
+
+.MA_III_Yellow_Zones-7 {
+  position: absolute;
+  z-index: 9999;
+  top: 57%;
+  right: 48%;
+}
+
+.MA_III_Yellow_Zones-8 {
+  position: absolute;
+  z-index: 9999;
+  bottom: 17%;
+  right: 44%;
+}
+
+.MA_III_Yellow_Zones-9 {
+  position: absolute;
+  z-index: 9999;
+  bottom: 2%;
+  left: 19%;
+}
+
+/* end MA_III_Yellow_Zones-1 */

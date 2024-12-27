@@ -1779,7 +1779,7 @@ export class NewRequestComponent implements OnInit {
         this.Requestdata.Site_Id = x["site_id"];
         this.updaterequestdata.Site_Id = x["site_id"];
         this.RequestForm.controls["Site"].setValue(
-          "M3 Infrastructure"
+          "M3 North"
         );
         // this.RequestForm.controls["Site"].setValue(x["site_name"]);
       }
@@ -1808,45 +1808,37 @@ export class NewRequestComponent implements OnInit {
     if (event == '13') {
       console.log(event)
       this.floors = [
-        'BA-DD Zone 1 - Zone 2'
+        'External Areas'
       ];
     }
     else if (event == '14') {
       
       this.floors = [
-        'EC-JCP1 Zone 1 - Zone 2'
+        'Ground Floor',
+        'First Floor',
+        'Second Floor',
+        'Third Floor',
+        'Roof Plan'
       ];
     }
     else if (event == '15') {
       
       this.floors = [
-       'HovvejEast Zone 1 - Zone 2'
+       'MU90.0',
+       'MU90.1',
+       'MU90.2',
+       'MU90.R'
       ];
     }
     else if (event == '16') {
       
       this.floors = [
-        'HovvejWest Zone 1 - Zone 2'
-
-      ];
-    }
-    else if (event == '17') {
-      
-      this.floors = [
-        'NN East Site-Plan'
-     ];
-    }
-    else if (event == '18') {
-      
-      this.floors = [
-        'P-hus Site-Plan'
-
-      ];
-    }
-    else if (event == '19') {
-      
-      this.floors = [
-        'Rendsborg Park'
+        'MU91.0',
+        'MU91.1',
+        'MU91.2',
+        'MU91.3',
+        'MU91.4',
+        'MU91.R',
 
       ];
     }
@@ -1868,12 +1860,20 @@ export class NewRequestComponent implements OnInit {
     if (this.selectedbuilding == '13') {
       // console.log("JG Drawings")
       switch (event) {
-        case "BA-DD Zone 1 - Zone 2":
-          this.planType = "BA-DD Zone 1 - Zone 2";
-          this.pdfSrc = "assets/images/plans/BA-DD/BA.pdf";
+        case "External Areas":
+          this.planType = "External Areas";
+          this.pdfSrc = "assets/images/plans/external/External.pdf";
           this.blocks = [
-            { name: "ZONE 1", pdfSrc: "assets/images/plans/BA-DD/BA.pdf", className: 'ba-zone-1', planType: 'BA-DD Zone 1 - Zone 2' },
-            { name: "ZONE 2", pdfSrc: "assets/images/plans/BA-DD/BA.pdf", className: 'ba-zone-2', planType: 'BA-DD Zone 1 - Zone 2' },
+            { name: "Area CT", pdfSrc: "assets/images/plans/external/external-zones/CT_Dark.pdf", className: 'CT_Dark', planType: 'External Areas' },
+            { name: "Area MA-I", pdfSrc: "assets/images/plans/external/external-zones/MA_I.pdf", className: 'area-ma-1', planType: 'External Areas' },
+            { name: "Area MA-II", pdfSrc: "assets/images/plans/external/external-zones/MA_II.pdf", className: 'area-ma-2', planType: 'External Areas'},
+            { name: "Area MA-III", pdfSrc: "assets/images/plans/external/external-zones/MA_III.pdf", className: 'area-ma-3', planType: 'External Areas'},
+            { name: "Area MB", pdfSrc: "assets/images/plans/external/external-zones/MB.pdf", className: 'area-mb', planType: 'External Areas'},
+            { name: "Area MU", pdfSrc: "assets/images/plans/external/external-zones/MU.pdf", className: 'area-mu', planType: 'External Areas'},
+            { name: "Area MT-MS", pdfSrc: "assets/images/plans/external/external-zones/MT-MS.pdf", className: 'area-mt-ms', planType: 'External Areas'},
+            { name: "Welfare", pdfSrc: "assets/images/plans/external/external-zones/Welfare_zones.pdf", className: 'Welfare_zones', planType: 'External Areas'},
+            { name: "Roads", pdfSrc: "assets/images/plans/external/external-zones/Roads.pdf", className: 'Roads', planType: 'External Areas'},
+
            ]
           break;
           default:
@@ -2020,7 +2020,7 @@ export class NewRequestComponent implements OnInit {
     let currentdate = this.datePipe.transform(this.Reqdate, "yyyy-MM-dd");
     this.RequestForm.controls["Requestdate"].setValue(currentdate);
     this.RequestForm.controls["Companyname"].setValue(
-      "M3 Infrastructure"
+      "M3 North"
     );
     // let blocks = this.selectFloorBlocks.map(item =>  {
     //   item.selectedBlock.forEach(element => {

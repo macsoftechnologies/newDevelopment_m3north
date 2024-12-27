@@ -476,7 +476,7 @@ export class StatusChangeDialogComponent implements OnInit {
     console.log(statusdata, 'data')
     var today = moment.tz("Europe/Copenhagen");
     this.CurrenttimeNow = today.format('HH:mm:ss');
-    console.log("Time now", this.CurrenttimeNow)
+  
     // document.getElementById('watch1').innerHTML = today.format('DD/MM/YYYY');
     var t = setTimeout(this.startTime, 500);
     if (statusdata == "Closed") {
@@ -489,8 +489,7 @@ export class StatusChangeDialogComponent implements OnInit {
       ];
 
       // this.updaterequestdata.denmark_time = [currentDenmarkDate, currentDenmarkTime];
-      console.log(currentDenmarkTime);
-      console.log(currentDenmarkDate);
+     
       this.updaterequestdata.Request_status = statusdata;
       // this.updaterequestdata.createdTime = this.CurrenttimeNow;
 
@@ -499,7 +498,7 @@ export class StatusChangeDialogComponent implements OnInit {
 
       // this.updaterequestdata.denmark_time = [currentDenmarkDate, currentDenmarkTime] ;
 
-      console.log(this.updaterequestdata, "test data");
+      // console.log(this.updaterequestdata, "test data");
 
       // console.log(this.updaterequestdata,"stats");
 

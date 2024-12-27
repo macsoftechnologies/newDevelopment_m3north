@@ -4079,258 +4079,92 @@ input {
   height: calc(85px) !important;
 }
 
-/* // new css for m3 infrastructure */
-
-.ba-zone-1 {
+/* // new css for m3 north */
+.CT_Dark {
   position: absolute;
-  top: 20%;
-  left: 20%;
-  width: 23%;
-  height: 39%;
-  padding: 0;
-  z-index: 9999999;
+  top: 10%;
+  left: 27%;
+  z-index: 9999;
+  height: 28px;
+  width: 378px;
+  padding: 0px;
 }
 
-.ba-zone-2 {
+.area-ma-1 {
   position: absolute;
-  top: 52%;
-  right: 12%;
-  width: 44%;
-  height: 34%;
-  padding: 0;
-  z-index: 9999999;
+  bottom: 24%;
+  left: 24%;
+  z-index: 9999;
+  height: 215px;
+  width: 118px;
+  padding: 0px;
 }
 
-.ec-zone-1 {
+.area-ma-2 {
+  position: absolute;
+  bottom: 24%;
+  left: 33%;
+  z-index: 9999;
+  height: 215px;
+  width: 118px;
+  padding: 0px;
+}
+
+.area-ma-3 {
+  position: absolute;
+  bottom: 24%;
+  left: 43%;
+  z-index: 9999;
+  height: 215px;
+  width: 175px;
+  padding: 0px;
+}
+
+.area-mb {
+  position: absolute;
+  top: 13%;
+  left: 40.5%;
+  z-index: 9999;
+  height: 180px;
+  width: 90px;
+  padding: 0px;
+}
+
+.area-mu {
+  position: absolute;
+  top: 13%;
+  left: 33.5%;
+  z-index: 9999;
+  height: 180px;
+  width: 76px;
+  padding: 0px;
+}
+.area-mt-ms {
+  position: absolute;
+  top: 13%;
+  left: 23.5%;
+  z-index: 9999;
+  height: 180px;
+  width: 120px;
+  padding: 0px;
+}
+
+.Welfare_zones{
+  position: absolute;
+  top: 13%;
+  right: 43.5%;
+  z-index: 9999;
+  height: 180px;
+  width: 100px;
+  padding: 0px;
+}
+.Roads{
   position: absolute;
   top: 9%;
-  left: 16%;
-  width: 8%;
-  height: 78%;
-  padding: 0;
-  z-index: 9999999;
-}
-
-.ec-zone-2 {
-  position: absolute;
-  top: 53%;
-  right: 20%;
-  width: 55%;
-  height: 14%;
-  padding: 0;
-  z-index: 9999999;
-}
-
-.east-zone-1 {
-  position: absolute;
-  bottom: 9%;
-  left: 35%;
-  width: 20%;
-  height: 38%;
-  padding: 0;
-  z-index: 9999999;
-}
-
-.east-zone-2 {
-  position: absolute;
-  top: 11%;
-  right: 20%;
-  width: 29%;
-  height: 40%;
-  padding: 0;
-  z-index: 9999999;
-}
-
-
-.west-zone-1 {
-  position: absolute;
-  bottom: 26%;
-  left: 13%;
-  width: 31%;
-  height: 17%;
-  padding: 0;
-  z-index: 9999999;
-}
-
-.west-zone-2 {
-  position: absolute;
-  top: 37%;
-  right: 20%;
-  width: 35%;
-  height: 40%;
-  padding: 0;
-  z-index: 9999999;
-}
-
-.nn-east-zone-1 {
-  position: absolute;
-  top: 22%;
-  left: 20%;
-  width: 32%;
-  height: 13%;
-  padding: 0;
-  z-index: 9999999;
-}
-
-.nn-east-zone-2 {
-  position: absolute;
-  top: 35%;
   left: 22%;
-  width: 32%;
-  height: 19%;
-  padding: 0;
-  z-index: 9999999;
-}
-
-.nn-east-zone-3 {
-  position: absolute;
-  top: 54%;
-  left: 24%;
-  width: 20%;
-  height: 16%;
-  padding: 0;
-  z-index: 9999999;
-}
-
-.nn-east-zone-4 {
-  position: absolute;
-  top: 40%;
-  left: 17%;
-  width: 0%;
-  height: 29%;
-  padding: 0;
-  z-index: 9999999;
-}
-
-.nn-east-zone-5 {
-  position: absolute;
-  top: 45%;
-  right: 40%;
-  width: 13%;
-  height: 36%;
-  padding: 0;
-  z-index: 9999999;
-}
-
-.P-hus-zone-1 {
-  position: absolute;
-  top: 45%;
-  left: 24%;
-  width: 13%;
-  height: 7%;
-  padding: 0;
-  z-index: 9999999;
-}
-
-
-.P-hus-zone-2 {
-  position: absolute;
-  top: 54%;
-  left: 46%;
-  width: 7%;
-  height: 4%;
-  padding: 0;
-  z-index: 9999999;
-}
-
-
-.P-hus-zone-3 {
-  position: absolute;
-  top: 62%;
-  right: 20%;
-  width: 15%;
-  height: 7%;
-  padding: 0;
-  z-index: 9999999;
-}
-
-
-.P-hus-zone-4 {
-  position: absolute;
-  top: 48%;
-  left: 46%;
-  width: 15%;
-  height: 7%;
-  padding: 0;
-  z-index: 9999999;
-}
-
-.RendsborgPark-North-2{
-  position: absolute;
-  bottom: 18%;
-  left: 19%;
-  width: 15%;
-  height: 15%;
-  padding: 0;
-  z-index: 9999999;
-}
-
-.RendsborgPark-South-1{
-  position: absolute;
-  bottom: 29%;
-  left: 33%;
-  width: 9%;
-  height: 15%;
-  padding: 0;
-  z-index: 9999999;
-}
-
-.RendsborgPark-North-1{
-  position: absolute;
-  bottom: 29%;
-  left: 43%;
-  width: 5%;
-  height: 16%;
-  padding: 0;
-  z-index: 9999999;
-}
-
-.Office-area{
-  position: absolute;
-  bottom: 28%;
-  left: 49%;
-  width: 12%;
-  height: 10%;
-  padding: 0;
-  z-index: 9999999;
-}
-
-.RendsborgPark-parking-1{
-  position: absolute;
-  top: 20%;
-  right: 33%;
-  width: 15%;
-  height: 23%;
-  padding: 0;
-  z-index: 9999999;
-}
-
-.RendsborgPark-parking-2{
-  position: absolute;
-  top: 43%;
-  right: 39%;
-  width: 10%;
-  height: 15%;
-  padding: 0;
-  z-index: 9999999;
-}
-
-.RendsborgPark-parking-3{
-  position: absolute;
-  top: 40%;
-  right: 29%;
-  width: 8%;
-  height: 22%;
-  padding: 0;
-  z-index: 9999999;
-}
-
-.RendsborgPark-tent{
-  position: absolute;
-  bottom: 19%;
-  left: 37%;
-  width: 23%;
-  height: 9%;
-  padding: 0;
-  z-index: 9999999;
+  z-index: 9999;
+  height: 445px;
+  width: 21px;
+  padding: 0px;
+  min-width: 0;
 }
