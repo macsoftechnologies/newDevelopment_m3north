@@ -1812,7 +1812,7 @@ export class NewRequestComponent implements OnInit {
       ];
     }
     else if (event == '14') {
-      
+
       this.floors = [
         'Ground Floor',
         'First Floor',
@@ -1822,16 +1822,16 @@ export class NewRequestComponent implements OnInit {
       ];
     }
     else if (event == '15') {
-      
+
       this.floors = [
-       'MU90.0',
-       'MU90.1',
-       'MU90.2',
-       'MU90.R'
+        'MU90.0',
+        'MU90.1',
+        'MU90.2',
+        'MU90.R'
       ];
     }
     else if (event == '16') {
-      
+
       this.floors = [
         'MU91.0',
         'MU91.1',
@@ -1866,17 +1866,17 @@ export class NewRequestComponent implements OnInit {
           this.blocks = [
             { name: "Area CT", pdfSrc: "assets/images/plans/external/external-zones/CT_Dark.pdf", className: 'CT_Dark', planType: 'External Areas' },
             { name: "Area MA-I", pdfSrc: "assets/images/plans/external/external-zones/MA_I.pdf", className: 'area-ma-1', planType: 'External Areas' },
-            { name: "Area MA-II", pdfSrc: "assets/images/plans/external/external-zones/MA_II.pdf", className: 'area-ma-2', planType: 'External Areas'},
-            { name: "Area MA-III", pdfSrc: "assets/images/plans/external/external-zones/MA_III.pdf", className: 'area-ma-3', planType: 'External Areas'},
-            { name: "Area MB", pdfSrc: "assets/images/plans/external/external-zones/MB.pdf", className: 'area-mb', planType: 'External Areas'},
-            { name: "Area MU", pdfSrc: "assets/images/plans/external/external-zones/MU.pdf", className: 'area-mu', planType: 'External Areas'},
-            { name: "Area MT-MS", pdfSrc: "assets/images/plans/external/external-zones/MT-MS.pdf", className: 'area-mt-ms', planType: 'External Areas'},
-            { name: "Welfare", pdfSrc: "assets/images/plans/external/external-zones/Welfare_zones.pdf", className: 'Welfare_zones', planType: 'External Areas'},
-            { name: "Roads", pdfSrc: "assets/images/plans/external/external-zones/Roads.pdf", className: 'Roads', planType: 'External Areas'},
+            { name: "Area MA-II", pdfSrc: "assets/images/plans/external/external-zones/MA_II.pdf", className: 'area-ma-2', planType: 'External Areas' },
+            { name: "Area MA-III", pdfSrc: "assets/images/plans/external/external-zones/MA_III.pdf", className: 'area-ma-3', planType: 'External Areas' },
+            { name: "Area MB", pdfSrc: "assets/images/plans/external/external-zones/MB.pdf", className: 'area-mb', planType: 'External Areas' },
+            { name: "Area MU", pdfSrc: "assets/images/plans/external/external-zones/MU.pdf", className: 'area-mu', planType: 'External Areas' },
+            { name: "Area MT-MS", pdfSrc: "assets/images/plans/external/external-zones/MT-MS.pdf", className: 'area-mt-ms', planType: 'External Areas' },
+            { name: "Welfare", pdfSrc: "assets/images/plans/external/external-zones/Welfare_zones.pdf", className: 'Welfare_zones', planType: 'External Areas' },
+            { name: "Roads", pdfSrc: "assets/images/plans/external/external-zones/Roads.pdf", className: 'Roads', planType: 'External Areas' },
 
-           ]
+          ]
           break;
-          default:
+        default:
           break;
       }
     }
@@ -1889,103 +1889,126 @@ export class NewRequestComponent implements OnInit {
           this.blocks = [
             { name: "ZONE 1", pdfSrc: "assets/images/plans/EC/EC-JCP1.pdf", className: 'ec-zone-1', planType: 'EC-JCP1 Zone 1 - Zone 2' },
             { name: "ZONE 2", pdfSrc: "assets/images/plans/EC/EC-JCP1.pdf", className: 'ec-zone-2', planType: 'EC-JCP1 Zone 1 - Zone 2' },
-           ]
+          ]
           break;
-          default:
+        default:
           break;
       }
     }
 
     else if (this.selectedbuilding == '15') {
       switch (event) {
-        case "HovvejEast Zone 1 - Zone 2":
-          this.planType = "HovvejEast Zone 1 - Zone 2";
-          this.pdfSrc = "assets/images/plans/HovvejEast/HovvejEast.pdf";
+        case "MU90.0":
+          this.planType = "MU90.0";
+          this.pdfSrc = "assets/images/plans/MU90/MU90.0/MU90.0.pdf";
           this.blocks = [
-            { name: "ZONE 1", pdfSrc: "assets/images/plans/HovvejEast/HovvejEast.pdf", className: 'east-zone-1', planType: 'HovvejEast Zone 1 - Zone 2' },
-            { name: "ZONE 2", pdfSrc: "assets/images/plans/HovvejEast/HovvejEast.pdf", className: 'east-zone-2', planType: 'HovvejEast Zone 1 - Zone 2' },
-           ]
+            { name: "MU90.0A", pdfSrc: "assets/images/plans/MU90/MU90.0/Zones/MU90.0A.pdf", className: 'MU90_0A', planType: 'MU90.0' },
+            { name: "MU90.0B", pdfSrc: "assets/images/plans/MU90/MU90.0/Zones/MU90.0B.pdf", className: 'MU90_0B', planType: 'MU90.0' },
+            { name: "MU90.0C", pdfSrc: "assets/images/plans/MU90/MU90.0/Zones/MU90.0C.pdf", className: 'MU90_0C', planType: 'MU90.0' },
+            { name: "MU90.0D", pdfSrc: "assets/images/plans/MU90/MU90.0/Zones/MU90.0D.pdf", className: 'MU90_0D', planType: 'MU90.0' },
+            { name: "MU90.0E", pdfSrc: "assets/images/plans/MU90/MU90.0/Zones/MU90.0E.pdf", className: 'MU90_0E', planType: 'MU90.0' },
+            { name: "MU90.0F1", pdfSrc: "assets/images/plans/MU90/MU90.0/Zones/MU90.0A.pdf", className: 'MU90_0F1', planType: 'MU90.0' },
+            { name: "MU90.0F2", pdfSrc: "assets/images/plans/MU90/MU90.0/Zones/MU90.0F2.pdf", className: 'MU90_0F2', planType: 'MU90.0' },
+            { name: "MU90.0I", pdfSrc: "assets/images/plans/MU90/MU90.0/Zones/MU90.0I.pdf", className: 'MU90_0I', planType: 'MU90.0' },
+            { name: "MU90.0K", pdfSrc: "assets/images/plans/MU90/MU90.0/Zones/MU90.0K.pdf", className: 'MU90_0K', planType: 'MU90.0' },
+
+          ]
           break;
-          default:
+        case "MU90.1":
+          this.planType = "MU90.1";
+          this.pdfSrc = "assets/images/plans/MU90/MU90.1/MU90.1.pdf";
+          this.blocks = [
+            { name: "MU90.1BN", pdfSrc: "assets/images/plans/MU90/MU90.1/Zones/MU90.1BN.pdf", className: 'MU90_1BN', planType: 'MU90.1' },
+            { name: "MU90.1BS", pdfSrc: "assets/images/plans/MU90/MU90.1/Zones/MU90.1BS.pdf", className: 'MU90_1BS', planType: 'MU90.1' },
+            { name: "MU90.1C", pdfSrc: "assets/images/plans/MU90/MU90.1/Zones/MU90.1C.pdf", className: 'MU90_1C', planType: 'MU90.1' },
+            { name: "MU90.1D", pdfSrc: "assets/images/plans/MU90/MU90.1/Zones/MU90.1D.pdf", className: 'MU90_1D', planType: 'MU90.1' },
+            { name: "MU90.1E", pdfSrc: "assets/images/plans/MU90/MU90.1/Zones/MU90.1E.pdf", className: 'MU90_1E', planType: 'MU90.1' },
+            { name: "MU90.1F", pdfSrc: "assets/images/plans/MU90/MU90.1/Zones/MU90.1F.pdf", className: 'MU90_1F', planType: 'MU90.1' },
+            { name: "MU90.1G", pdfSrc: "assets/images/plans/MU90/MU90.1/Zones/MU90.1G.pdf", className: 'MU90_1G', planType: 'MU90.1' },
+            { name: "MU90.1H", pdfSrc: "assets/images/plans/MU90/MU90.1/Zones/MU90.1H.pdf", className: 'MU90_1H', planType: 'MU90.1' },
+            { name: "MU90.1I", pdfSrc: "assets/images/plans/MU90/MU90.1/Zones/MU90.1I.pdf", className: 'MU90_1I', planType: 'MU90.1' },
+            { name: "MU90.1K", pdfSrc: "assets/images/plans/MU90/MU90.1/Zones/MU90.1K.pdf", className: 'MU90_1K', planType: 'MU90.1' },
+            { name: "MU90.1L", pdfSrc: "assets/images/plans/MU90/MU90.1/Zones/MU90.1L.pdf", className: 'MU90_1L', planType: 'MU90.1' },
+            { name: "MU90.1M", pdfSrc: "assets/images/plans/MU90/MU90.1/Zones/MU90.1M.pdf", className: 'MU90_1M', planType: 'MU90.1' },
+          ]
+          break;
+        case "MU90.2":
+          this.planType = "MU90.2";
+          this.pdfSrc = "assets/images/plans/MU90/MU90.2/MU90.2.pdf";
+          this.blocks = [
+            { name: "MU90.2", pdfSrc: "assets/images/plans/MU90/MU90.2/MU90.2.pdf", className: 'MU90_2', planType: 'MU90.2' },
+
+          ]
+          break;
+        case "MU90.R":
+          this.planType = "MU90.R";
+          this.pdfSrc = "assets/images/plans/MU90/MU90.R/MU90.R.pdf";
+          this.blocks = [
+            { name: "MU90.R", pdfSrc: "assets/images/plans/MU90/MU90.R/MU90.R.pdf", className: 'MU90_R', planType: 'MU90.R' },
+
+          ]
+          break;
+        default:
           break;
       }
     }
 
     else if (this.selectedbuilding == '16') {
       switch (event) {
-        case "HovvejWest Zone 1 - Zone 2":
-          this.planType = "HovvejWest Zone 1 - Zone 2";
-          this.pdfSrc = "assets/images/plans/HovvejWest/HovvejWest.pdf";
+        case "MU91.0":
+          this.planType = "MU91.0";
+          this.pdfSrc = "assets/images/plans/MU91/MU91.0/GroundFloor.pdf";
           this.blocks = [
-            { name: "ZONE 1", pdfSrc: "assets/images/plans/HovvejWest/HovvejWest.pdf", className: 'west-zone-1', planType: 'HovvejWest Zone 1 - Zone 2' },
-            { name: "ZONE 2", pdfSrc: "assets/images/plans/HovvejWest/HovvejWest.pdf", className: 'west-zone-2', planType: 'HovvejWest Zone 1 - Zone 2' },
-           ]
+            { name: "GroundFloor", pdfSrc: "assets/images/plans/MU91/MU91.0/GroundFloor.pdf", className: 'GroundFloor', planType: 'MU91.0' },
+
+          ]
           break;
-          default:
+        case "MU91.1":
+          this.planType = "MU91.1";
+          this.pdfSrc = "assets/images/plans/MU91/MU91.1/FirstFloor.pdf";
+          this.blocks = [
+            { name: "FirstFloor", pdfSrc: "assets/images/plans/MU91/MU91.1/FirstFloor.pdf", className: 'FirstFloor', planType: 'MU91.1' },
+
+          ]
+          break;
+        case "MU91.2":
+          this.planType = "MU91.2";
+          this.pdfSrc = "assets/images/plans/MU91/MU91.2/SecondFloor.pdf";
+          this.blocks = [
+            { name: "SecondFloor", pdfSrc: "assets/images/plans/MU91/MU91.2/SecondFloor.pdf", className: 'SecondFloor', planType: 'MU91.2' },
+
+          ]
+          break;
+        case "MU91.3":
+          this.planType = "MU91.3";
+          this.pdfSrc = "assets/images/plans/MU91/MU91.3/ThirdFloor.pdf";
+          this.blocks = [
+            { name: "ThirdFloor", pdfSrc: "assets/images/plans/MU91/MU91.3/ThirdFloor.pdf", className: 'ThirdFloor', planType: 'MU91.3' },
+
+          ]
+          break;
+        case "MU91.4":
+          this.planType = "MU91.4";
+          this.pdfSrc = "assets/images/plans/MU91/MU91.4/FourthFloor.pdf";
+          this.blocks = [
+            { name: "FourthFloor", pdfSrc: "assets/images/plans/MU91/MU91.4/FourthFloor.pdf", className: 'FourthFloor', planType: 'MU91.4' },
+
+          ]
+          break;
+        case "MU91.R":
+          this.planType = "MU91.R";
+          this.pdfSrc = "assets/images/plans/MU91/MU91.R/Roof.pdf";
+          this.blocks = [
+            { name: "Roof", pdfSrc: "assets/images/plans/MU91/MU91.R/Roof.pdf", className: 'Roof', planType: 'MU91.R' },
+
+          ]
+          break;
+        default:
           break;
       }
     }
 
-    else if (this.selectedbuilding == '17') {
-      switch (event) {
-        case "NN East Site-Plan":
-          this.planType = "NN East Site-Plan";
-          this.pdfSrc = "assets/images/plans/NN-East/NN-East.pdf";
-          this.blocks = [
-            { name: "M3 North Zone 3", pdfSrc: "assets/images/plans/NN-East/NN-East.pdf", className: 'nn-east-zone-1', planType: 'NN East Site-Plan' },
-            { name: "M3 South Zone 2", pdfSrc: "assets/images/plans/NN-East/NN-East.pdf", className: 'nn-east-zone-2', planType: 'NN East Site-Plan' },
-            { name: "M3 South Zone 3", pdfSrc: "assets/images/plans/NN-East/NN-East.pdf", className: 'nn-east-zone-3', planType: 'NN East Site-Plan' },
-            { name: "Parking area", pdfSrc: "assets/images/plans/NN-East/NN-East.pdf", className: 'nn-east-zone-4', planType: 'NN East Site-Plan' },
-            { name: "NON M3 AREA", pdfSrc: "assets/images/plans/NN-East/NN-East.pdf", className: 'nn-east-zone-5', planType: 'NN East Site-Plan' },
-            // { name: "Gate entrance", pdfSrc: "assets/images/plans/NN-East/NN-East.pdf", className: 'nn-east-zone-6', planType: 'NN East Site-Plan' },
-           ]
-          break;
-          default:
-          break;
-      }
-    }
 
-    else if (this.selectedbuilding == '18') {
-      switch (event) {
-        case "P-hus Site-Plan":
-          this.planType = "P-hus Site-Plan";
-          this.pdfSrc = "assets/images/plans/P-hus/P-hus.pdf";
-          this.blocks = [
-            { name: "Zone 1", pdfSrc: "assets/images/plans/P-hus/P-hus.pdf", className: 'P-hus-zone-1', planType: 'P-hus Site-Plan' },
-            { name: "Zone 2", pdfSrc: "assets/images/plans/P-hus/P-hus.pdf", className: 'P-hus-zone-2', planType: 'P-hus Site-Plan' },
-            { name: "Zone 3", pdfSrc: "assets/images/plans/P-hus/P-hus.pdf", className: 'P-hus-zone-3', planType: 'P-hus Site-Plan' },
-            { name: "Zone 4", pdfSrc: "assets/images/plans/P-hus/P-hus.pdf", className: 'P-hus-zone-4', planType: 'P-hus Site-Plan' },
-
-           ]
-          break;
-          default:
-          break;
-      }
-    }
-
-    else if (this.selectedbuilding == '19') {
-      switch (event) {
-        case "Rendsborg Park":
-          this.planType = "Rendsborg Park";
-          this.pdfSrc = "assets/images/plans/RendsborgPark/RendsborgPark.pdf";
-          this.blocks = [
-            { name: "M3 North 2", pdfSrc: "assets/images/plans/RendsborgPark/RendsborgPark.pdf", className: 'RendsborgPark-North-2', planType: 'Rendsborg Park' },
-            { name: "M3 South 1", pdfSrc: "assets/images/plans/RendsborgPark/RendsborgPark.pdf", className: 'RendsborgPark-South-1', planType: 'Rendsborg Park' },
-            { name: "M3 North 1", pdfSrc: "assets/images/plans/RendsborgPark/RendsborgPark.pdf", className: 'RendsborgPark-North-1', planType: 'Rendsborg Park' },
-            { name: "Office & Welfare cabin area", pdfSrc: "assets/images/plans/RendsborgPark/RendsborgPark.pdf", className: 'Office-area', planType: 'Rendsborg Park' },
-            { name: "Rendsborg Parking 1", pdfSrc: "assets/images/plans/RendsborgPark/RendsborgPark.pdf", className: 'RendsborgPark-parking-1', planType: 'Rendsborg Park' },
-            { name: "Rendsborg Parking 2", pdfSrc: "assets/images/plans/RendsborgPark/RendsborgPark.pdf", className: 'RendsborgPark-parking-2', planType: 'Rendsborg Park' },            
-            { name: "Rendsborg Parking 3", pdfSrc: "assets/images/plans/RendsborgPark/RendsborgPark.pdf", className: 'RendsborgPark-parking-3', planType: 'Rendsborg Park' },
-
-            { name: "Rendsborg Tent", pdfSrc: "assets/images/plans/RendsborgPark/RendsborgTent.pdf", className: 'RendsborgPark-tent', planType: 'Rendsborg Park' },
-            
-
-           ]
-          break;
-          default:
-          break;
-      }
-    }
 
 
     // this.spinner = true;
@@ -2748,9 +2771,9 @@ export class NewRequestComponent implements OnInit {
       this.RequestForm.controls["SpecialInstruction"].value;
     // this.updaterequestdata.Safety_Precautions = this.safetyprecdata.map(obj => obj.id).join(",");//this.RequestForm.controls["Safetyprecaustion"].value;
     // this.updaterequestdata.Safety_Precautions =  badarray.toString();
-    if(this.NewRequestData.Request_status == "Draft"){
+    if (this.NewRequestData.Request_status == "Draft") {
       this.updaterequestdata.Request_status = "Hold";
-    }else{
+    } else {
       this.updaterequestdata.Request_status =
         this.RequestForm.controls["Status"].value;
     }
