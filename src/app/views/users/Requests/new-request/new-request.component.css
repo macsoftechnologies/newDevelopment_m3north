@@ -4450,3 +4450,24 @@ input {
   width: 65%;
   padding: 0px;
  }
+
+ /* starts Ma Section */
+
+ .Ma_Third_Floor{
+  position: absolute;
+  top: 14%;
+  left: 20%;
+  z-index: 9999;
+  height: 77%;
+  width: 65%;
+  padding: 0px;
+ }
+ .Ma_Roof_Plan{
+  position: absolute;
+  top: 6%;
+  left: 20%;
+  z-index: 9999;
+  height: 85%;
+  width: 60%;
+  padding: 0px;
+ }

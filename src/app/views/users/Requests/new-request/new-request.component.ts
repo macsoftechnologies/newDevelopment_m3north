@@ -1883,14 +1883,46 @@ export class NewRequestComponent implements OnInit {
 
     else if (this.selectedbuilding == '14') {
       switch (event) {
-        case "EC-JCP1 Zone 1 - Zone 2":
-          this.planType = "EC-JCP1 Zone 1 - Zone 2";
-          this.pdfSrc = "assets/images/plans/EC/EC-JCP1.pdf";
+        case "Ground Floor":
+          this.planType = "Ground Floor";
+          this.pdfSrc = "assets/images/plans/MA/GroundFloor/GroundFloor.pdf";
           this.blocks = [
-            { name: "ZONE 1", pdfSrc: "assets/images/plans/EC/EC-JCP1.pdf", className: 'ec-zone-1', planType: 'EC-JCP1 Zone 1 - Zone 2' },
-            { name: "ZONE 2", pdfSrc: "assets/images/plans/EC/EC-JCP1.pdf", className: 'ec-zone-2', planType: 'EC-JCP1 Zone 1 - Zone 2' },
+            { name: "ZONE 1", pdfSrc: "assets/images/plans/EC/EC-JCP1.pdf", className: 'ec-zone-1', planType: 'Ground Floor' },
+            { name: "ZONE 2", pdfSrc: "assets/images/plans/EC/EC-JCP1.pdf", className: 'ec-zone-2', planType: 'Ground Floor' },
           ]
           break;
+          case "First Floor":
+          this.planType = "First Floor";
+          this.pdfSrc = "assets/images/plans/MA/FirstFloor/FirstFloor.pdf";
+          this.blocks = [
+            { name: "ZONE 1", pdfSrc: "assets/images/plans/EC/EC-JCP1.pdf", className: 'ec-zone-1', planType: 'First Floor' },
+            { name: "ZONE 2", pdfSrc: "assets/images/plans/EC/EC-JCP1.pdf", className: 'ec-zone-2', planType: 'First Floor' },
+          ]
+          break;
+          case "Second Floor":
+            this.planType = "Second Floor";
+            this.pdfSrc = "assets/images/plans/MA/SecondFloor/SecondFloor.pdf";
+            this.blocks = [
+              { name: "ZONE 1", pdfSrc: "assets/images/plans/EC/EC-JCP1.pdf", className: 'ec-zone-1', planType: 'Second Floor' },
+              { name: "ZONE 2", pdfSrc: "assets/images/plans/EC/EC-JCP1.pdf", className: 'ec-zone-2', planType: 'Second Floor' },
+            ]
+            break;
+            case "Third Floor":
+              this.planType = "Third Floor";
+              this.pdfSrc = "assets/images/plans/MA/ThirdFloor/ThirdFloor.pdf";
+              this.blocks = [
+                { name: "Third Floor", pdfSrc: "assets/images/plans/MA/ThirdFloor/ThirdFloor.pdf", className: 'Ma_Third_Floor', planType: 'Third Floor' },
+               
+              ]
+              break;
+              case "Roof Plan":
+                this.planType = "Roof Plan";
+                this.pdfSrc = "assets/images/plans/MA/Roof/Roof.pdf";
+                this.blocks = [
+                  { name: "Roof Plan", pdfSrc: "assets/images/plans/MA/Roof/Roof.pdf", className: 'Ma_Roof_Plan', planType: 'Roof Plan' },
+                  
+                ]
+                break;
         default:
           break;
       }
@@ -1907,7 +1939,7 @@ export class NewRequestComponent implements OnInit {
             { name: "MU90.0C", pdfSrc: "assets/images/plans/MU90/MU90.0/Zones/MU90.0C.pdf", className: 'MU90_0C', planType: 'MU90.0' },
             { name: "MU90.0D", pdfSrc: "assets/images/plans/MU90/MU90.0/Zones/MU90.0D.pdf", className: 'MU90_0D', planType: 'MU90.0' },
             { name: "MU90.0E", pdfSrc: "assets/images/plans/MU90/MU90.0/Zones/MU90.0E.pdf", className: 'MU90_0E', planType: 'MU90.0' },
-            { name: "MU90.0F1", pdfSrc: "assets/images/plans/MU90/MU90.0/Zones/MU90.0A.pdf", className: 'MU90_0F1', planType: 'MU90.0' },
+            { name: "MU90.0F1", pdfSrc: "assets/images/plans/MU90/MU90.0/Zones/MU90.0F1.pdf", className: 'MU90_0F1', planType: 'MU90.0' },
             { name: "MU90.0F2", pdfSrc: "assets/images/plans/MU90/MU90.0/Zones/MU90.0F2.pdf", className: 'MU90_0F2', planType: 'MU90.0' },
             { name: "MU90.0I", pdfSrc: "assets/images/plans/MU90/MU90.0/Zones/MU90.0I.pdf", className: 'MU90_0I', planType: 'MU90.0' },
             { name: "MU90.0K", pdfSrc: "assets/images/plans/MU90/MU90.0/Zones/MU90.0K.pdf", className: 'MU90_0K', planType: 'MU90.0' },
