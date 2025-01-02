@@ -1944,8 +1944,25 @@ export class NewRequestComponent implements OnInit {
           this.planType = "Second Floor";
           this.pdfSrc = "assets/images/plans/MA/SecondFloor/SecondFloor.pdf";
           this.blocks = [
-            { name: "ZONE 1", pdfSrc: "assets/images/plans/EC/EC-JCP1.pdf", className: 'ec-zone-1', planType: 'Second Floor' },
-            { name: "ZONE 2", pdfSrc: "assets/images/plans/EC/EC-JCP1.pdf", className: 'ec-zone-2', planType: 'Second Floor' },
+            { name: "10.2F.Backstage", pdfSrc: "assets/images/plans/MA/SecondFloor/Zones10/10.2F.Backstage.pdf", className: 'second_Backstage', planType: 'Second Floor' },
+            { name: "10.2F.CorridorS", pdfSrc: "assets/images/plans/MA/SecondFloor/Zones10/10.2F.CorridorS.pdf", className: 'second_CorridorS', planType: 'Second Floor' },
+            { name: "10.2F.Distribution", pdfSrc: "assets/images/plans/MA/SecondFloor/Zones10/10.2F.Distribution.pdf", className: 'second_Distribution', planType: 'Second Floor' },
+            { name: "10.2F.FrontstageE", pdfSrc: "assets/images/plans/MA/SecondFloor/Zones10/10.2F.FrontstageE.pdf", className: 'second_FrontstageE', planType: 'Second Floor' },
+            { name: "10.2F.FrontstageW", pdfSrc: "assets/images/plans/MA/SecondFloor/Zones10/10.2F.FrontstageW.pdf", className: 'second_FrontstageW', planType: 'Second Floor' },
+
+            { name: "70.2A", pdfSrc: "assets/images/plans/MA/SecondFloor/Zones70/70.2A.pdf", className: 'second_Seventy_A', planType: 'Second Floor' },
+            { name: "70.2B", pdfSrc: "assets/images/plans/MA/SecondFloor/Zones70/70.2B.pdf", className: 'second_Seventy_B', planType: 'Second Floor' },
+
+            
+            { name: "40.2A.1", pdfSrc: "assets/images/plans/MA/SecondFloor/Zones40/40.2A.1.pdf", className: 'second_forty_2A_1', planType: 'Second Floor' },
+            { name: "40.2A.2", pdfSrc: "assets/images/plans/MA/SecondFloor/Zones40/40.2A.2.pdf", className: 'second_forty_2A_2', planType: 'Second Floor' },
+            { name: "40.2A.3", pdfSrc: "assets/images/plans/MA/SecondFloor/Zones40/40.2A.3.pdf", className: 'second_forty_2A_3', planType: 'Second Floor' },
+            { name: "40.2B", pdfSrc: "assets/images/plans/MA/SecondFloor/Zones40/40.2B.pdf", className: 'second_forty_2b', planType: 'Second Floor' },
+            { name: "40.2C", pdfSrc: "assets/images/plans/MA/SecondFloor/Zones40/40.2C.pdf", className: 'second_forty_2c', planType: 'Second Floor' },
+            { name: "40.2D", pdfSrc: "assets/images/plans/MA/SecondFloor/Zones40/40.2D.pdf", className: 'second_forty_2d', planType: 'Second Floor' },
+            { name: "40.2E", pdfSrc: "assets/images/plans/MA/SecondFloor/Zones40/40.2E.pdf", className: 'second_forty_2e', planType: 'Second Floor' },
+            { name: "40.2F", pdfSrc: "assets/images/plans/MA/SecondFloor/Zones40/40.2F.pdf", className: 'second_forty_2f', planType: 'Second Floor' },
+          
           ]
           break;
         case "Third Floor":
