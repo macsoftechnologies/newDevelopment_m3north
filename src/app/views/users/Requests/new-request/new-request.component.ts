@@ -1911,38 +1911,59 @@ export class NewRequestComponent implements OnInit {
             { name: "40.0U", pdfSrc: "assets/images/plans/MA/GroundFloor/Zones40/40.0U.pdf", className: 'fortyU_Zone', planType: 'Ground Floor' },
           ]
           break;
-          case "First Floor":
+        case "First Floor":
           this.planType = "First Floor";
           this.pdfSrc = "assets/images/plans/MA/FirstFloor/FirstFloor.pdf";
           this.blocks = [
-            { name: "ZONE 1", pdfSrc: "assets/images/plans/EC/EC-JCP1.pdf", className: 'ec-zone-1', planType: 'First Floor' },
-            { name: "ZONE 2", pdfSrc: "assets/images/plans/EC/EC-JCP1.pdf", className: 'ec-zone-2', planType: 'First Floor' },
+            { name: "10.1F.Backstage", pdfSrc: "assets/images/plans/MA/FirstFloor/Zones10/10.1F.Backstage.pdf", className: 'FristBackstage', planType: 'First Floor' },
+            { name: "10.1F.CorridorN", pdfSrc: "assets/images/plans/MA/FirstFloor/Zones10/10.1F.CorridorN.pdf", className: 'FristCorridorN', planType: 'First Floor' },
+            { name: "10.1F.FrontstageE", pdfSrc: "assets/images/plans/MA/FirstFloor/Zones10/10.1F.FrontstageE.pdf", className: 'FristFrontstageE', planType: 'First Floor' },
+            { name: "10.1F.FrontstageW", pdfSrc: "assets/images/plans/MA/FirstFloor/Zones10/10.1F.FrontstageW.pdf", className: 'FristFrontstageW', planType: 'First Floor' },
+            { name: "10.1F.IT", pdfSrc: "assets/images/plans/MA/FirstFloor/Zones10/10.1F.IT.pdf", className: 'FristFIT', planType: 'First Floor' },
+
+            { name: "70.1A", pdfSrc: "assets/images/plans/MA/FirstFloor/Zones70/70.1A.pdf", className: 'firstseventyA', planType: 'First Floor' },
+            { name: "70.1B", pdfSrc: "assets/images/plans/MA/FirstFloor/Zones70/70.1B.pdf", className: 'firstseventyB', planType: 'First Floor' },
+            { name: "70.1C", pdfSrc: "assets/images/plans/MA/FirstFloor/Zones70/70.1C.pdf", className: 'firstseventyC', planType: 'First Floor' },
+
+            { name: "40.1A", pdfSrc: "assets/images/plans/MA/FirstFloor/Zones40/40.1A.pdf", className: 'FirstfoutyA', planType: 'First Floor' },
+            { name: "40.1B", pdfSrc: "assets/images/plans/MA/FirstFloor/Zones40/40.1B.pdf", className: 'FirstfoutyB', planType: 'First Floor' },
+            { name: "40.1C", pdfSrc: "assets/images/plans/MA/FirstFloor/Zones40/40.1C.pdf", className: 'FirstfoutyC', planType: 'First Floor' },
+            { name: "40.1D", pdfSrc: "assets/images/plans/MA/FirstFloor/Zones40/40.1D.pdf", className: 'FirstfoutyD', planType: 'First Floor' },
+            { name: "40.1E", pdfSrc: "assets/images/plans/MA/FirstFloor/Zones40/40.1E.pdf", className: 'FirstfoutyE', planType: 'First Floor' },
+            { name: "40.1F", pdfSrc: "assets/images/plans/MA/FirstFloor/Zones40/40.1F.pdf", className: 'FirstfoutyF', planType: 'First Floor' },
+            { name: "40.1G", pdfSrc: "assets/images/plans/MA/FirstFloor/Zones40/40.1G.pdf", className: 'FirstfoutyG', planType: 'First Floor' },
+            { name: "40.1I", pdfSrc: "assets/images/plans/MA/FirstFloor/Zones40/40.1I.pdf", className: 'FirstfoutyI', planType: 'First Floor' },
+            { name: "40.1J", pdfSrc: "assets/images/plans/MA/FirstFloor/Zones40/40.1J.pdf", className: 'FirstfoutyJ', planType: 'First Floor' },
+            { name: "40.1K", pdfSrc: "assets/images/plans/MA/FirstFloor/Zones40/40.1K.pdf", className: 'FirstfoutyK', planType: 'First Floor' },
+            { name: "40.1L", pdfSrc: "assets/images/plans/MA/FirstFloor/Zones40/40.1L.pdf", className: 'FirstfoutyL', planType: 'First Floor' },
+            { name: "40.1M", pdfSrc: "assets/images/plans/MA/FirstFloor/Zones40/40.1M.pdf", className: 'FirstfoutyM', planType: 'First Floor' },
+
           ]
           break;
-          case "Second Floor":
-            this.planType = "Second Floor";
-            this.pdfSrc = "assets/images/plans/MA/SecondFloor/SecondFloor.pdf";
-            this.blocks = [
-              { name: "ZONE 1", pdfSrc: "assets/images/plans/EC/EC-JCP1.pdf", className: 'ec-zone-1', planType: 'Second Floor' },
-              { name: "ZONE 2", pdfSrc: "assets/images/plans/EC/EC-JCP1.pdf", className: 'ec-zone-2', planType: 'Second Floor' },
-            ]
-            break;
-            case "Third Floor":
-              this.planType = "Third Floor";
-              this.pdfSrc = "assets/images/plans/MA/ThirdFloor/ThirdFloor.pdf";
-              this.blocks = [
-                { name: "Third Floor", pdfSrc: "assets/images/plans/MA/ThirdFloor/ThirdFloor.pdf", className: 'Ma_Third_Floor', planType: 'Third Floor' },
-               
-              ]
-              break;
-              case "Roof Plan":
-                this.planType = "Roof Plan";
-                this.pdfSrc = "assets/images/plans/MA/Roof/Roof.pdf";
-                this.blocks = [
-                  { name: "Roof Plan", pdfSrc: "assets/images/plans/MA/Roof/Roof.pdf", className: 'Ma_Roof_Plan', planType: 'Roof Plan' },
-                  
-                ]
-                break;
+        case "Second Floor":
+          this.planType = "Second Floor";
+          this.pdfSrc = "assets/images/plans/MA/SecondFloor/SecondFloor.pdf";
+          this.blocks = [
+            { name: "ZONE 1", pdfSrc: "assets/images/plans/EC/EC-JCP1.pdf", className: 'ec-zone-1', planType: 'Second Floor' },
+            { name: "ZONE 2", pdfSrc: "assets/images/plans/EC/EC-JCP1.pdf", className: 'ec-zone-2', planType: 'Second Floor' },
+          ]
+          break;
+        case "Third Floor":
+          this.planType = "Third Floor";
+          this.pdfSrc = "assets/images/plans/MA/ThirdFloor/ThirdFloor.pdf";
+          this.blocks = [
+            { name: "Third Floor", pdfSrc: "assets/images/plans/MA/ThirdFloor/ThirdFloor.pdf", className: 'Ma_Third_Floor', planType: 'Third Floor' },
+
+          ]
+          break;
+        case "Roof Plan":
+          this.planType = "Roof Plan";
+          this.pdfSrc = "assets/images/plans/MA/Roof/Roof.pdf";
+          this.blocks = [
+            { name: "Roof Plan", pdfSrc: "assets/images/plans/MA/Roof/Roof.pdf", className: 'Ma_Roof_Plan', planType: 'Roof Plan' },
+
+          ]
+          break;
         default:
           break;
       }

@@ -4731,4 +4731,216 @@ input {
 
 /* ground floor ends */
 
+/* first floor start */
+
+.FristBackstage {
+  position: absolute;
+  bottom: 11%;
+  left: 38%;
+  z-index: 9999;
+  height: 49%;
+  width: 10%;
+  padding: 0px;
+}
+
+.FristCorridorN {
+  position: absolute;
+  top: 35%;
+  left: 38%;
+  z-index: 9999;
+  height: 4%;
+  width: 1%;
+  padding: 0px;
+}
+
+.FristFrontstageE {
+  position: absolute;
+  bottom: 8%;
+  left: 48%;
+  z-index: 9999;
+  height: 56%;
+  width: 10%;
+  padding: 0px;
+}
+
+.FristFrontstageW {
+  position: absolute;
+  bottom: 8%;
+  left: 29%;
+  z-index: 9999;
+  height: 56%;
+  width: 9%;
+  padding: 0px;
+
+}
+
+.FristFIT {
+  position: absolute;
+  bottom: 9%;
+  left: 38%;
+  z-index: 9999;
+  height: 2%;
+  width: 10%;
+  padding: 0px;
+}
+
+.firstseventyA {
+  position: absolute;
+  bottom: 31%;
+  right: 34%;
+  z-index: 9999;
+  height: 20%;
+  width: 8%;
+  padding: 0px;
+}
+
+.firstseventyB {
+  position: absolute;
+  bottom: 26%;
+  right: 24%;
+  z-index: 9999;
+  height: 14%;
+  width: 8%;
+  padding: 0px;
+}
+
+.firstseventyC {
+  position: absolute;
+  bottom: 20%;
+  right: 24%;
+  z-index: 9999;
+  height: 6%;
+  width: 6%;
+  padding: 0px;
+}
+
+.FirstfoutyA {
+  position: absolute;
+  top: 21%;
+  left: 37%;
+  z-index: 9999;
+  height: 14%;
+  width: 4%;
+  padding: 0px;
+  min-width: 0px;
+}
+
+.FirstfoutyB {
+  position: absolute;
+  top: 28%;
+  left: 21%;
+  z-index: 9999;
+  height: 7%;
+  width: 11%;
+  padding: 0px;
+
+}
+
+.FirstfoutyC {
+  position: absolute;
+  top: 19%;
+  left: 21%;
+  z-index: 9999;
+  height: 2%;
+  width: 58%;
+  padding: 0px;
+}
+
+.FirstfoutyD {
+  position: absolute;
+  top: 8%;
+  left: 40%;
+  z-index: 9999;
+  height: 11%;
+  width: 8%;
+  padding: 0px;
+
+}
+
+.FirstfoutyE {
+  position: absolute;
+  top: 30%;
+  left: 49%;
+  z-index: 9999;
+  height: 5%;
+  width: 7%;
+  padding: 0px;
+  min-width: 0px;
+}
+
+.FirstfoutyF {
+  position: absolute;
+  top: 23%;
+  left: 49%;
+  z-index: 9999;
+  height: 7%;
+  width: 7%;
+  padding: 0px;
+  min-width: 0px;
+}
+
+.FirstfoutyG {
+  position: absolute;
+  top: 32%;
+  right: 21%;
+  z-index: 9999;
+  height: 3%;
+  width: 16%;
+  padding: 0px;
+}
+
+.FirstfoutyI {
+  position: absolute;
+  top: 21%;
+  right: 21%;
+  z-index: 9999;
+  height: 11%;
+  width: 8%;
+  padding: 0px;
+
+}
+
+.FirstfoutyJ {
+  position: absolute;
+  top: 21%;
+  right: 29%;
+  z-index: 9999;
+  height: 6%;
+  width: 6%;
+  padding: 0px;
+
+}
+
+.FirstfoutyK {
+  position: absolute;
+  top: 21%;
+  right: 37%;
+  z-index: 9999;
+  height: 12%;
+  width: 7%;
+  padding: 0px;
+}
+
+.FirstfoutyL {
+  position: absolute;
+  top: 21%;
+  left: 21%;
+  z-index: 9999;
+  height: 7%;
+  width: 9%;
+  padding: 0px;
+}
+
+.FirstfoutyM {
+  position: absolute;
+  top: 8%;
+  left: 21%;
+  z-index: 9999;
+  height: 11%;
+  width: 15%;
+  padding: 0px;
+}
+
+/* first floor ends */
+
 /* ends Ma Section */
