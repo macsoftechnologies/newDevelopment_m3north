@@ -565,6 +565,8 @@ mat-checkbox ::ng-deep .mat-checkbox-inner-container {
 
 /* / start of Roads / */
 
+/* / / start of Roads / / */
+
 .M3MA_Roads_Zones-1 {
   position: absolute;
   z-index: 9999;
@@ -574,63 +576,63 @@ mat-checkbox ::ng-deep .mat-checkbox-inner-container {
 .M3MA_Roads_Zones-2 {
   position: absolute;
   z-index: 9999;
-  top: 5%;
-  left: 36%;
+  top: 5.5%;
+  left: 22%;
 }
 .M3MA_Roads_Zones-3 {
   position: absolute;
   z-index: 9999;
-  top: 6%;
-  left: 50%;
+  top: 5.5%;
+  left: 53%;
 }
 .M3MA_Roads_Zones-4 {
   position: absolute;
   z-index: 9999;
-  top: 6%;
-  left: 81%;
+  top: 5.7%;
+  left: 70%;
 }
 .M3MA_Roads_Zones-5 {
   position: absolute;
   z-index: 9999;
-  top: 6%;
-  left: 101%;
+  top: 6.5%;
+  right: -2%;
 }
 .M3MA_Roads_Zones-6 {
   position: absolute;
   z-index: 9999;
-  top: 6%;
-  left: 121%;
+  top: 5.7%;
+  right: -16%;
 }
 
 .M3MA_Roads_Zones-7 {
   position: absolute;
   z-index: 9999;
-  top: 6%;
-  left: 129%;
+  top: 5.7%;
+  right: -39%;
 }
 .M3MA_Roads_Zones-8 {
   position: absolute;
   z-index: 9999;
-  top: 6%;
-  left: 162%;
+  top: 5.5%;
+  right: -58%;
 }
 .M3MA_Roads_Zones-9 {
   position: absolute;
   z-index: 9999;
-  top: 5%;
-  left: 174%;
+  top: 5.7%;
+  right: -86%;
 }
 .M3MA_Roads_Zones-10 {
   position: absolute;
   z-index: 9999;
   top: 17%;
-  left: 58%;
+  left: 61%;
 }
 .M3MA_Roads_Zones-11 {
   position: absolute;
   z-index: 9999;
-  top: 34%;
-  left: 58%;
+  top: 33.5%;
+  left: 61%;
 }
 .M3MA_Roads_Zones-12 {
   position: absolute;
@@ -641,129 +643,131 @@ mat-checkbox ::ng-deep .mat-checkbox-inner-container {
 .M3MA_Roads_Zones-13 {
   position: absolute;
   z-index: 9999;
-  top: 16%;
-  left: 94%;
+  top: 16.4%;
+  right: -2.5%;
 }
 .M3MA_Roads_Zones-14 {
   position: absolute;
   z-index: 9999;
-  top: 18%;
-  left: 121%;
+  top: 18.2%;
+  right: -16%;
 }
 .M3MA_Roads_Zones-15 {
   position: absolute;
   z-index: 9999;
   top: 16%;
-  left: 135%;
+  right: -46%;
 }
 .M3MA_Roads_Zones-16 {
   position: absolute;
   z-index: 9999;
-  top: 32%;
-  left: 93%;
+  top: 31.5%;
+  right: -2%;
 }
 .M3MA_Roads_Zones-17 {
   position: absolute;
   z-index: 9999;
   top: 31%;
-  left: 135%;
+  right: -46%;
 }
 .M3MA_Roads_Zones-18 {
   position: absolute;
   z-index: 9999;
-  top: 27%;
-  left: 180%;
+  top: 26%;
+  right: -94%;
 }
 .M3MA_Roads_Zones-19 {
   position: absolute;
   z-index: 9999;
-  top: 41%;
-  left: 6%;
+  top: 41.3%;
+  left: 6.5%;
 }
 .M3MA_Roads_Zones-20 {
   position: absolute;
   z-index: 9999;
   top: 39%;
-  left: 38%;
+  left: 25%;
 }
 .M3MA_Roads_Zones-21 {
   position: absolute;
   z-index: 9999;
   top: 39%;
-  left: 50%;
+  left: 53%;
 }
 .M3MA_Roads_Zones-22 {
   position: absolute;
   z-index: 9999;
   top: 39%;
-  left: 82%;
+  left: 71%;
 }
 .M3MA_Roads_Zones-23 {
   position: absolute;
   z-index: 9999;
   top: 39%;
-  left: 100%;
+  left: 92%;
 }
 .M3MA_Roads_Zones-24 {
   position: absolute;
   z-index: 9999;
-  top: 39%;
-  left: 121%;
+  top: 39.2%;
+  right: -16%;
 }
 .M3MA_Roads_Zones-25 {
   position: absolute;
   z-index: 9999;
   top: 39%;
-  left: 140%;
+  right: -39%;
 }
 .M3MA_Roads_Zones-26 {
   position: absolute;
   z-index: 9999;
   top: 39%;
-  left: 164%;
+  right: -63%;
 }
 .M3MA_Roads_Zones-27 {
   position: absolute;
   z-index: 9999;
   top: 39%;
-  left: 183%;
+  right: -85%;
 }
 .M3MA_Roads_Zones-28 {
   position: absolute;
   z-index: 9999;
-  top: 58%;
-  left: 170%;
+  top: 63%;
+  right: -75%;
 }
 .M3MA_Roads_Zones-29 {
   position: absolute;
   z-index: 9999;
-  top: 79%;
-  left: 134%;
+  bottom: 19.7%;
+  right: -44%;
 }
 .M3MA_Roads_Zones-30 {
   position: absolute;
   z-index: 9999;
-  top: 89%;
-  left: 127%;
+  bottom: 7%;
+  right: -32%;
 }
 .M3MA_Roads_Zones-31 {
   position: absolute;
   z-index: 9999;
-  top: 79%;
-  left: 83%;
+  bottom: 19.8%;
+  left: 72%;
 }
 .M3MA_Roads_Zones-32 {
   position: absolute;
   z-index: 9999;
-  top: 79%;
-  left: 17%;
+  bottom: 21%;
+  left: 9%;
 }
 .M3MA_Roads_Zones-33 {
   position: absolute;
   z-index: 9999;
-  top: 61%;
-  left: 6%;
+  top: 60.6%;
+  left: 6.6%;
 }
+
+/* / / end of Roads / / */
 
 /* / end of Roads / */
 
@@ -1527,7 +1531,6 @@ mat-checkbox ::ng-deep .mat-checkbox-inner-container {
 
 /* //start MU91 section */
 
-
 .MU91-zoneMU91_0A-1{
   position: absolute;
   z-index: 9999;
@@ -1575,16 +1578,178 @@ mat-checkbox ::ng-deep .mat-checkbox-inner-container {
   position: absolute;
   z-index: 9999;
   top: 35%;
-  right: 12%;
+  right: 24%;
 }
 .MU91-zoneMU91_0H-2{
   position: absolute;
   z-index: 9999;
+  top: 37%;
+  right: 18%;
+}
+.MU91-zoneMU91_0H-3{
+  position: absolute;
+  z-index: 9999;
   top: 35%;
+  right: 10%;
+}
+.MU91-zoneMU91_0H-4{
+  position: absolute;
+  z-index: 9999;
+  top: 38%;
+  right: 32%;
+}
+
+.MU91-zoneMU91_0H-5{
+  position: absolute;
+  z-index: 9999;
+  top: 42%;
+  right: 27%;
+}
+.MU91-zoneMU91_0H-6{
+  position: absolute;
+  z-index: 9999;
+  top: 42%;
+  right: 21%;
+}
+.MU91-zoneMU91_0H-7{
+  position: absolute;
+  z-index: 9999;
+  top: 42%;
+  right: 13%;
+}
+.MU91-zoneMU91_0H-8{
+  position: absolute;
+  z-index: 9999;
+  top: 42%;
   right: 7%;
 }
 
-
+.MU91-zoneMU91_0I-1{
+  position: absolute;
+  z-index: 9999;
+  top: 57%;
+  right: 32%;
+}
+.MU91-zoneMU91_0J-1{
+  position: absolute;
+  z-index: 9999;
+  top: 57%;
+  right: 20%;
+}
+.MU91-zoneMU91_0K-1{
+  position: absolute;
+  z-index: 9999;
+  top: 57%;
+  right: 9%;
+}
+.MU91-zoneMU91_0L-1{
+  position: absolute;
+  z-index: 9999;
+  top: 63%;
+  right: 32%;
+}
+.MU91-zoneMU91_0M-1{
+  position: absolute;
+  z-index: 9999;
+  bottom: 21%;
+  right: 28%;
+}
+.MU91-zoneMU91_0N-1{
+  position: absolute;
+  z-index: 9999;
+  bottom: 33%;
+  right: 15%;
+}
+.MU91-zoneMU91_0N-2{
+  position: absolute;
+  z-index: 9999;
+  bottom: 33%;
+  right: 9%;
+}
+.MU91-zoneMU91_0N-3{
+  position: absolute;
+  z-index: 9999;
+  bottom: 29%;
+  right: 9%;
+}
+.MU91-zoneMU91_0N-4{
+  position: absolute;
+  z-index: 9999;
+  bottom: 25%;
+  right: 9%;
+}
+.MU91-zoneMU91_0N-5{
+  position: absolute;
+  z-index: 9999;
+  bottom: 20%;
+  right: 16%;
+}
+.MU91-zoneMU91_0N-6{
+  position: absolute;
+  z-index: 9999;
+  bottom: 20%;
+  right: 9%;
+}
+.MU91-zoneMU91_0N-7{
+  position: absolute;
+  z-index: 9999;
+  bottom: 15%;
+  right: 14%;
+}
+.MU91-zoneMU91_0N-6{
+  position: absolute;
+  z-index: 9999;
+  bottom: 20%;
+  right: 9%;
+}
+.MU91-zoneMU91_0N-7{
+  position: absolute;
+  z-index: 9999;
+  bottom: 15%;
+  right: 14%;
+}
+.MU91-zoneMU91_0N-8{
+  position: absolute;
+  z-index: 9999;
+  bottom: 16%;
+  right: 9%;
+}
+.MU91-zoneMU91_0N-9{
+  position: absolute;
+  z-index: 9999;
+  bottom: 12%;
+  right: 13%;
+}
+.MU91-zoneMU91_0O-1{
+  position: absolute;
+  z-index: 9999;
+  bottom: 9%;
+  left: 38%;
+}
+.MU91-zoneMU91_0P-1{
+  position: absolute;
+  z-index: 9999;
+  bottom: 9%;
+  right: 33%;
+}
+.MU91-zoneMU91_0Q-1{
+  position: absolute;
+  z-index: 9999;
+  bottom: 8%;
+  right: 20%;
+}
+.MU91-zoneMU91_0R-1{
+  position: absolute;
+  z-index: 9999;
+  top: 31%;
+  left: 15%;
+}
+.MU91-zoneMU91_0S-1{
+  position: absolute;
+  z-index: 9999;
+  bottom: 26%;
+  left: 15%;
+}
 /* //start MU91 section */
 
 .MU91-zoneMU91_1A-1{
@@ -1757,3 +1922,69 @@ mat-checkbox ::ng-deep .mat-checkbox-inner-container {
 }
 
 /* ends mu91 */
+
+/* start MA section */
+
+.MA-zone40_3B-1{
+  position: absolute;
+  z-index: 9999;
+  top: 53%;
+  left: 35%;
+}
+.MA-zone40_3B-2{
+  position: absolute;
+  z-index: 9999;
+  top: 60%;
+  left: 50%;
+}
+.MA-zone40_MA40_3A-1{
+  position: absolute;
+  z-index: 9999;
+  top: 58%;
+  left: 23%;
+}
+.MA-zone40_MA40_3A-2{
+  position: absolute;
+  z-index: 9999;
+  bottom: 31%;
+  left: 26%;
+}
+.MA-zone40_MA40_3A-3{
+  position: absolute;
+  z-index: 9999;
+  bottom: 24%;
+  left: 23%;
+}
+
+.MA-zone40_RA_1{
+  position: absolute;
+  z-index: 9999;
+  top: 20%;
+  left: 50%;
+}
+.MA-zone40_RB_1{
+  position: absolute;
+  z-index: 9999;
+  top: 21%;
+  left: 16%;
+}
+.MA-zone40_11R_1{
+  position: absolute;
+  z-index: 9999;
+  bottom: 32%;
+  left: 18%;
+}
+.MA-zone40_10R_1{
+  position: absolute;
+  z-index: 9999;
+  bottom: 36%;
+  left: 34%;
+}
+.MA-zone40_70R_1{
+  position: absolute;
+  z-index: 9999;
+  bottom: 36%;
+  right: 30%;
+}
+
+/* Ends MA Section */

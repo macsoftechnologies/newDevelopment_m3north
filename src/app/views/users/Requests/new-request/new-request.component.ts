@@ -1887,8 +1887,28 @@ export class NewRequestComponent implements OnInit {
           this.planType = "Ground Floor";
           this.pdfSrc = "assets/images/plans/MA/GroundFloor/GroundFloor.pdf";
           this.blocks = [
-            { name: "ZONE 1", pdfSrc: "assets/images/plans/EC/EC-JCP1.pdf", className: 'ec-zone-1', planType: 'Ground Floor' },
-            { name: "ZONE 2", pdfSrc: "assets/images/plans/EC/EC-JCP1.pdf", className: 'ec-zone-2', planType: 'Ground Floor' },
+            { name: "10.GF.Backage", pdfSrc: "assets/images/plans/MA/GroundFloor/Zones10/10.GF.Backage.pdf", className: 'GF_Backage', planType: 'Ground Floor' },
+            { name: "10.GF.Corridor.N", pdfSrc: "assets/images/plans/MA/GroundFloor/Zones10/10.GF.Corridor.N.pdf", className: 'GF_Corridor_N', planType: 'Ground Floor' },
+            { name: "10.GF.Corridor.S", pdfSrc: "assets/images/plans/MA/GroundFloor/Zones10/10.GF.Corridor.S.pdf", className: 'GF_Corridor_S', planType: 'Ground Floor' },
+            { name: "10.GF.Frontstage.E", pdfSrc: "assets/images/plans/MA/GroundFloor/Zones10/10.GF.Frontstage.E.pdf", className: 'GF_Frontstage_E', planType: 'Ground Floor' },
+            { name: "10.GF.Frontstage.W", pdfSrc: "assets/images/plans/MA/GroundFloor/Zones10/10.GF.Frontstage.W.pdf", className: 'GF_Frontstage_W', planType: 'Ground Floor' },
+            { name: "11.0", pdfSrc: "assets/images/plans/MA/GroundFloor/Zones11/11.0.pdf", className: 'eleven_Zone', planType: 'Ground Floor' },
+            { name: "70.0A", pdfSrc: "assets/images/plans/MA/GroundFloor/Zones70/70.0A.pdf", className: 'seventyA_Zone', planType: 'Ground Floor' },
+            { name: "70.0B", pdfSrc: "assets/images/plans/MA/GroundFloor/Zones70/70.0B.pdf", className: 'seventyB_Zone', planType: 'Ground Floor' },
+            { name: "40.0A", pdfSrc: "assets/images/plans/MA/GroundFloor/Zones40/40.0A.pdf", className: 'fortyA_Zone', planType: 'Ground Floor' },
+            { name: "40.0C", pdfSrc: "assets/images/plans/MA/GroundFloor/Zones40/40.0C.pdf", className: 'fortyC_Zone', planType: 'Ground Floor' },
+            { name: "40.0D", pdfSrc: "assets/images/plans/MA/GroundFloor/Zones40/40.0D.pdf", className: 'fortyD_Zone', planType: 'Ground Floor' },
+            { name: "40.0E", pdfSrc: "assets/images/plans/MA/GroundFloor/Zones40/40.0E.pdf", className: 'fortyE_Zone', planType: 'Ground Floor' },
+            { name: "40.0F", pdfSrc: "assets/images/plans/MA/GroundFloor/Zones40/40.0F.pdf", className: 'fortyF_Zone', planType: 'Ground Floor' },
+            { name: "40.0G", pdfSrc: "assets/images/plans/MA/GroundFloor/Zones40/40.0G.pdf", className: 'fortyG_Zone', planType: 'Ground Floor' },
+            { name: "40.0J", pdfSrc: "assets/images/plans/MA/GroundFloor/Zones40/40.0J.pdf", className: 'fortyJ_Zone', planType: 'Ground Floor' },
+            { name: "40.0K", pdfSrc: "assets/images/plans/MA/GroundFloor/Zones40/40.0K.pdf", className: 'fortyK_Zone', planType: 'Ground Floor' },
+            { name: "40.0L", pdfSrc: "assets/images/plans/MA/GroundFloor/Zones40/40.0L.pdf", className: 'fortyL_Zone', planType: 'Ground Floor' },
+            { name: "40.0M", pdfSrc: "assets/images/plans/MA/GroundFloor/Zones40/40.0M.pdf", className: 'fortyM_Zone', planType: 'Ground Floor' },
+            { name: "40.0Q", pdfSrc: "assets/images/plans/MA/GroundFloor/Zones40/40.0Q.pdf", className: 'fortyQ_Zone', planType: 'Ground Floor' },
+            { name: "40.0R", pdfSrc: "assets/images/plans/MA/GroundFloor/Zones40/40.0R.pdf", className: 'fortyR_Zone', planType: 'Ground Floor' },
+            { name: "40.0S", pdfSrc: "assets/images/plans/MA/GroundFloor/Zones40/40.0S.pdf", className: 'fortyS_Zone', planType: 'Ground Floor' },
+            { name: "40.0U", pdfSrc: "assets/images/plans/MA/GroundFloor/Zones40/40.0U.pdf", className: 'fortyU_Zone', planType: 'Ground Floor' },
           ]
           break;
           case "First Floor":

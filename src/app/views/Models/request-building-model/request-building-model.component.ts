@@ -671,6 +671,1014 @@ export class RequestBuildingModelComponent implements OnInit {
 
     // start MA section
 
+    // START MA GROUND FLOOR
+
+    else if (this.data.floor.name == '10.GF.Backage' && this.data.floor.planType == 'Ground Floor') {
+      this.floorBlock = [
+        {
+          value: 'S.106',
+          className: "MA-zone10_GF_Backage-1",
+          isSelected: false
+        },
+      ]
+      if (selectedBlockData) {
+        if ((selectedBlockData.floorName == this.data.floor.name) && (selectedBlockData.planType == this.data.floor.planType)) {
+          console.log(selectedBlockData, "2")
+          this.floorBlock = selectedBlockData.selectedBlock;
+        }
+      }
+    }
+
+    else if (this.data.floor.name == '10.GF.Corridor.N' && this.data.floor.planType == 'Ground Floor') {
+      this.floorBlock = [
+        {
+          value: 'S.100',
+          className: "MA-zone10_GF_Corridor_N-1",
+          isSelected: false
+        },
+      ]
+      if (selectedBlockData) {
+        if ((selectedBlockData.floorName == this.data.floor.name) && (selectedBlockData.planType == this.data.floor.planType)) {
+          console.log(selectedBlockData, "2")
+          this.floorBlock = selectedBlockData.selectedBlock;
+        }
+      }
+    }
+    else if (this.data.floor.name == '10.GF.Corridor.S' && this.data.floor.planType == 'Ground Floor') {
+      this.floorBlock = [
+        {
+          value: 'S.170',
+          className: "MA-zone10_GF_Corridor_S-1",
+          isSelected: false
+        },
+
+      ]
+      if (selectedBlockData) {
+        if ((selectedBlockData.floorName == this.data.floor.name) && (selectedBlockData.planType == this.data.floor.planType)) {
+          console.log(selectedBlockData, "2")
+          this.floorBlock = selectedBlockData.selectedBlock;
+        }
+      }
+    }
+    else if (this.data.floor.name == '10.GF.Frontstage.E' && this.data.floor.planType == 'Ground Floor') {
+      this.floorBlock = [
+        {
+          value: 'S.103',
+          className: "MA-zone10_GF_Frontstage_E-1",
+          isSelected: false
+        },
+        {
+          value: 'S.101',
+          className: "MA-zone10_GF_Frontstage_E-2",
+          isSelected: false
+        },
+
+      ]
+      if (selectedBlockData) {
+        if ((selectedBlockData.floorName == this.data.floor.name) && (selectedBlockData.planType == this.data.floor.planType)) {
+          console.log(selectedBlockData, "2")
+          this.floorBlock = selectedBlockData.selectedBlock;
+        }
+      }
+    }
+    else if (this.data.floor.name == '10.GF.Frontstage.W' && this.data.floor.planType == 'Ground Floor') {
+      this.floorBlock = [
+        {
+          value: 'S.102',
+          className: "MA-zone10_GF_Frontstage_W-1",
+          isSelected: false
+        },
+        {
+          value: 'S.104',
+          className: "MA-zone10_GF_Frontstage_W-2",
+          isSelected: false
+        },
+
+      ]
+      if (selectedBlockData) {
+        if ((selectedBlockData.floorName == this.data.floor.name) && (selectedBlockData.planType == this.data.floor.planType)) {
+          console.log(selectedBlockData, "2")
+          this.floorBlock = selectedBlockData.selectedBlock;
+        }
+      }
+    }
+    else if (this.data.floor.name == '11.0' && this.data.floor.planType == 'Ground Floor') {
+      this.floorBlock = [
+        {
+          value: 'S.132',
+          className: "MA-zone11_0-1",
+          isSelected: false
+        },
+        {
+          value: 'S.136',
+          className: "MA-zone11_0-2",
+          isSelected: false
+        },
+        {
+          value: 'S.144',
+          className: "MA-zone11_0-3",
+          isSelected: false
+        },
+        {
+          value: 'S.146',
+          className: "MA-zone11_0-4",
+          isSelected: false
+        },
+        {
+          value: 'S.146.2',
+          className: "MA-zone11_0-5",
+          isSelected: false
+        },
+        {
+          value: 'S.146.1',
+          className: "MA-zone11_0-6",
+          isSelected: false
+        },
+        {
+          value: 'S.148.3',
+          className: "MA-zone11_0-7",
+          isSelected: false
+        },
+        {
+          value: 'S.148.2',
+          className: "MA-zone11_0-8",
+          isSelected: false
+        },
+        {
+          value: 'S.148.1',
+          className: "MA-zone11_0-9",
+          isSelected: false
+        },
+        {
+          value: 'S.150',
+          className: "MA-zone11_0-10",
+          isSelected: false
+        },
+        {
+          value: 'S.148',
+          className: "MA-zone11_0-11",
+          isSelected: false
+        },
+        {
+          value: 'S.152',
+          className: "MA-zone11_0-12",
+          isSelected: false
+        },
+        {
+          value: 'S.148.4',
+          className: "MA-zone11_0-13",
+          isSelected: false
+        },
+        {
+          value: 'S.154',
+          className: "MA-zone11_0-14",
+          isSelected: false
+        },
+
+      ]
+      if (selectedBlockData) {
+        if ((selectedBlockData.floorName == this.data.floor.name) && (selectedBlockData.planType == this.data.floor.planType)) {
+          console.log(selectedBlockData, "2")
+          this.floorBlock = selectedBlockData.selectedBlock;
+        }
+      }
+    }
+    else if (this.data.floor.name == '70.0A' && this.data.floor.planType == 'Ground Floor') {
+      this.floorBlock = [
+        {
+          value: 'TR73',
+          className: "MA-zone70_0A-1",
+          isSelected: false
+        },
+        {
+          value: 'LI73',
+          className: "MA-zone70_0A-2",
+          isSelected: false
+        },
+        {
+          value: 's.738',
+          className: "MA-zone70_0A-3",
+          isSelected: false
+        },
+        {
+          value: 'SK73',
+          className: "MA-zone70_0A-4",
+          isSelected: false
+        },
+        {
+          value: 'S.734',
+          className: "MA-zone70_0A-5",
+          isSelected: false
+        },
+        {
+          value: 'S.732',
+          className: "MA-zone70_0A-6",
+          isSelected: false
+        },
+        {
+          value: 'S.730',
+          className: "MA-zone70_0A-7",
+          isSelected: false
+        },
+        {
+          value: 'S.728',
+          className: "MA-zone70_0A-8",
+          isSelected: false
+        },
+        {
+          value: 'S.726',
+          className: "MA-zone70_0A-9",
+          isSelected: false
+        },
+        {
+          value: 'S.726.1',
+          className: "MA-zone70_0A-10",
+          isSelected: false
+        },
+        {
+          value: 'S.726.2',
+          className: "MA-zone70_0A-11",
+          isSelected: false
+        },
+        {
+          value: 'S.724',
+          className: "MA-zone70_0A-12",
+          isSelected: false
+        },
+        {
+          value: 'S.716',
+          className: "MA-zone70_0A-13",
+          isSelected: false
+        },
+        {
+          value: 'S.722',
+          className: "MA-zone70_0A-14",
+          isSelected: false
+        },
+        {
+          value: 'S.720',
+          className: "MA-zone70_0A-15",
+          isSelected: false
+        },
+        {
+          value: 'S.716.1',
+          className: "MA-zone70_0A-16",
+          isSelected: false
+        },
+        {
+          value: 'S.716.2',
+          className: "MA-zone70_0A-17",
+          isSelected: false
+        },
+
+      ]
+      if (selectedBlockData) {
+        if ((selectedBlockData.floorName == this.data.floor.name) && (selectedBlockData.planType == this.data.floor.planType)) {
+          console.log(selectedBlockData, "2")
+          this.floorBlock = selectedBlockData.selectedBlock;
+        }
+      }
+    }
+    else if (this.data.floor.name == '70.0B' && this.data.floor.planType == 'Ground Floor') {
+      this.floorBlock = [
+        {
+          value: 'TR72',
+          className: "MA-zone70_0B-1",
+          isSelected: false
+        },
+        {
+          value: 'S.723',
+          className: "MA-zone70_0B-2",
+          isSelected: false
+        },
+        {
+          value: 'S.719',
+          className: "MA-zone70_0B-3",
+          isSelected: false
+        },
+        {
+          value: 'S.715',
+          className: "MA-zone70_0B-4",
+          isSelected: false
+        },
+        {
+          value: 'S.717',
+          className: "MA-zone70_0B-5",
+          isSelected: false
+        },
+        {
+          value: 'S.717.1',
+          className: "MA-zone70_0B-6",
+          isSelected: false
+        },
+        {
+          value: 'S.717.2',
+          className: "MA-zone70_0B-7",
+          isSelected: false
+        },
+        {
+          value: 'S.713',
+          className: "MA-zone70_0B-8",
+          isSelected: false
+        },
+        {
+          value: 'S.711',
+          className: "MA-zone70_0B-9",
+          isSelected: false
+        },
+        {
+          value: 'S.709',
+          className: "MA-zone70_0B-10",
+          isSelected: false
+        },
+        {
+          value: 'S.707',
+          className: "MA-zone70_0B-11",
+          isSelected: false
+        },
+        {
+          value: 'S.705',
+          className: "MA-zone70_0B-12",
+          isSelected: false
+        },
+        {
+          value: 'S.703',
+          className: "MA-zone70_0B-13",
+          isSelected: false
+        },
+        {
+          value: 'S.703.1',
+          className: "MA-zone70_0B-14",
+          isSelected: false
+        },
+        {
+          value: 'S.701',
+          className: "MA-zone70_0B-15",
+          isSelected: false
+        },
+        {
+          value: 'LI71',
+          className: "MA-zone70_0B-16",
+          isSelected: false
+        },
+        {
+          value: 'TR71',
+          className: "MA-zone70_0B-17",
+          isSelected: false
+        },
+      ]
+      if (selectedBlockData) {
+        if ((selectedBlockData.floorName == this.data.floor.name) && (selectedBlockData.planType == this.data.floor.planType)) {
+          console.log(selectedBlockData, "2")
+          this.floorBlock = selectedBlockData.selectedBlock;
+        }
+      }
+    }
+    else if (this.data.floor.name == '40.0A' && this.data.floor.planType == 'Ground Floor') {
+      this.floorBlock = [
+        {
+          value: 'S.416',
+          className: "MA-zone40_0A-1",
+          isSelected: false
+        },
+        {
+          value: 'S.412.1',
+          className: "MA-zone40_0A-2",
+          isSelected: false
+        },
+        {
+          value: 'S.418',
+          className: "MA-zone40_0A-3",
+          isSelected: false
+        },
+        {
+          value: 'S.412',
+          className: "MA-zone40_0A-4",
+          isSelected: false
+        },
+        {
+          value: 'S.418.1',
+          className: "MA-zone40_0A-5",
+          isSelected: false
+        },
+        {
+          value: 'S.412.2',
+          className: "MA-zone40_0A-6",
+          isSelected: false
+        },
+        {
+          value: 'S.420',
+          className: "MA-zone40_0A-7",
+          isSelected: false
+        },
+
+      ]
+      if (selectedBlockData) {
+        if ((selectedBlockData.floorName == this.data.floor.name) && (selectedBlockData.planType == this.data.floor.planType)) {
+          console.log(selectedBlockData, "2")
+          this.floorBlock = selectedBlockData.selectedBlock;
+        }
+      }
+    }
+    else if (this.data.floor.name == '40.0C' && this.data.floor.planType == 'Ground Floor') {
+      this.floorBlock = [
+        {
+          value: 'TR41',
+          className: "MA-zone40_0C-1",
+          isSelected: false
+        },
+        {
+          value: 'LI41',
+          className: "MA-zone40_0C-2",
+          isSelected: false
+        },
+        {
+          value: 'S.400',
+          className: "MA-zone40_0C-3",
+          isSelected: false
+        },
+        {
+          value: 'S.428',
+          className: "MA-zone40_0C-4",
+          isSelected: false
+        },
+        {
+          value: 'S.514',
+          className: "MA-zone40_0C-5",
+          isSelected: false
+        },
+
+      ]
+      if (selectedBlockData) {
+        if ((selectedBlockData.floorName == this.data.floor.name) && (selectedBlockData.planType == this.data.floor.planType)) {
+          console.log(selectedBlockData, "2")
+          this.floorBlock = selectedBlockData.selectedBlock;
+        }
+      }
+    }
+    else if (this.data.floor.name == '40.0D' && this.data.floor.planType == 'Ground Floor') {
+      this.floorBlock = [
+        {
+          value: 'S.424',
+          className: "MA-zone40_0D-1",
+          isSelected: false
+        },
+        {
+          value: 'S.426',
+          className: "MA-zone40_0D-2",
+          isSelected: false
+        },
+        {
+          value: 'S.426.3',
+          className: "MA-zone40_0D-3",
+          isSelected: false
+        },
+        {
+          value: 'S.426.2',
+          className: "MA-zone40_0D-4",
+          isSelected: false
+        },
+        {
+          value: 'S.426.1',
+          className: "MA-zone40_0D-5",
+          isSelected: false
+        },
+
+
+      ]
+      if (selectedBlockData) {
+        if ((selectedBlockData.floorName == this.data.floor.name) && (selectedBlockData.planType == this.data.floor.planType)) {
+          console.log(selectedBlockData, "2")
+          this.floorBlock = selectedBlockData.selectedBlock;
+        }
+      }
+    }
+    else if (this.data.floor.name == '40.0E' && this.data.floor.planType == 'Ground Floor') {
+      this.floorBlock = [
+        {
+          value: 'S.432',
+          className: "MA-zone40_0E-1",
+          isSelected: false
+        },
+        {
+          value: 'S.434',
+          className: "MA-zone40_0E-2",
+          isSelected: false
+        },
+
+      ]
+      if (selectedBlockData) {
+        if ((selectedBlockData.floorName == this.data.floor.name) && (selectedBlockData.planType == this.data.floor.planType)) {
+          console.log(selectedBlockData, "2")
+          this.floorBlock = selectedBlockData.selectedBlock;
+        }
+      }
+    }
+    else if (this.data.floor.name == '40.0F' && this.data.floor.planType == 'Ground Floor') {
+      this.floorBlock = [
+        {
+          value: 'S.430.1',
+          className: "MA-zone40_0F-1",
+          isSelected: false
+          },
+          {
+          value: 'S.430.2',
+          className: "MA-zone40_0F-2",
+          isSelected: false
+          },
+          {
+          value: 'S.436',
+          className: "MA-zone40_0F-3",
+          isSelected: false
+          },
+          {
+          value: 'S.430',
+          className: "MA-zone40_0F-4",
+          isSelected: false
+          },
+          {
+          value: 'S.430.4',
+          className: "MA-zone40_0F-5",
+          isSelected: false
+          },
+          {
+          value: 'S.430.3',
+          className: "MA-zone40_0F-6",
+          isSelected: false
+          },
+          
+      ]
+      if (selectedBlockData) {
+        if ((selectedBlockData.floorName == this.data.floor.name) && (selectedBlockData.planType == this.data.floor.planType)) {
+          console.log(selectedBlockData, "2")
+          this.floorBlock = selectedBlockData.selectedBlock;
+        }
+      }
+    }
+    else if (this.data.floor.name == '40.0G' && this.data.floor.planType == 'Ground Floor') {
+      this.floorBlock = [
+        {
+          value: 'S.446',
+          className: "MA-zone40_0G-1",
+          isSelected: false
+          },
+          {
+          value: 'S.446',
+          className: "MA-zone40_0G-2",
+          isSelected: false
+          },
+          {
+          value: 'TR43',
+          className: "MA-zone40_0G-3",
+          isSelected: false
+          },
+          {
+          value: 'S.448',
+          className: "MA-zone40_0G-4",
+          isSelected: false
+          },
+          
+          
+      ]
+      if (selectedBlockData) {
+        if ((selectedBlockData.floorName == this.data.floor.name) && (selectedBlockData.planType == this.data.floor.planType)) {
+          console.log(selectedBlockData, "2")
+          this.floorBlock = selectedBlockData.selectedBlock;
+        }
+      }
+    }
+    else if (this.data.floor.name == '40.0J' && this.data.floor.planType == 'Ground Floor') {
+      this.floorBlock = [
+        {
+          value: 'S.450',
+          className: "MA-zone40_0J-1",
+          isSelected: false
+          },
+          {
+          value: 'S.450.1',
+          className: "MA-zone40_0J-2",
+          isSelected: false
+          },
+          {
+          value: 'S.450.2',
+          className: "MA-zone40_0J-3",
+          isSelected: false
+          },
+          {
+          value: 'S.450.3',
+          className: "MA-zone40_0J-4",
+          isSelected: false
+          },
+          {
+          value: 'S.450.4',
+          className: "MA-zone40_0J-5",
+          isSelected: false
+          },
+          {
+          value: 'S.502',
+          className: "MA-zone40_0J-6",
+          isSelected: false
+          },
+          {
+          value: 'S.502.1',
+          className: "MA-zone40_0J-7",
+          isSelected: false
+          },
+          {
+          value: 'S.506',
+          className: "MA-zone40_0J-8",
+          isSelected: false
+          },
+          {
+          value: 'S.506.1',
+          className: "MA-zone40_0J-9",
+          isSelected: false
+          },
+          {
+          value: 'S.506.2',
+          className: "MA-zone40_0J-10",
+          isSelected: false
+          },
+          {
+          value: 'S.446.1',
+          className: "MA-zone40_0J-11",
+          isSelected: false
+          },
+          {
+          value: 'S.504',
+          className: "MA-zone40_0J-12",
+          isSelected: false
+          },
+          {
+          value: 'S.508',
+          className: "MA-zone40_0J-13",
+          isSelected: false
+          },
+          {
+          value: 'S.510',
+          className: "MA-zone40_0J-14",
+          isSelected: false
+          },
+          
+          
+      ]
+      if (selectedBlockData) {
+        if ((selectedBlockData.floorName == this.data.floor.name) && (selectedBlockData.planType == this.data.floor.planType)) {
+          console.log(selectedBlockData, "2")
+          this.floorBlock = selectedBlockData.selectedBlock;
+        }
+      }
+    }
+    else if (this.data.floor.name == '40.0K' && this.data.floor.planType == 'Ground Floor') {
+      this.floorBlock = [
+        {
+          value: 'S.440',
+          className: "MA-zone40_0K-1",
+          isSelected: false
+          },
+          {
+          value: 'S.444',
+          className: "MA-zone40_0K-2",
+          isSelected: false
+          },
+          {
+          value: 'S.438',
+          className: "MA-zone40_0K-3",
+          isSelected: false
+          },
+          {
+          value: 'S.442',
+          className: "MA-zone40_0K-4",
+          isSelected: false
+          },
+          {
+          value: 'S.442.1',
+          className: "MA-zone40_0K-5",
+          isSelected: false
+          },
+          {
+          value: 'S.444.1',
+          className: "MA-zone40_0K-6",
+          isSelected: false
+          },
+          {
+          value: 'S.438.1',
+          className: "MA-zone40_0K-7",
+          isSelected: false
+          },
+          {
+          value: 'S.438.3',
+          className: "MA-zone40_0K-8",
+          isSelected: false
+          },
+          {
+          value: 'S.438.2',
+          className: "MA-zone40_0K-9",
+          isSelected: false
+          },
+          {
+          value: 'S.442.2',
+          className: "MA-zone40_0K-10",
+          isSelected: false
+          },
+          {
+          value: 'S.442.3',
+          className: "MA-zone40_0K-11",
+          isSelected: false
+          },
+          {
+          value: 'S.438.4',
+          className: "MA-zone40_0K-13",
+          isSelected: false
+          },
+          {
+          value: 'S.444.2',
+          className: "MA-zone40_0K-14",
+          isSelected: false
+          },
+          
+          
+      ]
+      if (selectedBlockData) {
+        if ((selectedBlockData.floorName == this.data.floor.name) && (selectedBlockData.planType == this.data.floor.planType)) {
+          console.log(selectedBlockData, "2")
+          this.floorBlock = selectedBlockData.selectedBlock;
+        }
+      }
+    }
+    else if (this.data.floor.name == '40.0L' && this.data.floor.planType == 'Ground Floor') {
+      this.floorBlock = [
+        {
+          value: 'S.420',
+          className: "MA-zone40_0L-1",
+          isSelected: false
+          },
+          {
+          value: 'S.420.1',
+          className: "MA-zone40_0L-2",
+          isSelected: false
+          },
+          {
+          value: 'S.404',
+          className: "MA-zone40_0L-3",
+          isSelected: false
+          },
+          {
+          value: 'S.410',
+          className: "MA-zone40_0L-4",
+          isSelected: false
+          },
+          {
+          value: 'S.410.1',
+          className: "MA-zone40_0L-5",
+          isSelected: false
+          },
+          {
+          value: 'S.406',
+          className: "MA-zone40_0L-6",
+          isSelected: false
+          },
+          {
+          value: 'S.406.1',
+          className: "MA-zone40_0L-7",
+          isSelected: false
+          },
+          {
+          value: 'S.406.2',
+          className: "MA-zone40_0L-8",
+          isSelected: false
+          },
+          
+      ]
+      if (selectedBlockData) {
+        if ((selectedBlockData.floorName == this.data.floor.name) && (selectedBlockData.planType == this.data.floor.planType)) {
+          console.log(selectedBlockData, "2")
+          this.floorBlock = selectedBlockData.selectedBlock;
+        }
+      }
+    }
+    else if (this.data.floor.name == '40.0M' && this.data.floor.planType == 'Ground Floor') {
+      this.floorBlock = [
+        {
+          value: 'S.405',
+          className: "MA-zone40_0M-1",
+          isSelected: false
+          },
+          {
+          value: 'S.407',
+          className: "MA-zone40_0M-2",
+          isSelected: false
+          },
+          {
+          value: 'S.409',
+          className: "MA-zone40_0M-3",
+          isSelected: false
+          },
+          {
+          value: 'S.403',
+          className: "MA-zone40_0M-4",
+          isSelected: false
+          },
+          {
+          value: 'S.403.2',
+          className: "MA-zone40_0M-5",
+          isSelected: false
+          },
+          {
+          value: 'S.409.1',
+          className: "MA-zone40_0M-6",
+          isSelected: false
+          },
+          {
+          value: 'S.409.1.1',
+          className: "MA-zone40_0M-7",
+          isSelected: false
+          },
+          {
+          value: 'S.409.2',
+          className: "MA-zone40_0M-8",
+          isSelected: false
+          },
+          {
+          value: 'S.409.3',
+          className: "MA-zone40_0M-9",
+          isSelected: false
+          },
+          {
+          value: 'S.409.4',
+          className: "MA-zone40_0M-10",
+          isSelected: false
+          },
+          {
+          value: 'S.401',
+          className: "MA-zone40_0M-11",
+          isSelected: false
+          },
+          {
+          value: 'S.401.1',
+          className: "MA-zone40_0M-12",
+          isSelected: false
+          },
+          {
+          value: 'S.403.1',
+          className: "MA-zone40_0M-13",
+          isSelected: false
+          },
+          {
+          value: 'LI44',
+          className: "MA-zone40_0M-14",
+          isSelected: false
+          },
+          {
+          value: 'S.400.1',
+          className: "MA-zone40_0M-15",
+          isSelected: false
+          },
+          {
+          value: 'S.411',
+          className: "MA-zone40_0M-16",
+          isSelected: false
+          },
+          {
+          value: 'S.411.1',
+          className: "MA-zone40_0M-17",
+          isSelected: false
+          },
+          {
+          value: 'S.411.2',
+          className: "MA-zone40_0M-18",
+          isSelected: false
+          },
+          {
+          value: 'S.411.3',
+          className: "MA-zone40_0M-19",
+          isSelected: false
+          },
+          {
+          value: 'S.413',
+          className: "MA-zone40_0M-20",
+          isSelected: false
+          },
+          
+      ]
+      if (selectedBlockData) {
+        if ((selectedBlockData.floorName == this.data.floor.name) && (selectedBlockData.planType == this.data.floor.planType)) {
+          console.log(selectedBlockData, "2")
+          this.floorBlock = selectedBlockData.selectedBlock;
+        }
+      }
+    }
+    else if (this.data.floor.name == '40.0Q' && this.data.floor.planType == 'Ground Floor') {
+      this.floorBlock = [
+        {
+          value: 'S.419',
+          className: "MA-zone40_0Q-1",
+          isSelected: false
+          },
+          
+      ]
+      if (selectedBlockData) {
+        if ((selectedBlockData.floorName == this.data.floor.name) && (selectedBlockData.planType == this.data.floor.planType)) {
+          console.log(selectedBlockData, "2")
+          this.floorBlock = selectedBlockData.selectedBlock;
+        }
+      }
+    }
+    else if (this.data.floor.name == '40.0R' && this.data.floor.planType == 'Ground Floor') {
+      this.floorBlock = [
+        {
+          value: 'S.425',
+          className: "MA-zone40_0R-1",
+          isSelected: false
+          },
+          {
+          value: 'S.429.1',
+          className: "MA-zone40_0R-2",
+          isSelected: false
+          },
+          {
+          value: 'S.421',
+          className: "MA-zone40_0R-3",
+          isSelected: false
+          },
+          {
+          value: 'S.421.1',
+          className: "MA-zone40_0R-4",
+          isSelected: false
+          },
+          {
+          value: 'S.423',
+          className: "MA-zone40_0R-5",
+          isSelected: false
+          },
+          {
+          value: 'S.423.1',
+          className: "MA-zone40_0R-6",
+          isSelected: false
+          },
+          {
+          value: 'S.427',
+          className: "MA-zone40_0R-7",
+          isSelected: false
+          },
+          {
+          value: 'S.427.1',
+          className: "MA-zone40_0R-8",
+          isSelected: false
+          },
+          {
+          value: 'S.427.2',
+          className: "MA-zone40_0R-9",
+          isSelected: false
+          },
+          {
+          value: 'S.427.3',
+          className: "MA-zone40_0R-10",
+          isSelected: false
+          },
+          
+      ]
+      if (selectedBlockData) {
+        if ((selectedBlockData.floorName == this.data.floor.name) && (selectedBlockData.planType == this.data.floor.planType)) {
+          console.log(selectedBlockData, "2")
+          this.floorBlock = selectedBlockData.selectedBlock;
+        }
+      }
+    }
+    else if (this.data.floor.name == '40.0S' && this.data.floor.planType == 'Ground Floor') {
+      this.floorBlock = [
+        {
+          value: 'S.429',
+          className: "MA-zone40_0S-1",
+          isSelected: false
+          },
+      ]
+      if (selectedBlockData) {
+        if ((selectedBlockData.floorName == this.data.floor.name) && (selectedBlockData.planType == this.data.floor.planType)) {
+          console.log(selectedBlockData, "2")
+          this.floorBlock = selectedBlockData.selectedBlock;
+        }
+      }
+    }
+    else if (this.data.floor.name == '40.0U' && this.data.floor.planType == 'Ground Floor') {
+      this.floorBlock = [
+        {
+          value: 'S.441',
+          className: "MA-zone40_0U-1",
+          isSelected: false
+          },
+          
+      ]
+      if (selectedBlockData) {
+        if ((selectedBlockData.floorName == this.data.floor.name) && (selectedBlockData.planType == this.data.floor.planType)) {
+          console.log(selectedBlockData, "2")
+          this.floorBlock = selectedBlockData.selectedBlock;
+        }
+      }
+    }
+
+    // ENDS MA FROUND FLOOR
+
     else if (this.data.floor.name == 'Third Floor' && this.data.floor.planType == 'Third Floor') {
       this.floorBlock = [
         {
@@ -685,17 +1693,17 @@ export class RequestBuildingModelComponent implements OnInit {
         },
         {
           value: 'TR41',
-          className: "MA-zone40_MA40.3A-1",
+          className: "MA-zone40_MA40_3A-1",
           isSelected: false
         },
         {
           value: '3.416',
-          className: "MA-zone40_MA40.3A-2",
+          className: "MA-zone40_MA40_3A-2",
           isSelected: false
         },
         {
           value: '3.414',
-          className: "MA-zone40_MA40.3A-3",
+          className: "MA-zone40_MA40_3A-3",
           isSelected: false
         },
       ]
@@ -1625,7 +2633,7 @@ export class RequestBuildingModelComponent implements OnInit {
         },
         {
           value: 'MU91.0G',
-          className: "MU91-zoneMU91.0G-1",
+          className: "MU91-zoneMU91_0G-1",
           isSelected: false
         },
         {
@@ -1638,136 +2646,131 @@ export class RequestBuildingModelComponent implements OnInit {
           className: "MU91-zoneMU91_0H-2",
           isSelected: false
         },
-        // {
-        //   value: 'S.02',
-        //   className: "MU91-zoneMU91_0H-3",
-        //   isSelected: false
-        // },
-        // {
-        //   value: 'S.11',
-        //   className: "MU91-zoneMU91_0H-4",
-        //   isSelected: false
-        // },
-        // {
-        //   value: 'S.09',
-        //   className: "MU91-zoneMU91_0H-5",
-        //   isSelected: false
-        // },
-        // {
-        //   value: 'S.07',
-        //   className: "MU91-zoneMU91_0H-6",
-        //   isSelected: false
-        // },
-        // {
-        //   value: 'S.03',
-        //   className: "MU91-zoneMU91_0H-7",
-        //   isSelected: false
-        // },
-        // {
-        //   value: 'S.01',
-        //   className: "MU91-zoneMU91_0H-8",
-        //   isSelected: false
-        // },
-        // {
-        //   value: 'MU91.0I',
-        //   className: "MU91-zoneMU91_0I-1",
-        //   isSelected: false
-        // },
-        // {
-        //   value: 'MU91.0J',
-        //   className: "MU91-zoneMU91_0J-1",
-        //   isSelected: false
-        // },
-        // {
-        //   value: 'S.13',
-        //   className: "MU91-zoneMU91_0K-1",
-        //   isSelected: false
-        // },
-        // {
-        //   value: 'MU91.0L',
-        //   className: "MU91-zoneMU91_0L-1",
-        //   isSelected: false
-        // },
-        // {
-        //   value: 'MU91.0L',
-        //   className: "MU91-zoneMU91_0L-1",
-        //   isSelected: false
-        // },
-        // {
-        //   value: 'MU91.0M',
-        //   className: "MU91-zoneMU91_0M-1",
-        //   isSelected: false
-        // },
-        // {
-        //   value: 'S.10',
-        //   className: "MU91-zoneMU91_0N-1",
-        //   isSelected: false
-        // },
-        // {
-        //   value: 'S.11',
-        //   className: "MU91-zoneMU91_0N-2",
-        //   isSelected: false
-        // },
-        // {
-        //   value: 'T.R1',
-        //   className: "MU91-zoneMU91_0N-3",
-        //   isSelected: false
-        // },
-        // {
-        //   value: 'S.07',
-        //   className: "MU91-zoneMU91_0N-4",
-        //   isSelected: false
-        // },
-        // {
-        //   value: 'S.02',
-        //   className: "MU91-zoneMU91_0N-5",
-        //   isSelected: false
-        // },
-        // {
-        //   value: 'S.05',
-        //   className: "MU91-zoneMU91_0N-6",
-        //   isSelected: false
-        // },
-        // {
-        //   value: 'S.04',
-        //   className: "MU91-zoneMU91_0N-7",
-        //   isSelected: false
-        // },
-        // {
-        //   value: 'S.03',
-        //   className: "MU91-zoneMU91_0N-8",
-        //   isSelected: false
-        // },
-        // {
-        //   value: 'S.01',
-        //   className: "MU91-zoneMU91_0N-9",
-        //   isSelected: false
-        // },
-        // {
-        //   value: 'MU91.0O',
-        //   className: "MU91-zoneMU91_0O-1",
-        //   isSelected: false
-        // },
-        // {
-        //   value: 'MU91.0P',
-        //   className: "MU91-zoneMU91_0P-1",
-        //   isSelected: false
-        // },
-        // {
-        //   value: 'MU91.0Q',
-        //   className: "MU91-zoneMU91_0Q-1",
-        //   isSelected: false
-        // },
-        // {
-        //   value: 'MU91.0R',
-        //   className: "MU91-zoneMU91_0R-1",
-        //   isSelected: false
-        // },
-        // {
-        //   value: 'MU91.0S',
-        //   className: "MU91-zoneMU91_0S-1",
-        //   isSelected: false
-        // }
+        {
+          value: 'S.02',
+          className: "MU91-zoneMU91_0H-3",
+          isSelected: false
+        },
+        {
+          value: 'S.11',
+          className: "MU91-zoneMU91_0H-4",
+          isSelected: false
+        },
+        {
+          value: 'S.09',
+          className: "MU91-zoneMU91_0H-5",
+          isSelected: false
+        },
+        {
+          value: 'S.07',
+          className: "MU91-zoneMU91_0H-6",
+          isSelected: false
+        },
+        {
+          value: 'S.03',
+          className: "MU91-zoneMU91_0H-7",
+          isSelected: false
+        },
+        {
+          value: 'S.01',
+          className: "MU91-zoneMU91_0H-8",
+          isSelected: false
+        },
+        {
+          value: 'MU91.0I',
+          className: "MU91-zoneMU91_0I-1",
+          isSelected: false
+        },
+        {
+          value: 'MU91.0J',
+          className: "MU91-zoneMU91_0J-1",
+          isSelected: false
+        },
+        {
+          value: 'S.13',
+          className: "MU91-zoneMU91_0K-1",
+          isSelected: false
+        },
+        {
+          value: 'MU91.0L',
+          className: "MU91-zoneMU91_0L-1",
+          isSelected: false
+        },
+        {
+          value: 'MU91.0M',
+          className: "MU91-zoneMU91_0M-1",
+          isSelected: false
+        },
+        {
+          value: 'S.10',
+          className: "MU91-zoneMU91_0N-1",
+          isSelected: false
+        },
+        {
+          value: 'S.11',
+          className: "MU91-zoneMU91_0N-2",
+          isSelected: false
+        },
+        {
+          value: 'T.R1',
+          className: "MU91-zoneMU91_0N-3",
+          isSelected: false
+        },
+        {
+          value: 'S.07',
+          className: "MU91-zoneMU91_0N-4",
+          isSelected: false
+        },
+        {
+          value: 'S.02',
+          className: "MU91-zoneMU91_0N-5",
+          isSelected: false
+        },
+        {
+          value: 'S.05',
+          className: "MU91-zoneMU91_0N-6",
+          isSelected: false
+        },
+        {
+          value: 'S.04',
+          className: "MU91-zoneMU91_0N-7",
+          isSelected: false
+        },
+        {
+          value: 'S.03',
+          className: "MU91-zoneMU91_0N-8",
+          isSelected: false
+        },
+        {
+          value: 'S.01',
+          className: "MU91-zoneMU91_0N-9",
+          isSelected: false
+        },
+        {
+          value: 'MU91.0O',
+          className: "MU91-zoneMU91_0O-1",
+          isSelected: false
+        },
+        {
+          value: 'MU91.0P',
+          className: "MU91-zoneMU91_0P-1",
+          isSelected: false
+        },
+        {
+          value: 'MU91.0Q',
+          className: "MU91-zoneMU91_0Q-1",
+          isSelected: false
+        },
+        {
+          value: 'MU91.0R',
+          className: "MU91-zoneMU91_0R-1",
+          isSelected: false
+        },
+        {
+          value: 'MU91.0S',
+          className: "MU91-zoneMU91_0S-1",
+          isSelected: false
+        }
       ]
       if (selectedBlockData) {
         if ((selectedBlockData.floorName == this.data.floor.name) && (selectedBlockData.planType == this.data.floor.planType)) {
