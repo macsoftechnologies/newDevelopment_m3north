@@ -621,18 +621,2047 @@ export class RequestService {
 
             ]
           },
-          {
-            floorName: '',
-            zoneSubList: [
-
-            ]
-          },
+      
 
         ]
       },
       // ends external area
 
       // starts ma purification section
+      {
+        planType: "Ground Floor",
+        zoneList: [
+          {
+            floorName: '10.GF.Backage',
+            zoneSubList: [
+              {
+                value: 'S.106',
+                className: "MA-zone10_GF_Backage-1",
+                isSelected: false
+              },
+            ]
+          },
+          {
+            floorName: '10.GF.Corridor.N',
+            zoneSubList: [
+              {
+                value: 'S.100',
+                className: "MA-zone10_GF_Corridor_N-1",
+                isSelected: false
+              },
+            ]
+          },
+          {
+            floorName: '10.GF.Corridor.S',
+            zoneSubList: [
+              {
+                value: 'S.170',
+                className: "MA-zone10_GF_Corridor_S-1",
+                isSelected: false
+              },
+            ]
+          },
+          {
+            floorName: '10.GF.Frontstage.E',
+            zoneSubList: [
+              {
+                value: 'S.103',
+                className: "MA-zone10_GF_Frontstage_E-1",
+                isSelected: false
+              },
+              {
+                value: 'S.101',
+                className: "MA-zone10_GF_Frontstage_E-2",
+                isSelected: false
+              },
+
+            ]
+          },
+          {
+            floorName: '10.GF.Frontstage.W',
+            zoneSubList: [
+              {
+                value: 'S.102',
+                className: "MA-zone10_GF_Frontstage_W-1",
+                isSelected: false
+              },
+              {
+                value: 'S.104',
+                className: "MA-zone10_GF_Frontstage_W-2",
+                isSelected: false
+              },
+            ]
+          },
+          {
+            floorName: '11.0',
+            zoneSubList: [
+              {
+                value: 'S.132',
+                className: "MA-zone11_0-1",
+                isSelected: false
+              },
+              {
+                value: 'S.136',
+                className: "MA-zone11_0-2",
+                isSelected: false
+              },
+              {
+                value: 'S.144',
+                className: "MA-zone11_0-3",
+                isSelected: false
+              },
+              {
+                value: 'S.146',
+                className: "MA-zone11_0-4",
+                isSelected: false
+              },
+              {
+                value: 'S.146.2',
+                className: "MA-zone11_0-5",
+                isSelected: false
+              },
+              {
+                value: 'S.146.1',
+                className: "MA-zone11_0-6",
+                isSelected: false
+              },
+              {
+                value: 'S.148.3',
+                className: "MA-zone11_0-7",
+                isSelected: false
+              },
+              {
+                value: 'S.148.2',
+                className: "MA-zone11_0-8",
+                isSelected: false
+              },
+              {
+                value: 'S.148.1',
+                className: "MA-zone11_0-9",
+                isSelected: false
+              },
+              {
+                value: 'S.150',
+                className: "MA-zone11_0-10",
+                isSelected: false
+              },
+              {
+                value: 'S.148',
+                className: "MA-zone11_0-11",
+                isSelected: false
+              },
+              {
+                value: 'S.152',
+                className: "MA-zone11_0-12",
+                isSelected: false
+              },
+              {
+                value: 'S.148.4',
+                className: "MA-zone11_0-13",
+                isSelected: false
+              },
+              {
+                value: 'S.154',
+                className: "MA-zone11_0-14",
+                isSelected: false
+              },
+
+            ]
+          },
+          {
+            floorName: '70.0A',
+            zoneSubList: [
+              {
+                value: 'TR73',
+                className: "MA-zone70_0A-1",
+                isSelected: false
+              },
+              {
+                value: 'LI73',
+                className: "MA-zone70_0A-2",
+                isSelected: false
+              },
+              {
+                value: 'S.738',
+                className: "MA-zone70_0A-3",
+                isSelected: false
+              },
+              {
+                value: 'SK73',
+                className: "MA-zone70_0A-4",
+                isSelected: false
+              },
+              {
+                value: 'S.734',
+                className: "MA-zone70_0A-5",
+                isSelected: false
+              },
+              {
+                value: 'S.732',
+                className: "MA-zone70_0A-6",
+                isSelected: false
+              },
+              {
+                value: 'S.730',
+                className: "MA-zone70_0A-7",
+                isSelected: false
+              },
+              {
+                value: 'S.728',
+                className: "MA-zone70_0A-8",
+                isSelected: false
+              },
+              {
+                value: 'S.726',
+                className: "MA-zone70_0A-9",
+                isSelected: false
+              },
+              {
+                value: 'S.726.1',
+                className: "MA-zone70_0A-10",
+                isSelected: false
+              },
+              {
+                value: 'S.726.2',
+                className: "MA-zone70_0A-11",
+                isSelected: false
+              },
+              {
+                value: 'S.724',
+                className: "MA-zone70_0A-12",
+                isSelected: false
+              },
+              {
+                value: 'S.716',
+                className: "MA-zone70_0A-13",
+                isSelected: false
+              },
+              {
+                value: 'S.722',
+                className: "MA-zone70_0A-14",
+                isSelected: false
+              },
+              {
+                value: 'S.720',
+                className: "MA-zone70_0A-15",
+                isSelected: false
+              },
+              {
+                value: 'S.716.1',
+                className: "MA-zone70_0A-16",
+                isSelected: false
+              },
+              {
+                value: 'S.716.2',
+                className: "MA-zone70_0A-17",
+                isSelected: false
+              },
+
+            ]
+          },
+          {
+            floorName: '70.0B',
+            zoneSubList: [
+              {
+                value: 'TR72',
+                className: "MA-zone70_0B-1",
+                isSelected: false
+              },
+              {
+                value: 'S.723',
+                className: "MA-zone70_0B-2",
+                isSelected: false
+              },
+              {
+                value: 'S.719',
+                className: "MA-zone70_0B-3",
+                isSelected: false
+              },
+              {
+                value: 'S.715',
+                className: "MA-zone70_0B-4",
+                isSelected: false
+              },
+              {
+                value: 'S.717',
+                className: "MA-zone70_0B-5",
+                isSelected: false
+              },
+              {
+                value: 'S.717.1',
+                className: "MA-zone70_0B-6",
+                isSelected: false
+              },
+              {
+                value: 'S.717.2',
+                className: "MA-zone70_0B-7",
+                isSelected: false
+              },
+              {
+                value: 'S.713',
+                className: "MA-zone70_0B-8",
+                isSelected: false
+              },
+              {
+                value: 'S.711',
+                className: "MA-zone70_0B-9",
+                isSelected: false
+              },
+              {
+                value: 'S.709',
+                className: "MA-zone70_0B-10",
+                isSelected: false
+              },
+              {
+                value: 'S.707',
+                className: "MA-zone70_0B-11",
+                isSelected: false
+              },
+              {
+                value: 'S.705',
+                className: "MA-zone70_0B-12",
+                isSelected: false
+              },
+              {
+                value: 'S.703',
+                className: "MA-zone70_0B-13",
+                isSelected: false
+              },
+              {
+                value: 'S.703.1',
+                className: "MA-zone70_0B-14",
+                isSelected: false
+              },
+              {
+                value: 'S.701',
+                className: "MA-zone70_0B-15",
+                isSelected: false
+              },
+              {
+                value: 'LI71',
+                className: "MA-zone70_0B-16",
+                isSelected: false
+              },
+              {
+                value: 'TR71',
+                className: "MA-zone70_0B-17",
+                isSelected: false
+              },
+            ]
+          },
+          {
+            floorName: '40.0A',
+            zoneSubList: [
+              {
+                value: 'S.416',
+                className: "MA-zone40_0A-1",
+                isSelected: false
+              },
+              {
+                value: 'S.412.1',
+                className: "MA-zone40_0A-2",
+                isSelected: false
+              },
+              {
+                value: 'S.418',
+                className: "MA-zone40_0A-3",
+                isSelected: false
+              },
+              {
+                value: 'S.412',
+                className: "MA-zone40_0A-4",
+                isSelected: false
+              },
+              {
+                value: 'S.418.1',
+                className: "MA-zone40_0A-5",
+                isSelected: false
+              },
+              {
+                value: 'S.412.2',
+                className: "MA-zone40_0A-6",
+                isSelected: false
+              },
+              {
+                value: 'S.420',
+                className: "MA-zone40_0A-7",
+                isSelected: false
+              },
+
+            ]
+          },
+          {
+            floorName: '40.0C',
+            zoneSubList: [
+              {
+                value: 'TR41',
+                className: "MA-zone40_0C-1",
+                isSelected: false
+              },
+              {
+                value: 'LI41',
+                className: "MA-zone40_0C-2",
+                isSelected: false
+              },
+              {
+                value: 'S.400',
+                className: "MA-zone40_0C-3",
+                isSelected: false
+              },
+              {
+                value: 'S.428',
+                className: "MA-zone40_0C-4",
+                isSelected: false
+              },
+              {
+                value: 'S.514',
+                className: "MA-zone40_0C-5",
+                isSelected: false
+              },
+
+            ]
+          },
+          {
+            floorName: '40.0D',
+            zoneSubList: [
+              {
+                value: 'S.424',
+                className: "MA-zone40_0D-1",
+                isSelected: false
+              },
+              {
+                value: 'S.426',
+                className: "MA-zone40_0D-2",
+                isSelected: false
+              },
+              {
+                value: 'S.426.3',
+                className: "MA-zone40_0D-3",
+                isSelected: false
+              },
+              {
+                value: 'S.426.2',
+                className: "MA-zone40_0D-4",
+                isSelected: false
+              },
+              {
+                value: 'S.426.1',
+                className: "MA-zone40_0D-5",
+                isSelected: false
+              },
+
+            ]
+          },
+          {
+            floorName: '40.0E',
+            zoneSubList: [
+              {
+                value: 'S.432',
+                className: "MA-zone40_0E-1",
+                isSelected: false
+              },
+              {
+                value: 'S.434',
+                className: "MA-zone40_0E-2",
+                isSelected: false
+              },
+
+            ]
+          },
+          {
+            floorName: '40.0F',
+            zoneSubList: [
+              {
+                value: 'S.430.1',
+                className: "MA-zone40_0F-1",
+                isSelected: false
+              },
+              {
+                value: 'S.430.2',
+                className: "MA-zone40_0F-2",
+                isSelected: false
+              },
+              {
+                value: 'S.436',
+                className: "MA-zone40_0F-3",
+                isSelected: false
+              },
+              {
+                value: 'S.430',
+                className: "MA-zone40_0F-4",
+                isSelected: false
+              },
+              {
+                value: 'S.430.4',
+                className: "MA-zone40_0F-5",
+                isSelected: false
+              },
+              {
+                value: 'S.430.3',
+                className: "MA-zone40_0F-6",
+                isSelected: false
+              },
+
+            ]
+          },
+          {
+            floorName: '40.0G',
+            zoneSubList: [
+              {
+                value: 'S.446',
+                className: "MA-zone40_0G-1",
+                isSelected: false
+              },
+              {
+                value: 'S.446',
+                className: "MA-zone40_0G-2",
+                isSelected: false
+              },
+              {
+                value: 'TR43',
+                className: "MA-zone40_0G-3",
+                isSelected: false
+              },
+              {
+                value: 'S.448',
+                className: "MA-zone40_0G-4",
+                isSelected: false
+              },
+
+
+            ]
+          },
+          {
+            floorName: '40.0J',
+            zoneSubList: [
+              {
+                value: 'S.450',
+                className: "MA-zone40_0J-1",
+                isSelected: false
+              },
+              {
+                value: 'S.450.1',
+                className: "MA-zone40_0J-2",
+                isSelected: false
+              },
+              {
+                value: 'S.450.2',
+                className: "MA-zone40_0J-3",
+                isSelected: false
+              },
+              {
+                value: 'S.450.3',
+                className: "MA-zone40_0J-4",
+                isSelected: false
+              },
+              {
+                value: 'S.450.4',
+                className: "MA-zone40_0J-5",
+                isSelected: false
+              },
+              {
+                value: 'S.502',
+                className: "MA-zone40_0J-6",
+                isSelected: false
+              },
+              {
+                value: 'S.502.1',
+                className: "MA-zone40_0J-7",
+                isSelected: false
+              },
+              {
+                value: 'S.506',
+                className: "MA-zone40_0J-8",
+                isSelected: false
+              },
+              {
+                value: 'S.506.1',
+                className: "MA-zone40_0J-9",
+                isSelected: false
+              },
+              {
+                value: 'S.506.2',
+                className: "MA-zone40_0J-10",
+                isSelected: false
+              },
+              {
+                value: 'S.446.1',
+                className: "MA-zone40_0J-11",
+                isSelected: false
+              },
+              {
+                value: 'S.504',
+                className: "MA-zone40_0J-12",
+                isSelected: false
+              },
+              {
+                value: 'S.508',
+                className: "MA-zone40_0J-13",
+                isSelected: false
+              },
+              {
+                value: 'S.510',
+                className: "MA-zone40_0J-14",
+                isSelected: false
+              },
+
+
+            ]
+          },
+          {
+            floorName: '40.0K',
+            zoneSubList: [
+              {
+                value: 'S.440',
+                className: "MA-zone40_0K-1",
+                isSelected: false
+              },
+              {
+                value: 'S.444',
+                className: "MA-zone40_0K-2",
+                isSelected: false
+              },
+              {
+                value: 'S.438',
+                className: "MA-zone40_0K-3",
+                isSelected: false
+              },
+              {
+                value: 'S.442',
+                className: "MA-zone40_0K-4",
+                isSelected: false
+              },
+              {
+                value: 'S.442.1',
+                className: "MA-zone40_0K-5",
+                isSelected: false
+              },
+              {
+                value: 'S.444.1',
+                className: "MA-zone40_0K-6",
+                isSelected: false
+              },
+              {
+                value: 'S.438.1',
+                className: "MA-zone40_0K-7",
+                isSelected: false
+              },
+              {
+                value: 'S.438.3',
+                className: "MA-zone40_0K-8",
+                isSelected: false
+              },
+              {
+                value: 'S.438.2',
+                className: "MA-zone40_0K-9",
+                isSelected: false
+              },
+              {
+                value: 'S.442.2',
+                className: "MA-zone40_0K-10",
+                isSelected: false
+              },
+              {
+                value: 'S.442.3',
+                className: "MA-zone40_0K-11",
+                isSelected: false
+              },
+              {
+                value: 'S.438.4',
+                className: "MA-zone40_0K-13",
+                isSelected: false
+              },
+              {
+                value: 'S.444.2',
+                className: "MA-zone40_0K-14",
+                isSelected: false
+              },
+              {
+                value: 'TR42',
+                className: "MA-zone40_0K-15",
+                isSelected: false
+              },
+
+            ]
+          },
+          {
+            floorName: '40.0L',
+            zoneSubList: [
+              {
+                value: 'S.402',
+                className: "MA-zone40_0L-1",
+                isSelected: false
+              },
+              {
+                value: 'S.402.1',
+                className: "MA-zone40_0L-2",
+                isSelected: false
+              },
+              {
+                value: 'S.404',
+                className: "MA-zone40_0L-3",
+                isSelected: false
+              },
+              {
+                value: 'S.410',
+                className: "MA-zone40_0L-4",
+                isSelected: false
+              },
+              {
+                value: 'S.410.1',
+                className: "MA-zone40_0L-5",
+                isSelected: false
+              },
+              {
+                value: 'S.406',
+                className: "MA-zone40_0L-6",
+                isSelected: false
+              },
+              {
+                value: 'S.406.2',
+                className: "MA-zone40_0L-7",
+                isSelected: false
+              },
+              {
+                value: 'S.406.1',
+                className: "MA-zone40_0L-8",
+                isSelected: false
+              },
+            ]
+          },
+          {
+            floorName: '40.0M',
+            zoneSubList: [
+              {
+                value: 'S.405',
+                className: "MA-zone40_0M-1",
+                isSelected: false
+              },
+              {
+                value: 'S.407',
+                className: "MA-zone40_0M-2",
+                isSelected: false
+              },
+              {
+                value: 'S.409',
+                className: "MA-zone40_0M-3",
+                isSelected: false
+              },
+              {
+                value: 'S.403',
+                className: "MA-zone40_0M-4",
+                isSelected: false
+              },
+              {
+                value: 'S.403.2',
+                className: "MA-zone40_0M-5",
+                isSelected: false
+              },
+              {
+                value: 'S.409.1',
+                className: "MA-zone40_0M-6",
+                isSelected: false
+              },
+              {
+                value: 'S.409.1.1',
+                className: "MA-zone40_0M-7",
+                isSelected: false
+              },
+              {
+                value: 'S.409.2',
+                className: "MA-zone40_0M-8",
+                isSelected: false
+              },
+              {
+                value: 'S.409.3',
+                className: "MA-zone40_0M-9",
+                isSelected: false
+              },
+              {
+                value: 'S.409.4',
+                className: "MA-zone40_0M-10",
+                isSelected: false
+              },
+              {
+                value: 'S.401.1',
+                className: "MA-zone40_0M-11",
+                isSelected: false
+              },
+              {
+                value: 'S.401',
+                className: "MA-zone40_0M-12",
+                isSelected: false
+              },
+              {
+                value: 'S.403.1',
+                className: "MA-zone40_0M-13",
+                isSelected: false
+              },
+              {
+                value: 'LI44',
+                className: "MA-zone40_0M-14",
+                isSelected: false
+              },
+              {
+                value: 'S.400.1',
+                className: "MA-zone40_0M-15",
+                isSelected: false
+              },
+              {
+                value: 'S.411',
+                className: "MA-zone40_0M-16",
+                isSelected: false
+              },
+              {
+                value: 'S.411.1',
+                className: "MA-zone40_0M-17",
+                isSelected: false
+              },
+              {
+                value: 'S.411.2',
+                className: "MA-zone40_0M-18",
+                isSelected: false
+              },
+              {
+                value: 'S.411.3',
+                className: "MA-zone40_0M-19",
+                isSelected: false
+              },
+              {
+                value: 'S.413',
+                className: "MA-zone40_0M-20",
+                isSelected: false
+              },
+
+            ]
+          },
+          {
+            floorName: '40.0Q',
+            zoneSubList: [
+              {
+                value: 'S.419',
+                className: "MA-zone40_0Q-1",
+                isSelected: false
+              },
+
+            ]
+          },
+          {
+            floorName: '40.0R',
+            zoneSubList: [
+              {
+                value: 'S.425',
+                className: "MA-zone40_0R-1",
+                isSelected: false
+              },
+              {
+                value: 'S.429.1',
+                className: "MA-zone40_0R-2",
+                isSelected: false
+              },
+              {
+                value: 'S.421.1',
+                className: "MA-zone40_0R-3",
+                isSelected: false
+              },
+              {
+                value: 'S.421',
+                className: "MA-zone40_0R-4",
+                isSelected: false
+              },
+              {
+                value: 'S.423',
+                className: "MA-zone40_0R-5",
+                isSelected: false
+              },
+              {
+                value: 'S.423.1',
+                className: "MA-zone40_0R-6",
+                isSelected: false
+              },
+              {
+                value: 'S.427',
+                className: "MA-zone40_0R-7",
+                isSelected: false
+              },
+              {
+                value: 'S.427.1',
+                className: "MA-zone40_0R-8",
+                isSelected: false
+              },
+              {
+                value: 'S.427.2',
+                className: "MA-zone40_0R-9",
+                isSelected: false
+              },
+              {
+                value: 'S.427.3',
+                className: "MA-zone40_0R-10",
+                isSelected: false
+              },
+            ]
+          },
+          {
+            floorName: '40.0S',
+            zoneSubList: [
+              {
+                value: 'S.429',
+                className: "MA-zone40_0S-1",
+                isSelected: false
+              },
+
+            ]
+          },
+          {
+            floorName: '40.0U',
+            zoneSubList: [
+              {
+                value: 'S.441',
+                className: "MA-zone40_0U-1",
+                isSelected: false
+              },
+
+            ]
+          },
+        ]
+      },
+
+      {
+        planType: "First Floor",
+        zoneList: [
+          {
+            floorName: '10.1F.Backstage',
+            zoneSubList: [
+              {
+                value: '10.1F.Backstage',
+                className: "MA-zone10_1F_Backstage-1",
+                isSelected: false
+              }
+            ]
+          },
+          {
+            floorName: '10.1F.CorridorN',
+            zoneSubList: [
+              {
+                value: '1.102',
+                className: "MA-zone10_1F_Corridor-N-1",
+                isSelected: false
+              }
+      
+            ]
+          },
+          {
+            floorName: '10.1F.FrontstageE',
+            zoneSubList: [
+              {
+                value: '1.101',
+                className: "MA-zone10_1F_Frontstage-E-1",
+                isSelected: false
+              },
+              {
+                value: '1.107',
+                className: "MA-zone10_1F_Frontstage-E-2",
+                isSelected: false
+              },
+              {
+                value: 'S.103',
+                className: "MA-zone10_1F_Frontstage-E-3",
+                isSelected: false
+              }
+      
+            ]
+          },
+          {
+            floorName: '10.1F.FrontstageW',
+            zoneSubList: [
+              {
+                value: 'S.104',
+                className: "MA-zone10_1F_Frontstage-W-1",
+                isSelected: false
+              }
+            ]
+          },
+          {
+            floorName: '10.1F.IT',
+            zoneSubList: [
+              {
+                value: '1.151',
+                className: "MA-zone10_1F_IT-1",
+                isSelected: false
+              },
+              {
+                value: '1.153',
+                className: "MA-zone10_1F_IT-2",
+                isSelected: false
+              }
+            ]
+          },
+          {
+            floorName: '70.1A',
+            zoneSubList: [
+              {
+                value: 'TR73',
+                className: "MA-zone70_1A-1",
+                isSelected: false
+              },
+              {
+                value: 'LI73',
+                className: "MA-zone70_1A-2",
+                isSelected: false
+              },
+              {
+                value: '1.738',
+                className: "MA-zone70_1A-3",
+                isSelected: false
+              },
+              {
+                value: '1.736',
+                className: "MA-zone70_1A-4",
+                isSelected: false
+              },
+              {
+                value: '1.732.1',
+                className: "MA-zone70_1A-5",
+                isSelected: false
+              },
+              {
+                value: '1.734',
+                className: "MA-zone70_1A-6",
+                isSelected: false
+              },
+              {
+                value: '1.732',
+                className: "MA-zone70_1A-7",
+                isSelected: false
+              },
+              {
+                value: '1.730',
+                className: "MA-zone70_1A-8",
+                isSelected: false
+              },
+              {
+                value: 'TR72',
+                className: "MA-zone70_1A-9",
+                isSelected: false
+              },
+              {
+                value: '1.729',
+                className: "MA-zone70_1A-10",
+                isSelected: false
+              },
+              {
+                value: '1.716',
+                className: "MA-zone70_1A-11",
+                isSelected: false
+              }
+      
+            ]
+          },
+          {
+            floorName: '70.1B',
+            zoneSubList: [
+              {
+                value: '1.727',
+                className: "MA-zone70_1B-1",
+                isSelected: false
+              },
+              {
+                value: '1.725',
+                className: "MA-zone70_1B-2",
+                isSelected: false
+              },
+              {
+                value: '1.725.1',
+                className: "MA-zone70_1B-3",
+                isSelected: false
+              },
+              {
+                value: '1.723',
+                className: "MA-zone70_1B-4",
+                isSelected: false
+              },
+              {
+                value: '1.711.2',
+                className: "MA-zone70_1B-5",
+                isSelected: false
+              },
+              {
+                value: 'SK72',
+                className: "MA-zone70_1B-6",
+                isSelected: false
+              },
+              {
+                value: '1.721',
+                className: "MA-zone70_1B-7",
+                isSelected: false
+              },
+              {
+                value: '1.719',
+                className: "MA-zone70_1B-8",
+                isSelected: false
+              },
+              {
+                value: '1.717',
+                className: "MA-zone70_1B-9",
+                isSelected: false
+              },
+              {
+                value: '1.711',
+                className: "MA-zone70_1B-10",
+                isSelected: false
+              },
+              {
+                value: '1.715',
+                className: "MA-zone70_1B-11",
+                isSelected: false
+              },
+              {
+                value: '1.713',
+                className: "MA-zone70_1B-12",
+                isSelected: false
+              }
+      
+            ]
+          },
+          {
+            floorName: '70.1C',
+            zoneSubList: [
+              {
+                value: '1.711.1',
+                className: "MA-zone70_1C-1",
+                isSelected: false
+              },
+              {
+                value: '1.705.2',
+                className: "MA-zone70_1C-2",
+                isSelected: false
+              },
+              {
+                value: '1.705.1',
+                className: "MA-zone70_1C-3",
+                isSelected: false
+              },
+              {
+                value: '1.709',
+                className: "MA-zone70_1C-4",
+                isSelected: false
+              },
+              {
+                value: '1.707',
+                className: "MA-zone70_1C-5",
+                isSelected: false
+              },
+              {
+                value: '1.707.2',
+                className: "MA-zone70_1C-6",
+                isSelected: false
+              },
+              {
+                value: '1.707.1',
+                className: "MA-zone70_1C-7",
+                isSelected: false
+              },
+              {
+                value: '1.705',
+                className: "MA-zone70_1C-8",
+                isSelected: false
+              },
+              {
+                value: '1.703',
+                className: "MA-zone70_1C-9",
+                isSelected: false
+              },
+              {
+                value: 'LI71',
+                className: "MA-zone70_1C-10",
+                isSelected: false
+              },
+              {
+                value: '1.701',
+                className: "MA-zone70_1C-11",
+                isSelected: false
+              },
+              {
+                value: 'TR71',
+                className: "MA-zone70_1C-12",
+                isSelected: false
+              }
+      
+            ]
+          },
+          {
+            floorName: '40.1A',
+            zoneSubList: [
+              {
+                value: '1.418',
+                className: "MA-zone40_1A-1",
+                isSelected: false
+              },
+              {
+                value: '1.422.1',
+                className: "MA-zone40_1A-2",
+                isSelected: false
+              },
+              {
+                value: '1.422.2',
+                className: "MA-zone40_1A-3",
+                isSelected: false
+              },
+              {
+                value: '1.422.3',
+                className: "MA-zone40_1A-4",
+                isSelected: false
+              },
+              {
+                value: '1.422.4',
+                className: "MA-zone40_1A-5",
+                isSelected: false
+              }
+      
+            ]
+          },
+          {
+            floorName: '40.1B',
+            zoneSubList: [
+              {
+                value: '1.404',
+                className: "MA-zone40_1B-1",
+                isSelected: false
+              },
+              {
+                value: '1.404.1',
+                className: "MA-zone40_1B-2",
+                isSelected: false
+              }
+            ]
+          },
+          {
+            floorName: '40.1C',
+            zoneSubList: [
+              {
+                value: '1.400',
+                className: "MA-zone40_1C-1",
+                isSelected: false
+              },
+              {
+                value: 'TR41',
+                className: "MA-zone40_1C-2",
+                isSelected: false
+              },
+              {
+                value: 'LI41',
+                className: "MA-zone40_1C-3",
+                isSelected: false
+              },
+              {
+                value: '1.121',
+                className: "MA-zone40_1C-4",
+                isSelected: false
+              },
+              {
+                value: '1.422',
+                className: "MA-zone40_1C-5",
+                isSelected: false
+              },
+              {
+                value: '1.100',
+                className: "MA-zone40_1C-6",
+                isSelected: false
+              },
+              {
+                value: 'SK42.1',
+                className: "MA-zone40_1C-7",
+                isSelected: false
+              },
+              {
+                value: 'SK42',
+                className: "MA-zone40_1C-8",
+                isSelected: false
+              },
+              {
+                value: '1.428',
+                className: "MA-zone40_1C-9",
+                isSelected: false
+              }
+      
+      
+            ]
+          },
+          {
+            floorName: '40.1D',
+            zoneSubList: [
+              {
+                value: '1.427',
+                className: "MA-zone40_1D-1",
+                isSelected: false
+              },
+              {
+                value: '1.425',
+                className: "MA-zone40_1D-2",
+                isSelected: false
+              },
+              {
+                value: '1.423',
+                className: "MA-zone40_1D-3",
+                isSelected: false
+              }
+      
+            ]
+          },
+          {
+            floorName: '40.1E',
+            zoneSubList: [
+              {
+                value: '1.434',
+                className: "MA-zone40_1E-1",
+                isSelected: false
+              }
+      
+            ]
+          },
+          {
+            floorName: '40.1F',
+            zoneSubList: [
+              {
+                value: '1.430',
+                className: "MA-zone40_1F-1",
+                isSelected: false
+                },
+                {
+                value: '1.430.1',
+                className: "MA-zone40_1F-2",
+                isSelected: false
+                }
+            ]
+          },
+          {
+            floorName: '40.1G',
+            zoneSubList: [
+              {
+                value: '1.446',
+                className: "MA-zone40_1G-1",
+                isSelected: false
+                },
+                {
+                value: 'TR43',
+                className: "MA-zone40_1G-2",
+                isSelected: false
+                },
+                {
+                value: '1.448',
+                className: "MA-zone40_1G-3",
+                isSelected: false
+                }
+            ]
+          },
+          {
+            floorName: '40.1I',
+            zoneSubList: [
+              {
+                value: '1.506',
+                className: "MA-zone40_1I-1",
+                isSelected: false
+                },
+                {
+                value: '1.504.2',
+                className: "MA-zone40_1I-2",
+                isSelected: false
+                },
+                {
+                value: '1.504.1',
+                className: "MA-zone40_1I-3",
+                isSelected: false
+                },
+                {
+                value: '1.504',
+                className: "MA-zone40_1I-4",
+                isSelected: false
+                },
+                {
+                value: '1.510',
+                className: "MA-zone40_1I-5",
+                isSelected: false
+                },
+                {
+                value: '1.508',
+                className: "MA-zone40_1G-6",
+                isSelected: false
+                }
+              
+            ]
+          },
+          {
+            floorName: '40.1J',
+            zoneSubList: [
+              {
+                value: 'SK43',
+                className: "MA-zone40_1J-1",
+                isSelected: false
+                },
+                {
+                value: '1.502',
+                className: "MA-zone40_1J-2",
+                isSelected: false
+                }
+             
+            ]
+          },
+          {
+            floorName: '40.1K',
+            zoneSubList: [
+              {
+                value: '1.440',
+                className: "MA-zone40_1K-1",
+                isSelected: false
+                },
+                {
+                value: '1.444',
+                className: "MA-zone40_1K-2",
+                isSelected: false
+                },
+                {
+                value: '1.438',
+                className: "MA-zone40_1K-3",
+                isSelected: false
+                },
+                {
+                value: '1.442',
+                className: "MA-zone40_1K-4",
+                isSelected: false
+                },
+                {
+                value: '1.442.1',
+                className: "MA-zone40_1K-5",
+                isSelected: false
+                },
+                {
+                value: '1.444.1',
+                className: "MA-zone40_1K-6",
+                isSelected: false
+                },
+                {
+                value: '1.438.1',
+                className: "MA-zone40_1K-7",
+                isSelected: false
+                },
+                {
+                value: 'TR42',
+                className: "MA-zone40_1K-8",
+                isSelected: false
+                },
+                {
+                value: '1.438.2',
+                className: "MA-zone40_1K-9",
+                isSelected: false
+                },
+                {
+                value: '1.442.2',
+                className: "MA-zone40_1K-10",
+                isSelected: false
+                },
+                {
+                value: '1.442.3',
+                className: "MA-zone40_1K-11",
+                isSelected: false
+                },
+                {
+                value: '1.438.4',
+                className: "MA-zone40_1K-12",
+                isSelected: false
+                },
+                {
+                value: '1.442.4',
+                className: "MA-zone40_1K-13",
+                isSelected: false
+                },
+                {
+                value: '1.444.2',
+                className: "MA-zone40_1K-14",
+                isSelected: false
+                }
+            ]
+          },
+          {
+            floorName: '40.1L',
+            zoneSubList: [
+              {
+                value: '1.408',
+                className: "MA-zone40_1L-1",
+                isSelected: false
+                },
+                {
+                value: '1.402',
+                className: "MA-zone40_1L-2",
+                isSelected: false
+                }
+             
+            ]
+          },
+          {
+            floorName: '40.1M',
+            zoneSubList: [
+              {
+                value: 'SK44',
+                className: "MA-zone40_1M-1",
+                isSelected: false
+                },
+                {
+                value: 'SK44.1',
+                className: "MA-zone40_1M-2",
+                isSelected: false
+                },
+                {
+                value: '1.405.1',
+                className: "MA-zone40_1M-3",
+                isSelected: false
+                },
+                {
+                value: '1.405.2',
+                className: "MA-zone40_1M-4",
+                isSelected: false
+                },
+                {
+                value: '1.405.3',
+                className: "MA-zone40_1M-5",
+                isSelected: false
+                },
+                {
+                value: '1.405.4',
+                className: "MA-zone40_1M-6",
+                isSelected: false
+                },
+                {
+                value: '1.407',
+                className: "MA-zone40_1M-7",
+                isSelected: false
+                },
+                {
+                value: '1.405',
+                className: "MA-zone40_1M-8",
+                isSelected: false
+                },
+                {
+                value: '1.405.5',
+                className: "MA-zone40_1M-9",
+                isSelected: false
+                },
+                {
+                value: '1.403',
+                className: "MA-zone40_1M-10",
+                isSelected: false
+                },
+                {
+                value: '1.401',
+                className: "MA-zone40_1M-11",
+                isSelected: false
+                },
+                {
+                value: 'LI44',
+                className: "MA-zone40_1M-12",
+                isSelected: false
+                },
+                {
+                value: '1.409.1',
+                className: "MA-zone40_1M-13",
+                isSelected: false
+                },
+                {
+                value: '1.409.2',
+                className: "MA-zone40_1M-14",
+                isSelected: false
+                },
+                {
+                value: '1.409.3',
+                className: "MA-zone40_1M-15",
+                isSelected: false
+                },
+                {
+                value: '1.409',
+                className: "MA-zone40_1M-16",
+                isSelected: false
+                },
+                {
+                value: '1.411',
+                className: "MA-zone40_1M-17",
+                isSelected: false
+                }
+              
+
+            ]
+          },
+          
+        ]
+      },
+
+      {
+        planType: "Second Floor",
+        zoneList: [
+          {
+            floorName: '10.2F.Backstage',
+            zoneSubList: [
+              {
+                value: 'S.106',
+                className: "MA-zone10_2F_Backstage-1",
+                isSelected: false
+              },
+              {
+                value: ' 2.156',
+                className: "MA-zone10_2F_Backstage-2",
+                isSelected: false
+              }
+            ]
+          },
+          {
+            floorName: '10.2F.CorridorS',
+            zoneSubList: [
+              {
+                value: ' 2.170',
+                className: "MA-zone10_2F_Corridor-S-1",
+                isSelected: false
+              }
+
+            ]
+          },
+          {
+            floorName: '10.2F.Distribution',
+            zoneSubList: [
+              {
+                value: ' 2.100',
+                className: "MA-zone10_2F_Distribution-1",
+                isSelected: false
+              }
+            ]
+          },
+          {
+            floorName: '10.2F.FrontstageE',
+            zoneSubList: [
+              {
+                value: ' 2.105',
+                className: "MA-zone10_2F_Frontstage-E-1",
+                isSelected: false
+                },
+                {
+                value: ' 2.101',
+                className: "MA-zone10_2F_Frontstage-E-2",
+                isSelected: false
+                },
+                {
+                value: ' 2.169',
+                className: "MA-zone10_2F_Frontstage-E-3",
+                isSelected: false
+                }
+                
+            ]
+          },
+          {
+            floorName: '10.2F.FrontstageW',
+            zoneSubList: [
+              {
+                value: ' 2.108',
+                className: "MA-zone10_2F_Frontstage-W-1",
+                isSelected: false
+                },
+                {
+                value: ' 2.102',
+                className: "MA-zone10_2F_Frontstage-W-2",
+                isSelected: false
+                },
+                {
+                value: ' 2.168',
+                className: "MA-zone10_2F_Frontstage-W-3",
+                isSelected: false
+                }
+           
+            ]
+          },
+          {
+            floorName: '70.2A',
+            zoneSubList: [
+              {
+                value: 'TR73',
+                className: "MA-zone70_2A-1",
+                isSelected: false
+                },
+                {
+                value: 'LI73',
+                className: "MA-zone70_2A-2",
+                isSelected: false
+                },
+                {
+                value: '2.738',
+                className: "MA-zone70_2A-3",
+                isSelected: false
+                },
+                {
+                value: '2.736',
+                className: "MA-zone70_2A-4",
+                isSelected: false
+                },
+                {
+                value: '2.732.2',
+                className: "MA-zone70_2A-5",
+                isSelected: false
+                },
+                {
+                value: '2.734',
+                className: "MA-zone70_2A-6",
+                isSelected: false
+                },
+                {
+                value: '2.732.1',
+                className: "MA-zone70_2A-7",
+                isSelected: false
+                },
+                {
+                value: '2.732',
+                className: "MA-zone70_2A-8",
+                isSelected: false
+                },
+                {
+                value: '2.730',
+                className: "MA-zone70_2A-9",
+                isSelected: false
+                },
+                {
+                value: '2.728',
+                className: "MA-zone70_2A-10",
+                isSelected: false
+                },
+                {
+                value: '2.731',
+                className: "MA-zone70_2A-11",
+                isSelected: false
+                },
+                {
+                value: 'TR72',
+                className: "MA-zone70_2A-12",
+                isSelected: false
+                },
+                {
+                value: '2.729',
+                className: "MA-zone70_2A-13",
+                isSelected: false
+                },
+                {
+                value: '2.724',
+                className: "MA-zone70_2A-14",
+                isSelected: false
+                },
+                {
+                value: '2.724.1',
+                className: "MA-zone70_2A-15",
+                isSelected: false
+                },
+                {
+                value: '2.724.2',
+                className: "MA-zone70_2A-16",
+                isSelected: false
+                },
+                {
+                value: '2.727',
+                className: "MA-zone70_2A-17",
+                isSelected: false
+                },
+                {
+                value: '2.727.1',
+                className: "MA-zone70_2A-18",
+                isSelected: false
+                },
+                {
+                value: '2.727.2',
+                className: "MA-zone70_2A-19",
+                isSelected: false
+                },
+                {
+                value: '2.725',
+                className: "MA-zone70_2A-20",
+                isSelected: false
+                },
+                {
+                value: '2.725.1',
+                className: "MA-zone70_2A-21",
+                isSelected: false
+                },
+                {
+                value: '2.725.2',
+                className: "MA-zone70_2A-22",
+                isSelected: false
+                },
+                {
+                value: '2.723',
+                className: "MA-zone70_2A-23",
+                isSelected: false
+                },
+                {
+                value: '2.716',
+                className: "MA-zone70_2A-24",
+                isSelected: false
+                },
+              
+            ]
+          },
+          {
+            floorName: '70.2B',
+            zoneSubList: [
+              {
+                value: '2.711',
+                className: "MA-zone70_2B-1",
+                isSelected: false
+                },
+                {
+                value: '2.705',
+                className: "MA-zone70_2B-2",
+                isSelected: false
+                },
+                {
+                value: '2.703',
+                className: "MA-zone70_2B-3",
+                isSelected: false
+                },
+                {
+                value: 'LI71',
+                className: "MA-zone70_2B-4",
+                isSelected: false
+                },
+                {
+                value: 'TR71',
+                className: "MA-zone70_2B-5",
+                isSelected: false
+                },
+            ]
+          },
+          {
+            floorName: '40.2A.1',
+            zoneSubList: [
+              {
+                value: ' 2.413',
+                className: "MA-zone40_2A_1-1",
+                isSelected: false
+                },
+                {
+                value: ' 2.437',
+                className: "MA-zone40_2A_1-2",
+                isSelected: false
+                },
+                {
+                value: ' 2.447',
+                className: "MA-zone40_2A_1-3",
+                isSelected: false
+                },
+                {
+                value: ' 2.400',
+                className: "MA-zone40_2A_1-4",
+                isSelected: false
+                },
+             
+            ]
+          },
+          {
+            floorName: '40.2A.2',
+            zoneSubList: [
+              {
+                value: ' 2.404',
+                className: "MA-zone40_2A_2-1",
+                isSelected: false
+                },
+              
+            ]
+          },
+          {
+            floorName: '40.2A.3',
+            zoneSubList: [
+              {
+                value: ' 2.400',
+                className: "MA-zone40_2A_3-1",
+                isSelected: false
+                },
+                {
+                value: ' 2.450',
+                className: "MA-zone40_2A_3-2",
+                isSelected: false
+                },
+           
+            ]
+          }, 
+          {
+            floorName: '40.2B',
+            zoneSubList: [
+              {
+                value: 'TR41',
+                className: "MA-zone40_2B-1",
+                isSelected: false
+                },
+                {
+                value: '2.416',
+                className: "MA-zone40_2B-2",
+                isSelected: false
+                },
+                {
+                value: 'LI41',
+                className: "MA-zone40_2B-3",
+                isSelected: false
+                },
+              
+            ]
+          },
+          {
+            floorName: '40.2C',
+            zoneSubList: [
+              {
+                value: '2.434.1',
+                className: "MA-zone40_2C-1",
+                isSelected: false
+                },
+                {
+                value: '2.434.2',
+                className: "MA-zone40_2C-2",
+                isSelected: false
+                },
+                {
+                value: '2.434',
+                className: "MA-zone40_2C-3",
+                isSelected: false
+                },
+              
+            ]
+          },
+          {
+            floorName: '40.2D',
+            zoneSubList: [
+              {
+                value: '2.430.1',
+                className: "MA-zone40_2D-1",
+                isSelected: false
+                },
+                {
+                value: 'SK42.1',
+                className: "MA-zone40_2D-2",
+                isSelected: false
+                },
+                {
+                value: 'SK42',
+                className: "MA-zone40_2D-3",
+                isSelected: false
+                },
+                {
+                value: '2.430',
+                className: "MA-zone40_2D-4",
+                isSelected: false
+                },
+                
+             
+            ]
+          },
+          {
+            floorName: '40.2E',
+            zoneSubList: [
+              {
+                value: '2.438.3',
+                className: "MA-zone40_2E-1",
+                isSelected: false
+                },
+                {
+                value: '2.440',
+                className: "MA-zone40_2E-2",
+                isSelected: false
+                },
+                {
+                value: '2.444',
+                className: "MA-zone40_2E-3",
+                isSelected: false
+                },
+                {
+                value: '2.438',
+                className: "MA-zone40_2E-4",
+                isSelected: false
+                },
+                {
+                value: '2.442',
+                className: "MA-zone40_2E-5",
+                isSelected: false
+                },
+                {
+                value: '2.442.1',
+                className: "MA-zone40_2E-6",
+                isSelected: false
+                },
+                {
+                value: '2.438.1',
+                className: "MA-zone40_2E-7",
+                isSelected: false
+                },
+                {
+                value: '2.438.2',
+                className: "MA-zone40_2E-8",
+                isSelected: false
+                },
+                {
+                value: '2.442.2',
+                className: "MA-zone40_2E-9",
+                isSelected: false
+                },
+                {
+                value: '2.442.2',
+                className: "MA-zone40_2E-10",
+                isSelected: false
+                },
+                {
+                value: 'TR42',
+                className: "MA-zone40_2E-11",
+                isSelected: false
+                },
+                {
+                value: '2.442.3',
+                className: "MA-zone40_2E-12",
+                isSelected: false
+                },
+                {
+                value: '2.438.4',
+                className: "MA-zone40_2E-13",
+                isSelected: false
+                },
+                {
+                value: '2.442.2',
+                className: "MA-zone40_2E-14",
+                isSelected: false
+                },
+                {
+                value: '2.444.2',
+                className: "MA-zone40_2E-15",
+                isSelected: false
+                },
+            
+            ]
+          },
+          {
+            floorName: '40.2F',
+            zoneSubList: [
+              {
+                value: '2.403',
+                className: "MA-zone40_2F-1",
+                isSelected: false
+                },
+                {
+                value: '2.402',
+                className: "MA-zone40_2F-2",
+                isSelected: false
+                },
+                {
+                value: 'LI44',
+                className: "MA-zone40_2F-3",
+                isSelected: false
+                },
+                {
+                value: '2.401',
+                className: "MA-zone40_2F-4",
+                isSelected: false
+                },
+             
+            ]
+          },
+      
+        ]
+      },
 
 
       {

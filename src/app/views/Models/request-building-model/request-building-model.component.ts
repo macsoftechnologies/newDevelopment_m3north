@@ -2063,7 +2063,7 @@ export class RequestBuildingModelComponent implements OnInit {
           isSelected: false
         },
         {
-          value: '1.424',
+          value: '1.121',
           className: "MA-zone40_1C-4",
           isSelected: false
         },
@@ -2485,8 +2485,6 @@ export class RequestBuildingModelComponent implements OnInit {
           className: "MA-zone10_2F_Corridor-S-1",
           isSelected: false
           }
-          
-          
       ]
       if (selectedBlockData) {
         if ((selectedBlockData.floorName == this.data.floor.name) && (selectedBlockData.planType == this.data.floor.planType)) {
@@ -2553,7 +2551,6 @@ export class RequestBuildingModelComponent implements OnInit {
           className: "MA-zone10_2F_Frontstage-W-3",
           isSelected: false
           }
-          
           
       ]
       if (selectedBlockData) {
@@ -2800,17 +2797,17 @@ export class RequestBuildingModelComponent implements OnInit {
     else if (this.data.floor.name == '40.2B' && this.data.floor.planType == 'Second Floor') {
       this.floorBlock = [
         {
-          value: ' TR41',
+          value: 'TR41',
           className: "MA-zone40_2B-1",
           isSelected: false
           },
           {
-          value: ' 2.416',
+          value: '2.416',
           className: "MA-zone40_2B-2",
           isSelected: false
           },
           {
-          value: ' LI41',
+          value: 'LI41',
           className: "MA-zone40_2B-3",
           isSelected: false
           },
