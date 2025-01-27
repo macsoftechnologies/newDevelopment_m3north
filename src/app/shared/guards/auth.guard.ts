@@ -15,7 +15,18 @@ export class AuthGuard implements CanActivate {
   canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot) {
     
     if (this.jwtAuth.isLoggedIn()) {
-      return true;
+      const secretKeyValue = localStorage.getItem('secretkey');
+      if(secretKeyValue === 'm3north'){
+        return true;
+      }else {
+        this.router.navigate(["/sessions/signin"], {
+          queryParams: {
+            return: state.url
+          }
+        });
+        return false;
+      }
+      // return true;
     } else {
       this.router.navigate(["/sessions/signin"], {
         queryParams: {

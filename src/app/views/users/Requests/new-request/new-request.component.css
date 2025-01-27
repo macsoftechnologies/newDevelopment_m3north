@@ -4082,7 +4082,7 @@ input {
 /* // new css for m3 north */
 .CT_Dark {
   position: absolute;
-  top: 10%;
+  top: 8%;
   left: 27%;
   z-index: 9999;
   height: 28px;
@@ -5093,3 +5093,5769 @@ input {
 /* seconf floor ends */
 
 /* ends Ma Section */
+
+
+/* Background Responsive */
+
+ /* START MU90.0 Responsive */
+
+ @media (min-width: 360px) and (max-width: 468px) {
+
+  .MU90_0A {
+    position: absolute;
+    bottom: 9.5%;
+    right: 28%;
+    z-index: 9999;
+    height: 86px;
+    width: 72px;
+    padding: 0px;
+  }
+  
+  .MU90_0B {
+    position: absolute;
+    bottom: 26.5%;
+    right: 28%;
+    z-index: 9999;
+    height: 59px;
+    width: 61px;
+    padding: 0px;
+  }
+  
+  .MU90_0C {
+    position: absolute;
+    top: 30%;
+    right: 28%;
+    z-index: 9999;
+    height: 32%;
+    width: 56px;
+    padding: 0px;
+  }
+  
+  .MU90_0D {
+    position: absolute;
+    top: 9%;
+    left: 24%;
+    z-index: 9999;
+    height: 21.5%;
+    width: 48%;
+    padding: 0px;
+  }
+  
+  .MU90_0E {
+    position: absolute;
+    top: 40%;
+    left: 24%;
+    z-index: 9999;
+    height: 41%;
+    width: 6%;
+    min-width: 7%;
+    padding: 0px;
+  }
+  
+  .MU90_0I {
+    position: absolute;
+    top: 37%;
+    left: 35%;
+    z-index: 9999;
+    height: 39%;
+    width: 12.3%;
+    min-width: 53px;
+    padding: 0px;
+  }
+  
+  .MU90_0F1 {
+    position: absolute;
+    bottom: 10%;
+    left: 24%;
+    z-index: 9999;
+    height: 44px;
+    min-width: 30px;
+    width: 31px;
+    padding: 0px;
+  }
+  
+  .MU90_0F2 {
+    position: absolute;
+    bottom: 10%;
+    left: 35%;
+    z-index: 9999;
+    height: 73px;
+    width: 52px;
+    min-width: 27px;
+    padding: 0px;
+  }
+  
+  .MU90_0K {
+    position: absolute;
+    top: 34%;
+    left: 49%;
+    z-index: 9999;
+    height: 39%;
+    width: 7%;
+    min-width: 2%;
+    padding: 0px;
+  }
+}
+
+@media (min-width: 468px) and (max-width: 549px) {
+
+  .MU90_0A {
+    position: absolute;
+    bottom: 9.5%;
+    right: 28%;
+    z-index: 9999;
+    height: 109px;
+    width: 92px;
+    padding: 0px;
+  }
+  
+  .MU90_0B {
+    position: absolute;
+    bottom: 26.5%;
+    right: 28%;
+    z-index: 9999;
+    height: 71px;
+    width: 77px;
+    padding: 0px;
+  }
+  
+  .MU90_0C {
+    position: absolute;
+    top: 30%;
+    right: 28%;
+    z-index: 9999;
+    height: 32%;
+    width: 77px;
+    padding: 0px;
+  }
+  
+  .MU90_0D {
+    position: absolute;
+    top: 9%;
+    left: 24%;
+    z-index: 9999;
+    height: 21.5%;
+    width: 48%;
+    padding: 0px;
+  }
+  
+  .MU90_0E {
+    position: absolute;
+    top: 40%;
+    left: 24%;
+    z-index: 9999;
+    height: 41%;
+    width: 6%;
+    min-width: 7%;
+    padding: 0px;
+  }
+  
+  .MU90_0I {
+    position: absolute;
+    top: 37%;
+    left: 35%;
+    z-index: 9999;
+    height: 39%;
+    width: 14.3%;
+    padding: 0px;
+  }
+  
+  .MU90_0F1 {
+    position: absolute;
+    bottom: 10%;
+    left: 24%;
+    z-index: 9999;
+    height: 53px;
+    min-width: 36px;
+    width: 38px;
+    padding: 0px;
+  }
+  
+  .MU90_0F2 {
+    position: absolute;
+    bottom: 10%;
+    left: 35%;
+    z-index: 9999;
+    height: 87px;
+    width: 69px;
+    padding: 0px;
+  }
+  
+  .MU90_0K {
+    position: absolute;
+    top: 34%;
+    left: 49%;
+    z-index: 9999;
+    height: 39%;
+    width: 7%;
+    min-width: 2%;
+    padding: 0px;
+  }
+}
+
+@media (min-width: 550px) and (max-width: 649px) {
+    .MU90_0A {
+      position: absolute;
+      bottom: 9.5%;
+      right: 28%;
+      z-index: 9999;
+      height: 124px;
+      width: 106px;
+      padding: 0px;
+    }
+    
+    .MU90_0B {
+      position: absolute;
+      bottom: 26.5%;
+      right: 28%;
+      z-index: 9999;
+      height: 84px;
+      width: 91px;
+      padding: 0px;
+    }
+    
+    .MU90_0C {
+      position: absolute;
+      top: 30%;
+      right: 28%;
+      z-index: 9999;
+      height: 32%;
+      width: 90px;
+      padding: 0px;
+    }
+    
+    .MU90_0D {
+      position: absolute;
+      top: 9%;
+      left: 24%;
+      z-index: 9999;
+      height: 21.5%;
+      width: 48%;
+      padding: 0px;
+    }
+    
+    .MU90_0E {
+      position: absolute;
+      top: 40%;
+      left: 24%;
+      z-index: 9999;
+      height: 42%;
+      width: 6%;
+      min-width: 7%;
+      padding: 0px;
+    }
+    
+    .MU90_0I {
+      position: absolute;
+      top: 37%;
+      left: 35%;
+      z-index: 9999;
+      height: 39%;
+      width: 14.3%;
+      padding: 0px;
+    }
+    
+    .MU90_0F1 {
+      position: absolute;
+      bottom: 9%;
+      left: 24%;
+      z-index: 9999;
+      height: 67px;
+      min-width: 44px;
+      width: 42px;
+      padding: 0px;
+    }
+    
+    .MU90_0F2 {
+      position: absolute;
+      bottom: 10%;
+      left: 35%;
+      z-index: 9999;
+      height: 102px;
+      width: 80px;
+      padding: 0px;
+    }
+    
+    .MU90_0K {
+      position: absolute;
+      top: 34%;
+      left: 49%;
+      z-index: 9999;
+      height: 39%;
+      width: 7%;
+      min-width: 2%;
+      padding: 0px;
+    }
+}
+
+@media (min-width: 650px) and (max-width: 749px) {
+
+  .MU90_0A {
+    position: absolute;
+    bottom: 9.5%;
+    right: 28%;
+    z-index: 9999;
+    height: 142px;
+    width: 123px;
+    padding: 0px;
+  }
+  
+  .MU90_0B {
+    position: absolute;
+    bottom: 26.5%;
+    right: 28%;
+    z-index: 9999;
+    height: 96px;
+    width: 105px;
+    padding: 0px;
+  }
+  
+  .MU90_0C {
+    position: absolute;
+    top: 30%;
+    right: 28%;
+    z-index: 9999;
+    height: 32%;
+    width: 106px;
+    padding: 0px;
+  }
+  
+  .MU90_0D {
+    position: absolute;
+    top: 9%;
+    left: 24%;
+    z-index: 9999;
+    height: 21.5%;
+    width: 48%;
+    padding: 0px;
+  }
+  
+  .MU90_0E {
+    position: absolute;
+    top: 40%;
+    left: 24%;
+    z-index: 9999;
+    height: 42%;
+    width: 6%;
+    min-width: 7%;
+    padding: 0px;
+  }
+  
+  .MU90_0I {
+    position: absolute;
+    top: 37%;
+    left: 35%;
+    z-index: 9999;
+    height: 39%;
+    width: 14.3%;
+    padding: 0px;
+  }
+  
+  .MU90_0F1 {
+    position: absolute;
+    bottom: 9%;
+    left: 24%;
+    z-index: 9999;
+    height: 76px;
+    min-width: 51px;
+    width: 42px;
+    padding: 0px;
+  }
+  
+  .MU90_0F2 {
+    position: absolute;
+    bottom: 10%;
+    left: 35%;
+    z-index: 9999;
+    height: 114px;
+    width: 95px;
+    padding: 0px;
+  }
+  
+  .MU90_0K {
+    position: absolute;
+    top: 35%;
+    left: 49%;
+    z-index: 9999;
+    height: 39%;
+    width: 7%;
+    min-width: 2%;
+    padding: 0px;
+  }
+}
+
+@media (min-width: 750px) and (max-width: 850px) {
+  
+  .MU90_0A {
+    position: absolute;
+    bottom: 11.5%;
+    right: 28%;
+    z-index: 9999;
+    height: 172px;
+    width: 169px;
+    padding: 0px;
+  }
+  
+  .MU90_0B {
+    position: absolute;
+    bottom: 29.5%;
+    right: 28%;
+    z-index: 9999;
+    height: 111px;
+    width: 122px;
+    padding: 0px;
+  }
+  
+  .MU90_0C {
+    position: absolute;
+    top: 27%;
+    right: 28%;
+    z-index: 9999;
+    height: 32%;
+    width: 121px;
+    padding: 0px;
+  }
+  
+  .MU90_0D {
+    position: absolute;
+    top: 9%;
+    left: 24%;
+    z-index: 9999;
+    height: 21.5%;
+    width: 48%;
+    padding: 0px;
+  }
+  
+  .MU90_0E {
+    position: absolute;
+    top: 40%;
+    left: 24%;
+    z-index: 9999;
+    height: 42%;
+    width: 6%;
+    min-width: 7%;
+    padding: 0px;
+  }
+  
+  .MU90_0I {
+    position: absolute;
+    top: 32%;
+    left: 35%;
+    z-index: 9999;
+    height: 39%;
+    width: 14.3%;
+    padding: 0px;
+  }
+  
+  .MU90_0F1 {
+    position: absolute;
+    bottom: 14%;
+    left: 24%;
+    z-index: 9999;
+    height: 88px;
+    min-width: 59px;
+    width: 42px;
+    padding: 0px;
+  }
+  
+  .MU90_0F2 {
+    position: absolute;
+    bottom: 15%;
+    left: 35%;
+    z-index: 9999;
+    height: 135px;
+    width: 107px;
+    padding: 0px;
+  }
+  
+  .MU90_0K {
+    position: absolute;
+    top: 30%;
+    left: 49%;
+    z-index: 9999;
+    height: 39%;
+    width: 7%;
+    min-width: 7%;
+    padding: 0px;
+  }
+}
+
+@media (min-width: 850px) and (max-width: 992px) {
+  .MU90_0A {
+    position: absolute;
+    bottom: 9.5%;
+    right: 28%;
+    z-index: 9999;
+    height: 194px;
+    width: 169px;
+    padding: 0px;
+  }
+  
+  .MU90_0B {
+    position: absolute;
+    bottom: 26.5%;
+    right: 28%;
+    z-index: 9999;
+    height: 130px;
+    width: 148px;
+    padding: 0px;
+  }
+  
+  .MU90_0C {
+    position: absolute;
+    top: 30%;
+    right: 28%;
+    z-index: 9999;
+    height: 32%;
+    width: 147px;
+    padding: 0px;
+  }
+  
+  .MU90_0D {
+    position: absolute;
+    top: 9%;
+    left: 24%;
+    z-index: 9999;
+    height: 21.5%;
+    width: 48%;
+    padding: 0px;
+  }
+  
+  .MU90_0E {
+    position: absolute;
+    top: 40%;
+    left: 24%;
+    z-index: 9999;
+    height: 42%;
+    width: 6%;
+    min-width: 7%;
+    padding: 0px;
+  }
+  
+  .MU90_0I {
+    position: absolute;
+    top: 37%;
+    left: 35%;
+    z-index: 9999;
+    height: 37.5%;
+    width: 14.3%;
+    padding: 0px;
+  }
+  
+  .MU90_0F1 {
+    position: absolute;
+    bottom: 11%;
+    left: 24%;
+    z-index: 9999;
+    height: 98px;
+    min-width: 67px;
+    width: 42px;
+    padding: 0px;
+  }
+  
+  .MU90_0F2 {
+    position: absolute;
+    bottom: 11%;
+    left: 35%;
+    z-index: 9999;
+    height: 171px;
+    width: 127px;
+    padding: 0px;
+  }
+  
+  .MU90_0K {
+    position: absolute;
+    top: 33%;
+    left: 49%;
+    z-index: 9999;
+    height: 39%;
+    width: 7%;
+    min-width: 7%;
+    padding: 0px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1050px) {
+  .MU90_0A {
+    position: absolute;
+    bottom: 9.5%;
+    right: 28%;
+    z-index: 9999;
+    height: 162px;
+    width: 141px;
+    padding: 0px;
+  }
+  
+  .MU90_0B {
+    position: absolute;
+    bottom: 26.5%;
+    right: 28%;
+    z-index: 9999;
+    height: 108px;
+    width: 120px;
+    padding: 0px;
+  }
+  
+  .MU90_0C {
+    position: absolute;
+    top: 30%;
+    right: 28%;
+    z-index: 9999;
+    height: 32%;
+    width: 117px;
+    padding: 0px;
+  }
+  
+  .MU90_0D {
+    position: absolute;
+    top: 9%;
+    left: 24%;
+    z-index: 9999;
+    height: 21.5%;
+    width: 48%;
+    padding: 0px;
+  }
+  
+  .MU90_0E {
+    position: absolute;
+    top: 31%;
+    left: 24%;
+    z-index: 9999;
+    height: 42%;
+    width: 6%;
+    min-width: 7%;
+    padding: 0px;
+  }
+  
+  .MU90_0I {
+    position: absolute;
+    top: 28%;
+    left: 35%;
+    z-index: 9999;
+    height: 39.5%;
+    width: 14.3%;
+    padding: 0px;
+  }
+  
+  .MU90_0F1 {
+    position: absolute;
+    bottom: 18%;
+    left: 24%;
+    z-index: 9999;
+    height: 83px;
+    min-width: 56px;
+    width: 42px;
+    padding: 0px;
+  }
+  
+  .MU90_0F2 {
+    position: absolute;
+    bottom: 18%;
+    left: 35%;
+    z-index: 9999;
+    height: 140px;
+    width: 105px;
+    padding: 0px;
+  }
+  
+  .MU90_0K {
+    position: absolute;
+    top: 34.5%;
+    left: 49%;
+    z-index: 9999;
+    height: 39%;
+    width: 7%;
+    min-width: 7%;
+    padding: 0px;
+  }
+}
+
+@media (min-width: 1050px) and (max-width: 1199px) {
+  .MU90_0A {
+    position: absolute;
+    bottom: 9%;
+    right: 28%;
+    z-index: 9999;
+    height: 185px;
+    width: 159px;
+    padding: 0px;
+  }
+  
+  .MU90_0B {
+    position: absolute;
+    bottom: 26%;
+    right: 28%;
+    z-index: 9999;
+    height: 126px;
+    width: 137px;
+    padding: 0px;
+  }
+  
+  .MU90_0C {
+    position: absolute;
+    top: 30.5%;
+    right: 28%;
+    z-index: 9999;
+    height: 32%;
+    width: 135px;
+    padding: 0px;
+  }
+  
+  .MU90_0D {
+    position: absolute;
+    top: 9%;
+    left: 24%;
+    z-index: 9999;
+    height: 21.5%;
+    width: 48%;
+    padding: 0px;
+  }
+  
+  .MU90_0E {
+    position: absolute;
+    top: 40%;
+    left: 24%;
+    z-index: 9999;
+    height: 42%;
+    width: 7%;
+    padding: 0px;
+  }
+  
+  .MU90_0I {
+    position: absolute;
+    top: 37%;
+    left: 35%;
+    z-index: 9999;
+    height: 39.5%;
+    width: 14.2%;
+    padding: 0px;
+  }
+  
+  .MU90_0F1 {
+    position: absolute;
+    bottom: 9%;
+    left: 24%;
+    z-index: 9999;
+    height: 94px;
+    width: 63px;
+    padding: 0px;
+  }
+  
+  .MU90_0F2 {
+    position: absolute;
+    bottom: 9%;
+    left: 35%;
+    z-index: 9999;
+    height: 159px;
+    width: 115px;
+    padding: 0px;
+  }
+  
+  .MU90_0K {
+    position: absolute;
+    top: 35%;
+    left: 49%;
+    z-index: 9999;
+    height: 39%;
+    width: 7%;
+    padding: 0px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .MU90_0A {
+    position: absolute;
+    bottom: 9%;
+    right: 28%;
+    z-index: 9999;
+    height: 213px;
+    width: 182px;
+    padding: 0px;
+  }
+  
+  .MU90_0B {
+    position: absolute;
+    bottom: 26%;
+    right: 28%;
+    z-index: 9999;
+    height: 147px;
+    width: 158px;
+    padding: 0px;
+  }
+  
+  .MU90_0C {
+    position: absolute;
+    top: 30.5%;
+    right: 28%;
+    z-index: 9999;
+    height: 32%;
+    width: 155px;
+    padding: 0px;
+  }
+  
+  .MU90_0D {
+    position: absolute;
+    top: 9%;
+    left: 24%;
+    z-index: 9999;
+    height: 21.5%;
+    width: 48%;
+    padding: 0px;
+  }
+  
+  .MU90_0E {
+    position: absolute;
+    top: 40%;
+    left: 24%;
+    z-index: 9999;
+    height: 42%;
+    width: 7%;
+    padding: 0px;
+  }
+  
+  .MU90_0I {
+    position: absolute;
+    top: 37%;
+    left: 35%;
+    z-index: 9999;
+    height: 39.5%;
+    width: 14.2%;
+    padding: 0px;
+  }
+  
+  .MU90_0F1 {
+    position: absolute;
+    bottom: 9%;
+    left: 24%;
+    z-index: 9999;
+    height: 109px;
+    width: 71px;
+    padding: 0px;
+  }
+  
+  .MU90_0F2 {
+    position: absolute;
+    bottom: 9%;
+    left: 35%;
+    z-index: 9999;
+    height: 182px;
+    width: 138px;
+    padding: 0px;
+  }
+  
+  .MU90_0K {
+    position: absolute;
+    top: 35%;
+    left: 49%;
+    z-index: 9999;
+    height: 39%;
+    width: 7%;
+    padding: 0px;
+  }
+}
+
+@media (min-width: 1300px) and (max-width: 1450px) {
+  .MU90_0A {
+    position: absolute;
+    bottom: 9%;
+    right: 28%;
+    z-index: 9999;
+    height: 240px;
+    width: 205px;
+    padding: 0px;
+  }
+  
+  .MU90_0B {
+    position: absolute;
+    bottom: 26%;
+    right: 28%;
+    z-index: 9999;
+    height: 163px;
+    width: 176px;
+    padding: 0px;
+  }
+  
+  .MU90_0C {
+    position: absolute;
+    top: 30.5%;
+    right: 28%;
+    z-index: 9999;
+    height: 32%;
+    width: 178px;
+    padding: 0px;
+  }
+  
+  .MU90_0D {
+    position: absolute;
+    top: 9%;
+    left: 24%;
+    z-index: 9999;
+    height: 21.5%;
+    width: 48%;
+    padding: 0px;
+  }
+  
+  .MU90_0E {
+    position: absolute;
+    top: 40%;
+    left: 24%;
+    z-index: 9999;
+    height: 42%;
+    width: 7%;
+    padding: 0px;
+  }
+  
+  .MU90_0I {
+    position: absolute;
+    top: 37%;
+    left: 35%;
+    z-index: 9999;
+    height: 39.5%;
+    width: 14.2%;
+    padding: 0px;
+  }
+  
+  .MU90_0F1 {
+    position: absolute;
+    bottom: 9%;
+    left: 24%;
+    z-index: 9999;
+    height: 123px;
+    width: 85px;
+    padding: 0px;
+  }
+  
+  .MU90_0F2 {
+    position: absolute;
+    bottom: 9%;
+    left: 35%;
+    z-index: 9999;
+    height: 205px;
+    width: 157px;
+    padding: 0px;
+  }
+  
+  .MU90_0K {
+    position: absolute;
+    top: 35%;
+    left: 49%;
+    z-index: 9999;
+    height: 39%;
+    width: 7%;
+    padding: 0px;
+  }
+}
+
+@media (min-width: 1450px) and (max-width: 1600px) {
+.MU90_0A {
+  position: absolute;
+  bottom: 9%;
+  right: 28%;
+  z-index: 9999;
+  height: 268px;
+  width: 232px;
+  padding: 0px;
+}
+
+.MU90_0B {
+  position: absolute;
+  bottom: 26%;
+  right: 28%;
+  z-index: 9999;
+  height: 175px;
+  width: 200px;
+  padding: 0px;
+}
+
+.MU90_0C {
+  position: absolute;
+  top: 31%;
+  right: 28%;
+  z-index: 9999;
+  height: 32%;
+  width: 200px;
+  padding: 0px;
+}
+
+.MU90_0D {
+  position: absolute;
+  top: 10%;
+  left: 24%;
+  z-index: 9999;
+  height: 21%;
+  width: 48%;
+  padding: 0px;
+
+}
+
+.MU90_0E {
+  position: absolute;
+  top: 41%;
+  left: 24%;
+  z-index: 9999;
+  height: 42%;
+  width: 7%;
+  padding: 0px;
+}
+
+.MU90_0I {
+  position: absolute;
+  top: 38%;
+  left: 35%;
+  z-index: 9999;
+  height: 39%;
+  width: 14%;
+  padding: 0px;
+}
+
+.MU90_0F1 {
+  position: absolute;
+  bottom: 9%;
+  left: 24%;
+  z-index: 9999;
+  height: 137px;
+  width: 91px;
+  padding: 0px;
+}
+
+.MU90_0F2 {
+  position: absolute;
+  bottom: 9%;
+  left: 35%;
+  z-index: 9999;
+  height: 229px;
+  width: 179px;
+  padding: 0px;
+}
+
+.MU90_0K {
+  position: absolute;
+  top: 35%;
+  left: 49%;
+  z-index: 9999;
+  height: 39%;
+  width: 7%;
+  padding: 0px;
+}
+}
+
+@media (min-width: 1600px) and (max-width: 1750px) {
+
+  .MU90_0A {
+    position: absolute;
+    bottom: 9%;
+    right: 28%;
+    z-index: 9999;
+    height: 310px;
+    width: 263px;
+    padding: 0px;
+  }
+  
+  .MU90_0B {
+    position: absolute;
+    bottom: 26%;
+    right: 28%;
+    z-index: 9999;
+    height: 209px;
+    width: 227px;
+    padding: 0px;
+  }
+  
+  .MU90_0C {
+    position: absolute;
+    top: 30.5%;
+    right: 28%;
+    z-index: 9999;
+    height: 32%;
+    width: 231px;
+    padding: 0px;
+  }
+  
+  .MU90_0D {
+    position: absolute;
+    top: 9%;
+    left: 24%;
+    z-index: 9999;
+    height: 21.5%;
+    width: 48%; 
+    padding: 0px;
+
+  }
+  
+  .MU90_0E {
+    position: absolute;
+    top: 40%;
+    left: 24%;
+    z-index: 9999;
+    height: 42.5%;
+    width: 7%;
+    padding: 0px;
+  }
+  
+  .MU90_0I {
+    position: absolute;
+    top: 37%;
+    left: 35%;
+    z-index: 9999;
+    height: 40%;
+    width: 14%;
+    padding: 0px;
+  }
+  
+  .MU90_0F1 {
+    position: absolute;
+    bottom: 9%;
+    left: 24%;
+    z-index: 9999;
+    height: 157px;
+    width: 104px;
+    padding: 0px;
+  }
+  
+  .MU90_0F2 {
+    position: absolute;
+    bottom: 9%;
+    left: 35%;
+    z-index: 9999;
+    height: 263px;
+    width: 199px;
+    padding: 0px;
+  }
+  
+  .MU90_0K {
+    position: absolute;
+    top: 35%;
+    left: 49%;
+    z-index: 9999;
+    height: 39%;
+    width: 7%;
+    padding: 0px;
+  }
+}
+
+@media (min-width: 1750px) and (max-width: 1850px) {
+  .MU90_0A {
+    position: absolute;
+    bottom: 9%;
+    right: 28%;
+    z-index: 9999;
+    height: 310px;
+    width: 263px;
+    padding: 0px;
+  }
+  
+  .MU90_0B {
+    position: absolute;
+    bottom: 26%;
+    right: 28%;
+    z-index: 9999;
+    height: 224px;
+    width: 246px;
+    padding: 0px;
+  }
+  
+  .MU90_0C {
+    position: absolute;
+    top: 30.5%;
+    right: 28%;
+    z-index: 9999;
+    height: 32%;
+    width: 250px;
+    padding: 0px;
+  }
+  
+  .MU90_0D {
+    position: absolute;
+    top: 9%;
+    left: 24%;
+    z-index: 9999;
+    height: 21.5%;
+    width: 48%; 
+    padding: 0px;
+
+  }
+  
+  .MU90_0E {
+    position: absolute;
+    top: 40%;
+    left: 24%;
+    z-index: 9999;
+    height: 42.5%;
+    width: 7%;
+    padding: 0px;
+  }
+  
+  .MU90_0I {
+    position: absolute;
+    top: 37%;
+    left: 35%;
+    z-index: 9999;
+    height: 40%;
+    width: 14%;
+    padding: 0px;
+  }
+  
+  .MU90_0F1 {
+    position: absolute;
+    bottom: 9%;
+    left: 24%;
+    z-index: 9999;
+    height: 163px;
+    width: 112px;
+    padding: 0px;
+  }
+  
+  .MU90_0F2 {
+    position: absolute;
+    bottom: 9%;
+    left: 35%;
+    z-index: 9999;
+    height: 263px;
+    width: 199px;
+    padding: 0px;
+  }
+  
+  .MU90_0K {
+    position: absolute;
+    top: 35%;
+    left: 49%;
+    z-index: 9999;
+    height: 39%;
+    width: 7%;
+    padding: 0px;
+  }
+}
+
+@media (min-width: 1850px) and (max-width: 2000px) {
+  .MU90_0A {
+    position: absolute;
+    bottom: 9%;
+    right: 28%;
+    z-index: 9999;
+    height: 361px;
+    width: 312px;
+    padding: 0px;
+  }
+  .MU90_0B {
+    position: absolute;
+    bottom: 26%;
+    right: 28%;
+    z-index: 9999;
+    height: 245px;
+    width: 267px;
+    padding: 0px;
+  }
+  .MU90_0C {
+    position: absolute;
+    top: 30.5%;
+    right: 28%;
+    z-index: 9999;
+    height: 32%;
+    width: 250px;
+    padding: 0px;
+  }
+  .MU90_0D {
+    position: absolute;
+    top: 9%;
+    left: 24%;
+    z-index: 9999;
+    height: 21.5%;
+    width: 48%; 
+    padding: 0px;
+
+  }
+  .MU90_0E {
+    position: absolute;
+    top: 40%;
+    left: 24%;
+    z-index: 9999;
+    height: 42.5%;
+    width: 7%;
+    padding: 0px;
+  }
+  .MU90_0I {
+    position: absolute;
+    top: 37%;
+    left: 35%;
+    z-index: 9999;
+    height: 40%;
+    width: 14%;
+    padding: 0px;
+  }
+  .MU90_0F1 {
+    position: absolute;
+    bottom: 9%;
+    left: 24%;
+    z-index: 9999;
+    height: 181px;
+    width: 121px;
+    padding: 0px;
+  }
+  .MU90_0F2 {
+    position: absolute;
+    bottom: 9%;
+    left: 35%;
+    z-index: 9999;
+    height: 306px;
+    width: 232px;
+    padding: 0px;
+  }
+  .MU90_0K {
+    position: absolute;
+    top: 35%;
+    left: 49%;
+    z-index: 9999;
+    height: 39%;
+    width: 7%;
+    padding: 0px;
+  }
+}
+
+/* ENDS MU90.0 Responsive */
+
+
+/* START MU90.1 Responsive */
+
+@media (min-width: 360px) and (max-width: 468px) {
+
+  .MU90_1BN {
+    position: absolute;
+    bottom: 27%;
+    right: 25%;
+    z-index: 9999;
+    height: 30%;
+    width: 19%;
+    padding: 0px;
+  }
+  
+  .MU90_1BS {
+    position: absolute;
+    bottom: 12%;
+    right: 44%;
+    z-index: 9999;
+    height: 24%;
+    width: 12%;
+    min-width: 10%;
+    padding: 0px;
+  }
+  
+  .MU90_1C {
+    position: absolute;
+    bottom: 36%;
+    right: 44%;
+    z-index: 9999;
+    height: 12%;
+    width: 16%;
+    padding: 0px;
+  }
+  
+  .MU90_1D {
+    position: absolute;
+    top: 8%;
+    right: 25%;
+    z-index: 9999;
+    height: 17%;
+    width: 15%;
+    min-width: 12%;
+    padding: 0px;
+  }
+  
+  .MU90_1E {
+    position: absolute;
+    top: 8%;
+    right: 40%;
+    z-index: 9999;
+    height: 14%;
+    width: 20%;
+    padding: 0px;
+  }
+  
+  .MU90_1F {
+    position: absolute;
+    top: 8%;
+    left: 26%;
+    z-index: 9999;
+    height: 14%;
+    width: 14%;
+    min-width: 10%;
+    padding: 0px;
+  }
+  
+  .MU90_1G {
+    position: absolute;
+    top: 21.5%;
+    left: 26%;
+    z-index: 9999;
+    height: 14%;
+    min-width: 5%;
+    width: 11%;
+    padding: 0px;
+  }
+  
+  .MU90_1H {
+    position: absolute;
+    top: 39%;
+    left: 26%;
+    z-index: 9999;
+    height: 30%;
+    min-width: 5%;
+    width: 11%;
+    padding: 0px;
+  }
+  
+  .MU90_1I {
+    position: absolute;
+    bottom: 12%;
+    left: 26%;
+    z-index: 9999;
+    height: 20%;
+    width: 11%;
+    min-width: 15%;
+    padding: 0px;
+  }
+  
+  .MU90_1K {
+    position: absolute;
+    bottom: 30.5%;
+    left: 36%;
+    z-index: 9999;
+    height: 4%;
+    width: 8%;
+    min-width: 4%;
+    padding: 0px;
+  }
+  
+  .MU90_1L {
+    position: absolute;
+    top: 26%;
+    left: 40%;
+    z-index: 9999;
+    height: 22%;
+    width: 13%;
+    min-width: 10%;
+    padding: 0px;
+  }
+  
+  .MU90_1M {
+    position: absolute;
+    top: 48%;
+    left: 40%;
+    z-index: 9999;
+    height: 3%;
+    width: 9%;
+    min-width: 13%;
+    padding: 0px;
+  }
+}
+
+@media (min-width: 468px) and (max-width: 549px) {
+  
+  .MU90_1BN {
+    position: absolute;
+    bottom: 27%;
+    right: 25%;
+    z-index: 9999;
+    height: 30%;
+    width: 19%;
+    padding: 0px;
+  }
+  
+  .MU90_1BS {
+    position: absolute;
+    bottom: 10%;
+    right: 44%;
+    z-index: 9999;
+    height: 24%;
+    width: 12%;
+    min-width: 10%;
+    padding: 0px;
+  }
+  
+  .MU90_1C {
+    position: absolute;
+    bottom: 34.5%;
+    right: 44%;
+    z-index: 9999;
+    height: 12%;
+    width: 16%;
+    padding: 0px;
+  }
+  
+  .MU90_1D {
+    position: absolute;
+    top: 9%;
+    right: 25%;
+    z-index: 9999;
+    height: 17%;
+    width: 15%;
+    min-width: 12%;
+    padding: 0px;
+  }
+  
+  .MU90_1E {
+    position: absolute;
+    top: 9%;
+    right: 40%;
+    z-index: 9999;
+    height: 14%;
+    width: 20%;
+    padding: 0px;
+  }
+  
+  .MU90_1F {
+    position: absolute;
+    top: 9%;
+    left: 26%;
+    z-index: 9999;
+    height: 14%;
+    width: 14%;
+    min-width: 10%;
+    padding: 0px;
+  }
+  
+  .MU90_1G {
+    position: absolute;
+    top: 23.5%;
+    left: 26%;
+    z-index: 9999;
+    height: 14%;
+    min-width: 5%;
+    width: 11%;
+    padding: 0px;
+  }
+  
+  .MU90_1H {
+    position: absolute;
+    top: 40%;
+    left: 26%;
+    z-index: 9999;
+    height: 30%;
+    min-width: 5%;
+    width: 11%;
+    padding: 0px;
+  }
+  
+  .MU90_1I {
+    position: absolute;
+    bottom: 10%;
+    left: 26%;
+    z-index: 9999;
+    height: 20%;
+    width: 11%;
+    min-width: 15%;
+    padding: 0px;
+  }
+  
+  .MU90_1K {
+    position: absolute;
+    bottom: 30.5%;
+    left: 36%;
+    z-index: 9999;
+    height: 4%;
+    width: 8%;
+    min-width: 4%;
+    padding: 0px;
+  }
+  
+  .MU90_1L {
+    position: absolute;
+    top: 26%;
+    left: 40%;
+    z-index: 9999;
+    height: 22%;
+    width: 13%;
+    min-width: 10%;
+    padding: 0px;
+  }
+  
+  .MU90_1M {
+    position: absolute;
+    top: 48%;
+    left: 40%;
+    z-index: 9999;
+    height: 3%;
+    width: 9%;
+    min-width: 13%;
+    padding: 0px;
+  }
+}
+
+@media (min-width: 1450px) and (max-width: 1600px) {
+.MU90_1BN {
+  position: absolute;
+  bottom: 26%;
+  right: 25%;
+  z-index: 9999;
+  height: 30%;
+  width: 19%;
+  padding: 0px;
+}
+
+.MU90_1BS {
+  position: absolute;
+  bottom: 10%;
+  right: 44%;
+  z-index: 9999;
+  height: 23%;
+  width: 12%;
+  padding: 0px;
+}
+
+.MU90_1C {
+  position: absolute;
+  bottom: 33%;
+  right: 44%;
+  z-index: 9999;
+  height: 12%;
+  width: 16%;
+  padding: 0px;
+}
+
+.MU90_1D {
+  position: absolute;
+  top: 10%;
+  right: 25%;
+  z-index: 9999;
+  height: 17%;
+  width: 15%;
+  padding: 0px;
+}
+
+.MU90_1E {
+  position: absolute;
+  top: 10%;
+  right: 40%;
+  z-index: 9999;
+  height: 14%;
+  width: 20%;
+  padding: 0px;
+}
+
+.MU90_1F {
+  position: absolute;
+  top: 10%;
+  left: 26%;
+  z-index: 9999;
+  height: 14%;
+  width: 14%;
+  padding: 0px;
+}
+
+.MU90_1G {
+  position: absolute;
+  top: 24.5%;
+  left: 26%;
+  z-index: 9999;
+  height: 14%;
+  width: 11%;
+  padding: 0px;
+}
+
+.MU90_1H {
+  position: absolute;
+  top: 41%;
+  left: 26%;
+  z-index: 9999;
+  height: 30%;
+  width: 11%;
+  padding: 0px;
+}
+
+.MU90_1I {
+  position: absolute;
+  bottom: 9%;
+  left: 26%;
+  z-index: 9999;
+  height: 20%;
+  width: 11%;
+  padding: 0px;
+}
+
+.MU90_1K {
+  position: absolute;
+  bottom: 28.5%;
+  left: 36%;
+  z-index: 9999;
+  height: 5%;
+  width: 8%;
+  padding: 0px;
+}
+
+.MU90_1L {
+  position: absolute;
+  top: 27%;
+  left: 40%;
+  z-index: 9999;
+  height: 22%;
+  width: 13%;
+  padding: 0px;
+}
+
+.MU90_1M {
+  position: absolute;
+  top: 49%;
+  left: 40%;
+  z-index: 9999;
+  height: 3%;
+  width: 13%;
+  padding: 0px;
+}
+}
+/* END MU90.1 Responsive */
+
+/* START MU90.2 Responsive */
+  /* okay */
+/* End MU90.2 Responsive */
+
+/* START MU90.R Responsive */
+  /* okay */
+/* End MU90.R Responsive */
+
+
+
+/* START MA Purification */
+
+/* Ground Floor Responsive */
+ 
+@media (min-width: 360px) and (max-width: 468px) {
+  
+  .GF_Backage {
+    position: absolute;
+    bottom: 11%;
+    left: 38%;
+    z-index: 9999;
+    height: 49%;
+    width: 10%;
+    padding: 0px;
+  }
+  
+  .GF_Corridor_N {
+    position: absolute;
+    top: 35%;
+    left: 38%;
+    z-index: 9999;
+    height: 4%;
+    width: 1%;
+    padding: 0px;
+  }
+  
+  .GF_Corridor_S {
+    position: absolute;
+    bottom: 8%;
+    left: 38%;
+    z-index: 9999;
+    height: 2%;
+    width: 10%;
+    padding: 0px;
+  }
+  
+  .GF_Frontstage_E {
+    position: absolute;
+    bottom: 8%;
+    left: 48%;
+    z-index: 9999;
+    height: 56%;
+    width: 10%;
+    padding: 0px;
+  }
+  
+  .GF_Frontstage_W {
+    position: absolute;
+    bottom: 8%;
+    left: 27%;
+    z-index: 9999;
+    height: 56%;
+    width: 10%;
+    padding: 0px;
+  }
+  
+  .eleven_Zone {
+    position: absolute;
+    bottom: 21%;
+    left: 20%;
+    z-index: 9999;
+    height: 20%;
+    width: 7%;
+    padding: 0px;
+  }
+  
+  .seventyA_Zone {
+    position: absolute;
+    bottom: 31%;
+    right: 34%;
+    z-index: 9999;
+    height: 20%;
+    width: 8%;
+    padding: 0px;
+  }
+  
+  .seventyB_Zone {
+    position: absolute;
+    bottom: 20%;
+    right: 22%;
+    z-index: 9999;
+    height: 24%;
+    width: 8%;
+    padding: 0px;
+  
+  }
+  
+  .fortyA_Zone {
+    position: absolute;
+    top: 26%;
+    left: 31%;
+    z-index: 9999;
+    height: 8%;
+    width: 8%;
+    min-width: 32px;
+    padding: 0px;
+  }
+  
+  .fortyC_Zone {
+    position: absolute;
+    top: 17.5%;
+    left: 19%;
+    z-index: 9999;
+    height: 2%;
+    width: 62%;
+    padding: 0px;
+  }
+  
+  .fortyD_Zone {
+    position: absolute;
+    top: 20%;
+    left: 45%;
+    z-index: 9999;
+    height: 14%;
+    width: 4%;
+    min-width: 8px;
+    padding: 0px;
+  }
+  
+  .fortyE_Zone {
+    position: absolute;
+    top: 28%;
+    left: 49%;
+    z-index: 9999;
+    height: 5.5%;
+    width: 4%;
+    min-width: 18px;
+    padding: 0px;
+  }
+  
+  .fortyF_Zone {
+    position: absolute;
+    top: 19%;
+    left: 49%;
+    z-index: 9999;
+    height: 9%;
+    width: 5%;
+    padding: 0px;
+    min-width: 0px;
+  
+  }
+  
+  .fortyG_Zone {
+    position: absolute;
+    top: 30.5%;
+    right: 29.5%;
+    z-index: 9999;
+    height: 3%;
+    width: 11%;
+    min-width: 43px;
+    padding: 0px;
+  }
+  
+  .fortyJ_Zone {
+    position: absolute;
+    top: 19%;
+    right: 30%;
+    z-index: 9999;
+    height: 11%;
+    width: 7%;
+    min-width: 29px;
+    padding: 0px;
+  }
+  
+  .fortyK_Zone {
+    position: absolute;
+    top: 19%;
+    right: 42%;
+    z-index: 9999;
+    height: 12%;
+    width: 4%;
+    min-width: 18px;
+  }
+  
+  .fortyL_Zone {
+    position: absolute;
+    top: 19%;
+    left: 32.5%;
+    z-index: 9999;
+    height: 14%;
+    width: 5%;
+    min-width: 21px;
+    padding: 0px;
+  }
+  
+  .fortyM_Zone {
+    position: absolute;
+    top: 6.5%;
+    left: 32.5%;
+    z-index: 9999;
+    height: 11%;
+    width: 9%;
+    min-width: 35px;
+    padding: 0px;
+  }
+  
+  .fortyQ_Zone {
+    position: absolute;
+    top: 6.5%;
+    left: 42%;
+    z-index: 9999;
+    height: 11%;
+    width: 2%;
+    min-width: 0px;
+    padding: 0px;
+  }
+  
+  .fortyR_Zone {
+    position: absolute;
+    top: 6.5%;
+    left: 44%;
+    z-index: 9999;
+    height: 11%;
+    width: 0%;
+    min-width: 18px;
+    padding: 0px;
+  }
+  
+  .fortyS_Zone {
+    position: absolute;
+    top: 6.5%;
+    left: 49%;
+    z-index: 9999;
+    height: 11%;
+    width: 6%;
+    min-width: 25px;
+    padding: 0px;
+  }
+  
+  .fortyU_Zone {
+    position: absolute;
+    top: 6.5%;
+    right: 32%;
+    z-index: 9999;
+    height: 11%;
+    width: 5%;
+    min-width: 47px;
+    padding: 0px;
+  }
+  
+  }
+  
+  @media (min-width: 468px) and (max-width: 549px) {
+  
+    .fortyD_Zone{
+      position: absolute;
+      top: 20%;
+      left: 43%;
+      z-index: 9999;
+      height: 14%;
+      width: 6%;
+      min-width: 4%;
+      padding: 0px;
+    }
+    .fortyE_Zone{
+      position: absolute;
+      top: 29%;
+      left: 49%;
+      z-index: 9999;
+      height: 5%;
+      width: 7%;
+      min-width: 30px;
+      padding: 0px;
+    }
+    .eleven_Zone{
+      position: absolute;
+      bottom: 22%;
+      left: 21%;
+      z-index: 9999;
+      height: 20%;
+      width: 6%;
+      min-width: 30px;
+      padding: 0px;
+    }
+    .seventyB_Zone{
+      position: absolute;
+      bottom: 21%;
+      right: 22%;
+      z-index: 9999;
+      height: 24%;
+      width: 8%;
+      min-width: 30px;
+      padding: 0px;
+    }
+    .GF_Frontstage_W{
+      position: absolute;
+      bottom: 9%;
+      left: 27%;
+      z-index: 9999;
+      height: 57%;
+      width: 10%;
+      min-width: 30px;
+      padding: 0px;
+    }
+    .GF_Backage{
+      position: absolute;
+      bottom: 11%;
+      left: 38%;
+      z-index: 9999;
+      height: 52%;
+      width: 10%;
+      min-width: 20px;
+      padding: 0px;
+    }
+    .GF_Frontstage_E{
+      position: absolute;
+      bottom: 10%;
+      left: 48%;
+      z-index: 9999;
+      height: 56%;
+      width: 10%;
+      min-width: 30px;
+      padding: 0px;
+    }
+    .GF_Corridor_N{
+      position: absolute;
+      top: 34%;
+      left: 38%;
+      z-index: 9999;
+      height: 3%;
+      width: 1%;
+      min-width: 23px;
+      padding: 0px;
+    }
+    .fortyR_Zone{
+      position: absolute;
+      top: 6.5%;
+      left: 40%;
+      z-index: 9999;
+      height: 11%;
+      width: 7%;
+      min-width: 35px;
+      padding: 0px;
+    }
+    .fortyS_Zone{
+      position: absolute;
+      top: 6.5%;
+      left: 48%;
+      z-index: 9999;
+      height: 11%;
+      width: 12%;
+      min-width: 40px;
+      padding: 0px;
+    }
+    .fortyL_Zone{
+      position: absolute;
+      top: 20%;
+      left: 19%;
+      z-index: 9999;
+      height: 14%;
+      width: 9%;
+      min-width: 47px;
+      padding: 0px;
+    }
+    .fortyA_Zone{
+      position: absolute;
+      top: 26%;
+      left: 31%;
+      z-index: 9999;
+      height: 8%;
+      width: 8%;
+      min-width: 40px;
+      padding: 0px;
+    }
+    .fortyK_Zone{
+      position: absolute;
+      top: 20%;
+      right: 36%;
+      z-index: 9999;
+      height: 12%;
+      width: 8%;
+      min-width: 20px;
+      padding: 0px;
+    }
+    .seventyA_Zone{
+      position: absolute;
+      bottom: 32%;
+      right: 34%;
+      z-index: 9999;
+      height: 20%;
+      width: 8%;
+      min-width: 40px;
+      padding: 0px;
+    }
+  
+  
+  }
+  
+  @media (min-width: 550px) and (max-width: 750px) {
+  
+    .fortyD_Zone{
+      position: absolute;
+      top: 20%;
+      left: 43%;
+      z-index: 9999;
+      height: 14%;
+      width: 6%;
+      min-width: 4%;
+      padding: 0px;
+    }
+    .fortyE_Zone{
+      position: absolute;
+      top: 29%;
+      left: 49%;
+      z-index: 9999;
+      height: 5%;
+      width: 7%;
+      min-width: 54px;
+      padding: 0px;
+    }
+    .eleven_Zone{
+      position: absolute;
+      bottom: 21%;
+      left: 21%;
+      z-index: 9999;
+      height: 20%;
+      width: 6%;
+      min-width: 30px;
+      padding: 0px;
+    }
+    .seventyB_Zone{
+      position: absolute;
+      bottom: 20%;
+      right: 22%;
+      z-index: 9999;
+      height: 25%;
+      width: 8%;
+      padding: 0px;
+    }
+    .GF_Frontstage_W{
+      position: absolute;
+      bottom: 8%;
+      left: 27%;
+      z-index: 9999;
+      height: 58%;
+      width: 10%;
+      padding: 0px;
+    }
+    .GF_Backage{
+      position: absolute;
+      bottom: 11%;
+      left: 38%;
+      z-index: 9999;
+      height: 51%;
+      width: 10%;
+      padding: 0px;
+    }
+    .GF_Frontstage_E{
+      position: absolute;
+      bottom: 8%;
+      left: 48%;
+      z-index: 9999;
+      height: 58%;
+      width: 10%;
+      padding: 0px;
+    }
+    .GF_Corridor_N{
+      position: absolute;
+      top: 34%;
+      left: 38%;
+      z-index: 9999;
+      height: 4%;
+      width: 1%;
+      min-width: 35px;
+      padding: 0px;
+    }
+    .fortyR_Zone{
+      position: absolute;
+      top: 6.5%;
+      left: 40%;
+      z-index: 9999;
+      height: 11%;
+      width: 7%;
+      min-width: 48px;
+      padding: 0px;
+    }
+  }
+  
+  @media (min-width: 750px) and (max-width: 850px) {
+    .fortyD_Zone{
+      position: absolute;
+      top: 20%;
+      left: 43%;
+      z-index: 9999;
+      height: 14%;
+      width: 6%;
+      min-width: 4%;
+      padding: 0px;
+    }
+    .fortyE_Zone{
+      position: absolute;
+      top: 29%;
+      left: 49%;
+      z-index: 9999;
+      height: 5%;
+      width: 7%;
+      min-width: 54px;
+      padding: 0px;
+    }
+    .eleven_Zone{
+      position: absolute;
+      bottom: 21%;
+      left: 21%;
+      z-index: 9999;
+      height: 20%;
+      width: 6%;
+      min-width: 30px;
+      padding: 0px;
+    }
+    .seventyB_Zone{
+      position: absolute;
+      bottom: 20%;
+      right: 22%;
+      z-index: 9999;
+      height: 25%;
+      width: 8%;
+      padding: 0px;
+    }
+    .GF_Frontstage_W{
+      position: absolute;
+      bottom: 8%;
+      left: 27%;
+      z-index: 9999;
+      height: 58%;
+      width: 10%;
+      padding: 0px;
+    }
+    .GF_Backage{
+      position: absolute;
+      bottom: 11%;
+      left: 38%;
+      z-index: 9999;
+      height: 51%;
+      width: 10%;
+      padding: 0px;
+    }
+    .GF_Frontstage_E{
+      position: absolute;
+      bottom: 8%;
+      left: 48%;
+      z-index: 9999;
+      height: 58%;
+      width: 10%;
+      padding: 0px;
+    }
+    .GF_Corridor_N{
+      position: absolute;
+      top: 34%;
+      left: 38%;
+      z-index: 9999;
+      height: 4%;
+      width: 1%;
+      min-width: 35px;
+      padding: 0px;
+    }
+  }
+  
+  @media (min-width: 850px) and (max-width: 992px) {
+  
+    .fortyD_Zone{
+      position: absolute;
+      top: 20%;
+      left: 43%;
+      z-index: 9999;
+      height: 14%;
+      width: 6%;
+      min-width: 4%;
+      padding: 0px;
+    }
+    .fortyE_Zone{
+      position: absolute;
+      top: 29%;
+      left: 49%;
+      z-index: 9999;
+      height: 5%;
+      width: 7%;
+      min-width: 54px;
+      padding: 0px;
+    }
+    .eleven_Zone{
+      position: absolute;
+      bottom: 21%;
+      left: 21%;
+      z-index: 9999;
+      height: 20%;
+      width: 6%;
+      min-width: 30px;
+      padding: 0px;
+    }
+    .seventyB_Zone{
+      position: absolute;
+      bottom: 20%;
+      right: 22%;
+      z-index: 9999;
+      height: 25%;
+      width: 8%;
+      padding: 0px;
+    }
+    .GF_Frontstage_W{
+      position: absolute;
+      bottom: 8%;
+      left: 27%;
+      z-index: 9999;
+      height: 58%;
+      width: 10%;
+      padding: 0px;
+    }
+    .GF_Backage{
+      position: absolute;
+      bottom: 11%;
+      left: 38%;
+      z-index: 9999;
+      height: 51%;
+      width: 10%;
+      padding: 0px;
+    }
+    .GF_Frontstage_E{
+      position: absolute;
+      bottom: 8%;
+      left: 48%;
+      z-index: 9999;
+      height: 58%;
+      width: 10%;
+      padding: 0px;
+    }
+    .GF_Corridor_N{
+      position: absolute;
+      top: 34%;
+      left: 38%;
+      z-index: 9999;
+      height: 4%;
+      width: 1%;
+      min-width: 35px;
+      padding: 0px;
+    }
+  }
+  
+  @media (min-width: 992px) and (max-width: 1050px) {
+    .fortyD_Zone{
+      position: absolute;
+      top: 20%;
+      left: 43%;
+      z-index: 9999;
+      height: 14%;
+      width: 6%;
+      min-width: 4%;
+      padding: 0px;
+    }
+    .fortyE_Zone{
+      position: absolute;
+      top: 29%;
+      left: 49%;
+      z-index: 9999;
+      height: 5%;
+      width: 7%;
+      min-width: 54px;
+      padding: 0px;
+    }
+    .eleven_Zone{
+      position: absolute;
+      bottom: 21%;
+      left: 21%;
+      z-index: 9999;
+      height: 20%;
+      width: 6%;
+      min-width: 30px;
+      padding: 0px;
+    }
+    .seventyB_Zone{
+      position: absolute;
+      bottom: 20%;
+      right: 22%;
+      z-index: 9999;
+      height: 25%;
+      width: 8%;
+      padding: 0px;
+    }
+    .GF_Frontstage_W{
+      position: absolute;
+      bottom: 8%;
+      left: 27%;
+      z-index: 9999;
+      height: 58%;
+      width: 10%;
+      padding: 0px;
+    }
+    .GF_Backage{
+      position: absolute;
+      bottom: 11%;
+      left: 38%;
+      z-index: 9999;
+      height: 51%;
+      width: 10%;
+      padding: 0px;
+    }
+    .GF_Frontstage_E{
+      position: absolute;
+      bottom: 8%;
+      left: 48%;
+      z-index: 9999;
+      height: 58%;
+      width: 10%;
+      padding: 0px;
+    }
+    .GF_Corridor_N{
+      position: absolute;
+      top: 34%;
+      left: 38%;
+      z-index: 9999;
+      height: 4%;
+      width: 1%;
+      min-width: 35px;
+      padding: 0px;
+    }
+  }
+  
+  @media (min-width: 1050px) and (max-width: 1199px) {
+    .fortyD_Zone{
+      position: absolute;
+      top: 20%;
+      left: 43%;
+      z-index: 9999;
+      height: 14%;
+      width: 6%;
+      min-width: 4%;
+      padding: 0px;
+    }
+    .GF_Frontstage_W{
+      position: absolute;
+      bottom: 9%;
+      left: 27%;
+      z-index: 9999;
+      height: 57%;
+      width: 10%;
+      padding: 0px;
+    }
+    .GF_Backage{
+      position: absolute;
+      bottom: 11%;
+      left: 38%;
+      z-index: 9999;
+      height: 51%;
+      width: 10%;
+      padding: 0px;
+    }
+    .GF_Corridor_N{
+      position: absolute;
+      top: 34%;
+      left: 38%;
+      z-index: 9999;
+      height: 4%;
+      width: 1%;
+      min-width: 38px;
+      padding: 0px;
+    }
+    .GF_Corridor_S{
+      position: absolute;
+      bottom: 8.5%;
+      left: 38%;
+      z-index: 9999;
+      height: 2%;
+      width: 10%;
+      padding: 0px;
+    }
+    .GF_Frontstage_E{
+      position: absolute;
+      bottom: 8%;
+      left: 48%;
+      z-index: 9999;
+      height: 58%;
+      width: 10%;
+      padding: 0px;
+    }
+  }
+  
+  /* Ground Floor Responsive */
+
+
+  /* First Floor Responsive */
+
+@media (min-width: 360px) and (max-width: 468px) {
+  
+  .FristBackstage {
+    position: absolute;
+    bottom: 12%;
+    left: 38%;
+    z-index: 9999;
+    height: 51%;
+    width: 10%;
+    min-width: 30px;
+    padding: 0px;
+  }
+  
+  .FristCorridorN {
+    position: absolute;
+    top: 34.5%;
+    left: 38%;
+    z-index: 9999;
+    height: 3%;
+    width: 1%;
+    min-width: 25px;
+    padding: 0px;
+  }
+  
+  .FristFrontstageE {
+    position: absolute;
+    bottom: 10%;
+    left: 48%;
+    z-index: 9999;
+    height: 56%;
+    width: 10%;
+    min-width: 9%;
+    padding: 0px;
+  }
+  
+  .FristFrontstageW {
+    position: absolute;
+    bottom: 10%;
+    left: 29%;
+    z-index: 9999;
+    height: 56%;
+    width: 8%;
+    min-width: 9%;
+    padding: 0px;
+  }
+  
+  .FristFIT {
+    position: absolute;
+    bottom: 10%;
+    left: 38%;
+    z-index: 9999;
+    height: 2%;
+    width: 10%;
+    min-width: 30px;
+    padding: 0px;
+  }
+  
+  .firstseventyA {
+    position: absolute;
+    bottom: 32%;
+    right: 34%;
+    z-index: 9999;
+    height: 20%;
+    width: 8%;
+    min-width: 33px;
+    padding: 0px;
+  }
+  
+  .firstseventyB {
+    position: absolute;
+    bottom: 27.4%;
+    right: 24%;
+    z-index: 9999;
+    height: 14%;
+    width: 8%;
+    min-width: 37px;
+    padding: 0px;
+  }
+  
+  .firstseventyC {
+    position: absolute;
+    bottom: 21%;
+    right: 24%;
+    z-index: 9999;
+    height: 6%;
+    width: 6%;
+    min-width: 29px;
+    padding: 0px;
+  }
+  
+  .FirstfoutyA {
+    position: absolute;
+    top: 20%;
+    left: 37%;
+    z-index: 9999;
+    height: 14%;
+    width: 4%;
+    padding: 0px;
+    min-width: 0px;
+  }
+  
+  .FirstfoutyB {
+    position: absolute;
+    top: 27.5%;
+    left: 21%;
+    z-index: 9999;
+    height: 7%;
+    width: 11%;
+    min-width: 20px;
+    padding: 0px;
+  
+  }
+  
+  .FirstfoutyC {
+    position: absolute;
+    top: 18.5%;
+    left: 21%;
+    z-index: 9999;
+    height: 2%;
+    width: 58%;
+    padding: 0px;
+  }
+  
+  .FirstfoutyD {
+    position: absolute;
+    top: 7.5%;
+    left: 40%;
+    z-index: 9999;
+    height: 11%;
+    width: 8%;
+    min-width: 30px;
+    padding: 0px;
+  }
+  
+  .FirstfoutyE {
+    position: absolute;
+    top: 29.5%;
+    left: 49%;
+    z-index: 9999;
+    height: 5%;
+    width: 6%;
+    padding: 0px;
+    min-width: 25px;
+  }
+  
+  .FirstfoutyF {
+    position: absolute;
+    top: 22.5%;
+    left: 49%;
+    z-index: 9999;
+    height: 7%;
+    width: 6%;
+    padding: 0px;
+    min-width: 26px;
+  }
+  
+  .FirstfoutyG {
+    position: absolute;
+    top: 31.5%;
+    right: 21%;
+    z-index: 9999;
+    height: 3%;
+    width: 16%;
+    padding: 0px;
+  }
+  
+  .FirstfoutyI {
+    position: absolute;
+    top: 20.3%;
+    right: 21%;
+    z-index: 9999;
+    height: 11%;
+    width: 8%;
+    min-width: 32px;
+    padding: 0px;
+
+  }
+  
+  .FirstfoutyJ {
+    position: absolute;
+    top: 20.5%;
+    right: 29%;
+    z-index: 9999;
+    height: 6%;
+    width: 6%;
+    min-width: 24px;
+    padding: 0px;
+  }
+  
+  .FirstfoutyK {
+    position: absolute;
+    top: 20.5%;
+    right: 37%;
+    z-index: 9999;
+    height: 12%;
+    width: 7%;
+    min-width: 29px;
+    padding: 0px;
+  }
+  
+  .FirstfoutyL {
+    position: absolute;
+    top: 20.5%;
+    left: 21%;
+    z-index: 9999;
+    height: 7%;
+    width: 8%;
+    min-width: 36px;
+    padding: 0px;
+  }
+  
+  .FirstfoutyM {
+    position: absolute;
+    top: 7.5%;
+    left: 21.5%;
+    z-index: 9999;
+    height: 11%;
+    width: 15%;
+    min-width: 60px;
+    padding: 0px;
+  }
+  
+}
+
+@media (min-width: 468px) and (max-width: 549px) {
+  
+  .FristBackstage {
+    position: absolute;
+    bottom: 12%;
+    left: 38%;
+    z-index: 9999;
+    height: 51%;
+    width: 10%;
+    min-width: 30px;
+    padding: 0px;
+  }
+  
+  .FristCorridorN {
+    position: absolute;
+    top: 34.5%;
+    left: 38%;
+    z-index: 9999;
+    height: 3%;
+    width: 1%;
+    min-width: 25px;
+    padding: 0px;
+  }
+  
+  .FristFrontstageE {
+    position: absolute;
+    bottom: 10%;
+    left: 48%;
+    z-index: 9999;
+    height: 56%;
+    width: 10%;
+    min-width: 9%;
+    padding: 0px;
+  }
+  
+  .FristFrontstageW {
+    position: absolute;
+    bottom: 10%;
+    left: 29%;
+    z-index: 9999;
+    height: 56%;
+    width: 8%;
+    min-width: 9%;
+    padding: 0px;
+  }
+  
+  .FristFIT {
+    position: absolute;
+    bottom: 10%;
+    left: 38%;
+    z-index: 9999;
+    height: 2%;
+    width: 10%;
+    min-width: 30px;
+    padding: 0px;
+  }
+  
+  .firstseventyA {
+    position: absolute;
+    bottom: 32%;
+    right: 34%;
+    z-index: 9999;
+    height: 20%;
+    width: 8%;
+    min-width: 41px;
+    padding: 0px;
+  }
+  
+  .firstseventyB {
+    position: absolute;
+    bottom: 27.4%;
+    right: 24%;
+    z-index: 9999;
+    height: 14%;
+    width: 8%;
+    min-width: 47px;
+    padding: 0px;
+  }
+  
+  .firstseventyC {
+    position: absolute;
+    bottom: 21%;
+    right: 24%;
+    z-index: 9999;
+    height: 6%;
+    width: 6%;
+    min-width: 36px;
+    padding: 0px;
+  }
+  
+  .FirstfoutyA {
+    position: absolute;
+    top: 20%;
+    left: 37%;
+    z-index: 9999;
+    height: 14%;
+    width: 4%;
+    padding: 0px;
+    min-width: 0px;
+  }
+  
+  .FirstfoutyB {
+    position: absolute;
+    top: 27.5%;
+    left: 21%;
+    z-index: 9999;
+    height: 7%;
+    width: 11%;
+    min-width: 20px;
+    padding: 0px;
+  
+  }
+  
+  .FirstfoutyC {
+    position: absolute;
+    top: 18.5%;
+    left: 21%;
+    z-index: 9999;
+    height: 2%;
+    width: 58%;
+    padding: 0px;
+  }
+  
+  .FirstfoutyD {
+    position: absolute;
+    top: 7.5%;
+    left: 40%;
+    z-index: 9999;
+    height: 11%;
+    width: 8%;
+    min-width: 30px;
+    padding: 0px;
+  }
+  
+  .FirstfoutyE {
+    position: absolute;
+    top: 29.5%;
+    left: 49%;
+    z-index: 9999;
+    height: 5%;
+    width: 6%;
+    padding: 0px;
+    min-width: 30px;
+  }
+  
+  .FirstfoutyF {
+    position: absolute;
+    top: 22.5%;
+    left: 49%;
+    z-index: 9999;
+    height: 7%;
+    width: 6%;
+    padding: 0px;
+    min-width: 31px;
+  }
+  
+  .FirstfoutyG {
+    position: absolute;
+    top: 31.5%;
+    right: 21%;
+    z-index: 9999;
+    height: 3%;
+    width: 16%;
+    padding: 0px;
+  }
+  
+  .FirstfoutyI {
+    position: absolute;
+    top: 20.5%;
+    right: 21%;
+    z-index: 9999;
+    height: 11%;
+    width: 8%;
+    min-width: 41px;
+    padding: 0px;
+  
+  }
+  
+  .FirstfoutyJ {
+    position: absolute;
+    top: 20.5%;
+    right: 29%;
+    z-index: 9999;
+    height: 6%;
+    width: 6%;
+    min-width: 30px;
+    padding: 0px;
+  }
+  
+  .FirstfoutyK {
+    position: absolute;
+    top: 20.5%;
+    right: 37%;
+    z-index: 9999;
+    height: 12%;
+    width: 7%;
+    min-width: 37px;
+    padding: 0px;
+  }
+  
+  .FirstfoutyL {
+    position: absolute;
+    top: 20.5%;
+    left: 21%;
+    z-index: 9999;
+    height: 7%;
+    width: 8%;
+    min-width: 44px;
+    padding: 0px;
+  }
+  
+  .FirstfoutyM {
+    position: absolute;
+    top: 7.5%;
+    left: 21.5%;
+    z-index: 9999;
+    height: 11%;
+    width: 15%;
+    padding: 0px;
+  }
+  
+}
+
+@media (min-width: 550px) and (max-width: 750px) {
+  
+.FristBackstage {
+  position: absolute;
+  bottom: 12%;
+  left: 38%;
+  z-index: 9999;
+  height: 51%;
+  width: 10%;
+  min-width: 30px;
+  padding: 0px;
+}
+
+.FristCorridorN {
+  position: absolute;
+  top: 34.5%;
+  left: 38%;
+  z-index: 9999;
+  height: 3%;
+  width: 1%;
+  min-width: 30px;
+  padding: 0px;
+}
+
+.FristFrontstageE {
+  position: absolute;
+  bottom: 10%;
+  left: 48%;
+  z-index: 9999;
+  height: 56%;
+  width: 10%;
+  min-width: 9%;
+  padding: 0px;
+}
+
+.FristFrontstageW {
+  position: absolute;
+  bottom: 10%;
+  left: 29%;
+  z-index: 9999;
+  height: 56%;
+  width: 8%;
+  min-width: 9%;
+  padding: 0px;
+}
+
+.FristFIT {
+  position: absolute;
+  bottom: 10%;
+  left: 38%;
+  z-index: 9999;
+  height: 2%;
+  width: 10%;
+  min-width: 30px;
+  padding: 0px;
+}
+
+.firstseventyA {
+  position: absolute;
+  bottom: 32%;
+  right: 34%;
+  z-index: 9999;
+  height: 20%;
+  width: 8%;
+  min-width: 50px;
+  padding: 0px;
+}
+
+.firstseventyB {
+  position: absolute;
+  bottom: 27.4%;
+  right: 24%;
+  z-index: 9999;
+  height: 14%;
+  width: 8%;
+  min-width: 55px;
+  padding: 0px;
+}
+
+.firstseventyC {
+  position: absolute;
+  bottom: 21%;
+  right: 24%;
+  z-index: 9999;
+  height: 6%;
+  width: 6%;
+  min-width: 36px;
+  padding: 0px;
+}
+
+.FirstfoutyA {
+  position: absolute;
+  top: 21%;
+  left: 37%;
+  z-index: 9999;
+  height: 14%;
+  width: 4%;
+  padding: 0px;
+  min-width: 0px;
+}
+
+.FirstfoutyB {
+  position: absolute;
+  top: 27.5%;
+  left: 21%;
+  z-index: 9999;
+  height: 7%;
+  width: 11%;
+  padding: 0px;
+
+}
+
+.FirstfoutyC {
+  position: absolute;
+  top: 18.5%;
+  left: 21%;
+  z-index: 9999;
+  height: 2%;
+  width: 58%;
+  padding: 0px;
+}
+
+.FirstfoutyD {
+  position: absolute;
+  top: 7.5%;
+  left: 40%;
+  z-index: 9999;
+  height: 11%;
+  width: 8%;
+  min-width: 30px;
+  padding: 0px;
+}
+
+.FirstfoutyE {
+  position: absolute;
+  top: 29.5%;
+  left: 49%;
+  z-index: 9999;
+  height: 5%;
+  width: 6%;
+  padding: 0px;
+  min-width: 38px;
+}
+
+.FirstfoutyF {
+  position: absolute;
+  top: 22.5%;
+  left: 49%;
+  z-index: 9999;
+  height: 7%;
+  width: 6%;
+  padding: 0px;
+  min-width: 38px;
+}
+
+.FirstfoutyG {
+  position: absolute;
+  top: 32%;
+  right: 21%;
+  z-index: 9999;
+  height: 3%;
+  width: 16%;
+  padding: 0px;
+}
+
+.FirstfoutyI {
+  position: absolute;
+  top: 20.5%;
+  right: 21%;
+  z-index: 9999;
+  height: 11%;
+  width: 8%;
+  padding: 0px;
+
+}
+
+.FirstfoutyJ {
+  position: absolute;
+  top: 20.5%;
+  right: 29%;
+  z-index: 9999;
+  height: 6%;
+  width: 6%;
+  min-width: 30px;
+  padding: 0px;
+}
+
+.FirstfoutyK {
+  position: absolute;
+  top: 20.5%;
+  right: 37%;
+  z-index: 9999;
+  height: 12%;
+  width: 7%;
+  min-width: 44px;
+  padding: 0px;
+}
+
+.FirstfoutyL {
+  position: absolute;
+  top: 20.5%;
+  left: 21%;
+  z-index: 9999;
+  height: 7%;
+  width: 8%;
+  min-width: 54px;
+  padding: 0px;
+}
+
+.FirstfoutyM {
+  position: absolute;
+  top: 7.5%;
+  left: 21.5%;
+  z-index: 9999;
+  height: 11%;
+  width: 15%;
+  padding: 0px;
+}
+
+}
+
+@media (min-width: 850px) and (max-width: 992px) {
+
+  .FirstfoutyL{
+    position: absolute;
+    top: 20.5%;
+    left: 21.4%;
+    z-index: 9999;
+    height: 7%;
+    width: 9%;
+    padding: 0px;
+  }
+  .FirstfoutyJ{
+    position: absolute;
+    top: 21%;
+    right: 29%;
+    z-index: 9999;
+    height: 6%;
+    width: 6%;
+    min-width: 20px;
+    padding: 0px;
+  }
+  .FirstfoutyG{
+    position: absolute;
+    top: 31.5%;
+    right: 21%;
+    z-index: 9999;
+    height: 3%;
+    width: 16%;
+    padding: 0px;
+  }
+  .FirstfoutyI{
+    position: absolute;
+    top: 20.5%;
+    right: 21%;
+    z-index: 9999;
+    height: 11%;
+    width: 8%;
+    padding: 0px;
+  }
+  .FristFrontstageW{
+    position: absolute;
+    bottom: 9%;
+    left: 29%;
+    z-index: 9999;
+    height: 56%;
+    width: 9%;
+    padding: 0px;
+  }
+  .FristBackstage{
+    position: absolute;
+    bottom: 11%;
+    left: 38%;
+    z-index: 9999;
+    height: 51%;
+    width: 10%;
+    padding: 0px;
+  }
+  .FristCorridorN{
+    position: absolute;
+    top: 35%;
+    left: 38%;
+    z-index: 9999;
+    height: 3%;
+    width: 1%;
+    min-width: 46px;
+    padding: 0px;
+  }
+  .FristFrontstageE{
+    position: absolute;
+    bottom: 9%;
+    left: 48%;
+    z-index: 9999;
+    height: 56%;
+    width: 10%;
+    padding: 0px;
+  }
+  .firstseventyA{
+    position: absolute;
+    bottom: 32%;
+    right: 33.5%;
+    z-index: 9999;
+    height: 19%;
+    width: 9%;
+    padding: 0px;
+  }
+  .firstseventyB{
+    position: absolute;
+    bottom: 27%;
+    right: 24%;
+    z-index: 9999;
+    height: 14%;
+    width: 7%;
+    padding: 0px;
+  }
+  .FirstfoutyC{
+    position: absolute;
+    top: 18.5%;
+    left: 21%;
+    z-index: 9999;
+    height: 2%;
+    width: 58%;
+    padding: 0px;
+  }
+
+}
+
+/* First Floor Responsive */
+
+
+/* start Second Floor Responsive */
+
+@media (min-width: 360px) and (max-width: 468px) {
+  .second_Backstage{
+    position: absolute;
+    bottom: 11%;
+    left: 37.5%;
+    z-index: 9999;
+    height: 51.5%;
+    width: 10%;
+    padding: 0px;
+  }
+  .second_CorridorS{
+    position: absolute;
+    bottom: 9.5%;
+    left: 37.5%;
+    z-index: 9999;
+    height: 2%;
+    width: 10%;
+    padding: 0px;
+  }
+  .second_Distribution{
+    position: absolute;
+    top: 35%;
+    left: 37.5%;
+    z-index: 9999;
+    height: 3%;
+    width: 10%;
+    padding: 0px;
+  }
+  
+  .second_FrontstageE{
+    position: absolute;
+    bottom: 9%;
+    left: 47.5%;
+    z-index: 9999;
+    height: 56%;
+    width: 10%;
+    padding: 0px;
+  }
+  .second_FrontstageW{
+    position: absolute;
+    bottom: 9%;
+    left: 27%;
+    z-index: 9999;
+    height: 56%;
+    width: 11%;
+    min-width: 30px;
+    padding: 0px;
+  }
+  
+  .second_Seventy_A{
+    position: absolute;
+    bottom: 32%;
+    right: 35%;
+    z-index: 9999;
+    height: 20%;
+    width: 8%;
+    min-width: 40px;
+    padding: 0px;
+  }
+  .second_Seventy_B{
+    position: absolute;
+    bottom: 21.5%;
+    right: 24%;
+    z-index: 9999;
+    height: 18%;
+    width: 7%;
+    min-width: 29px;
+    padding: 0px;
+  }
+  .second_forty_2A_1{
+    position: absolute;
+    top: 7.5%;
+    left: 20%;
+    z-index: 9999;
+    height: 9%;
+    width: 49%;
+    padding: 0px;
+  }
+  .second_forty_2A_2{
+    position: absolute;
+      top: 26.5%;
+      left: 20%;
+      z-index: 9999;
+      height: 8%;
+      width: 28%;
+      padding: 0px;
+  }
+  .second_forty_2A_3{
+    position: absolute;
+    top: 20.5%;
+    right: 31%;
+    z-index: 9999;
+    height: 14%;
+    width: 6%;
+    min-width: 24px;
+    padding: 0px;
+  }
+  
+  .second_forty_2b{
+    position: absolute;
+    top: 21.5%;
+    left: 31%;
+    z-index: 9999;
+    height: 5%;
+    width: 4%;
+    padding: 0px;
+    min-width: 0px;
+  }
+  .second_forty_2c{
+    position: absolute;
+      top: 28.5%;
+      right: 45%;
+      z-index: 9999;
+      height: 6%;
+      width: 6%;
+      min-width: 26px;
+      padding: 0px;
+  }
+  .second_forty_2d{
+    position: absolute;
+    top: 20.5%;
+    right: 45%;
+    z-index: 9999;
+    height: 8%;
+    width: 6%;
+    min-width: 25px;
+    padding: 0px;
+  }
+  .second_forty_2e{
+    position: absolute;
+    top: 20.5%;
+    right: 37%;
+    z-index: 9999;
+    height: 12%;
+    width: 8%;
+    min-width: 31px;
+    padding: 0px;
+  }
+  .second_forty_2f{
+    position: absolute;
+    top: 16.5%;
+    left: 20%;
+    z-index: 9999;
+    height: 2%;
+    width: 6%;
+    padding: 0px;
+    min-width: 0px;
+  }
+}
+
+@media (min-width: 468px) and (max-width: 549px) {
+  .second_Backstage{
+    position: absolute;
+    bottom: 11%;
+    left: 37.5%;
+    z-index: 9999;
+    height: 51.5%;
+    width: 10%;
+    padding: 0px;
+  }
+  .second_CorridorS{
+    position: absolute;
+    bottom: 9.5%;
+    left: 37.5%;
+    z-index: 9999;
+    height: 2%;
+    width: 10%;
+    padding: 0px;
+  }
+  .second_Distribution{
+    position: absolute;
+    top: 35%;
+    left: 37.5%;
+    z-index: 9999;
+    height: 3%;
+    width: 10%;
+    padding: 0px;
+  }
+  
+  .second_FrontstageE{
+    position: absolute;
+    bottom: 9%;
+    left: 47.5%;
+    z-index: 9999;
+    height: 56%;
+    width: 10%;
+    padding: 0px;
+  }
+  .second_FrontstageW{
+    position: absolute;
+    bottom: 9%;
+    left: 27%;
+    z-index: 9999;
+    height: 56%;
+    width: 11%;
+    padding: 0px;
+  }
+  
+  .second_Seventy_A{
+    position: absolute;
+    bottom: 31%;
+    right: 35%;
+    z-index: 9999;
+    height: 20%;
+    width: 8%;
+    min-width: 40px;
+    padding: 0px;
+  }
+  .second_Seventy_B{
+    position: absolute;
+    bottom: 20.5%;
+    right: 24%;
+    z-index: 9999;
+    height: 18%;
+    width: 8%;
+    min-width: 40px;
+    padding: 0px;
+  }
+  .second_forty_2A_1{
+    position: absolute;
+    top: 7.5%;
+    left: 20%;
+    z-index: 9999;
+    height: 9%;
+    width: 49%;
+    padding: 0px;
+  }
+  .second_forty_2A_2{
+    position: absolute;
+      top: 26.5%;
+      left: 20%;
+      z-index: 9999;
+      height: 8%;
+      width: 28%;
+      padding: 0px;
+  }
+  .second_forty_2A_3{
+    position: absolute;
+    top: 20.5%;
+    right: 31%;
+    z-index: 9999;
+    height: 14%;
+    width: 6%;
+    min-width: 30px;
+    padding: 0px;
+  }
+  
+  .second_forty_2b{
+    position: absolute;
+    top: 21.5%;
+    left: 31%;
+    z-index: 9999;
+    height: 5%;
+    width: 4%;
+    padding: 0px;
+    min-width: 0px;
+  }
+  .second_forty_2c{
+    position: absolute;
+      top: 28.5%;
+      right: 45%;
+      z-index: 9999;
+      height: 6%;
+      width: 6%;
+      min-width: 32px;
+      padding: 0px;
+  }
+  .second_forty_2d{
+    position: absolute;
+    top: 20.5%;
+    right: 45%;
+    z-index: 9999;
+    height: 8%;
+    width: 6%;
+    min-width: 33px;
+    padding: 0px;
+  }
+  .second_forty_2e{
+    position: absolute;
+    top: 20.5%;
+    right: 37%;
+    z-index: 9999;
+    height: 12%;
+    width: 8%;
+    min-width: 40px;
+    padding: 0px;
+  }
+  .second_forty_2f{
+    position: absolute;
+    top: 16.5%;
+    left: 20%;
+    z-index: 9999;
+    height: 2%;
+    width: 6%;
+    padding: 0px;
+    min-width: 0px;
+  }
+}
+
+@media (min-width: 550px) and (max-width: 749px) {
+    .second_Backstage{
+      position: absolute;
+      bottom: 11%;
+      left: 37.5%;
+      z-index: 9999;
+      height: 51.5%;
+      width: 10%;
+      padding: 0px;
+    }
+    .second_CorridorS{
+      position: absolute;
+      bottom: 9.5%;
+      left: 37.5%;
+      z-index: 9999;
+      height: 2%;
+      width: 10%;
+      padding: 0px;
+    }
+    .second_Distribution{
+      position: absolute;
+      top: 35%;
+      left: 37.5%;
+      z-index: 9999;
+      height: 3%;
+      width: 10%;
+      padding: 0px;
+    }
+    
+    .second_FrontstageE{
+      position: absolute;
+      bottom: 9%;
+      left: 47.5%;
+      z-index: 9999;
+      height: 56%;
+      width: 10%;
+      padding: 0px;
+    }
+    .second_FrontstageW{
+      position: absolute;
+      bottom: 9%;
+      left: 27%;
+      z-index: 9999;
+      height: 56%;
+      width: 11%;
+      padding: 0px;
+    }
+    
+    .second_Seventy_A{
+      position: absolute;
+      bottom: 31%;
+      right: 35%;
+      z-index: 9999;
+      height: 20%;
+      width: 8%;
+      min-width: 40px;
+      padding: 0px;
+    }
+    .second_Seventy_B{
+      position: absolute;
+      bottom: 20.5%;
+      right: 24%;
+      z-index: 9999;
+      height: 18%;
+      width: 8%;
+      min-width: 40px;
+      padding: 0px;
+    }
+    .second_forty_2A_1{
+      position: absolute;
+      top: 7.5%;
+      left: 20%;
+      z-index: 9999;
+      height: 9%;
+      width: 49%;
+      padding: 0px;
+    }
+    .second_forty_2A_2{
+      position: absolute;
+        top: 26.5%;
+        left: 20%;
+        z-index: 9999;
+        height: 8%;
+        width: 28%;
+        padding: 0px;
+    }
+    .second_forty_2A_3{
+      position: absolute;
+      top: 20.5%;
+      right: 31%;
+      z-index: 9999;
+      height: 14%;
+      width: 6%;
+      min-width: 38px;
+      padding: 0px;
+    }
+    
+    .second_forty_2b{
+      position: absolute;
+      top: 21.5%;
+      left: 31%;
+      z-index: 9999;
+      height: 5%;
+      width: 4%;
+      padding: 0px;
+      min-width: 0px;
+    }
+    .second_forty_2c{
+      position: absolute;
+        top: 28.5%;
+        right: 45%;
+        z-index: 9999;
+        height: 6%;
+        width: 6%;
+        min-width: 40px;
+        padding: 0px;
+    }
+    .second_forty_2d{
+      position: absolute;
+      top: 20.5%;
+      right: 45%;
+      z-index: 9999;
+      height: 8%;
+      width: 6%;
+      min-width: 41px;
+      padding: 0px;
+    }
+    .second_forty_2e{
+      position: absolute;
+      top: 20.5%;
+      right: 37%;
+      z-index: 9999;
+      height: 12%;
+      width: 8%;
+      min-width: 40px;
+      padding: 0px;
+    }
+    .second_forty_2f{
+      position: absolute;
+      top: 16.5%;
+      left: 20%;
+      z-index: 9999;
+      height: 2%;
+      width: 6%;
+      padding: 0px;
+      min-width: 0px;
+    }
+}
+
+@media (min-width: 750px) and (max-width: 850px) {
+  .second_Backstage{
+    position: absolute;
+    bottom: 11%;
+    left: 37.5%;
+    z-index: 9999;
+    height: 51.5%;
+    width: 10%;
+    padding: 0px;
+  }
+  .second_CorridorS{
+    position: absolute;
+    bottom: 9.5%;
+    left: 37.5%;
+    z-index: 9999;
+    height: 2%;
+    width: 10%;
+    padding: 0px;
+  }
+  .second_Distribution{
+    position: absolute;
+    top: 35%;
+    left: 37.5%;
+    z-index: 9999;
+    height: 3%;
+    width: 10%;
+    padding: 0px;
+  }
+  
+  .second_FrontstageE{
+    position: absolute;
+    bottom: 9%;
+    left: 47.5%;
+    z-index: 9999;
+    height: 56%;
+    width: 10%;
+    padding: 0px;
+  }
+  .second_FrontstageW{
+    position: absolute;
+    bottom: 9%;
+    left: 27%;
+    z-index: 9999;
+    height: 56%;
+    width: 11%;
+    padding: 0px;
+  }
+  
+  .second_Seventy_A{
+    position: absolute;
+    bottom: 31%;
+    right: 35%;
+    z-index: 9999;
+    height: 20%;
+    width: 8%;
+    padding: 0px;
+  }
+  .second_Seventy_B{
+    position: absolute;
+    bottom: 20.5%;
+    right: 24%;
+    z-index: 9999;
+    height: 18%;
+    width: 8%;
+    padding: 0px;
+  }
+  .second_forty_2A_1{
+    position: absolute;
+    top: 7.5%;
+    left: 20%;
+    z-index: 9999;
+    height: 9%;
+    width: 49%;
+    padding: 0px;
+  }
+  .second_forty_2A_2{
+    position: absolute;
+      top: 26.5%;
+      left: 20%;
+      z-index: 9999;
+      height: 8%;
+      width: 28%;
+      padding: 0px;
+  }
+  .second_forty_2A_3{
+    position: absolute;
+    top: 20.5%;
+    right: 31%;
+    z-index: 9999;
+    height: 14%;
+    width: 6%;
+    min-width: 50px;
+    padding: 0px;
+  }
+  
+  .second_forty_2b{
+    position: absolute;
+    top: 21.5%;
+    left: 31%;
+    z-index: 9999;
+    height: 5%;
+    width: 4%;
+    padding: 0px;
+    min-width: 0px;
+  }
+  .second_forty_2c{
+    position: absolute;
+      top: 28.5%;
+      right: 45%;
+      z-index: 9999;
+      height: 6%;
+      width: 6%;
+      min-width: 55px;
+      padding: 0px;
+  }
+  .second_forty_2d{
+    position: absolute;
+    top: 20.5%;
+    right: 45%;
+    z-index: 9999;
+    height: 8%;
+    width: 6%;
+    min-width: 57px;
+    padding: 0px;
+  }
+  .second_forty_2e{
+    position: absolute;
+    top: 20.5%;
+    right: 37%;
+    z-index: 9999;
+    height: 12%;
+    width: 8%;
+    padding: 0px;
+  }
+  .second_forty_2f{
+    position: absolute;
+    top: 16.5%;
+    left: 20%;
+    z-index: 9999;
+    height: 2%;
+    width: 6%;
+    padding: 0px;
+    min-width: 0px;
+  }
+}
+
+@media (min-width: 850px) and (max-width: 992px) {
+
+  .second_Backstage{
+    position: absolute;
+    bottom: 11%;
+    left: 37.5%;
+    z-index: 9999;
+    height: 51.5%;
+    width: 10%;
+    padding: 0px;
+  }
+  .second_CorridorS{
+    position: absolute;
+    bottom: 9.5%;
+    left: 37.5%;
+    z-index: 9999;
+    height: 2%;
+    width: 10%;
+    padding: 0px;
+  }
+  .second_Distribution{
+    position: absolute;
+    top: 35%;
+    left: 37.5%;
+    z-index: 9999;
+    height: 3%;
+    width: 10%;
+    padding: 0px;
+  }
+  
+  .second_FrontstageE{
+    position: absolute;
+    bottom: 9%;
+    left: 47.5%;
+    z-index: 9999;
+    height: 56%;
+    width: 10%;
+    padding: 0px;
+  }
+  .second_FrontstageW{
+    position: absolute;
+    bottom: 9%;
+    left: 27%;
+    z-index: 9999;
+    height: 56%;
+    width: 11%;
+    padding: 0px;
+  }
+  
+  .second_Seventy_A{
+    position: absolute;
+    bottom: 31%;
+    right: 35%;
+    z-index: 9999;
+    height: 20%;
+    width: 8%;
+    padding: 0px;
+  }
+  .second_Seventy_B{
+    position: absolute;
+    bottom: 20.5%;
+    right: 24%;
+    z-index: 9999;
+    height: 18%;
+    width: 8%;
+    padding: 0px;
+  }
+  .second_forty_2A_1{
+    position: absolute;
+    top: 7.5%;
+    left: 20%;
+    z-index: 9999;
+    height: 9%;
+    width: 49%;
+    padding: 0px;
+  }
+  .second_forty_2A_2{
+    position: absolute;
+      top: 26.5%;
+      left: 20%;
+      z-index: 9999;
+      height: 8%;
+      width: 28%;
+      padding: 0px;
+  }
+  .second_forty_2A_3{
+    position: absolute;
+    top: 20.5%;
+    right: 31%;
+    z-index: 9999;
+    height: 14%;
+    width: 6%;
+    min-width: 54px;
+    padding: 0px;
+  }
+  
+  .second_forty_2b{
+    position: absolute;
+    top: 21.5%;
+    left: 31%;
+    z-index: 9999;
+    height: 5%;
+    width: 4%;
+    padding: 0px;
+    min-width: 0px;
+  }
+  .second_forty_2c{
+    position: absolute;
+      top: 28.5%;
+      right: 45%;
+      z-index: 9999;
+      height: 6%;
+      width: 6%;
+      min-width: 55px;
+      padding: 0px;
+  }
+  .second_forty_2d{
+    position: absolute;
+    top: 20.5%;
+    right: 45%;
+    z-index: 9999;
+    height: 8%;
+    width: 6%;
+    min-width: 57px;
+    padding: 0px;
+  }
+  .second_forty_2e{
+    position: absolute;
+    top: 20.5%;
+    right: 37%;
+    z-index: 9999;
+    height: 12%;
+    width: 8%;
+    padding: 0px;
+  }
+  .second_forty_2f{
+    position: absolute;
+    top: 16.5%;
+    left: 20%;
+    z-index: 9999;
+    height: 2%;
+    width: 6%;
+    padding: 0px;
+    min-width: 0px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1050px) {
+
+  .second_Backstage{
+    position: absolute;
+    bottom: 11%;
+    left: 37.5%;
+    z-index: 9999;
+    height: 51.5%;
+    width: 10%;
+    padding: 0px;
+  }
+  .second_CorridorS{
+    position: absolute;
+    bottom: 9.5%;
+    left: 37.5%;
+    z-index: 9999;
+    height: 2%;
+    width: 10%;
+    padding: 0px;
+  }
+  .second_Distribution{
+    position: absolute;
+    top: 35%;
+    left: 37.5%;
+    z-index: 9999;
+    height: 3%;
+    width: 10%;
+    padding: 0px;
+  }
+  
+  .second_FrontstageE{
+    position: absolute;
+    bottom: 9%;
+    left: 47.5%;
+    z-index: 9999;
+    height: 56%;
+    width: 10%;
+    padding: 0px;
+  }
+  .second_FrontstageW{
+    position: absolute;
+    bottom: 9%;
+    left: 27%;
+    z-index: 9999;
+    height: 56%;
+    width: 11%;
+    padding: 0px;
+  }
+  
+  .second_Seventy_A{
+    position: absolute;
+    bottom: 31%;
+    right: 35%;
+    z-index: 9999;
+    height: 20%;
+    width: 8%;
+    padding: 0px;
+  }
+  .second_Seventy_B{
+    position: absolute;
+    bottom: 20.5%;
+    right: 24%;
+    z-index: 9999;
+    height: 18%;
+    width: 8%;
+    padding: 0px;
+  }
+  .second_forty_2A_1{
+    position: absolute;
+    top: 7.5%;
+    left: 20%;
+    z-index: 9999;
+    height: 9%;
+    width: 49%;
+    padding: 0px;
+  }
+  .second_forty_2A_2{
+    position: absolute;
+      top: 26.5%;
+      left: 20%;
+      z-index: 9999;
+      height: 8%;
+      width: 28%;
+      padding: 0px;
+  }
+  .second_forty_2A_3{
+    position: absolute;
+    top: 20.5%;
+    right: 31%;
+    z-index: 9999;
+    height: 14%;
+    width: 6%;
+    min-width: 54px;
+    padding: 0px;
+  }
+  
+  .second_forty_2b{
+    position: absolute;
+    top: 21.5%;
+    left: 31%;
+    z-index: 9999;
+    height: 5%;
+    width: 4%;
+    padding: 0px;
+    min-width: 0px;
+  }
+  .second_forty_2c{
+    position: absolute;
+      top: 28.5%;
+      right: 45%;
+      z-index: 9999;
+      height: 6%;
+      width: 6%;
+      min-width: 55px;
+      padding: 0px;
+  }
+  .second_forty_2d{
+    position: absolute;
+    top: 20.5%;
+    right: 45%;
+    z-index: 9999;
+    height: 8%;
+    width: 6%;
+    min-width: 57px;
+    padding: 0px;
+  }
+  .second_forty_2e{
+    position: absolute;
+    top: 20.5%;
+    right: 37%;
+    z-index: 9999;
+    height: 12%;
+    width: 8%;
+    padding: 0px;
+  }
+  .second_forty_2f{
+    position: absolute;
+    top: 16.5%;
+    left: 20%;
+    z-index: 9999;
+    height: 2%;
+    width: 6%;
+    padding: 0px;
+    min-width: 0px;
+  }
+}
+
+@media (min-width: 1050px) and (max-width: 1199px) {
+
+  .second_Backstage{
+    position: absolute;
+    bottom: 11%;
+    left: 37.5%;
+    z-index: 9999;
+    height: 51.5%;
+    width: 10%;
+    padding: 0px;
+  }
+  .second_CorridorS{
+    position: absolute;
+    bottom: 9.5%;
+    left: 37.5%;
+    z-index: 9999;
+    height: 2%;
+    width: 10%;
+    padding: 0px;
+  }
+  .second_Distribution{
+    position: absolute;
+    top: 35%;
+    left: 37.5%;
+    z-index: 9999;
+    height: 3%;
+    width: 10%;
+    padding: 0px;
+  }
+  
+  .second_FrontstageE{
+    position: absolute;
+    bottom: 9%;
+    left: 47.5%;
+    z-index: 9999;
+    height: 56%;
+    width: 10%;
+    padding: 0px;
+  }
+  .second_FrontstageW{
+    position: absolute;
+    bottom: 9%;
+    left: 27%;
+    z-index: 9999;
+    height: 56%;
+    width: 11%;
+    padding: 0px;
+  }
+  
+  .second_Seventy_A{
+    position: absolute;
+    bottom: 31%;
+    right: 35%;
+    z-index: 9999;
+    height: 20%;
+    width: 8%;
+    padding: 0px;
+  
+  }
+  .second_Seventy_B{
+    position: absolute;
+    bottom: 20.5%;
+    right: 24%;
+    z-index: 9999;
+    height: 18%;
+    width: 8%;
+    padding: 0px;
+  }
+  
+  .second_forty_2A_1{
+    position: absolute;
+    top: 7.5%;
+    left: 20%;
+    z-index: 9999;
+    height: 9%;
+    width: 49%;
+    padding: 0px;
+  
+  }
+  .second_forty_2A_2{
+    position: absolute;
+      top: 26.5%;
+      left: 20%;
+      z-index: 9999;
+      height: 8%;
+      width: 28%;
+      padding: 0px;
+  }
+  .second_forty_2A_3{
+    position: absolute;
+    top: 20.5%;
+    right: 31%;
+    z-index: 9999;
+    height: 14%;
+    width: 6%;
+    min-width: 54px;
+    padding: 0px;
+  }
+  
+  .second_forty_2b{
+    position: absolute;
+    top: 21.5%;
+    left: 31%;
+    z-index: 9999;
+    height: 5%;
+    width: 4%;
+    padding: 0px;
+    min-width: 0px;
+  }
+  .second_forty_2c{
+    position: absolute;
+      top: 28.5%;
+      right: 45%;
+      z-index: 9999;
+      height: 6%;
+      width: 6%;
+      min-width: 55px;
+      padding: 0px;
+  }
+  .second_forty_2d{
+    position: absolute;
+    top: 20.5%;
+    right: 45%;
+    z-index: 9999;
+    height: 8%;
+    width: 6%;
+    min-width: 57px;
+    padding: 0px;
+  }
+  .second_forty_2e{
+    position: absolute;
+    top: 20.5%;
+    right: 37%;
+    z-index: 9999;
+    height: 12%;
+    width: 8%;
+    padding: 0px;
+  }
+  .second_forty_2f{
+    position: absolute;
+    top: 16.5%;
+    left: 20%;
+    z-index: 9999;
+    height: 2%;
+    width: 6%;
+    padding: 0px;
+    min-width: 0px;
+  }
+}
+
+/*  end Second Floor Responsive */
+
+/* END MA Purification*/
+
+
+
+/* START External Areas Responsive */
+
+
+@media (min-width: 360px) and (max-width: 468px) {
+
+  .CT_Dark {
+    position: absolute;
+    top: 8%;
+    left: 27%;
+    z-index: 9999;
+    height: 8px;
+    width: 111px;
+    padding: 0px;
+  }
+  
+  .area-ma-1 {
+    position: absolute;
+    bottom: 24%;
+    left: 23.5%;
+    z-index: 9999;
+    height: 71px;
+    width: 41px;
+    min-width: 23px;
+    padding: 0px;
+  }
+  
+  .area-ma-2 {
+    position: absolute;
+    bottom: 24%;
+    left: 33%;
+    z-index: 9999;
+    height: 70px;
+    width: 39px;
+    min-width: 21px;
+    padding: 0px;
+    min-width: 33px;
+  }
+  
+  .area-ma-3 {
+    position: absolute;
+    bottom: 24%;
+    left: 43%;
+    z-index: 9999;
+    height: 72px;
+    width: 48px;
+    min-width: 42px;
+    padding: 0px;
+  }
+  
+  .area-mb {
+    position: absolute;
+    top: 13%;
+    left: 40.5%;
+    z-index: 9999;
+    height: 54px;
+    width: 23px;
+    min-width: 29px;
+    padding: 0px;
+  }
+  
+  .area-mu {
+    position: absolute;
+    top: 13%;
+    left: 33%;
+    z-index: 9999;
+    height: 53px;
+    width: 27px;
+    min-width: 22px;
+    padding: 0px;
+  }
+  
+  .area-mt-ms {
+    position: absolute;
+    top: 13%;
+    left: 23.5%;
+    z-index: 9999;
+    height: 53px;
+    width: 36px;
+    min-width: 29px;
+    padding: 0px;
+  }
+  
+  .Welfare_zones {
+    position: absolute;
+    top: 13%;
+    right: 43.5%;
+    z-index: 9999;
+    height: 55px;
+    width: 32px;
+    min-width: 30px;
+    padding: 0px;
+  }
+  
+  .Roads {
+    position: absolute;
+    top: 9%;
+    left: 23%;
+    z-index: 9999;
+    height: 134px;
+    width: 4px;
+    min-width: 9px;
+    min-width: 0;
+  }  
+}
+
+@media (min-width: 468px) and (max-width: 549px) {
+
+  .CT_Dark {
+    position: absolute;
+    top: 8%;
+    left: 27%;
+    z-index: 9999;
+    height: 8px;
+    width: 143px;
+    padding: 0px;
+  }
+  
+  .area-ma-1 {
+    position: absolute;
+    bottom: 24%;
+    left: 23.5%;
+    z-index: 9999;
+    height: 87px;
+    width: 45px;
+    min-width: 26px;
+    padding: 0px;
+  }
+  
+  .area-ma-2 {
+    position: absolute;
+    bottom: 24%;
+    left: 33%;
+    z-index: 9999;
+    height: 88px;
+    width: 52px;
+    min-width: 21px;
+    padding: 0px;
+    min-width: 33px;
+  }
+  
+  .area-ma-3 {
+    position: absolute;
+    bottom: 24%;
+    left: 43%;
+    z-index: 9999;
+    height: 90px;
+    width: 70px;
+    padding: 0px;
+  }
+  
+  .area-mb {
+    position: absolute;
+    top: 13%;
+    left: 40.5%;
+    z-index: 9999;
+    height: 69px;
+    width: 33px;
+    min-width: 35px;
+    padding: 0px;
+  }
+  
+  .area-mu {
+    position: absolute;
+    top: 13%;
+    left: 33.5%;
+    z-index: 9999;
+    height: 82px;
+    width: 27px;
+    min-width: 36px;
+    padding: 0px;
+  }
+  
+  .area-mt-ms {
+    position: absolute;
+    top: 13%;
+    left: 23.5%;
+    z-index: 9999;
+    height: 67px;
+    width: 47px;
+    min-width: 41px;
+    padding: 0px;
+  }
+  
+  .Welfare_zones {
+    position: absolute;
+    top: 13%;
+    right: 43.5%;
+    z-index: 9999;
+    height: 70px;
+    width: 38px;
+    min-width: 32px;
+    padding: 0px;
+  }
+  
+  .Roads {
+    position: absolute;
+    top: 9%;
+    left: 23%;
+    z-index: 9999;
+    height: 166px;
+    width: 4px;
+    min-width: 9px;
+    min-width: 0;
+  }  
+}
+
+@media (min-width: 550px) and (max-width: 649px) {
+
+  .CT_Dark {
+    position: absolute;
+    top: 8%;
+    left: 27%;
+    z-index: 9999;
+    height: 11px;
+    width: 171px;
+    padding: 0px;
+  }
+  
+  .area-ma-1 {
+    position: absolute;
+    bottom: 24%;
+    left: 23.5%;
+    z-index: 9999;
+    height: 106px;
+    width: 65px;
+    padding: 0px;
+  }
+  
+  .area-ma-2 {
+    position: absolute;
+    bottom: 24%;
+    left: 33%;
+    z-index: 9999;
+    height: 104px;
+    width: 60px;
+    padding: 0px;
+    min-width: 33px;
+  }
+  
+  .area-ma-3 {
+    position: absolute;
+    bottom: 24%;
+    left: 43%;
+    z-index: 9999;
+    height: 105px;
+    width: 86px;
+    padding: 0px;
+  }
+  
+  .area-mb {
+    position: absolute;
+    top: 13%;
+    left: 40.5%;
+    z-index: 9999;
+    height: 84px;
+    width: 40px;
+    min-width: 42px;
+    padding: 0px;
+  }
+  
+  .area-mu {
+    position: absolute;
+    top: 13%;
+    left: 33.5%;
+    z-index: 9999;
+    height: 82px;
+    width: 27px;
+    min-width: 36px;
+    padding: 0px;
+  }
+  
+  .area-mt-ms {
+    position: absolute;
+    top: 13%;
+    left: 23.5%;
+    z-index: 9999;
+    height: 83px;
+    width: 48px;
+    min-width: 55px;
+    padding: 0px;
+  }
+  
+  .Welfare_zones {
+    position: absolute;
+    top: 13%;
+    right: 43.5%;
+    z-index: 9999;
+    height: 87px;
+    width: 46px;
+    min-width: 38px;
+    padding: 0px;
+  }
+  
+  .Roads {
+    position: absolute;
+    top: 9%;
+    left: 23%;
+    z-index: 9999;
+    height: 202px;
+    width: 9px;
+    min-width: 9px;
+    min-width: 0;
+  }  
+}
+
+@media (min-width: 550px) and (max-width: 649px) {
+
+  .CT_Dark {
+    position: absolute;
+    top: 8%;
+    left: 27%;
+    z-index: 9999;
+    height: 12px;
+    width: 171px;
+    padding: 0px;
+  }
+  
+  .area-ma-1 {
+    position: absolute;
+    bottom: 24%;
+    left: 23.5%;
+    z-index: 9999;
+    height: 106px;
+    width: 65px;
+    padding: 0px;
+  }
+  
+  .area-ma-2 {
+    position: absolute;
+    bottom: 24%;
+    left: 33%;
+    z-index: 9999;
+    height: 104px;
+    width: 63px;
+    padding: 0px;
+  }
+  
+  .area-ma-3 {
+    position: absolute;
+    bottom: 24%;
+    left: 43%;
+    z-index: 9999;
+    height: 105px;
+    width: 86px;
+    padding: 0px;
+  }
+  
+  .area-mb {
+    position: absolute;
+    top: 13%;
+    left: 40.5%;
+    z-index: 9999;
+    height: 84px;
+    width: 44px;
+    min-width: 42px;
+    padding: 0px;
+  }
+  
+  .area-mu {
+    position: absolute;
+    top: 13%;
+    left: 33.5%;
+    z-index: 9999;
+    height: 86px;
+    width: 27px;
+    min-width: 40px;
+    padding: 0px;
+  }
+  
+  .area-mt-ms {
+    position: absolute;
+    top: 13%;
+    left: 23.5%;
+    z-index: 9999;
+    height: 97px;
+    width: 48px;
+    min-width: 56px;
+    padding: 0px;
+  }
+  
+  .Welfare_zones {
+    position: absolute;
+    top: 13%;
+    right: 43.5%;
+    z-index: 9999;
+    height: 87px;
+    width: 51px;
+    min-width: 45px;
+    padding: 0px;
+  }
+  
+  .Roads {
+    position: absolute;
+    top: 9%;
+    left: 23%;
+    z-index: 9999;
+    height: 202px;
+    width: 9px;
+    min-width: 9px;
+    min-width: 0;
+  }  
+}
+
+@media (min-width: 650px) and (max-width: 749px) {
+  .CT_Dark {
+    position: absolute;
+    top: 8%;
+    left: 27%;
+    z-index: 9999;
+    height: 12px;
+    width: 200px;
+    padding: 0px;
+  }
+  
+  .area-ma-1 {
+    position: absolute;
+    bottom: 24%;
+    left: 23.5%;
+    z-index: 9999;
+    height: 120px;
+    width: 75px;
+    padding: 0px;
+  }
+  
+  .area-ma-2 {
+    position: absolute;
+    bottom: 24%;
+    left: 33%;
+    z-index: 9999;
+    height: 120px;
+    width: 72px;
+    padding: 0px;
+  }
+  
+  .area-ma-3 {
+    position: absolute;
+    bottom: 24%;
+    left: 43%;
+    z-index: 9999;
+    height: 113px;
+    width: 99px;
+    padding: 0px;
+  }
+  
+  .area-mb {
+    position: absolute;
+    top: 13%;
+    left: 40.5%;
+    z-index: 9999;
+    height: 99px;
+    width: 49px;
+    min-width: 46px;
+    padding: 0px;
+  }
+  
+  .area-mu {
+    position: absolute;
+    top: 13%;
+    left: 33.5%;
+    z-index: 9999;
+    height: 99px;
+    width: 33px;
+    min-width: 43px;
+    padding: 0px;
+  }
+  
+  .area-mt-ms {
+    position: absolute;
+    top: 13%;
+    left: 23.5%;
+    z-index: 9999;
+    height: 97px;
+    width: 66px;
+    padding: 0px;
+  }
+  
+  .Welfare_zones {
+    position: absolute;
+    top: 13%;
+    right: 43.5%;
+    z-index: 9999;
+    height: 97px;
+    width: 51px;
+    min-width: 54px;
+    padding: 0px;
+  }
+  
+  .Roads {
+    position: absolute;
+    top: 9%;
+    left: 23%;
+    z-index: 9999;
+    height: 239px;
+    width: 9px;
+    min-width: 9px;
+    min-width: 0;
+  }  
+}
+
+@media (min-width: 750px) and (max-width: 850px) {
+    .CT_Dark {
+      position: absolute;
+      top: 8%;
+      left: 27%;
+      z-index: 9999;
+      height: 13px;
+      width: 226px;
+      padding: 0px;
+    }
+    
+    .area-ma-1 {
+      position: absolute;
+      bottom: 24%;
+      left: 23.5%;
+      z-index: 9999;
+      height: 134px;
+      width: 83px;
+      padding: 0px;
+    }
+    
+    .area-ma-2 {
+      position: absolute;
+      bottom: 24%;
+      left: 33%;
+      z-index: 9999;
+      height: 134px;
+      width: 80px;
+      padding: 0px;
+    }
+    
+    .area-ma-3 {
+      position: absolute;
+      bottom: 24%;
+      left: 43%;
+      z-index: 9999;
+      height: 134px;
+      width: 109px;
+      padding: 0px;
+    }
+    
+    .area-mb {
+      position: absolute;
+      top: 13%;
+      left: 40.5%;
+      z-index: 9999;
+      height: 109px;
+      width: 56px;
+      min-width: 46px;
+      padding: 0px;
+    }
+    
+    .area-mu {
+      position: absolute;
+      top: 13%;
+      left: 33.5%;
+      z-index: 9999;
+      height: 110px;
+      width: 33px;
+      min-width: 48px;
+      padding: 0px;
+    }
+    
+    .area-mt-ms {
+      position: absolute;
+      top: 13%;
+      left: 23.5%;
+      z-index: 9999;
+      height: 111px;
+      width: 76px;
+      padding: 0px;
+    }
+    
+    .Welfare_zones {
+      position: absolute;
+      top: 13%;
+      right: 43.5%;
+      z-index: 9999;
+      height: 109px;
+      width: 62px;
+      padding: 0px;
+    }
+    
+    .Roads {
+      position: absolute;
+      top: 9%;
+      left: 23%;
+      z-index: 9999;
+      height: 268px;
+      width: 9px;
+      min-width: 9px;
+      min-width: 0;
+    }  
+}
+
+@media (min-width: 850px) and (max-width: 992px) {
+  .CT_Dark {
+    position: absolute;
+    top: 8%;
+    left: 27%;
+    z-index: 9999;
+    height: 15px;
+    width: 271px;
+    padding: 0px;
+  }
+  
+  .area-ma-1 {
+    position: absolute;
+    bottom: 24%;
+    left: 23.5%;
+    z-index: 9999;
+    height: 161px;
+    width: 84px;
+    padding: 0px;
+  }
+  
+  .area-ma-2 {
+    position: absolute;
+    bottom: 24%;
+    left: 33%;
+    z-index: 9999;
+    height: 161px;
+    width: 79px;
+    padding: 0px;
+  }
+  
+  .area-ma-3 {
+    position: absolute;
+    bottom: 24%;
+    left: 43%;
+    z-index: 9999;
+    height: 159px;
+    width: 109px;
+    padding: 0px;
+  }
+  
+  .area-mb {
+    position: absolute;
+    top: 13%;
+    left: 40.5%;
+    z-index: 9999;
+    height: 131px;
+    width: 67px;
+    min-width: 46px;
+    padding: 0px;
+  }
+  
+  .area-mu {
+    position: absolute;
+    top: 13%;
+    left: 33.5%;
+    z-index: 9999;
+    height: 131px;
+    width: 33px;
+    min-width: 58px;
+    padding: 0px;
+  }
+  
+  .area-mt-ms {
+    position: absolute;
+    top: 13%;
+    left: 23.5%;
+    z-index: 9999;
+    height: 131px;
+    width: 88px;
+    padding: 0px;
+  }
+  
+  .Welfare_zones {
+    position: absolute;
+    top: 13%;
+    right: 43.5%;
+    z-index: 9999;
+    height: 133px;
+    width: 73px;
+    padding: 0px;
+  }
+  
+  .Roads {
+    position: absolute;
+    top: 9%;
+    left: 23%;
+    z-index: 9999;
+    height: 321px;
+    width: 9px;
+    min-width: 9px;
+    min-width: 0;
+  }  
+}
+
+@media (min-width: 992px) and (max-width: 1050px) {
+  .CT_Dark {
+    position: absolute;
+    top: 8%;
+    left: 27%;
+    z-index: 9999;
+    height: 15px;
+    width: 220px;
+    padding: 0px;
+  }
+  
+  .area-ma-1 {
+    position: absolute;
+    bottom: 24%;
+    left: 23.5%;
+    z-index: 9999;
+    height: 133px;
+    width: 68px;
+    padding: 0px;
+  }
+  
+  .area-ma-2 {
+    position: absolute;
+    bottom: 24%;
+    left: 33%;
+    z-index: 9999;
+    height: 132px;
+    width: 79px;
+    padding: 0px;
+  }
+  
+  .area-ma-3 {
+    position: absolute;
+    bottom: 24%;
+    left: 43%;
+    z-index: 9999;
+    height: 133px;
+    width: 109px;
+    padding: 0px;
+  }
+  
+  .area-mb {
+    position: absolute;
+    top: 13%;
+    left: 40.5%;
+    z-index: 9999;
+    height: 108px;
+    width: 55px;
+    min-width: 46px;
+    padding: 0px;
+  }
+  
+  .area-mu {
+    position: absolute;
+    top: 13%;
+    left: 33.5%;
+    z-index: 9999;
+    height: 107px;
+    width: 33px;
+    min-width: 47px;
+    padding: 0px;
+  }
+  
+  .area-mt-ms {
+    position: absolute;
+    top: 13%;
+    left: 23.5%;
+    z-index: 9999;
+    height: 108px;
+    width: 72px;
+    padding: 0px;
+  }
+  
+  .Welfare_zones {
+    position: absolute;
+    top: 13%;
+    right: 43.5%;
+    z-index: 9999;
+    height: 107px;
+    width: 58px;
+    padding: 0px;
+  }
+  
+  .Roads {
+    position: absolute;
+    top: 9%;
+    left: 23%;
+    z-index: 9999;
+    height: 259px;
+    width: 9px;
+    min-width: 9px;
+    min-width: 0;
+  }  
+}
+
+@media (min-width: 1050px) and (max-width: 1199px) {
+  .CT_Dark {
+    position: absolute;
+    top: 8%;
+    left: 27%;
+    z-index: 9999;
+    height: 16px;
+    width: 260px;
+    padding: 0px;
+  }
+  
+  .area-ma-1 {
+    position: absolute;
+    bottom: 24%;
+    left: 23.5%;
+    z-index: 9999;
+    height: 154px;
+    width: 96px;
+    padding: 0px;
+  }
+  
+  .area-ma-2 {
+    position: absolute;
+    bottom: 24%;
+    left: 33%;
+    z-index: 9999;
+    height: 154px;
+    width: 93px;
+    padding: 0px;
+  }
+  
+  .area-ma-3 {
+    position: absolute;
+    bottom: 24%;
+    left: 43%;
+    z-index: 9999;
+    height: 146px;
+    width: 129px;
+    padding: 0px;
+  }
+  
+  .area-mb {
+    position: absolute;
+    top: 13%;
+    left: 40.5%;
+    z-index: 9999;
+    height: 126px;
+    width: 60px;
+    padding: 0px;
+  }
+  
+  .area-mu {
+    position: absolute;
+    top: 13%;
+    left: 33.5%;
+    z-index: 9999;
+    height: 125px;
+    width: 33px;
+    min-width: 55px;
+    padding: 0px;
+  }
+  
+  .area-mt-ms {
+    position: absolute;
+    top: 13%;
+    left: 23.5%;
+    z-index: 9999;
+    height: 125px;
+    width: 86px;
+    padding: 0px;
+  }
+  
+  .Welfare_zones {
+    position: absolute;
+    top: 13%;
+    right: 43.5%;
+    z-index: 9999;
+    height: 127px;
+    width: 71px;
+    padding: 0px;
+  }
+  
+  .Roads {
+    position: absolute;
+    top: 9%;
+    left: 23%;
+    z-index: 9999;
+    height: 312px;
+    width: 9px;
+    min-width: 9px;
+    min-width: 0;
+  }  
+}
+
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .CT_Dark {
+    position: absolute;
+    top: 8%;
+    left: 27%;
+    z-index: 9999;
+    height: 16px;
+    width: 289px;
+    padding: 0px;
+  }
+  
+  .area-ma-1 {
+    position: absolute;
+    bottom: 24%;
+    left: 23.5%;
+    z-index: 9999;
+    height: 170px;
+    width: 107px;
+    padding: 0px;
+  }
+  
+  .area-ma-2 {
+    position: absolute;
+    bottom: 24%;
+    left: 33%;
+    z-index: 9999;
+    height: 172px;
+    width: 102px;
+    padding: 0px;
+  }
+  
+  .area-ma-3 {
+    position: absolute;
+    bottom: 24%;
+    left: 43%;
+    z-index: 9999;
+    height: 170px;
+    width: 143px;
+    padding: 0px;
+  }
+  
+  .area-mb {
+    position: absolute;
+    top: 13%;
+    left: 40.5%;
+    z-index: 9999;
+    height: 139px;
+    width: 72px;
+    padding: 0px;
+  }
+  
+  .area-mu {
+    position: absolute;
+    top: 13%;
+    left: 33.5%;
+    z-index: 9999;
+    height: 140px;
+    width: 35px;
+    padding: 0px;
+  }
+  
+  .area-mt-ms {
+    position: absolute;
+    top: 13%;
+    left: 23.5%;
+    z-index: 9999;
+    height: 141px;
+    width: 94px;
+    padding: 0px;
+  }
+  
+  .Welfare_zones {
+    position: absolute;
+    top: 13%;
+    right: 43.5%;
+    z-index: 9999;
+    height: 139px;
+    width: 79px;
+    padding: 0px;
+  }
+  
+  .Roads {
+    position: absolute;
+    top: 9%;
+    left: 23%;
+    z-index: 9999;
+    height: 341px;
+    width: 9px;
+    min-width: 9px;
+    min-width: 0;
+  }  
+}
+
+@media (min-width: 1300px) and (max-width: 1450px) {
+  .CT_Dark {
+    position: absolute;
+    top: 8%;
+    left: 27%;
+    z-index: 9999;
+    height: 20px;
+    width: 328px;
+    padding: 0px;
+  }
+  
+  .area-ma-1 {
+    position: absolute;
+    bottom: 24%;
+    left: 24%;
+    z-index: 9999;
+    height: 191px;
+    width: 95px;
+    padding: 0px;
+  }
+  
+  .area-ma-2 {
+    position: absolute;
+    bottom: 24%;
+    left: 33%;
+    z-index: 9999;
+    height: 191px;
+    width: 116px;
+    padding: 0px;
+  }
+  
+  .area-ma-3 {
+    position: absolute;
+    bottom: 24%;
+    left: 43%;
+    z-index: 9999;
+    height: 191px;
+    width: 160px;
+    padding: 0px;
+  }
+  
+  .area-mb {
+    position: absolute;
+    top: 13%;
+    left: 40.5%;
+    z-index: 9999;
+    height: 159px;
+    width: 81px;
+    padding: 0px;
+  }
+  
+  .area-mu {
+    position: absolute;
+    top: 13%;
+    left: 33.5%;
+    z-index: 9999;
+    height: 159px;
+    width: 70px;
+    padding: 0px;
+  }
+  
+  .area-mt-ms {
+    position: absolute;
+    top: 13%;
+    left: 23.5%;
+    z-index: 9999;
+    height: 160px;
+    width: 107px;
+    padding: 0px;
+  }
+  
+  .Welfare_zones {
+    position: absolute;
+    top: 13%;
+    right: 43.5%;
+    z-index: 9999;
+    height: 160px;
+    width: 90px;
+    padding: 0px;
+  }
+  
+  .Roads {
+    position: absolute;
+    top: 9%;
+    left: 23%;
+    z-index: 9999;
+    height: 382px;
+    width: 9px;
+    min-width: 9px;
+    min-width: 0;
+  }  
+}
+
+@media (min-width: 1450px) and (max-width: 1600px) {
+  .CT_Dark {
+    position: absolute;
+    top: 8%;
+    left: 27%;
+    z-index: 9999;
+    height: 25px;
+    width: 378px;
+    padding: 0px;
+  }
+  
+  .area-ma-1 {
+    position: absolute;
+    bottom: 24%;
+    left: 24%;
+    z-index: 9999;
+    height: 215px;
+    width: 118px;
+    padding: 0px;
+  }
+  
+  .area-ma-2 {
+    position: absolute;
+    bottom: 24%;
+    left: 33%;
+    z-index: 9999;
+    height: 215px;
+    width: 118px;
+    padding: 0px;
+  }
+  
+  .area-ma-3 {
+    position: absolute;
+    bottom: 24%;
+    left: 43%;
+    z-index: 9999;
+    height: 215px;
+    width: 175px;
+    padding: 0px;
+  }
+  
+  .area-mb {
+    position: absolute;
+    top: 13%;
+    left: 40.5%;
+    z-index: 9999;
+    height: 180px;
+    width: 90px;
+    padding: 0px;
+  }
+  
+  .area-mu {
+    position: absolute;
+    top: 13%;
+    left: 33.5%;
+    z-index: 9999;
+    height: 180px;
+    width: 76px;
+    padding: 0px;
+  }
+  
+  .area-mt-ms {
+    position: absolute;
+    top: 13%;
+    left: 23.5%;
+    z-index: 9999;
+    height: 180px;
+    width: 120px;
+    padding: 0px;
+  }
+  
+  .Welfare_zones {
+    position: absolute;
+    top: 13%;
+    right: 43.5%;
+    z-index: 9999;
+    height: 180px;
+    width: 100px;
+    padding: 0px;
+  }
+  
+  .Roads {
+    position: absolute;
+    top: 9%;
+    left: 23%;
+    z-index: 9999;
+    height: 445px;
+    width: 9px;
+    min-width: 9px;
+    min-width: 0;
+  }  
+}
+
+@media (min-width: 1600px) and (max-width: 1750px) {
+  .CT_Dark {
+    position: absolute;
+    top: 8%;
+    left: 27%;
+    z-index: 9999;
+    height: 25px;
+    width: 378px;
+    padding: 0px;
+  }
+  
+  .area-ma-1 {
+    position: absolute;
+    bottom: 24%;
+    left: 24%;
+    z-index: 9999;
+    height: 215px;
+    width: 118px;
+    padding: 0px;
+  }
+  
+  .area-ma-2 {
+    position: absolute;
+    bottom: 24%;
+    left: 33%;
+    z-index: 9999;
+    height: 215px;
+    width: 118px;
+    padding: 0px;
+  }
+  
+  .area-ma-3 {
+    position: absolute;
+    bottom: 24%;
+    left: 43%;
+    z-index: 9999;
+    height: 215px;
+    width: 175px;
+    padding: 0px;
+  }
+  
+  .area-mb {
+    position: absolute;
+    top: 13%;
+    left: 40.5%;
+    z-index: 9999;
+    height: 180px;
+    width: 90px;
+    padding: 0px;
+  }
+  
+  .area-mu {
+    position: absolute;
+    top: 13%;
+    left: 33.5%;
+    z-index: 9999;
+    height: 180px;
+    width: 76px;
+    padding: 0px;
+  }
+  
+  .area-mt-ms {
+    position: absolute;
+    top: 13%;
+    left: 23.5%;
+    z-index: 9999;
+    height: 180px;
+    width: 120px;
+    padding: 0px;
+  }
+  
+  .Welfare_zones {
+    position: absolute;
+    top: 13%;
+    right: 43.5%;
+    z-index: 9999;
+    height: 180px;
+    width: 100px;
+    padding: 0px;
+  }
+  
+  .Roads {
+    position: absolute;
+    top: 9%;
+    left: 23%;
+    z-index: 9999;
+    height: 445px;
+    width: 9px;
+    min-width: 9px;
+    min-width: 0;
+  }  
+}
+
+@media (min-width: 1750px) and (max-width: 1850px) {
+  .CT_Dark {
+    position: absolute;
+    top: 8%;
+    left: 27%;
+    z-index: 9999;
+    height: 25px;
+    width: 452px;
+    padding: 0px;
+  }
+  
+  .area-ma-1 {
+    position: absolute;
+    bottom: 24%;
+    left: 24%;
+    z-index: 9999;
+    height: 263px;
+    width: 133px;
+    padding: 0px;
+  }
+  
+  .area-ma-2 {
+    position: absolute;
+    bottom: 24%;
+    left: 33%;
+    z-index: 9999;
+    height: 261px;
+    width: 131px;
+    padding: 0px;
+  }
+  
+  .area-ma-3 {
+    position: absolute;
+    bottom: 24%;
+    left: 43%;
+    z-index: 9999;
+    height: 260px;
+    width: 175px;
+    padding: 0px;
+  }
+  
+  .area-mb {
+    position: absolute;
+    top: 13%;
+    left: 40.5%;
+    z-index: 9999;
+    height: 219px;
+    width: 109px;
+    padding: 0px;
+  }
+  
+  .area-mu {
+    position: absolute;
+    top: 13%;
+    left: 33.5%;
+    z-index: 9999;
+    height: 220px;
+    width: 96px;
+    padding: 0px;
+  }
+  
+  .area-mt-ms {
+    position: absolute;
+    top: 13%;
+    left: 23.5%;
+    z-index: 9999;
+    height: 221px;
+    width: 144px;
+    padding: 0px;
+  }
+  
+  .Welfare_zones {
+    position: absolute;
+    top: 13%;
+    right: 43.5%;
+    z-index: 9999;
+    height: 222px;
+    width: 123px;
+    padding: 0px;
+  }
+  
+  .Roads {
+    position: absolute;
+    top: 9%;
+    left: 23%;
+    z-index: 9999;
+    height: 533px;
+    width: 9px;
+    min-width: 9px;
+    min-width: 0;
+  }  
+}
+
+@media (min-width: 1850px) and (max-width: 2000px) {
+  .CT_Dark {
+    position: absolute;
+    top: 8%;
+    left: 27%;
+    z-index: 9999;
+    height: 29px;
+    width: 491px;
+    padding: 0px;
+  }
+  
+  .area-ma-1 {
+    position: absolute;
+    bottom: 24%;
+    left: 24%;
+    z-index: 9999;
+    height: 263px;
+    width: 133px;
+    padding: 0px;
+  }
+  
+  .area-ma-2 {
+    position: absolute;
+    bottom: 23.5%;
+    left: 33%;
+    z-index: 9999;
+    height: 288px;
+    width: 143px;
+    padding: 0px;
+  }
+  
+  .area-ma-3 {
+    position: absolute;
+    bottom: 24%;
+    left: 43%;
+    z-index: 9999;
+    height: 283px;
+    width: 175px;
+    padding: 0px;
+  }
+  
+  .area-mb {
+    position: absolute;
+    top: 13%;
+    left: 40.5%;
+    z-index: 9999;
+    height: 238px;
+    width: 119px;
+    padding: 0px;
+  }
+  
+  .area-mu {
+    position: absolute;
+    top: 13%;
+    left: 33.5%;
+    z-index: 9999;
+    height: 237px;
+    width: 103px;
+    padding: 0px;
+  }
+  
+  .area-mt-ms {
+    position: absolute;
+    top: 13%;
+    left: 23.5%;
+    z-index: 9999;
+    height: 239px;
+    width: 158px;
+    padding: 0px;
+  }
+  
+  .Welfare_zones {
+    position: absolute;
+    top: 13%;
+    right: 43.5%;
+    z-index: 9999;
+    height: 239px;
+    width: 135px;
+    padding: 0px;
+  }
+  
+  .Roads {
+    position: absolute;
+    top: 9%;
+    left: 23%;
+    z-index: 9999;
+    height: 580px;
+    width: 9px;
+    min-width: 9px;
+    min-width: 0;
+  }  
+}
+
+/* End External Areas Responsive */
+
+/* Background Responsive */
+.btn-hover:hover{
+  /* background-color: #ff000080!important; */
+  background-color: rgba(0, 0, 0, 0.5)!important;
+}
