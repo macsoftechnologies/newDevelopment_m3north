@@ -178,6 +178,7 @@ export class StatusChangeDialogComponent implements OnInit {
 
     system_drained: null,
     excavation_shoring: null,
+    rams_number: null,
 
   };
   images: any[] = [];
@@ -300,6 +301,8 @@ export class StatusChangeDialogComponent implements OnInit {
       this.data["payload"]["Type_Of_Activity_Id"];
     this.updaterequestdata.Working_Date = this.data["payload"]["Working_Date"];
     this.updaterequestdata.id = this.data["payload"]["id"];
+    this.updaterequestdata.rams_number = this.data["payload"]["rams_number:"];
+
 
     // new keys added
 

@@ -689,6 +689,7 @@ export class NewRequestComponent implements OnInit {
     // segragated_demarkated : null,
     system_drained: null,
     excavation_shoring: null,
+    rams_number: null,
   };
 
   userdata: any = {};
@@ -2375,8 +2376,8 @@ export class NewRequestComponent implements OnInit {
     // console.log("block", this.planSelectedBlocks)
     // this.RequestForm.controls["Room"].setValue(this.planSelectedBlocks);
     this.RequestForm.controls["Room"].setValue(blocks);
-    this.isnewrequestcreated = true;
-    console.log("form data", this.RequestForm.value);
+    this.isnewrequestcreated = this.selectedbuilding && this.selectedfloor && this.selectFloorBlocks?.length > 0 ? true : false;
+    // console.log("form data", this.RequestForm.value);
   }
   Getselectedroomitem(event) {
     console.log(event);
@@ -2831,8 +2832,13 @@ export class NewRequestComponent implements OnInit {
   }
 
   UpdateRequest() {
-    console.log(this.NewRequestData, 'editttt')
-    console.log("res checking")
+    (Object as any).keys(this.RequestForm.controls).forEach((control) => {
+      this.RequestForm.get(`${control}`).updateValueAndValidity();
+      this.RequestForm.get(`${control}`).markAsTouched();
+    });
+    // console.log(this.NewRequestData, 'editttt')
+    // console.log("res checking")
+    if (this.RequestForm.valid) {
     var badarray = [];
     this.spinner = true;
 
@@ -2905,10 +2911,15 @@ export class NewRequestComponent implements OnInit {
     // this.Requestdata.Type_Of_Activity_Id=this.RequestForm.controls["TypeActivity"].value;
     this.updaterequestdata.Type_Of_Activity_Id =
       this.RequestForm.controls["TypeActivity"].value;
-    let workdate = this.datePipe.transform(
-      this.RequestForm.controls["Startdate"].value,
-      "yyyy-MM-dd"
-    );
+    // let workdate = this.datePipe.transform(
+    //   this.RequestForm.controls["Startdate"].value,
+    //   "yyyy-MM-dd"
+    // );
+    let startDateValue = this.RequestForm.controls["Startdate"].value;
+
+    // Check if the start date exists and is valid
+    let workdate = startDateValue != '0000-00-00' ? this.datePipe.transform(startDateValue, "yyyy-MM-dd")
+      : null;
 
     this.updaterequestdata.Working_Date = workdate;
     this.updaterequestdata.Start_Time =
@@ -2936,6 +2947,7 @@ export class NewRequestComponent implements OnInit {
       this.RequestForm.controls["LOTOPROCEDURE"].value;
     this.updaterequestdata.LOTO_Number =
       this.RequestForm.controls["LOTONumber"].value;
+      this.updaterequestdata.rams_number = this.RequestForm.controls["RAMSNumber"].value;
 
     // new fields add
 
@@ -3087,7 +3099,7 @@ export class NewRequestComponent implements OnInit {
     this.updaterequestdata.hearing_protection = this.RequestForm.controls["hearing_protection"].value;
     this.updaterequestdata.respiratory_protection = this.RequestForm.controls["respiratory_protection"].value;
     this.updaterequestdata.other_ppe = this.RequestForm.controls["other_ppe"].value;
-    // this.updaterequestdata.other_conditions_input = this.RequestForm.controls["other_conditions_input"].value;
+    this.updaterequestdata.other_conditions_input = this.RequestForm.controls["other_conditions_input"].value;
 
     this.updaterequestdata.Power_Off_Required =
       this.RequestForm.controls["Poweroff"].value;
@@ -3119,6 +3131,7 @@ export class NewRequestComponent implements OnInit {
         this.openSnackBar("Something went wrong. Plz try again later...");
       }
     );
+  }
   }
 
   UpdateRequestDraftToHold(data) {
@@ -3227,6 +3240,7 @@ export class NewRequestComponent implements OnInit {
     this.updaterequestdata.Notes = this.RequestForm.controls["Note"].value;
     this.updaterequestdata.Safety_Precautions =
       this.RequestForm.controls["Safetyprecaustion"].value.toString();
+      this.updaterequestdata.rams_number = this.RequestForm.controls["RAMSNumber"].value;
 
        // new fields add
 
@@ -3378,7 +3392,7 @@ export class NewRequestComponent implements OnInit {
     this.updaterequestdata.hearing_protection = this.RequestForm.controls["hearing_protection"].value;
     this.updaterequestdata.respiratory_protection = this.RequestForm.controls["respiratory_protection"].value;
     this.updaterequestdata.other_ppe = this.RequestForm.controls["other_ppe"].value;
-    // this.updaterequestdata.other_conditions_input = this.RequestForm.controls["other_conditions_input"].value;
+    this.updaterequestdata.other_conditions_input = this.RequestForm.controls["other_conditions_input"].value;
 
     this.updaterequestdata.Power_Off_Required =
       this.RequestForm.controls["Poweroff"].value;
@@ -3743,7 +3757,7 @@ export class NewRequestComponent implements OnInit {
     this.RequestForm.controls["Companyname"].setValue(data["Company_Name"]);
     this.RequestForm.controls["Requestdate"].setValue(data["Request_Date"]);
     this.RequestForm.controls["SubContractor"].setValue(
-      data["Sub_Contractor_Id"]
+      data["Sub_Contractor_Id"] || ''
     );
     this.RequestForm.controls["Status"].setValue(data["Request_status"]);
 
@@ -3753,7 +3767,7 @@ export class NewRequestComponent implements OnInit {
     );
     this.RequestForm.controls["Site"].setValue(data["Site_Id"]);
     this.RequestForm.controls["Activity"].setValue(data["Activity"]);
-    this.RequestForm.controls["TypeActivity"].setValue(Number(data["Type_Of_Activity_Id"]));
+    this.RequestForm.controls["TypeActivity"].setValue(data["Type_Of_Activity_Id"] ? Number(data["Type_Of_Activity_Id"]) : '');
     this.RequestForm.controls["Building"].setValue(data["building_name"]);
     // this.RequestForm.controls["CMTdata"].setValue(data["Crane_Requested"]);
     this.RequestForm.controls["CmtValue"].setValue(data["Crane_Number"]);
@@ -3835,15 +3849,25 @@ export class NewRequestComponent implements OnInit {
     // roomarrstr = data["Room_Nos"].split(",");
     // this.RequestForm.controls['Room'].setValue(roomarrstr);
     this.RequestForm.controls["RoomType"].setValue(data["Room_Type"]);
-    var starttimestr = data["Start_Time"].split(":");
+    if(data["Start_Time"] !== "00:00:00"){
+      var starttimestr = data["Start_Time"].split(":");
 
-    this.RequestForm.controls["StartTime"].setValue(
-      starttimestr[0] + ":" + starttimestr[1]
-    );
-    var endtimestr = data["End_Time"].split(":");
-    this.RequestForm.controls["EndTime"].setValue(
-      endtimestr[0] + ":" + endtimestr[1]
-    );
+      this.RequestForm.controls["StartTime"].setValue(
+        starttimestr[0] + ":" + starttimestr[1]
+      );
+    }else{
+      this.RequestForm.controls["StartTime"].setValue(null);
+    }
+
+    if(data["End_Time"] !== "00:00:00"){
+      var endtimestr = data["End_Time"].split(":");
+      this.RequestForm.controls["EndTime"].setValue(
+        endtimestr[0] + ":" + endtimestr[1]
+      );
+    }else{
+      this.RequestForm.controls["EndTime"].setValue(null);
+    }
+
     this.RequestForm.controls["Startdate"].setValue(data["Working_Date"]);
     this.RequestForm.controls["Tools"].setValue(data["Tools"]);
     this.RequestForm.controls["peopleinvalidcount"].setValue(
@@ -3854,6 +3878,7 @@ export class NewRequestComponent implements OnInit {
     this.RequestForm.controls["floatLabel11"].setValue(data["affecting_other_contractors"]);
     this.RequestForm.controls["floatLabel12"].setValue(data["other_conditions"]);
     this.RequestForm.controls["other_conditions_input"].setValue(data["other_conditions_input"]);
+    this.setAndRemoveValidators(data["other_conditions_input"],'Are there other conditions that')
     this.RequestForm.controls["floatLabel13"].setValue(data["lighting_begin_work"]);
     this.RequestForm.controls["floatLabel14"].setValue(data["specific_risks"]);
     this.RequestForm.controls["floatLabel15"].setValue(data["environment_ensured"]);
