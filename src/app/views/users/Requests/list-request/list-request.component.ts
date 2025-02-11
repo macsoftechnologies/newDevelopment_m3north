@@ -190,6 +190,10 @@ export class ListRequestComponent implements OnInit {
       'MU91.3',
       'MU91.4',
       'MU91.R',
+      'MB.0',
+      'MB.1',
+      'MB.2',
+      'MB.R',
   ];
 
   getHras = [
@@ -518,9 +522,9 @@ export class ListRequestComponent implements OnInit {
           });
           this.paginationCount = res[1].count;
           console.log(this.paginationCount);
-          this.items = [];
-          this.items.length = 0;
-          this.items = filteritems;
+          // this.items = [];
+          // this.items.length = 0;
+          // this.items = filteritems;
         }
         else if (this.userdata['role'] == 'Observer') {
           this.IsNotSubCntr = false;

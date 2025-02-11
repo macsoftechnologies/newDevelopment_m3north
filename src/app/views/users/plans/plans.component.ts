@@ -195,6 +195,10 @@ export class PlansComponent implements OnInit {
      'MU91.3',
      'MU91.4',
      'MU91.R',
+     'MB.0',
+     'MB.1',
+     'MB.2',
+     'MB.R',
   ];
 
 

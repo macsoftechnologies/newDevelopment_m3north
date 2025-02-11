@@ -4116,7 +4116,7 @@ input {
   left: 43%;
   z-index: 9999;
   height: 215px;
-  width: 175px;
+  width: 100px;
   padding: 0px;
 }
 
@@ -4169,6 +4169,40 @@ input {
   width: 21px;
   padding: 0px;
   min-width: 0;
+}
+
+.Laydown40 {
+  position: absolute;
+  bottom: 10.5%;
+  left: 39%;
+  z-index: 9999;
+  height: 72px;
+  width: 80px;
+  padding: 0px;
+}
+
+.Laydown20 {
+
+  position: absolute;
+  bottom: 17.5%;
+  left: 51%;
+  z-index: 9999;
+  height: 75px;
+  width: 32px;
+  padding: 0px;
+  min-width: 0px;
+
+}
+
+.Laydown30{
+  position: absolute;
+  top: 50.5%;
+  left: 55.5%;
+  z-index: 9999;
+  height: 87px;
+  width: 32px;
+  padding: 0px;
+  min-width: 0px;
 }
 
 /* START MU90.0 */
@@ -4294,6 +4328,15 @@ input {
   z-index: 9999;
   height: 12%;
   width: 16%;
+  padding: 0px;
+}
+.MU90_1C2 {
+  position: absolute;
+  top: 26%;
+  right: 25%;
+  z-index: 9999;
+  height: 17%;
+  width: 19%;
   padding: 0px;
 }
 
@@ -4503,24 +4546,39 @@ input {
 
 /* ground floor start */
 
+
+/* ground floor start */
+
 .GF_Backage {
   position: absolute;
-  bottom: 11%;
+  bottom: 10.5%;
+  left: 38%;
+  z-index: 9999;
+  height: 52%;
+  width: 10%;
+  padding: 0px;
+  /* bottom: 11%;
   left: 38%;
   z-index: 9999;
   height: 49%;
   width: 10%;
-  padding: 0px;
+  padding: 0px; */
 }
 
 .GF_Corridor_N {
   position: absolute;
-  top: 35%;
+  top: 34.5%;
+  left: 38%;
+  z-index: 9999;
+  height: 3%;
+  width: 1%;
+  padding: 0px;
+  /* top: 35%;
   left: 38%;
   z-index: 9999;
   height: 4%;
   width: 1%;
-  padding: 0px;
+  padding: 0px; */
 }
 
 .GF_Corridor_S {
@@ -4538,7 +4596,8 @@ input {
   bottom: 8%;
   left: 48%;
   z-index: 9999;
-  height: 56%;
+  /* height: 56%; */
+  height: 58%;
   width: 10%;
   padding: 0px;
 }
@@ -4548,8 +4607,8 @@ input {
   bottom: 8%;
   left: 27%;
   z-index: 9999;
-  height: 56%;
-  width: 10%;
+  height: 58%;
+  width: 10.5%;
   padding: 0px;
 }
 
@@ -4558,7 +4617,7 @@ input {
   bottom: 21%;
   left: 20%;
   z-index: 9999;
-  height: 20%;
+  height: 20.5%;
   width: 7%;
   padding: 0px;
 }
@@ -4576,7 +4635,7 @@ input {
 .seventyB_Zone {
   position: absolute;
   bottom: 20%;
-  right: 22%;
+  height: 24.5%;
   z-index: 9999;
   height: 24%;
   width: 8%;
@@ -4587,7 +4646,7 @@ input {
 .fortyA_Zone {
   position: absolute;
   top: 26%;
-  left: 31%;
+  left: 30.5%;
   z-index: 9999;
   height: 8%;
   width: 9%;
@@ -4738,7 +4797,7 @@ input {
   bottom: 11%;
   left: 38%;
   z-index: 9999;
-  height: 49%;
+  height: 51%;
   width: 10%;
   padding: 0px;
 }
@@ -4748,14 +4807,14 @@ input {
   top: 35%;
   left: 38%;
   z-index: 9999;
-  height: 4%;
+  height: 3%;
   width: 1%;
   padding: 0px;
 }
 
 .FristFrontstageE {
   position: absolute;
-  bottom: 8%;
+  bottom: 9%;
   left: 48%;
   z-index: 9999;
   height: 56%;
@@ -4765,7 +4824,7 @@ input {
 
 .FristFrontstageW {
   position: absolute;
-  bottom: 8%;
+  bottom: 9%;
   left: 29%;
   z-index: 9999;
   height: 56%;
@@ -4796,17 +4855,17 @@ input {
 
 .firstseventyB {
   position: absolute;
-  bottom: 26%;
-  right: 24%;
+  top: 27.5%;
+  left: 21%;
   z-index: 9999;
-  height: 14%;
-  width: 8%;
+  height: 7.4%;
+  width: 11%;
   padding: 0px;
 }
 
 .firstseventyC {
   position: absolute;
-  bottom: 20%;
+  top: 18.5%;
   right: 24%;
   z-index: 9999;
   height: 6%;
@@ -4816,7 +4875,7 @@ input {
 
 .FirstfoutyA {
   position: absolute;
-  top: 21%;
+  top: 20.5%;
   left: 37%;
   z-index: 9999;
   height: 14%;
@@ -4848,7 +4907,7 @@ input {
 
 .FirstfoutyD {
   position: absolute;
-  top: 8%;
+  top: 7.5%;
   left: 40%;
   z-index: 9999;
   height: 11%;
@@ -4859,29 +4918,29 @@ input {
 
 .FirstfoutyE {
   position: absolute;
-  top: 30%;
+  top: 29.5%;
   left: 49%;
   z-index: 9999;
   height: 5%;
-  width: 7%;
+  width: 6.5%;
   padding: 0px;
   min-width: 0px;
 }
 
 .FirstfoutyF {
   position: absolute;
-  top: 23%;
+  top: 22.5%;
   left: 49%;
   z-index: 9999;
   height: 7%;
-  width: 7%;
+  width: 6.5%;
   padding: 0px;
   min-width: 0px;
 }
 
 .FirstfoutyG {
   position: absolute;
-  top: 32%;
+  top: 31.5%;
   right: 21%;
   z-index: 9999;
   height: 3%;
@@ -4891,7 +4950,7 @@ input {
 
 .FirstfoutyI {
   position: absolute;
-  top: 21%;
+  top: 20.5%;
   right: 21%;
   z-index: 9999;
   height: 11%;
@@ -4902,7 +4961,7 @@ input {
 
 .FirstfoutyJ {
   position: absolute;
-  top: 21%;
+  top: 20.5%;
   right: 29%;
   z-index: 9999;
   height: 6%;
@@ -4913,47 +4972,48 @@ input {
 
 .FirstfoutyK {
   position: absolute;
-  top: 21%;
+  top: 20.6%;
   right: 37%;
   z-index: 9999;
   height: 12%;
-  width: 7%;
+  width: 7.5%;
   padding: 0px;
 }
 
 .FirstfoutyL {
   position: absolute;
-  top: 21%;
+  top: 20.6%;
   left: 21%;
   z-index: 9999;
   height: 7%;
-  width: 9%;
+  width: 9.3%;
   padding: 0px;
 }
 
 .FirstfoutyM {
   position: absolute;
-  top: 8%;
+  top: 7.5%;
   left: 21%;
   z-index: 9999;
   height: 11%;
-  width: 15%;
+  width: 15.3%;
   padding: 0px;
 }
 
 /* first floor ends */
 
 /* second floor start */
-.second_Backstage{
+.second_Backstage {
   position: absolute;
   bottom: 11%;
   left: 38%;
   z-index: 9999;
-  height: 49%;
-  width: 10%;
+  height: 51%;
+  width: 9%;
   padding: 0px;
 }
-.second_CorridorS{
+
+.second_CorridorS {
   position: absolute;
   bottom: 9%;
   left: 38%;
@@ -4962,37 +5022,39 @@ input {
   width: 10%;
   padding: 0px;
 }
-.second_Distribution{
+
+.second_Distribution {
   position: absolute;
-    top: 35%;
-    left: 38%;
-    z-index: 9999;
-    height: 3%;
-    width: 9%;
-    padding: 0px;
+  top: 35%;
+  left: 38%;
+  z-index: 9999;
+  height: 3%;
+  width: 9%;
+  padding: 0px;
 }
 
-.second_FrontstageE{
+.second_FrontstageE {
   position: absolute;
-  bottom: 8%;
-  left: 48%;
+  bottom: 9%;
+  left: 47.5%;
   z-index: 9999;
   height: 56%;
   width: 10%;
   padding: 0px;
 }
-.second_FrontstageW{
+
+.second_FrontstageW {
   position: absolute;
   bottom: 8%;
   left: 27%;
   z-index: 9999;
-  height: 56%;
-  width: 10%;
+  height: 57%;
+  width: 11%;
   padding: 0px;
 
 }
 
-.second_Seventy_A{
+.second_Seventy_A {
   position: absolute;
   bottom: 31%;
   right: 35%;
@@ -5002,17 +5064,18 @@ input {
   padding: 0px;
 
 }
-.second_Seventy_B{
+
+.second_Seventy_B {
   position: absolute;
   bottom: 20%;
   right: 24%;
   z-index: 9999;
-  height: 18%;
-  width: 8%;
+  height: 18.5%;
+  width: 7.5%;
   padding: 0px;
 }
 
-.second_forty_2A_1{
+.second_forty_2A_1 {
   position: absolute;
   top: 7.5%;
   left: 20%;
@@ -5022,16 +5085,18 @@ input {
   padding: 0px;
 
 }
-.second_forty_2A_2{
+
+.second_forty_2A_2 {
   position: absolute;
-    top: 26.5%;
-    left: 20%;
-    z-index: 9999;
-    height: 8%;
-    width: 28%;
-    padding: 0px;
+  top: 26.5%;
+  left: 20%;
+  z-index: 9999;
+  height: 8%;
+  width: 28%;
+  padding: 0px;
 }
-.second_forty_2A_3{
+
+.second_forty_2A_3 {
   position: absolute;
   top: 20.5%;
   right: 31%;
@@ -5041,7 +5106,7 @@ input {
   padding: 0px;
 }
 
-.second_forty_2b{
+.second_forty_2b {
   position: absolute;
   top: 21.5%;
   left: 31%;
@@ -5051,16 +5116,18 @@ input {
   padding: 0px;
   min-width: 0px;
 }
-.second_forty_2c{
+
+.second_forty_2c {
   position: absolute;
-    top: 28.5%;
-    right: 45%;
-    z-index: 9999;
-    height: 6%;
-    width: 7%;
-    padding: 0px;
+  top: 28.5%;
+  right: 45%;
+  z-index: 9999;
+  height: 6%;
+  width: 7%;
+  padding: 0px;
 }
-.second_forty_2d{
+
+.second_forty_2d {
   position: absolute;
   top: 20.5%;
   right: 45%;
@@ -5068,9 +5135,9 @@ input {
   height: 8%;
   width: 7%;
   padding: 0px;
-
 }
-.second_forty_2e{
+
+.second_forty_2e {
   position: absolute;
   top: 20.5%;
   right: 37%;
@@ -5080,7 +5147,8 @@ input {
   padding: 0px;
 
 }
-.second_forty_2f{
+
+.second_forty_2f {
   position: absolute;
   top: 16.5%;
   left: 20%;
@@ -5090,6 +5158,7 @@ input {
   padding: 0px;
   min-width: 0px;
 }
+
 /* seconf floor ends */
 
 /* ends Ma Section */
@@ -5097,9 +5166,9 @@ input {
 
 /* Background Responsive */
 
- /* START MU90.0 Responsive */
+/* START MU90.0 Responsive */
 
- @media (min-width: 360px) and (max-width: 468px) {
+@media (min-width: 360px) and (max-width: 468px) {
 
   .MU90_0A {
     position: absolute;
@@ -5110,7 +5179,7 @@ input {
     width: 72px;
     padding: 0px;
   }
-  
+
   .MU90_0B {
     position: absolute;
     bottom: 26.5%;
@@ -5120,7 +5189,7 @@ input {
     width: 61px;
     padding: 0px;
   }
-  
+
   .MU90_0C {
     position: absolute;
     top: 30%;
@@ -5130,7 +5199,7 @@ input {
     width: 56px;
     padding: 0px;
   }
-  
+
   .MU90_0D {
     position: absolute;
     top: 9%;
@@ -5140,7 +5209,7 @@ input {
     width: 48%;
     padding: 0px;
   }
-  
+
   .MU90_0E {
     position: absolute;
     top: 40%;
@@ -5151,7 +5220,7 @@ input {
     min-width: 7%;
     padding: 0px;
   }
-  
+
   .MU90_0I {
     position: absolute;
     top: 37%;
@@ -5162,7 +5231,7 @@ input {
     min-width: 53px;
     padding: 0px;
   }
-  
+
   .MU90_0F1 {
     position: absolute;
     bottom: 10%;
@@ -5173,7 +5242,7 @@ input {
     width: 31px;
     padding: 0px;
   }
-  
+
   .MU90_0F2 {
     position: absolute;
     bottom: 10%;
@@ -5184,7 +5253,7 @@ input {
     min-width: 27px;
     padding: 0px;
   }
-  
+
   .MU90_0K {
     position: absolute;
     top: 34%;
@@ -5208,7 +5277,7 @@ input {
     width: 92px;
     padding: 0px;
   }
-  
+
   .MU90_0B {
     position: absolute;
     bottom: 26.5%;
@@ -5218,7 +5287,7 @@ input {
     width: 77px;
     padding: 0px;
   }
-  
+
   .MU90_0C {
     position: absolute;
     top: 30%;
@@ -5228,7 +5297,7 @@ input {
     width: 77px;
     padding: 0px;
   }
-  
+
   .MU90_0D {
     position: absolute;
     top: 9%;
@@ -5238,7 +5307,7 @@ input {
     width: 48%;
     padding: 0px;
   }
-  
+
   .MU90_0E {
     position: absolute;
     top: 40%;
@@ -5249,7 +5318,7 @@ input {
     min-width: 7%;
     padding: 0px;
   }
-  
+
   .MU90_0I {
     position: absolute;
     top: 37%;
@@ -5259,7 +5328,7 @@ input {
     width: 14.3%;
     padding: 0px;
   }
-  
+
   .MU90_0F1 {
     position: absolute;
     bottom: 10%;
@@ -5270,7 +5339,7 @@ input {
     width: 38px;
     padding: 0px;
   }
-  
+
   .MU90_0F2 {
     position: absolute;
     bottom: 10%;
@@ -5280,7 +5349,7 @@ input {
     width: 69px;
     padding: 0px;
   }
-  
+
   .MU90_0K {
     position: absolute;
     top: 34%;
@@ -5294,98 +5363,98 @@ input {
 }
 
 @media (min-width: 550px) and (max-width: 649px) {
-    .MU90_0A {
-      position: absolute;
-      bottom: 9.5%;
-      right: 28%;
-      z-index: 9999;
-      height: 124px;
-      width: 106px;
-      padding: 0px;
-    }
-    
-    .MU90_0B {
-      position: absolute;
-      bottom: 26.5%;
-      right: 28%;
-      z-index: 9999;
-      height: 84px;
-      width: 91px;
-      padding: 0px;
-    }
-    
-    .MU90_0C {
-      position: absolute;
-      top: 30%;
-      right: 28%;
-      z-index: 9999;
-      height: 32%;
-      width: 90px;
-      padding: 0px;
-    }
-    
-    .MU90_0D {
-      position: absolute;
-      top: 9%;
-      left: 24%;
-      z-index: 9999;
-      height: 21.5%;
-      width: 48%;
-      padding: 0px;
-    }
-    
-    .MU90_0E {
-      position: absolute;
-      top: 40%;
-      left: 24%;
-      z-index: 9999;
-      height: 42%;
-      width: 6%;
-      min-width: 7%;
-      padding: 0px;
-    }
-    
-    .MU90_0I {
-      position: absolute;
-      top: 37%;
-      left: 35%;
-      z-index: 9999;
-      height: 39%;
-      width: 14.3%;
-      padding: 0px;
-    }
-    
-    .MU90_0F1 {
-      position: absolute;
-      bottom: 9%;
-      left: 24%;
-      z-index: 9999;
-      height: 67px;
-      min-width: 44px;
-      width: 42px;
-      padding: 0px;
-    }
-    
-    .MU90_0F2 {
-      position: absolute;
-      bottom: 10%;
-      left: 35%;
-      z-index: 9999;
-      height: 102px;
-      width: 80px;
-      padding: 0px;
-    }
-    
-    .MU90_0K {
-      position: absolute;
-      top: 34%;
-      left: 49%;
-      z-index: 9999;
-      height: 39%;
-      width: 7%;
-      min-width: 2%;
-      padding: 0px;
-    }
+  .MU90_0A {
+    position: absolute;
+    bottom: 9.5%;
+    right: 28%;
+    z-index: 9999;
+    height: 124px;
+    width: 106px;
+    padding: 0px;
+  }
+
+  .MU90_0B {
+    position: absolute;
+    bottom: 26.5%;
+    right: 28%;
+    z-index: 9999;
+    height: 84px;
+    width: 91px;
+    padding: 0px;
+  }
+
+  .MU90_0C {
+    position: absolute;
+    top: 30%;
+    right: 28%;
+    z-index: 9999;
+    height: 32%;
+    width: 90px;
+    padding: 0px;
+  }
+
+  .MU90_0D {
+    position: absolute;
+    top: 9%;
+    left: 24%;
+    z-index: 9999;
+    height: 21.5%;
+    width: 48%;
+    padding: 0px;
+  }
+
+  .MU90_0E {
+    position: absolute;
+    top: 40%;
+    left: 24%;
+    z-index: 9999;
+    height: 42%;
+    width: 6%;
+    min-width: 7%;
+    padding: 0px;
+  }
+
+  .MU90_0I {
+    position: absolute;
+    top: 37%;
+    left: 35%;
+    z-index: 9999;
+    height: 39%;
+    width: 14.3%;
+    padding: 0px;
+  }
+
+  .MU90_0F1 {
+    position: absolute;
+    bottom: 9%;
+    left: 24%;
+    z-index: 9999;
+    height: 67px;
+    min-width: 44px;
+    width: 42px;
+    padding: 0px;
+  }
+
+  .MU90_0F2 {
+    position: absolute;
+    bottom: 10%;
+    left: 35%;
+    z-index: 9999;
+    height: 102px;
+    width: 80px;
+    padding: 0px;
+  }
+
+  .MU90_0K {
+    position: absolute;
+    top: 34%;
+    left: 49%;
+    z-index: 9999;
+    height: 39%;
+    width: 7%;
+    min-width: 2%;
+    padding: 0px;
+  }
 }
 
 @media (min-width: 650px) and (max-width: 749px) {
@@ -5399,7 +5468,7 @@ input {
     width: 123px;
     padding: 0px;
   }
-  
+
   .MU90_0B {
     position: absolute;
     bottom: 26.5%;
@@ -5409,7 +5478,7 @@ input {
     width: 105px;
     padding: 0px;
   }
-  
+
   .MU90_0C {
     position: absolute;
     top: 30%;
@@ -5419,7 +5488,7 @@ input {
     width: 106px;
     padding: 0px;
   }
-  
+
   .MU90_0D {
     position: absolute;
     top: 9%;
@@ -5429,7 +5498,7 @@ input {
     width: 48%;
     padding: 0px;
   }
-  
+
   .MU90_0E {
     position: absolute;
     top: 40%;
@@ -5440,7 +5509,7 @@ input {
     min-width: 7%;
     padding: 0px;
   }
-  
+
   .MU90_0I {
     position: absolute;
     top: 37%;
@@ -5450,7 +5519,7 @@ input {
     width: 14.3%;
     padding: 0px;
   }
-  
+
   .MU90_0F1 {
     position: absolute;
     bottom: 9%;
@@ -5461,7 +5530,7 @@ input {
     width: 42px;
     padding: 0px;
   }
-  
+
   .MU90_0F2 {
     position: absolute;
     bottom: 10%;
@@ -5471,7 +5540,7 @@ input {
     width: 95px;
     padding: 0px;
   }
-  
+
   .MU90_0K {
     position: absolute;
     top: 35%;
@@ -5485,7 +5554,7 @@ input {
 }
 
 @media (min-width: 750px) and (max-width: 850px) {
-  
+
   .MU90_0A {
     position: absolute;
     bottom: 11.5%;
@@ -5495,7 +5564,7 @@ input {
     width: 169px;
     padding: 0px;
   }
-  
+
   .MU90_0B {
     position: absolute;
     bottom: 29.5%;
@@ -5505,7 +5574,7 @@ input {
     width: 122px;
     padding: 0px;
   }
-  
+
   .MU90_0C {
     position: absolute;
     top: 27%;
@@ -5515,7 +5584,7 @@ input {
     width: 121px;
     padding: 0px;
   }
-  
+
   .MU90_0D {
     position: absolute;
     top: 9%;
@@ -5525,7 +5594,7 @@ input {
     width: 48%;
     padding: 0px;
   }
-  
+
   .MU90_0E {
     position: absolute;
     top: 40%;
@@ -5536,7 +5605,7 @@ input {
     min-width: 7%;
     padding: 0px;
   }
-  
+
   .MU90_0I {
     position: absolute;
     top: 32%;
@@ -5546,7 +5615,7 @@ input {
     width: 14.3%;
     padding: 0px;
   }
-  
+
   .MU90_0F1 {
     position: absolute;
     bottom: 14%;
@@ -5557,7 +5626,7 @@ input {
     width: 42px;
     padding: 0px;
   }
-  
+
   .MU90_0F2 {
     position: absolute;
     bottom: 15%;
@@ -5567,7 +5636,7 @@ input {
     width: 107px;
     padding: 0px;
   }
-  
+
   .MU90_0K {
     position: absolute;
     top: 30%;
@@ -5590,7 +5659,7 @@ input {
     width: 169px;
     padding: 0px;
   }
-  
+
   .MU90_0B {
     position: absolute;
     bottom: 26.5%;
@@ -5600,7 +5669,7 @@ input {
     width: 148px;
     padding: 0px;
   }
-  
+
   .MU90_0C {
     position: absolute;
     top: 30%;
@@ -5610,7 +5679,7 @@ input {
     width: 147px;
     padding: 0px;
   }
-  
+
   .MU90_0D {
     position: absolute;
     top: 9%;
@@ -5620,7 +5689,7 @@ input {
     width: 48%;
     padding: 0px;
   }
-  
+
   .MU90_0E {
     position: absolute;
     top: 40%;
@@ -5631,7 +5700,7 @@ input {
     min-width: 7%;
     padding: 0px;
   }
-  
+
   .MU90_0I {
     position: absolute;
     top: 37%;
@@ -5641,7 +5710,7 @@ input {
     width: 14.3%;
     padding: 0px;
   }
-  
+
   .MU90_0F1 {
     position: absolute;
     bottom: 11%;
@@ -5652,7 +5721,7 @@ input {
     width: 42px;
     padding: 0px;
   }
-  
+
   .MU90_0F2 {
     position: absolute;
     bottom: 11%;
@@ -5662,7 +5731,7 @@ input {
     width: 127px;
     padding: 0px;
   }
-  
+
   .MU90_0K {
     position: absolute;
     top: 33%;
@@ -5685,7 +5754,7 @@ input {
     width: 141px;
     padding: 0px;
   }
-  
+
   .MU90_0B {
     position: absolute;
     bottom: 26.5%;
@@ -5695,7 +5764,7 @@ input {
     width: 120px;
     padding: 0px;
   }
-  
+
   .MU90_0C {
     position: absolute;
     top: 30%;
@@ -5705,7 +5774,7 @@ input {
     width: 117px;
     padding: 0px;
   }
-  
+
   .MU90_0D {
     position: absolute;
     top: 9%;
@@ -5715,7 +5784,7 @@ input {
     width: 48%;
     padding: 0px;
   }
-  
+
   .MU90_0E {
     position: absolute;
     top: 31%;
@@ -5726,7 +5795,7 @@ input {
     min-width: 7%;
     padding: 0px;
   }
-  
+
   .MU90_0I {
     position: absolute;
     top: 28%;
@@ -5736,7 +5805,7 @@ input {
     width: 14.3%;
     padding: 0px;
   }
-  
+
   .MU90_0F1 {
     position: absolute;
     bottom: 18%;
@@ -5747,7 +5816,7 @@ input {
     width: 42px;
     padding: 0px;
   }
-  
+
   .MU90_0F2 {
     position: absolute;
     bottom: 18%;
@@ -5757,7 +5826,7 @@ input {
     width: 105px;
     padding: 0px;
   }
-  
+
   .MU90_0K {
     position: absolute;
     top: 34.5%;
@@ -5780,7 +5849,7 @@ input {
     width: 159px;
     padding: 0px;
   }
-  
+
   .MU90_0B {
     position: absolute;
     bottom: 26%;
@@ -5790,7 +5859,7 @@ input {
     width: 137px;
     padding: 0px;
   }
-  
+
   .MU90_0C {
     position: absolute;
     top: 30.5%;
@@ -5800,7 +5869,7 @@ input {
     width: 135px;
     padding: 0px;
   }
-  
+
   .MU90_0D {
     position: absolute;
     top: 9%;
@@ -5810,7 +5879,7 @@ input {
     width: 48%;
     padding: 0px;
   }
-  
+
   .MU90_0E {
     position: absolute;
     top: 40%;
@@ -5820,7 +5889,7 @@ input {
     width: 7%;
     padding: 0px;
   }
-  
+
   .MU90_0I {
     position: absolute;
     top: 37%;
@@ -5830,7 +5899,7 @@ input {
     width: 14.2%;
     padding: 0px;
   }
-  
+
   .MU90_0F1 {
     position: absolute;
     bottom: 9%;
@@ -5840,7 +5909,7 @@ input {
     width: 63px;
     padding: 0px;
   }
-  
+
   .MU90_0F2 {
     position: absolute;
     bottom: 9%;
@@ -5850,7 +5919,7 @@ input {
     width: 115px;
     padding: 0px;
   }
-  
+
   .MU90_0K {
     position: absolute;
     top: 35%;
@@ -5872,7 +5941,7 @@ input {
     width: 182px;
     padding: 0px;
   }
-  
+
   .MU90_0B {
     position: absolute;
     bottom: 26%;
@@ -5882,7 +5951,7 @@ input {
     width: 158px;
     padding: 0px;
   }
-  
+
   .MU90_0C {
     position: absolute;
     top: 30.5%;
@@ -5892,7 +5961,7 @@ input {
     width: 155px;
     padding: 0px;
   }
-  
+
   .MU90_0D {
     position: absolute;
     top: 9%;
@@ -5902,7 +5971,7 @@ input {
     width: 48%;
     padding: 0px;
   }
-  
+
   .MU90_0E {
     position: absolute;
     top: 40%;
@@ -5912,7 +5981,7 @@ input {
     width: 7%;
     padding: 0px;
   }
-  
+
   .MU90_0I {
     position: absolute;
     top: 37%;
@@ -5922,7 +5991,7 @@ input {
     width: 14.2%;
     padding: 0px;
   }
-  
+
   .MU90_0F1 {
     position: absolute;
     bottom: 9%;
@@ -5932,7 +6001,7 @@ input {
     width: 71px;
     padding: 0px;
   }
-  
+
   .MU90_0F2 {
     position: absolute;
     bottom: 9%;
@@ -5942,7 +6011,7 @@ input {
     width: 138px;
     padding: 0px;
   }
-  
+
   .MU90_0K {
     position: absolute;
     top: 35%;
@@ -5964,7 +6033,7 @@ input {
     width: 205px;
     padding: 0px;
   }
-  
+
   .MU90_0B {
     position: absolute;
     bottom: 26%;
@@ -5974,7 +6043,7 @@ input {
     width: 176px;
     padding: 0px;
   }
-  
+
   .MU90_0C {
     position: absolute;
     top: 30.5%;
@@ -5984,7 +6053,7 @@ input {
     width: 178px;
     padding: 0px;
   }
-  
+
   .MU90_0D {
     position: absolute;
     top: 9%;
@@ -5994,7 +6063,7 @@ input {
     width: 48%;
     padding: 0px;
   }
-  
+
   .MU90_0E {
     position: absolute;
     top: 40%;
@@ -6004,7 +6073,7 @@ input {
     width: 7%;
     padding: 0px;
   }
-  
+
   .MU90_0I {
     position: absolute;
     top: 37%;
@@ -6014,7 +6083,7 @@ input {
     width: 14.2%;
     padding: 0px;
   }
-  
+
   .MU90_0F1 {
     position: absolute;
     bottom: 9%;
@@ -6024,7 +6093,7 @@ input {
     width: 85px;
     padding: 0px;
   }
-  
+
   .MU90_0F2 {
     position: absolute;
     bottom: 9%;
@@ -6034,7 +6103,7 @@ input {
     width: 157px;
     padding: 0px;
   }
-  
+
   .MU90_0K {
     position: absolute;
     top: 35%;
@@ -6046,98 +6115,100 @@ input {
   }
 }
 
+/* re change */
 @media (min-width: 1450px) and (max-width: 1600px) {
-.MU90_0A {
-  position: absolute;
-  bottom: 9%;
-  right: 28%;
-  z-index: 9999;
-  height: 268px;
-  width: 232px;
-  padding: 0px;
+  .MU90_0A {
+    position: absolute;
+    bottom: 9%;
+    right: 28%;
+    z-index: 9999;
+    height: 268px;
+    width: 232px;
+    padding: 0px;
+  }
+
+  .MU90_0B {
+    position: absolute;
+    bottom: 26%;
+    right: 28%;
+    z-index: 9999;
+    height: 183px;
+    width: 200px;
+    padding: 0px;
+  }
+
+  .MU90_0C {
+    position: absolute;
+    top: 30.5%;
+    right: 28%;
+    z-index: 9999;
+    height: 32%;
+    width: 200px;
+    padding: 0px;
+  }
+
+  .MU90_0D {
+    position: absolute;
+    top: 9%;
+    left: 24%;
+    z-index: 9999;
+    height: 21.5%;
+    width: 48%;
+    padding: 0px;
+  }
+
+  .MU90_0E {
+    position: absolute;
+    top: 40%;
+    left: 24%;
+    z-index: 9999;
+    height: 42.5%;
+    width: 7%;
+    padding: 0px;
+  }
+
+  .MU90_0I {
+    position: absolute;
+    top: 37.5%;
+    left: 34.5%;
+    z-index: 9999;
+    height: 39%;
+    width: 14.5%;
+    padding: 0px;
+  }
+
+  .MU90_0F1 {
+    position: absolute;
+    bottom: 9%;
+    left: 24%;
+    z-index: 9999;
+    height: 137px;
+    width: 91px;
+    padding: 0px;
+  }
+
+  .MU90_0F2 {
+    position: absolute;
+    bottom: 9%;
+    left: 34.3%;
+    z-index: 9999;
+    height: 229px;
+    width: 186px;
+    padding: 0px;
+  }
+
+  .MU90_0K {
+    position: absolute;
+    top: 34.5%;
+    left: 49%;
+    z-index: 9999;
+    height: 39.5%;
+    width: 7%;
+    padding: 0px;
+  }
 }
 
-.MU90_0B {
-  position: absolute;
-  bottom: 26%;
-  right: 28%;
-  z-index: 9999;
-  height: 175px;
-  width: 200px;
-  padding: 0px;
-}
-
-.MU90_0C {
-  position: absolute;
-  top: 31%;
-  right: 28%;
-  z-index: 9999;
-  height: 32%;
-  width: 200px;
-  padding: 0px;
-}
-
-.MU90_0D {
-  position: absolute;
-  top: 10%;
-  left: 24%;
-  z-index: 9999;
-  height: 21%;
-  width: 48%;
-  padding: 0px;
-
-}
-
-.MU90_0E {
-  position: absolute;
-  top: 41%;
-  left: 24%;
-  z-index: 9999;
-  height: 42%;
-  width: 7%;
-  padding: 0px;
-}
-
-.MU90_0I {
-  position: absolute;
-  top: 38%;
-  left: 35%;
-  z-index: 9999;
-  height: 39%;
-  width: 14%;
-  padding: 0px;
-}
-
-.MU90_0F1 {
-  position: absolute;
-  bottom: 9%;
-  left: 24%;
-  z-index: 9999;
-  height: 137px;
-  width: 91px;
-  padding: 0px;
-}
-
-.MU90_0F2 {
-  position: absolute;
-  bottom: 9%;
-  left: 35%;
-  z-index: 9999;
-  height: 229px;
-  width: 179px;
-  padding: 0px;
-}
-
-.MU90_0K {
-  position: absolute;
-  top: 35%;
-  left: 49%;
-  z-index: 9999;
-  height: 39%;
-  width: 7%;
-  padding: 0px;
-}
-}
+/* re change */
 
 @media (min-width: 1600px) and (max-width: 1750px) {
 
@@ -6150,7 +6221,7 @@ input {
     width: 263px;
     padding: 0px;
   }
-  
+
   .MU90_0B {
     position: absolute;
     bottom: 26%;
@@ -6160,7 +6231,7 @@ input {
     width: 227px;
     padding: 0px;
   }
-  
+
   .MU90_0C {
     position: absolute;
     top: 30.5%;
@@ -6170,18 +6241,18 @@ input {
     width: 231px;
     padding: 0px;
   }
-  
+
   .MU90_0D {
     position: absolute;
     top: 9%;
     left: 24%;
     z-index: 9999;
     height: 21.5%;
-    width: 48%; 
+    width: 48%;
     padding: 0px;
 
   }
-  
+
   .MU90_0E {
     position: absolute;
     top: 40%;
@@ -6191,7 +6262,7 @@ input {
     width: 7%;
     padding: 0px;
   }
-  
+
   .MU90_0I {
     position: absolute;
     top: 37%;
@@ -6201,7 +6272,7 @@ input {
     width: 14%;
     padding: 0px;
   }
-  
+
   .MU90_0F1 {
     position: absolute;
     bottom: 9%;
@@ -6211,7 +6282,7 @@ input {
     width: 104px;
     padding: 0px;
   }
-  
+
   .MU90_0F2 {
     position: absolute;
     bottom: 9%;
@@ -6221,7 +6292,7 @@ input {
     width: 199px;
     padding: 0px;
   }
-  
+
   .MU90_0K {
     position: absolute;
     top: 35%;
@@ -6243,7 +6314,7 @@ input {
     width: 263px;
     padding: 0px;
   }
-  
+
   .MU90_0B {
     position: absolute;
     bottom: 26%;
@@ -6253,7 +6324,7 @@ input {
     width: 246px;
     padding: 0px;
   }
-  
+
   .MU90_0C {
     position: absolute;
     top: 30.5%;
@@ -6263,18 +6334,18 @@ input {
     width: 250px;
     padding: 0px;
   }
-  
+
   .MU90_0D {
     position: absolute;
     top: 9%;
     left: 24%;
     z-index: 9999;
     height: 21.5%;
-    width: 48%; 
+    width: 48%;
     padding: 0px;
 
   }
-  
+
   .MU90_0E {
     position: absolute;
     top: 40%;
@@ -6284,7 +6355,7 @@ input {
     width: 7%;
     padding: 0px;
   }
-  
+
   .MU90_0I {
     position: absolute;
     top: 37%;
@@ -6294,7 +6365,7 @@ input {
     width: 14%;
     padding: 0px;
   }
-  
+
   .MU90_0F1 {
     position: absolute;
     bottom: 9%;
@@ -6304,7 +6375,7 @@ input {
     width: 112px;
     padding: 0px;
   }
-  
+
   .MU90_0F2 {
     position: absolute;
     bottom: 9%;
@@ -6314,7 +6385,7 @@ input {
     width: 199px;
     padding: 0px;
   }
-  
+
   .MU90_0K {
     position: absolute;
     top: 35%;
@@ -6336,6 +6407,7 @@ input {
     width: 312px;
     padding: 0px;
   }
+
   .MU90_0B {
     position: absolute;
     bottom: 26%;
@@ -6345,6 +6417,7 @@ input {
     width: 267px;
     padding: 0px;
   }
+
   .MU90_0C {
     position: absolute;
     top: 30.5%;
@@ -6354,16 +6427,18 @@ input {
     width: 250px;
     padding: 0px;
   }
+
   .MU90_0D {
     position: absolute;
     top: 9%;
     left: 24%;
     z-index: 9999;
     height: 21.5%;
-    width: 48%; 
+    width: 48%;
     padding: 0px;
 
   }
+
   .MU90_0E {
     position: absolute;
     top: 40%;
@@ -6373,6 +6448,7 @@ input {
     width: 7%;
     padding: 0px;
   }
+
   .MU90_0I {
     position: absolute;
     top: 37%;
@@ -6382,6 +6458,7 @@ input {
     width: 14%;
     padding: 0px;
   }
+
   .MU90_0F1 {
     position: absolute;
     bottom: 9%;
@@ -6391,6 +6468,7 @@ input {
     width: 121px;
     padding: 0px;
   }
+
   .MU90_0F2 {
     position: absolute;
     bottom: 9%;
@@ -6400,6 +6478,658 @@ input {
     width: 232px;
     padding: 0px;
   }
+
+  .MU90_0K {
+    position: absolute;
+    top: 35%;
+    left: 49%;
+    z-index: 9999;
+    height: 39%;
+    width: 7%;
+    padding: 0px;
+  }
+}
+
+@media (min-width: 2000px) and (max-width: 2100px) {
+  .MU90_0A {
+    position: absolute;
+    bottom: 9%;
+    right: 28%;
+    z-index: 9999;
+    height: 384px;
+    width: 333px;
+    padding: 0px;
+  }
+
+  .MU90_0B {
+    position: absolute;
+    bottom: 26%;
+    right: 28%;
+    z-index: 9999;
+    height: 259px;
+    width: 283px;
+    padding: 0px;
+  }
+
+  .MU90_0C {
+    position: absolute;
+    top: 30.5%;
+    right: 28%;
+    z-index: 9999;
+    height: 32%;
+    width: 282px;
+    padding: 0px;
+  }
+
+  .MU90_0D {
+    position: absolute;
+    top: 9%;
+    left: 24%;
+    z-index: 9999;
+    height: 21.5%;
+    width: 48%;
+    padding: 0px;
+
+  }
+
+  .MU90_0E {
+    position: absolute;
+    top: 40%;
+    left: 24%;
+    z-index: 9999;
+    height: 42.5%;
+    width: 7%;
+    padding: 0px;
+  }
+
+  .MU90_0I {
+    position: absolute;
+    top: 37%;
+    left: 34.5%;
+    z-index: 9999;
+    height: 39.5%;
+    width: 14.5%;
+    padding: 0px;
+  }
+
+  .MU90_0F1 {
+    position: absolute;
+    bottom: 9%;
+    left: 24%;
+    z-index: 9999;
+    height: 188px;
+    width: 128px;
+    padding: 0px;
+  }
+
+  .MU90_0F2 {
+    position: absolute;
+    bottom: 9%;
+    left: 34.5%;
+    z-index: 9999;
+    height: 322px;
+    width: 255px;
+    padding: 0px;
+  }
+
+  .MU90_0K {
+    position: absolute;
+    top: 35%;
+    left: 49%;
+    z-index: 9999;
+    height: 39%;
+    width: 7%;
+    padding: 0px;
+  }
+}
+
+@media (min-width: 2100px) and (max-width: 2250px) {
+  .MU90_0A {
+    position: absolute;
+    bottom: 9%;
+    right: 28%;
+    z-index: 9999;
+    height: 408px;
+    width: 354px;
+    padding: 0px;
+  }
+
+  .MU90_0B {
+    position: absolute;
+    bottom: 26%;
+    right: 28%;
+    z-index: 9999;
+    height: 276px;
+    width: 303px;
+    padding: 0px;
+  }
+
+  .MU90_0C {
+    position: absolute;
+    top: 30.5%;
+    right: 28%;
+    z-index: 9999;
+    height: 32%;
+    width: 304px;
+    padding: 0px;
+  }
+
+  .MU90_0D {
+    position: absolute;
+    top: 9%;
+    left: 24%;
+    z-index: 9999;
+    height: 21.5%;
+    width: 48%;
+    padding: 0px;
+
+  }
+
+  .MU90_0E {
+    position: absolute;
+    top: 40%;
+    left: 24%;
+    z-index: 9999;
+    height: 42.5%;
+    width: 7%;
+    padding: 0px;
+  }
+
+  .MU90_0I {
+    position: absolute;
+    top: 37%;
+    left: 34.5%;
+    z-index: 9999;
+    height: 39.5%;
+    width: 14.5%;
+    padding: 0px;
+  }
+
+  .MU90_0F1 {
+    position: absolute;
+    bottom: 9%;
+    left: 24%;
+    z-index: 9999;
+    height: 201px;
+    width: 138px;
+    padding: 0px;
+  }
+
+  .MU90_0F2 {
+    position: absolute;
+    bottom: 9%;
+    left: 34.5%;
+    z-index: 9999;
+    height: 343px;
+    width: 272px;
+    padding: 0px;
+  }
+
+  .MU90_0K {
+    position: absolute;
+    top: 35%;
+    left: 49%;
+    z-index: 9999;
+    height: 39%;
+    width: 7%;
+    padding: 0px;
+  }
+}
+
+@media (min-width: 2250px) and (max-width: 2400px) {
+  .MU90_0A {
+    position: absolute;
+    bottom: 9%;
+    right: 28%;
+    z-index: 9999;
+    height: 429px;
+    width: 374px;
+    padding: 0px;
+  }
+
+  .MU90_0B {
+    position: absolute;
+    bottom: 26%;
+    right: 28%;
+    z-index: 9999;
+    height: 289px;
+    width: 323px;
+    padding: 0px;
+  }
+
+  .MU90_0C {
+    position: absolute;
+    top: 30.5%;
+    right: 28%;
+    z-index: 9999;
+    height: 32%;
+    width: 320px;
+    padding: 0px;
+  }
+
+  .MU90_0D {
+    position: absolute;
+    top: 9%;
+    left: 24%;
+    z-index: 9999;
+    height: 21.5%;
+    width: 48%;
+    padding: 0px;
+
+  }
+
+  .MU90_0E {
+    position: absolute;
+    top: 40%;
+    left: 24%;
+    z-index: 9999;
+    height: 42.5%;
+    width: 7%;
+    padding: 0px;
+  }
+
+  .MU90_0I {
+    position: absolute;
+    top: 37%;
+    left: 34.5%;
+    z-index: 9999;
+    height: 39.5%;
+    width: 14.5%;
+    padding: 0px;
+  }
+
+  .MU90_0F1 {
+    position: absolute;
+    bottom: 9%;
+    left: 24%;
+    z-index: 9999;
+    height: 209px;
+    width: 147px;
+    padding: 0px;
+  }
+
+  .MU90_0F2 {
+    position: absolute;
+    bottom: 9%;
+    left: 34.5%;
+    z-index: 9999;
+    height: 361px;
+    width: 293px;
+    padding: 0px;
+  }
+
+  .MU90_0K {
+    position: absolute;
+    top: 35%;
+    left: 49%;
+    z-index: 9999;
+    height: 39%;
+    width: 7%;
+    padding: 0px;
+  }
+}
+
+@media (min-width: 2400px) and (max-width: 2550px) {
+  .MU90_0A {
+    position: absolute;
+    bottom: 9%;
+    right: 28%;
+    z-index: 9999;
+    height: 470px;
+    width: 407px;
+    padding: 0px;
+  }
+
+  .MU90_0B {
+    position: absolute;
+    bottom: 26%;
+    right: 28%;
+    z-index: 9999;
+    height: 316px;
+    width: 353px;
+    padding: 0px;
+  }
+
+  .MU90_0C {
+    position: absolute;
+    top: 30.5%;
+    right: 28%;
+    z-index: 9999;
+    height: 32%;
+    width: 352px;
+    padding: 0px;
+  }
+
+  .MU90_0D {
+    position: absolute;
+    top: 9%;
+    left: 24%;
+    z-index: 9999;
+    height: 21.5%;
+    width: 48%;
+    padding: 0px;
+
+  }
+
+  .MU90_0E {
+    position: absolute;
+    top: 40%;
+    left: 24%;
+    z-index: 9999;
+    height: 42.5%;
+    width: 7%;
+    padding: 0px;
+  }
+
+  .MU90_0I {
+    position: absolute;
+    top: 37%;
+    left: 34.5%;
+    z-index: 9999;
+    height: 39.5%;
+    width: 14.5%;
+    padding: 0px;
+  }
+
+  .MU90_0F1 {
+    position: absolute;
+    bottom: 9%;
+    left: 24%;
+    z-index: 9999;
+    height: 234px;
+    width: 158px;
+    padding: 0px;
+  }
+
+  .MU90_0F2 {
+    position: absolute;
+    bottom: 9%;
+    left: 34.5%;
+    z-index: 9999;
+    height: 392px;
+    width: 312px;
+    padding: 0px;
+  }
+
+  .MU90_0K {
+    position: absolute;
+    top: 35%;
+    left: 49%;
+    z-index: 9999;
+    height: 39%;
+    width: 7%;
+    padding: 0px;
+  }
+}
+
+@media (min-width: 2550px) and (max-width: 2700px) {
+  .MU90_0A {
+    position: absolute;
+    bottom: 9%;
+    right: 28%;
+    z-index: 9999;
+    height: 504px;
+    width: 438px;
+    padding: 0px;
+  }
+
+  .MU90_0B {
+    position: absolute;
+    bottom: 26%;
+    right: 28%;
+    z-index: 9999;
+    height: 340px;
+    width: 371px;
+    padding: 0px;
+  }
+
+  .MU90_0C {
+    position: absolute;
+    top: 30.5%;
+    right: 28%;
+    z-index: 9999;
+    height: 32%;
+    width: 376px;
+    padding: 0px;
+  }
+
+  .MU90_0D {
+    position: absolute;
+    top: 9%;
+    left: 24%;
+    z-index: 9999;
+    height: 21.5%;
+    width: 48%;
+    padding: 0px;
+
+  }
+
+  .MU90_0E {
+    position: absolute;
+    top: 40%;
+    left: 24%;
+    z-index: 9999;
+    height: 42.5%;
+    width: 7%;
+    padding: 0px;
+  }
+
+  .MU90_0I {
+    position: absolute;
+    top: 37%;
+    left: 34.5%;
+    z-index: 9999;
+    height: 39.5%;
+    width: 14.5%;
+    padding: 0px;
+  }
+
+  .MU90_0F1 {
+    position: absolute;
+    bottom: 9%;
+    left: 24%;
+    z-index: 9999;
+    height: 249px;
+    width: 177px;
+    padding: 0px;
+  }
+
+  .MU90_0F2 {
+    position: absolute;
+    bottom: 9%;
+    left: 34.5%;
+    z-index: 9999;
+    height: 424px;
+    width: 338px;
+    padding: 0px;
+  }
+
+  .MU90_0K {
+    position: absolute;
+    top: 35%;
+    left: 49%;
+    z-index: 9999;
+    height: 39%;
+    width: 7%;
+    padding: 0px;
+  }
+}
+
+@media (min-width: 2700px) and (max-width: 2850px) {
+  .MU90_0A {
+    position: absolute;
+    bottom: 9%;
+    right: 28%;
+    z-index: 9999;
+    height: 527px;
+    width: 454px;
+    padding: 0px;
+  }
+
+  .MU90_0B {
+    position: absolute;
+    bottom: 26%;
+    right: 28%;
+    z-index: 9999;
+    height: 359px;
+    width: 392px;
+    padding: 0px;
+  }
+
+  .MU90_0C {
+    position: absolute;
+    top: 30.5%;
+    right: 28%;
+    z-index: 9999;
+    height: 32%;
+    width: 392px;
+    padding: 0px;
+  }
+
+  .MU90_0D {
+    position: absolute;
+    top: 9%;
+    left: 24%;
+    z-index: 9999;
+    height: 21.5%;
+    width: 48%;
+    padding: 0px;
+
+  }
+
+  .MU90_0E {
+    position: absolute;
+    top: 40%;
+    left: 24%;
+    z-index: 9999;
+    height: 42.5%;
+    width: 7%;
+    padding: 0px;
+  }
+
+  .MU90_0I {
+    position: absolute;
+    top: 37%;
+    left: 34.5%;
+    z-index: 9999;
+    height: 39.5%;
+    width: 14.5%;
+    padding: 0px;
+  }
+
+  .MU90_0F1 {
+    position: absolute;
+    bottom: 9%;
+    left: 24%;
+    z-index: 9999;
+    height: 264px;
+    width: 187px;
+    padding: 0px;
+  }
+
+  .MU90_0F2 {
+    position: absolute;
+    bottom: 9%;
+    left: 34.5%;
+    z-index: 9999;
+    height: 451px;
+    width: 362px;
+    padding: 0px;
+  }
+
+  .MU90_0K {
+    position: absolute;
+    top: 35%;
+    left: 49%;
+    z-index: 9999;
+    height: 39%;
+    width: 7%;
+    padding: 0px;
+  }
+}
+
+@media (min-width: 2850px) and (max-width: 3000px) {
+  .MU90_0A {
+    position: absolute;
+    bottom: 9%;
+    right: 28%;
+    z-index: 9999;
+    height: 559px;
+    width: 483px;
+    padding: 0px;
+  }
+
+  .MU90_0B {
+    position: absolute;
+    bottom: 26%;
+    right: 28%;
+    z-index: 9999;
+    height: 377px;
+    width: 417px;
+    padding: 0px;
+  }
+
+  .MU90_0C {
+    position: absolute;
+    top: 30.5%;
+    right: 28%;
+    z-index: 9999;
+    height: 32%;
+    width: 415px;
+    padding: 0px;
+  }
+
+  .MU90_0D {
+    position: absolute;
+    top: 9%;
+    left: 24%;
+    z-index: 9999;
+    height: 21.5%;
+    width: 48%;
+    padding: 0px;
+
+  }
+
+  .MU90_0E {
+    position: absolute;
+    top: 40%;
+    left: 24%;
+    z-index: 9999;
+    height: 42.5%;
+    width: 7%;
+    padding: 0px;
+  }
+
+  .MU90_0I {
+    position: absolute;
+    top: 37%;
+    left: 34.5%;
+    z-index: 9999;
+    height: 39.5%;
+    width: 14.5%;
+    padding: 0px;
+  }
+
+  .MU90_0F1 {
+    position: absolute;
+    bottom: 9%;
+    left: 24%;
+    z-index: 9999;
+    height: 278px;
+    width: 197px;
+    padding: 0px;
+  }
+
+  .MU90_0F2 {
+    position: absolute;
+    bottom: 9%;
+    left: 34.5%;
+    z-index: 9999;
+    height: 451px;
+    width: 362px;
+    padding: 0px;
+  }
+
   .MU90_0K {
     position: absolute;
     top: 35%;
@@ -6427,7 +7157,7 @@ input {
     width: 19%;
     padding: 0px;
   }
-  
+
   .MU90_1BS {
     position: absolute;
     bottom: 12%;
@@ -6438,7 +7168,7 @@ input {
     min-width: 10%;
     padding: 0px;
   }
-  
+
   .MU90_1C {
     position: absolute;
     bottom: 36%;
@@ -6448,7 +7178,7 @@ input {
     width: 16%;
     padding: 0px;
   }
-  
+
   .MU90_1D {
     position: absolute;
     top: 8%;
@@ -6459,7 +7189,7 @@ input {
     min-width: 12%;
     padding: 0px;
   }
-  
+
   .MU90_1E {
     position: absolute;
     top: 8%;
@@ -6469,7 +7199,7 @@ input {
     width: 20%;
     padding: 0px;
   }
-  
+
   .MU90_1F {
     position: absolute;
     top: 8%;
@@ -6480,7 +7210,7 @@ input {
     min-width: 10%;
     padding: 0px;
   }
-  
+
   .MU90_1G {
     position: absolute;
     top: 21.5%;
@@ -6491,7 +7221,7 @@ input {
     width: 11%;
     padding: 0px;
   }
-  
+
   .MU90_1H {
     position: absolute;
     top: 39%;
@@ -6502,7 +7232,7 @@ input {
     width: 11%;
     padding: 0px;
   }
-  
+
   .MU90_1I {
     position: absolute;
     bottom: 12%;
@@ -6513,7 +7243,7 @@ input {
     min-width: 15%;
     padding: 0px;
   }
-  
+
   .MU90_1K {
     position: absolute;
     bottom: 30.5%;
@@ -6524,7 +7254,7 @@ input {
     min-width: 4%;
     padding: 0px;
   }
-  
+
   .MU90_1L {
     position: absolute;
     top: 26%;
@@ -6535,7 +7265,7 @@ input {
     min-width: 10%;
     padding: 0px;
   }
-  
+
   .MU90_1M {
     position: absolute;
     top: 48%;
@@ -6549,7 +7279,7 @@ input {
 }
 
 @media (min-width: 468px) and (max-width: 549px) {
-  
+
   .MU90_1BN {
     position: absolute;
     bottom: 27%;
@@ -6559,7 +7289,7 @@ input {
     width: 19%;
     padding: 0px;
   }
-  
+
   .MU90_1BS {
     position: absolute;
     bottom: 10%;
@@ -6570,7 +7300,7 @@ input {
     min-width: 10%;
     padding: 0px;
   }
-  
+
   .MU90_1C {
     position: absolute;
     bottom: 34.5%;
@@ -6580,7 +7310,7 @@ input {
     width: 16%;
     padding: 0px;
   }
-  
+
   .MU90_1D {
     position: absolute;
     top: 9%;
@@ -6591,7 +7321,7 @@ input {
     min-width: 12%;
     padding: 0px;
   }
-  
+
   .MU90_1E {
     position: absolute;
     top: 9%;
@@ -6601,7 +7331,7 @@ input {
     width: 20%;
     padding: 0px;
   }
-  
+
   .MU90_1F {
     position: absolute;
     top: 9%;
@@ -6612,7 +7342,7 @@ input {
     min-width: 10%;
     padding: 0px;
   }
-  
+
   .MU90_1G {
     position: absolute;
     top: 23.5%;
@@ -6623,7 +7353,7 @@ input {
     width: 11%;
     padding: 0px;
   }
-  
+
   .MU90_1H {
     position: absolute;
     top: 40%;
@@ -6634,7 +7364,7 @@ input {
     width: 11%;
     padding: 0px;
   }
-  
+
   .MU90_1I {
     position: absolute;
     bottom: 10%;
@@ -6645,7 +7375,7 @@ input {
     min-width: 15%;
     padding: 0px;
   }
-  
+
   .MU90_1K {
     position: absolute;
     bottom: 30.5%;
@@ -6656,7 +7386,7 @@ input {
     min-width: 4%;
     padding: 0px;
   }
-  
+
   .MU90_1L {
     position: absolute;
     top: 26%;
@@ -6667,7 +7397,7 @@ input {
     min-width: 10%;
     padding: 0px;
   }
-  
+
   .MU90_1M {
     position: absolute;
     top: 48%;
@@ -6680,135 +7410,141 @@ input {
   }
 }
 
+/* re change */
+
 @media (min-width: 1450px) and (max-width: 1600px) {
-.MU90_1BN {
-  position: absolute;
-  bottom: 26%;
-  right: 25%;
-  z-index: 9999;
-  height: 30%;
-  width: 19%;
-  padding: 0px;
+  .MU90_1BN {
+    position: absolute;
+    bottom: 26%;
+    right: 25%;
+    z-index: 9999;
+    height: 31%;
+    width: 19%;
+    padding: 0px;
+  }
+
+  .MU90_1BS {
+    position: absolute;
+    bottom: 9.5%;
+    right: 44%;
+    z-index: 9999;
+    height: 24%;
+    width: 12%;
+    padding: 0px;
+  }
+
+  .MU90_1C {
+    position: absolute;
+    bottom: 33.5%;
+    right: 44%;
+    z-index: 9999;
+    height: 12.5%;
+    width: 16%;
+    padding: 0px;
+  }
+
+  .MU90_1D {
+    position: absolute;
+    top: 9%;
+    right: 25%;
+    z-index: 9999;
+    height: 17%;
+    width: 15%;
+    padding: 0px;
+  }
+
+  .MU90_1E {
+    position: absolute;
+    top: 9.5%;
+    right: 40%;
+    z-index: 9999;
+    height: 14.5%;
+    width: 20%;
+    padding: 0px;
+  }
+
+  .MU90_1F {
+    position: absolute;
+    top: 9.3%;
+    left: 26%;
+    z-index: 9999;
+    height: 14.5%;
+    width: 14%;
+    padding: 0px;
+  }
+
+  .MU90_1G {
+    position: absolute;
+    top: 23.5%;
+    left: 26%;
+    z-index: 9999;
+    height: 14%;
+    width: 11%;
+    padding: 0px;
+  }
+
+  .MU90_1H {
+    position: absolute;
+    top: 40.5%;
+    left: 26%;
+    z-index: 9999;
+    height: 30.3%;
+    width: 10.5%;
+    padding: 0px;
+  }
+
+  .MU90_1I {
+    position: absolute;
+    bottom: 9%;
+    left: 26%;
+    z-index: 9999;
+    height: 20%;
+    width: 11%;
+    padding: 0px;
+  }
+
+  .MU90_1K {
+    position: absolute;
+    bottom: 29.5%;
+    left: 36%;
+    z-index: 9999;
+    height: 4%;
+    width: 8%;
+    padding: 0px;
+  }
+
+  .MU90_1L {
+    position: absolute;
+    top: 26%;
+    left: 40%;
+    z-index: 9999;
+    height: 22.5%;
+    width: 13%;
+    padding: 0px;
+  }
+
+  .MU90_1M {
+    position: absolute;
+    top: 48.5%;
+    left: 40%;
+    z-index: 9999;
+    height: 3%;
+    width: 13%;
+    padding: 0px;
+  }
 }
 
-.MU90_1BS {
-  position: absolute;
-  bottom: 10%;
-  right: 44%;
-  z-index: 9999;
-  height: 23%;
-  width: 12%;
-  padding: 0px;
-}
+/* re change */
 
-.MU90_1C {
-  position: absolute;
-  bottom: 33%;
-  right: 44%;
-  z-index: 9999;
-  height: 12%;
-  width: 16%;
-  padding: 0px;
-}
 
-.MU90_1D {
-  position: absolute;
-  top: 10%;
-  right: 25%;
-  z-index: 9999;
-  height: 17%;
-  width: 15%;
-  padding: 0px;
-}
-
-.MU90_1E {
-  position: absolute;
-  top: 10%;
-  right: 40%;
-  z-index: 9999;
-  height: 14%;
-  width: 20%;
-  padding: 0px;
-}
-
-.MU90_1F {
-  position: absolute;
-  top: 10%;
-  left: 26%;
-  z-index: 9999;
-  height: 14%;
-  width: 14%;
-  padding: 0px;
-}
-
-.MU90_1G {
-  position: absolute;
-  top: 24.5%;
-  left: 26%;
-  z-index: 9999;
-  height: 14%;
-  width: 11%;
-  padding: 0px;
-}
-
-.MU90_1H {
-  position: absolute;
-  top: 41%;
-  left: 26%;
-  z-index: 9999;
-  height: 30%;
-  width: 11%;
-  padding: 0px;
-}
-
-.MU90_1I {
-  position: absolute;
-  bottom: 9%;
-  left: 26%;
-  z-index: 9999;
-  height: 20%;
-  width: 11%;
-  padding: 0px;
-}
-
-.MU90_1K {
-  position: absolute;
-  bottom: 28.5%;
-  left: 36%;
-  z-index: 9999;
-  height: 5%;
-  width: 8%;
-  padding: 0px;
-}
-
-.MU90_1L {
-  position: absolute;
-  top: 27%;
-  left: 40%;
-  z-index: 9999;
-  height: 22%;
-  width: 13%;
-  padding: 0px;
-}
-
-.MU90_1M {
-  position: absolute;
-  top: 49%;
-  left: 40%;
-  z-index: 9999;
-  height: 3%;
-  width: 13%;
-  padding: 0px;
-}
-}
 /* END MU90.1 Responsive */
 
 /* START MU90.2 Responsive */
-  /* okay */
+/* okay */
 /* End MU90.2 Responsive */
 
 /* START MU90.R Responsive */
-  /* okay */
+/* okay */
 /* End MU90.R Responsive */
 
 
@@ -6816,9 +7552,9 @@ input {
 /* START MA Purification */
 
 /* Ground Floor Responsive */
- 
+
 @media (min-width: 360px) and (max-width: 468px) {
-  
+
   .GF_Backage {
     position: absolute;
     bottom: 11%;
@@ -6828,7 +7564,7 @@ input {
     width: 10%;
     padding: 0px;
   }
-  
+
   .GF_Corridor_N {
     position: absolute;
     top: 35%;
@@ -6838,7 +7574,7 @@ input {
     width: 1%;
     padding: 0px;
   }
-  
+
   .GF_Corridor_S {
     position: absolute;
     bottom: 8%;
@@ -6848,7 +7584,7 @@ input {
     width: 10%;
     padding: 0px;
   }
-  
+
   .GF_Frontstage_E {
     position: absolute;
     bottom: 8%;
@@ -6858,17 +7594,24 @@ input {
     width: 10%;
     padding: 0px;
   }
-  
+
   .GF_Frontstage_W {
-    position: absolute;
+    /* position: absolute;
     bottom: 8%;
     left: 27%;
     z-index: 9999;
     height: 56%;
     width: 10%;
+    padding: 0px; */
+    position: absolute;
+    bottom: 8%;
+    left: 27.5%;
+    z-index: 9999;
+    height: 57.5%;
+    width: 10.5%;
     padding: 0px;
   }
-  
+
   .eleven_Zone {
     position: absolute;
     bottom: 21%;
@@ -6878,7 +7621,7 @@ input {
     width: 7%;
     padding: 0px;
   }
-  
+
   .seventyA_Zone {
     position: absolute;
     bottom: 31%;
@@ -6888,7 +7631,7 @@ input {
     width: 8%;
     padding: 0px;
   }
-  
+
   .seventyB_Zone {
     position: absolute;
     bottom: 20%;
@@ -6897,9 +7640,9 @@ input {
     height: 24%;
     width: 8%;
     padding: 0px;
-  
+
   }
-  
+
   .fortyA_Zone {
     position: absolute;
     top: 26%;
@@ -6910,7 +7653,7 @@ input {
     min-width: 32px;
     padding: 0px;
   }
-  
+
   .fortyC_Zone {
     position: absolute;
     top: 17.5%;
@@ -6920,7 +7663,7 @@ input {
     width: 62%;
     padding: 0px;
   }
-  
+
   .fortyD_Zone {
     position: absolute;
     top: 20%;
@@ -6931,7 +7674,7 @@ input {
     min-width: 8px;
     padding: 0px;
   }
-  
+
   .fortyE_Zone {
     position: absolute;
     top: 28%;
@@ -6942,7 +7685,7 @@ input {
     min-width: 18px;
     padding: 0px;
   }
-  
+
   .fortyF_Zone {
     position: absolute;
     top: 19%;
@@ -6952,9 +7695,9 @@ input {
     width: 5%;
     padding: 0px;
     min-width: 0px;
-  
+
   }
-  
+
   .fortyG_Zone {
     position: absolute;
     top: 30.5%;
@@ -6965,7 +7708,7 @@ input {
     min-width: 43px;
     padding: 0px;
   }
-  
+
   .fortyJ_Zone {
     position: absolute;
     top: 19%;
@@ -6976,7 +7719,7 @@ input {
     min-width: 29px;
     padding: 0px;
   }
-  
+
   .fortyK_Zone {
     position: absolute;
     top: 19%;
@@ -6986,7 +7729,7 @@ input {
     width: 4%;
     min-width: 18px;
   }
-  
+
   .fortyL_Zone {
     position: absolute;
     top: 19%;
@@ -6997,7 +7740,7 @@ input {
     min-width: 21px;
     padding: 0px;
   }
-  
+
   .fortyM_Zone {
     position: absolute;
     top: 6.5%;
@@ -7008,7 +7751,7 @@ input {
     min-width: 35px;
     padding: 0px;
   }
-  
+
   .fortyQ_Zone {
     position: absolute;
     top: 6.5%;
@@ -7019,7 +7762,7 @@ input {
     min-width: 0px;
     padding: 0px;
   }
-  
+
   .fortyR_Zone {
     position: absolute;
     top: 6.5%;
@@ -7030,7 +7773,7 @@ input {
     min-width: 18px;
     padding: 0px;
   }
-  
+
   .fortyS_Zone {
     position: absolute;
     top: 6.5%;
@@ -7041,7 +7784,7 @@ input {
     min-width: 25px;
     padding: 0px;
   }
-  
+
   .fortyU_Zone {
     position: absolute;
     top: 6.5%;
@@ -7052,549 +7795,596 @@ input {
     min-width: 47px;
     padding: 0px;
   }
-  
+
+}
+
+@media (min-width: 468px) and (max-width: 549px) {
+
+  .fortyD_Zone {
+    position: absolute;
+    top: 20%;
+    left: 43%;
+    z-index: 9999;
+    height: 14%;
+    width: 6%;
+    min-width: 4%;
+    padding: 0px;
   }
-  
-  @media (min-width: 468px) and (max-width: 549px) {
-  
-    .fortyD_Zone{
-      position: absolute;
-      top: 20%;
-      left: 43%;
-      z-index: 9999;
-      height: 14%;
-      width: 6%;
-      min-width: 4%;
-      padding: 0px;
-    }
-    .fortyE_Zone{
-      position: absolute;
-      top: 29%;
-      left: 49%;
-      z-index: 9999;
-      height: 5%;
-      width: 7%;
-      min-width: 30px;
-      padding: 0px;
-    }
-    .eleven_Zone{
-      position: absolute;
-      bottom: 22%;
-      left: 21%;
-      z-index: 9999;
-      height: 20%;
-      width: 6%;
-      min-width: 30px;
-      padding: 0px;
-    }
-    .seventyB_Zone{
-      position: absolute;
-      bottom: 21%;
-      right: 22%;
-      z-index: 9999;
-      height: 24%;
-      width: 8%;
-      min-width: 30px;
-      padding: 0px;
-    }
-    .GF_Frontstage_W{
-      position: absolute;
-      bottom: 9%;
-      left: 27%;
-      z-index: 9999;
-      height: 57%;
-      width: 10%;
-      min-width: 30px;
-      padding: 0px;
-    }
-    .GF_Backage{
-      position: absolute;
-      bottom: 11%;
-      left: 38%;
-      z-index: 9999;
-      height: 52%;
-      width: 10%;
-      min-width: 20px;
-      padding: 0px;
-    }
-    .GF_Frontstage_E{
-      position: absolute;
-      bottom: 10%;
-      left: 48%;
-      z-index: 9999;
-      height: 56%;
-      width: 10%;
-      min-width: 30px;
-      padding: 0px;
-    }
-    .GF_Corridor_N{
-      position: absolute;
-      top: 34%;
-      left: 38%;
-      z-index: 9999;
-      height: 3%;
-      width: 1%;
-      min-width: 23px;
-      padding: 0px;
-    }
-    .fortyR_Zone{
-      position: absolute;
-      top: 6.5%;
-      left: 40%;
-      z-index: 9999;
-      height: 11%;
-      width: 7%;
-      min-width: 35px;
-      padding: 0px;
-    }
-    .fortyS_Zone{
-      position: absolute;
-      top: 6.5%;
-      left: 48%;
-      z-index: 9999;
-      height: 11%;
-      width: 12%;
-      min-width: 40px;
-      padding: 0px;
-    }
-    .fortyL_Zone{
-      position: absolute;
-      top: 20%;
-      left: 19%;
-      z-index: 9999;
-      height: 14%;
-      width: 9%;
-      min-width: 47px;
-      padding: 0px;
-    }
-    .fortyA_Zone{
-      position: absolute;
-      top: 26%;
-      left: 31%;
-      z-index: 9999;
-      height: 8%;
-      width: 8%;
-      min-width: 40px;
-      padding: 0px;
-    }
-    .fortyK_Zone{
-      position: absolute;
-      top: 20%;
-      right: 36%;
-      z-index: 9999;
-      height: 12%;
-      width: 8%;
-      min-width: 20px;
-      padding: 0px;
-    }
-    .seventyA_Zone{
-      position: absolute;
-      bottom: 32%;
-      right: 34%;
-      z-index: 9999;
-      height: 20%;
-      width: 8%;
-      min-width: 40px;
-      padding: 0px;
-    }
-  
-  
+
+  .fortyE_Zone {
+    position: absolute;
+    top: 29%;
+    left: 49%;
+    z-index: 9999;
+    height: 5%;
+    width: 7%;
+    min-width: 30px;
+    padding: 0px;
   }
-  
-  @media (min-width: 550px) and (max-width: 750px) {
-  
-    .fortyD_Zone{
-      position: absolute;
-      top: 20%;
-      left: 43%;
-      z-index: 9999;
-      height: 14%;
-      width: 6%;
-      min-width: 4%;
-      padding: 0px;
-    }
-    .fortyE_Zone{
-      position: absolute;
-      top: 29%;
-      left: 49%;
-      z-index: 9999;
-      height: 5%;
-      width: 7%;
-      min-width: 54px;
-      padding: 0px;
-    }
-    .eleven_Zone{
-      position: absolute;
-      bottom: 21%;
-      left: 21%;
-      z-index: 9999;
-      height: 20%;
-      width: 6%;
-      min-width: 30px;
-      padding: 0px;
-    }
-    .seventyB_Zone{
-      position: absolute;
-      bottom: 20%;
-      right: 22%;
-      z-index: 9999;
-      height: 25%;
-      width: 8%;
-      padding: 0px;
-    }
-    .GF_Frontstage_W{
-      position: absolute;
-      bottom: 8%;
-      left: 27%;
-      z-index: 9999;
-      height: 58%;
-      width: 10%;
-      padding: 0px;
-    }
-    .GF_Backage{
-      position: absolute;
-      bottom: 11%;
-      left: 38%;
-      z-index: 9999;
-      height: 51%;
-      width: 10%;
-      padding: 0px;
-    }
-    .GF_Frontstage_E{
-      position: absolute;
-      bottom: 8%;
-      left: 48%;
-      z-index: 9999;
-      height: 58%;
-      width: 10%;
-      padding: 0px;
-    }
-    .GF_Corridor_N{
-      position: absolute;
-      top: 34%;
-      left: 38%;
-      z-index: 9999;
-      height: 4%;
-      width: 1%;
-      min-width: 35px;
-      padding: 0px;
-    }
-    .fortyR_Zone{
-      position: absolute;
-      top: 6.5%;
-      left: 40%;
-      z-index: 9999;
-      height: 11%;
-      width: 7%;
-      min-width: 48px;
-      padding: 0px;
-    }
+
+  .eleven_Zone {
+    position: absolute;
+    bottom: 22%;
+    left: 21%;
+    z-index: 9999;
+    height: 20%;
+    width: 6%;
+    min-width: 30px;
+    padding: 0px;
   }
-  
-  @media (min-width: 750px) and (max-width: 850px) {
-    .fortyD_Zone{
-      position: absolute;
-      top: 20%;
-      left: 43%;
-      z-index: 9999;
-      height: 14%;
-      width: 6%;
-      min-width: 4%;
-      padding: 0px;
-    }
-    .fortyE_Zone{
-      position: absolute;
-      top: 29%;
-      left: 49%;
-      z-index: 9999;
-      height: 5%;
-      width: 7%;
-      min-width: 54px;
-      padding: 0px;
-    }
-    .eleven_Zone{
-      position: absolute;
-      bottom: 21%;
-      left: 21%;
-      z-index: 9999;
-      height: 20%;
-      width: 6%;
-      min-width: 30px;
-      padding: 0px;
-    }
-    .seventyB_Zone{
-      position: absolute;
-      bottom: 20%;
-      right: 22%;
-      z-index: 9999;
-      height: 25%;
-      width: 8%;
-      padding: 0px;
-    }
-    .GF_Frontstage_W{
-      position: absolute;
-      bottom: 8%;
-      left: 27%;
-      z-index: 9999;
-      height: 58%;
-      width: 10%;
-      padding: 0px;
-    }
-    .GF_Backage{
-      position: absolute;
-      bottom: 11%;
-      left: 38%;
-      z-index: 9999;
-      height: 51%;
-      width: 10%;
-      padding: 0px;
-    }
-    .GF_Frontstage_E{
-      position: absolute;
-      bottom: 8%;
-      left: 48%;
-      z-index: 9999;
-      height: 58%;
-      width: 10%;
-      padding: 0px;
-    }
-    .GF_Corridor_N{
-      position: absolute;
-      top: 34%;
-      left: 38%;
-      z-index: 9999;
-      height: 4%;
-      width: 1%;
-      min-width: 35px;
-      padding: 0px;
-    }
+
+  .seventyB_Zone {
+    position: absolute;
+    bottom: 21%;
+    right: 22%;
+    z-index: 9999;
+    height: 24%;
+    width: 8%;
+    min-width: 30px;
+    padding: 0px;
   }
-  
-  @media (min-width: 850px) and (max-width: 992px) {
-  
-    .fortyD_Zone{
-      position: absolute;
-      top: 20%;
-      left: 43%;
-      z-index: 9999;
-      height: 14%;
-      width: 6%;
-      min-width: 4%;
-      padding: 0px;
-    }
-    .fortyE_Zone{
-      position: absolute;
-      top: 29%;
-      left: 49%;
-      z-index: 9999;
-      height: 5%;
-      width: 7%;
-      min-width: 54px;
-      padding: 0px;
-    }
-    .eleven_Zone{
-      position: absolute;
-      bottom: 21%;
-      left: 21%;
-      z-index: 9999;
-      height: 20%;
-      width: 6%;
-      min-width: 30px;
-      padding: 0px;
-    }
-    .seventyB_Zone{
-      position: absolute;
-      bottom: 20%;
-      right: 22%;
-      z-index: 9999;
-      height: 25%;
-      width: 8%;
-      padding: 0px;
-    }
-    .GF_Frontstage_W{
-      position: absolute;
-      bottom: 8%;
-      left: 27%;
-      z-index: 9999;
-      height: 58%;
-      width: 10%;
-      padding: 0px;
-    }
-    .GF_Backage{
-      position: absolute;
-      bottom: 11%;
-      left: 38%;
-      z-index: 9999;
-      height: 51%;
-      width: 10%;
-      padding: 0px;
-    }
-    .GF_Frontstage_E{
-      position: absolute;
-      bottom: 8%;
-      left: 48%;
-      z-index: 9999;
-      height: 58%;
-      width: 10%;
-      padding: 0px;
-    }
-    .GF_Corridor_N{
-      position: absolute;
-      top: 34%;
-      left: 38%;
-      z-index: 9999;
-      height: 4%;
-      width: 1%;
-      min-width: 35px;
-      padding: 0px;
-    }
+
+  .GF_Frontstage_W {
+    position: absolute;
+    bottom: 9%;
+    left: 27%;
+    z-index: 9999;
+    height: 57%;
+    width: 10%;
+    min-width: 30px;
+    padding: 0px;
   }
-  
-  @media (min-width: 992px) and (max-width: 1050px) {
-    .fortyD_Zone{
-      position: absolute;
-      top: 20%;
-      left: 43%;
-      z-index: 9999;
-      height: 14%;
-      width: 6%;
-      min-width: 4%;
-      padding: 0px;
-    }
-    .fortyE_Zone{
-      position: absolute;
-      top: 29%;
-      left: 49%;
-      z-index: 9999;
-      height: 5%;
-      width: 7%;
-      min-width: 54px;
-      padding: 0px;
-    }
-    .eleven_Zone{
-      position: absolute;
-      bottom: 21%;
-      left: 21%;
-      z-index: 9999;
-      height: 20%;
-      width: 6%;
-      min-width: 30px;
-      padding: 0px;
-    }
-    .seventyB_Zone{
-      position: absolute;
-      bottom: 20%;
-      right: 22%;
-      z-index: 9999;
-      height: 25%;
-      width: 8%;
-      padding: 0px;
-    }
-    .GF_Frontstage_W{
-      position: absolute;
-      bottom: 8%;
-      left: 27%;
-      z-index: 9999;
-      height: 58%;
-      width: 10%;
-      padding: 0px;
-    }
-    .GF_Backage{
-      position: absolute;
-      bottom: 11%;
-      left: 38%;
-      z-index: 9999;
-      height: 51%;
-      width: 10%;
-      padding: 0px;
-    }
-    .GF_Frontstage_E{
-      position: absolute;
-      bottom: 8%;
-      left: 48%;
-      z-index: 9999;
-      height: 58%;
-      width: 10%;
-      padding: 0px;
-    }
-    .GF_Corridor_N{
-      position: absolute;
-      top: 34%;
-      left: 38%;
-      z-index: 9999;
-      height: 4%;
-      width: 1%;
-      min-width: 35px;
-      padding: 0px;
-    }
+
+  .GF_Backage {
+    position: absolute;
+    bottom: 11%;
+    left: 38%;
+    z-index: 9999;
+    height: 52%;
+    width: 10%;
+    min-width: 20px;
+    padding: 0px;
   }
-  
-  @media (min-width: 1050px) and (max-width: 1199px) {
-    .fortyD_Zone{
-      position: absolute;
-      top: 20%;
-      left: 43%;
-      z-index: 9999;
-      height: 14%;
-      width: 6%;
-      min-width: 4%;
-      padding: 0px;
-    }
-    .GF_Frontstage_W{
-      position: absolute;
-      bottom: 9%;
-      left: 27%;
-      z-index: 9999;
-      height: 57%;
-      width: 10%;
-      padding: 0px;
-    }
-    .GF_Backage{
-      position: absolute;
-      bottom: 11%;
-      left: 38%;
-      z-index: 9999;
-      height: 51%;
-      width: 10%;
-      padding: 0px;
-    }
-    .GF_Corridor_N{
-      position: absolute;
-      top: 34%;
-      left: 38%;
-      z-index: 9999;
-      height: 4%;
-      width: 1%;
-      min-width: 38px;
-      padding: 0px;
-    }
-    .GF_Corridor_S{
-      position: absolute;
-      bottom: 8.5%;
-      left: 38%;
-      z-index: 9999;
-      height: 2%;
-      width: 10%;
-      padding: 0px;
-    }
-    .GF_Frontstage_E{
-      position: absolute;
-      bottom: 8%;
-      left: 48%;
-      z-index: 9999;
-      height: 58%;
-      width: 10%;
-      padding: 0px;
-    }
+
+  .GF_Frontstage_E {
+    position: absolute;
+    bottom: 10%;
+    left: 48%;
+    z-index: 9999;
+    height: 56%;
+    width: 10%;
+    min-width: 30px;
+    padding: 0px;
   }
-  
-  /* Ground Floor Responsive */
+
+  .GF_Corridor_N {
+    position: absolute;
+    top: 34%;
+    left: 38%;
+    z-index: 9999;
+    height: 3%;
+    width: 1%;
+    min-width: 23px;
+    padding: 0px;
+  }
+
+  .fortyR_Zone {
+    position: absolute;
+    top: 6.5%;
+    left: 40%;
+    z-index: 9999;
+    height: 11%;
+    width: 7%;
+    min-width: 35px;
+    padding: 0px;
+  }
+
+  .fortyS_Zone {
+    position: absolute;
+    top: 6.5%;
+    left: 48%;
+    z-index: 9999;
+    height: 11%;
+    width: 12%;
+    min-width: 40px;
+    padding: 0px;
+  }
+
+  .fortyL_Zone {
+    position: absolute;
+    top: 20%;
+    left: 19%;
+    z-index: 9999;
+    height: 14%;
+    width: 9%;
+    min-width: 47px;
+    padding: 0px;
+  }
+
+  .fortyA_Zone {
+    position: absolute;
+    top: 26%;
+    left: 31%;
+    z-index: 9999;
+    height: 8%;
+    width: 8%;
+    min-width: 40px;
+    padding: 0px;
+  }
+
+  .fortyK_Zone {
+    position: absolute;
+    top: 20%;
+    right: 36%;
+    z-index: 9999;
+    height: 12%;
+    width: 8%;
+    min-width: 20px;
+    padding: 0px;
+  }
+
+  .seventyA_Zone {
+    position: absolute;
+    bottom: 32%;
+    right: 34%;
+    z-index: 9999;
+    height: 20%;
+    width: 8%;
+    min-width: 40px;
+    padding: 0px;
+  }
 
 
-  /* First Floor Responsive */
+}
+
+@media (min-width: 550px) and (max-width: 750px) {
+
+  .fortyD_Zone {
+    position: absolute;
+    top: 20%;
+    left: 43%;
+    z-index: 9999;
+    height: 14%;
+    width: 6%;
+    min-width: 4%;
+    padding: 0px;
+  }
+
+  .fortyE_Zone {
+    position: absolute;
+    top: 29%;
+    left: 49%;
+    z-index: 9999;
+    height: 5%;
+    width: 7%;
+    min-width: 54px;
+    padding: 0px;
+  }
+
+  .eleven_Zone {
+    position: absolute;
+    bottom: 21%;
+    left: 21%;
+    z-index: 9999;
+    height: 20%;
+    width: 6%;
+    min-width: 30px;
+    padding: 0px;
+  }
+
+  .seventyB_Zone {
+    position: absolute;
+    bottom: 20%;
+    right: 22%;
+    z-index: 9999;
+    height: 25%;
+    width: 8%;
+    padding: 0px;
+  }
+
+  .GF_Frontstage_W {
+    position: absolute;
+    bottom: 8%;
+    left: 27%;
+    z-index: 9999;
+    height: 58%;
+    width: 10%;
+    padding: 0px;
+  }
+
+  .GF_Backage {
+    position: absolute;
+    bottom: 11%;
+    left: 38%;
+    z-index: 9999;
+    height: 51%;
+    width: 10%;
+    padding: 0px;
+  }
+
+  .GF_Frontstage_E {
+    position: absolute;
+    bottom: 8%;
+    left: 48%;
+    z-index: 9999;
+    height: 58%;
+    width: 10%;
+    padding: 0px;
+  }
+
+  .GF_Corridor_N {
+    position: absolute;
+    top: 34%;
+    left: 38%;
+    z-index: 9999;
+    height: 4%;
+    width: 1%;
+    min-width: 35px;
+    padding: 0px;
+  }
+
+  .fortyR_Zone {
+    position: absolute;
+    top: 6.5%;
+    left: 40%;
+    z-index: 9999;
+    height: 11%;
+    width: 7%;
+    min-width: 48px;
+    padding: 0px;
+  }
+}
+
+@media (min-width: 750px) and (max-width: 850px) {
+  .fortyD_Zone {
+    position: absolute;
+    top: 20%;
+    left: 43%;
+    z-index: 9999;
+    height: 14%;
+    width: 6%;
+    min-width: 4%;
+    padding: 0px;
+  }
+
+  .fortyE_Zone {
+    position: absolute;
+    top: 29%;
+    left: 49%;
+    z-index: 9999;
+    height: 5%;
+    width: 7%;
+    min-width: 54px;
+    padding: 0px;
+  }
+
+  .eleven_Zone {
+    position: absolute;
+    bottom: 21%;
+    left: 21%;
+    z-index: 9999;
+    height: 20%;
+    width: 6%;
+    min-width: 30px;
+    padding: 0px;
+  }
+
+  .seventyB_Zone {
+    position: absolute;
+    bottom: 20%;
+    right: 22%;
+    z-index: 9999;
+    height: 25%;
+    width: 8%;
+    padding: 0px;
+  }
+
+  .GF_Frontstage_W {
+    position: absolute;
+    bottom: 8%;
+    left: 27%;
+    z-index: 9999;
+    height: 58%;
+    width: 10%;
+    padding: 0px;
+  }
+
+  .GF_Backage {
+    position: absolute;
+    bottom: 11%;
+    left: 38%;
+    z-index: 9999;
+    height: 51%;
+    width: 10%;
+    padding: 0px;
+  }
+
+  .GF_Frontstage_E {
+    position: absolute;
+    bottom: 8%;
+    left: 48%;
+    z-index: 9999;
+    height: 58%;
+    width: 10%;
+    padding: 0px;
+  }
+
+  .GF_Corridor_N {
+    position: absolute;
+    top: 34%;
+    left: 38%;
+    z-index: 9999;
+    height: 4%;
+    width: 1%;
+    min-width: 35px;
+    padding: 0px;
+  }
+}
+
+@media (min-width: 850px) and (max-width: 992px) {
+
+  .fortyD_Zone {
+    position: absolute;
+    top: 20%;
+    left: 43%;
+    z-index: 9999;
+    height: 14%;
+    width: 6%;
+    min-width: 4%;
+    padding: 0px;
+  }
+
+  .fortyE_Zone {
+    position: absolute;
+    top: 29%;
+    left: 49%;
+    z-index: 9999;
+    height: 5%;
+    width: 7%;
+    min-width: 54px;
+    padding: 0px;
+  }
+
+  .eleven_Zone {
+    position: absolute;
+    bottom: 21%;
+    left: 21%;
+    z-index: 9999;
+    height: 20%;
+    width: 6%;
+    min-width: 30px;
+    padding: 0px;
+  }
+
+  .seventyB_Zone {
+    position: absolute;
+    bottom: 20%;
+    right: 22%;
+    z-index: 9999;
+    height: 25%;
+    width: 8%;
+    padding: 0px;
+  }
+
+  .GF_Frontstage_W {
+    position: absolute;
+    bottom: 8%;
+    left: 27%;
+    z-index: 9999;
+    height: 58%;
+    width: 10%;
+    padding: 0px;
+  }
+
+  .GF_Backage {
+    position: absolute;
+    bottom: 11%;
+    left: 38%;
+    z-index: 9999;
+    height: 51%;
+    width: 10%;
+    padding: 0px;
+  }
+
+  .GF_Frontstage_E {
+    position: absolute;
+    bottom: 8%;
+    left: 48%;
+    z-index: 9999;
+    height: 58%;
+    width: 10%;
+    padding: 0px;
+  }
+
+  .GF_Corridor_N {
+    position: absolute;
+    top: 34%;
+    left: 38%;
+    z-index: 9999;
+    height: 4%;
+    width: 1%;
+    min-width: 35px;
+    padding: 0px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1050px) {
+  .fortyD_Zone {
+    position: absolute;
+    top: 20%;
+    left: 43%;
+    z-index: 9999;
+    height: 14%;
+    width: 6%;
+    min-width: 4%;
+    padding: 0px;
+  }
+
+  .fortyE_Zone {
+    position: absolute;
+    top: 29%;
+    left: 49%;
+    z-index: 9999;
+    height: 5%;
+    width: 7%;
+    min-width: 54px;
+    padding: 0px;
+  }
+
+  .eleven_Zone {
+    position: absolute;
+    bottom: 21%;
+    left: 21%;
+    z-index: 9999;
+    height: 20%;
+    width: 6%;
+    min-width: 30px;
+    padding: 0px;
+  }
+
+  .seventyB_Zone {
+    position: absolute;
+    bottom: 20%;
+    right: 22%;
+    z-index: 9999;
+    height: 25%;
+    width: 8%;
+    padding: 0px;
+  }
+
+  .GF_Frontstage_W {
+    position: absolute;
+    bottom: 8%;
+    left: 27%;
+    z-index: 9999;
+    height: 58%;
+    width: 10%;
+    padding: 0px;
+  }
+
+  .GF_Backage {
+    position: absolute;
+    bottom: 11%;
+    left: 38%;
+    z-index: 9999;
+    height: 51%;
+    width: 10%;
+    padding: 0px;
+  }
+
+  .GF_Frontstage_E {
+    position: absolute;
+    bottom: 8%;
+    left: 48%;
+    z-index: 9999;
+    height: 58%;
+    width: 10%;
+    padding: 0px;
+  }
+
+  .GF_Corridor_N {
+    position: absolute;
+    top: 34%;
+    left: 38%;
+    z-index: 9999;
+    height: 4%;
+    width: 1%;
+    min-width: 35px;
+    padding: 0px;
+  }
+}
+
+@media (min-width: 1050px) and (max-width: 1199px) {
+  .fortyD_Zone {
+    position: absolute;
+    top: 20%;
+    left: 43%;
+    z-index: 9999;
+    height: 14%;
+    width: 6%;
+    min-width: 4%;
+    padding: 0px;
+  }
+
+  .GF_Frontstage_W {
+    position: absolute;
+    bottom: 9%;
+    left: 27%;
+    z-index: 9999;
+    height: 57%;
+    width: 10%;
+    padding: 0px;
+  }
+
+  .GF_Backage {
+    position: absolute;
+    bottom: 11%;
+    left: 38%;
+    z-index: 9999;
+    height: 51%;
+    width: 10%;
+    padding: 0px;
+  }
+
+  .GF_Corridor_N {
+    position: absolute;
+    top: 34%;
+    left: 38%;
+    z-index: 9999;
+    height: 4%;
+    width: 1%;
+    min-width: 38px;
+    padding: 0px;
+  }
+
+  .GF_Corridor_S {
+    position: absolute;
+    bottom: 8.5%;
+    left: 38%;
+    z-index: 9999;
+    height: 2%;
+    width: 10%;
+    padding: 0px;
+  }
+
+  .GF_Frontstage_E {
+    position: absolute;
+    bottom: 8%;
+    left: 48%;
+    z-index: 9999;
+    height: 58%;
+    width: 10%;
+    padding: 0px;
+  }
+}
+
+/* Ground Floor Responsive */
+
+
+/* First Floor Responsive */
 
 @media (min-width: 360px) and (max-width: 468px) {
-  
+
   .FristBackstage {
     position: absolute;
     bottom: 12%;
@@ -7605,7 +8395,7 @@ input {
     min-width: 30px;
     padding: 0px;
   }
-  
+
   .FristCorridorN {
     position: absolute;
     top: 34.5%;
@@ -7616,7 +8406,7 @@ input {
     min-width: 25px;
     padding: 0px;
   }
-  
+
   .FristFrontstageE {
     position: absolute;
     bottom: 10%;
@@ -7627,7 +8417,7 @@ input {
     min-width: 9%;
     padding: 0px;
   }
-  
+
   .FristFrontstageW {
     position: absolute;
     bottom: 10%;
@@ -7638,7 +8428,7 @@ input {
     min-width: 9%;
     padding: 0px;
   }
-  
+
   .FristFIT {
     position: absolute;
     bottom: 10%;
@@ -7649,7 +8439,7 @@ input {
     min-width: 30px;
     padding: 0px;
   }
-  
+
   .firstseventyA {
     position: absolute;
     bottom: 32%;
@@ -7660,7 +8450,7 @@ input {
     min-width: 33px;
     padding: 0px;
   }
-  
+
   .firstseventyB {
     position: absolute;
     bottom: 27.4%;
@@ -7671,7 +8461,7 @@ input {
     min-width: 37px;
     padding: 0px;
   }
-  
+
   .firstseventyC {
     position: absolute;
     bottom: 21%;
@@ -7682,7 +8472,7 @@ input {
     min-width: 29px;
     padding: 0px;
   }
-  
+
   .FirstfoutyA {
     position: absolute;
     top: 20%;
@@ -7693,7 +8483,7 @@ input {
     padding: 0px;
     min-width: 0px;
   }
-  
+
   .FirstfoutyB {
     position: absolute;
     top: 27.5%;
@@ -7703,9 +8493,9 @@ input {
     width: 11%;
     min-width: 20px;
     padding: 0px;
-  
+
   }
-  
+
   .FirstfoutyC {
     position: absolute;
     top: 18.5%;
@@ -7715,7 +8505,7 @@ input {
     width: 58%;
     padding: 0px;
   }
-  
+
   .FirstfoutyD {
     position: absolute;
     top: 7.5%;
@@ -7726,7 +8516,7 @@ input {
     min-width: 30px;
     padding: 0px;
   }
-  
+
   .FirstfoutyE {
     position: absolute;
     top: 29.5%;
@@ -7737,7 +8527,7 @@ input {
     padding: 0px;
     min-width: 25px;
   }
-  
+
   .FirstfoutyF {
     position: absolute;
     top: 22.5%;
@@ -7748,7 +8538,7 @@ input {
     padding: 0px;
     min-width: 26px;
   }
-  
+
   .FirstfoutyG {
     position: absolute;
     top: 31.5%;
@@ -7758,7 +8548,7 @@ input {
     width: 16%;
     padding: 0px;
   }
-  
+
   .FirstfoutyI {
     position: absolute;
     top: 20.3%;
@@ -7770,7 +8560,7 @@ input {
     padding: 0px;
 
   }
-  
+
   .FirstfoutyJ {
     position: absolute;
     top: 20.5%;
@@ -7781,7 +8571,7 @@ input {
     min-width: 24px;
     padding: 0px;
   }
-  
+
   .FirstfoutyK {
     position: absolute;
     top: 20.5%;
@@ -7792,7 +8582,7 @@ input {
     min-width: 29px;
     padding: 0px;
   }
-  
+
   .FirstfoutyL {
     position: absolute;
     top: 20.5%;
@@ -7803,7 +8593,7 @@ input {
     min-width: 36px;
     padding: 0px;
   }
-  
+
   .FirstfoutyM {
     position: absolute;
     top: 7.5%;
@@ -7814,11 +8604,11 @@ input {
     min-width: 60px;
     padding: 0px;
   }
-  
+
 }
 
 @media (min-width: 468px) and (max-width: 549px) {
-  
+
   .FristBackstage {
     position: absolute;
     bottom: 12%;
@@ -7829,7 +8619,7 @@ input {
     min-width: 30px;
     padding: 0px;
   }
-  
+
   .FristCorridorN {
     position: absolute;
     top: 34.5%;
@@ -7840,7 +8630,7 @@ input {
     min-width: 25px;
     padding: 0px;
   }
-  
+
   .FristFrontstageE {
     position: absolute;
     bottom: 10%;
@@ -7851,7 +8641,7 @@ input {
     min-width: 9%;
     padding: 0px;
   }
-  
+
   .FristFrontstageW {
     position: absolute;
     bottom: 10%;
@@ -7862,7 +8652,7 @@ input {
     min-width: 9%;
     padding: 0px;
   }
-  
+
   .FristFIT {
     position: absolute;
     bottom: 10%;
@@ -7873,7 +8663,7 @@ input {
     min-width: 30px;
     padding: 0px;
   }
-  
+
   .firstseventyA {
     position: absolute;
     bottom: 32%;
@@ -7884,7 +8674,7 @@ input {
     min-width: 41px;
     padding: 0px;
   }
-  
+
   .firstseventyB {
     position: absolute;
     bottom: 27.4%;
@@ -7895,7 +8685,7 @@ input {
     min-width: 47px;
     padding: 0px;
   }
-  
+
   .firstseventyC {
     position: absolute;
     bottom: 21%;
@@ -7906,7 +8696,7 @@ input {
     min-width: 36px;
     padding: 0px;
   }
-  
+
   .FirstfoutyA {
     position: absolute;
     top: 20%;
@@ -7917,7 +8707,7 @@ input {
     padding: 0px;
     min-width: 0px;
   }
-  
+
   .FirstfoutyB {
     position: absolute;
     top: 27.5%;
@@ -7927,9 +8717,9 @@ input {
     width: 11%;
     min-width: 20px;
     padding: 0px;
-  
+
   }
-  
+
   .FirstfoutyC {
     position: absolute;
     top: 18.5%;
@@ -7939,7 +8729,7 @@ input {
     width: 58%;
     padding: 0px;
   }
-  
+
   .FirstfoutyD {
     position: absolute;
     top: 7.5%;
@@ -7950,7 +8740,7 @@ input {
     min-width: 30px;
     padding: 0px;
   }
-  
+
   .FirstfoutyE {
     position: absolute;
     top: 29.5%;
@@ -7961,7 +8751,7 @@ input {
     padding: 0px;
     min-width: 30px;
   }
-  
+
   .FirstfoutyF {
     position: absolute;
     top: 22.5%;
@@ -7972,7 +8762,7 @@ input {
     padding: 0px;
     min-width: 31px;
   }
-  
+
   .FirstfoutyG {
     position: absolute;
     top: 31.5%;
@@ -7982,7 +8772,7 @@ input {
     width: 16%;
     padding: 0px;
   }
-  
+
   .FirstfoutyI {
     position: absolute;
     top: 20.5%;
@@ -7992,9 +8782,9 @@ input {
     width: 8%;
     min-width: 41px;
     padding: 0px;
-  
+
   }
-  
+
   .FirstfoutyJ {
     position: absolute;
     top: 20.5%;
@@ -8005,7 +8795,7 @@ input {
     min-width: 30px;
     padding: 0px;
   }
-  
+
   .FirstfoutyK {
     position: absolute;
     top: 20.5%;
@@ -8016,7 +8806,7 @@ input {
     min-width: 37px;
     padding: 0px;
   }
-  
+
   .FirstfoutyL {
     position: absolute;
     top: 20.5%;
@@ -8027,7 +8817,7 @@ input {
     min-width: 44px;
     padding: 0px;
   }
-  
+
   .FirstfoutyM {
     position: absolute;
     top: 7.5%;
@@ -8037,233 +8827,233 @@ input {
     width: 15%;
     padding: 0px;
   }
-  
+
 }
 
 @media (min-width: 550px) and (max-width: 750px) {
-  
-.FristBackstage {
-  position: absolute;
-  bottom: 12%;
-  left: 38%;
-  z-index: 9999;
-  height: 51%;
-  width: 10%;
-  min-width: 30px;
-  padding: 0px;
-}
 
-.FristCorridorN {
-  position: absolute;
-  top: 34.5%;
-  left: 38%;
-  z-index: 9999;
-  height: 3%;
-  width: 1%;
-  min-width: 30px;
-  padding: 0px;
-}
+  .FristBackstage {
+    position: absolute;
+    bottom: 12%;
+    left: 38%;
+    z-index: 9999;
+    height: 51%;
+    width: 10%;
+    min-width: 30px;
+    padding: 0px;
+  }
 
-.FristFrontstageE {
-  position: absolute;
-  bottom: 10%;
-  left: 48%;
-  z-index: 9999;
-  height: 56%;
-  width: 10%;
-  min-width: 9%;
-  padding: 0px;
-}
+  .FristCorridorN {
+    position: absolute;
+    top: 34.5%;
+    left: 38%;
+    z-index: 9999;
+    height: 3%;
+    width: 1%;
+    min-width: 30px;
+    padding: 0px;
+  }
 
-.FristFrontstageW {
-  position: absolute;
-  bottom: 10%;
-  left: 29%;
-  z-index: 9999;
-  height: 56%;
-  width: 8%;
-  min-width: 9%;
-  padding: 0px;
-}
+  .FristFrontstageE {
+    position: absolute;
+    bottom: 10%;
+    left: 48%;
+    z-index: 9999;
+    height: 56%;
+    width: 10%;
+    min-width: 9%;
+    padding: 0px;
+  }
 
-.FristFIT {
-  position: absolute;
-  bottom: 10%;
-  left: 38%;
-  z-index: 9999;
-  height: 2%;
-  width: 10%;
-  min-width: 30px;
-  padding: 0px;
-}
+  .FristFrontstageW {
+    position: absolute;
+    bottom: 10%;
+    left: 29%;
+    z-index: 9999;
+    height: 56%;
+    width: 8%;
+    min-width: 9%;
+    padding: 0px;
+  }
 
-.firstseventyA {
-  position: absolute;
-  bottom: 32%;
-  right: 34%;
-  z-index: 9999;
-  height: 20%;
-  width: 8%;
-  min-width: 50px;
-  padding: 0px;
-}
+  .FristFIT {
+    position: absolute;
+    bottom: 10%;
+    left: 38%;
+    z-index: 9999;
+    height: 2%;
+    width: 10%;
+    min-width: 30px;
+    padding: 0px;
+  }
 
-.firstseventyB {
-  position: absolute;
-  bottom: 27.4%;
-  right: 24%;
-  z-index: 9999;
-  height: 14%;
-  width: 8%;
-  min-width: 55px;
-  padding: 0px;
-}
+  .firstseventyA {
+    position: absolute;
+    bottom: 32%;
+    right: 34%;
+    z-index: 9999;
+    height: 20%;
+    width: 8%;
+    min-width: 50px;
+    padding: 0px;
+  }
 
-.firstseventyC {
-  position: absolute;
-  bottom: 21%;
-  right: 24%;
-  z-index: 9999;
-  height: 6%;
-  width: 6%;
-  min-width: 36px;
-  padding: 0px;
-}
+  .firstseventyB {
+    position: absolute;
+    bottom: 27.4%;
+    right: 24%;
+    z-index: 9999;
+    height: 14%;
+    width: 8%;
+    min-width: 55px;
+    padding: 0px;
+  }
 
-.FirstfoutyA {
-  position: absolute;
-  top: 21%;
-  left: 37%;
-  z-index: 9999;
-  height: 14%;
-  width: 4%;
-  padding: 0px;
-  min-width: 0px;
-}
+  .firstseventyC {
+    position: absolute;
+    bottom: 21%;
+    right: 24%;
+    z-index: 9999;
+    height: 6%;
+    width: 6%;
+    min-width: 36px;
+    padding: 0px;
+  }
 
-.FirstfoutyB {
-  position: absolute;
-  top: 27.5%;
-  left: 21%;
-  z-index: 9999;
-  height: 7%;
-  width: 11%;
-  padding: 0px;
+  .FirstfoutyA {
+    position: absolute;
+    top: 21%;
+    left: 37%;
+    z-index: 9999;
+    height: 14%;
+    width: 4%;
+    padding: 0px;
+    min-width: 0px;
+  }
 
-}
+  .FirstfoutyB {
+    position: absolute;
+    top: 27.5%;
+    left: 21%;
+    z-index: 9999;
+    height: 7%;
+    width: 11%;
+    padding: 0px;
 
-.FirstfoutyC {
-  position: absolute;
-  top: 18.5%;
-  left: 21%;
-  z-index: 9999;
-  height: 2%;
-  width: 58%;
-  padding: 0px;
-}
+  }
 
-.FirstfoutyD {
-  position: absolute;
-  top: 7.5%;
-  left: 40%;
-  z-index: 9999;
-  height: 11%;
-  width: 8%;
-  min-width: 30px;
-  padding: 0px;
-}
+  .FirstfoutyC {
+    position: absolute;
+    top: 18.5%;
+    left: 21%;
+    z-index: 9999;
+    height: 2%;
+    width: 58%;
+    padding: 0px;
+  }
 
-.FirstfoutyE {
-  position: absolute;
-  top: 29.5%;
-  left: 49%;
-  z-index: 9999;
-  height: 5%;
-  width: 6%;
-  padding: 0px;
-  min-width: 38px;
-}
+  .FirstfoutyD {
+    position: absolute;
+    top: 7.5%;
+    left: 40%;
+    z-index: 9999;
+    height: 11%;
+    width: 8%;
+    min-width: 30px;
+    padding: 0px;
+  }
 
-.FirstfoutyF {
-  position: absolute;
-  top: 22.5%;
-  left: 49%;
-  z-index: 9999;
-  height: 7%;
-  width: 6%;
-  padding: 0px;
-  min-width: 38px;
-}
+  .FirstfoutyE {
+    position: absolute;
+    top: 29.5%;
+    left: 49%;
+    z-index: 9999;
+    height: 5%;
+    width: 6%;
+    padding: 0px;
+    min-width: 38px;
+  }
 
-.FirstfoutyG {
-  position: absolute;
-  top: 32%;
-  right: 21%;
-  z-index: 9999;
-  height: 3%;
-  width: 16%;
-  padding: 0px;
-}
+  .FirstfoutyF {
+    position: absolute;
+    top: 22.5%;
+    left: 49%;
+    z-index: 9999;
+    height: 7%;
+    width: 6%;
+    padding: 0px;
+    min-width: 38px;
+  }
 
-.FirstfoutyI {
-  position: absolute;
-  top: 20.5%;
-  right: 21%;
-  z-index: 9999;
-  height: 11%;
-  width: 8%;
-  padding: 0px;
+  .FirstfoutyG {
+    position: absolute;
+    top: 32%;
+    right: 21%;
+    z-index: 9999;
+    height: 3%;
+    width: 16%;
+    padding: 0px;
+  }
 
-}
+  .FirstfoutyI {
+    position: absolute;
+    top: 20.5%;
+    right: 21%;
+    z-index: 9999;
+    height: 11%;
+    width: 8%;
+    padding: 0px;
 
-.FirstfoutyJ {
-  position: absolute;
-  top: 20.5%;
-  right: 29%;
-  z-index: 9999;
-  height: 6%;
-  width: 6%;
-  min-width: 30px;
-  padding: 0px;
-}
+  }
 
-.FirstfoutyK {
-  position: absolute;
-  top: 20.5%;
-  right: 37%;
-  z-index: 9999;
-  height: 12%;
-  width: 7%;
-  min-width: 44px;
-  padding: 0px;
-}
+  .FirstfoutyJ {
+    position: absolute;
+    top: 20.5%;
+    right: 29%;
+    z-index: 9999;
+    height: 6%;
+    width: 6%;
+    min-width: 30px;
+    padding: 0px;
+  }
 
-.FirstfoutyL {
-  position: absolute;
-  top: 20.5%;
-  left: 21%;
-  z-index: 9999;
-  height: 7%;
-  width: 8%;
-  min-width: 54px;
-  padding: 0px;
-}
+  .FirstfoutyK {
+    position: absolute;
+    top: 20.5%;
+    right: 37%;
+    z-index: 9999;
+    height: 12%;
+    width: 7%;
+    min-width: 44px;
+    padding: 0px;
+  }
 
-.FirstfoutyM {
-  position: absolute;
-  top: 7.5%;
-  left: 21.5%;
-  z-index: 9999;
-  height: 11%;
-  width: 15%;
-  padding: 0px;
-}
+  .FirstfoutyL {
+    position: absolute;
+    top: 20.5%;
+    left: 21%;
+    z-index: 9999;
+    height: 7%;
+    width: 8%;
+    min-width: 54px;
+    padding: 0px;
+  }
+
+  .FirstfoutyM {
+    position: absolute;
+    top: 7.5%;
+    left: 21.5%;
+    z-index: 9999;
+    height: 11%;
+    width: 15%;
+    padding: 0px;
+  }
 
 }
 
 @media (min-width: 850px) and (max-width: 992px) {
 
-  .FirstfoutyL{
+  .FirstfoutyL {
     position: absolute;
     top: 20.5%;
     left: 21.4%;
@@ -8272,7 +9062,8 @@ input {
     width: 9%;
     padding: 0px;
   }
-  .FirstfoutyJ{
+
+  .FirstfoutyJ {
     position: absolute;
     top: 21%;
     right: 29%;
@@ -8282,7 +9073,8 @@ input {
     min-width: 20px;
     padding: 0px;
   }
-  .FirstfoutyG{
+
+  .FirstfoutyG {
     position: absolute;
     top: 31.5%;
     right: 21%;
@@ -8291,7 +9083,8 @@ input {
     width: 16%;
     padding: 0px;
   }
-  .FirstfoutyI{
+
+  .FirstfoutyI {
     position: absolute;
     top: 20.5%;
     right: 21%;
@@ -8300,7 +9093,8 @@ input {
     width: 8%;
     padding: 0px;
   }
-  .FristFrontstageW{
+
+  .FristFrontstageW {
     position: absolute;
     bottom: 9%;
     left: 29%;
@@ -8309,7 +9103,8 @@ input {
     width: 9%;
     padding: 0px;
   }
-  .FristBackstage{
+
+  .FristBackstage {
     position: absolute;
     bottom: 11%;
     left: 38%;
@@ -8318,7 +9113,8 @@ input {
     width: 10%;
     padding: 0px;
   }
-  .FristCorridorN{
+
+  .FristCorridorN {
     position: absolute;
     top: 35%;
     left: 38%;
@@ -8328,7 +9124,8 @@ input {
     min-width: 46px;
     padding: 0px;
   }
-  .FristFrontstageE{
+
+  .FristFrontstageE {
     position: absolute;
     bottom: 9%;
     left: 48%;
@@ -8337,7 +9134,8 @@ input {
     width: 10%;
     padding: 0px;
   }
-  .firstseventyA{
+
+  .firstseventyA {
     position: absolute;
     bottom: 32%;
     right: 33.5%;
@@ -8346,7 +9144,8 @@ input {
     width: 9%;
     padding: 0px;
   }
-  .firstseventyB{
+
+  .firstseventyB {
     position: absolute;
     bottom: 27%;
     right: 24%;
@@ -8355,7 +9154,8 @@ input {
     width: 7%;
     padding: 0px;
   }
-  .FirstfoutyC{
+
+  .FirstfoutyC {
     position: absolute;
     top: 18.5%;
     left: 21%;
@@ -8373,7 +9173,7 @@ input {
 /* start Second Floor Responsive */
 
 @media (min-width: 360px) and (max-width: 468px) {
-  .second_Backstage{
+  .second_Backstage {
     position: absolute;
     bottom: 11%;
     left: 37.5%;
@@ -8382,7 +9182,8 @@ input {
     width: 10%;
     padding: 0px;
   }
-  .second_CorridorS{
+
+  .second_CorridorS {
     position: absolute;
     bottom: 9.5%;
     left: 37.5%;
@@ -8391,7 +9192,8 @@ input {
     width: 10%;
     padding: 0px;
   }
-  .second_Distribution{
+
+  .second_Distribution {
     position: absolute;
     top: 35%;
     left: 37.5%;
@@ -8400,8 +9202,8 @@ input {
     width: 10%;
     padding: 0px;
   }
-  
-  .second_FrontstageE{
+
+  .second_FrontstageE {
     position: absolute;
     bottom: 9%;
     left: 47.5%;
@@ -8410,7 +9212,8 @@ input {
     width: 10%;
     padding: 0px;
   }
-  .second_FrontstageW{
+
+  .second_FrontstageW {
     position: absolute;
     bottom: 9%;
     left: 27%;
@@ -8420,8 +9223,8 @@ input {
     min-width: 30px;
     padding: 0px;
   }
-  
-  .second_Seventy_A{
+
+  .second_Seventy_A {
     position: absolute;
     bottom: 32%;
     right: 35%;
@@ -8431,7 +9234,8 @@ input {
     min-width: 40px;
     padding: 0px;
   }
-  .second_Seventy_B{
+
+  .second_Seventy_B {
     position: absolute;
     bottom: 21.5%;
     right: 24%;
@@ -8441,7 +9245,8 @@ input {
     min-width: 29px;
     padding: 0px;
   }
-  .second_forty_2A_1{
+
+  .second_forty_2A_1 {
     position: absolute;
     top: 7.5%;
     left: 20%;
@@ -8450,16 +9255,18 @@ input {
     width: 49%;
     padding: 0px;
   }
-  .second_forty_2A_2{
+
+  .second_forty_2A_2 {
     position: absolute;
-      top: 26.5%;
-      left: 20%;
-      z-index: 9999;
-      height: 8%;
-      width: 28%;
-      padding: 0px;
+    top: 26.5%;
+    left: 20%;
+    z-index: 9999;
+    height: 8%;
+    width: 28%;
+    padding: 0px;
   }
-  .second_forty_2A_3{
+
+  .second_forty_2A_3 {
     position: absolute;
     top: 20.5%;
     right: 31%;
@@ -8469,8 +9276,8 @@ input {
     min-width: 24px;
     padding: 0px;
   }
-  
-  .second_forty_2b{
+
+  .second_forty_2b {
     position: absolute;
     top: 21.5%;
     left: 31%;
@@ -8480,17 +9287,19 @@ input {
     padding: 0px;
     min-width: 0px;
   }
-  .second_forty_2c{
+
+  .second_forty_2c {
     position: absolute;
-      top: 28.5%;
-      right: 45%;
-      z-index: 9999;
-      height: 6%;
-      width: 6%;
-      min-width: 26px;
-      padding: 0px;
+    top: 28.5%;
+    right: 45%;
+    z-index: 9999;
+    height: 6%;
+    width: 6%;
+    min-width: 26px;
+    padding: 0px;
   }
-  .second_forty_2d{
+
+  .second_forty_2d {
     position: absolute;
     top: 20.5%;
     right: 45%;
@@ -8500,7 +9309,8 @@ input {
     min-width: 25px;
     padding: 0px;
   }
-  .second_forty_2e{
+
+  .second_forty_2e {
     position: absolute;
     top: 20.5%;
     right: 37%;
@@ -8510,7 +9320,8 @@ input {
     min-width: 31px;
     padding: 0px;
   }
-  .second_forty_2f{
+
+  .second_forty_2f {
     position: absolute;
     top: 16.5%;
     left: 20%;
@@ -8523,7 +9334,7 @@ input {
 }
 
 @media (min-width: 468px) and (max-width: 549px) {
-  .second_Backstage{
+  .second_Backstage {
     position: absolute;
     bottom: 11%;
     left: 37.5%;
@@ -8532,7 +9343,8 @@ input {
     width: 10%;
     padding: 0px;
   }
-  .second_CorridorS{
+
+  .second_CorridorS {
     position: absolute;
     bottom: 9.5%;
     left: 37.5%;
@@ -8541,7 +9353,8 @@ input {
     width: 10%;
     padding: 0px;
   }
-  .second_Distribution{
+
+  .second_Distribution {
     position: absolute;
     top: 35%;
     left: 37.5%;
@@ -8550,8 +9363,8 @@ input {
     width: 10%;
     padding: 0px;
   }
-  
-  .second_FrontstageE{
+
+  .second_FrontstageE {
     position: absolute;
     bottom: 9%;
     left: 47.5%;
@@ -8560,7 +9373,8 @@ input {
     width: 10%;
     padding: 0px;
   }
-  .second_FrontstageW{
+
+  .second_FrontstageW {
     position: absolute;
     bottom: 9%;
     left: 27%;
@@ -8569,8 +9383,8 @@ input {
     width: 11%;
     padding: 0px;
   }
-  
-  .second_Seventy_A{
+
+  .second_Seventy_A {
     position: absolute;
     bottom: 31%;
     right: 35%;
@@ -8580,7 +9394,8 @@ input {
     min-width: 40px;
     padding: 0px;
   }
-  .second_Seventy_B{
+
+  .second_Seventy_B {
     position: absolute;
     bottom: 20.5%;
     right: 24%;
@@ -8590,7 +9405,8 @@ input {
     min-width: 40px;
     padding: 0px;
   }
-  .second_forty_2A_1{
+
+  .second_forty_2A_1 {
     position: absolute;
     top: 7.5%;
     left: 20%;
@@ -8599,16 +9415,18 @@ input {
     width: 49%;
     padding: 0px;
   }
-  .second_forty_2A_2{
+
+  .second_forty_2A_2 {
     position: absolute;
-      top: 26.5%;
-      left: 20%;
-      z-index: 9999;
-      height: 8%;
-      width: 28%;
-      padding: 0px;
+    top: 26.5%;
+    left: 20%;
+    z-index: 9999;
+    height: 8%;
+    width: 28%;
+    padding: 0px;
   }
-  .second_forty_2A_3{
+
+  .second_forty_2A_3 {
     position: absolute;
     top: 20.5%;
     right: 31%;
@@ -8618,8 +9436,8 @@ input {
     min-width: 30px;
     padding: 0px;
   }
-  
-  .second_forty_2b{
+
+  .second_forty_2b {
     position: absolute;
     top: 21.5%;
     left: 31%;
@@ -8629,17 +9447,19 @@ input {
     padding: 0px;
     min-width: 0px;
   }
-  .second_forty_2c{
+
+  .second_forty_2c {
     position: absolute;
-      top: 28.5%;
-      right: 45%;
-      z-index: 9999;
-      height: 6%;
-      width: 6%;
-      min-width: 32px;
-      padding: 0px;
+    top: 28.5%;
+    right: 45%;
+    z-index: 9999;
+    height: 6%;
+    width: 6%;
+    min-width: 32px;
+    padding: 0px;
   }
-  .second_forty_2d{
+
+  .second_forty_2d {
     position: absolute;
     top: 20.5%;
     right: 45%;
@@ -8649,7 +9469,8 @@ input {
     min-width: 33px;
     padding: 0px;
   }
-  .second_forty_2e{
+
+  .second_forty_2e {
     position: absolute;
     top: 20.5%;
     right: 37%;
@@ -8659,7 +9480,8 @@ input {
     min-width: 40px;
     padding: 0px;
   }
-  .second_forty_2f{
+
+  .second_forty_2f {
     position: absolute;
     top: 16.5%;
     left: 20%;
@@ -8672,156 +9494,7 @@ input {
 }
 
 @media (min-width: 550px) and (max-width: 749px) {
-    .second_Backstage{
-      position: absolute;
-      bottom: 11%;
-      left: 37.5%;
-      z-index: 9999;
-      height: 51.5%;
-      width: 10%;
-      padding: 0px;
-    }
-    .second_CorridorS{
-      position: absolute;
-      bottom: 9.5%;
-      left: 37.5%;
-      z-index: 9999;
-      height: 2%;
-      width: 10%;
-      padding: 0px;
-    }
-    .second_Distribution{
-      position: absolute;
-      top: 35%;
-      left: 37.5%;
-      z-index: 9999;
-      height: 3%;
-      width: 10%;
-      padding: 0px;
-    }
-    
-    .second_FrontstageE{
-      position: absolute;
-      bottom: 9%;
-      left: 47.5%;
-      z-index: 9999;
-      height: 56%;
-      width: 10%;
-      padding: 0px;
-    }
-    .second_FrontstageW{
-      position: absolute;
-      bottom: 9%;
-      left: 27%;
-      z-index: 9999;
-      height: 56%;
-      width: 11%;
-      padding: 0px;
-    }
-    
-    .second_Seventy_A{
-      position: absolute;
-      bottom: 31%;
-      right: 35%;
-      z-index: 9999;
-      height: 20%;
-      width: 8%;
-      min-width: 40px;
-      padding: 0px;
-    }
-    .second_Seventy_B{
-      position: absolute;
-      bottom: 20.5%;
-      right: 24%;
-      z-index: 9999;
-      height: 18%;
-      width: 8%;
-      min-width: 40px;
-      padding: 0px;
-    }
-    .second_forty_2A_1{
-      position: absolute;
-      top: 7.5%;
-      left: 20%;
-      z-index: 9999;
-      height: 9%;
-      width: 49%;
-      padding: 0px;
-    }
-    .second_forty_2A_2{
-      position: absolute;
-        top: 26.5%;
-        left: 20%;
-        z-index: 9999;
-        height: 8%;
-        width: 28%;
-        padding: 0px;
-    }
-    .second_forty_2A_3{
-      position: absolute;
-      top: 20.5%;
-      right: 31%;
-      z-index: 9999;
-      height: 14%;
-      width: 6%;
-      min-width: 38px;
-      padding: 0px;
-    }
-    
-    .second_forty_2b{
-      position: absolute;
-      top: 21.5%;
-      left: 31%;
-      z-index: 9999;
-      height: 5%;
-      width: 4%;
-      padding: 0px;
-      min-width: 0px;
-    }
-    .second_forty_2c{
-      position: absolute;
-        top: 28.5%;
-        right: 45%;
-        z-index: 9999;
-        height: 6%;
-        width: 6%;
-        min-width: 40px;
-        padding: 0px;
-    }
-    .second_forty_2d{
-      position: absolute;
-      top: 20.5%;
-      right: 45%;
-      z-index: 9999;
-      height: 8%;
-      width: 6%;
-      min-width: 41px;
-      padding: 0px;
-    }
-    .second_forty_2e{
-      position: absolute;
-      top: 20.5%;
-      right: 37%;
-      z-index: 9999;
-      height: 12%;
-      width: 8%;
-      min-width: 40px;
-      padding: 0px;
-    }
-    .second_forty_2f{
-      position: absolute;
-      top: 16.5%;
-      left: 20%;
-      z-index: 9999;
-      height: 2%;
-      width: 6%;
-      padding: 0px;
-      min-width: 0px;
-    }
-}
-
-@media (min-width: 750px) and (max-width: 850px) {
-  .second_Backstage{
+  .second_Backstage {
     position: absolute;
     bottom: 11%;
     left: 37.5%;
@@ -8830,7 +9503,8 @@ input {
     width: 10%;
     padding: 0px;
   }
-  .second_CorridorS{
+
+  .second_CorridorS {
     position: absolute;
     bottom: 9.5%;
     left: 37.5%;
@@ -8839,7 +9513,8 @@ input {
     width: 10%;
     padding: 0px;
   }
-  .second_Distribution{
+
+  .second_Distribution {
     position: absolute;
     top: 35%;
     left: 37.5%;
@@ -8848,8 +9523,8 @@ input {
     width: 10%;
     padding: 0px;
   }
-  
-  .second_FrontstageE{
+
+  .second_FrontstageE {
     position: absolute;
     bottom: 9%;
     left: 47.5%;
@@ -8858,7 +9533,8 @@ input {
     width: 10%;
     padding: 0px;
   }
-  .second_FrontstageW{
+
+  .second_FrontstageW {
     position: absolute;
     bottom: 9%;
     left: 27%;
@@ -8867,26 +9543,30 @@ input {
     width: 11%;
     padding: 0px;
   }
-  
-  .second_Seventy_A{
+
+  .second_Seventy_A {
     position: absolute;
     bottom: 31%;
     right: 35%;
     z-index: 9999;
     height: 20%;
     width: 8%;
+    min-width: 40px;
     padding: 0px;
   }
-  .second_Seventy_B{
+
+  .second_Seventy_B {
     position: absolute;
     bottom: 20.5%;
     right: 24%;
     z-index: 9999;
     height: 18%;
     width: 8%;
+    min-width: 40px;
     padding: 0px;
   }
-  .second_forty_2A_1{
+
+  .second_forty_2A_1 {
     position: absolute;
     top: 7.5%;
     left: 20%;
@@ -8895,27 +9575,29 @@ input {
     width: 49%;
     padding: 0px;
   }
-  .second_forty_2A_2{
+
+  .second_forty_2A_2 {
     position: absolute;
-      top: 26.5%;
-      left: 20%;
-      z-index: 9999;
-      height: 8%;
-      width: 28%;
-      padding: 0px;
+    top: 26.5%;
+    left: 20%;
+    z-index: 9999;
+    height: 8%;
+    width: 28%;
+    padding: 0px;
   }
-  .second_forty_2A_3{
+
+  .second_forty_2A_3 {
     position: absolute;
     top: 20.5%;
     right: 31%;
     z-index: 9999;
     height: 14%;
     width: 6%;
-    min-width: 50px;
+    min-width: 38px;
     padding: 0px;
   }
-  
-  .second_forty_2b{
+
+  .second_forty_2b {
     position: absolute;
     top: 21.5%;
     left: 31%;
@@ -8925,17 +9607,177 @@ input {
     padding: 0px;
     min-width: 0px;
   }
-  .second_forty_2c{
+
+  .second_forty_2c {
     position: absolute;
-      top: 28.5%;
-      right: 45%;
-      z-index: 9999;
-      height: 6%;
-      width: 6%;
-      min-width: 55px;
-      padding: 0px;
+    top: 28.5%;
+    right: 45%;
+    z-index: 9999;
+    height: 6%;
+    width: 6%;
+    min-width: 40px;
+    padding: 0px;
   }
-  .second_forty_2d{
+
+  .second_forty_2d {
+    position: absolute;
+    top: 20.5%;
+    right: 45%;
+    z-index: 9999;
+    height: 8%;
+    width: 6%;
+    min-width: 41px;
+    padding: 0px;
+  }
+
+  .second_forty_2e {
+    position: absolute;
+    top: 20.5%;
+    right: 37%;
+    z-index: 9999;
+    height: 12%;
+    width: 8%;
+    min-width: 40px;
+    padding: 0px;
+  }
+
+  .second_forty_2f {
+    position: absolute;
+    top: 16.5%;
+    left: 20%;
+    z-index: 9999;
+    height: 2%;
+    width: 6%;
+    padding: 0px;
+    min-width: 0px;
+  }
+}
+
+@media (min-width: 750px) and (max-width: 850px) {
+  .second_Backstage {
+    position: absolute;
+    bottom: 11%;
+    left: 37.5%;
+    z-index: 9999;
+    height: 51.5%;
+    width: 10%;
+    padding: 0px;
+  }
+
+  .second_CorridorS {
+    position: absolute;
+    bottom: 9.5%;
+    left: 37.5%;
+    z-index: 9999;
+    height: 2%;
+    width: 10%;
+    padding: 0px;
+  }
+
+  .second_Distribution {
+    position: absolute;
+    top: 35%;
+    left: 37.5%;
+    z-index: 9999;
+    height: 3%;
+    width: 10%;
+    padding: 0px;
+  }
+
+  .second_FrontstageE {
+    position: absolute;
+    bottom: 9%;
+    left: 47.5%;
+    z-index: 9999;
+    height: 56%;
+    width: 10%;
+    padding: 0px;
+  }
+
+  .second_FrontstageW {
+    position: absolute;
+    bottom: 9%;
+    left: 27%;
+    z-index: 9999;
+    height: 56%;
+    width: 11%;
+    padding: 0px;
+  }
+
+  .second_Seventy_A {
+    position: absolute;
+    bottom: 31%;
+    right: 35%;
+    z-index: 9999;
+    height: 20%;
+    width: 8%;
+    padding: 0px;
+  }
+
+  .second_Seventy_B {
+    position: absolute;
+    bottom: 20.5%;
+    right: 24%;
+    z-index: 9999;
+    height: 18%;
+    width: 8%;
+    padding: 0px;
+  }
+
+  .second_forty_2A_1 {
+    position: absolute;
+    top: 7.5%;
+    left: 20%;
+    z-index: 9999;
+    height: 9%;
+    width: 49%;
+    padding: 0px;
+  }
+
+  .second_forty_2A_2 {
+    position: absolute;
+    top: 26.5%;
+    left: 20%;
+    z-index: 9999;
+    height: 8%;
+    width: 28%;
+    padding: 0px;
+  }
+
+  .second_forty_2A_3 {
+    position: absolute;
+    top: 20.5%;
+    right: 31%;
+    z-index: 9999;
+    height: 14%;
+    width: 6%;
+    min-width: 50px;
+    padding: 0px;
+  }
+
+  .second_forty_2b {
+    position: absolute;
+    top: 21.5%;
+    left: 31%;
+    z-index: 9999;
+    height: 5%;
+    width: 4%;
+    padding: 0px;
+    min-width: 0px;
+  }
+
+  .second_forty_2c {
+    position: absolute;
+    top: 28.5%;
+    right: 45%;
+    z-index: 9999;
+    height: 6%;
+    width: 6%;
+    min-width: 55px;
+    padding: 0px;
+  }
+
+  .second_forty_2d {
     position: absolute;
     top: 20.5%;
     right: 45%;
@@ -8945,7 +9787,8 @@ input {
     min-width: 57px;
     padding: 0px;
   }
-  .second_forty_2e{
+
+  .second_forty_2e {
     position: absolute;
     top: 20.5%;
     right: 37%;
@@ -8954,7 +9797,8 @@ input {
     width: 8%;
     padding: 0px;
   }
-  .second_forty_2f{
+
+  .second_forty_2f {
     position: absolute;
     top: 16.5%;
     left: 20%;
@@ -8968,7 +9812,7 @@ input {
 
 @media (min-width: 850px) and (max-width: 992px) {
 
-  .second_Backstage{
+  .second_Backstage {
     position: absolute;
     bottom: 11%;
     left: 37.5%;
@@ -8977,7 +9821,8 @@ input {
     width: 10%;
     padding: 0px;
   }
-  .second_CorridorS{
+
+  .second_CorridorS {
     position: absolute;
     bottom: 9.5%;
     left: 37.5%;
@@ -8986,7 +9831,8 @@ input {
     width: 10%;
     padding: 0px;
   }
-  .second_Distribution{
+
+  .second_Distribution {
     position: absolute;
     top: 35%;
     left: 37.5%;
@@ -8995,8 +9841,8 @@ input {
     width: 10%;
     padding: 0px;
   }
-  
-  .second_FrontstageE{
+
+  .second_FrontstageE {
     position: absolute;
     bottom: 9%;
     left: 47.5%;
@@ -9005,7 +9851,8 @@ input {
     width: 10%;
     padding: 0px;
   }
-  .second_FrontstageW{
+
+  .second_FrontstageW {
     position: absolute;
     bottom: 9%;
     left: 27%;
@@ -9014,8 +9861,8 @@ input {
     width: 11%;
     padding: 0px;
   }
-  
-  .second_Seventy_A{
+
+  .second_Seventy_A {
     position: absolute;
     bottom: 31%;
     right: 35%;
@@ -9024,7 +9871,8 @@ input {
     width: 8%;
     padding: 0px;
   }
-  .second_Seventy_B{
+
+  .second_Seventy_B {
     position: absolute;
     bottom: 20.5%;
     right: 24%;
@@ -9033,7 +9881,8 @@ input {
     width: 8%;
     padding: 0px;
   }
-  .second_forty_2A_1{
+
+  .second_forty_2A_1 {
     position: absolute;
     top: 7.5%;
     left: 20%;
@@ -9042,16 +9891,18 @@ input {
     width: 49%;
     padding: 0px;
   }
-  .second_forty_2A_2{
+
+  .second_forty_2A_2 {
     position: absolute;
-      top: 26.5%;
-      left: 20%;
-      z-index: 9999;
-      height: 8%;
-      width: 28%;
-      padding: 0px;
+    top: 26.5%;
+    left: 20%;
+    z-index: 9999;
+    height: 8%;
+    width: 28%;
+    padding: 0px;
   }
-  .second_forty_2A_3{
+
+  .second_forty_2A_3 {
     position: absolute;
     top: 20.5%;
     right: 31%;
@@ -9061,8 +9912,8 @@ input {
     min-width: 54px;
     padding: 0px;
   }
-  
-  .second_forty_2b{
+
+  .second_forty_2b {
     position: absolute;
     top: 21.5%;
     left: 31%;
@@ -9072,17 +9923,19 @@ input {
     padding: 0px;
     min-width: 0px;
   }
-  .second_forty_2c{
+
+  .second_forty_2c {
     position: absolute;
-      top: 28.5%;
-      right: 45%;
-      z-index: 9999;
-      height: 6%;
-      width: 6%;
-      min-width: 55px;
-      padding: 0px;
+    top: 28.5%;
+    right: 45%;
+    z-index: 9999;
+    height: 6%;
+    width: 6%;
+    min-width: 55px;
+    padding: 0px;
   }
-  .second_forty_2d{
+
+  .second_forty_2d {
     position: absolute;
     top: 20.5%;
     right: 45%;
@@ -9092,7 +9945,8 @@ input {
     min-width: 57px;
     padding: 0px;
   }
-  .second_forty_2e{
+
+  .second_forty_2e {
     position: absolute;
     top: 20.5%;
     right: 37%;
@@ -9101,7 +9955,8 @@ input {
     width: 8%;
     padding: 0px;
   }
-  .second_forty_2f{
+
+  .second_forty_2f {
     position: absolute;
     top: 16.5%;
     left: 20%;
@@ -9115,7 +9970,7 @@ input {
 
 @media (min-width: 992px) and (max-width: 1050px) {
 
-  .second_Backstage{
+  .second_Backstage {
     position: absolute;
     bottom: 11%;
     left: 37.5%;
@@ -9124,7 +9979,8 @@ input {
     width: 10%;
     padding: 0px;
   }
-  .second_CorridorS{
+
+  .second_CorridorS {
     position: absolute;
     bottom: 9.5%;
     left: 37.5%;
@@ -9133,7 +9989,8 @@ input {
     width: 10%;
     padding: 0px;
   }
-  .second_Distribution{
+
+  .second_Distribution {
     position: absolute;
     top: 35%;
     left: 37.5%;
@@ -9142,8 +9999,8 @@ input {
     width: 10%;
     padding: 0px;
   }
-  
-  .second_FrontstageE{
+
+  .second_FrontstageE {
     position: absolute;
     bottom: 9%;
     left: 47.5%;
@@ -9152,7 +10009,8 @@ input {
     width: 10%;
     padding: 0px;
   }
-  .second_FrontstageW{
+
+  .second_FrontstageW {
     position: absolute;
     bottom: 9%;
     left: 27%;
@@ -9161,8 +10019,8 @@ input {
     width: 11%;
     padding: 0px;
   }
-  
-  .second_Seventy_A{
+
+  .second_Seventy_A {
     position: absolute;
     bottom: 31%;
     right: 35%;
@@ -9171,7 +10029,8 @@ input {
     width: 8%;
     padding: 0px;
   }
-  .second_Seventy_B{
+
+  .second_Seventy_B {
     position: absolute;
     bottom: 20.5%;
     right: 24%;
@@ -9180,7 +10039,8 @@ input {
     width: 8%;
     padding: 0px;
   }
-  .second_forty_2A_1{
+
+  .second_forty_2A_1 {
     position: absolute;
     top: 7.5%;
     left: 20%;
@@ -9189,16 +10049,18 @@ input {
     width: 49%;
     padding: 0px;
   }
-  .second_forty_2A_2{
+
+  .second_forty_2A_2 {
     position: absolute;
-      top: 26.5%;
-      left: 20%;
-      z-index: 9999;
-      height: 8%;
-      width: 28%;
-      padding: 0px;
+    top: 26.5%;
+    left: 20%;
+    z-index: 9999;
+    height: 8%;
+    width: 28%;
+    padding: 0px;
   }
-  .second_forty_2A_3{
+
+  .second_forty_2A_3 {
     position: absolute;
     top: 20.5%;
     right: 31%;
@@ -9208,8 +10070,8 @@ input {
     min-width: 54px;
     padding: 0px;
   }
-  
-  .second_forty_2b{
+
+  .second_forty_2b {
     position: absolute;
     top: 21.5%;
     left: 31%;
@@ -9219,17 +10081,19 @@ input {
     padding: 0px;
     min-width: 0px;
   }
-  .second_forty_2c{
+
+  .second_forty_2c {
     position: absolute;
-      top: 28.5%;
-      right: 45%;
-      z-index: 9999;
-      height: 6%;
-      width: 6%;
-      min-width: 55px;
-      padding: 0px;
+    top: 28.5%;
+    right: 45%;
+    z-index: 9999;
+    height: 6%;
+    width: 6%;
+    min-width: 55px;
+    padding: 0px;
   }
-  .second_forty_2d{
+
+  .second_forty_2d {
     position: absolute;
     top: 20.5%;
     right: 45%;
@@ -9239,7 +10103,8 @@ input {
     min-width: 57px;
     padding: 0px;
   }
-  .second_forty_2e{
+
+  .second_forty_2e {
     position: absolute;
     top: 20.5%;
     right: 37%;
@@ -9248,7 +10113,8 @@ input {
     width: 8%;
     padding: 0px;
   }
-  .second_forty_2f{
+
+  .second_forty_2f {
     position: absolute;
     top: 16.5%;
     left: 20%;
@@ -9262,7 +10128,7 @@ input {
 
 @media (min-width: 1050px) and (max-width: 1199px) {
 
-  .second_Backstage{
+  .second_Backstage {
     position: absolute;
     bottom: 11%;
     left: 37.5%;
@@ -9271,7 +10137,8 @@ input {
     width: 10%;
     padding: 0px;
   }
-  .second_CorridorS{
+
+  .second_CorridorS {
     position: absolute;
     bottom: 9.5%;
     left: 37.5%;
@@ -9280,7 +10147,8 @@ input {
     width: 10%;
     padding: 0px;
   }
-  .second_Distribution{
+
+  .second_Distribution {
     position: absolute;
     top: 35%;
     left: 37.5%;
@@ -9289,8 +10157,8 @@ input {
     width: 10%;
     padding: 0px;
   }
-  
-  .second_FrontstageE{
+
+  .second_FrontstageE {
     position: absolute;
     bottom: 9%;
     left: 47.5%;
@@ -9299,7 +10167,8 @@ input {
     width: 10%;
     padding: 0px;
   }
-  .second_FrontstageW{
+
+  .second_FrontstageW {
     position: absolute;
     bottom: 9%;
     left: 27%;
@@ -9308,8 +10177,8 @@ input {
     width: 11%;
     padding: 0px;
   }
-  
-  .second_Seventy_A{
+
+  .second_Seventy_A {
     position: absolute;
     bottom: 31%;
     right: 35%;
@@ -9317,9 +10186,10 @@ input {
     height: 20%;
     width: 8%;
     padding: 0px;
-  
+
   }
-  .second_Seventy_B{
+
+  .second_Seventy_B {
     position: absolute;
     bottom: 20.5%;
     right: 24%;
@@ -9328,8 +10198,8 @@ input {
     width: 8%;
     padding: 0px;
   }
-  
-  .second_forty_2A_1{
+
+  .second_forty_2A_1 {
     position: absolute;
     top: 7.5%;
     left: 20%;
@@ -9337,18 +10207,20 @@ input {
     height: 9%;
     width: 49%;
     padding: 0px;
-  
+
   }
-  .second_forty_2A_2{
+
+  .second_forty_2A_2 {
     position: absolute;
-      top: 26.5%;
-      left: 20%;
-      z-index: 9999;
-      height: 8%;
-      width: 28%;
-      padding: 0px;
+    top: 26.5%;
+    left: 20%;
+    z-index: 9999;
+    height: 8%;
+    width: 28%;
+    padding: 0px;
   }
-  .second_forty_2A_3{
+
+  .second_forty_2A_3 {
     position: absolute;
     top: 20.5%;
     right: 31%;
@@ -9358,8 +10230,8 @@ input {
     min-width: 54px;
     padding: 0px;
   }
-  
-  .second_forty_2b{
+
+  .second_forty_2b {
     position: absolute;
     top: 21.5%;
     left: 31%;
@@ -9369,17 +10241,19 @@ input {
     padding: 0px;
     min-width: 0px;
   }
-  .second_forty_2c{
+
+  .second_forty_2c {
     position: absolute;
-      top: 28.5%;
-      right: 45%;
-      z-index: 9999;
-      height: 6%;
-      width: 6%;
-      min-width: 55px;
-      padding: 0px;
+    top: 28.5%;
+    right: 45%;
+    z-index: 9999;
+    height: 6%;
+    width: 6%;
+    min-width: 55px;
+    padding: 0px;
   }
-  .second_forty_2d{
+
+  .second_forty_2d {
     position: absolute;
     top: 20.5%;
     right: 45%;
@@ -9389,7 +10263,8 @@ input {
     min-width: 57px;
     padding: 0px;
   }
-  .second_forty_2e{
+
+  .second_forty_2e {
     position: absolute;
     top: 20.5%;
     right: 37%;
@@ -9398,7 +10273,8 @@ input {
     width: 8%;
     padding: 0px;
   }
-  .second_forty_2f{
+
+  .second_forty_2f {
     position: absolute;
     top: 16.5%;
     left: 20%;
@@ -9430,7 +10306,7 @@ input {
     width: 111px;
     padding: 0px;
   }
-  
+
   .area-ma-1 {
     position: absolute;
     bottom: 24%;
@@ -9441,7 +10317,7 @@ input {
     min-width: 23px;
     padding: 0px;
   }
-  
+
   .area-ma-2 {
     position: absolute;
     bottom: 24%;
@@ -9453,7 +10329,7 @@ input {
     padding: 0px;
     min-width: 33px;
   }
-  
+
   .area-ma-3 {
     position: absolute;
     bottom: 24%;
@@ -9464,7 +10340,7 @@ input {
     min-width: 42px;
     padding: 0px;
   }
-  
+
   .area-mb {
     position: absolute;
     top: 13%;
@@ -9475,7 +10351,7 @@ input {
     min-width: 29px;
     padding: 0px;
   }
-  
+
   .area-mu {
     position: absolute;
     top: 13%;
@@ -9486,7 +10362,7 @@ input {
     min-width: 22px;
     padding: 0px;
   }
-  
+
   .area-mt-ms {
     position: absolute;
     top: 13%;
@@ -9497,7 +10373,7 @@ input {
     min-width: 29px;
     padding: 0px;
   }
-  
+
   .Welfare_zones {
     position: absolute;
     top: 13%;
@@ -9508,7 +10384,7 @@ input {
     min-width: 30px;
     padding: 0px;
   }
-  
+
   .Roads {
     position: absolute;
     top: 9%;
@@ -9518,7 +10394,7 @@ input {
     width: 4px;
     min-width: 9px;
     min-width: 0;
-  }  
+  }
 }
 
 @media (min-width: 468px) and (max-width: 549px) {
@@ -9532,7 +10408,7 @@ input {
     width: 143px;
     padding: 0px;
   }
-  
+
   .area-ma-1 {
     position: absolute;
     bottom: 24%;
@@ -9543,7 +10419,7 @@ input {
     min-width: 26px;
     padding: 0px;
   }
-  
+
   .area-ma-2 {
     position: absolute;
     bottom: 24%;
@@ -9555,7 +10431,7 @@ input {
     padding: 0px;
     min-width: 33px;
   }
-  
+
   .area-ma-3 {
     position: absolute;
     bottom: 24%;
@@ -9565,7 +10441,7 @@ input {
     width: 70px;
     padding: 0px;
   }
-  
+
   .area-mb {
     position: absolute;
     top: 13%;
@@ -9576,7 +10452,7 @@ input {
     min-width: 35px;
     padding: 0px;
   }
-  
+
   .area-mu {
     position: absolute;
     top: 13%;
@@ -9587,7 +10463,7 @@ input {
     min-width: 36px;
     padding: 0px;
   }
-  
+
   .area-mt-ms {
     position: absolute;
     top: 13%;
@@ -9598,7 +10474,7 @@ input {
     min-width: 41px;
     padding: 0px;
   }
-  
+
   .Welfare_zones {
     position: absolute;
     top: 13%;
@@ -9609,7 +10485,7 @@ input {
     min-width: 32px;
     padding: 0px;
   }
-  
+
   .Roads {
     position: absolute;
     top: 9%;
@@ -9619,7 +10495,7 @@ input {
     width: 4px;
     min-width: 9px;
     min-width: 0;
-  }  
+  }
 }
 
 @media (min-width: 550px) and (max-width: 649px) {
@@ -9633,7 +10509,7 @@ input {
     width: 171px;
     padding: 0px;
   }
-  
+
   .area-ma-1 {
     position: absolute;
     bottom: 24%;
@@ -9643,7 +10519,7 @@ input {
     width: 65px;
     padding: 0px;
   }
-  
+
   .area-ma-2 {
     position: absolute;
     bottom: 24%;
@@ -9654,7 +10530,7 @@ input {
     padding: 0px;
     min-width: 33px;
   }
-  
+
   .area-ma-3 {
     position: absolute;
     bottom: 24%;
@@ -9664,7 +10540,7 @@ input {
     width: 86px;
     padding: 0px;
   }
-  
+
   .area-mb {
     position: absolute;
     top: 13%;
@@ -9675,7 +10551,7 @@ input {
     min-width: 42px;
     padding: 0px;
   }
-  
+
   .area-mu {
     position: absolute;
     top: 13%;
@@ -9686,7 +10562,7 @@ input {
     min-width: 36px;
     padding: 0px;
   }
-  
+
   .area-mt-ms {
     position: absolute;
     top: 13%;
@@ -9697,7 +10573,7 @@ input {
     min-width: 55px;
     padding: 0px;
   }
-  
+
   .Welfare_zones {
     position: absolute;
     top: 13%;
@@ -9708,7 +10584,7 @@ input {
     min-width: 38px;
     padding: 0px;
   }
-  
+
   .Roads {
     position: absolute;
     top: 9%;
@@ -9718,7 +10594,7 @@ input {
     width: 9px;
     min-width: 9px;
     min-width: 0;
-  }  
+  }
 }
 
 @media (min-width: 550px) and (max-width: 649px) {
@@ -9732,7 +10608,7 @@ input {
     width: 171px;
     padding: 0px;
   }
-  
+
   .area-ma-1 {
     position: absolute;
     bottom: 24%;
@@ -9742,7 +10618,7 @@ input {
     width: 65px;
     padding: 0px;
   }
-  
+
   .area-ma-2 {
     position: absolute;
     bottom: 24%;
@@ -9752,7 +10628,7 @@ input {
     width: 63px;
     padding: 0px;
   }
-  
+
   .area-ma-3 {
     position: absolute;
     bottom: 24%;
@@ -9762,7 +10638,7 @@ input {
     width: 86px;
     padding: 0px;
   }
-  
+
   .area-mb {
     position: absolute;
     top: 13%;
@@ -9773,7 +10649,7 @@ input {
     min-width: 42px;
     padding: 0px;
   }
-  
+
   .area-mu {
     position: absolute;
     top: 13%;
@@ -9784,7 +10660,7 @@ input {
     min-width: 40px;
     padding: 0px;
   }
-  
+
   .area-mt-ms {
     position: absolute;
     top: 13%;
@@ -9795,7 +10671,7 @@ input {
     min-width: 56px;
     padding: 0px;
   }
-  
+
   .Welfare_zones {
     position: absolute;
     top: 13%;
@@ -9806,7 +10682,7 @@ input {
     min-width: 45px;
     padding: 0px;
   }
-  
+
   .Roads {
     position: absolute;
     top: 9%;
@@ -9816,7 +10692,7 @@ input {
     width: 9px;
     min-width: 9px;
     min-width: 0;
-  }  
+  }
 }
 
 @media (min-width: 650px) and (max-width: 749px) {
@@ -9829,7 +10705,7 @@ input {
     width: 200px;
     padding: 0px;
   }
-  
+
   .area-ma-1 {
     position: absolute;
     bottom: 24%;
@@ -9839,7 +10715,7 @@ input {
     width: 75px;
     padding: 0px;
   }
-  
+
   .area-ma-2 {
     position: absolute;
     bottom: 24%;
@@ -9849,7 +10725,7 @@ input {
     width: 72px;
     padding: 0px;
   }
-  
+
   .area-ma-3 {
     position: absolute;
     bottom: 24%;
@@ -9859,7 +10735,7 @@ input {
     width: 99px;
     padding: 0px;
   }
-  
+
   .area-mb {
     position: absolute;
     top: 13%;
@@ -9870,7 +10746,7 @@ input {
     min-width: 46px;
     padding: 0px;
   }
-  
+
   .area-mu {
     position: absolute;
     top: 13%;
@@ -9881,7 +10757,7 @@ input {
     min-width: 43px;
     padding: 0px;
   }
-  
+
   .area-mt-ms {
     position: absolute;
     top: 13%;
@@ -9891,7 +10767,7 @@ input {
     width: 66px;
     padding: 0px;
   }
-  
+
   .Welfare_zones {
     position: absolute;
     top: 13%;
@@ -9902,7 +10778,7 @@ input {
     min-width: 54px;
     padding: 0px;
   }
-  
+
   .Roads {
     position: absolute;
     top: 9%;
@@ -9912,102 +10788,102 @@ input {
     width: 9px;
     min-width: 9px;
     min-width: 0;
-  }  
+  }
 }
 
 @media (min-width: 750px) and (max-width: 850px) {
-    .CT_Dark {
-      position: absolute;
-      top: 8%;
-      left: 27%;
-      z-index: 9999;
-      height: 13px;
-      width: 226px;
-      padding: 0px;
-    }
-    
-    .area-ma-1 {
-      position: absolute;
-      bottom: 24%;
-      left: 23.5%;
-      z-index: 9999;
-      height: 134px;
-      width: 83px;
-      padding: 0px;
-    }
-    
-    .area-ma-2 {
-      position: absolute;
-      bottom: 24%;
-      left: 33%;
-      z-index: 9999;
-      height: 134px;
-      width: 80px;
-      padding: 0px;
-    }
-    
-    .area-ma-3 {
-      position: absolute;
-      bottom: 24%;
-      left: 43%;
-      z-index: 9999;
-      height: 134px;
-      width: 109px;
-      padding: 0px;
-    }
-    
-    .area-mb {
-      position: absolute;
-      top: 13%;
-      left: 40.5%;
-      z-index: 9999;
-      height: 109px;
-      width: 56px;
-      min-width: 46px;
-      padding: 0px;
-    }
-    
-    .area-mu {
-      position: absolute;
-      top: 13%;
-      left: 33.5%;
-      z-index: 9999;
-      height: 110px;
-      width: 33px;
-      min-width: 48px;
-      padding: 0px;
-    }
-    
-    .area-mt-ms {
-      position: absolute;
-      top: 13%;
-      left: 23.5%;
-      z-index: 9999;
-      height: 111px;
-      width: 76px;
-      padding: 0px;
-    }
-    
-    .Welfare_zones {
-      position: absolute;
-      top: 13%;
-      right: 43.5%;
-      z-index: 9999;
-      height: 109px;
-      width: 62px;
-      padding: 0px;
-    }
-    
-    .Roads {
-      position: absolute;
-      top: 9%;
-      left: 23%;
-      z-index: 9999;
-      height: 268px;
-      width: 9px;
-      min-width: 9px;
-      min-width: 0;
-    }  
+  .CT_Dark {
+    position: absolute;
+    top: 8%;
+    left: 27%;
+    z-index: 9999;
+    height: 13px;
+    width: 226px;
+    padding: 0px;
+  }
+
+  .area-ma-1 {
+    position: absolute;
+    bottom: 24%;
+    left: 23.5%;
+    z-index: 9999;
+    height: 134px;
+    width: 83px;
+    padding: 0px;
+  }
+
+  .area-ma-2 {
+    position: absolute;
+    bottom: 24%;
+    left: 33%;
+    z-index: 9999;
+    height: 134px;
+    width: 80px;
+    padding: 0px;
+  }
+
+  .area-ma-3 {
+    position: absolute;
+    bottom: 24%;
+    left: 43%;
+    z-index: 9999;
+    height: 134px;
+    width: 109px;
+    padding: 0px;
+  }
+
+  .area-mb {
+    position: absolute;
+    top: 13%;
+    left: 40.5%;
+    z-index: 9999;
+    height: 109px;
+    width: 56px;
+    min-width: 46px;
+    padding: 0px;
+  }
+
+  .area-mu {
+    position: absolute;
+    top: 13%;
+    left: 33.5%;
+    z-index: 9999;
+    height: 110px;
+    width: 33px;
+    min-width: 48px;
+    padding: 0px;
+  }
+
+  .area-mt-ms {
+    position: absolute;
+    top: 13%;
+    left: 23.5%;
+    z-index: 9999;
+    height: 111px;
+    width: 76px;
+    padding: 0px;
+  }
+
+  .Welfare_zones {
+    position: absolute;
+    top: 13%;
+    right: 43.5%;
+    z-index: 9999;
+    height: 109px;
+    width: 62px;
+    padding: 0px;
+  }
+
+  .Roads {
+    position: absolute;
+    top: 9%;
+    left: 23%;
+    z-index: 9999;
+    height: 268px;
+    width: 9px;
+    min-width: 9px;
+    min-width: 0;
+  }
 }
 
 @media (min-width: 850px) and (max-width: 992px) {
@@ -10020,7 +10896,7 @@ input {
     width: 271px;
     padding: 0px;
   }
-  
+
   .area-ma-1 {
     position: absolute;
     bottom: 24%;
@@ -10030,7 +10906,7 @@ input {
     width: 84px;
     padding: 0px;
   }
-  
+
   .area-ma-2 {
     position: absolute;
     bottom: 24%;
@@ -10040,7 +10916,7 @@ input {
     width: 79px;
     padding: 0px;
   }
-  
+
   .area-ma-3 {
     position: absolute;
     bottom: 24%;
@@ -10050,7 +10926,7 @@ input {
     width: 109px;
     padding: 0px;
   }
-  
+
   .area-mb {
     position: absolute;
     top: 13%;
@@ -10061,7 +10937,7 @@ input {
     min-width: 46px;
     padding: 0px;
   }
-  
+
   .area-mu {
     position: absolute;
     top: 13%;
@@ -10072,7 +10948,7 @@ input {
     min-width: 58px;
     padding: 0px;
   }
-  
+
   .area-mt-ms {
     position: absolute;
     top: 13%;
@@ -10082,7 +10958,7 @@ input {
     width: 88px;
     padding: 0px;
   }
-  
+
   .Welfare_zones {
     position: absolute;
     top: 13%;
@@ -10092,7 +10968,7 @@ input {
     width: 73px;
     padding: 0px;
   }
-  
+
   .Roads {
     position: absolute;
     top: 9%;
@@ -10102,7 +10978,7 @@ input {
     width: 9px;
     min-width: 9px;
     min-width: 0;
-  }  
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1050px) {
@@ -10115,7 +10991,7 @@ input {
     width: 220px;
     padding: 0px;
   }
-  
+
   .area-ma-1 {
     position: absolute;
     bottom: 24%;
@@ -10125,7 +11001,7 @@ input {
     width: 68px;
     padding: 0px;
   }
-  
+
   .area-ma-2 {
     position: absolute;
     bottom: 24%;
@@ -10135,7 +11011,7 @@ input {
     width: 79px;
     padding: 0px;
   }
-  
+
   .area-ma-3 {
     position: absolute;
     bottom: 24%;
@@ -10145,7 +11021,7 @@ input {
     width: 109px;
     padding: 0px;
   }
-  
+
   .area-mb {
     position: absolute;
     top: 13%;
@@ -10156,7 +11032,7 @@ input {
     min-width: 46px;
     padding: 0px;
   }
-  
+
   .area-mu {
     position: absolute;
     top: 13%;
@@ -10167,7 +11043,7 @@ input {
     min-width: 47px;
     padding: 0px;
   }
-  
+
   .area-mt-ms {
     position: absolute;
     top: 13%;
@@ -10177,7 +11053,7 @@ input {
     width: 72px;
     padding: 0px;
   }
-  
+
   .Welfare_zones {
     position: absolute;
     top: 13%;
@@ -10187,7 +11063,7 @@ input {
     width: 58px;
     padding: 0px;
   }
-  
+
   .Roads {
     position: absolute;
     top: 9%;
@@ -10197,7 +11073,7 @@ input {
     width: 9px;
     min-width: 9px;
     min-width: 0;
-  }  
+  }
 }
 
 @media (min-width: 1050px) and (max-width: 1199px) {
@@ -10210,7 +11086,7 @@ input {
     width: 260px;
     padding: 0px;
   }
-  
+
   .area-ma-1 {
     position: absolute;
     bottom: 24%;
@@ -10220,7 +11096,7 @@ input {
     width: 96px;
     padding: 0px;
   }
-  
+
   .area-ma-2 {
     position: absolute;
     bottom: 24%;
@@ -10230,7 +11106,7 @@ input {
     width: 93px;
     padding: 0px;
   }
-  
+
   .area-ma-3 {
     position: absolute;
     bottom: 24%;
@@ -10240,7 +11116,7 @@ input {
     width: 129px;
     padding: 0px;
   }
-  
+
   .area-mb {
     position: absolute;
     top: 13%;
@@ -10250,7 +11126,7 @@ input {
     width: 60px;
     padding: 0px;
   }
-  
+
   .area-mu {
     position: absolute;
     top: 13%;
@@ -10261,7 +11137,7 @@ input {
     min-width: 55px;
     padding: 0px;
   }
-  
+
   .area-mt-ms {
     position: absolute;
     top: 13%;
@@ -10271,7 +11147,7 @@ input {
     width: 86px;
     padding: 0px;
   }
-  
+
   .Welfare_zones {
     position: absolute;
     top: 13%;
@@ -10281,7 +11157,7 @@ input {
     width: 71px;
     padding: 0px;
   }
-  
+
   .Roads {
     position: absolute;
     top: 9%;
@@ -10291,7 +11167,7 @@ input {
     width: 9px;
     min-width: 9px;
     min-width: 0;
-  }  
+  }
 }
 
 @media (min-width: 1200px) and (max-width: 1300px) {
@@ -10304,7 +11180,7 @@ input {
     width: 289px;
     padding: 0px;
   }
-  
+
   .area-ma-1 {
     position: absolute;
     bottom: 24%;
@@ -10314,7 +11190,7 @@ input {
     width: 107px;
     padding: 0px;
   }
-  
+
   .area-ma-2 {
     position: absolute;
     bottom: 24%;
@@ -10324,17 +11200,17 @@ input {
     width: 102px;
     padding: 0px;
   }
-  
+
   .area-ma-3 {
     position: absolute;
     bottom: 24%;
     left: 43%;
     z-index: 9999;
     height: 170px;
-    width: 143px;
+    width: 76px;
     padding: 0px;
   }
-  
+
   .area-mb {
     position: absolute;
     top: 13%;
@@ -10344,7 +11220,7 @@ input {
     width: 72px;
     padding: 0px;
   }
-  
+
   .area-mu {
     position: absolute;
     top: 13%;
@@ -10354,7 +11230,7 @@ input {
     width: 35px;
     padding: 0px;
   }
-  
+
   .area-mt-ms {
     position: absolute;
     top: 13%;
@@ -10364,7 +11240,7 @@ input {
     width: 94px;
     padding: 0px;
   }
-  
+
   .Welfare_zones {
     position: absolute;
     top: 13%;
@@ -10374,7 +11250,7 @@ input {
     width: 79px;
     padding: 0px;
   }
-  
+
   .Roads {
     position: absolute;
     top: 9%;
@@ -10384,7 +11260,7 @@ input {
     width: 9px;
     min-width: 9px;
     min-width: 0;
-  }  
+  }
 }
 
 @media (min-width: 1300px) and (max-width: 1450px) {
@@ -10397,7 +11273,7 @@ input {
     width: 328px;
     padding: 0px;
   }
-  
+
   .area-ma-1 {
     position: absolute;
     bottom: 24%;
@@ -10407,7 +11283,7 @@ input {
     width: 95px;
     padding: 0px;
   }
-  
+
   .area-ma-2 {
     position: absolute;
     bottom: 24%;
@@ -10417,17 +11293,17 @@ input {
     width: 116px;
     padding: 0px;
   }
-  
+
   .area-ma-3 {
     position: absolute;
     bottom: 24%;
     left: 43%;
     z-index: 9999;
     height: 191px;
-    width: 160px;
+    width: 79px;
     padding: 0px;
   }
-  
+
   .area-mb {
     position: absolute;
     top: 13%;
@@ -10437,7 +11313,7 @@ input {
     width: 81px;
     padding: 0px;
   }
-  
+
   .area-mu {
     position: absolute;
     top: 13%;
@@ -10447,7 +11323,7 @@ input {
     width: 70px;
     padding: 0px;
   }
-  
+
   .area-mt-ms {
     position: absolute;
     top: 13%;
@@ -10457,7 +11333,7 @@ input {
     width: 107px;
     padding: 0px;
   }
-  
+
   .Welfare_zones {
     position: absolute;
     top: 13%;
@@ -10467,7 +11343,7 @@ input {
     width: 90px;
     padding: 0px;
   }
-  
+
   .Roads {
     position: absolute;
     top: 9%;
@@ -10477,7 +11353,7 @@ input {
     width: 9px;
     min-width: 9px;
     min-width: 0;
-  }  
+  }
 }
 
 @media (min-width: 1450px) and (max-width: 1600px) {
@@ -10490,7 +11366,7 @@ input {
     width: 378px;
     padding: 0px;
   }
-  
+
   .area-ma-1 {
     position: absolute;
     bottom: 24%;
@@ -10500,7 +11376,7 @@ input {
     width: 118px;
     padding: 0px;
   }
-  
+
   .area-ma-2 {
     position: absolute;
     bottom: 24%;
@@ -10510,17 +11386,17 @@ input {
     width: 118px;
     padding: 0px;
   }
-  
+
   .area-ma-3 {
     position: absolute;
     bottom: 24%;
     left: 43%;
     z-index: 9999;
     height: 215px;
-    width: 175px;
+    width: 85px;
     padding: 0px;
   }
-  
+
   .area-mb {
     position: absolute;
     top: 13%;
@@ -10530,7 +11406,7 @@ input {
     width: 90px;
     padding: 0px;
   }
-  
+
   .area-mu {
     position: absolute;
     top: 13%;
@@ -10540,7 +11416,7 @@ input {
     width: 76px;
     padding: 0px;
   }
-  
+
   .area-mt-ms {
     position: absolute;
     top: 13%;
@@ -10550,7 +11426,7 @@ input {
     width: 120px;
     padding: 0px;
   }
-  
+
   .Welfare_zones {
     position: absolute;
     top: 13%;
@@ -10560,7 +11436,7 @@ input {
     width: 100px;
     padding: 0px;
   }
-  
+
   .Roads {
     position: absolute;
     top: 9%;
@@ -10570,7 +11446,7 @@ input {
     width: 9px;
     min-width: 9px;
     min-width: 0;
-  }  
+  }
 }
 
 @media (min-width: 1600px) and (max-width: 1750px) {
@@ -10583,7 +11459,7 @@ input {
     width: 378px;
     padding: 0px;
   }
-  
+
   .area-ma-1 {
     position: absolute;
     bottom: 24%;
@@ -10593,7 +11469,7 @@ input {
     width: 118px;
     padding: 0px;
   }
-  
+
   .area-ma-2 {
     position: absolute;
     bottom: 24%;
@@ -10603,17 +11479,17 @@ input {
     width: 118px;
     padding: 0px;
   }
-  
+
   .area-ma-3 {
     position: absolute;
     bottom: 24%;
     left: 43%;
     z-index: 9999;
     height: 215px;
-    width: 175px;
+    width: 95px;
     padding: 0px;
   }
-  
+
   .area-mb {
     position: absolute;
     top: 13%;
@@ -10623,7 +11499,7 @@ input {
     width: 90px;
     padding: 0px;
   }
-  
+
   .area-mu {
     position: absolute;
     top: 13%;
@@ -10633,7 +11509,7 @@ input {
     width: 76px;
     padding: 0px;
   }
-  
+
   .area-mt-ms {
     position: absolute;
     top: 13%;
@@ -10643,7 +11519,7 @@ input {
     width: 120px;
     padding: 0px;
   }
-  
+
   .Welfare_zones {
     position: absolute;
     top: 13%;
@@ -10653,7 +11529,7 @@ input {
     width: 100px;
     padding: 0px;
   }
-  
+
   .Roads {
     position: absolute;
     top: 9%;
@@ -10663,7 +11539,7 @@ input {
     width: 9px;
     min-width: 9px;
     min-width: 0;
-  }  
+  }
 }
 
 @media (min-width: 1750px) and (max-width: 1850px) {
@@ -10676,7 +11552,7 @@ input {
     width: 452px;
     padding: 0px;
   }
-  
+
   .area-ma-1 {
     position: absolute;
     bottom: 24%;
@@ -10686,7 +11562,7 @@ input {
     width: 133px;
     padding: 0px;
   }
-  
+
   .area-ma-2 {
     position: absolute;
     bottom: 24%;
@@ -10696,17 +11572,17 @@ input {
     width: 131px;
     padding: 0px;
   }
-  
+
   .area-ma-3 {
     position: absolute;
     bottom: 24%;
     left: 43%;
     z-index: 9999;
     height: 260px;
-    width: 175px;
+    width: 105px;
     padding: 0px;
   }
-  
+
   .area-mb {
     position: absolute;
     top: 13%;
@@ -10716,7 +11592,7 @@ input {
     width: 109px;
     padding: 0px;
   }
-  
+
   .area-mu {
     position: absolute;
     top: 13%;
@@ -10726,7 +11602,7 @@ input {
     width: 96px;
     padding: 0px;
   }
-  
+
   .area-mt-ms {
     position: absolute;
     top: 13%;
@@ -10736,7 +11612,7 @@ input {
     width: 144px;
     padding: 0px;
   }
-  
+
   .Welfare_zones {
     position: absolute;
     top: 13%;
@@ -10746,7 +11622,7 @@ input {
     width: 123px;
     padding: 0px;
   }
-  
+
   .Roads {
     position: absolute;
     top: 9%;
@@ -10756,7 +11632,7 @@ input {
     width: 9px;
     min-width: 9px;
     min-width: 0;
-  }  
+  }
 }
 
 @media (min-width: 1850px) and (max-width: 2000px) {
@@ -10769,7 +11645,7 @@ input {
     width: 491px;
     padding: 0px;
   }
-  
+
   .area-ma-1 {
     position: absolute;
     bottom: 24%;
@@ -10779,7 +11655,7 @@ input {
     width: 133px;
     padding: 0px;
   }
-  
+
   .area-ma-2 {
     position: absolute;
     bottom: 23.5%;
@@ -10789,17 +11665,17 @@ input {
     width: 143px;
     padding: 0px;
   }
-  
+
   .area-ma-3 {
     position: absolute;
     bottom: 24%;
     left: 43%;
     z-index: 9999;
     height: 283px;
-    width: 175px;
+    width: 110px;
     padding: 0px;
   }
-  
+
   .area-mb {
     position: absolute;
     top: 13%;
@@ -10809,7 +11685,7 @@ input {
     width: 119px;
     padding: 0px;
   }
-  
+
   .area-mu {
     position: absolute;
     top: 13%;
@@ -10819,7 +11695,7 @@ input {
     width: 103px;
     padding: 0px;
   }
-  
+
   .area-mt-ms {
     position: absolute;
     top: 13%;
@@ -10829,7 +11705,7 @@ input {
     width: 158px;
     padding: 0px;
   }
-  
+
   .Welfare_zones {
     position: absolute;
     top: 13%;
@@ -10839,7 +11715,7 @@ input {
     width: 135px;
     padding: 0px;
   }
-  
+
   .Roads {
     position: absolute;
     top: 9%;
@@ -10849,13 +11725,1857 @@ input {
     width: 9px;
     min-width: 9px;
     min-width: 0;
-  }  
+  }
+}
+
+@media (min-width: 2000px) and (max-width: 2100px) {
+  .CT_Dark {
+    position: absolute;
+    top: 8%;
+    left: 27%;
+    z-index: 9999;
+    height: 32px;
+    width: 525px;
+    padding: 0px;
+  }
+
+  .area-ma-1 {
+    position: absolute;
+    bottom: 24%;
+    left: 23.4%;
+    z-index: 9999;
+    height: 308px;
+    width: 165px;
+    padding: 0px;
+  }
+
+  .area-ma-2 {
+    position: absolute;
+    bottom: 23.5%;
+    left: 33%;
+    z-index: 9999;
+    height: 308px;
+    width: 152px;
+    padding: 0px;
+  }
+
+  .area-ma-3 {
+    position: absolute;
+    bottom: 24%;
+    left: 43%;
+    z-index: 9999;
+    height: 304px;
+    width: 125px;
+    padding: 0px;
+  }
+
+  .area-mb {
+    position: absolute;
+    top: 13%;
+    left: 40.5%;
+    z-index: 9999;
+    height: 255px;
+    width: 129px;
+    padding: 0px;
+  }
+
+  .area-mu {
+    position: absolute;
+    top: 13%;
+    left: 33.5%;
+    z-index: 9999;
+    height: 257px;
+    width: 110px;
+    padding: 0px;
+  }
+
+  .area-mt-ms {
+    position: absolute;
+    top: 13%;
+    left: 23.5%;
+    z-index: 9999;
+    height: 257px;
+    width: 170px;
+    padding: 0px;
+  }
+
+  .Welfare_zones {
+    position: absolute;
+    top: 13%;
+    right: 43.5%;
+    z-index: 9999;
+    height: 255px;
+    width: 143px;
+    padding: 0px;
+  }
+
+  .Roads {
+    position: absolute;
+    top: 9%;
+    left: 40px;
+    right: 82px;
+    left: 22.8%;
+    z-index: 9999;
+    height: 616px;
+    width: 15px;
+    min-width: 9px;
+  }
+}
+
+@media (min-width: 2100px) and (max-width: 2200px) {
+  .CT_Dark {
+    position: absolute;
+    top: 8%;
+    left: 27%;
+    z-index: 9999;
+    height: 32px;
+    width: 525px;
+    padding: 0px;
+  }
+
+  .area-ma-1 {
+    position: absolute;
+    bottom: 24%;
+    left: 23.4%;
+    z-index: 9999;
+    height: 320px;
+    width: 176px;
+    padding: 0px;
+  }
+
+  .area-ma-2 {
+    position: absolute;
+    bottom: 23.5%;
+    left: 33%;
+    z-index: 9999;
+    height: 325px;
+    width: 163px;
+    padding: 0px;
+  }
+
+  .area-ma-3 {
+    position: absolute;
+    bottom: 24%;
+    left: 43%;
+    z-index: 9999;
+    height: 321px;
+    width: 130px;
+    padding: 0px;
+  }
+
+  .area-mb {
+    position: absolute;
+    top: 13%;
+    left: 40.5%;
+    z-index: 9999;
+    height: 270px;
+    width: 138px;
+    padding: 0px;
+  }
+
+  .area-mu {
+    position: absolute;
+    top: 13%;
+    left: 33.5%;
+    z-index: 9999;
+    height: 271px;
+    width: 117px;
+    padding: 0px;
+  }
+
+  .area-mt-ms {
+    position: absolute;
+    top: 13%;
+    left: 23.5%;
+    z-index: 9999;
+    height: 270px;
+    width: 180px;
+    padding: 0px;
+  }
+
+  .Welfare_zones {
+    position: absolute;
+    top: 13%;
+    right: 43.5%;
+    z-index: 9999;
+    height: 269px;
+    width: 151px;
+    padding: 0px;
+  }
+
+  .Roads {
+    position: absolute;
+    top: 9%;
+    left: 40px;
+    right: 82px;
+    left: 22.8%;
+    z-index: 9999;
+    height: 646px;
+    width: 15px;
+    min-width: 16px;
+  }
+}
+
+@media (min-width: 2200px) and (max-width: 2300px) {
+  .CT_Dark {
+    position: absolute;
+    top: 8%;
+    left: 27%;
+    z-index: 9999;
+    height: 36px;
+    width: 584px;
+    padding: 0px;
+  }
+
+  .area-ma-1 {
+    position: absolute;
+    bottom: 24%;
+    left: 23.4%;
+    z-index: 9999;
+    height: 337px;
+    width: 183px;
+    padding: 0px;
+  }
+
+  .area-ma-2 {
+    position: absolute;
+    bottom: 23.5%;
+    left: 33%;
+    z-index: 9999;
+    height: 340px;
+    width: 171px;
+    padding: 0px;
+  }
+
+  .area-ma-3 {
+    position: absolute;
+    bottom: 24%;
+    left: 43%;
+    z-index: 9999;
+    height: 335px;
+    width: 139px;
+    padding: 0px;
+  }
+
+  .area-mb {
+    position: absolute;
+    top: 13%;
+    left: 40.5%;
+    z-index: 9999;
+    height: 284px;
+    width: 142px;
+    padding: 0px;
+  }
+
+  .area-mu {
+    position: absolute;
+    top: 13%;
+    left: 33.5%;
+    z-index: 9999;
+    height: 283px;
+    width: 124px;
+    padding: 0px;
+  }
+
+  .area-mt-ms {
+    position: absolute;
+    top: 13%;
+    left: 23.5%;
+    z-index: 9999;
+    height: 285px;
+    width: 189px;
+    padding: 0px;
+  }
+
+  .Welfare_zones {
+    position: absolute;
+    top: 13%;
+    right: 43.5%;
+    z-index: 9999;
+    height: 283px;
+    width: 160px;
+    padding: 0px;
+  }
+
+  .Roads {
+    position: absolute;
+    top: 9%;
+    left: 40px;
+    right: 82px;
+    left: 22.8%;
+    z-index: 9999;
+    height: 646px;
+    width: 15px;
+    min-width: 16px;
+  }
+}
+
+@media (min-width: 2300px) and (max-width: 2400px) {
+  .CT_Dark {
+    position: absolute;
+    top: 8%;
+    left: 27%;
+    z-index: 9999;
+    height: 36px;
+    width: 613px;
+    padding: 0px;
+  }
+
+  .area-ma-1 {
+    position: absolute;
+    bottom: 24%;
+    left: 23.4%;
+    z-index: 9999;
+    height: 353px;
+    width: 193px;
+    padding: 0px;
+  }
+
+  .area-ma-2 {
+    position: absolute;
+    bottom: 23.5%;
+    left: 33%;
+    z-index: 9999;
+    height: 358px;
+    width: 179px;
+    padding: 0px;
+  }
+
+  .area-ma-3 {
+    position: absolute;
+    bottom: 24%;
+    left: 43%;
+    z-index: 9999;
+    height: 352px;
+    width: 145px;
+    padding: 0px;
+  }
+
+  .area-mb {
+    position: absolute;
+    top: 13%;
+    left: 40.5%;
+    z-index: 9999;
+    height: 297px;
+    width: 150px;
+    padding: 0px;
+  }
+
+  .area-mu {
+    position: absolute;
+    top: 13%;
+    left: 33.5%;
+    z-index: 9999;
+    height: 298px;
+    width: 129px;
+    padding: 0px;
+  }
+
+  .area-mt-ms {
+    position: absolute;
+    top: 13%;
+    left: 23.5%;
+    z-index: 9999;
+    height: 297px;
+    width: 197px;
+    padding: 0px;
+  }
+
+  .Welfare_zones {
+    position: absolute;
+    top: 13%;
+    right: 43.5%;
+    z-index: 9999;
+    height: 299px;
+    width: 166px;
+    padding: 0px;
+  }
+
+  .Roads {
+    position: absolute;
+    top: 9%;
+    left: 40px;
+    right: 82px;
+    left: 22.8%;
+    z-index: 9999;
+    height: 646px;
+    width: 15px;
+    min-width: 16px;
+  }
+}
+
+@media (min-width: 2400px) and (max-width: 2500px) {
+  .CT_Dark {
+    position: absolute;
+    top: 8%;
+    left: 27%;
+    z-index: 9999;
+    height: 36px;
+    width: 645px;
+    padding: 0px;
+  }
+
+  .area-ma-1 {
+    position: absolute;
+    bottom: 24%;
+    left: 23.4%;
+    z-index: 9999;
+    height: 371px;
+    width: 202px;
+    padding: 0px;
+  }
+
+  .area-ma-2 {
+    position: absolute;
+    bottom: 23.5%;
+    left: 33%;
+    z-index: 9999;
+    height: 375px;
+    width: 190px;
+    padding: 0px;
+  }
+
+  .area-ma-3 {
+    position: absolute;
+    bottom: 24%;
+    left: 43%;
+    z-index: 9999;
+    height: 370px;
+    width: 150px;
+    padding: 0px;
+  }
+
+  .area-mb {
+    position: absolute;
+    top: 13%;
+    left: 40.5%;
+    z-index: 9999;
+    height: 309px;
+    width: 159px;
+    padding: 0px;
+  }
+
+  .area-mu {
+    position: absolute;
+    top: 13%;
+    left: 33.5%;
+    z-index: 9999;
+    height: 310px;
+    width: 134px;
+    padding: 0px;
+  }
+
+  .area-mt-ms {
+    position: absolute;
+    top: 13%;
+    left: 23.5%;
+    z-index: 9999;
+    height: 309px;
+    width: 207px;
+    padding: 0px;
+  }
+
+  .Welfare_zones {
+    position: absolute;
+    top: 13%;
+    right: 43.5%;
+    z-index: 9999;
+    height: 310px;
+    width: 173px;
+    padding: 0px;
+  }
+
+  .Roads {
+    position: absolute;
+    top: 9%;
+    left: 40px;
+    right: 82px;
+    left: 22.8%;
+    z-index: 9999;
+    height: 747px;
+    width: 15px;
+    min-width: 16px;
+  }
+}
+
+@media (min-width: 2500px) and (max-width: 2600px) {
+  .CT_Dark {
+    position: absolute;
+    top: 8%;
+    left: 27%;
+    z-index: 9999;
+    height: 40px;
+    width: 671px;
+    padding: 0px;
+  }
+
+  .area-ma-1 {
+    position: absolute;
+    bottom: 24%;
+    left: 23.4%;
+    z-index: 9999;
+    height: 387px;
+    width: 209px;
+    padding: 0px;
+  }
+
+  .area-ma-2 {
+    position: absolute;
+    bottom: 23.5%;
+    left: 33%;
+    z-index: 9999;
+    height: 395px;
+    width: 195px;
+    padding: 0px;
+  }
+
+  .area-ma-3 {
+    position: absolute;
+    bottom: 24%;
+    left: 43%;
+    z-index: 9999;
+    height: 370px;
+    width: 164px;
+    padding: 0px;
+  }
+
+  .area-mb {
+    position: absolute;
+    top: 13%;
+    left: 40.5%;
+    z-index: 9999;
+    height: 324px;
+    width: 164px;
+    padding: 0px;
+  }
+
+  .area-mu {
+    position: absolute;
+    top: 13%;
+    left: 33.5%;
+    z-index: 9999;
+    height: 325px;
+    width: 141px;
+    padding: 0px;
+  }
+
+  .area-mt-ms {
+    position: absolute;
+    top: 13%;
+    left: 23.5%;
+    z-index: 9999;
+    height: 326px;
+    width: 219px;
+    padding: 0px;
+  }
+
+  .Welfare_zones {
+    position: absolute;
+    top: 13%;
+    right: 43.5%;
+    z-index: 9999;
+    height: 327px;
+    width: 184px;
+    padding: 0px;
+  }
+
+  .Roads {
+    position: absolute;
+    top: 9%;
+    left: 40px;
+    right: 82px;
+    left: 22.8%;
+    z-index: 9999;
+    height: 782px;
+    width: 15px;
+    min-width: 16px;
+  }
+}
+
+@media (min-width: 2600px) and (max-width: 2700px) {
+  .CT_Dark {
+    position: absolute;
+    top: 8%;
+    left: 27%;
+    z-index: 9999;
+    height: 42px;
+    width: 703px;
+    padding: 0px;
+  }
+
+  .area-ma-1 {
+    position: absolute;
+    bottom: 24%;
+    left: 23.4%;
+    z-index: 9999;
+    height: 411px;
+    width: 221px;
+    padding: 0px;
+  }
+
+  .area-ma-2 {
+    position: absolute;
+    bottom: 23.5%;
+    left: 33%;
+    z-index: 9999;
+    height: 406px;
+    width: 206px;
+    padding: 0px;
+  }
+
+  .area-ma-3 {
+    position: absolute;
+    bottom: 24%;
+    left: 43%;
+    z-index: 9999;
+    height: 412px;
+    width: 170px;
+    padding: 0px;
+  }
+
+  .area-mb {
+    position: absolute;
+    top: 13%;
+    left: 40.5%;
+    z-index: 9999;
+    height: 342px;
+    width: 172px;
+    padding: 0px;
+  }
+
+  .area-mu {
+    position: absolute;
+    top: 13%;
+    left: 33.5%;
+    z-index: 9999;
+    height: 342px;
+    width: 145px;
+    padding: 0px;
+  }
+
+  .area-mt-ms {
+    position: absolute;
+    top: 13%;
+    left: 23.5%;
+    z-index: 9999;
+    height: 343px;
+    width: 227px;
+    padding: 0px;
+  }
+
+  .Welfare_zones {
+    position: absolute;
+    top: 13%;
+    right: 43.5%;
+    z-index: 9999;
+    height: 343px;
+    width: 189px;
+    padding: 0px;
+  }
+
+  .Roads {
+    position: absolute;
+    top: 9%;
+    left: 40px;
+    right: 82px;
+    left: 22.8%;
+    z-index: 9999;
+    height: 823px;
+    width: 15px;
+    min-width: 20px;
+  }
+}
+
+@media (min-width: 2600px) and (max-width: 2700px) {
+  .CT_Dark {
+    position: absolute;
+    top: 8%;
+    left: 27%;
+    z-index: 9999;
+    height: 42px;
+    width: 703px;
+    padding: 0px;
+  }
+
+  .area-ma-1 {
+    position: absolute;
+    bottom: 24%;
+    left: 23.4%;
+    z-index: 9999;
+    height: 411px;
+    width: 221px;
+    padding: 0px;
+  }
+
+  .area-ma-2 {
+    position: absolute;
+    bottom: 23.5%;
+    left: 33%;
+    z-index: 9999;
+    height: 406px;
+    width: 206px;
+    padding: 0px;
+  }
+
+  .area-ma-3 {
+    position: absolute;
+    bottom: 24%;
+    left: 43%;
+    z-index: 9999;
+    height: 412px;
+    width: 170px;
+    padding: 0px;
+  }
+
+  .area-mb {
+    position: absolute;
+    top: 13%;
+    left: 40.5%;
+    z-index: 9999;
+    height: 342px;
+    width: 172px;
+    padding: 0px;
+  }
+
+  .area-mu {
+    position: absolute;
+    top: 13%;
+    left: 33.5%;
+    z-index: 9999;
+    height: 342px;
+    width: 145px;
+    padding: 0px;
+  }
+
+  .area-mt-ms {
+    position: absolute;
+    top: 13%;
+    left: 23.5%;
+    z-index: 9999;
+    height: 343px;
+    width: 227px;
+    padding: 0px;
+  }
+
+  .Welfare_zones {
+    position: absolute;
+    top: 13%;
+    right: 43.5%;
+    z-index: 9999;
+    height: 343px;
+    width: 189px;
+    padding: 0px;
+  }
+
+  .Roads {
+    position: absolute;
+    top: 9%;
+    left: 40px;
+    right: 82px;
+    left: 22.8%;
+    z-index: 9999;
+    height: 823px;
+    width: 15px;
+    min-width: 20px;
+  }
+}
+
+@media (min-width: 2700px) and (max-width: 2800px) {
+  .CT_Dark {
+    position: absolute;
+    top: 8%;
+    left: 27%;
+    z-index: 9999;
+    height: 42px;
+    width: 730px;
+    padding: 0px;
+  }
+
+  .area-ma-1 {
+    position: absolute;
+    bottom: 24%;
+    left: 23.4%;
+    z-index: 9999;
+    height: 416px;
+    width: 228px;
+    padding: 0px;
+  }
+
+  .area-ma-2 {
+    position: absolute;
+    bottom: 23.5%;
+    left: 33%;
+    z-index: 9999;
+    height: 425px;
+    width: 213px;
+    padding: 0px;
+  }
+
+  .area-ma-3 {
+    position: absolute;
+    bottom: 23.5%;
+    left: 43%;
+    z-index: 9999;
+    height: 423px;
+    width: 170px;
+    padding: 0px;
+  }
+
+  .area-mb {
+    position: absolute;
+    top: 13%;
+    left: 40.5%;
+    z-index: 9999;
+    height: 356px;
+    width: 178px;
+    padding: 0px;
+  }
+
+  .area-mu {
+    position: absolute;
+    top: 13%;
+    left: 33.5%;
+    z-index: 9999;
+    height: 353px;
+    width: 153px;
+    padding: 0px;
+  }
+
+  .area-mt-ms {
+    position: absolute;
+    top: 13%;
+    left: 23.5%;
+    z-index: 9999;
+    height: 355px;
+    width: 245px;
+    padding: 0px;
+  }
+
+  .Welfare_zones {
+    position: absolute;
+    top: 13%;
+    right: 43.5%;
+    z-index: 9999;
+    height: 356px;
+    width: 199px;
+    padding: 0px;
+  }
+
+  .Roads {
+    position: absolute;
+    top: 9%;
+    left: 40px;
+    right: 82px;
+    left: 22.8%;
+    z-index: 9999;
+    height: 823px;
+    width: 15px;
+    min-width: 22px;
+  }
+}
+
+@media (min-width: 2800px) and (max-width: 2900px) {
+  .CT_Dark {
+    position: absolute;
+    top: 8%;
+    left: 27%;
+    z-index: 9999;
+    height: 47px;
+    width: 761px;
+    padding: 0px;
+  }
+
+  .area-ma-1 {
+    position: absolute;
+    bottom: 23.5%;
+    left: 23.4%;
+    z-index: 9999;
+    height: 440px;
+    width: 238px;
+    padding: 0px;
+  }
+
+  .area-ma-2 {
+    position: absolute;
+    bottom: 23.5%;
+    left: 33%;
+    z-index: 9999;
+    height: 442px;
+    width: 221px;
+    padding: 0px;
+  }
+
+  .area-ma-3 {
+    position: absolute;
+    bottom: 23.5%;
+    left: 43%;
+    z-index: 9999;
+    height: 440px;
+    width: 185px;
+    padding: 0px;
+  }
+
+  .area-mb {
+    position: absolute;
+    top: 13%;
+    left: 40.5%;
+    z-index: 9999;
+    height: 369px;
+    width: 188px;
+    padding: 0px;
+  }
+
+  .area-mu {
+    position: absolute;
+    top: 13%;
+    left: 33.5%;
+    z-index: 9999;
+    height: 370px;
+    width: 160px;
+    padding: 0px;
+  }
+
+  .area-mt-ms {
+    position: absolute;
+    top: 13%;
+    left: 23.5%;
+    z-index: 9999;
+    height: 369px;
+    width: 244px;
+    padding: 0px;
+  }
+
+  .Welfare_zones {
+    position: absolute;
+    top: 13%;
+    right: 43.5%;
+    z-index: 9999;
+    height: 370px;
+    width: 208px;
+    padding: 0px;
+  }
+
+  .Roads {
+    position: absolute;
+    top: 9%;
+    left: 40px;
+    right: 82px;
+    left: 22.8%;
+    z-index: 9999;
+    height: 882px;
+    width: 15px;
+    min-width: 22px;
+  }
+}
+
+@media (min-width: 2900px) and (max-width: 3000px) {
+  .CT_Dark {
+    position: absolute;
+    top: 8%;
+    left: 27%;
+    z-index: 9999;
+    height: 47px;
+    width: 790px;
+    padding: 0px;
+  }
+
+  .area-ma-1 {
+    position: absolute;
+    bottom: 23.5%;
+    left: 23.4%;
+    z-index: 9999;
+    height: 440px;
+    width: 238px;
+    padding: 0px;
+  }
+
+  .area-ma-2 {
+    position: absolute;
+    bottom: 23.5%;
+    left: 33%;
+    z-index: 9999;
+    height: 442px;
+    width: 221px;
+    padding: 0px;
+  }
+
+  .area-ma-3 {
+    position: absolute;
+    bottom: 23.5%;
+    left: 43%;
+    z-index: 9999;
+    height: 440px;
+    width: 185px;
+    padding: 0px;
+  }
+
+  .area-mb {
+    position: absolute;
+    top: 13%;
+    left: 40.5%;
+    z-index: 9999;
+    height: 369px;
+    width: 188px;
+    padding: 0px;
+  }
+
+  .area-mu {
+    position: absolute;
+    top: 13%;
+    left: 33.5%;
+    z-index: 9999;
+    height: 370px;
+    width: 160px;
+    padding: 0px;
+  }
+
+  .area-mt-ms {
+    position: absolute;
+    top: 13%;
+    left: 23.5%;
+    z-index: 9999;
+    height: 369px;
+    width: 244px;
+    padding: 0px;
+  }
+
+  .Welfare_zones {
+    position: absolute;
+    top: 13%;
+    right: 43.5%;
+    z-index: 9999;
+    height: 370px;
+    width: 208px;
+    padding: 0px;
+  }
+
+  .Roads {
+    position: absolute;
+    top: 9%;
+    left: 40px;
+    right: 82px;
+    left: 22.8%;
+    z-index: 9999;
+    height: 882px;
+    width: 15px;
+    min-width: 22px;
+  }
 }
 
 /* End External Areas Responsive */
 
 /* Background Responsive */
-.btn-hover:hover{
+
+.btn-hover:hover {
   /* background-color: #ff000080!important; */
-  background-color: rgba(0, 0, 0, 0.5)!important;
+  background-color: rgba(0, 0, 0, 0.5) !important;
 }
+
+
+/* MB Ground Floor...................START*/
+
+.MB020_A {
+  position: absolute;
+  top: 7.5%;
+  left: 26.5%;
+  z-index: 9999;
+  height: 15%;
+  width: 13%;
+  padding: 0px;
+}
+
+.MB020_B {
+  position: absolute;
+  top: 7.5%;
+  left: 39.5%;
+  z-index: 9999;
+  height: 15%;
+  width: 8.5%;
+  padding: 0px;
+}
+
+.MB020_C {
+  position: absolute;
+  top: 7.5%;
+  left: 47.5%;
+  z-index: 9999;
+  height: 15%;
+  width: 20.5%;
+  padding: 0px;
+}
+
+.MB020_D {
+  position: absolute;
+  top: 7.5%;
+  right: 19.5%;
+  z-index: 9999;
+  height: 10%;
+  width: 12.5%;
+  padding: 0px;
+}
+
+.MB020_E {
+  position: absolute;
+  top: 52%;
+  left: 18%;
+  z-index: 9999;
+  height: 16%;
+  width: 19.5%;
+  padding: 0px;
+}
+
+.MB020_F {
+  position: absolute;
+  top: 68%;
+  left: 26%;
+  z-index: 9999;
+  height: 11%;
+  width: 16.5%;
+  padding: 0px;
+}
+
+.MB020_G {
+  position: absolute;
+  bottom: 7.5%;
+  left: 18%;
+  z-index: 9999;
+  height: 14%;
+  width: 20.5%;
+  padding: 0px;
+}
+
+.MB020_H {
+  position: absolute;
+  top: 26.5%;
+  right: 25.5%;
+  z-index: 9999;
+  height: 10%;
+  width: 12%;
+  padding: 0px;
+}
+
+.MB020_I {
+  position: absolute;
+  top: 39%;
+  right: 25.5%;
+  z-index: 9999;
+  height: 9%;
+  width: 15.5%;
+  padding: 0px;
+}
+
+.MB020_J {
+  position: absolute;
+  top: 51%;
+  right: 25.5%;
+  z-index: 9999;
+  height: 10%;
+  width: 12%;
+  padding: 0px;
+}
+
+.MB020_K {
+  position: absolute;
+  bottom: 28%;
+  right: 25.5%;
+  z-index: 9999;
+  height: 12.5%;
+  width: 12%;
+  padding: 0px;
+}
+
+.MB020_L {
+  position: absolute;
+  bottom: 24%;
+  right: 37.5%;
+  z-index: 9999;
+  height: 11%;
+  width: 0%;
+  min-width: 49px;
+  padding: 0px;
+}
+
+.MB020_M {
+  position: absolute;
+  bottom: 34%;
+  right: 37%;
+  z-index: 9999;
+  height: 15%;
+  width: 15%;
+  min-width: 49px;
+  padding: 0px;
+}
+
+.MB020_N {
+  position: absolute;
+  top: 27%;
+  right: 37%;
+  z-index: 9999;
+  height: 9.5%;
+  width: 10%;
+  min-width: 49px;
+  padding: 0px;
+}
+
+.MB020_P {
+  position: absolute;
+  top: 45%;
+  left: 48%;
+  z-index: 9999;
+  height: 6%;
+  width: 7.5%;
+  min-width: 49px;
+  padding: 0px;
+}
+
+.MB020_Q1 {
+  position: absolute;
+  top: 27%;
+  left: 27%;
+  z-index: 9999;
+  height: 25%;
+  width: 15.5%;
+  min-width: 49px;
+  padding: 0px;
+}
+
+.MB020_Q2 {
+  position: absolute;
+  top: 65.5%;
+  left: 48%;
+  z-index: 9999;
+  height: 16.5%;
+  width: 9%;
+  padding: 0px;
+}
+
+.MB020_Q3 {
+  position: absolute;
+  top: 76%;
+  left: 57%;
+  z-index: 9999;
+  height: 7%;
+  width: 6%;
+  padding: 0px;
+}
+
+.MB020_Q4 {
+  position: absolute;
+  top: 27%;
+  left: 18%;
+  z-index: 9999;
+  height: 25%;
+  width: 9%;
+  min-width: 49px;
+  padding: 0px;
+}
+
+.MB020_R1 {
+  position: absolute;
+  top: 22%;
+  left: 23%;
+  z-index: 9999;
+  height: 5%;
+  width: 58%;
+  min-width: 49px;
+  padding: 0px;
+}
+
+.MB020_R2 {
+  position: absolute;
+  bottom: 7.5%;
+  right: 19%;
+  z-index: 9999;
+  height: 3.5%;
+  width: 12%;
+  padding: 0px;
+}
+
+.MB020_R3 {
+  position: absolute;
+  top: 12.5%;
+  left: 18%;
+  z-index: 9999;
+  height: 5%;
+  width: 5%;
+  padding: 0px;
+}
+
+.MB020_S1 {
+  position: absolute;
+  top: 7%;
+  left: 18%;
+  z-index: 9999;
+  height: 6%;
+  width: 8%;
+  padding: 0px;
+}
+
+.MB020_S2 {
+  position: absolute;
+  top: 17%;
+  right: 19.5%;
+  z-index: 9999;
+  height: 5.5%;
+  width: 7.5%;
+  padding: 0px;
+}
+
+.MB020_S3 {
+  position: absolute;
+  bottom: 7.5%;
+  left: 38%;
+  z-index: 9999;
+  height: 10.5%;
+  width: 3.5%;
+  min-width: 56px;
+  padding: 0px;
+}
+
+.MB020_T {
+  position: absolute;
+  bottom: 8.5%;
+  left: 42.5%;
+  z-index: 9999;
+  height: 64.5%;
+  width: 3.5%;
+  min-width: 68px;
+  padding: 0px;
+}
+
+.MB020_U {
+  position: absolute;
+  bottom: 10.5%;
+  right: 22%;
+  z-index: 9999;
+  height: 17%;
+  width: 15%;
+  padding: 0px;
+}
+
+.MB020_V1 {
+  position: absolute;
+  top: 21%;
+  left: 18.5%;
+  z-index: 9999;
+  height: 6%;
+  width: 5%;
+  min-width: 61px;
+  padding: 0px;
+}
+
+.MB020_V2 {
+  position: absolute;
+  top: 62.5%;
+  left: 37.5%;
+  z-index: 9999;
+  height: 5.5%;
+  width: 3.5%;
+  padding: 0px;
+}
+
+.MB020_X1 {
+  position: absolute;
+  top: 30%;
+  right: 47%;
+  z-index: 9999;
+  height: 15.5%;
+  width: 5%;
+  min-width: 32px;
+  padding: 0px;
+}
+
+.MB020_X2 {
+  position: absolute;
+  bottom: 7.5%;
+  left: 47.5%;
+  z-index: 9999;
+  height: 11%;
+  width: 6.5%;
+  min-width: 68px;
+  padding: 0px;
+}
+
+/* MB Ground Floor.................END*/
+
+
+/* MB First Floor...................START*/
+
+.MB130_A {
+  position: absolute;
+  top: 7%;
+  left: 29.5%;
+  z-index: 9999;
+  height: 15%;
+  width: 10%;
+  padding: 0px;
+}
+
+.MB130_B {
+  position: absolute;
+  top: 11%;
+  left: 39.5%;
+  z-index: 9999;
+  height: 11.5%;
+  width: 20%;
+  padding: 0px;
+}
+
+.MB130_C {
+  position: absolute;
+  top: 7%;
+  right: 18%;
+  z-index: 9999;
+  height: 10%;
+  width: 23%;
+  padding: 0px;
+}
+
+.MB130_D {
+  position: absolute;
+  top: 35%;
+  left: 18%;
+  z-index: 9999;
+  height: 17.5%;
+  width: 24%;
+  padding: 0px;
+}
+
+.MB130_E {
+  position: absolute;
+  top: 52%;
+  left: 18%;
+  z-index: 9999;
+  height: 10.5%;
+  width: 24%;
+  padding: 0px;
+}
+
+.MB130_F {
+  position: absolute;
+  top: 26.5%;
+  right: 36.5%;
+  z-index: 9999;
+  height: 12.5%;
+  width: 8%;
+  padding: 0px;
+}
+
+.MB130_G {
+  position: absolute;
+  top: 48%;
+  right: 36.5%;
+  z-index: 9999;
+  height: 12.5%;
+  width: 8%;
+  padding: 0px;
+}
+
+.MB130_H {
+  position: absolute;
+  top: 26.5%;
+  right: 18%;
+  z-index: 9999;
+  height: 66%;
+  width: 19%;
+  padding: 0px;
+}
+
+.MB130_I {
+  position: absolute;
+  top: 45%;
+  right: 44.5%;
+  z-index: 9999;
+  height: 15%;
+  width: 7.5%;
+  padding: 0px;
+}
+
+.MB130_J {
+  position: absolute;
+  top: 60.5%;
+  right: 37%;
+  z-index: 9999;
+  height: 5%;
+  width: 15%;
+  padding: 0px;
+}
+
+.MB130_K {
+  position: absolute;
+  bottom: 18.5%;
+  left: 18%;
+  z-index: 9999;
+  height: 14%;
+  width: 24%;
+  padding: 0px;
+}
+
+.MB130_L {
+  position: absolute;
+  bottom: 8.5%;
+  right: 42.5%;
+  z-index: 9999;
+  height: 24%;
+  width: 9.5%;
+  padding: 0px;
+}
+
+.MB130_M {
+  position: absolute;
+  top: 26.5%;
+  left: 37.5%;
+  z-index: 9999;
+  height: 8.5%;
+  width: 4%;
+  padding: 0px;
+}
+
+.MB130_N {
+  position: absolute;
+  top: 26.5%;
+  right: 44.5%;
+  z-index: 9999;
+  height: 15%;
+  width: 7.5%;
+  padding: 0px;
+}
+
+.MB130_O {
+  position: absolute;
+  bottom: 8%;
+  left: 18%;
+  z-index: 9999;
+  height: 6%;
+  width: -8%;
+  min-width: 20px;
+  padding: 0px;
+}
+
+.MB130_R1 {
+  position: absolute;
+  top: 22%;
+  left: 23%;
+  z-index: 9999;
+  height: 5%;
+  width: 59%;
+  padding: 0px;
+}
+
+.MB130_S1 {
+  position: absolute;
+  top: 7%;
+  left: 17.5%;
+  z-index: 9999;
+  height: 5.5%;
+  width: 8.5%;
+  padding: 0px;
+}
+
+.MB130_S2 {
+  position: absolute;
+  top: 16.5%;
+  right: 18%;
+  z-index: 9999;
+  height: 5.5%;
+  width: 8%;
+  padding: 0px;
+}
+
+.MB130_S3 {
+  position: absolute;
+  bottom: 7.5%;
+  left: 38%;
+  z-index: 9999;
+  height: 10.5%;
+  width: 4%;
+  min-width: 54px;
+  padding: 0px;
+}
+
+.MB130_T {
+  position: absolute;
+  top: 26.5%;
+  left: 42%;
+  z-index: 9999;
+  height: 65.5%;
+  width: 6%;
+  padding: 0px;
+}
+
+.MB130_V1 {
+  position: absolute;
+  top: 21%;
+  left: 18%;
+  z-index: 9999;
+  height: 5.5%;
+  width: 4.5%;
+  padding: 0px;
+}
+
+.MB130_V2 {
+  position: absolute;
+  bottom: 32%;
+  left: 37.5%;
+  z-index: 9999;
+  height: 5.5%;
+  width: 4%;
+  min-width: 61px;
+  padding: 0px;
+}
+
+.MB130_Z1 {
+  position: absolute;
+  top: 12%;
+  left: 18%;
+  z-index: 9999;
+  height: 9.5%;
+  width: 4.5%;
+  padding: 0px;
+}
+
+.MB130_Z2 {
+  position: absolute;
+  top: 26.5%;
+  left: 25.5%;
+  z-index: 9999;
+  height: 4%;
+  width: 12%;
+  padding: 0px;
+}
+
+.MB130_Z3 {
+  position: absolute;
+  top: 7%;
+  left: 42%;
+  z-index: 9999;
+  height: 4.5%;
+  width: 6%;
+  padding: 0px;
+}
+
+.MB130_Z4 {
+  position: absolute;
+  top: 6.5%;
+  right: 40.5%;
+  z-index: 9999;
+  height: 4.5%;
+  width: 4%;
+  min-width: 55px;
+  padding: 0px;
+}
+
+.MB130_Z5 {
+  position: absolute;
+  top: 16.5%;
+  right: 26%;
+  z-index: 9999;
+  height: 5.5%;
+  width: 0%;
+  min-width: 23px;
+  padding: 0px;
+}
+
+/* MB First Floor...................END*/
+
+/* MB Second Floor.................START*/
+.MB240_A {
+  position: absolute;
+  bottom: 18%;
+  left: 18%;
+  z-index: 9999;
+  height: 55.5%;
+  width: 62.5%;
+  padding: 0px;
+}
+
+.MB240_B {
+  position: absolute;
+  top: 7%;
+  left: 27%;
+  z-index: 9999;
+  height: 6%;
+  width: 5.5%;
+  padding: 0px;
+}
+
+.MB240_C {
+  position: absolute;
+  bottom: 8%;
+  left: 19.5%;
+  z-index: 9999;
+  height: 10%;
+  width: 6%;
+  padding: 0px;
+}
+
+.MB240_D {
+  position: absolute;
+  top: 7%;
+  right: 19.5%;
+  z-index: 9999;
+  height: 7%;
+  width: 22.5%;
+  padding: 0px;
+}
+
+.MB240_E {
+  position: absolute;
+  bottom: 8%;
+  left: 25.5%;
+  z-index: 9999;
+  height: 10%;
+  width: 9%;
+  padding: 0px;
+}
+
+.MB240_F {
+  position: absolute;
+  bottom: 8%;
+  left: 51%;
+  z-index: 9999;
+  height: 10%;
+  width: 7%;
+  padding: 0px;
+}
+
+.MB240_G {
+  position: absolute;
+  top: 7%;
+  left: 32.5%;
+  z-index: 9999;
+  height: 6%;
+  width: 6.5%;
+  padding: 0px;
+}
+
+.MB240_H {
+  position: absolute;
+  top: 8%;
+  left: 47.5%;
+  z-index: 9999;
+  height: 5.5%;
+  width: 6.5%;
+  padding: 0px;
+}
+
+.MB240_I {
+  position: absolute;
+  bottom: 8%;
+  left: 43.5%;
+  z-index: 9999;
+  height: 5%;
+  width: 7.5%;
+  padding: 0px;
+}
+
+.MB240_J {
+  position: absolute;
+  bottom: 8%;
+  left: 17.5%;
+  z-index: 9999;
+  height: 10%;
+  width: 2%;
+  min-width: 1px;
+  padding: 0px;
+}
+
+.MB240_S1 {
+  position: absolute;
+  top: 7%;
+  left: 18%;
+  z-index: 9999;
+  height: 6%;
+  width: 7.5%;
+  padding: 0px;
+}
+
+.MB240_S2 {
+  position: absolute;
+  top: 16.5%;
+  right: 19.5%;
+  z-index: 9999;
+  height: 6%;
+  width: 8%;
+  padding: 0px;
+}
+
+.MB240_S3 {
+  position: absolute;
+  bottom: 8%;
+  left: 37.5%;
+  z-index: 9999;
+  height: 10%;
+  width: 3%;
+  min-width: 4.5%;
+  padding: 0px;
+}
+
+.MB240_V1 {
+  position: absolute;
+  top: 21%;
+  left: 18%;
+  z-index: 9999;
+  height: 5.5%;
+  width: 4.5%;
+  padding: 0px;
+}
+
+.MB240_Z1 {
+  position: absolute;
+  top: 13%;
+  left: 18%;
+  z-index: 9999;
+  height: 8%;
+  width: 2.5%;
+  min-width: 4%;
+  padding: 0px;
+}
+
+.MB240_Z2 {
+  position: absolute;
+  top: 16.5%;
+  right: 27.5%;
+  z-index: 9999;
+  height: 6%;
+  width: 2%;
+  min-width: 20px;
+  padding: 0px;
+}
+
+.MB240_Z3 {
+  position: absolute;
+  top: 7%;
+  left: 41.5%;
+  z-index: 9999;
+  height: 2.5%;
+  width: 5.5%;
+  padding: 0px;
+}
+
+.MB240_Z4 {
+  position: absolute;
+  top: 7%;
+  left: 54.5%;
+  z-index: 9999;
+  height: 6%;
+  width: 2.5%;
+  min-width: 4%;
+  padding: 0px;
+}
+
+/* MB Second Floor...................END*/
+
+/* MB Roof Floor ...................START*/
+
+.MB_Roof {
+  position: absolute;
+  top: 12%;
+  left: 20%;
+  z-index: 9999;
+  height: 79.5%;
+  width: 61.5%;
+  padding: 0px;
+}
+
+/* MB Roof Floor...................END*/
