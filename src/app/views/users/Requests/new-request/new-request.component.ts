@@ -2155,8 +2155,8 @@ export class NewRequestComponent implements OnInit {
           this.planType = "MB.1";
           this.pdfSrc = "assets/images/plans/MB/FirstFloor/MB_FirstFloor.pdf";
           this.blocks = [
-            { name: "MB130.A", pdfSrc: "assets/images/plans/MB/FirstFloor/Zones/MB130.B.pdf", className: 'MB130_A', planType: 'MB.1' },
-            { name: "MB130.B", pdfSrc: "assets/images/plans/MB/FirstFloor/Zones/MB130.A.pdf", className: 'MB130_B', planType: 'MB.1' },
+            { name: "MB130.A", pdfSrc: "assets/images/plans/MB/FirstFloor/Zones/MB130.A.pdf", className: 'MB130_A', planType: 'MB.1' },
+            { name: "MB130.B", pdfSrc: "assets/images/plans/MB/FirstFloor/Zones/MB130.B.pdf", className: 'MB130_B', planType: 'MB.1' },
             { name: "MB130.C", pdfSrc: "assets/images/plans/MB/FirstFloor/Zones/MB130.C.pdf", className: 'MB130_C', planType: 'MB.1' },
             { name: "MB130.D", pdfSrc: "assets/images/plans/MB/FirstFloor/Zones/MB130.D.pdf", className: 'MB130_D', planType: 'MB.1' },
             { name: "MB130.E", pdfSrc: "assets/images/plans/MB/FirstFloor/Zones/MB130.E.pdf", className: 'MB130_E', planType: 'MB.1' },

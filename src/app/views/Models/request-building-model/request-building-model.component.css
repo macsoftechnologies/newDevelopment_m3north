@@ -11028,18 +11028,17 @@ mat-checkbox ::ng-deep .mat-checkbox-inner-container {
 
 /* MB MB.2 First Floor.................START*/
 
-.MB-30_A-1 {
+.MB-30_A-1{
+  position: absolute;
+  z-index: 9999;
+  top: 48%;
+  left: 39%;
+}
+.MB-30_B-1{
   position: absolute;
   z-index: 9999;
   top: 39%;
   left: 47%;
-}
-
-.MB-30_B-1 {
-  position: absolute;
-  z-index: 9999;
-  top: 30%;
-  left: 39%;
 }
 
 .MB-30_C-1 {
@@ -11385,11 +11384,17 @@ mat-checkbox ::ng-deep .mat-checkbox-inner-container {
   left: 66%;
 }
 
-.MB-30_L-3 {
+/* .MB-30_L-3 {
   position: absolute;
   z-index: 9999;
   top: 6%;
   left: 28%;
+} */
+.MB-30_L-3{
+  position: absolute;
+  z-index: 9999;
+  bottom: 41%;
+  left: 48%;
 }
 
 .MB-30_L-4 {
