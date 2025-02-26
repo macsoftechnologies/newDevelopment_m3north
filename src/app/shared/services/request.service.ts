@@ -5428,6 +5428,2004 @@ export class RequestService {
 
       // ends mb section
 
+            // start MA.II 0 section
+      {
+        planType: "MA.II 0",
+        zoneList: [
+          {
+            floorName: '20.GF.CorridorN',
+            zoneSubList: [
+                {
+                value: '20.GF-S.200',
+                className: "MA_20_GFN-1",
+                isSelected: false
+                },
+            ]
+          },
+          {
+            floorName: '20.GF.CorridorS',
+            zoneSubList: [
+                {
+                value: '20.GF-S.270',
+                className:"MA_20_GFS-1",
+                isSelected: false
+                },
+            ]
+          },
+          {
+            floorName: '50.0A',
+            zoneSubList: [
+              {
+                value: '50.0A-S.512.1',
+                className:"MA_II_50_0A-1",
+                isSelected: false
+                },
+                {
+                value: '50.0A-S.518',
+                className:"MA_II_50_0A-2",
+                isSelected: false
+                },
+                {
+                value: '50.0A-S.512',
+                className:"MA_II_50_0A-3",
+                isSelected: false
+                },
+                {
+                value: '50.0A-S.518.1',
+                className:"MA_II_50_0A-4",
+                isSelected: false
+                },
+                {
+                value: '50.0A-S.512.2',
+                className:"MA_II_50_0A-5",
+                isSelected: false
+                },
+                {
+                value: '50.0A-S.520',
+                className:"MA_II_50_0A-6",
+                isSelected: false
+                },
+            ]
+          },
+          {
+            floorName: '50.0B',
+            zoneSubList: [
+                {
+                value: '50.0B-S.516',
+                className:"MA_II_50_0B-1",
+                isSelected: false
+                },
+            ]
+          },
+          {
+            floorName: '50.0C',
+            zoneSubList: [
+              {
+                value: '50.0C-S.514',
+                className:"MA_II_50_0C-1",
+                isSelected: false
+                },
+                {
+                value: '50.0C-S.528',
+                className:"MA_II_50_0C-2",
+                isSelected: false
+                },
+                {
+                value: '50.0C-TR51',
+                className:"MA_II_50_0C-3",
+                isSelected: false
+                },
+                {
+                value: '50.0C-LI51',
+                className:"MA_II_50_0C-4",
+                isSelected: false
+                },
+            ]
+          },
+          {
+            floorName: '50.0D',
+            zoneSubList: [
+                {
+                value: '50.0D-S.524',
+                className:"MA_II_50_0D-1",
+                isSelected: false
+                },
+                {
+                value: '50.0D-S.526',
+                className:"MA_II_50_0D-2",
+                isSelected: false
+                },
+                {
+                value: '50.0D-S.526.3',
+                className:"MA_II_50_0D-3",
+                isSelected: false
+                },
+                {
+                value: '50.0D-S.526.2',
+                className:"MA_II_50_0D-4",
+                isSelected: false
+                },
+                {
+                value: '50.0D-S.526',
+                className:"MA_II_50_0D-5",
+                isSelected: false
+                },
+            ]
+          },
+          {
+            floorName: '50.0E',
+            zoneSubList: [
+               {
+                value: '50.0E-S.534',
+                className:"MA_II_50_0E-1",
+                isSelected: false
+                },
+                {
+                value: '50.0E-S.532',
+                className:"MA_II_50_0E-2",
+                isSelected: false
+                },
+            ]
+          },
+          {
+            floorName: '50.0F',
+            zoneSubList: [
+              {
+                value: '50.0F-S.530.1',
+                className:"MA_II_50_0F-1",
+                isSelected: false
+                },
+                {
+                value: '50.0F-S.530.2',
+                className:"MA_II_50_0F-2",
+                isSelected: false
+                },
+                {
+                value: '50.0F-S.530.4',
+                className:"MA_II_50_0F-3",
+                isSelected: false
+                },
+                {
+                value: '50.0F-S.530',
+                className:"MA_II_50_0F-4",
+                isSelected: false
+                },
+                {
+                value: '50.0F-S.530.3',
+                className:"MA_II_50_0F-5",
+                isSelected: false
+                },
+            ]
+          },
+          {
+            floorName: '50.0G',
+            zoneSubList: [
+              {
+                value: '50.0G-TR52',
+                className:"MA_II_50_0G-1",
+                isSelected: false
+                },
+                {
+                value: '50.0G-TR53',
+                className:"MA_II_50_0G-2",
+                isSelected: false
+                },
+                {
+                value: '50.0G-S.556',
+                className:"MA_II_50_0G-3",
+                isSelected: false
+                },
+                {
+                value: '50.0G-S.548',
+                className:"MA_II_50_0G-4",
+                isSelected: false
+                },
+            ]
+          },
+          {
+            floorName: '50.0H',
+            zoneSubList: [
+               {
+                value: '50.0H-S.544',
+                className:"MA_II_50_0H-1",
+                isSelected: false
+                },
+                {
+                value: '50.0H-S.544.1',
+                className:"MA_II_50_0H-2",
+                isSelected: false
+                },
+            ]
+          },
+          {
+            floorName: '50.0J',
+            zoneSubList: [
+              {
+                value: '50.0J-S.550',
+                className:"MA_II_50_0J-1",
+                isSelected: false
+                },
+                {
+                value: '50.0J-S.550.1',
+                className:"MA_II_50_0J-2",
+                isSelected: false
+                },
+                {
+                value: '50.0J-S.550.2',
+                className:"MA_II_50_0J-3",
+                isSelected: false
+                },
+                {
+                value: '50.0J-S.550.3',
+                className:"MA_II_50_0J-4",
+                isSelected: false
+                },
+                {
+                value: '50.0J-S.550.4',
+                className:"MA_II_50_0J-5",
+                isSelected: false
+                },
+                {
+                value: '50.0J-S.602',
+                className:"MA_II_50_0J-6",
+                isSelected: false
+                },
+                {
+                value: '50.0J-S.602.1',
+                className:"MA_II_50_0J-7",
+                isSelected: false
+                },
+                {
+                value: '50.0J-S.606',
+                className:"MA_II_50_0J-8",
+                isSelected: false
+                },
+                {
+                value: '50.0J-S.556.1',
+                className:"MA_II_50_0J-9",
+                isSelected: false
+                },
+                {
+                value: '50.0J-S.604',
+                className:"MA_II_50_0J-10",
+                isSelected: false
+                },
+                {
+                value: '50.0J-S.606.1',
+                className:"MA_II_50_0J-11",
+                isSelected: false
+                },
+                {
+                value: '50.0J-S.606.2',
+                className:"MA_II_50_0J-12",
+                isSelected: false
+                },
+                {
+                value: '50.0J-S.608',
+                className:"MA_II_50_0J-13",
+                isSelected: false
+                },
+                {
+                value: '50.0J-S.610',
+                className:"MA_II_50_0J-14",
+                isSelected: false
+                }, 
+            ]
+          },
+          {
+            floorName: '50.0K',
+            zoneSubList: [
+                {
+                value: '50.0K-S.540',
+                className:"MA_II_50_0K-1",
+                isSelected: false
+                },
+                {
+                value: '50.0K-S.536',
+                className:"MA_II_50_0K-2",
+                isSelected: false
+                },
+                {
+                value: '50.0K-S.538',
+                className:"MA_II_50_0K-3",
+                isSelected: false
+                },
+                {
+                value: '50.0K-S.542',
+                className:"MA_II_50_0K-4",
+                isSelected: false
+                },
+                {
+                value: '50.0K-S.542.1',
+                className:"MA_II_50_0K-5",
+                isSelected: false
+                },
+                {
+                value: '50.0K-S.538.1',
+                className:"MA_II_50_0K-6",
+                isSelected: false
+                },
+                {
+                value: '50.0K-S.538.3',
+                className:"MA_II_50_0K-7",
+                isSelected: false
+                },
+                {
+                value: '50.0K-S.538.2',
+                className:"MA_II_50_0K-8",
+                isSelected: false
+                },
+                {
+                value: '50.0K-S.542,2',
+                className:"MA_II_50_0K-9",
+                isSelected: false
+                },
+                {
+                value: '50.0K-542.3',
+                className:"MA_II_50_0K-10",
+                isSelected: false
+                },
+                {
+                value: '50.0K-S.538.4',
+                className:"MA_II_50_0K-11",
+                isSelected: false
+                },
+                {
+                value: '50.0K-S.544.2',
+                className:"MA_II_50_0K-12",
+                isSelected: false
+                },
+            ]
+          },
+          {
+            floorName: '50.0L',
+            zoneSubList: [
+                {
+                value: '50.0L-S.523',
+                className:"MA_II_50_0L-1",
+                isSelected: false
+                },
+                {
+                value: '50.0L-S.529',
+                className:"MA_II_50_0L-2",
+                isSelected: false
+                },
+                {
+                value: '50.0L-S.514.1',
+                className:"MA_II_50_0L-3",
+                isSelected: false
+                },
+                {
+                value: '50.0L-S.529.1',
+                className:"MA_II_50_0L-4",
+                isSelected: false
+                },
+                {
+                value: '50.0L-S.527',
+                className:"MA_II_50_0L-5",
+                isSelected: false
+                },
+                {
+                value: '50.0L-S.515',
+                className:"MA_II_50_0L-6",
+                isSelected: false
+                },
+                {
+                value: '50.0L-S.521',
+                className:"MA_II_50_0L-7",
+                isSelected: false
+                },
+                {
+                value: '50.0L-S.525',
+                className:"MA_II_50_0L-8",
+                isSelected: false
+                },    
+            ]
+          },
+          {
+            floorName: '50.0M',
+            zoneSubList: [
+                {
+                value: '50.0M-S.537',
+                className:"MA_II_50_0M-1",
+                isSelected: false
+                },
+                {
+                value: '50.0M-LI53',
+                className:"MA_II_50_0M-2",
+                isSelected: false
+                },
+                {
+                value: '50.0M-LI52',
+                className:"MA_II_50_0M-3",
+                isSelected: false
+                },
+            ]
+          },
+          {
+            floorName: '50.0N',
+            zoneSubList: [
+                {
+                value: '50.0N-S.533',
+                className:"MA_II_50_0N-1",
+                isSelected: false
+                },
+            ]
+          },
+          {
+            floorName: '50.0P',
+            zoneSubList: [
+                {
+                value: '50.0P-S.517',
+                className:"MA_II_50_0P-1",
+                isSelected: false
+                },
+                {
+                value: '50.0P-S.519',
+                className:"MA_II_50_0P-2",
+                isSelected: false
+                },
+            ]
+          },
+          {
+            floorName: '80.0A',
+            zoneSubList: [
+              {
+                value: '80.0A-LI83',
+                className:"MA_II_80_0A-1",
+                isSelected: false
+                },
+                {
+                value: '80.0A-S.838',
+                className:"MA_II_80_0A-2",
+                isSelected: false
+                },
+                {
+                value: '80.0A-S.834',
+                className:"MA_II_80_0A-3",
+                isSelected: false
+                },
+                {
+                value: '80.0A-S.830',
+                className:"MA_II_80_0A-4",
+                isSelected: false
+                },
+                {
+                value: '80.0A-S.828',
+                className:"MA_II_80_0A-5",
+                isSelected: false
+                },
+                {
+                value: '80.0A-S.826.2',
+                className:"MA_II_80_0A-6",
+                isSelected: false
+                },
+                {
+                value: '80.0A-S.826',
+                className:"MA_II_80_0A-7",
+                isSelected: false
+                },
+                {
+                value: '80.0A-S.826.1',
+                className:"MA_II_80_0A-8",
+                isSelected: false
+                },
+                {
+                value: '80.0A-S.816',
+                className:"MA_II_80_0A-9",
+                isSelected: false
+                },
+                {
+                value: '80.0A-S.824',
+                className:"MA_II_80_0A-10",
+                isSelected: false
+                },
+                {
+                value: '80.0A-S.822',
+                className:"MA_II_80_0A-11",
+                isSelected: false
+                },
+                {
+                value: '80.0A-S.820',
+                className:"MA_II_80_0A-12",
+                isSelected: false
+                },
+                {
+                value: '80.0A-S.816.2',
+                className:"MA_II_80_0A-13",
+                isSelected: false
+                },
+                {
+                value: '80.0A-S.816.1',
+                className:"MA_II_80_0A-14",
+                isSelected: false
+                }, 
+                {
+                value: '80.0A-S.834',
+                className:"MA_II_80_0A-15",
+                isSelected: false
+                }, 
+            ]
+          },
+          {
+            floorName: '80.0B',
+            zoneSubList: [
+                {
+                value: '80.0B-TR83',
+                className:"MA_II_80_0B-1",
+                isSelected: false
+                },  
+            ]
+          },
+          {
+            floorName: '80.0C',
+            zoneSubList: [
+                {
+                value: '80.0C-TR82',
+                className:"MA_II_80_0C-1",
+                isSelected: false
+                },  
+            ]
+          },
+          {
+            floorName: '80.0D',
+            zoneSubList: [
+              {
+                value: '80.0D-S.825',
+                className:"MA_II_80_0D-1",
+                isSelected: false
+                },
+                {
+                value: '80.0D-S.823',
+                className:"MA_II_80_0D-2",
+                isSelected: false
+                },
+                {
+                value: '80.0D-S.821',
+                className:"MA_II_80_0D-3",
+                isSelected: false
+                },
+                {
+                value: '80.0D-S.819',
+                className:"MA_II_80_0D-4",
+                isSelected: false
+                },
+                {
+                value: '80.0D-S.817.2',
+                className:"MA_II_80_0D-5",
+                isSelected: false
+                },
+                {
+                value: '80.0D-S.817.1',
+                className:"MA_II_80_0D-6",
+                isSelected: false
+                },
+                {
+                value: '80.0D-S.817',
+                className:"MA_II_80_0D-7",
+                isSelected: false
+                },
+                {
+                value: '80.0D-S.815',
+                className:"MA_II_80_0D-8",
+                isSelected: false
+                },
+                {
+                value: '80.0D-S.813',
+                className:"MA_II_80_0D-9",
+                isSelected: false
+                },
+                {
+                value: '80.0D-S.811',
+                className:"MA_II_80_0D-10",
+                isSelected: false
+                },
+                {
+                value: '80.0D-S.809',
+                className:"MA_II_80_0D-11",
+                isSelected: false
+                },
+                {
+                value: '80.0D-S.807',
+                className:"MA_II_80_0D-12",
+                isSelected: false
+                },
+                {
+                value: '80.0D-S.803.1',
+                className:"MA_II_80_0D-13",
+                isSelected: false
+                },
+                {
+                value: '80.0D-S.803.2',
+                className:"MA_II_80_0D-14",
+                isSelected: false
+                },
+                {
+                value: '80.0D-S.803',
+                className:"MA_II_80_0D-15",
+                isSelected: false
+                },
+                {
+                value: '80.0D-LI81',
+                className:"MA_II_80_0D-16",
+                isSelected: false
+                },
+                {
+                value: '80.0D-S.801',
+                className:"MA_II_80_0D-17",
+                isSelected: false
+                },
+            ]
+          },
+          {
+            floorName: '80.0E',
+            zoneSubList: [
+               {
+                value: '80.0E-TR81',
+                className:"MA_II_80_0E-1",
+                isSelected: false
+               },
+            ]
+          },
+          {
+            floorName: 'BS2.0',
+            zoneSubList: [
+               {
+                value: 'BS2.0-S.206',
+                className:"MA_II_BS2_0-1",
+                isSelected: false
+                },
+            ]
+          },
+          {
+            floorName: 'FS3.2',
+            zoneSubList: [
+                {
+                value: 'FS3.2-S.202',
+                className:"MA_II_FS3_0-1",
+                isSelected: false
+                },
+                {
+                value: 'FS3.2-S.204',
+                className:"MA_II_FS3_0-2",
+                isSelected: false
+                }, 
+            ]
+          },
+          {
+            floorName: 'FS4.0',
+            zoneSubList: [
+                {
+                value: 'FS4.0-S.201',
+                className:"MA_II_FS4_0-1",
+                isSelected: false
+                },
+                {
+                value: 'FS4.0-S.203',
+                className:"MA_II_FS4_0-2",
+                isSelected: false
+                },  
+            ]
+          },
+        ]
+      },
+      // end MA.II 0 section
+
+     
+      // start MA.II 1 section
+      {
+        planType: "MA.II 1",
+        zoneList: [
+          {
+            floorName: '20.1F.CorridorN',
+            zoneSubList: [
+                {
+                value: '20.1F-N-1.202',
+                className: "MA_20_1F_N-1",
+                isSelected: false
+                },
+                {
+                value: '20.1F_N-1.200',
+                className: "MA_20_1F_N-2",
+                isSelected: false
+                },
+            ]
+          },
+          {
+            floorName: '20.1F.CorridorS',
+            zoneSubList: [
+                {
+                value: '20.1F-S-1.251',
+                className: "MA_20_1F_S-1",
+                isSelected: false
+                },
+                {
+                value: '20.1F-S-1.253',
+                className: "MA_20_1F_S-2",
+                isSelected: false
+                },
+            ]
+          },
+          {
+            floorName: '50.0A',
+            zoneSubList: [
+                {
+                value: '50.0A-1.512',
+                className: "MA_50_0A-1",
+                isSelected: false
+                },
+            ]
+          },
+          {
+            floorName: '50.0D',
+            zoneSubList: [
+              {
+                value: '50.0D-1.526',
+                className: "MA_50_0D-1",
+                isSelected: false
+                },
+            ]
+          },
+          {
+            floorName: '50.1A',
+            zoneSubList: [
+               {
+                value: '50.1A-1.518',
+                className: "MA_50_1A-1",
+                isSelected: false
+                },
+                {
+                value: '50.1A-1.522.1',
+                className: "MA_50_1A-2",
+                isSelected: false
+                },
+                {
+                value: '50.1A-1.522.2',
+                className: "MA_50_1A-3",
+                isSelected: false
+                },
+                {
+                value: '50.1A-1.522.3',
+                className: "MA_50_1A-4",
+                isSelected: false
+                },
+                {
+                value: '50.1A-1.522.4',
+                className: "MA_50_1A-5",
+                isSelected: false
+                },
+            ]
+          },
+          {
+            floorName: '50.1B',
+            zoneSubList: [
+                {
+                value: '50.1B-SK54.1',
+                className: "MA_50_1B-1",
+                isSelected: false
+                },
+                {
+                value: '50.1B-SK54',
+                className: "MA_50_1B-2",
+                isSelected: false
+                },
+                {
+                value: '50.1B-1.517',
+                className: "MA_50_1B-3",
+                isSelected: false
+                },
+                {
+                value: '50.1B-1.519',
+                className: "MA_50_1B-4",
+                isSelected: false
+                },
+                {
+                value: '50.1B-1.517.1',
+                className: "MA_50_1B-5",
+                isSelected: false
+                },
+                {
+                value: '50.1B-1.515.1',
+                className: "MA_50_1B-6",
+                isSelected: false
+                },
+                {
+                value: '50.1B-1.515',
+                className: "MA_50_1B-7",
+                isSelected: false
+                },
+                {
+                value: '50.1B-1.513',
+                className: "MA_50_1B-8",
+                isSelected: false
+                },  
+            ]
+          },
+          {
+            floorName: '50.1C',
+            zoneSubList: [
+              {
+                value: '50.1C-1.521',
+                className: "MA_50_1C-1",
+                isSelected: false
+                },
+                {
+                value: '50.1C-1.532',
+                className: "MA_50_1C-2",
+                isSelected: false
+                },
+                {
+                value: '50.1C-1.533',
+                className: "MA_50_1C-3",
+                isSelected: false
+                },
+                {
+                value: '50.1C-1.611',
+                className: "MA_50_1C-4",
+                isSelected: false
+                },
+                {
+                value: '50.1C-1.528',
+                className: "MA_50_1C-5",
+                isSelected: false
+                },
+                {
+                value: '50.1C-TR51',
+                className: "MA_50_1C-6",
+                isSelected: false
+                },
+                {
+                value: '50.1C-LI51',
+                className: "MA_50_1C-7",
+                isSelected: false
+                },
+                {
+                value: '50.1C-1.524',
+                className: "MA_50_1C-8",
+                isSelected: false
+                },
+                {
+                value: '50.1C-1.522',
+                className: "MA_50_1C-9",
+                isSelected: false
+                },
+                {
+                value: '50.1C-SK52.1',
+                className: "MA_50_1C-10",
+                isSelected: false
+                },
+                {
+                value: '50.1C-SK52',
+                className: "MA_50_1C-11",
+                isSelected: false
+                },
+            ]
+          },
+          {
+            floorName: '50.1D',
+            zoneSubList: [
+                {
+                value: '50.1D-1.521.1',
+                className: "MA_50_1D-1",
+                isSelected: false
+                },
+                {
+                value: '50.1D-1.529',
+                className: "MA_50_1D-2",
+                isSelected: false
+                },
+                {
+                value: '50.1D-1.525',
+                className: "MA_50_1D-3",
+                isSelected: false
+                },
+                {
+                value: '50.1D-SK56',
+                className: "MA_50_1D-4",
+                isSelected: false
+                },
+                {
+                value: '50.1D-1.529.1',
+                className: "MA_50_1D-5",
+                isSelected: false
+                },
+                {
+                value: '50.1D-LI53',
+                className: "MA_50_1D-6",
+                isSelected: false
+                },
+                {
+                value: '50.1D-LI52',
+                className: "MA_50_1D-7",
+                isSelected: false
+                },
+                {
+                value: '50.1D-1.531.1',
+                className: "MA_50_1D-8",
+                isSelected: false
+                },
+                {
+                value: '50.1D-1.531',
+                className: "MA_50_1D-9",
+                isSelected: false
+                },
+                {
+                value: '50.1D-1.523',
+                className: "MA_50_1D-10",
+                isSelected: false
+                },
+                {
+                value: '50.1D-1.523.1',
+                className: "MA_50_1D-11",
+                isSelected: false
+                },
+                {
+                value: '50.1D-1.523.2',
+                className: "MA_50_1D-12",
+                isSelected: false
+                },
+                {
+                value: '50.1D-1.523.3',
+                className: "MA_50_1D-13",
+                isSelected: false
+                },
+                {
+                value: '50.1D-1.523.4',
+                className: "MA_50_1D-14",
+                isSelected: false
+                },
+                {
+                value: '50.1D-1.523.5',
+                className: "MA_50_1D-15",
+                isSelected: false
+                },
+            ]
+          },
+          {
+            floorName: '50.1E',
+            zoneSubList: [
+                {
+                value: '50.1E-1.530',
+                className: "MA_50_1E-1",
+                isSelected: false
+                },
+                {
+                value: '50.1E-1.534',
+                className: "MA_50_1E-2",
+                isSelected: false
+                }, 
+            ]
+          },
+          {
+            floorName: '50.1F',
+            zoneSubList: [
+              {
+                value: '50.1F-1.530',
+                className: "MA_50_1F-1",
+                isSelected: false
+                },
+            ]
+          },
+          {
+            floorName: '50.1G',
+            zoneSubList: [
+                {
+                value: '50.1G-TR52',
+                className: "MA_50_1G-1",
+                isSelected: false
+                },
+                {
+                value: '50.1G-1.546',
+                className: "MA_50_1G-2",
+                isSelected: false
+                },
+                {
+                value: '50.1G-TR53',
+                className: "MA_50_1G-3",
+                isSelected: false
+                },
+                {
+                value: '50.1G-1.548',
+                className: "MA_50_1G-4",
+                isSelected: false
+                }, 
+            ]
+          },
+          {
+            floorName: '50.1H',
+            zoneSubList: [
+                {
+                value: '50.1H-1.535',
+                className: "MA_50_1H-1",
+                isSelected: false
+                },
+                {
+                value: '50.1H-1.541',
+                className: "MA_50_1H-2",
+                isSelected: false
+                },
+                {
+                value: '50.1H-1.549',
+                className: "MA_50_1H-3",
+                isSelected: false
+                },
+                {
+                value: '50.1H-1.535.1',
+                className: "MA_50_1H-4",
+                isSelected: false
+                },
+                {
+                value: '50.1H-1.535.2',
+                className: "MA_50_1H-5",
+                isSelected: false
+                },
+                {
+                value: '50.1H-1.535.3',
+                className: "MA_50_1H-6",
+                isSelected: false
+                },
+                {
+                value: '50.1H-1.541.1',
+                className: "MA_50_1H-7",
+                isSelected: false
+                },
+                {
+                value: '50.1H-1.541.2',
+                className: "MA_50_1H-8",
+                isSelected: false
+                },
+                {
+                value: '50.1H-1.541.3',
+                className: "MA_50_1H-9",
+                isSelected: false
+                },
+                {
+                value: '50.1H-1.549.1',
+                className: "MA_50_1H-10",
+                isSelected: false
+                },
+                {
+                value: '50.1H-1.549.2',
+                className: "MA_50_1H-11",
+                isSelected: false
+                },
+                {
+                value: '50.1H-1.549.3',
+                className: "MA_50_1H-12",
+                isSelected: false
+                }, 
+            ]
+          },
+          {
+            floorName: '50.1I',
+            zoneSubList: [
+                {
+                value: '50.1I-1.606',
+                className: "MA_50_1I-1",
+                isSelected: false
+                },
+                {
+                value: '50.1I-1.604.2',
+                className: "MA_50_1I-2",
+                isSelected: false
+                },
+                {
+                value: '50.1I-1.604.1',
+                className: "MA_50_1I-3",
+                isSelected: false
+                },
+                {
+                value: '50.1I-1.604',
+                className: "MA_50_1I-4",
+                isSelected: false
+                },
+                {
+                value: '50.1I-1.608',
+                className: "MA_50_1I-5",
+                isSelected: false
+                },
+                {
+                value: '50.1I-1.610',
+                className: "MA_50_1I-6",
+                isSelected: false
+                },
+            ]
+          },
+          {
+            floorName: '50.1J',
+            zoneSubList: [
+                {
+                value: '50.1J-SK53',
+                className: "MA_50_1J-1",
+                isSelected: false
+                },
+                {
+                value: '50.1J-1.602',
+                className: "MA_50_1J-2",
+                isSelected: false
+                },
+            ]
+          },
+          {
+            floorName: '50.1K',
+            zoneSubList: [
+                {
+                value: '50.1K-1.538',
+                className: "MA_50_1K-1",
+                isSelected: false
+                },
+                {
+                value: '50.1K-1.540',
+                className: "MA_50_1K-2",
+                isSelected: false
+                },
+                {
+                value: '50.1K-1.542',
+                className: "MA_50_1K-3",
+                isSelected: false
+                },
+                {
+                value: '50.1K-1.542.1',
+                className: "MA_50_1K-4",
+                isSelected: false
+                },
+                {
+                value: '50.1K-1.538.1',
+                className: "MA_50_1K-5",
+                isSelected: false
+                },
+                {
+                value: '50.1K-1.538.2',
+                className: "MA_50_1K-6",
+                isSelected: false
+                },
+                {
+                value: '50.1K-1.542.2',
+                className: "MA_50_1K-7",
+                isSelected: false
+                },
+                {
+                value: '50.1K-1.542.3',
+                className: "MA_50_1K-8",
+                isSelected: false
+                },
+                {
+                value: '50.1K-1.538.4',
+                className: "MA_50_1K-9",
+                isSelected: false
+                },
+                {
+                value: '50.1K-1.542.4',
+                className: "MA_50_1K-10",
+                isSelected: false
+                },
+                {
+                value: '50.1K-1.544.2',
+                className: "MA_50_1K-11",
+                isSelected: false
+                },
+            ]
+          },
+          {
+            floorName: '60.1P',
+            zoneSubList: [
+                {
+                value: '60.1P-SK66',
+                className: "MA_60_1P-1",
+                isSelected: false
+                },
+                {
+                value: '60.1P-1.611.1',
+                className: "MA_60_1P-2",
+                isSelected: false
+                },
+                {
+                value: '60.1P-SK65',
+                className: "MA_60_1P-3",
+                isSelected: false
+                },
+                {
+                value: '60.1P-1.609',
+                className: "MA_60_1P-4",
+                isSelected: false
+                },
+                {
+                value: '60.1P-1.607',
+                className: "MA_60_1P-5",
+                isSelected: false
+                },
+                {
+                value: '60.1P-1.605',
+                className: "MA_60_1P-6",
+                isSelected: false
+                },  
+            ]
+          },
+          {
+            floorName: '80.1A',
+            zoneSubList: [
+              {
+                value: '80.1A-LI83',
+                className: "MA_80_1A-1",
+                isSelected: false
+                },
+                {
+                value: '80.1A-1.838',
+                className: "MA_80_1A-2",
+                isSelected: false
+                },
+                {
+                value: '80.1A-1.836',
+                className: "MA_80_1A-3",
+                isSelected: false
+                },
+                {
+                value: '80.1A-1.834',
+                className: "MA_80_1A-4",
+                isSelected: false
+                },
+                {
+                value: '80.1A-1.832.2',
+                className: "MA_80_1A-5",
+                isSelected: false
+                },
+                {
+                value: '80.1A-1.832.1',
+                className: "MA_80_1A-6",
+                isSelected: false
+                },
+                {
+                value: '80.1A-1.832',
+                className: "MA_80_1A-7",
+                isSelected: false
+                },
+                {
+                value: '80.1A-1.830',
+                className: "MA_80_1A-8",
+                isSelected: false
+                },
+                {
+                value: '80.1A-1.828',
+                className: "MA_80_1A-9",
+                isSelected: false
+                },
+                {
+                value: '80.1A-1.831',
+                className: "MA_80_1A-10",
+                isSelected: false
+                },
+                {
+                value: '80.1A-1.824',
+                className: "MA_80_1A-11",
+                isSelected: false
+                },
+                {
+                value: '80.1A-1.824.2',
+                className: "MA_80_1A-12",
+                isSelected: false
+                },
+                {
+                value: '80.1A-1.824.1',
+                className: "MA_80_1A-13",
+                isSelected: false
+                },
+                {
+                value: '80.1A-1.827',
+                className: "MA_80_1A-14",
+                isSelected: false
+                },
+                {
+                value: '80.1A-1.827.2',
+                className: "MA_80_1A-15",
+                isSelected: false
+                },
+                {
+                value: '80.1A-1.827.1',
+                className: "MA_80_1A-16",
+                isSelected: false
+                },
+                {
+                value: '80.1A-1.829',
+                className: "MA_80_1A-17",
+                isSelected: false
+                },
+                {
+                value: '80.1A-1.825',
+                className: "MA_80_1A-18",
+                isSelected: false
+                },
+                {
+                value: '80.1A-1.825.1',
+                className: "MA_80_1A-19",
+                isSelected: false
+                },
+                {
+                value: '80.1A-1.825.2',
+                className: "MA_80_1A-20",
+                isSelected: false
+                },
+                {
+                value: '80.1A-1.823',
+                className: "MA_80_1A-21",
+                isSelected: false
+                },
+                {
+                value: '80.1A-SK82',
+                className: "MA_80_1A-22",
+                isSelected: false
+                },
+                {
+                value: '80.1A-1.811',
+                className: "MA_80_1A-23",
+                isSelected: false
+                },
+                {
+                value: '80.1A-1.821',
+                className: "MA_80_1A-24",
+                isSelected: false
+                },
+                {
+                value: '80.1A-1.819',
+                className: "MA_80_1A-25",
+                isSelected: false
+                },
+                {
+                value: '80.1A-1.815',
+                className: "MA_80_1A-26",
+                isSelected: false
+                },
+                {
+                value: '80.1A-1.809',
+                className: "MA_80_1A-27",
+                isSelected: false
+                },
+                {
+                value: '80.1A-1.805',
+                className: "MA_80_1A-28",
+                isSelected: false
+                },
+                {
+                value: '80.1A-1.803',
+                className: "MA_80_1A-29",
+                isSelected: false
+                },
+                {
+                value: '80.1A-LI81',
+                className: "MA_80_1A-30",
+                isSelected: false
+                },
+                {
+                value: '80.1A-SK83',
+                className: "MA_80_1A-31",
+                isSelected: false
+                },
+            ]
+          },
+          {
+            floorName: '80.1B',
+            zoneSubList: [
+              {
+                value: '80.1B-TR83',
+                className: "MA_80_1B-1",
+                isSelected: false
+                },
+            ]
+          },
+          {
+            floorName: '80.1C',
+            zoneSubList: [
+                {
+                value: '80.1C-TR82',
+                className: "MA_80_1C-1",
+                isSelected: false
+                },
+            ]
+          },
+          {
+            floorName: '80.1E',
+            zoneSubList: [
+                {
+                value: '80.1E-TR81',
+                className: "MA_80_1E-1",
+                isSelected: false
+                },
+            ]
+          },
+          {
+            floorName: 'BS2.2',
+            zoneSubList: [
+               {
+                value: 'BS2.2-S.206',
+                className: "MA_BS2_2-1",
+                isSelected: false
+                },
+            ]
+          },
+          {
+            floorName: 'FS3.0',
+            zoneSubList: [
+                {
+                value: 'FS3.0-1.208',
+                className: "MA_FS3_0-1",
+                isSelected: false
+                },
+                {
+                value: 'FS3.0-S.202',
+                className: "MA_FS3_0-2",
+                isSelected: false
+                },
+                {
+                value: 'FS3.0-S.204',
+                className: "MA_FS3_0-3",
+                isSelected: false
+                },
+            ]
+          },
+          {
+            floorName: 'FS4.0',
+            zoneSubList: [
+               {
+                value: 'FS4.0-1.201',
+                className: "MA_FS4_0-1",
+                isSelected: false
+                },
+                {
+                value: 'FS4.0-S.203',
+                className: "MA_FS4_0-2",
+                isSelected: false
+                },
+                {
+                value: 'FS4.0-S.201',
+                className: "MA_FS4_0-3",
+                isSelected: false
+                },
+                {
+                value: 'FS4.0-1.207',
+                className: "MA_FS4_0-4",
+                isSelected: false
+                }, 
+            ]
+          },
+        ]
+      },
+      // end MA.II 1 section
+
+      // start MA.II 2 section
+      {
+        planType: "MA.II 2",
+        zoneList: [
+          {
+            floorName: '50.2A.1',
+            zoneSubList: [
+              {
+                value: '50.2A.1-2.500',
+                className:"MA_II_50_2A_1-1",
+                isSelected: false
+                },
+                {
+                value: '50.2A.1-SK51',
+                className:"MA_II_50_2A_1-2",
+                isSelected: false
+                },
+                {
+                value: '50.2A.1-2.502',
+                className:"MA_II_50_2A_1-3",
+                isSelected: false
+                },
+                {
+                value: '50.2A.1-2.502',
+                className:"MA_II_50_2A_1-4",
+                isSelected: false
+                },
+                {
+                value: '50.2A.1-2.200',
+                className:"MA_II_50_2A_1-5",
+                isSelected: false
+                },
+            ]
+          },
+          {
+            floorName: '50.2A.2',
+            zoneSubList: [
+              {
+                value: '50.2A.2-2.503',
+                className:"MA_II_50_2A_2-1",
+                isSelected: false
+                },
+                {
+                value: '50.2A.2-2.523',
+                className:"MA_II_50_2A_2-2",
+                isSelected: false
+                },
+                {
+                value: '50.2A.2-2.549',
+                className:"MA_II_50_2A_2-3",
+                isSelected: false
+                },
+                {
+                value: '50.2A.2-2.500',
+                className:"MA_II_50_2A_2-4",
+                isSelected: false
+                },
+                {
+                value: '50.2A.2-2.500',
+                className:"MA_II_50_2A_2-5",
+                isSelected: false
+                },
+            ]
+          },
+          {
+            floorName: '50.2A.3',
+            zoneSubList: [
+                {
+                value: '50.2A.3-2.548',
+                className:"MA_II_50_2A_3-1",
+                isSelected: false
+                }, 
+            ]
+          },
+          {
+            floorName: '50.2B',
+            zoneSubList: [
+                {
+                value: '50.2B-TR51',
+                className:"MA_II_50_2B-1",
+                isSelected: false
+                },
+                {
+                value: '50.2B-2.516',
+                className:"MA_II_50_2B-2",
+                isSelected: false
+                },
+                {
+                value: '50.2B-LI51',
+                className:"MA_II_50_2B-3",
+                isSelected: false
+                }, 
+            ]
+          },
+          {
+            floorName: '50.2C',
+            zoneSubList: [
+                {
+                value: '50.2C-2.534.1',
+                className:"MA_II_50_2C-1",
+                isSelected: false
+                },
+                {
+                value: '50.2C-2.534',
+                className:"MA_II_50_2C-2",
+                isSelected: false
+                },
+                {
+                value: '50.2C-2.534.2',
+                className:"MA_II_50_2C-3",
+                isSelected: false
+                },
+            ]
+          },
+          {
+            floorName: '50.2D',
+            zoneSubList: [
+              {
+                value: '50.2D-2.530',
+                className:"MA_II_50_2D-1",
+                isSelected: false
+                },
+                {
+                value: '50.2D-2.530',
+                className:"MA_II_50_2D-2",
+                isSelected: false
+                }, 
+            ]
+          },
+          {
+            floorName: '50.2E',
+            zoneSubList: [
+               {
+                value: '50.2E-2.538.3',
+                className:"MA_II_50_2E-1",
+                isSelected: false
+                },
+                {
+                value: '50.2E-2.540',
+                className:"MA_II_50_2E-2",
+                isSelected: false
+                },
+                {
+                value: '50.2E-2.544',
+                className:"MA_II_50_2E-3",
+                isSelected: false
+                },
+                {
+                value: '50.2E-2.538',
+                className:"MA_II_50_2E-4",
+                isSelected: false
+                },
+                {
+                value: '50.2E-2.542',
+                className:"MA_II_50_2E-5",
+                isSelected: false
+                },
+                {
+                value: '50.2E-2.542.1',
+                className:"MA_II_50_2E-6",
+                isSelected: false
+                },
+                {
+                value: '50.2E-2.538.1',
+                className:"MA_II_50_2E-7",
+                isSelected: false
+                },
+                {
+                value: '50.2E-2.538.2',
+                className:"MA_II_50_2E-8",
+                isSelected: false
+                },
+                {
+                value: '50.2E-2.542.2',
+                className:"MA_II_50_2E-9",
+                isSelected: false
+                },
+                {
+                value: '50.2E-2.542.3',
+                className:"MA_II_50_2E-10",
+                isSelected: false
+                },
+                {
+                value: '50.2E-TR52',
+                className:"MA_II_50_2E-11",
+                isSelected: false
+                },
+                {
+                value: '50.2E-2.538.4',
+                className:"MA_II_50_2E-12",
+                isSelected: false
+                },
+                {
+                value: '50.2E-2.542.4',
+                className:"MA_II_50_2E-13",
+                isSelected: false
+                },
+                {
+                value: '50.2E-2.544.2',
+                className:"MA_II_50_2E-14",
+                isSelected: false
+                }, 
+            ]
+          },
+          {
+            floorName: '50.2F',
+            zoneSubList: [
+                {
+                value: '50.2F-SK52.1',
+                className:"MA_II_50_2F-1",
+                isSelected: false
+                },
+                {
+                value: '50.2F-SK52',
+                className:"MA_II_50_2F-2",
+                isSelected: false
+                }, 
+            ]
+          },
+          {
+            floorName: '80.2A',
+            zoneSubList: [
+               {
+                value: '80.2A-LI83',
+                className:"MA_II_80_2A-1",
+                isSelected: false
+                },
+                {
+                value: '80.2A-2.838',
+                className:"MA_II_80_2A-2",
+                isSelected: false
+                },
+                {
+                value: '80.2A-SK83',
+                className:"MA_II_80_2A-3",
+                isSelected: false
+                },
+                {
+                value: '80.2A-2.836',
+                className:"MA_II_80_2A-4",
+                isSelected: false
+                },
+                {
+                value: '80.2A-2.834',
+                className:"MA_II_80_2A-5",
+                isSelected: false
+                },
+                {
+                value: '80.2A-2.832.2',
+                className:"MA_II_80_2A-6",
+                isSelected: false
+                },
+                {
+                value: '80.2A-2.832',
+                className:"MA_II_80_2A-7",
+                isSelected: false
+                },
+                {
+                value: '80.2A-2.832.1',
+                className:"MA_II_80_2A-8",
+                isSelected: false
+                },
+                {
+                value: '80.2A-SK84',
+                className:"MA_II_80_2A-9",
+                isSelected: false
+                },
+                {
+                value: '80.2A-2.830',
+                className:"MA_II_80_2A-10",
+                isSelected: false
+                },
+                {
+                value: '80.2A-2.828',
+                className:"MA_II_80_2A-11",
+                isSelected: false
+                },
+                {
+                value: '80.2A-2.831',
+                className:"MA_II_80_2A-12",
+                isSelected: false
+                },
+                {
+                value: '80.2A-2.819',
+                className:"MA_II_80_2A-13",
+                isSelected: false
+                },
+                {
+                value: '80.2A-2.824',
+                className:"MA_II_80_2A-14",
+                isSelected: false
+                },
+                {
+                value: '80.2A-2.824.2',
+                className:"MA_II_80_2A-15",
+                isSelected: false
+                },
+                {
+                value: '80.2A-2.824.1',
+                className:"MA_II_80_2A-16",
+                isSelected: false
+                },     
+                {
+                value: '80.2A-2.827',
+                className:"MA_II_80_2A-17",
+                isSelected: false
+                },
+                {
+                value: '80.2A-2.827.2',
+                className:"MA_II_80_2A-18",
+                isSelected: false
+                },
+                {
+                value: '80.2A-2.825.1',
+                className:"MA_II_80_2A-19",
+                isSelected: false
+                },
+                {
+                value: '80.2A-2.827.1',
+                className:"MA_II_80_2A-20",
+                isSelected: false
+                },
+                {
+                value: '80.2A-2.825',
+                className:"MA_II_80_2A-21",
+                isSelected: false
+                },
+                {
+                value: '80.2A-2.825.2',
+                className:"MA_II_80_2A-22",
+                isSelected: false
+                },
+                {
+                value: '80.2A-2.823',
+                className:"MA_II_80_2A-23",
+                isSelected: false
+                },
+                {
+                value: '80.2A-2.816',
+                className:"MA_II_80_2A-24",
+                isSelected: false
+                }, 
+            ]
+          },
+          {
+            floorName: '80.2B',
+            zoneSubList: [
+                {
+                value: '80.2B-SK82',
+                className:"MA_II_80_2B-1",
+                isSelected: false
+                },
+                {
+                value: '80.2B-2.811',
+                className:"MA_II_80_2B-2",
+                isSelected: false
+                },
+                {
+                value: '80.2B-2.805',
+                className:"MA_II_80_2B-3",
+                isSelected: false
+                },
+                {
+                value: '80.2B-2.803',
+                className:"MA_II_80_2B-4",
+                isSelected: false
+                },
+                {
+                value: '80.2B-LI81',
+                className:"MA_II_80_2B-5",
+                isSelected: false
+                },
+                {
+                value: '80.2B-SK8',
+                className:"MA_II_80_2B-6",
+                isSelected: false
+                },
+            ]
+          },
+          {
+            floorName: '80.2C',
+            zoneSubList: [
+                {
+                value: '80.2C-TR83',
+                className:"MA_II_80_2C-1",
+                isSelected: false
+                },
+            ]
+          },
+          {
+            floorName: '80.2D',
+            zoneSubList: [
+                {
+                value: '80.2D-TR82',
+                className:"MA_II_80_2D-1",
+                isSelected: false
+                },
+            ]
+          },
+          {
+            floorName: 'BS2.2',
+            zoneSubList: [
+               {
+                value: 'BS2.2-S.206',
+                className:"MA_II_BS2_2-1",
+                isSelected: false
+                },
+                {
+                value: 'BS2.2-2.256',
+                className:"MA_II_BS2_2-2",
+                isSelected: false
+                },
+                {
+                value: 'BS2.2-2.270',
+                className:"MA_II_BS2_2-3",
+                isSelected: false
+                },
+            ]
+          },
+          {
+            floorName: 'FS3.2',
+            zoneSubList: [
+                {
+                value: 'FS3.2-2.208',
+                className:"MA_II_FS3_2-1",
+                isSelected: false
+                },
+                {
+                value: 'FS3.2-2.202',
+                className:"MA_II_FS3_2-2",
+                isSelected: false
+                },
+                {
+                value: 'FS3.2-2.268',
+                className:"MA_II_FS3_2-3",
+                isSelected: false
+                },
+            ]
+          },
+          {
+            floorName: 'FS4.2',
+            zoneSubList: [
+               {
+                value: 'FS4.2-2.205',
+                className:"MA_II_FS4_2-1",
+                isSelected: false
+                },
+                {
+                value: 'FS4.2-2.201',
+                className:"MA_II_FS4_2-2",
+                isSelected: false
+                },
+                {
+                value: 'FS4.2-2.269',
+                className:"MA_II_FS4_2-3",
+                isSelected: false
+                },
+            ]
+          },
+        ]
+      },
+      // end MA.II 2 section
+
+
+      // start MA.II 3 section
+      {
+        planType: "MA.II 3",
+        zoneList: [
+          {
+            floorName: '50.3A',
+            zoneSubList: [
+               {
+                value: '50.3A-3.518',
+                className:"MA_II_50_3A-1",
+                isSelected: false
+                },
+                {
+                value: '50.3A-TR51',
+                className:"MA_II_50_3A-2",
+                isSelected: false
+                },
+                {
+                value: '50.3A-3.516',
+                className:"MA_II_50_3A-3",
+                isSelected: false
+                },
+                {
+                value: '50.3A-3.500',
+                className:"MA_II_50_3A-4",
+                isSelected: false
+                },
+            ]
+          },
+
+        ]
+      },
+      // end MA.II 3 section
+
+      // start MA.II R section
+      {
+        planType: "MA.II R",
+        zoneList: [
+          {
+            floorName: 'MA.II_R',
+            zoneSubList: [
+                {
+                value: 'R-50RB',
+                className:"MA_II_R-1",
+                isSelected: false
+                },
+                {
+                value: 'R-50RA',
+                className:"MA_II_R-2",
+                isSelected: false
+                },
+                {
+                value: 'R-50RC',
+                className:"MA_II_R-3",
+                isSelected: false
+                },
+                {
+                value: 'R-20R',
+                className:"MA_II_R-4",
+                isSelected: false
+                },
+                {
+                value: 'R-80.R',
+                className:"MA_II_R-5",
+                isSelected: false
+                },
+            ]
+          },
+        ]
+      },
+      // end MA.II R section
+
     ]
     return this.bulidingFloorData;
   }

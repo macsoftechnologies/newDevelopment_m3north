@@ -194,6 +194,11 @@ export class ListRequestComponent implements OnInit {
       'MB.1',
       'MB.2',
       'MB.R',
+      'MA.II 0',
+      'MA.II 1',
+      'MA.II 2',
+      'MA.II 3',
+      'MA.II R',
   ];
 
   getHras = [

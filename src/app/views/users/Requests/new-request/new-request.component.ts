@@ -1852,6 +1852,20 @@ export class NewRequestComponent implements OnInit {
         'MB.R',
       ];
     }
+    // else if (event == '18') {
+    //   this.floors = [
+    //     'MA Basement',
+    //   ];
+    // }
+    else if (event == '19') {
+      this.floors = [
+        'MA.II 0',
+        'MA.II 1',
+        'MA.II 2',
+        'MA.II 3',
+        'MA.II R',      
+      ];
+    }
     this.planType = null;
     this.pdfSrc = null;
     this.spinner = true;
@@ -2219,6 +2233,131 @@ export class NewRequestComponent implements OnInit {
           break;
       }
     }
+
+    // else if (this.selectedbuilding == '18') {
+    //   switch (event) {
+    //     case "MA Basement":
+    //       this.planType = "MA Basement";
+    //       this.pdfSrc = "assets/images/plans/MABasement/MA_B.pdf";
+    //       this.blocks = [
+    //         { name: "MA_B_B80.0A", pdfSrc: "assets/images/plans/MABasement/Zones/MA_B_B80.0A.pdf", className: 'MA_B_B80_0A', planType: 'MA Basement' },
+    //         { name: "MA_B_B80.0B", pdfSrc: "assets/images/plans/MABasement/Zones/MA_B_B80.0B.pdf", className: 'MA_B_B80_0B', planType: 'MA Basement' },
+    //         { name: "MA_B_B80.0C", pdfSrc: "assets/images/plans/MABasement/Zones/MA_B_B80.0C.pdf", className: 'MA_B_B80_0C', planType: 'MA Basement' },
+    //         { name: "MA_B_B80.0D", pdfSrc: "assets/images/plans/MABasement/Zones/MA_B_B80.0D.pdf", className: 'MA_B_B80_0D', planType: 'MA Basement' },
+    //       ]
+    //       break;
+      
+    //     default:
+    //       break;
+    //   }
+    // }
+
+    else if (this.selectedbuilding == '19') {
+      switch (event) {
+        case "MA.II 0":
+          this.planType = "MA.II 0";
+          this.pdfSrc = "assets/images/plans/MAII/GroundFloor/MA.II_0.pdf";
+          this.blocks = [
+            { name: "20.GF.CorridorN", pdfSrc: "assets/images/plans/MAII/GroundFloor/Zones/20.GF.CorridorN.pdf", className: 'GF_20_CorridorN', planType: 'MA.II 0' },
+            { name: "20.GF.CorridorS", pdfSrc: "assets/images/plans/MAII/GroundFloor/Zones/20.GF.CorridorS.pdf", className: 'GF_20_CorridorS', planType: 'MA.II 0' },
+            { name: "50.0A", pdfSrc: "assets/images/plans/MAII/GroundFloor/Zones/50.0A.pdf", className: 'GF_50_0A', planType: 'MA.II 0' },
+            { name: "50.0B", pdfSrc: "assets/images/plans/MAII/GroundFloor/Zones/50.0B.pdf", className: 'GF_50_0B', planType: 'MA.II 0' },
+            { name: "50.0C", pdfSrc: "assets/images/plans/MAII/GroundFloor/Zones/50.0C.pdf", className: 'GF_50_0C', planType: 'MA.II 0' },
+            { name: "50.0D", pdfSrc: "assets/images/plans/MAII/GroundFloor/Zones/50.0D.pdf", className: 'GF_50_0D', planType: 'MA.II 0' },
+            { name: "50.0E", pdfSrc: "assets/images/plans/MAII/GroundFloor/Zones/50.0E.pdf", className: 'GF_50_0E', planType: 'MA.II 0' },
+            { name: "50.0F", pdfSrc: "assets/images/plans/MAII/GroundFloor/Zones/50.0F.pdf", className: 'GF_50_0F', planType: 'MA.II 0' },
+
+            { name: "50.0G", pdfSrc: "assets/images/plans/MAII/GroundFloor/Zones/50.0G.pdf", className: 'GF_50_0G', planType: 'MA.II 0' },
+
+            { name: "50.0H", pdfSrc: "assets/images/plans/MAII/GroundFloor/Zones/50.0H.pdf", className: 'GF_50_0H', planType: 'MA.II 0' },
+            { name: "50.0J", pdfSrc: "assets/images/plans/MAII/GroundFloor/Zones/50.0J.pdf", className: 'GF_50_0J', planType: 'MA.II 0' },
+            { name: "50.0K", pdfSrc: "assets/images/plans/MAII/GroundFloor/Zones/50.0K.pdf", className: 'GF_50_0K', planType: 'MA.II 0' },
+            { name: "50.0L", pdfSrc: "assets/images/plans/MAII/GroundFloor/Zones/50.0L.pdf", className: 'GF_50_0L', planType: 'MA.II 0' },
+            { name: "50.0M", pdfSrc: "assets/images/plans/MAII/GroundFloor/Zones/50.0M.pdf", className: 'GF_50_0M', planType: 'MA.II 0' },
+            { name: "50.0N", pdfSrc: "assets/images/plans/MAII/GroundFloor/Zones/50.0N.pdf", className: 'GF_50_0N', planType: 'MA.II 0' },
+            { name: "50.0P", pdfSrc: "assets/images/plans/MAII/GroundFloor/Zones/50.0P.pdf", className: 'GF_50_0P', planType: 'MA.II 0' },
+            { name: "80.0A", pdfSrc: "assets/images/plans/MAII/GroundFloor/Zones/80.0A.pdf", className: 'GF_80_0A', planType: 'MA.II 0' },
+            { name: "80.0B", pdfSrc: "assets/images/plans/MAII/GroundFloor/Zones/80.0B.pdf", className: 'GF_80_0B', planType: 'MA.II 0' },
+            { name: "80.0C", pdfSrc: "assets/images/plans/MAII/GroundFloor/Zones/80.0C.pdf", className: 'GF_80_0C', planType: 'MA.II 0' },
+            { name: "80.0D", pdfSrc: "assets/images/plans/MAII/GroundFloor/Zones/80.0D.pdf", className: 'GF_80_0D', planType: 'MA.II 0' },
+            { name: "80.0E", pdfSrc: "assets/images/plans/MAII/GroundFloor/Zones/80.0E.pdf", className: 'GF_80_0E', planType: 'MA.II 0' },
+            { name: "BS2.0", pdfSrc: "assets/images/plans/MAII/GroundFloor/Zones/BS2.0.pdf", className: 'GF_BS2_0', planType: 'MA.II 0' },
+            { name: "FS3.2", pdfSrc: "assets/images/plans/MAII/GroundFloor/Zones/FS3.2.pdf", className: 'GF_FS3_2', planType: 'MA.II 0' },
+            { name: "FS4.0", pdfSrc: "assets/images/plans/MAII/GroundFloor/Zones/FS4.0.pdf", className: 'GF_FS4_0', planType: 'MA.II 0' },
+          ]
+          break;
+          case "MA.II 1":
+            this.planType = "MA.II 1";
+            this.pdfSrc = "assets/images/plans/MAII/FirstFloor/MA.II_1.pdf";
+            this.blocks = [
+              { name: "20.1F.CorridorN", pdfSrc: "assets/images/plans/MAII/FirstFloor/Zones/20.1F.CorridorN.pdf", className: 'FF_20_CorridorN', planType: 'MA.II 1' },
+              { name: "20.1F.CorridorS", pdfSrc: "assets/images/plans/MAII/FirstFloor/Zones/20.1F.CorridorS.pdf", className: 'FF_20_CorridorS', planType: 'MA.II 1' },
+              { name: "50.0A", pdfSrc: "assets/images/plans/MAII/FirstFloor/Zones/50.0A.pdf", className: 'FF_50_0A', planType: 'MA.II 1' },
+              { name: "50.0D", pdfSrc: "assets/images/plans/MAII/FirstFloor/Zones/50.0D.pdf", className: 'FF_50_0D', planType: 'MA.II 1' },
+              { name: "50.1A", pdfSrc: "assets/images/plans/MAII/FirstFloor/Zones/50.1A.pdf", className: 'FF_50_1A', planType: 'MA.II 1' },
+              { name: "50.1B", pdfSrc: "assets/images/plans/MAII/FirstFloor/Zones/50.1B.pdf", className: 'FF_50_1B', planType: 'MA.II 1' },
+              { name: "50.1C", pdfSrc: "assets/images/plans/MAII/FirstFloor/Zones/50.1C.pdf", className: 'FF_50_1C', planType: 'MA.II 1' },
+              { name: "50.1D", pdfSrc: "assets/images/plans/MAII/FirstFloor/Zones/50.1D.pdf", className: 'FF_50_1D', planType: 'MA.II 1' },
+              { name: "50.1E", pdfSrc: "assets/images/plans/MAII/FirstFloor/Zones/50.1E.pdf", className: 'FF_50_1E', planType: 'MA.II 1' },
+              { name: "50.1F", pdfSrc: "assets/images/plans/MAII/FirstFloor/Zones/50.1F.pdf", className: 'FF_50_1F', planType: 'MA.II 1' },
+              { name: "50.1G", pdfSrc: "assets/images/plans/MAII/FirstFloor/Zones/50.1G.pdf", className: 'FF_50_1G', planType: 'MA.II 1' },
+              { name: "50.1H", pdfSrc: "assets/images/plans/MAII/FirstFloor/Zones/50.1H.pdf", className: 'FF_50_1H', planType: 'MA.II 1' },
+              { name: "50.1I", pdfSrc: "assets/images/plans/MAII/FirstFloor/Zones/50.1I.pdf", className: 'FF_50_1I', planType: 'MA.II 1' },
+              { name: "50.1J", pdfSrc: "assets/images/plans/MAII/FirstFloor/Zones/50.1J.pdf", className: 'FF_50_1J', planType: 'MA.II 1' },
+              { name: "50.1K", pdfSrc: "assets/images/plans/MAII/FirstFloor/Zones/50.1K.pdf", className: 'FF_50_1K', planType: 'MA.II 1' },
+              { name: "50.1L", pdfSrc: "assets/images/plans/MAII/FirstFloor/Zones/50.1L.pdf", className: 'FF_50_1L', planType: 'MA.II 1' },
+              { name: "60.1P", pdfSrc: "assets/images/plans/MAII/FirstFloor/Zones/60.1P.pdf", className: 'FF_60_1P', planType: 'MA.II 1' },
+              { name: "80.1A", pdfSrc: "assets/images/plans/MAII/FirstFloor/Zones/80.1A.pdf", className: 'FF_80_1A', planType: 'MA.II 1' },
+              { name: "80.1B", pdfSrc: "assets/images/plans/MAII/FirstFloor/Zones/80.1B.pdf", className: 'FF_80_1B', planType: 'MA.II 1' },
+              { name: "80.1C", pdfSrc: "assets/images/plans/MAII/FirstFloor/Zones/80.1C.pdf", className: 'FF_80_1C', planType: 'MA.II 1' },
+              { name: "80.1E", pdfSrc: "assets/images/plans/MAII/FirstFloor/Zones/80.1E.pdf", className: 'FF_80_1E', planType: 'MA.II 1' },
+              { name: "BS2.2", pdfSrc: "assets/images/plans/MAII/FirstFloor/Zones/BS2.2.pdf", className: 'FF_BS2_2', planType: 'MA.II 1' },
+              { name: "FS3.0", pdfSrc: "assets/images/plans/MAII/FirstFloor/Zones/FS3.0.pdf", className: 'FF_FS3_0', planType: 'MA.II 1' },
+              { name: "FS4.0", pdfSrc: "assets/images/plans/MAII/FirstFloor/Zones/FS4.0.pdf", className: 'FF_FS4_0', planType: 'MA.II 1' },
+            ]
+            break;
+            case "MA.II 2":
+              this.planType = "MA.II 2";
+              this.pdfSrc = "assets/images/plans/MAII/SecondFloor/MA.II_2.pdf";
+              this.blocks = [
+                { name: "50.2A.1", pdfSrc: "assets/images/plans/MAII/SecondFloor/Zones/50.2A.1.pdf", className: 'SF_50_2A_1', planType: 'MA.II 2' },
+                { name: "50.2A.2", pdfSrc: "assets/images/plans/MAII/SecondFloor/Zones/50.2A.2.pdf", className: 'SF_50_2A_2', planType: 'MA.II 2' },
+                { name: "50.2A.3", pdfSrc: "assets/images/plans/MAII/SecondFloor/Zones/50.2A.3.pdf", className: 'SF_50_2A_3', planType: 'MA.II 2' },
+                { name: "50.2B", pdfSrc: "assets/images/plans/MAII/SecondFloor/Zones/50.2B.pdf", className: 'SF_50_2B', planType: 'MA.II 2' },
+                { name: "50.2C", pdfSrc: "assets/images/plans/MAII/SecondFloor/Zones/50.2C.pdf", className: 'SF_50_2C', planType: 'MA.II 2' },
+                { name: "50.2D", pdfSrc: "assets/images/plans/MAII/SecondFloor/Zones/50.2D.pdf", className: 'SF_50_2D', planType: 'MA.II 2' },
+                { name: "50.2E", pdfSrc: "assets/images/plans/MAII/SecondFloor/Zones/50.2E.pdf", className: 'SF_50_2E', planType: 'MA.II 2' },
+                { name: "50.2F", pdfSrc: "assets/images/plans/MAII/SecondFloor/Zones/50.2F.pdf", className: 'SF_50_2F', planType: 'MA.II 2' },
+                { name: "80.2A", pdfSrc: "assets/images/plans/MAII/SecondFloor/Zones/80.2A.pdf", className: 'SF_80_2A', planType: 'MA.II 2' },
+                { name: "80.2B", pdfSrc: "assets/images/plans/MAII/SecondFloor/Zones/80.2B.pdf", className: 'SF_80_2B', planType: 'MA.II 2' },
+                { name: "80.2C", pdfSrc: "assets/images/plans/MAII/SecondFloor/Zones/80.2C.pdf", className: 'SF_80_2C', planType: 'MA.II 2' },
+                { name: "80.2D", pdfSrc: "assets/images/plans/MAII/SecondFloor/Zones/80.2D.pdf", className: 'SF_80_2D', planType: 'MA.II 2' },
+                { name: "BS2.2", pdfSrc: "assets/images/plans/MAII/SecondFloor/Zones/BS2.2.pdf", className: 'SF_BS2_2', planType: 'MA.II 2' },
+                { name: "FS3.2", pdfSrc: "assets/images/plans/MAII/SecondFloor/Zones/FS3.2.pdf", className: 'SF_FS3_2', planType: 'MA.II 2' },
+                { name: "FS4.2", pdfSrc: "assets/images/plans/MAII/SecondFloor/Zones/FS4.2.pdf", className: 'SF_FS4_2', planType: 'MA.II 2' },
+              ]
+              break;
+              case "MA.II 3":
+                this.planType = "MA.II 3";
+                this.pdfSrc = "assets/images/plans/MAII/ThirdFloor/MA.II_3.pdf";
+                this.blocks = [
+                  { name: "50.3A", pdfSrc: "assets/images/plans/MAII/ThirdFloor/Zones/50.3A.pdf", className: 'TF_50_3A', planType: 'MA.II 3' },
+                ]
+                break;
+                case "MA.II R":
+                  this.planType = "MA.II R";
+                  this.pdfSrc = "assets/images/plans/MAII/Roof/MA.II_R.pdf";
+                  this.blocks = [
+                    { name: "MA.II_R", pdfSrc: "assets/images/plans/MAII/Roof/MA.II_R.pdf", className: 'RF_R', planType: 'MA.II R' },
+
+                  ]
+                  break;
+      
+        default:
+          break;
+      }
+    }
+
 
 
 
