@@ -13973,39 +13973,48 @@ input {
 /* MB.2 */
 
 
-/* start ma Basement */
+
+/* / / start ma Basement / / */
 
 .MA_B_B80_0A{
   position: absolute;
-  bottom: 45%;
-  left: 19.5%;
+  bottom: 45.5%;
+  left: 18.5%;
   z-index: 9999;
-  height: 3%;
-  width: 64.5%;
+  height: 5.5%;
+  width: 65%;
   padding: 0px;
 }
 
 .MA_B_B80_0B{
   position: absolute;
-  bottom: 21%;
-  right: 15.5%;
+  bottom: 18.5%;
+  right: 16.5%;
   z-index: 9999;
-  height: 21%;
-  width: 19.5%;
+  height: 23%;
+  width: 18.5%;
   padding: 0px;
 }
-
+.MA_B_B80_0C{
+  position: absolute;
+  bottom: 12%;
+  right: 16.5%;
+  z-index: 9999;
+  height: 6.5%;
+  width: 18.5%;
+  padding: 0px;
+}
 .MA_B_B80_0D{
   position: absolute;
-  top: 9%;
+  top: 6%;
   right: 18.5%;
   z-index: 9999;
-  height: 8%;
-  width: 21.5%;
+  height: 6%;
+  width: 22.5%;
   padding: 0px;
 }
 
-/* end ma Basement */
+/* / / end ma Basement / / */
 
 /* MA.II 0 ........................*/
 
@@ -14615,3 +14624,18 @@ input {
   padding: 0px;
 }
 /* MA ends */
+/* / / MA II 0  START/ / */
+
+@media (min-width: 1800px) and (max-width:3000px) {
+  .GF_50_0H{
+    position: absolute;
+    top: 16.5%;
+    right: 38.5%;
+    z-index: 9999;
+    height: 5.5%;
+    width: 2%;
+    min-width: 50px;
+    padding: 0px;
+}
+}
+/* / / MA II 0  END/ / */

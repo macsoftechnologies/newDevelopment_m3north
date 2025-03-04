@@ -6261,6 +6261,375 @@ export class RequestBuildingModelComponent implements OnInit {
 
     // mb.R Roof floor end
 
+       // MA basement  start
+
+  else if (this.data.floor.name == 'MA_B_B80.0A' && this.data.floor.planType == 'MA Basement') {
+    this.floorBlock = [
+        {
+        value: 'B80.0A-TR73',
+        className: "B80_0A-1",
+        isSelected: false
+        },
+        {
+        value: 'B80.0A-LI73',
+        className: "B80_0A-2",
+        isSelected: false
+        },
+        {
+        value: 'B80.0A-K.738',
+        className: "B80_0A-3",
+        isSelected: false
+        },
+        {
+        value: 'B80.0A-SK73',
+        className: "B80_0A-4",
+        isSelected: false
+        },
+        {
+        value: 'B80.0A-TR83',
+        className: "B80_0A-5",
+        isSelected: false
+        },
+        {
+        value: 'B80.0A-LI83',
+        className: "B80_0A-6",
+        isSelected: false
+        },
+        {
+        value: 'B80.0A-K.838',
+        className: "B80_0A-7",
+        isSelected: false
+        },
+        {
+        value: 'B80.0A-SK83',
+        className: "B80_0A-8",
+        isSelected: false
+        },
+        {
+        value: 'B80.0A-K.733',
+        className: "B80_0A-9",
+        isSelected: false
+        },
+        {
+        value: 'B80.0A-K.233',
+        className: "B80_0A-10",
+        isSelected: false
+        },
+        {
+        value: 'B80.0A-K.833',
+        className: "B80_0A-11",
+        isSelected: false
+        },
+        {
+        value: 'B80.0A-TR72',
+        className: "B80_0A-12",
+        isSelected: false
+        },
+        {
+        value: 'B80.0A-TR82',
+        className: "B80_0A-13",
+        isSelected: false
+        },        
+    ]
+    if (selectedBlockData) {
+      if ((selectedBlockData.floorName == this.data.floor.name) && (selectedBlockData.planType == this.data.floor.planType)) {
+        console.log(selectedBlockData, "2")
+        this.floorBlock = selectedBlockData.selectedBlock;
+      }
+    }
+  }
+  else if (this.data.floor.name == 'MA_B_B80.0B' && this.data.floor.planType == 'MA Basement') {
+    this.floorBlock = [
+      {
+        value: 'B80.0B-K.834',
+        className: "B80_0B-1",
+        isSelected: false
+        },
+        {
+        value: 'B80.0B-K.832',
+        className: "B80_0B-2",
+        isSelected: false
+        },
+        {
+        value: 'B80.0B-K.830',
+        className: "B80_0B-3",
+        isSelected: false
+        },
+        {
+        value: 'B80.0B-K.828',
+        className: "B80_0B-4",
+        isSelected: false
+        },
+        {
+        value: 'B80.0B-K.826',
+        className: "B80_0B-5",
+        isSelected: false
+        },
+        {
+        value: 'B80.0B-K.829',
+        className: "B80_0B-6",
+        isSelected: false
+        },
+        {
+        value: 'B80.0B-K.816',
+        className: "B80_0B-7",
+        isSelected: false
+        },
+        {
+        value: 'B80.0B-K.814',
+        className: "B80_0B-8",
+        isSelected: false
+        },
+        {
+        value: 'B80.0B-K.813',
+        className: "B80_0B-9",
+        isSelected: false
+        },
+        {
+        value: 'B80.0B-K.824.2',
+        className: "B80_0B-10",
+        isSelected: false
+        },
+        {
+        value: 'B80.0B-K.824.1',
+        className: "B80_0B-11",
+        isSelected: false
+        },
+        {
+        value: 'B80.0B-K.824',
+        className: "B80_0B-12",
+        isSelected: false
+        },
+        {
+        value: 'B80.0B-K.820.2',
+        className: "B80_0B-13",
+        isSelected: false
+        },
+        {
+        value: 'B80.0B-K.820.1',
+        className: "B80_0B-14",
+        isSelected: false
+        },
+        {
+        value: 'B80.0B-K.820',
+        className: "B80_0B-15",
+        isSelected: false
+        },
+        {
+        value: 'B80.0B-K.816.2',
+        className: "B80_0B-16",
+        isSelected: false
+        },
+        {
+        value: 'B80.0B-K.800.3',
+        className: "B80_0B-17",
+        isSelected: false
+        },
+        {
+        value: 'B80.0B-K.822.2',
+        className: "B80_0B-18",
+        isSelected: false
+        },
+        {
+        value: 'B80.0B-K.822.1',
+        className: "B80_0B-19",
+        isSelected: false
+        },
+        {
+        value: 'B80.0B-K.822',
+        className: "B80_0B-20",
+        isSelected: false
+        },
+        {
+        value: 'B80.0B-K.818.2',
+        className: "B80_0B-21",
+        isSelected: false
+        },
+        {
+        value: 'B80.0B-K.818.1',
+        className: "B80_0B-22",
+        isSelected: false
+        },
+        {
+        value: 'B80.0B-K.818',
+        className: "B80_0B-23",
+        isSelected: false
+        },
+        {
+        value: 'B80.0B-K.814.2',
+        className: "B80_0B-24",
+        isSelected: false
+        },
+        {
+        value: 'B80.0B-K.800.4',
+        className: "B80_0B-25",
+        isSelected: false
+        },
+        {
+        value: 'B80.0B-K.821.1',
+        className: "B80_0B-26",
+        isSelected: false
+        },
+        {
+        value: 'B80.0B-K.821',
+        className: "B80_0B-27",
+        isSelected: false
+        },
+        {
+        value: 'B80.0B-K.819.1',
+        className: "B80_0B-28",
+        isSelected: false
+        },
+        {
+        value: 'B80.0B-K.819',
+        className: "B80_0B-29",
+        isSelected: false
+        },
+        {
+        value: 'B80.0B-K.817.1',
+        className: "B80_0B-30",
+        isSelected: false
+        },
+        {
+        value: 'B80.0B-K.817',
+        className: "B80_0B-31",
+        isSelected: false
+        },
+        {
+        value: 'B80.0B-K.815',
+        className: "B80_0B-32",
+        isSelected: false
+        },
+        {
+        value: 'B80.0B-K.813.2',
+        className: "B80_0B-33",
+        isSelected: false
+        },
+        {
+        value: 'B80.0B-K.813.1',
+        className: "B80_0B-34",
+        isSelected: false
+        },
+        {
+        value: 'B80.0B-K.812',
+        className: "B80_0B-35",
+        isSelected: false
+        },
+        {
+        value: 'B80.0B-K.812.1',
+        className: "B80_0B-36",
+        isSelected: false
+        },
+        {
+        value: 'B80.0B-K.810.1',
+        className: "B80_0B-37",
+        isSelected: false
+        },
+        {
+        value: 'B80.0B-K.810',
+        className: "B80_0B-38",
+        isSelected: false
+        },
+        {
+        value: 'B80.0B-K.809',
+        className: "B80_0B-39",
+        isSelected: false
+        },
+        {
+        value: 'B80.0B-K.811',
+        className: "B80_0B-40",
+        isSelected: false
+        },
+        {
+        value: 'B80.0B-K.806',
+        className: "B80_0B-41",
+        isSelected: false
+        },
+        {
+        value: 'B80.0B-K.807',
+        className: "B80_0B-42",
+        isSelected: false
+        },
+        {
+        value: 'B80.0B-K.804',
+        className: "B80_0B-43",
+        isSelected: false
+        },
+        {
+        value: 'B80.0B-K.802',
+        className: "B80_0B-44",
+        isSelected: false
+        },
+        {
+        value: 'B80.0B-K.805',
+        className: "B80_0B-45",
+        isSelected: false
+        },
+        {
+        value: 'B80.0B-LI81',
+        className: "B80_0B-46",
+        isSelected: false
+        },
+        {
+        value: 'B80.0B-K.801',
+        className: "B80_0B-47",
+        isSelected: false
+        },
+        {
+        value: 'B80.0B-SK81',
+        className: "B80_0B-48",
+        isSelected: false
+        },
+        {
+        value: 'B80.0B-TR81',
+        className: "B80_0B-49",
+        isSelected: false
+        },
+    ]
+    if (selectedBlockData) {
+      if ((selectedBlockData.floorName == this.data.floor.name) && (selectedBlockData.planType == this.data.floor.planType)) {
+        console.log(selectedBlockData, "2")
+        this.floorBlock = selectedBlockData.selectedBlock;
+      }
+    }
+  }
+  else if (this.data.floor.name == 'MA_B_B80.0C' && this.data.floor.planType == 'MA Basement') {
+    this.floorBlock = [
+        {
+        value: 'B80.0C-K.800',
+        className: "B80_0C-1",
+        isSelected: false
+        },
+        {
+        value: 'B80.0C-K.800.1',
+        className: "B80_0C-2",
+        isSelected: false
+        },
+    ]
+    if (selectedBlockData) {
+      if ((selectedBlockData.floorName == this.data.floor.name) && (selectedBlockData.planType == this.data.floor.planType)) {
+        console.log(selectedBlockData, "2")
+        this.floorBlock = selectedBlockData.selectedBlock;
+      }
+    }
+  }
+  else if (this.data.floor.name == 'MA_B_B80.0D' && this.data.floor.planType == 'MA Basement') {
+    this.floorBlock = [
+       {
+        value: 'B80.0D-S.533',
+        className: "B80_0D-1",
+        isSelected: false
+        },
+    ]
+    if (selectedBlockData) {
+      if ((selectedBlockData.floorName == this.data.floor.name) && (selectedBlockData.planType == this.data.floor.planType)) {
+        console.log(selectedBlockData, "2")
+        this.floorBlock = selectedBlockData.selectedBlock;
+      }
+    }
+  }
+
+   // MA basement  end
     
    // MA.II 0 floor start
    else if (this.data.floor.name == '20.GF.CorridorN' && this.data.floor.planType == 'MA.II 0') {

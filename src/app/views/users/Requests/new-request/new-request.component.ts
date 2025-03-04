@@ -1852,11 +1852,11 @@ export class NewRequestComponent implements OnInit {
         'MB.R',
       ];
     }
-    // else if (event == '18') {
-    //   this.floors = [
-    //     'MA Basement',
-    //   ];
-    // }
+    else if (event == '18') {
+      this.floors = [
+        'MA Basement',
+      ];
+    }
     else if (event == '19') {
       this.floors = [
         'MA.II 0',
@@ -2234,23 +2234,24 @@ export class NewRequestComponent implements OnInit {
       }
     }
 
-    // else if (this.selectedbuilding == '18') {
-    //   switch (event) {
-    //     case "MA Basement":
-    //       this.planType = "MA Basement";
-    //       this.pdfSrc = "assets/images/plans/MABasement/MA_B.pdf";
-    //       this.blocks = [
-    //         { name: "MA_B_B80.0A", pdfSrc: "assets/images/plans/MABasement/Zones/MA_B_B80.0A.pdf", className: 'MA_B_B80_0A', planType: 'MA Basement' },
-    //         { name: "MA_B_B80.0B", pdfSrc: "assets/images/plans/MABasement/Zones/MA_B_B80.0B.pdf", className: 'MA_B_B80_0B', planType: 'MA Basement' },
-    //         { name: "MA_B_B80.0C", pdfSrc: "assets/images/plans/MABasement/Zones/MA_B_B80.0C.pdf", className: 'MA_B_B80_0C', planType: 'MA Basement' },
-    //         { name: "MA_B_B80.0D", pdfSrc: "assets/images/plans/MABasement/Zones/MA_B_B80.0D.pdf", className: 'MA_B_B80_0D', planType: 'MA Basement' },
-    //       ]
-    //       break;
+    else if (this.selectedbuilding == '18') {
+      switch (event) {
+        case "MA Basement":
+          this.planType = "MA Basement";
+          this.pdfSrc = "assets/images/plans/MABasement/MA_B.pdf";
+          this.blocks = [
+            { name: "MA_B_B80.0A", pdfSrc: "assets/images/plans/MABasement/Zones/MA_B_B80.0A.pdf", className: 'MA_B_B80_0A', planType: 'MA Basement' },
+            { name: "MA_B_B80.0B", pdfSrc: "assets/images/plans/MABasement/Zones/MA_B_B80.0B.pdf", className: 'MA_B_B80_0B', planType: 'MA Basement' },
+            { name: "MA_B_B80.0C", pdfSrc: "assets/images/plans/MABasement/Zones/MA_B_B80.0C.pdf", className: 'MA_B_B80_0C', planType: 'MA Basement' },
+            { name: "MA_B_B80.0D", pdfSrc: "assets/images/plans/MABasement/Zones/MA_B_B80.0D.pdf", className: 'MA_B_B80_0D', planType: 'MA Basement' },
+          ]
+          break;
       
-    //     default:
-    //       break;
-    //   }
-    // }
+        default:
+          break;
+      }
+    }
+    
 
     else if (this.selectedbuilding == '19') {
       switch (event) {

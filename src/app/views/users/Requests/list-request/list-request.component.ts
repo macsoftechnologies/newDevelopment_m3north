@@ -199,6 +199,7 @@ export class ListRequestComponent implements OnInit {
       'MA.II 2',
       'MA.II 3',
       'MA.II R',
+      'MA Basement'
   ];
 
   getHras = [
