@@ -414,7 +414,7 @@ export class ListRequestComponent implements OnInit {
 
     this.api = 'listpagination';
 
-    this.isUserLoggedIn = JSON.parse(localStorage.getItem('EGRET_USER'));
+    this.isUserLoggedIn = JSON.parse(localStorage.getItem('m3north_EGRET_USER'));
     console.log(this.isUserLoggedIn,"admin");
 
     this.currentPage = 1;
@@ -878,6 +878,11 @@ export class ListRequestComponent implements OnInit {
       row['Request_status'] = 'Hold';
       let currentdate = this.datePipe.transform(new Date(), 'yyyy-MM-dd');
       row['Request_Date'] = currentdate;
+    }
+    if (status == 'Draft') {
+      row['Request_status'] = 'Draft';
+    } else {
+      row['Request_status'] = 'Hold';
     }
     let title = 'Copy Request';
     let dialogRef: MatDialogRef<any> = this.dialog.open(CopyRequestComponent, {
