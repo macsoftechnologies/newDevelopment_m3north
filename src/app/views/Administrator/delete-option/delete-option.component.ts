@@ -2,13 +2,15 @@ import { Component, OnInit, Optional, Inject } from '@angular/core';
 import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { ActivityService } from 'app/shared/services/activity.service';
 import { MatSnackBar } from '@angular/material/snack-bar';
-import { DeleteActivityDto } from 'app/views/Models/ActivityDto';
+import { DeleteActivityDto, DeleteMultiActivityDto } from 'app/views/Models/ActivityDto';
 import { SafetyprecautionService } from 'app/shared/services/safetyprecautionservice';
 import { SubcontractorService } from 'app/shared/services/subcontractor.service';
 import { EmployeeService } from 'app/shared/services/employee.service';
 import { TeamService } from 'app/shared/services/team.service';
 import { DepartmentService } from 'app/shared/services/department.service';
 import { RequestService } from 'app/shared/services/request.service';
+import { ElectricalworkService } from 'app/shared/services/electricalworks.service';
+import { MechanicalworkService } from 'app/shared/services/mechanicalworks.service';
 
 @Component({
   selector: 'app-delete-option',
@@ -20,6 +22,9 @@ export class DeleteOptionComponent implements OnInit {
   Dto:DeleteActivityDto={
     id:null
   }
+  MultiDto: DeleteMultiActivityDto= {
+    ids: []
+  }
   constructor(@Optional() @Inject(MAT_DIALOG_DATA) public data: any[],private _snackBar: MatSnackBar,
   private activityservice:ActivityService,
   private subcontrservice:SubcontractorService,
@@ -27,6 +32,8 @@ export class DeleteOptionComponent implements OnInit {
   private teamsservice:TeamService,
   private deptservice:DepartmentService,
   private precautionservice:SafetyprecautionService,
+  private electricalworkservice:ElectricalworkService,
+  private mechanicalworkservice:MechanicalworkService,
   private reqservice:RequestService) { }
 
   ngOnInit(): void {
@@ -36,6 +43,7 @@ export class DeleteOptionComponent implements OnInit {
   Delete()
   {
     this.Dto.id=this.data["payload"]['id'];
+    this.MultiDto.ids = this.data["payload"];
     if(this.data['type']=='activity')
     {
          this.activityservice.DeleteActivity(this.Dto).subscribe(res=>
@@ -53,6 +61,25 @@ export class DeleteOptionComponent implements OnInit {
 
           });
     }
+
+    else if(this.data['type']=='electricalwork')
+    {
+         this.electricalworkservice.DeleteElectricalwork(this.Dto).subscribe(res=>
+          {
+            this.openSnackBar('Record Deleted Successfully');
+
+          });
+    }
+
+    else if(this.data['type']=='mechanicalwork')
+    {
+         this.mechanicalworkservice.DeleteMechanicalwork(this.Dto).subscribe(res=>
+          {
+            this.openSnackBar('Record Deleted Successfully');
+
+          });
+    }
+
     else if(this.data['type']=='subcontractor')
     {
          this.subcontrservice.DeleteSubContractor(this.Dto).subscribe(res=>
@@ -102,6 +129,14 @@ export class DeleteOptionComponent implements OnInit {
 
           });
     }
+    else if(this.data['type']=='multirequest')
+      {
+           this.reqservice.DeleteMultiRequest(this.MultiDto).subscribe(res=>
+            {
+              this.openSnackBar('Request Deleted Successfully');
+  
+            });
+      }
     else if(this.data['type']=='docs')
     {
          this.subcontrservice.DeleteSubContractorDocs(this.Dto).subscribe(res=>

@@ -6,6 +6,8 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 import { JwtAuthService } from 'app/shared/services/auth/jwt-auth.service';
 import { Router } from "@angular/router";
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { config } from "config";
+import * as moment from 'moment';
 // import { getItems } from 'app/views/users/Requests/list-request'
 
 @Component({
@@ -27,10 +29,14 @@ export class RequestSaveOptionsDialogComponent implements OnInit {
       Request_status: null,
       id: null,
       userId: null,
-      ConM_initials: null
+      ConM_initials: null,
+      reject_reason: null,
+      createdTime: null,
+      CoMM_initials: null,
     }
   userData: any = {};
   statusApprovedForm: any;
+  CurrenttimeNow: string;
 
   constructor(@Inject(MAT_DIALOG_DATA) public data: any,
     public dialogRef: MatDialogRef<RequestSaveOptionsDialogComponent>,
@@ -41,8 +47,9 @@ export class RequestSaveOptionsDialogComponent implements OnInit {
     this.userData = this.authservice.getUser();
     
     this.statusApprovedForm = new FormGroup({
+      CoMM_initials: new FormControl('', Validators.required),
       ConM_initials: new FormControl('', Validators.required),
-
+      reject_reason: new FormControl('', Validators.required),
     })
   }
 
@@ -58,15 +65,43 @@ export class RequestSaveOptionsDialogComponent implements OnInit {
 
     this.dialogRef.close({ data: status });
   }
+      startTime() {
+
+  }
   ChangeListStaus() {
 
+        var today = moment.tz("Europe/Copenhagen");
+        this.CurrenttimeNow = today.format('HH:mm:ss');
+      
+        // document.getElementById('watch1').innerHTML = today.format('DD/MM/YYYY');
+        var t = setTimeout(this.startTime, 500);
+    console.log(config.Denmarktz.split(" "));
+          const [currentDenmarkDate, currentDenmarkTime] = [
+            ...config.Denmarktz.split(" "),
+          ];
+    if(this.status == 'COMM-Approved') {
+      this.status = 'Approved'
+    }
     this.UpdateRequestStatusList.Request_status = this.status;
     this.UpdateRequestStatusList.id = this.req_ids;
     this.UpdateRequestStatusList.userId = this.userData["id"];
+    this.UpdateRequestStatusList.createdTime = config.getDenmarkTime.full();
 
-    if (this.statusApprovedForm.valid) {
+    if (this.statusApprovedForm.get('ConM_initials').valid) {
       this.UpdateRequestStatusList.ConM_initials = this.statusApprovedForm.value.ConM_initials;
-    }
+    }else {
+  delete this.UpdateRequestStatusList.ConM_initials; // Remove if empty
+}
+    if (this.statusApprovedForm.get('CoMM_initials').valid) {
+      this.UpdateRequestStatusList.CoMM_initials = this.statusApprovedForm.value.CoMM_initials;
+    }else {
+  delete this.UpdateRequestStatusList.CoMM_initials; // Remove if empty
+}
+    if(this.statusApprovedForm.get('reject_reason').valid) {
+      this.UpdateRequestStatusList.reject_reason = this.statusApprovedForm.value.reject_reason;
+    }else {
+  delete this.UpdateRequestStatusList.reject_reason; // Remove if empty
+}
 
     this.reqservice.UpdateListStatusRequest(this.UpdateRequestStatusList).subscribe(res => {
       this.openSnackBar("Requests Status Updated Successfully");

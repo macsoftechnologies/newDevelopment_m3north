@@ -9,7 +9,7 @@ import { MatDialogRef, MatDialog } from '@angular/material/dialog';
 
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { egretAnimations } from 'app/shared/animations/egret-animations';
-import { Subscription, forkJoin } from 'rxjs';
+import { Subscription, forkJoin, of } from 'rxjs';
 import { AppConfirmService } from 'app/shared/services/app-confirm/app-confirm.service';
 import { AppLoaderService } from 'app/shared/services/app-loader/app-loader.service';
 import { UserService } from 'app/shared/services/user.service';
@@ -44,6 +44,31 @@ import { EditRequestComponent } from '../edit-request/edit-request.component';
 import { config } from 'config';
 import { number } from 'ngx-custom-validators/src/app/number/validator';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
+import { ConfirmationDialogComponent } from '../../confirmation-component/confirmation-component';
+import { map } from 'rxjs/operators';
+
+interface Building {
+  buildingId: number;
+  building_name: string;
+  planType: string; // This represents the floor/level
+  zoneList: {
+    floorName: string;
+    zoneSubList: {
+      value: string;
+      className: string;
+    }[];
+  }[];
+}
+
+interface RoomGroup {
+  buildingId: number;
+  floorName: string;
+  planType: string;
+  zones: {
+    value: string;
+    className: string;
+  }[];
+}
 
 @Component({
   selector: 'app-list-request',
@@ -199,6 +224,11 @@ export class ListRequestComponent implements OnInit {
       'MA.II 2',
       'MA.II 3',
       'MA.II R',
+      'MA.III 0',
+      'MA.III 1',
+      'MA.III 2',
+      'MA.III 3',
+      'MA.III R',
       'MA Basement'
   ];
 
@@ -239,18 +269,18 @@ export class ListRequestComponent implements OnInit {
       "key": "working_confined_spaces",
       "image": "assets/images/logos/ConfinedSpace.png"
     },
-    {
-      "label": "Working in ATEX Area",
-      "value": 1,
-      "key": "work_in_atex_area",
-      "image": "assets/images/logos/ATEXarea.png"
-    },
-    {
-      "label": "Securing Facilities (LOTO)",
-      "value": 1,
-      "key":"securing_facilities",
-      "image": "assets/images/logos/SecuringFacilities.png"
-    },
+    // {
+    //   "label": "Working in ATEX Area",
+    //   "value": 1,
+    //   "key": "work_in_atex_area",
+    //   "image": "assets/images/logos/ATEXarea.png"
+    // },
+    // {
+    //   "label": "Securing Facilities (LOTO)",
+    //   "value": 1,
+    //   "key":"securing_facilities",
+    //   "image": "assets/images/logos/SecuringFacilities.png"
+    // },
     {
       "label": "Excavation Works",
       "value": 1,
@@ -262,6 +292,18 @@ export class ListRequestComponent implements OnInit {
       "value": 1,
       "key": "using_cranes_or_lifting",
       "image": "assets/images/logos/Craneslifting.png"
+    },
+    {
+      "label": "Energization of Electrical Equipment",
+      "value": 1,
+      "key": "power_on",
+      "image": "assets/images/logos/electrical_works.png"
+    },
+    {
+      "label": "Energization of Mechanical Equipment",
+      "value": 1,
+      "key": "pressurization",
+      "image": "assets/images/logos/mechanical1.png"
     },
     
   ];
@@ -325,6 +367,14 @@ export class ListRequestComponent implements OnInit {
       Statusid: 'Closed',
       Statusname: 'Closed',
     },
+    {
+      Statusid: 'Cancelled',
+      Statusname: 'Cancelled',
+    },
+    {
+      Statusid: 'Pre-Approved',
+      Statusname: 'Pre-Approved',
+    },
   ];
   TypeS: any[] = [
     {
@@ -355,6 +405,10 @@ export class ListRequestComponent implements OnInit {
     Start: null,
     End: null,
     Page: null,
+    hras: '',
+    taskSpecificPPE: '',
+    area: '',
+    permit_type: ''
   };
 
   RequestsbyidDto: RequestBySubcontractorId = {
@@ -362,9 +416,16 @@ export class ListRequestComponent implements OnInit {
   };
   Contractors: any[] = [];
   Sites: any[] = [];
-  Buildings: any[] = [];
+  // Buildings: any[] = [];
   userdata: any = {};
   isoperator: boolean = false;
+  Buildings: Building[] = [];
+  filteredFloors: string[] = [];
+  filteredRooms: RoomGroup[] = [];
+  
+  private allRooms: RoomGroup[] = [];
+  private allFloors: { buildingId: number; floorName: string }[] = [];
+   gridCols = 2;
   constructor(
     private dialog: MatDialog,
     private snack: MatSnackBar,
@@ -385,7 +446,27 @@ export class ListRequestComponent implements OnInit {
     this.requestservice.SelectedRequestData = {};
   }
 
-  ngOnInit() {    
+  ngOnInit() {  
+    
+    this.userdata = this.jwtauth.getUser();
+    console.log(this.userdata);
+    this.approvalUsers = this.userdata.role.split(',');
+    if(this.approvalUsers.includes('Department') && !this.approvalUsers.includes('Department1')) {
+      this.firstApproval = true;
+    } else if(this.approvalUsers.includes('Department1') && !this.approvalUsers.includes('Department')) {
+      this.secondApproval =true;
+    } else if((this.approvalUsers.includes('Department') && this.approvalUsers.includes('Department1')) || this.approvalUsers.includes('Admin')) {
+      this.bothApproval = true;
+    } else {
+      this.firstApproval = true;
+      this.secondApproval =true;
+      this.bothApproval = true;
+    }
+
+    this.breakpointObserver.observe(['(max-width: 599px)']) // 👈 custom mobile-only query
+      .subscribe(result => {
+        this.gridCols = result.matches ? 1 : 2;
+      });
    
     this.breakpointObserver.observe([
       Breakpoints.XSmall,
@@ -445,10 +526,111 @@ export class ListRequestComponent implements OnInit {
       Building: ['', Validators.required],
       Level: ['', Validators.required],
       Hras: ['',],
-      TaskSpecific:['',]
+      TaskSpecific:['',],
+      area: ['',],
+      permit_type: ['',],
+    });
+     this.initializeData();
+    this.setupFilterListeners();
+  }
+   private initializeData(): void {
+    const buildingData = this.requestservice.bulidingDataWithIds() as Building[];
+    this.Buildings = buildingData;
+    
+    // Extract all rooms with building references
+    this.allRooms = this.extractAllRooms(buildingData);
+    
+    // Extract all floors with their building references
+    this.allFloors = this.extractAllFloors(buildingData);
+    
+    this.resetFilters();
+  }
 
+  private extractAllFloors(buildings: Building[]): { buildingId: number; floorName: string }[] {
+    console.log("buildingsdatapasses", buildings);
+    const floors: { buildingId: number; floorName: string }[] = [];
+    buildings.forEach(building => {
+        floors.push({
+          buildingId: building.buildingId,
+          floorName: building.planType
+        });
+    });
+    return floors;
+  }
+
+  private setupFilterListeners(): void {
+    this.RequestlistForm.get('Building')?.valueChanges.subscribe(buildingIds => {
+        this.RequestlistForm.get('Level')?.setValue([], { emitEvent: false });
+        this.updateFilters(buildingIds, []);
+    });
+    
+    this.RequestlistForm.get('Level')?.valueChanges.subscribe(levels => {
+      this.updateFilters(this.RequestlistForm.get('Building')?.value, levels);
     });
   }
+
+  private updateFilters(buildingIds: number[] = [], levels: string[] = []): void {
+    // Filter floors based on selected buildings
+    this.filteredFloors = this.filterFloors(buildingIds);
+    
+    // Filter rooms based on both buildings and levels
+    this.filteredRooms = this.filterRooms(buildingIds, levels);
+  }
+
+
+  private filterFloors(buildingIds: number[]): string[] {
+    if (!buildingIds || buildingIds.length === 0) {
+        return [...new Set(this.allFloors.map(f => f.floorName))];
+    }
+    
+    const numericBuildingIds = buildingIds.map(id => Number(id));
+    
+    return [
+        ...new Set(
+            this.allFloors
+                .filter(f => numericBuildingIds.includes(Number(f.buildingId)))
+                .map(f => f.floorName)
+        )
+    ];
+}
+
+private filterRooms(buildingIds: number[], levels: string[]): RoomGroup[] {
+    const numericBuildingIds = buildingIds?.map(id => Number(id)) || [];
+    
+    return this.allRooms.filter(room => {
+        const buildingMatch = numericBuildingIds.length === 0 || 
+                            numericBuildingIds.includes(Number(room.buildingId));
+        
+        const levelMatch = levels.length === 0 || 
+                         levels.includes(room.planType);
+        
+        return buildingMatch && levelMatch;
+    });
+}
+
+  private resetFilters(): void {
+    this.filteredFloors = [...new Set(this.allFloors.map(f => f.floorName))];
+    this.filteredRooms = [...this.allRooms];
+  }
+
+  private extractAllRooms(buildings: Building[]): RoomGroup[] {
+    const rooms: RoomGroup[] = [];
+    buildings.forEach(building => {
+      building.zoneList?.forEach(zone => {
+        rooms.push({
+          buildingId: building.buildingId, // Critical connection point
+          floorName: zone.floorName,
+          planType: building.planType,
+          zones: zone.zoneSubList?.map(sub => ({
+            value: sub.value,
+            className: sub.className
+          })) || []
+        });
+      });
+    });
+    return rooms;
+  }
+
   ngOnDestroy() {
     if (this.getItemSub) {
       this.getItemSub.unsubscribe();
@@ -480,7 +662,7 @@ export class ListRequestComponent implements OnInit {
         this.Filtertab = true;
         this.userdata = this.jwtauth.getUser();
 
-        if (this.userdata['role'] == 'Subcontractor') {
+         if (this.userdata['role'].includes('Subcontractor')) {
           this.isoperator = false;
           this.IsNotSubCntr = false;
           this.IsNotASubCntr = false;
@@ -496,11 +678,10 @@ export class ListRequestComponent implements OnInit {
           // });
           this.paginationCount = res[1].count;
           console.log(this.paginationCount);
-        } else if (this.userdata['role'] == 'Admin') {
+        } else if (this.userdata['role'].includes('Admin')) {
           this.IsNotSubCntr = true;
           this.IsNotASubCntr = true;
           this.items = res[0]['data'];
-          this.isoperator = true;
           this.isoperator = true;
           var filteritems = [];
           this.items.forEach((x) => {
@@ -515,7 +696,7 @@ export class ListRequestComponent implements OnInit {
           this.paginationCount = res[1].count;
           console.log(this.paginationCount);
         } 
-        else if (this.userdata['role'] == 'Department') {
+        else if (this.userdata['role'].includes('Department') || this.userdata['role'].includes('Department1')) {
           this.IsNotSubCntr = false;
           this.IsNotASubCntr = true;
           this.items = res[0]['data'];
@@ -532,7 +713,7 @@ export class ListRequestComponent implements OnInit {
           // this.items.length = 0;
           // this.items = filteritems;
         }
-        else if (this.userdata['role'] == 'Observer') {
+        else if (this.userdata['role'].includes('Observer')) {
           this.IsNotSubCntr = false;
           this.IsNotASubCntr = true;
           this.items = res[0]['data'];
@@ -551,7 +732,16 @@ export class ListRequestComponent implements OnInit {
         }
       }
 
-      this.Contractors = res[2]['subcontractors'];
+      if (res[2] && Array.isArray(res[2]['subcontractors'])) {
+        this.Contractors = res[2]['subcontractors']
+          .filter(subcontractor => subcontractor?.subContractorName
+          ) // Remove undefined/null values
+          .sort((a, b) => a.subContractorName
+          .localeCompare(b.subContractorName
+          ));
+      } else {
+        this.Contractors = [];
+      }
       this.Sites = res[0]['data'];
       this.Getbuilding(this.Sites[0]['site_id']);
       this.Typeofactivitys = res[3]['activities'];
@@ -580,7 +770,7 @@ export class ListRequestComponent implements OnInit {
         this.Filtertab = true;
         this.userdata = this.jwtauth.getUser();
 
-        if (this.userdata['role'] == 'Subcontractor') {
+        if (this.userdata['role'].includes('Subcontractor')) {
           this.isoperator = false;
           this.IsNotSubCntr = false;
           this.RequestlistForm.controls['Contractor'].setValue(
@@ -592,10 +782,9 @@ export class ListRequestComponent implements OnInit {
             .subscribe((res) => {
               this.items = res['data'];
             });
-        } else if (this.userdata['role'] == 'Admin') {
+        } else if (this.userdata['role'].includes('Admin')) {
           this.IsNotSubCntr = true;
           this.items = res[0]['data'];
-          this.isoperator = true;
           this.isoperator = true;
           var filteritems = [];
           this.items.forEach((x) => {
@@ -606,7 +795,7 @@ export class ListRequestComponent implements OnInit {
           this.items = [];
           this.items.length = 0;
           this.items = filteritems;
-        } else if (this.userdata['role'] == 'Department') {
+        } else if (this.userdata['role'].includes('Department1') || this.userdata['role'].includes('Department')) {
           this.IsNotSubCntr = true;
           this.items = res[0]['data'];
           this.isoperator = true;
@@ -696,17 +885,30 @@ export class ListRequestComponent implements OnInit {
 
     console.log(this.RequestlistForm.controls.Level, 'Level');
     this.spinner = true;
-    this.SearchRequest.Request_status =
-      this.RequestlistForm.controls['Status'].value;
+const statusValue = this.RequestlistForm.controls['Status'].value;
+const statusArray = Array.isArray(statusValue) ? statusValue : [statusValue]; 
+
+const formattedStatus = statusArray
+  .filter(val => val !== null && val !== undefined && val !== '') 
+  .map((val: string) => `'${val}'`)
+  .join(',');
+
+this.SearchRequest.Request_status = formattedStatus || ""; 
+
+//     const statusArray = this.RequestlistForm.controls['Status'].value;
+// this.SearchRequest.Request_status = statusArray.map((val: string) => `'${val}'`).join(',');
+    // this.SearchRequest.Request_status =
+    //   this.RequestlistForm.controls['Status'].value.toString();
     this.SearchRequest.Activity =
       this.RequestlistForm.controls['Keyword'].value;
     this.SearchRequest.PermitNo =
       this.RequestlistForm.controls['Permitnumber'].value;
-    this.SearchRequest.Site_Id = this.RequestlistForm.controls['Site'].value;
+    // this.SearchRequest.Site_Id = this.RequestlistForm.controls['Site'].value;
+    this.SearchRequest.Site_Id = '5';
     this.SearchRequest.Building_Id =
-      this.RequestlistForm.controls['Building'].value;
+      this.RequestlistForm.controls['Building'].value.toString();
     this.SearchRequest.Sub_Contractor_Id =
-      this.RequestlistForm.controls['Contractor'].value;
+      this.RequestlistForm.controls['Contractor'].value.toString();
     var mydate = this.datePipe.transform(
       this.RequestlistForm.controls['WorkingDateFrom'].value,
       'yyyy-MM-dd'
@@ -716,25 +918,74 @@ export class ListRequestComponent implements OnInit {
       'yyyy-MM-dd'
     );
     this.SearchRequest.Type_Of_Activity_Id =
-      this.RequestlistForm.controls['TypeOfActivity'].value;
-    this.SearchRequest.Room_Type = this.RequestlistForm.controls['Level'].value;
+      this.RequestlistForm.controls['TypeOfActivity'].value.toString();
+        // this.SearchRequest.Room_Type = this.RequestlistForm.controls['Level'].value.toString();
+  const levelValue = this.RequestlistForm.controls['Level'].value;
+const levelsArray = Array.isArray(levelValue) ? levelValue : [levelValue]; 
+
+const formattedLevel = levelsArray
+  .filter(val => val !== null && val !== undefined && val !== '') 
+  .map((val: string) => `'${val}'`)
+  .join(',');
+
+this.SearchRequest.Room_Type = formattedLevel || ""; 
+
+ const areaValue = this.RequestlistForm.controls['area'].value;
+const areasArray = Array.isArray(areaValue) ? areaValue : [areaValue]; 
+
+const formattedArea = areasArray
+  .filter(val => val !== null && val !== undefined && val !== '') 
+  .map((val: string) => `${val}`)
+  .join('|');
+
+this.SearchRequest.area = formattedArea || ""; 
+
+this.SearchRequest.permit_type =
+      this.RequestlistForm.controls['permit_type'].value.toString();
+
+//     const levelsArray = this.RequestlistForm.controls['Level'].value;
+// this.SearchRequest.Room_Type = levelsArray.map((val: string) => `'${val}'`).join(',');
     this.SearchRequest.Start = this.startValue;
     this.SearchRequest.End = '30';
     this.SearchRequest.Page = this.currentPage;
 
     if (mydate != null) {
       this.SearchRequest.fromDate = mydate;
+    } 
+    else {
+      this.SearchRequest.fromDate = '';
     }
     if (todate != null) {
       this.SearchRequest.toDate = todate;
+    } 
+    else {
+      this.SearchRequest.toDate = '';
     }
-    if (this.RequestlistForm.get("Hras").value.length > 0){
+    if(this.RequestlistForm.get("Hras").value.includes('none')) {
+      this.SearchRequest.hras = 'none';
+    }
+     else {
+      this.SearchRequest.hras = '';
+    }
+    if (this.RequestlistForm.get("Hras").value.length > 0 && !this.RequestlistForm.get("Hras").value.includes('none')){
       this.RequestlistForm.get("Hras").value.forEach(item =>{
 
         this.SearchRequest[item.key] = item.value.toString()
       })
     }
-    if (this.RequestlistForm.get("TaskSpecific").value.length > 0){
+         const allTaskSpecificKeys = ['eye_protection', 'fall_protection', 'head_protection', 'gloves', 'hearing_protection']; // Add all possible keys here
+
+    if(this.RequestlistForm.get("TaskSpecific").value.includes('none')) {
+      this.SearchRequest.taskSpecificPPE = 'none';
+      
+      allTaskSpecificKeys.forEach(key => {
+        delete this.SearchRequest[key];
+      });
+    }
+     else {
+      this.SearchRequest.taskSpecificPPE = '';
+    }
+    if (this.RequestlistForm.get("TaskSpecific").value.length > 0 && !this.RequestlistForm.get("TaskSpecific").value.includes('none')){
       this.RequestlistForm.get("TaskSpecific").value.forEach(item =>{
         console.log("item", item)
         this.SearchRequest[item.key] = item.value.toString()
@@ -876,7 +1127,7 @@ export class ListRequestComponent implements OnInit {
   CopyRequest(row, status) {
     if (status == 'Closed') {
       row['Request_status'] = 'Hold';
-      let currentdate = this.datePipe.transform(new Date(), 'yyyy-MM-dd');
+      let currentdate = config.getDenmarkTime.date();
       row['Request_Date'] = currentdate;
     }
     if (status == 'Draft') {
@@ -913,9 +1164,140 @@ export class ListRequestComponent implements OnInit {
     });
   }
 
-  ChangeStaus(row) {
+  // ChangeStaus(row) {
+  //   let title = 'Request Status Change ';
+  //   let type = 'operartor';
+  //   console.log(row);
+  //   let dialogRef: MatDialogRef<any> = this.dialog.open(
+  //     StatusChangeDialogComponent,
+  //     {
+  //       width: '600px',
+  //       height: '300px',
+  //       disableClose: false,
+  //       data: {
+  //         title: title,
+  //         payload: row,
+  //         type: type,
+  //         pagedatainfo: this.pagedatainfo,
+  //       },
+  //     }
+  //   );
+  //   dialogRef.afterClosed().subscribe((res) => {
+  //     if (this.api == 'SearchRequest') {
+  //       console.log("search API");
+  //       // this.api = 'SearchRequest';
+  //       // this.items = res[0]['data'];
+  //       // this.paginationCount = res[1]['count'];
+  //       const mainValue = this.currentPage - 1;
+  //       this.startValue = mainValue * 30 + 1;
+  //       this.search(event);
+  //       console.log("NUMMBER", this.currentPage)
+  //       console.log("Start Value", this.startValue)
+  //     }
+  //     else {
+  //       const mainValue = this.currentPage - 1;
+  //       this.startValue = mainValue * 30 + 1;
+  //       this.getPermits(this.currentPage, this.startValue);
+  //       console.log("NUMMBER", this.currentPage)
+  //       console.log("Start Value", this.startValue)
+  //       // window.location.reload();
+  //     }
+  //     // this.requestservice.listpagination(this.pagedatainfo).subscribe((x) => {
+  //       // console.log('New Req List', x);
+  //       // const mainValue = this.currentPage - 1;
+  //       // this.startValue = mainValue * 30 + 1 ;
+  //       // this.getPermits(this.currentPage, this.startValue);
+  //       // console.log("NUMMBER", this.currentPage)
+  //       // console.log("Start Value", this.startValue)
+  //       // this.openSnackBar("Request Status Updated Successfully");
+  //       // window.location.reload();
+  //     // });
+  //   });
+  // }
+
+  openSnackBar(msg) {
+    this.snack.open(msg, "Close");
+  }
+
+   ChangeStaus(row) {
+    const splitingAreas = row.Room_Nos.split(",");
+    const formattedArea = splitingAreas
+  .filter(val => val !== null && val !== undefined && val !== '') 
+  .map((val: string) => `${val}`)
+  .join('|');
+    // First check if there are existing permits with the same room and working date
+    const searchCheckRequest = {
+      Room_Type: `'${row.Room_Type}'`,
+      fromDate: this.datePipe.transform(row.Working_Date, 'yyyy-MM-dd'),
+      toDate: this.datePipe.transform(row.Working_Date, 'yyyy-MM-dd'),
+      Start: '1',
+      End: '5', // We just need to know if any records exist
+      Page: '1',
+      Site_Id: '5',
+      Building_Id:`'${row.Building_Id}'`,
+      Sub_Contractor_Id:`'${row.Sub_Contractor_Id}'`,
+      Type_Of_Activity_Id:`'${row.Type_Of_Activity_Id}'`,
+      Request_status: "'Hold','Pre-Approved','Approved','Opened'",
+      PermitNo:'',
+      Activity:'',
+      hras: '',
+      taskSpecificPPE: '',
+      area: formattedArea,
+      permit_type: '',
+    };
+
+    this.requestservice.SearchRequest(searchCheckRequest).subscribe((res) => {
+      if (res['message'] != 'No Requests Found' && res[0]['data'].length > 1) {
+        // Show confirmation dialog if permits exist
+        const confirmDialog = this.dialog.open(ConfirmationDialogComponent, {
+          width: '400px',
+          data: {
+            title: 'Duplicate Permit Found',
+            message: 'A permit already exists for this room and working date. Do you want to continue?'
+          }
+        });
+
+        confirmDialog.afterClosed().subscribe(confirmed => {
+          if (confirmed) {
+            this.proceedWithStatusChange(row);
+          }
+          // If not confirmed, do nothing (dialog will close)
+        });
+      } else {
+        // No duplicates found, proceed directly
+        this.proceedWithStatusChange(row);
+      }
+    });
+}
+
+proceedWithStatusChange(row) {
     let title = 'Request Status Change ';
-    let type = 'operartor';
+    let type;
+    if ((this.firstApproval || this.bothApproval) && row.Request_status == 'Hold' && row.permit_type === 'Commissioning') {
+      type = 'operartor';
+    } else if ((this.secondApproval || this.bothApproval) && row.Request_status == 'Pre-Approved' && row.permit_type === 'Commissioning') {
+      type = 'operartor';
+    } else if((this.firstApproval || this.secondApproval || this.bothApproval)&&row.Request_status == 'Hold' && row.permit_type !== 'Commissioning') {
+      type = 'operartor';
+    } else {
+      type = '';
+    }
+
+    // if(row.permit_type == 'Commissioning') {
+    //   if(row.Request_status == 'Hold') {
+    //     type = this.firstApproval || this.bothApproval ? 'operartor' : '';
+    //   } else if(row.Request_status == 'Pre-Approved') {
+    //     type = this.secondApproval || this.bothApproval ? 'operartor' : '';
+    //   }
+    // }
+
+    if(this.firstApproval && !this.secondApproval && row.permit_type == 'Commissioning' && row.Request_status == 'Pre-Approved') {
+      return this.openSnackBar("Can't have access to final approval. Please ask COMM person to approve it.");
+    }
+    if(!this.firstApproval && this.secondApproval && row.permit_type == 'Commissioning' && row.Request_status == 'Hold') {
+      return this.openSnackBar("Can't have access to initial approval. Please ask CONM person to pre-approve it.");
+    } else {
+    
     console.log(row);
     let dialogRef: MatDialogRef<any> = this.dialog.open(
       StatusChangeDialogComponent,
@@ -931,38 +1313,26 @@ export class ListRequestComponent implements OnInit {
         },
       }
     );
+    
     dialogRef.afterClosed().subscribe((res) => {
       if (this.api == 'SearchRequest') {
         console.log("search API");
-        // this.api = 'SearchRequest';
-        // this.items = res[0]['data'];
-        // this.paginationCount = res[1]['count'];
         const mainValue = this.currentPage - 1;
         this.startValue = mainValue * 30 + 1;
         this.search(event);
         console.log("NUMMBER", this.currentPage)
         console.log("Start Value", this.startValue)
-      }
-      else {
+      } else {
         const mainValue = this.currentPage - 1;
         this.startValue = mainValue * 30 + 1;
         this.getPermits(this.currentPage, this.startValue);
         console.log("NUMMBER", this.currentPage)
         console.log("Start Value", this.startValue)
-        // window.location.reload();
       }
-      // this.requestservice.listpagination(this.pagedatainfo).subscribe((x) => {
-        // console.log('New Req List', x);
-        // const mainValue = this.currentPage - 1;
-        // this.startValue = mainValue * 30 + 1 ;
-        // this.getPermits(this.currentPage, this.startValue);
-        // console.log("NUMMBER", this.currentPage)
-        // console.log("Start Value", this.startValue)
-        // this.openSnackBar("Request Status Updated Successfully");
-        // window.location.reload();
-      // });
     });
   }
+}
+
   ChangeStausbysubcontractor(row, status) {
     console.log(config.Denmarktz.split(' '));
     const [currentDenmarkDate, currentDenmarkTime] = [
@@ -973,7 +1343,7 @@ export class ListRequestComponent implements OnInit {
     let title = 'Request Status Change ';
     let type = status;
     if (status == 'Opened') {
-      var currentdate = this.datePipe.transform(new Date(), 'yyyy-MM-dd');
+      var currentdate = config.getDenmarkTime.date();
       var mydate = this.datePipe.transform(row['Working_Date'], 'yyyy-MM-dd');
       if (currentdate === mydate) {
         let dialogRef: MatDialogRef<any> = this.dialog.open(
@@ -1066,63 +1436,244 @@ export class ListRequestComponent implements OnInit {
       }
     });
   }
+  // statuschange(statusdata) {
+  //   this.selectedRequestIds.length = 0;
+
+  //      const filterAndPushIds = (condition: (item: any) => boolean) => {
+  //       this.selected.forEach((x) => {
+  //           if (condition(x)) {
+  //               this.selectedRequestIds.push(x['id']);
+  //           }
+  //       });
+  //   };
+
+  //   switch (statusdata) {
+  //       case 'Approved':
+  //         filterAndPushIds((x) => 
+  //               ((x['Request_status'] === 'Hold' || 
+  //               x['Request_status'] === 'Approved') && x['permit_type'] !== 'Commissioning')
+  //           );
+  //           break;
+  //       case 'Rejected':
+  //           filterAndPushIds((x) => 
+  //               x['Request_status'] === 'Hold' || x['Request_status'] === 'Approved' || x['Request_status'] === 'Pre-Approved'
+  //           );
+  //           break;
+  //       case 'Pre-Approved':
+  //           filterAndPushIds((x) => 
+  //               x['Request_status'] === 'Hold' && 
+  //               x['permit_type'] === 'Commissioning'
+  //           );
+  //           break;
+  //       case 'COMM-Approved':
+  //           filterAndPushIds((x) => 
+  //               x['Request_status'] === 'Pre-Approved' && 
+  //               x['permit_type'] === 'Commissioning'
+  //           );
+  //           break;
+  //       default:
+  //           // Handle unexpected statusdata (optional)
+  //           console.warn(`Unexpected statusdata: ${statusdata}`);
+  //           return; // Early return if no action needed
+  //   }
+
+
+  //   let title = 'Do you want ' + statusdata + ' Items';
+  //   let dialogRef: MatDialogRef<any> = this.dialog.open(
+  //     RequestSaveOptionsDialogComponent,
+  //     {
+  //       width: '500px',
+  //       height: '200px',
+  //       disableClose: false,
+  //       data: {
+  //         title: title,
+  //         payload: this.selectedRequestIds.toString(),
+  //         statustype: statusdata,
+  //         listitemsstatus: true,
+  //       },
+  //     }
+  //   );
+  //   console.log("before model opened", this.selectedRequestIds.length)
+  //   dialogRef.afterClosed().subscribe((res) => {
+  //     this.Countresult.length = 0
+  //     this.selected.length = 0;
+  //     this.selected = [];
+  //     this.selectedRequestIds.length = 0;
+  //     console.log("after model closed", this.selectedRequestIds.length)
+  //     if (this.api == 'SearchRequest') {
+  //       console.log("search API");
+  //       // this.api = 'SearchRequest';
+  //       // this.items = res[0]['data'];
+  //       // this.paginationCount = res[1]['count'];
+  //       const mainValue = this.currentPage - 1;
+  //       this.startValue = mainValue * 30 + 1;
+  //       this.search(event);
+  //       // console.log("NUMMBER", this.currentPage)
+  //       // console.log("Start Value", this.startValue);
+  //       // window.location.reload();
+  //     }
+  //     else {
+  //       const mainValue = this.currentPage - 1;
+  //       this.startValue = mainValue * 30 + 1;
+  //       this.getPermits(this.currentPage, this.startValue);
+  //       // console.log("NUMMBER", this.currentPage)
+  //       // console.log("Start Value", this.startValue);
+  //       // this.Countresult.length = 0;
+  //       // this.selected.length = 0;
+        
+  //       // this.ngOnInit();
+  //     }
+  //     // window.location.reload();
+  //   });
+  // }
+
   statuschange(statusdata) {
     this.selectedRequestIds.length = 0;
 
-    this.selected.forEach((x) => {
-      if (x['Request_status'] == 'Hold') {
-        this.selectedRequestIds.push(x['id']);
-      }
+    const filterAndPushIds = (condition: (item: any) => boolean) => {
+        this.selected.forEach((x) => {
+            if (condition(x)) {
+                this.selectedRequestIds.push(x['id']);
+            }
+        });
+    };
+
+    switch (statusdata) {
+        case 'Approved':
+            filterAndPushIds((x) => 
+                ((x['Request_status'] === 'Hold' || 
+                x['Request_status'] === 'Approved') && x['permit_type'] !== 'Commissioning')
+            );
+            break;
+        case 'Rejected':
+            filterAndPushIds((x) => 
+                x['Request_status'] === 'Hold' || x['Request_status'] === 'Approved' || x['Request_status'] === 'Pre-Approved'
+            );
+            break;
+        case 'Pre-Approved':
+            filterAndPushIds((x) => 
+                x['Request_status'] === 'Hold' && 
+                x['permit_type'] === 'Commissioning'
+            );
+            break;
+        case 'COMM-Approved':
+            filterAndPushIds((x) => 
+                x['Request_status'] === 'Pre-Approved' && 
+                x['permit_type'] === 'Commissioning'
+            );
+            break;
+        default:
+            console.warn(`Unexpected statusdata: ${statusdata}`);
+            return;
+    }
+
+    if (this.selectedRequestIds.length === 0) {
+        this.openSnackBar("No valid permits selected for this status change.");
+        return;
+    }
+
+    // Check for duplicate permits for each selected request
+    const duplicateChecks = this.selected.map(item => {
+        if (!item.Room_Nos) {
+            return of(false); // If no room numbers, skip duplicate check
+        }
+
+        const splitingAreas = item.Room_Nos.split(",");
+        const formattedArea = splitingAreas
+            .filter(val => val !== null && val !== undefined && val !== '') 
+            .map((val: string) => `${val}`)
+            .join('|');
+
+        const searchCheckRequest = {
+            Room_Type: `'${item.Room_Type}'`,
+            fromDate: this.datePipe.transform(item.Working_Date, 'yyyy-MM-dd'),
+            toDate: this.datePipe.transform(item.Working_Date, 'yyyy-MM-dd'),
+            Start: '1',
+            End: '5',
+            Page: '1',
+            Site_Id: '5',
+            Building_Id: `'${item.Building_Id}'`,
+            Sub_Contractor_Id: `'${item.Sub_Contractor_Id}'`,
+            Type_Of_Activity_Id: `'${item.Type_Of_Activity_Id}'`,
+            Request_status: "'Hold','Pre-Approved','Approved','Opened'",
+            PermitNo: '',
+            Activity: '',
+            hras: '',
+            taskSpecificPPE: '',
+            area: formattedArea,
+            permit_type: '',
+        };
+
+        return this.requestservice.SearchRequest(searchCheckRequest).pipe(
+            map(res => res['message'] != 'No Requests Found' && res[0]['data'].length > 1)
+        );
     });
 
-    let title = 'Do you want ' + statusdata + ' Items';
-    let dialogRef: MatDialogRef<any> = this.dialog.open(
-      RequestSaveOptionsDialogComponent,
-      {
-        width: '500px',
-        height: '200px',
-        disableClose: false,
-        data: {
-          title: title,
-          payload: this.selectedRequestIds.toString(),
-          statustype: statusdata,
-          listitemsstatus: true,
-        },
-      }
-    );
-    console.log("before model opened", this.selectedRequestIds.length)
-    dialogRef.afterClosed().subscribe((res) => {
-      this.Countresult.length = 0
-      this.selected.length = 0;
-      this.selected = [];
-      this.selectedRequestIds.length = 0;
-      console.log("after model closed", this.selectedRequestIds.length)
-      if (this.api == 'SearchRequest') {
-        console.log("search API");
-        // this.api = 'SearchRequest';
-        // this.items = res[0]['data'];
-        // this.paginationCount = res[1]['count'];
-        const mainValue = this.currentPage - 1;
-        this.startValue = mainValue * 30 + 1;
-        this.search(event);
-        // console.log("NUMMBER", this.currentPage)
-        // console.log("Start Value", this.startValue);
-        // window.location.reload();
-      }
-      else {
-        const mainValue = this.currentPage - 1;
-        this.startValue = mainValue * 30 + 1;
-        this.getPermits(this.currentPage, this.startValue);
-        // console.log("NUMMBER", this.currentPage)
-        // console.log("Start Value", this.startValue);
-        // this.Countresult.length = 0;
-        // this.selected.length = 0;
+    forkJoin(duplicateChecks).subscribe(results => {
+        const hasDuplicates = results.some(hasDuplicate => hasDuplicate);
         
-        // this.ngOnInit();
-      }
-      // window.location.reload();
+        if (hasDuplicates) {
+            // Show confirmation dialog if any duplicates exist
+            const confirmDialog = this.dialog.open(ConfirmationDialogComponent, {
+                width: '400px',
+                data: {
+                    title: 'Duplicate Permits Found',
+                    message: 'One or more permits already exist for these rooms and working dates. Do you want to continue?'
+                }
+            });
+
+            confirmDialog.afterClosed().subscribe(confirmed => {
+                if (confirmed) {
+                    this.proceedWithBulkStatusChange(statusdata);
+                }
+            });
+        } else {
+            // No duplicates found, proceed directly
+            this.proceedWithBulkStatusChange(statusdata);
+        }
     });
-  }
+}
+
+proceedWithBulkStatusChange(statusdata) {
+    let title = 'Do you want ' + statusdata + ' Items';
+    
+    // Determine if we need operator type based on the first selected item
+    const firstItem = this.selected[0];
+
+
+    let dialogRef: MatDialogRef<any> = this.dialog.open(
+        RequestSaveOptionsDialogComponent,
+        {
+            width: '500px',
+            height: '200px',
+            disableClose: false,
+            data: {
+                title: title,
+                payload: this.selectedRequestIds.toString(),
+                statustype: statusdata,
+                listitemsstatus: true,
+                pagedatainfo: this.pagedatainfo,
+            },
+        }
+    );
+
+    dialogRef.afterClosed().subscribe((res) => {
+        this.Countresult.length = 0;
+        this.selected.length = 0;
+        this.selected = [];
+        this.selectedRequestIds.length = 0;
+        
+        if (this.api == 'SearchRequest') {
+            const mainValue = this.currentPage - 1;
+            this.startValue = mainValue * 30 + 1;
+            this.search(event);
+        } else {
+            const mainValue = this.currentPage - 1;
+            this.startValue = mainValue * 30 + 1;
+            this.getPermits(this.currentPage, this.startValue);
+        }
+    });
+}
 
   onSelect({ selected }) {
     this.selected = selected;
@@ -1160,10 +1711,53 @@ export class ListRequestComponent implements OnInit {
     this.route.navigateByUrl('/user/new-request');
   }
 
+  isValidDateFormat(date: string | null | undefined): boolean {
+    if (!date) return false; // Handle null, undefined, and empty string
+    return /^\d{4}-\d{2}-\d{2}$/.test(date) && date !== '0000-00-00';
+  }
+  
+  getSelectedDelete() {
+    this.selected.forEach((x) => {
+        this.selectedRequestIds.push(x['id']);
+    });
+    let title = 'Delete Multiple Request';
+    let dialogRef: MatDialogRef<any> = this.dialog.open(DeleteOptionComponent, {
+      width: '300px',
+      height: '150px',
+      disableClose: false,
+      data: { title: title, payload: this.selectedRequestIds, type: 'multirequest' },
+    });
+    dialogRef.afterClosed().subscribe((res) => {
+      this.Countresult.length = 0;
+      this.selectedRequestIds.length = 0;
+      this.selectedRequestIds = [];
+      if (this.api == 'SearchRequest') {
+        // console.log("search API");
+        // this.api = 'SearchRequest';
+        // this.items = res[0]['data'];
+        // this.paginationCount = res[1]['count'];
+        const mainValue = this.currentPage - 1;
+        this.startValue = mainValue * 30 + 1;
+        this.search(event);
+        // console.log("NUMMBER", this.currentPage)
+        // console.log("Start Value", this.startValue)
+      }
+      else {
+        const mainValue = this.currentPage - 1;
+        this.startValue = mainValue * 30 + 1;
+        this.getPermits(this.currentPage, this.startValue);
+        console.log("NUMMBER", this.currentPage)
+        console.log("Start Value", this.startValue);
+        // window.location.reload();
+        this.selected.length = 0;
+      }
+    });
+  }
+
   Getselected(event) {
     console.log(event);
     this.selected.forEach((x) => {
-      if (x['Request_status'] == 'Hold') {
+          if ((x['Request_status'] == 'Draft') ||(x['Request_status'] == 'Hold') || (x['Request_status'] =="Pre-Approved") || (x['Request_status'] =="Approved") || (x['Request_status'] =="Opened")) {
         this.selectedRequestIds.push(x['id']);
       }
     });
@@ -1174,7 +1768,7 @@ export class ListRequestComponent implements OnInit {
         EditRequestComponent,
         {
           width: '800px',
-          height: '200px',
+          height: 'fit-content',
           disableClose: false,
           data: { title: title, payload: this.selectedRequestIds.toString() },
         }
@@ -1263,7 +1857,7 @@ export class ListRequestComponent implements OnInit {
           this.Filtertab = true;
           this.userdata = this.jwtauth.getUser();
 
-          if (this.userdata['role'] == 'Subcontractor') {
+          if (this.userdata['role'].includes('Subcontractor')) {
             // this.isoperator = false;
             // this.IsNotSubCntr = false;
             this.isoperator = false;
@@ -1280,12 +1874,11 @@ export class ListRequestComponent implements OnInit {
             // });
             this.paginationCount = res[1].count;
             console.log(this.paginationCount);
-          } else if (this.userdata['role'] == 'Admin') {
+          } else if (this.userdata['role'].includes('Admin')) {
             // this.IsNotSubCntr = true;
             this.IsNotSubCntr = true;
             this.IsNotASubCntr = true;
             this.items = res[0]['data'];
-            this.isoperator = true;
             this.isoperator = true;
             var filteritems = [];
             this.items.forEach((x) => {
@@ -1296,7 +1889,7 @@ export class ListRequestComponent implements OnInit {
 
             this.paginationCount = res[1].count;
             console.log(this.paginationCount);
-          } else if (this.userdata['role'] == 'Department') {
+          } else if (this.userdata['role'].includes('Department1') || this.userdata['role'].includes('Department')) {
             // this.IsNotSubCntr = true;
             this.IsNotSubCntr = false;
             this.IsNotASubCntr = true;
@@ -1311,7 +1904,7 @@ export class ListRequestComponent implements OnInit {
             this.items = [];
             this.items.length = 0;
             this.items = filteritems;
-          }else if (this.userdata['role'] == 'Observer') {
+          }else if (this.userdata['role'].includes('Observer')) {
             // this.IsNotSubCntr = true;
             this.IsNotSubCntr = false;
             this.IsNotASubCntr = true;
@@ -1335,17 +1928,29 @@ export class ListRequestComponent implements OnInit {
         this.Typeofactivitys = res['data'];
       });
     } else if (this.api == 'SearchRequest') {
-      this.SearchRequest.Request_status =
-        this.RequestlistForm.controls['Status'].value;
+      // this.SearchRequest.Request_status =
+      //   this.RequestlistForm.controls['Status'].value;
+      const statusValue = this.RequestlistForm.controls['Status'].value;
+const statusArray = Array.isArray(statusValue) ? statusValue : [statusValue]; 
+
+const formattedStatus = statusArray
+  .filter(val => val !== null && val !== undefined && val !== '') 
+  .map((val: string) => `'${val}'`)
+  .join(',');
+
+this.SearchRequest.Request_status = formattedStatus || ""; 
+//       const statusArray = this.RequestlistForm.controls['Status'].value;
+// this.SearchRequest.Request_status = statusArray.map((val: string) => `'${val}'`).join(',');
       this.SearchRequest.Activity =
         this.RequestlistForm.controls['Keyword'].value;
       this.SearchRequest.PermitNo =
         this.RequestlistForm.controls['Permitnumber'].value;
-      this.SearchRequest.Site_Id = this.RequestlistForm.controls['Site'].value;
+      // this.SearchRequest.Site_Id = this.RequestlistForm.controls['Site'].value;
+      this.SearchRequest.Site_Id = '5';
       this.SearchRequest.Building_Id =
-        this.RequestlistForm.controls['Building'].value;
+        this.RequestlistForm.controls['Building'].value.toString();
       this.SearchRequest.Sub_Contractor_Id =
-        this.RequestlistForm.controls['Contractor'].value;
+        this.RequestlistForm.controls['Contractor'].value.toString();
       var mydate = this.datePipe.transform(
         this.RequestlistForm.controls['WorkingDateFrom'].value,
         'yyyy-MM-dd'
@@ -1355,9 +1960,32 @@ export class ListRequestComponent implements OnInit {
         'yyyy-MM-dd'
       );
       this.SearchRequest.Type_Of_Activity_Id =
-        this.RequestlistForm.controls['TypeOfActivity'].value;
-      this.SearchRequest.Room_Type =
-        this.RequestlistForm.controls['Level'].value;
+        this.RequestlistForm.controls['TypeOfActivity'].value.toString();
+      // this.SearchRequest.Room_Type =
+      //   this.RequestlistForm.controls['Level'].value.toString();
+      const levelValue = this.RequestlistForm.controls['Level'].value;
+const levelsArray = Array.isArray(levelValue) ? levelValue : [levelValue]; 
+
+const formattedLevel = levelsArray
+  .filter(val => val !== null && val !== undefined && val !== '') 
+  .map((val: string) => `'${val}'`)
+  .join(',');
+
+this.SearchRequest.Room_Type = formattedLevel || ""; 
+ const areaValue = this.RequestlistForm.controls['area'].value;
+const areasArray = Array.isArray(areaValue) ? areaValue : [areaValue]; 
+
+const formattedArea = areasArray
+  .filter(val => val !== null && val !== undefined && val !== '') 
+  .map((val: string) => `${val}`)
+  .join('|');
+
+this.SearchRequest.area = formattedArea || ""; 
+
+this.SearchRequest.permit_type =
+        this.RequestlistForm.controls['permit_type'].value.toString();
+//       const levelsArray = this.RequestlistForm.controls['Level'].value;
+// this.SearchRequest.Room_Type = levelsArray.map((val: string) => `'${val}'`).join(',');
       this.SearchRequest.Start = start;
       console.log("start", start)
       this.SearchRequest.End = '30';
@@ -1376,7 +2004,7 @@ export class ListRequestComponent implements OnInit {
           this.Filtertab = true;
           this.userdata = this.jwtauth.getUser();
 
-          if (this.userdata['role'] == 'Subcontractor') {
+          if (this.userdata['role'].includes('Subcontractor')) {
             // this.isoperator = false;
             // this.IsNotSubCntr = false;
             this.isoperator = false;
@@ -1393,12 +2021,11 @@ export class ListRequestComponent implements OnInit {
               // });
             this.paginationCount = res[1].count;
             console.log(this.paginationCount);
-          } else if (this.userdata['role'] == 'Admin') {
+          } else if (this.userdata['role'].includes('Admin')) {
             // this.IsNotSubCntr = true;
             this.IsNotSubCntr = true;
             this.IsNotASubCntr = true;
             this.items = res[0]['data'];
-            this.isoperator = true;
             this.isoperator = true;
             var filteritems = [];
             this.items.forEach((x) => {
@@ -1409,7 +2036,7 @@ export class ListRequestComponent implements OnInit {
 
             this.paginationCount = res[1].count;
             console.log(this.paginationCount);
-          } else if (this.userdata['role'] == 'Department') {
+          } else if (this.userdata['role'].includes('Department') || this.userdata['role'].includes('Department')) {
             // this.IsNotSubCntr = true;
             this.IsNotSubCntr = false;
             this.IsNotASubCntr = true;
@@ -1424,7 +2051,7 @@ export class ListRequestComponent implements OnInit {
             this.items = [];
             this.items.length = 0;
             this.items = filteritems;
-          }else if (this.userdata['role'] == 'Observer') {
+          }else if (this.userdata['role'].includes('Observer')) {
             this.IsNotSubCntr = false;
             this.IsNotASubCntr = true;
             this.items = res[0]?.['data'] || [];

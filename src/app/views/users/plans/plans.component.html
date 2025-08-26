@@ -23,7 +23,7 @@
     <mat-card-content class="card-content">
         <div>
             <form [formGroup]="PlanForm" class="example-form">
-                <mat-grid-list cols="2" rowHeight="80px">
+                <mat-grid-list [cols]="gridCols" rowHeight="80px">
                     <mat-grid-tile>
                         <mat-form-field class="full-width" appearance="outline">
                             <mat-label>Report Type </mat-label>
@@ -47,7 +47,7 @@
                 </mat-grid-list>
 
 
-                <mat-grid-list cols="2" rowHeight="80px">
+                <mat-grid-list [cols]="gridCols" rowHeight="80px">
                     <!-- <mat-grid-tile>
                        
                         <mat-form-field class="full-width" appearance="outline">
@@ -82,7 +82,7 @@
                     </mat-grid-tile>
                 </mat-grid-list>
 
-                <mat-grid-list cols="2" rowHeight="80px">
+                <mat-grid-list [cols]="gridCols" rowHeight="80px">
                     <mat-grid-tile>
                         <mat-form-field class="full-width" appearance="outline">
                             <mat-label>Contractor </mat-label>
@@ -117,7 +117,7 @@
 
                 </mat-grid-list>
 
-                <mat-grid-list cols="2" rowHeight="80px">
+                <mat-grid-list [cols]="gridCols" rowHeight="80px">
                     <mat-grid-tile>
                         <mat-form-field class="datepikr full-width" appearance="outline">
                             <mat-label>Working Date (from)</mat-label>
@@ -138,7 +138,7 @@
                     </mat-grid-tile>
                 </mat-grid-list>
 
-                <mat-grid-list cols="2" rowHeight="80px">
+                <mat-grid-list [cols]="gridCols" rowHeight="80px">
                     <mat-grid-tile>
                         <mat-form-field class="full-width" appearance="outline">
                             <mat-label>Start Time</mat-label>
@@ -160,7 +160,7 @@
                 </mat-grid-list>
 
 
-                <mat-grid-list cols="2" rowHeight="80px">
+                <mat-grid-list [cols]="gridCols" rowHeight="80px">
 
                     <!-- level -->
                     <mat-grid-tile>
@@ -173,7 +173,34 @@
                             </mat-select>
                         </mat-form-field>
                     </mat-grid-tile>
+     <mat-grid-tile>
+  <mat-form-field class="full-width" appearance="outline">
+    <mat-label>Area</mat-label>
+    <mat-select formControlName="area" name="Level" [multiple]="true">
+      <mat-option [value]="null">None</mat-option>
 
+      <ng-container *ngFor="let group of getRooms">
+        <mat-optgroup [label]="group.floorName">
+          <mat-option *ngFor="let zone of group.zones" [value]="zone.value">
+            {{ zone.value }}
+          </mat-option>
+        </mat-optgroup>
+      </ng-container>
+
+    </mat-select>
+  </mat-form-field>
+</mat-grid-tile>
+                </mat-grid-list>
+                    <mat-grid-list [cols]="gridCols" rowHeight="80px">
+        <mat-grid-tile>
+  <mat-form-field class="full-width" appearance="outline">
+    <mat-label>Permit Type</mat-label>
+    <mat-select formControlName="permit_type" name="permit_type">
+      <mat-option [value]="'Construction'">Construction</mat-option>
+      <mat-option [value]="'Commissioning'">Commissioning</mat-option>
+    </mat-select>
+  </mat-form-field>
+</mat-grid-tile>
                 </mat-grid-list>
             </form>
             <div class="" style="text-align: right;">
@@ -230,9 +257,21 @@
                     {{ row?.building_name }}
                 </ng-template>
             </ngx-datatable-column>
+
+            <ngx-datatable-column name="Area" [flexGrow]="1">
+                <ng-template let-row="row" ngx-datatable-cell-template>
+                    {{ row?.Room_Nos }}
+                </ng-template>
+            </ngx-datatable-column>
+
             <ngx-datatable-column name="Working Date" [flexGrow]="1">
                 <ng-template let-row="row" ngx-datatable-cell-template>
-                    {{ row?.Working_Date | date:'mediumDate' }}
+                    <!-- {{ row?.Working_Date | date:'mediumDate' }} -->
+                       <ng-container *ngIf="isValidDate(row?.Working_Date); else noWorkingDate">
+  {{ row?.Working_Date | date:'mediumDate' }}
+</ng-container>
+<ng-template #noWorkingDate>N/A</ng-template>
+
                 </ng-template>
             </ngx-datatable-column>
             <ngx-datatable-column name="Time" [flexGrow]="1">
@@ -240,6 +279,29 @@
                     {{ row?.Start_Time }} - {{ row?.End_Time }}
                 </ng-template>
             </ngx-datatable-column>
+
+            <ngx-datatable-column name="Night Shift" [flexGrow]="1">
+                <ng-template let-row="row" ngx-datatable-cell-template>
+                    <p *ngIf="row?.night_shift == 1">Yes</p>
+                    <p *ngIf="row?.night_shift !== 1">No</p>
+                </ng-template>
+              </ngx-datatable-column>
+        
+              <ngx-datatable-column name="New Date" [flexGrow]="1">
+                <ng-template let-row="row" ngx-datatable-cell-template>
+                    <!-- {{ row?.new_date | date: "mediumDate" }} -->
+                      <ng-container *ngIf="isValidDate(row?.new_date); else noNewDate">
+  {{ row?.new_date | date:'mediumDate' }}
+</ng-container>
+<ng-template #noNewDate>N/A</ng-template>
+                </ng-template>
+              </ngx-datatable-column>
+              
+              <ngx-datatable-column name="New End Time" [flexGrow]="1">
+                <ng-template let-row="row" ngx-datatable-cell-template>
+                  {{ row?.new_end_time }}
+                </ng-template>
+              </ngx-datatable-column>
 
             <ngx-datatable-column name="Status" [flexGrow]="1">
                 <ng-template let-row="row" ngx-datatable-cell-template>

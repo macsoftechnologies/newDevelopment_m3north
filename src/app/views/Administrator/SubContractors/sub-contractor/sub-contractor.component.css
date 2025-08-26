@@ -39,12 +39,23 @@
 .uploadimgsty-no-img
 {
   display: none;
+} 
+ .full-width {
+  width: 100%;
 }
 
-@media only screen and (max-width: 468px) and (min-width: 360px){
-  .mat-form-field
-{
+mat-form-field {
   width: 100%;
-  padding-right: 0px!important; 
 }
+
+ @media (min-width: 320px) and (max-width: 599px) {
+  .card-content{
+    padding: 30px 15px;
+  }
+  .mat-form-field{
+    padding-right: 10px;
+  }
+  .upload-div-sty{
+    height: 90px;
+  }
 }

@@ -40,4 +40,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Credits
 #### Cryptocurrency icons
-[100 Blockchain (Cryptocurrency) Icons](https://dribbble.com/shots/4000214-100-Blockchain-Assets-Icons-Freebies)
+[100 Blockchain (Cryptocurrency) Icons](https://dribbble.com/shots/4000214-100-Blockchain-Assets-Icons-Freebies)"# beam_vps_m3north" 

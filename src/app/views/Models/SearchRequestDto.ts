@@ -13,6 +13,10 @@ export class SearchRequestDto
     Start: string;
     End: string;
     Page: string;
+    hras: string;
+    taskSpecificPPE: string;
+    area: string;
+    permit_type: string;
 }
 
 export class ListRequest

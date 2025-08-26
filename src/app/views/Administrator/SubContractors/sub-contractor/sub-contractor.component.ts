@@ -6,6 +6,7 @@ import { SubcontractorDto, UpdateSubcontractorDto } from 'app/views/Models/Subco
 import { SubcontractorService } from 'app/shared/services/subcontractor.service';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 
 @Component({
   selector: 'app-sub-contractor',
@@ -35,8 +36,9 @@ export class SubContractorComponent implements OnInit {
     // username:null,
     // password:null
   }
+  gridCols = 2;
 
-  constructor(private fb: FormBuilder, private empservice: UserService, private _snackBar: MatSnackBar,
+  constructor(private fb: FormBuilder, private empservice: UserService, private _snackBar: MatSnackBar, private breakpointObserver: BreakpointObserver,
     private depservice: DepartmentService, private subcservice: SubcontractorService,
     @Optional() @Inject(MAT_DIALOG_DATA) public data: any[],) {
     this.spinner = true;
@@ -53,6 +55,11 @@ export class SubContractorComponent implements OnInit {
   }
 
   ngOnInit(): void {
+
+    this.breakpointObserver.observe(['(max-width: 599px)']) // 👈 custom mobile-only query
+      .subscribe(result => {
+        this.gridCols = result.matches ? 1 : 2;
+      });
 
     if (this.data != null && this.data["editform"] == true) {
       this.Editform = true;
@@ -132,7 +139,7 @@ export class SubContractorComponent implements OnInit {
     // this.updatesubcontr.logo=this.croppedImage;
 
     this.subcservice.UpdateSubContractor(this.updatesubcontr).subscribe(res => {
-      debugger
+      // debugger
       if (res["status"] == "200") {
         this.openSnackBar("Subcontractor Updated Successfully");
         window.location.reload();
