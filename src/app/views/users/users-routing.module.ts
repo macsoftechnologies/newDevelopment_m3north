@@ -10,6 +10,7 @@ import { UserRoleGuard } from 'app/shared/guards/user-role.guard';
 import { config } from 'config';
 import { DocsComponent } from './docs/docs.component';
 import { LogsHistoryComponent } from './logs-history/logs-history.component';
+import { LogsReportsComponent } from './log-reports/logs-reports.component';
 
 export const usersRoutes: Routes = [
   {
@@ -47,15 +48,20 @@ export const usersRoutes: Routes = [
         data: { title: "", breadcrumb: " list-plans",roles: config.authRoles.subcontractor }
       },
      
-      {
-        path: "notifications",
-        component:NotificationsComponent,
-        data: { title: "", breadcrumb: "notifications",roles: config.authRoles.subcontractor }
-      },
+      // {
+      //   path: "notifications",
+      //   component:NotificationsComponent,
+      //   data: { title: "", breadcrumb: "notifications",roles: config.authRoles.subcontractor }
+      // },
       {
         path: "log-history",
         component:LogsHistoryComponent,
         data: { title: "", breadcrumb: "log-history",roles: config.authRoles.subcontractor }
+      },
+      {
+        path: "log-reports",
+        component:LogsReportsComponent,
+        data: { title: "", breadcrumb: "log-reports",roles: config.authRoles.subcontractor }
       },
       {
         path: "mydocs",

@@ -68,16 +68,15 @@ export class PlansComponent implements OnInit {
       PlanId: 2,
       PlanName: 'Weekly Report'
     },
-    // {
-    //   PlanId: 3,
-    //   PlanName: 'Monthly Plan'
-    // }
   ];
 
   SubContractors: any[] = [];
   Sites: any[] = [];
   Weeks: any[] = [];
   // Buildings: any[] = [];
+  
+  filteredFloors: string[] = [];
+  filteredRooms: RoomGroup[] = [];
   Years: any[] = [];
   WeekNumbers: any[] = [];
   date: Date;
@@ -218,11 +217,6 @@ export class PlansComponent implements OnInit {
       permit_type: ['',],
     });
 
-    //     var current = new Date();     // get current date    
-    // var weekstart = current.getDate() - current.getDay() +1;    
-    // var weekend = weekstart + 6;       // end day is the first day + 6 
-    // var monday = new Date(current.setDate(weekstart));  
-    // var sunday = new Date(current.setDate(weekend));
     this.initializeData();
     this.setupFilterListeners();
   }
@@ -237,9 +231,7 @@ export class PlansComponent implements OnInit {
     // Extract all floors with their building references
     this.allFloors = this.extractAllFloors(buildingData);
     
-    // Initialize with all floors and rooms
-    this.getFloors = [...new Set(this.allFloors.map(f => f.floorName))];
-    this.getRooms = [...this.allRooms];
+    this.resetFilters();
   }
    private extractAllFloors(buildings: Building[]): { buildingId: number; floorName: string }[] {
     const floors: { buildingId: number; floorName: string }[] = [];
@@ -251,44 +243,59 @@ export class PlansComponent implements OnInit {
     });
     return floors;
   }
-   private setupFilterListeners(): void {
-    // Building selection changes
+  private setupFilterListeners(): void {
     this.PlanForm.get('Building')?.valueChanges.subscribe(buildingIds => {
-      this.PlanForm.get('Level')?.setValue([], { emitEvent: false });
-      this.updateFilters(buildingIds, '');
+        this.PlanForm.get('level')?.setValue([], { emitEvent: false });
+        this.updateFilters(buildingIds, []);
     });
     
-    // Level selection changes
-    this.PlanForm.get('level')?.valueChanges.subscribe(level => {
-      this.updateFilters(this.PlanForm.get('Building')?.value, level);
+    this.PlanForm.get('level')?.valueChanges.subscribe(levels => {
+      this.updateFilters(this.PlanForm.get('Building')?.value, levels);
     });
   }
 
-  private updateFilters(buildingId: number | null, level: string | null): void {
-    // Filter floors based on selected building
-    if (buildingId) {
-      this.getFloors = [
-        ...new Set(
-          this.allFloors
-            .filter(f => f.buildingId == buildingId)
-            .map(f => f.floorName)
-        )
-      ];
-      
-      // Reset level selection if the new floors don't include the current selection
-      if (level && !this.getFloors.includes(level)) {
-        this.PlanForm.get('level')?.setValue(null);
-      }
-    } else {
-      this.getFloors = [...new Set(this.allFloors.map(f => f.floorName))];
-    }
+  private updateFilters(buildingIds: number[] = [], levels: string[] = []): void {
+    // Filter floors based on selected buildings
+    this.filteredFloors = this.filterFloors(buildingIds);
+    
+    // Filter rooms based on both buildings and levels
+    this.filteredRooms = this.filterRooms(buildingIds, levels);
+  }
 
-    // Filter rooms based on both building and level
-    this.getRooms = this.allRooms.filter(room => {
-      const buildingMatch = !buildingId || room.buildingId == buildingId;
-      const levelMatch = !level || room.planType === level;
-      return buildingMatch && levelMatch;
+
+  private filterFloors(buildingIds: number[]): string[] {
+    if (!buildingIds || buildingIds.length === 0) {
+        return [...new Set(this.allFloors.map(f => f.floorName))];
+    }
+    
+    const numericBuildingIds = buildingIds.map(id => Number(id));
+    
+    return [
+        ...new Set(
+            this.allFloors
+                .filter(f => numericBuildingIds.includes(Number(f.buildingId)))
+                .map(f => f.floorName)
+        )
+    ];
+}
+
+private filterRooms(buildingIds: number[], levels: string[]): RoomGroup[] {
+    const numericBuildingIds = buildingIds?.map(id => Number(id)) || [];
+    
+    return this.allRooms.filter(room => {
+        const buildingMatch = numericBuildingIds.length === 0 || 
+                            numericBuildingIds.includes(Number(room.buildingId));
+        
+        const levelMatch = levels.length === 0 || 
+                         levels.includes(room.planType);
+        
+        return buildingMatch && levelMatch;
     });
+}
+
+  private resetFilters(): void {
+    this.filteredFloors = [...new Set(this.allFloors.map(f => f.floorName))];
+    this.filteredRooms = [...this.allRooms];
   }
     private extractAllRooms(buildings: Building[]): RoomGroup[] {
     const rooms: RoomGroup[] = [];
@@ -307,55 +314,6 @@ export class PlansComponent implements OnInit {
     });
     return rooms;
   }
-
-  // getFloors = [
-  //   'LK1',
-  //   'L00',
-  //   'L01',
-  //   'L02',
-  //   'L03',
-  //   'L04',
-  //   'L05',
-  //   'L06',
-  //   'L07',
-  //   'L08',
-  //   'LTA'    
-  // ]
-
-  // getFloors = [
-  //    'External Areas',
-  //    'Ground Floor',
-  //    'First Floor',
-  //    'Second Floor',
-  //    'Third Floor',
-  //    'Roof Plan',
-  //    'MU90.0',
-  //    'MU90.1',
-  //    'MU90.2',
-  //    'MU90.R',
-  //    'MU91.0',
-  //    'MU91.1',
-  //    'MU91.2',
-  //    'MU91.3',
-  //    'MU91.4',
-  //    'MU91.R',
-  //    'MB.0',
-  //    'MB.1',
-  //    'MB.2',
-  //    'MB.R',
-  //    'MA.II 0',
-  //    'MA.II 1',
-  //    'MA.II 2',
-  //    'MA.II 3',
-  //    'MA.II R',
-  //    'MA.III 0',
-  //    'MA.III 1',
-  //    'MA.III 2',
-  //    'MA.III 3',
-  //    'MA.III R',
-  //    'MA Basement'
-  // ];
-
 
   Getselectedyear(event) {
     this.ListWeeks.length = 0;
@@ -380,8 +338,6 @@ export class PlansComponent implements OnInit {
     var ISOweekStart = simple;
     if (dow <= 7) {
       this.ListWeeks.push(this.datePipe.transform(ISOweekStart.setDate(simple.getDate() - simple.getDay() + 1), 'yyyy/MM/dd') + "  -  " + this.datePipe.transform(ISOweekStart.setDate(simple.getDate() + 7 - simple.getDay()), 'yyyy/MM/dd') + "  -  " + `${w}` );
-      // console.log(this.datePipe.transform(ISOweekStart.setDate(simple.getDate() - simple.getDay() + 1), 'yyyy-MM-dd'));
-      // console.log(this.datePipe.transform(ISOweekStart.setDate(simple.getDate() + 7 - simple.getDay()), 'yyyy-MM-dd'));
     }
     else {
       ISOweekStart.setDate(simple.getDate() + 8 - simple.getDay());
@@ -427,80 +383,106 @@ export class PlansComponent implements OnInit {
       this.Buildings = res["data"];
     });
   }
-  Getplans() {
-    console.log(this.PlanForm.value)
-  //  this.plansDtodata.Site_Id=this.PlanForm.controls["Site"].value;
-    this.plansDtodata.Building_Id = this.PlanForm.controls["Building"].value;
-    this.plansDtodata.Sub_Contractor_Id = this.PlanForm.controls["subContractor"].value;
-    this.plansDtodata.Month = this.PlanForm.controls["Month"].value;
-    const dateValue = this.PlanForm.controls["Date"].value;
-    this.plansDtodata.Date = dateValue ? this.datePipe.transform(dateValue, 'yyyy-MM-dd') : "";
-    // this.plansDtodata.Date=this.datePipe.transform(this.PlanForm.controls["Date"].value, 'yyyy-MM-dd');
-    this.plansDtodata.Year=this.PlanForm.controls["Year"].value;
-    this.plansDtodata.Week=this.PlanForm.controls["Weekno"].value;
-    this.plansDtodata.Room_Type=this.PlanForm.controls["level"].value;
+//   Getplans() {
+//     console.log(this.PlanForm.value)
+//     this.plansDtodata.Building_Id = this.PlanForm.controls["Building"].value.toString();
+//     this.plansDtodata.Sub_Contractor_Id = this.PlanForm.controls["subContractor"].value;
+//     this.plansDtodata.Month = this.PlanForm.controls["Month"].value;
+//     const dateValue = this.PlanForm.controls["Date"].value;
+//     this.plansDtodata.Date = dateValue ? this.datePipe.transform(dateValue, 'yyyy-MM-dd') : "";
+//     this.plansDtodata.Year=this.PlanForm.controls["Year"].value;
+//     this.plansDtodata.Week=this.PlanForm.controls["Weekno"].value;
+//     // this.plansDtodata.Room_Type=this.PlanForm.controls["level"].value;
+//       const levelValue = this.PlanForm.controls['level'].value;
+// const levelsArray = Array.isArray(levelValue) ? levelValue : [levelValue]; 
 
-// this.plansDtodata.from_date = this.datePipe.transform(this.PlanForm.controls["WorkingDateFrom"].value, 'yyyy-MM-dd');
-    // this.plansDtodata.to_date = this.datePipe.transform(this.PlanForm.controls["WorkingDateTo"].value, 'yyyy-MM-dd');
-    const fromDateValue = this.PlanForm.controls["WorkingDateFrom"].value;
-const toDateValue = this.PlanForm.controls["WorkingDateTo"].value;
+// const formattedLevel = levelsArray
+//   .filter(val => val !== null && val !== undefined && val !== '') 
+//   .map((val: string) => `'${val}'`)
+//   .join(',');
 
-this.plansDtodata.from_date = fromDateValue ? this.datePipe.transform(fromDateValue, 'yyyy-MM-dd') : "";
-this.plansDtodata.to_date = toDateValue ? this.datePipe.transform(toDateValue, 'yyyy-MM-dd') : "";
+// this.plansDtodata.Room_Type = formattedLevel || ""; 
 
-    this.plansDtodata.start_time = this.PlanForm.controls["StartTime"].value;
-    this.plansDtodata.end_time = this.PlanForm.controls["EndTime"].value;
+//     const fromDateValue = this.PlanForm.controls["WorkingDateFrom"].value;
+// const toDateValue = this.PlanForm.controls["WorkingDateTo"].value;
+
+// this.plansDtodata.from_date = fromDateValue ? this.datePipe.transform(fromDateValue, 'yyyy-MM-dd') : "";
+// this.plansDtodata.to_date = toDateValue ? this.datePipe.transform(toDateValue, 'yyyy-MM-dd') : "";
+
+//     this.plansDtodata.start_time = this.PlanForm.controls["StartTime"].value;
+//     this.plansDtodata.end_time = this.PlanForm.controls["EndTime"].value;
     
-        // this.plansDtodata.Area = this.PlanForm.controls["Area"].value.toString();
-//     const statusArray = this.PlanForm.controls['area'].value;
-// this.plansDtodata.area = statusArray.map((val: string) => `'${val}'`).join(',');
- const areaValue = this.PlanForm.controls['area'].value;
-const areasArray = Array.isArray(areaValue) ? areaValue : [areaValue]; 
+//  const areaValue = this.PlanForm.controls['area'].value;
+// const areasArray = Array.isArray(areaValue) ? areaValue : [areaValue]; 
 
-const formattedArea = areasArray
-  .filter(val => val !== null && val !== undefined && val !== '') 
-  .map((val: string) => `${val}`)
-  .join('|');
+// const formattedArea = areasArray
+//   .filter(val => val !== null && val !== undefined && val !== '') 
+//   .map((val: string) => `${val}`)
+//   .join('|');
 
-this.plansDtodata.area = formattedArea || ""; 
+// this.plansDtodata.area = formattedArea || ""; 
 
-this.plansDtodata.permit_type =
-      this.PlanForm.controls['permit_type'].value.toString();
+// this.plansDtodata.permit_type =
+//       this.PlanForm.controls['permit_type'].value.toString();
 
-    //  this.plansDtodata.Plans_Id=this.PlanForm.controls["Plantype"].value;
+//     this.GetRequestData(this.plansDtodata);
+//   }
 
-    // if(this.PlanForm.controls["Plantype"].value==1)
-    // {
-    //    this.plansDtodata.fromDate=this.datePipe.transform(this.PlanForm.controls["Date"].value, 'yyyy-MM-dd');
+Getplans() {
+  console.log(this.PlanForm.value);
 
-    //    this.plansDtodata.toDate=this.datePipe.transform(this.PlanForm.controls["Date"].value, 'yyyy-MM-dd');
-    //    console.log( this.plansDtodata)
-    this.GetRequestData(this.plansDtodata);
+  // ✅ Building (multiple)
+  this.plansDtodata.Building_Id = this.PlanForm.controls["Building"].value;
+  // this.plansDtodata.Building_Id = buildingValue && buildingValue.length
+  //   ? buildingValue.join(",")
+  //   : "";
 
-    // }
-    // else if(this.PlanForm.controls["Plantype"].value==2)
-    // {
-    //   var mydate=moment().year(2020).week(2);
-    //   //console.log(mydate.format('YYYY-MM-DD'));
-    //   console.log(mydate.startOf('week').format('YYYY-MM-DD'));
-    //   console.log(mydate.endOf('week').format('YYYY-MM-DD'));
+  // ✅ Subcontractor
+  this.plansDtodata.Sub_Contractor_Id = this.PlanForm.controls["subContractor"].value || "";
 
-    //    this.plansDtodata.fromDate=mydate.startOf('week').format('YYYY-MM-DD');
-    //     this.plansDtodata.toDate=mydate.endOf('week').format('YYYY-MM-DD');
-    //     this.GetRequestData(this.plansDtodata);
+  // ✅ Month
+  this.plansDtodata.Month = this.PlanForm.controls["Month"].value || "";
 
-    // }
-    // else if(this.PlanForm.controls["Plantype"].value==3)
-    // {
-    //   var mymonthdate=moment().month(this.PlanForm.controls["Month"].value);
-    //   this.plansDtodata.fromDate=mymonthdate.startOf("month").format('YYYY-MM-DD');
-    //   this.plansDtodata.toDate=mymonthdate.endOf("month").format('YYYY-MM-DD');
+  // ✅ Date
+  const dateValue = this.PlanForm.controls["Date"].value;
+  this.plansDtodata.Date = dateValue ? this.datePipe.transform(dateValue, 'yyyy-MM-dd') : "";
 
-    //   this.GetRequestData(this.plansDtodata);
-    // }
-  }
+  // ✅ Year & Week
+  this.plansDtodata.Year = this.PlanForm.controls["Year"].value || "";
+  this.plansDtodata.Week = this.PlanForm.controls["Weekno"].value || "";
 
-      openSnackBar(msg) {
+  // ✅ Level (multiple → "'A','B'")
+  // const levelValue = this.PlanForm.controls['level'].value || [];
+  this.plansDtodata.Room_Type = this.PlanForm.controls['level'].value || [];
+  // levelValue.length
+  //   ? levelValue.map((val: string) => `'${val}'`).join(",")
+  //   : "";
+
+  // ✅ From / To Dates
+  const fromDateValue = this.PlanForm.controls["WorkingDateFrom"].value;
+  const toDateValue = this.PlanForm.controls["WorkingDateTo"].value;
+  this.plansDtodata.from_date = fromDateValue ? this.datePipe.transform(fromDateValue, 'yyyy-MM-dd') : "";
+  this.plansDtodata.to_date = toDateValue ? this.datePipe.transform(toDateValue, 'yyyy-MM-dd') : "";
+
+  // ✅ Start/End Time
+  this.plansDtodata.start_time = this.PlanForm.controls["StartTime"].value || "";
+  this.plansDtodata.end_time = this.PlanForm.controls["EndTime"].value || "";
+
+  // ✅ Area (multiple → "A|B|C")
+  const areaValue = this.PlanForm.controls['area'].value || [];
+  this.plansDtodata.area = areaValue.length
+    ? areaValue.join("|")
+    : "";
+
+  // ✅ Permit Type
+  this.plansDtodata.permit_type = this.PlanForm.controls['permit_type'].value || "";
+
+  // 🔥 Finally call API
+  this.GetRequestData(this.plansDtodata);
+}
+
+
+  openSnackBar(msg) {
     this._snackBar.open(msg, "Close", {
       duration: 2000,
     });
@@ -518,179 +500,6 @@ this.plansDtodata.permit_type =
   }
     });
   }
-
-//   exportToExcel() {
-
-// // let base64_Img:any;
-
-// // let workbook: ExcelProper.Workbook = new Excel.Workbook();
-
-// // let worksheet = workbook.addWorksheet('Sales Data');
-
-// //     worksheet.mergeCells('A1', 'M1');
-// //     let titleRow = worksheet.getCell('C1');
-// //     titleRow.value = "ACTIVITY PERMITS WEEK 20"
-// //     titleRow.font = {
-// //       name: 'Calibri',
-// //       size: 16,
-// //       underline: 'single',
-// //       bold: true,
-// //       color: { argb: '0085A3' }
-// //     }
-// //     titleRow.alignment = { vertical: 'middle', horizontal: 'center' }
-
-
-
-// //     this.http.get('/assets/images/logo-beam.png', { responseType: 'blob' })
-// //       .subscribe(res => {
-// //         const reader = new FileReader();
-// //         reader.onloadend = () => {
-// //            base64_Img = reader.result;                
-           
-// //         }
-
-// //         reader.readAsDataURL(res); 
-// //         console.log(res);
-// //       });
-//   //     let myLogoImage = workbook.addImage({
-      
-//   //       base64: base64_Img,
-//   //       extension: 'png',
-//   //     });
-//   // //  worksheet.mergeCells('A1:B4');
-//   //   worksheet.addImage(myLogoImage, 'A1:B4');
-
-//     // let headerRow = worksheet.addRow(this.Cols);
-//     // headerRow.eachCell((cell, number) => {
-//     //   cell.fill = {
-//     //     type: 'pattern',
-//     //     pattern: 'solid',
-//     //     fgColor: { argb: '4167B8' },
-//     //     bgColor: { argb: '' }
-//     //   }
-//     //   cell.font = {
-//     //     bold: true,
-//     //     color: { argb: 'FFFFFF' },
-//     //     size: 12
-//     //   }
-//     // });
-
-    
-
-//     this.Planslist.forEach(x=>
-//       {
-//         var day=new Date(x["Working_Date"]).getDay()
-//         console.log(this.days_Names[day]);
-//         this.DownloadExcelData.push(
-//           {Company_Name:x["Company_Name"],subContractorName:x["subContractorName"],Site_Id:x["Site_Id"],
-//           Building_Id:x["Building_Id"],Activity:x["Activity"],PermitNo:x["PermitNo"],
-//           Start_Time:x["Start_Time"],End_Time:x["End_Time"],Request_status:x["Request_status"],
-//           Notes:x["Notes"],Working_Date:x["Working_Date"],Day:this.days_Names[day]}
-//         )
-//       });
-
-
-//       // this.DownloadExcelData.forEach(d => {
-//       //    worksheet.addRow(d);
-//       // });
-  
-//       // workbook.xlsx.writeBuffer().then((data) => {
-//       //   let blob = new Blob([data], { type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' });
-//       //   fs.saveAs(blob, "ACTIVITY PERMITS WEEK 20" + '.csv');
-//       // })
-
-//       // workbook.xlsx.writeBuffer().then( data => {
-//       //   const blob = new Blob( [data], {type: "application/octet-stream"} );
-//       //   saveAs( blob, 'ACTIVITY_PERMITS_WEEK_20.xlsx');
-//       // });
-
-//     const rowsString: string[] = [];
-//     let headerString = '';
-//     let csv = '';
-
-//     this.ModalOptions = {
-//       key: '',
-//       fileName: '',
-//       dialogHeader: '',
-//       dialogMessage: '',
-//       enableDownloadExcel: true,
-//       enablePrint: true,
-//       dataSource: '',
-//       tableData: '',
-//       columns: this.Cols,
-//       reportHeaderColumns: '',
-//       reportFooterColumns: ''
-
-//     };
-
-//     this.ModalOptions.tableData =  this.DownloadExcelData;
-
-//     this.ModalOptions.fileName = "test" + "_" + moment(new Date()).format('YYYY/MM/DD').toString();
-
-//     for (const column of this.ModalOptions.columns) {
-//       let data = column.header;
-//       data = data === 'undefined' ? '' : data;
-//       data = data === null ? '' : data;
-//       data = data === 'null' ? '' : data;
-//       headerString += data + ',';
-
-//     }
-//     csv += headerString + '\n';
-
-//     for (let i = 0; i < this.ModalOptions.tableData.length; i++) {
-//       let rowString = '';
-//       let colNames = '';
-//       let objValues = {};
-//       let val = '';
-
-//       const tableRow = this.ModalOptions.tableData[i];
-//       for (const column of this.ModalOptions.columns) {
-//         if (column.field.includes('.')) {
-//           colNames = column.field.split('.');
-//           objValues = tableRow[colNames[0]];
-//           val = String(objValues[colNames[1]])
-//             .replace(/[\n\r]+/g, '')
-//             .replace(/\s{2,}/g, ' ')
-//             .replace(/,/g, '')
-//             .trim();
-//           val = val === 'true' ? '1' : val === 'false' ? '0' : val;
-//           val = val === null ? '' : val;
-//           val = val === 'null' ? '' : val;
-//           val = val === '0' ? '' : val;
-//           val = val === 'undefined' ? '' : val;
-//           rowString += val + ',';
-//         } else {
-//           val = String(tableRow[column.field])
-//             .replace(/[\n\r]+/g, '')
-//             .replace(/\s{2,}/g, ' ')
-//             .replace(/,/g, '')
-//             .trim();
-//           val = val === 'true' ? '1' : val === 'false' ? '0' : val;
-//           val = val === null ? '' : val;
-//           val = val === 'null' ? '' : val;
-//           val = val === '0' ? '' : val;
-//           val = val === 'undefined' ? '' : val;
-//           rowString += val + ',';
-//         }
-//       }
-//       rowsString.push(rowString);
-//     }
-
-//     for (const row of rowsString) {
-//       csv += row + '\n';
-//     }
-
-//     csv += this.ModalOptions.reportFooterColumns + '\n';
-//     const blob = new Blob(['\uFEFF', csv], { type: 'text/csv' });
-//     const link = document.createElement('a');
-//     link.setAttribute('href', window.URL.createObjectURL(blob));
-//     link.setAttribute(
-//       'download',
-//       this.ModalOptions.fileName + this.ModalOptions.key + '.csv'
-//     );
-//     document.body.appendChild(link); // Required for FF
-//     link.click();
-//   }
 
 isValidDate(date: any): boolean {
   if (!date) return false;

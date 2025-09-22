@@ -11,6 +11,7 @@ import { JwtAuthService } from "app/shared/services/auth/jwt-auth.service";
 import { config } from "config";
 import * as moment from 'moment';
 import { FormControl, FormGroup, Validators } from "@angular/forms";
+// import { AuditLoggerService } from "app/shared/services/audit-logger.service";
 
 @Component({
   selector: "app-status-change-dialog",
@@ -19,6 +20,7 @@ import { FormControl, FormGroup, Validators } from "@angular/forms";
 })
 export class StatusChangeDialogComponent implements OnInit {
   updaterequestdata: EditRequestDto = {
+    fields: "",
     work_type: null,
     pressure_pneumatic: null,
     pressure_hydrostatic: null,
@@ -221,6 +223,7 @@ export class StatusChangeDialogComponent implements OnInit {
   };
   images: any[] = [];
   base64Images: any[] = [];
+  originalrequestdata: any = {};
 
   images1: any[] = [];
   base64Images1: any[] = [];
@@ -259,7 +262,8 @@ export class StatusChangeDialogComponent implements OnInit {
     @Inject(MAT_DIALOG_DATA) public data: any,
     private requestdataservice: RequestService,
     private _snackBar: MatSnackBar,
-    private authservice: JwtAuthService
+    private authservice: JwtAuthService,
+    // private auditLogger: AuditLoggerService
   ) {
     this.userdata = this.authservice.getUser();
     // this.userType = this.userdata.userType.slipt(',');
@@ -652,7 +656,7 @@ export class StatusChangeDialogComponent implements OnInit {
     console.log(statusdata, 'data')
     var today = moment.tz("Europe/Copenhagen");
     this.CurrenttimeNow = today.format('HH:mm:ss');
-  
+
     // document.getElementById('watch1').innerHTML = today.format('DD/MM/YYYY');
     var t = setTimeout(this.startTime, 500);
     if (statusdata == "Closed") {

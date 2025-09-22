@@ -8,6 +8,7 @@ export class RequestDto {
     mechanical_works: string;
     permit_type: string;
     userId: string;
+    username: string;
     Request_Date: string;
     Company_Name: string;
     Sub_Contractor_Id: string;
@@ -198,6 +199,7 @@ export class FilesRequestDto {
 }
 
 export class EditRequestDto {
+    fields: string;
     work_type: string;
     pressure_pneumatic: string;
     pressure_hydrostatic: string;

@@ -48,6 +48,11 @@ import { environment } from "environments/environment";
 import { ElectricalworkService } from "app/shared/services/electricalworks.service";
 import { MechanicalworkService } from "app/shared/services/mechanicalworks.service";
 import { MatSelectChange } from "@angular/material/select";
+import { AddNotes } from "app/views/Models/MultiRequestUpdateDto";
+interface Note {
+  Notes: string;
+  Username: string;
+}
 
 @Component({
   selector: "app-new-request",
@@ -105,6 +110,7 @@ export class NewRequestComponent implements OnInit {
   isCraneLiftingyes: boolean = false;
   isPoweronyes: boolean = false;
   isPressurizationyes: boolean = false;
+  isstatusdraft: boolean = false;
   isLOTOPROCEDUREyes: boolean = false;
   RequestForm: FormGroup;
   FilesRequestForm: FormGroup;
@@ -169,6 +175,12 @@ export class NewRequestComponent implements OnInit {
   SubContractors: any[] = [];
   TypeofActivites: any[] = [];
   planSelectedBlocks: any[] = [];
+
+  safetyListMap: any[] = [];
+  subContractorMap: any[] = [];
+  typeOfActivityMap: any[] = [];
+  electricalMap: any[] = [];
+  mechanicalMap: any[] = [];
 
   blocks: any[] = [];
 
@@ -415,6 +427,7 @@ export class NewRequestComponent implements OnInit {
     subcontId: null,
   };
   Requestdata: RequestDto = {
+    username: null,
     electrical_works: null,
     mechanical_works: null,
     work_type: null,
@@ -613,7 +626,17 @@ export class NewRequestComponent implements OnInit {
     id: null,
   }
 
+  addNotes: AddNotes= {
+    request_id: null,
+    permit_no: null,
+    user_id: null,
+    username: null,
+    note: null,
+    createdTime: null,
+  }
+
   updaterequestdata: EditRequestDto = {
+    fields: "",
     work_type: null,
     electrical_works: null,
     mechanical_works: null,
@@ -839,10 +862,10 @@ export class NewRequestComponent implements OnInit {
     private electicalworkservice: ElectricalworkService,
     private mechanicalworkservice: MechanicalworkService,
     private teamservices: TeamService,
-    private cdr: ChangeDetectorRef
+    private cdr: ChangeDetectorRef,
   ) {
-    const currentYear = new Date().getFullYear();
-    this.minDate = new Date(currentYear - 20, 0, 1);
+    const currentYear = new Date(config.getDenmarkTime.date()).getFullYear();
+    this.minDate = new Date(config.getDenmarkTime.date());
     this.maxDate = new Date(currentYear + 1, 11, 31);
     this.spinner = true;
   }
@@ -1835,6 +1858,7 @@ export class NewRequestComponent implements OnInit {
 
     this.userdata = this.jwtauth.getUser();
     this.Requestdata.userId = this.userdata["id"];
+    this.Requestdata.username = this.userdata["displayName"];
 
     forkJoin(
       this.requestsserivies.GetAllSites(),
@@ -1961,8 +1985,8 @@ this.RequestForm.get('floatLabel107').valueChanges.subscribe(val => {
       }
     }
   });
-
-    });
+  this.buildLookups();
+    })
 
     this.data = this.requestsserivies.SelectedRequestData;
     console.log(this.data, "rowdata");
@@ -2001,6 +2025,17 @@ this.RequestForm.get('floatLabel107').valueChanges.subscribe(val => {
       this.EditFormDataBinding(this.data["payload"]);
     }
     this.name = "site";
+    this.RequestForm.get('Startdate').valueChanges.subscribe((startDateValue: string) => {
+    if (startDateValue && this.isnightshiftyes) {
+      const startDate = new Date(startDateValue);
+      const newWorkDate = new Date(startDate);
+      newWorkDate.setDate(startDate.getDate() + 1);
+      const formattedDate = this.formatDateWithoutTimezone(newWorkDate);
+      this.RequestForm.get('newWorkDate').setValue(formattedDate);
+    } else {
+      this.RequestForm.get('newWorkDate').reset(); // clear if no startdate or night shift off
+    }
+  });
   }
 
   // Helper function to group by module
@@ -2060,7 +2095,22 @@ private groupByModule(data: any[], displayProperty: string): any[] {
   toggleNightShift(isChecked: boolean) {
     this.isnightshiftyes = isChecked;
     this.RequestForm.get('night_shift').setValue(isChecked ? 1 : 0);
+    const startDateValue = this.RequestForm.get('Startdate').value;
+        if (startDateValue) {
+            const startDate = new Date(startDateValue);
+            const newWorkDate = new Date(startDate);
+            newWorkDate.setDate(startDate.getDate() + 1);
+            const formattedDate = this.formatDateWithoutTimezone(newWorkDate);
+            this.RequestForm.get('newWorkDate').setValue(formattedDate);
+        }
   }
+
+  formatDateWithoutTimezone(date: Date): string {
+    const year = date.getFullYear();
+    const month = (date.getMonth() + 1).toString().padStart(2, '0');
+    const day = date.getDate().toString().padStart(2, '0');
+    return `${year}-${month}-${day}`;
+}
 
   filter(val: string) {
     return this.safetyList.filter(
@@ -3279,9 +3329,11 @@ private groupByModule(data: any[], displayProperty: string): any[] {
       this.RequestForm.get(`${control}`).updateValueAndValidity();
       this.RequestForm.get(`${control}`).markAsTouched();
     });
-    if(this.RequestForm.get('SubContractor').valid) {
+    if(this.RequestForm.valid) {
       this.Requestdata.Request_status = "Draft";
     this.CreateRequest();
+    } else {
+      this.openSnackBar("Invalid form please check once.");
     }
     //this.requestsserivies.CreateNewRequest()
   }
@@ -3414,170 +3466,179 @@ showMechanicalWorks(): boolean {
     this.Requestdata.name_of_the_fire_watcher = this.RequestForm.controls["fireWatcher"].value;
     this.Requestdata.phone_number_of_fire_watcher = this.RequestForm.controls["fireWatcherNumber"].value;
 
-    this.Requestdata.tasks_in_progress_in_the_area = this.RequestForm.controls["floatLabel1"].value;
+    this.Requestdata.tasks_in_progress_in_the_area = this.RequestForm.controls["floatLabel1"].value || 0;
     // this.Requestdata.account_during_the_work = this.RequestForm.controls["floatLabel2"].value;
-    this.Requestdata.lighting_sufficiently = this.RequestForm.controls["floatLabel3"].value;
-    this.Requestdata.spesific_risks_based_on_task = this.RequestForm.controls["floatLabel4"].value;
-    this.Requestdata.work_environment_safety_ensured = this.RequestForm.controls["floatLabel5"].value;
-    this.Requestdata.course_of_action_in_emergencies = this.RequestForm.controls["floatLabel6"].value;
+    this.Requestdata.lighting_sufficiently = this.RequestForm.controls["floatLabel3"].value || 0;
+    this.Requestdata.spesific_risks_based_on_task = this.RequestForm.controls["floatLabel4"].value || 0;
+    this.Requestdata.work_environment_safety_ensured = this.RequestForm.controls["floatLabel5"].value || 0;
+    this.Requestdata.course_of_action_in_emergencies = this.RequestForm.controls["floatLabel6"].value || 0;
 
-    this.Requestdata.fire_watch_establish = this.RequestForm.controls["floatLabel7"].value;
-    this.Requestdata.combustible_material = this.RequestForm.controls["floatLabel8"].value;
-    this.Requestdata.safety_measures = this.RequestForm.controls["floatLabel9"].value;
-    this.Requestdata.extinguishers_and_fire_blanket = this.RequestForm.controls["floatLabel10"].value;
+    this.Requestdata.fire_watch_establish = this.RequestForm.controls["floatLabel7"].value || 0;
+    this.Requestdata.combustible_material = this.RequestForm.controls["floatLabel8"].value || 0;
+    this.Requestdata.safety_measures = this.RequestForm.controls["floatLabel9"].value || 0;
+    this.Requestdata.extinguishers_and_fire_blanket = this.RequestForm.controls["floatLabel10"].value || 0;
 
-    this.Requestdata.welding_activitiy = this.RequestForm.controls["NEWHOTWORK"].value;
-    this.Requestdata.heat_treatment = this.RequestForm.controls["NEWHOTWORK1"].value;
-    this.Requestdata.air_extraction_be_established = this.RequestForm.controls["NEWHOTWORK2"].value;
+    this.Requestdata.welding_activitiy = this.RequestForm.controls["NEWHOTWORK"].value || 0;
+    this.Requestdata.heat_treatment = this.RequestForm.controls["NEWHOTWORK1"].value || 0;
+    this.Requestdata.air_extraction_be_established = this.RequestForm.controls["NEWHOTWORK2"].value || 0;
 
     // new fields added
     // this.Requestdata.new_sub_contractor = this.RequestForm.controls["NEWHOTWORK2"].value;
-    this.Requestdata.affecting_other_contractors = this.RequestForm.controls["floatLabel11"].value;
-    this.Requestdata.other_conditions = this.RequestForm.controls["floatLabel12"].value;
-    this.Requestdata.lighting_begin_work = this.RequestForm.controls["floatLabel13"].value;
-    this.Requestdata.specific_risks = this.RequestForm.controls["floatLabel14"].value;
-    this.Requestdata.environment_ensured = this.RequestForm.controls["floatLabel15"].value;
-    this.Requestdata.course_of_action = this.RequestForm.controls["floatLabel16"].value;
+    this.Requestdata.affecting_other_contractors = this.RequestForm.controls["floatLabel11"].value || 0;
+    this.Requestdata.other_conditions = this.RequestForm.controls["floatLabel12"].value || 0;
+    this.Requestdata.lighting_begin_work = this.RequestForm.controls["floatLabel13"].value || 0;
+    this.Requestdata.specific_risks = this.RequestForm.controls["floatLabel14"].value || 0;
+    this.Requestdata.environment_ensured = this.RequestForm.controls["floatLabel15"].value || 0;
+    this.Requestdata.course_of_action = this.RequestForm.controls["floatLabel16"].value || 0;
 
     // electrical system
-    this.Requestdata.working_on_electrical_system = this.RequestForm.controls["electricalSystem"].value;
-    this.Requestdata.responsible_for_the_informed = this.RequestForm.controls["floatLabel17"].value;
-    this.Requestdata.de_energized = this.RequestForm.controls["floatLabel18"].value;
-    this.Requestdata.if_no_loto = this.RequestForm.controls["floatLabel19"].value;
-    this.Requestdata.do_risk_assessment = this.RequestForm.controls["floatLabel20"].value;
-    this.Requestdata.if_yes_loto = this.RequestForm.controls["floatLabel21"].value;
-    this.Requestdata.electricity_have_isulation = this.RequestForm.controls["floatLabel22"].value;
-    this.Requestdata.electrician_certification = this.RequestForm.controls["floatLabel23"].value;
+    this.Requestdata.working_on_electrical_system = this.RequestForm.controls["electricalSystem"].value || 0;
+    this.Requestdata.responsible_for_the_informed = this.RequestForm.controls["floatLabel17"].value || 0;
+    this.Requestdata.de_energized = this.RequestForm.controls["floatLabel18"].value || 0;
+    this.Requestdata.if_no_loto = this.RequestForm.controls["floatLabel19"].value || 0;
+    this.Requestdata.do_risk_assessment = this.RequestForm.controls["floatLabel20"].value || 0;
+    this.Requestdata.if_yes_loto = this.RequestForm.controls["floatLabel21"].value || 0;
+    this.Requestdata.electricity_have_isulation = this.RequestForm.controls["floatLabel22"].value || 0;
+  //   this.Requestdata.electricity_have_isulation = this.RequestForm.controls["floatLabel22"].value?.toString().trim() === "" 
+  // ? 0 
+  // : this.RequestForm.controls["floatLabel22"].value;
+    this.Requestdata.electrician_certification = this.RequestForm.controls["floatLabel23"].value || 0;
 
        // commission fields of electrical systems
-    this.Requestdata.line_walk = this.RequestForm.controls["floatLabel102"].value;
-    this.Requestdata.pressure_test_coordinated = this.RequestForm.controls["floatLabel103"].value;
-    this.Requestdata.pipework_mic = this.RequestForm.controls["floatLabel104"].value;
-    this.Requestdata.loto_plan_attached = this.RequestForm.controls["floatLabel105"].value;
-    this.Requestdata.exclusion_zone_calculated = this.RequestForm.controls["floatLabel106"].value;
-    this.Requestdata.pneumatic_hydrostatic = this.RequestForm.controls["floatLabel107"].value;
-    this.Requestdata.pressure_of_the_test = this.RequestForm.controls["floatLabel108"].value;
-    this.Requestdata.safety_valves_calibrated = this.RequestForm.controls["floatLabel109"].value;
+    this.Requestdata.line_walk = this.RequestForm.controls["floatLabel102"].value || 0;
+    this.Requestdata.pressure_test_coordinated = this.RequestForm.controls["floatLabel103"].value || 0;
+    this.Requestdata.pipework_mic = this.RequestForm.controls["floatLabel104"].value || 0;
+    this.Requestdata.loto_plan_attached = this.RequestForm.controls["floatLabel105"].value || 0;
+    this.Requestdata.exclusion_zone_calculated = this.RequestForm.controls["floatLabel106"].value || 0;
+    this.Requestdata.pneumatic_hydrostatic = this.RequestForm.controls["floatLabel107"].value || 0;
+    this.Requestdata.pressure_of_the_test = this.RequestForm.controls["floatLabel108"].value || 0;
+    this.Requestdata.safety_valves_calibrated = this.RequestForm.controls["floatLabel109"].value || 0;
 
 
     // working_hazardious
 
-    this.Requestdata.working_hazardious_substen = this.RequestForm.controls["HAZARDOUS"].value;
-    this.Requestdata.relevant_mal = this.RequestForm.controls["floatLabel24"].value;
-    this.Requestdata.msds = this.RequestForm.controls["floatLabel25"].value;
-    this.Requestdata.equipment_taken_account = this.RequestForm.controls["floatLabel26"].value;
-    this.Requestdata.ventilation = this.RequestForm.controls["floatLabel27"].value;
-    this.Requestdata.hazardaus_substances = this.RequestForm.controls["floatLabel28"].value;
-    this.Requestdata.storage_and_disposal = this.RequestForm.controls["floatLabel29"].value;
-    this.Requestdata.reachable_case = this.RequestForm.controls["floatLabel30"].value;
-    this.Requestdata.checical_risk_assessment = this.RequestForm.controls["floatLabel31"].value;
+    this.Requestdata.working_hazardious_substen = this.RequestForm.controls["HAZARDOUS"].value || 0;
+    this.Requestdata.relevant_mal = this.RequestForm.controls["floatLabel24"].value || 0;
+    this.Requestdata.msds = this.RequestForm.controls["floatLabel25"].value || 0;
+    this.Requestdata.equipment_taken_account = this.RequestForm.controls["floatLabel26"].value || 0;
+    this.Requestdata.ventilation = this.RequestForm.controls["floatLabel27"].value || 0;
+    this.Requestdata.hazardaus_substances = this.RequestForm.controls["floatLabel28"].value || 0;
+    this.Requestdata.storage_and_disposal = this.RequestForm.controls["floatLabel29"].value || 0;
+    this.Requestdata.reachable_case = this.RequestForm.controls["floatLabel30"].value || 0;
+    this.Requestdata.checical_risk_assessment = this.RequestForm.controls["floatLabel31"].value || 0;
+  //   this.Requestdata.checical_risk_assessment = this.RequestForm.controls["floatLabel31"].value?.toString().trim() === "" 
+  // ? 0 
+  // : this.RequestForm.controls["floatLabel31"].value;
 
     //  <!-- testing start -->
 
-    this.Requestdata.pressure_tesing_of_equipment = this.RequestForm.controls["TESTINGs"].value;
-    this.Requestdata.transfer_of_palnt = this.RequestForm.controls["floatLabel32"].value;
-    this.Requestdata.area_drained = this.RequestForm.controls["floatLabel33"].value;
-    this.Requestdata.area_depressurised = this.RequestForm.controls["floatLabel34"].value;
-    this.Requestdata.area_flused = this.RequestForm.controls["floatLabel35"].value;
-    this.Requestdata.tank_area_container = this.RequestForm.controls["floatLabel36"].value;
-    this.Requestdata.system_free_for_dust = this.RequestForm.controls["floatLabel37"].value;
-    this.Requestdata.loto_plan_submitted = this.RequestForm.controls["floatLabel38"].value;
+    this.Requestdata.pressure_tesing_of_equipment = this.RequestForm.controls["TESTINGs"].value || 0;
+  //   this.Requestdata.pressure_tesing_of_equipment = this.RequestForm.controls["TESTINGs"].value?.toString().trim() === "" 
+  // ? 0 
+  // : this.RequestForm.controls["TESTINGs"].value;
+    this.Requestdata.transfer_of_palnt = this.RequestForm.controls["floatLabel32"].value || 0;
+    this.Requestdata.area_drained = this.RequestForm.controls["floatLabel33"].value || 0;
+    this.Requestdata.area_depressurised = this.RequestForm.controls["floatLabel34"].value || 0;
+    this.Requestdata.area_flused = this.RequestForm.controls["floatLabel35"].value || 0;
+    this.Requestdata.tank_area_container = this.RequestForm.controls["floatLabel36"].value || 0;
+    this.Requestdata.system_free_for_dust = this.RequestForm.controls["floatLabel37"].value || 0;
+    this.Requestdata.loto_plan_submitted = this.RequestForm.controls["floatLabel38"].value || 0;
 
     // <!-- height start -->
 
-    this.Requestdata.working_at_height = this.RequestForm.controls["WORKHEIGHT"].value;
-    this.Requestdata.segragated_demarkated = this.RequestForm.controls["segragated_demarkated"].value;
-    this.Requestdata.lanyard_attachments = this.RequestForm.controls["floatLabel39"].value;
-    this.Requestdata.rescue_plan = this.RequestForm.controls["floatLabel40"].value;
-    this.Requestdata.avoid_hazards = this.RequestForm.controls["floatLabel41"].value;
-    this.Requestdata.height_training = this.RequestForm.controls["floatLabel42"].value;
-    this.Requestdata.supervision = this.RequestForm.controls["floatLabel43"].value;
-    this.Requestdata.shock_absorbing = this.RequestForm.controls["floatLabel44"].value;
-    this.Requestdata.height_equipments = this.RequestForm.controls["floatLabel45"].value;
-    this.Requestdata.vertical_life = this.RequestForm.controls["floatLabel46"].value;
-    this.Requestdata.secured_falling = this.RequestForm.controls["floatLabel47"].value;
-    this.Requestdata.dropped_objects = this.RequestForm.controls["floatLabel48"].value;
-    this.Requestdata.safe_acces = this.RequestForm.controls["floatLabel49"].value;
-    this.Requestdata.weather_acceptable = this.RequestForm.controls["floatLabel50"].value;
+    this.Requestdata.working_at_height = this.RequestForm.controls["WORKHEIGHT"].value || 0;
+    this.Requestdata.segragated_demarkated = this.RequestForm.controls["segragated_demarkated"].value || 0;
+    this.Requestdata.lanyard_attachments = this.RequestForm.controls["floatLabel39"].value || 0;
+    this.Requestdata.rescue_plan = this.RequestForm.controls["floatLabel40"].value || 0;
+    this.Requestdata.avoid_hazards = this.RequestForm.controls["floatLabel41"].value || 0;
+    this.Requestdata.height_training = this.RequestForm.controls["floatLabel42"].value || 0;
+    this.Requestdata.supervision = this.RequestForm.controls["floatLabel43"].value || 0;
+    this.Requestdata.shock_absorbing = this.RequestForm.controls["floatLabel44"].value || 0;
+    this.Requestdata.height_equipments = this.RequestForm.controls["floatLabel45"].value || 0;
+    this.Requestdata.vertical_life = this.RequestForm.controls["floatLabel46"].value || 0;
+    this.Requestdata.secured_falling = this.RequestForm.controls["floatLabel47"].value || 0;
+    this.Requestdata.dropped_objects = this.RequestForm.controls["floatLabel48"].value || 0;
+    this.Requestdata.safe_acces = this.RequestForm.controls["floatLabel49"].value || 0;
+    this.Requestdata.weather_acceptable = this.RequestForm.controls["floatLabel50"].value || 0;
 
     // working_confined_spaces
 
-    this.Requestdata.working_confined_spaces = this.RequestForm.controls["CONFINEDSPACE"].value;
-    this.Requestdata.vapours_gases = this.RequestForm.controls["floatLabel51"].value;
-    this.Requestdata.lel_measurement = this.RequestForm.controls["floatLabel52"].value;
-    this.Requestdata.all_equipment = this.RequestForm.controls["floatLabel53"].value;
-    this.Requestdata.exit_conditions = this.RequestForm.controls["floatLabel54"].value;
-    this.Requestdata.communication_emergency = this.RequestForm.controls["floatLabel55"].value;
-    this.Requestdata.rescue_equipments = this.RequestForm.controls["floatLabel56"].value;
-    this.Requestdata.space_ventilation = this.RequestForm.controls["floatLabel57"].value;
-    this.Requestdata.oxygen_meter = this.RequestForm.controls["floatLabel58"].value;
+    this.Requestdata.working_confined_spaces = this.RequestForm.controls["CONFINEDSPACE"].value || 0;
+    this.Requestdata.vapours_gases = this.RequestForm.controls["floatLabel51"].value || 0;
+    this.Requestdata.lel_measurement = this.RequestForm.controls["floatLabel52"].value || 0;
+    this.Requestdata.all_equipment = this.RequestForm.controls["floatLabel53"].value || 0;
+    this.Requestdata.exit_conditions = this.RequestForm.controls["floatLabel54"].value || 0;
+    this.Requestdata.communication_emergency = this.RequestForm.controls["floatLabel55"].value || 0;
+    this.Requestdata.rescue_equipments = this.RequestForm.controls["floatLabel56"].value || 0;
+    this.Requestdata.space_ventilation = this.RequestForm.controls["floatLabel57"].value || 0;
+    this.Requestdata.oxygen_meter = this.RequestForm.controls["floatLabel58"].value || 0;
 
     // work_in_atex_area
 
-    this.Requestdata.work_in_atex_area = this.RequestForm.controls["ATEXAREA"].value;
-    this.Requestdata.ex_area_downgraded = this.RequestForm.controls["floatLabel59"].value;
-    this.Requestdata.atmospheric_tester = this.RequestForm.controls["floatLabel60"].value;
-    this.Requestdata.flammable_materials = this.RequestForm.controls["floatLabel61"].value;
-    this.Requestdata.potential_explosive = this.RequestForm.controls["floatLabel62"].value;
-    this.Requestdata.oxygen_meter_confined_spaces = this.RequestForm.controls["floatLabel63"].value;
+    this.Requestdata.work_in_atex_area = this.RequestForm.controls["ATEXAREA"].value || 0;
+    this.Requestdata.ex_area_downgraded = this.RequestForm.controls["floatLabel59"].value || 0;
+    this.Requestdata.atmospheric_tester = this.RequestForm.controls["floatLabel60"].value || 0;
+    this.Requestdata.flammable_materials = this.RequestForm.controls["floatLabel61"].value || 0;
+    this.Requestdata.potential_explosive = this.RequestForm.controls["floatLabel62"].value || 0;
+    this.Requestdata.oxygen_meter_confined_spaces = this.RequestForm.controls["floatLabel63"].value || 0;
 
     // <!-- FACILITIES LOTO start -->
 
-    this.Requestdata.securing_facilities = this.RequestForm.controls["FACILITIESLOTO"].value;
-    this.Requestdata.loto_facilities = this.RequestForm.controls["floatLabel64"].value;
-    this.Requestdata.system_depressurised = this.RequestForm.controls["floatLabel65"].value;
-    this.Requestdata.system_drained = this.RequestForm.controls["system_drained"].value;
-    this.Requestdata.passive_pause_other = this.RequestForm.controls["floatLabel67"].value;
-    this.Requestdata.electricity_have_insulation = this.RequestForm.controls["floatLabel68"].value;
-    this.Requestdata.covered_or_secured = this.RequestForm.controls["floatLabel69"].value;
-    this.Requestdata.people_electrician_certification = this.RequestForm.controls["floatLabel70"].value;
-    // this.Requestdata.people_electrician_certification = this.RequestForm.controls["floatLabel71"].value;
+    this.Requestdata.securing_facilities = this.RequestForm.controls["FACILITIESLOTO"].value || 0;
+    this.Requestdata.loto_facilities = this.RequestForm.controls["floatLabel64"].value || 0;
+    this.Requestdata.system_depressurised = this.RequestForm.controls["floatLabel65"].value || 0;
+    this.Requestdata.system_drained = this.RequestForm.controls["system_drained"].value || 0;
+    this.Requestdata.passive_pause_other = this.RequestForm.controls["floatLabel67"].value || 0;
+    this.Requestdata.electricity_have_insulation = this.RequestForm.controls["floatLabel68"].value || 0;
+    this.Requestdata.covered_or_secured = this.RequestForm.controls["floatLabel69"].value || 0;
+    this.Requestdata.people_electrician_certification = this.RequestForm.controls["floatLabel70"].value || 0;
+    this.Requestdata.people_electrician_certification = this.RequestForm.controls["floatLabel71"].value || 0;
 
     // excavation_works
 
-    this.Requestdata.excavation_works = this.RequestForm.controls["ExcavationWorks"].value;
-    this.Requestdata.excavation_segregated = this.RequestForm.controls["floatLabel71"].value;
-    this.Requestdata.nn_standards = this.RequestForm.controls["floatLabel72"].value;
-    this.Requestdata.excavation_shoring = this.RequestForm.controls["excavation_shoring"].value;
-    this.Requestdata.danish_regulation = this.RequestForm.controls["floatLabel74"].value;
-    this.Requestdata.safe_access_and_egress = this.RequestForm.controls["floatLabel75"].value;
-    this.Requestdata.correctly_sloped = this.RequestForm.controls["floatLabel76"].value;
-    this.Requestdata.inspection_dates = this.RequestForm.controls["floatLabel77"].value;
-    this.Requestdata.marked_drawings = this.RequestForm.controls["floatLabel78"].value;
-    this.Requestdata.underground_areas_cleared = this.RequestForm.controls["floatLabel79"].value;
+    this.Requestdata.excavation_works = this.RequestForm.controls["ExcavationWorks"].value || 0;
+    this.Requestdata.excavation_segregated = this.RequestForm.controls["floatLabel71"].value || 0;
+    this.Requestdata.nn_standards = this.RequestForm.controls["floatLabel72"].value || 0;
+    this.Requestdata.excavation_shoring = this.RequestForm.controls["excavation_shoring"].value || 0;
+    this.Requestdata.danish_regulation = this.RequestForm.controls["floatLabel74"].value || 0;
+    this.Requestdata.safe_access_and_egress = this.RequestForm.controls["floatLabel75"].value || 0;
+    this.Requestdata.correctly_sloped = this.RequestForm.controls["floatLabel76"].value || 0;
+    this.Requestdata.inspection_dates = this.RequestForm.controls["floatLabel77"].value || 0;
+    this.Requestdata.marked_drawings = this.RequestForm.controls["floatLabel78"].value || 0;
+    this.Requestdata.underground_areas_cleared = this.RequestForm.controls["floatLabel79"].value || 0;
     // this.Requestdata.underground_areas_cleared = this.RequestForm.controls["floatLabel79"].value;
 
     // using_cranes_or_lifting
 
-    this.Requestdata.using_cranes_or_lifting = this.RequestForm.controls["CraneLifting"].value;
-    this.Requestdata.appointed_person = this.RequestForm.controls["floatLabel80"].value;
-    this.Requestdata.vendor_supplier = this.RequestForm.controls["floatLabel81"].value;
-    this.Requestdata.lift_plan = this.RequestForm.controls["floatLabel82"].value;
-    this.Requestdata.supplied_and_inspected = this.RequestForm.controls["floatLabel83"].value;
-    this.Requestdata.legal_required_certificates = this.RequestForm.controls["floatLabel84"].value;
-    this.Requestdata.prapared_lifting = this.RequestForm.controls["floatLabel85"].value;
-    this.Requestdata.lifting_task_fenced = this.RequestForm.controls["floatLabel86"].value;
-    this.Requestdata.overhead_risks = this.RequestForm.controls["floatLabel87"].value;
+    this.Requestdata.using_cranes_or_lifting = this.RequestForm.controls["CraneLifting"].value || 0;
+    this.Requestdata.appointed_person = this.RequestForm.controls["floatLabel80"].value || 0;
+    this.Requestdata.vendor_supplier = this.RequestForm.controls["floatLabel81"].value || 0;
+    this.Requestdata.lift_plan = this.RequestForm.controls["floatLabel82"].value || 0;
+    this.Requestdata.supplied_and_inspected = this.RequestForm.controls["floatLabel83"].value || 0;
+    this.Requestdata.legal_required_certificates = this.RequestForm.controls["floatLabel84"].value || 0;
+    this.Requestdata.prapared_lifting = this.RequestForm.controls["floatLabel85"].value || 0;
+    this.Requestdata.lifting_task_fenced = this.RequestForm.controls["floatLabel86"].value || 0;
+    this.Requestdata.overhead_risks = this.RequestForm.controls["floatLabel87"].value || 0;
 
     // pressurization power on fields
-    this.Requestdata.power_on = this.RequestForm.controls["Poweron"].value;
-    this.Requestdata.responsible_for_the_area = this.RequestForm.controls["floatLabel88"].value;
-    this.Requestdata.risk_assessment_done = this.RequestForm.controls["floatLabel89"].value;
-    this.Requestdata.barriers_signage = this.RequestForm.controls["floatLabel90"].value;
-    this.Requestdata.energized_been_tested = this.RequestForm.controls["floatLabel91"].value;
-    this.Requestdata.punches_been_closed = this.RequestForm.controls["floatLabel92"].value;
-    this.Requestdata.toct_checklist = this.RequestForm.controls["floatLabel93"].value;
-    this.Requestdata.informed_aligned = this.RequestForm.controls["floatLabel94"].value;
+    this.Requestdata.power_on = this.RequestForm.controls["Poweron"].value || 0;
+    this.Requestdata.responsible_for_the_area = this.RequestForm.controls["floatLabel88"].value || 0;
+    this.Requestdata.risk_assessment_done = this.RequestForm.controls["floatLabel89"].value || 0;
+    this.Requestdata.barriers_signage = this.RequestForm.controls["floatLabel90"].value || 0;
+    this.Requestdata.energized_been_tested = this.RequestForm.controls["floatLabel91"].value || 0;
+    this.Requestdata.punches_been_closed = this.RequestForm.controls["floatLabel92"].value || 0;
+    this.Requestdata.toct_checklist = this.RequestForm.controls["floatLabel93"].value || 0;
+    this.Requestdata.informed_aligned = this.RequestForm.controls["floatLabel94"].value || 0;
 
         // pressurization fields
-    this.Requestdata.pressurization = this.RequestForm.controls["Pressurization"].value;
-    this.Requestdata.performed_approved = this.RequestForm.controls["floatLabel95"].value;
-    this.Requestdata.flushing_approved = this.RequestForm.controls["floatLabel96"].value;
-    this.Requestdata.mc_approved = this.RequestForm.controls["floatLabel97"].value;
-    this.Requestdata.visual_inspection = this.RequestForm.controls["floatLabel98"].value;
-    this.Requestdata.loto_plan_approved = this.RequestForm.controls["floatLabel99"].value;
-    this.Requestdata.follow_media_code = this.RequestForm.controls["floatLabel100"].value;
-    this.Requestdata.cq_safety_signs = this.RequestForm.controls["floatLabel101"].value;
+    this.Requestdata.pressurization = this.RequestForm.controls["Pressurization"].value || 0;
+    this.Requestdata.performed_approved = this.RequestForm.controls["floatLabel95"].value || 0;
+    this.Requestdata.flushing_approved = this.RequestForm.controls["floatLabel96"].value || 0;
+    this.Requestdata.mc_approved = this.RequestForm.controls["floatLabel97"].value || 0;
+    this.Requestdata.visual_inspection = this.RequestForm.controls["floatLabel98"].value || 0;
+    this.Requestdata.loto_plan_approved = this.RequestForm.controls["floatLabel99"].value || 0;
+    this.Requestdata.follow_media_code = this.RequestForm.controls["floatLabel100"].value || 0;
+    this.Requestdata.cq_safety_signs = this.RequestForm.controls["floatLabel101"].value || 0;
 
 
     this.Requestdata.visible_clothing = this.RequestForm.controls["VisableClothing"].value;
@@ -3653,6 +3714,278 @@ showMechanicalWorks(): boolean {
     );
   }
 
+private _lookupsReady = false;
+
+private buildLookups(): void {
+  this.safetyListMap = (this.safetyList || []).reduce((acc, x) => {
+    acc[String(x.id)] = x.precaution || x.name || '';
+    return acc;
+  }, {} as Record<string, string>);
+
+  this.subContractorMap = (this.SubContractors || []).reduce((acc, x) => {
+    acc[String(x.id)] = x.subContractorName || x.name || '';
+    return acc;
+  }, {} as Record<string, string>);
+
+  this.typeOfActivityMap = (this.TypeofActivites || []).reduce((acc, x) => {
+    acc[String(x.id)] = x.activityName || x.typeOfActivity || x.name || '';
+    return acc;
+  }, {} as Record<string, string>);
+
+  this.electricalMap = (this.electricalList || []).reduce((acc, x) => {
+    acc[String(x.id)] = x.electrical_works || x.name || '';
+    return acc;
+  }, {} as Record<string, string>);
+
+  this.mechanicalMap = (this.mechanicalList || []).reduce((acc, x) => {
+    acc[String(x.id)] = x.mechanical_works || x.name || '';
+    return acc;
+  }, {} as Record<string, string>);
+
+  this._lookupsReady = true;
+}
+
+
+ controlLabels: Record<string, string> = {
+  'Sub_Contractor_Id': 'Contractor',
+  'new_sub_contractor': 'Sub Contractor',
+  'Foreman': 'Foreman-Supervisor',
+  'Foreman_Phone_Number': 'Foreman Phone',
+  'Activity': 'Activity',
+  'Type_Of_Activity_Id': 'Type of Activity',
+  'rams_number': 'RAMS Number',
+  'permit_type': 'Permit Type',
+  'description_of_activity': 'Description of activity',
+  'Working_Date': 'Date',
+  'Start_Time': 'Start Time',
+  'End_Time': 'End Time',
+  'night_shift': 'Is this a night shift?',
+  'new_date': 'New Date',
+  'new_end_time': 'New End Time',
+  'Tools': 'Tools Used',
+  'Machinery': 'Machinery Used',
+  'work_type': 'Type of Work',
+  'electrical_works': 'Electrical Works',
+  'mechanical_works': 'Mechanical Works',
+  'affecting_other_contractors': 'Can you confirm that your works are not affecting with other contractors working in this area before starting the work?',
+  'other_conditions': 'Are there other conditions that must be taken into account during the work?',
+  'other_conditions_input': 'Note the Other Condition',
+  'lighting_begin_work': 'Can you confirm that there will be enough work lighting to begin the work?',
+  'specific_risks': 'Have the team been informed about the spesific risks based on task?(RAMS training etc.)',
+  'environment_ensured': 'Is the work environment safety ensured? Have the necessary warning signs been placed?',
+  'course_of_action': 'Have the team been informed about the course of action in emergencies?',
+  'welding_activitiy': 'Is there be any welding activitiy?',
+  'heat_treatment': 'The people who will do heat treatment, had welder certificates?',
+  'air_extraction_be_established': 'Should air extraction be established? (Welding fumes and the like must be led directly into the open air)',
+  'Hot_work': 'Hot Work',
+  'tasks_in_progress_in_the_area': 'Are there other tasks in progress in the area?',
+  'lighting_sufficiently': 'Have you considered any alternative methods to the hot work method? (Ex.: replacing the angle grinder with hydraulic cutters or using prefab electronic orders for measurement)',
+  'spesific_risks_based_on_task': 'Have the team been informed about the spesific risks based on task?(RAMS training etc.)',
+  'work_environment_safety_ensured': 'Is the work environment safety ensured? Have the necessary warning signs been placed?',
+  'course_of_action_in_emergencies': 'Have the team been informed about the course of action in emergencies?',
+  'fire_watch_establish': 'Should a fire watch be established?',
+  'combustible_material': 'Can you confirm that the flammable material are removed from the work area?',
+  'safety_measures': 'Should safety measures implemented to stop sparks from splattering on a flooring or other surfaces?',
+  'extinguishers_and_fire_blanket': 'Are fire extinguishers and fire blanket ready for use in the area ?',
+  'working_on_electrical_system': 'Working on Electrical Systems',
+  'responsible_for_the_informed': 'Is the responsible for the area informed?',
+  'de_energized': 'Check if the board is de-energized - is it de-energized?',
+  'if_no_loto': 'Secure the area against reconnection using LOTO (Lock-out/Tag-out) with at least a craftsmans padlock.',
+  'do_risk_assessment': 'Do you have risk assessment done?',
+  'if_yes_loto': 'Secure the area against reconnection using LOTO (Lock-out/Tag-out) with at least a craftsmans padlock.',
+  'electricity_have_isulation': 'Do appliances/devices that run on electricity have isulation?',
+  'working_hazardious_substen': 'Working with Hazardous Substances/Chemicals',
+  'relevant_mal': 'Relevant MAL-codes and safety datasheets for hazardous medias have been presented?',
+  'msds': 'Is MSDS (Material Safety Data Sheet) submitted?',
+  'equipment_taken_account': 'Has the use of protective equipment been taken into account - and are they present?',
+  'ventilation': 'Has the use of ventilation been taken into acount?',
+  'hazardaus_substances': 'Will the hazardaus substances affect people outside the working area? (fumes)',
+  'storage_and_disposal': 'Are there means for safe storage and disposal? Is it mapped on the site plan (in case of large amount or long term storage)',
+  'reachable_case': 'Does the spill kits are in place and reachable in case there is a leaking?',
+  'checical_risk_assessment': 'Is RAMS (Risk assessment and Method statement) covering chemichal risk assessment for working with the substance?',
+  'pressure_tesing_of_equipment': 'Pressure testing of equipment',
+  'line_walk': 'Linewalk of the pipework/equipment done?',
+  'pressure_test_coordinated': 'Pressure test is coordinated with NNE C&Q?',
+  'pipework_mic': 'Is the pipework/equipment MIC? (Mechanical Installation Complete)?',
+  'loto_plan_attached': 'LOTO plan attached to the work permit?',
+  'exclusion_zone_calculated': 'Is the exclusion zone calculated and layout attached to work permit?',
+  'pneumatic_hydrostatic': 'Pneumatic Test?',
+  'pressure_pneumatic': 'Pressure of Pnematic Test (in BarG)',
+  'pressure_of_the_test': 'Hydrostatic test?',
+  'pressure_hydrostatic': 'Pressure of Hydrostatic Test (in BarG)',
+  'safety_valves_calibrated': 'Safety Valves are calibrated and attached to the Pressure testing rig?',
+  'working_at_height': 'Working at Height',
+  'segragated_demarkated': 'Has the working area been segregated or demarkated?',
+  'lanyard_attachments': 'Are suitable anchor points are in place for lanyard attachments?',
+  'rescue_plan': 'In case of emergency is there a rescue plan in place?',
+  'avoid_hazards': 'Have the work been planned and coordinated to avoid hazards like (falling objects/materials onto the other workers, interference between the machines etc.)',
+  'height_training': 'Have the team had certified working at height training?',
+  'supervision': 'Will this work be carried out by, and under the supervision of personnel who have recieved Working at Height training?',
+  'shock_absorbing': 'Full body harness with shock absorbing & twin lanyard provided?',
+  'height_equipments': 'Are the working at height equipments (Safety harness and lanyard) has inspected and suitable to carry out the task?',
+  'vertical_life': 'Horizonal or vertical life line systems in place?',
+  'secured_falling': 'Are all tools are secured from falling from height?',
+  'dropped_objects': 'Have protective meassures for dropped objects been established? (lanyards, demarkated working area, nets)?',
+  'safe_acces': 'Have proper and safe accces and egress been provided?',
+  'weather_acceptable': 'Are the weather conditions acceptable?',
+  'working_confined_spaces': 'Working in Confined Spaces',
+  'vapours_gases': 'Is the tank/container cleaned so that the works can take place without risk from vapours, gases etc.?',
+  'lel_measurement': 'Are oxygen measurement and LEL measurement done before starting the work?',
+  'all_equipment': 'Are the container and all equipment on the container, including agitator properly secured?',
+  'exit_conditions': 'Are there safe entry and exit conditions? (e.g. ladder)',
+  'communication_emergency': 'Are means of communication for emergency rescue determined?(Siren, radio or telephone options for emergency rescue?)',
+  'rescue_equipments': 'Are rescue equipments are in place and ready?',
+  'space_ventilation': 'Is space and ventilation adequate?',
+  'oxygen_meter': 'Is an oxygen meter provided for the work?',
+  'excavation_works': 'Excavation Works',
+  'excavation_segregated': 'Is the excavation are segregated (1 meter from edge with hard barriers or 2 meters with soft barriers) before the work begins?',
+  'nn_standards': 'Has the digging permit been obtained in accordance with Danish regulations and NN standards?',
+  'excavation_shoring': 'Does excavation requires shoring?',
+  'danish_regulation': 'Is the sloping correct in relation to the depth of the dig as per Danish regulations?',
+  'safe_access_and_egress': 'Have proper and safe access and egress been provided?',
+  'correctly_sloped': 'Are correctly positioned ladders or correctly sloped stairways accessible?',
+  'inspection_dates': 'Does all machines have valid inspection dates?',
+  'marked_drawings': 'Have clearly marked drawings been submitted?',
+  'underground_areas_cleared': 'Are the underground areas cleared from all electrical, piping and other services?',
+  'using_cranes_or_lifting': 'Using Crane or Lifting',
+  'appointed_person': 'Is there an appointed person in charge of the lifting/crane operation?',
+  'vendor_supplier': 'Are the details of load (dimensions, SWL) and the loading/unloading requirements provided from vendor or supplier?',
+  'lift_plan': 'Is lift plan submitted?',
+  'supplied_and_inspected': 'Has the correct crane/lifting equipment as stated in the lift plan been supplied and inspected?',
+  'legal_required_certificates': 'Do the crane operators have the legal required certificates?',
+  'prapared_lifting': 'Is laydown area suitable and prepared for lifting?',
+  'lifting_task_fenced': 'Is the entire area of the lifting task fenced off?',
+  'overhead_risks': 'Have all overhead risks (cables, adjacent structures etc) been identifed and suitable precautions implemented?',
+  'power_on': 'Energization of Electrical equipment',
+  'responsible_for_the_area': 'Is the responsible for the area informed?',
+  'risk_assessment_done': 'Do you have a risk assessment done?',
+  'barriers_signage': 'Barriers & Signage in place?',
+  'energized_been_tested': 'Have all the cables that need to be energized been tested?',
+  'punches_been_closed': 'Have all punches been closed?',
+  'toct_checklist': 'Is Electrical Checklist completed?',
+  'informed_aligned': 'Have you Informed and Aligned with EL LOTO Team?',
+  'pressurization': 'Energization of Mechanical equipment',
+  'performed_approved': 'Pressure test performed and approved?',
+  'flushing_approved': 'Flushing approved?',
+  'mc_approved': 'MC approved?',
+  'mc_number_text': 'MC Number',
+  'visual_inspection': 'Walkdown with Visual inspection performed?',
+  'loto_plan_approved': 'LOTO plan approved and installed by LOTO officer?',
+  'follow_media_code': 'Ensure Safety Valves follow Media Code?',
+  'cq_safety_signs': 'C&Q Safety signs are in place?',
+  'Safety_Precautions': 'Safety Precaustions',
+  'eye_protection': 'Eye Protection',
+  'fall_protection': 'Fall Protection',
+  'hearing_protection': 'Hearing protection',
+  'respiratory_protection': 'Respiratory protection',
+  'other_ppe': 'Other PPE',
+  'peopleinvalidcount': 'Number of workers involved',
+  'Notes': 'Note'
+};
+
+private findInList(list: any[], id: any, nameProps: string[]): string | undefined {
+  if (!Array.isArray(list)) return undefined;
+  const found = list.find(x => String(x?.id) === String(id));
+  if (!found) return undefined;
+  for (const p of nameProps) if (found[p]) return found[p];
+  return undefined;
+}
+
+private mapFieldValue(field: string, value: any): string {
+  if (value == null || value === '' || value === '0') return '';
+
+  const toKey = (v: any) => String(v);
+
+  const mapSingle = (fld: string, v: any): string => {
+    const key = toKey(v);
+
+    switch (fld) {
+      case 'Safety_Precautions':
+        return this.safetyListMap?.[key]
+          ?? this.findInList(this.safetyListMap, key, ['precaution','name'])
+          ?? key;
+
+      case 'Sub_Contractor_Id':
+        return this.subContractorMap?.[key]
+          ?? this.findInList(this.SubContractors, key, ['subContractorName','name'])
+          ?? key;
+
+      case 'Type_Of_Activity_Id':
+        return this.typeOfActivityMap?.[key]
+          ?? this.findInList(this.TypeofActivites, key, ['activityName','typeOfActivity','name'])
+          ?? key;
+
+      case 'electrical_works':
+        return this.electricalMap?.[key]
+          ?? this.findInList(this.electricalList, key, ['electrical_works','name'])
+          ?? key;
+
+      case 'mechanical_works':
+        return this.mechanicalMap?.[key]
+          ?? this.findInList(this.mechanicalList, key, ['mechanical_works','name'])
+          ?? key;
+
+      default:
+        return key;
+    }
+  };
+
+  return Array.isArray(value)
+    ? value.map(v => mapSingle(field, v)).filter(Boolean).join(', ')
+    : mapSingle(field, value);
+}
+
+private logFieldChanges(previousData: any, currentData: any): any[] {
+  const changedFields: any[] = [];
+
+  // ensure lookups exist
+  if (!this._lookupsReady) this.buildLookups();
+
+  const trackedFields = Object.keys(this.updaterequestdata).filter(
+    key => !['id','userId','createdTime','denmark_time','rams_file','Request_status1'].includes(key)
+  );
+
+  const yesNoNA: Record<string, string> = { '0':'No', '1':'Yes', '2':'NA' };
+  const idFields = new Set(['Safety_Precautions','Sub_Contractor_Id','Type_Of_Activity_Id','electrical_works','mechanical_works']);
+
+  trackedFields.forEach(field => {
+    let prev = previousData[field];
+    let curr = currentData[field];
+
+    // Trim time seconds
+    if (field === 'Start_Time' || field === 'End_Time') {
+      prev = prev?.toString().slice(0,5);
+      curr = curr?.toString().slice(0,5);
+    }
+
+    const mapNonId = (v: any) => {
+      const s = v == null ? '' : String(v).trim();
+      // Only translate 0/1/2 on non-ID fields
+      return yesNoNA.hasOwnProperty(s) ? yesNoNA[s] : s;
+    };
+
+    const mappedPrev = idFields.has(field) ? this.mapFieldValue(field, prev) : mapNonId(prev);
+    const mappedCurr = idFields.has(field) ? this.mapFieldValue(field, curr) : mapNonId(curr);
+
+    if (mappedPrev !== mappedCurr) {
+      changedFields.push({
+        field_name: this.controlLabels[field] || field,
+        previous: mappedPrev,
+        present: mappedCurr
+      });
+    }
+  });
+
+  // Remove items where present is empty but previous had value
+  for (let i = changedFields.length - 1; i >= 0; i--) {
+    if (changedFields[i].previous && !changedFields[i].present) {
+      changedFields.splice(i, 1);
+    }
+  }
+
+  return changedFields;
+}
+
   UpdateRequest() {
           const requiredFields = ['segragated_demarkated', 'system_drained', 'excavation_shoring'];
   requiredFields.forEach(field => {
@@ -3678,6 +4011,7 @@ showMechanicalWorks(): boolean {
     // console.log(this.NewRequestData, 'editttt')
     // console.log("res checking")
     if (this.RequestForm.valid) {
+      const originalData = { ...this.NewRequestData };
       var badarray = [];
       this.spinner = true;
 
@@ -4015,7 +4349,7 @@ showMechanicalWorks(): boolean {
         this.RequestForm.controls["Poweroff"].value;
       this.updaterequestdata.Number_Of_Workers =
         this.RequestForm.controls["peopleinvalidcount"].value;
-      this.updaterequestdata.Notes = this.RequestForm.controls["Note"].value;
+      // this.updaterequestdata.Notes = this.RequestForm.controls["Note"].value;
       this.updaterequestdata.Safety_Precautions =
         this.RequestForm.controls["Safetyprecaustion"].value.toString();
 
@@ -4027,9 +4361,28 @@ showMechanicalWorks(): boolean {
       this.updaterequestdata.cancel_reason = this.RequestForm.controls["cancel_reason"].value;
 
       // this.updaterequestdata.rams_file = this.RequestForm.controls["rams_file"].value;
+      this.addNotes.permit_no = this.updaterequestdata.PermitNo;
+      this.addNotes.request_id = this.updaterequestdata.id;
+      this.addNotes.user_id = this.updaterequestdata.userId;
+      this.addNotes.username = this.userdata["displayName"];
+      this.addNotes.note = this.RequestForm.controls["Note"].value;
+      this.addNotes.createdTime = config.getDenmarkTime.full();
+
+      // Log field changes
+      const changes = this.logFieldChanges(originalData, this.updaterequestdata);
+      console.log('Field changes detected:', changes);
+      // if(changes.length > 0 && !this.addNotes.note) {
+      //   this.openSnackBar("No changes made");
+      //   return;
+      // }
+      this.updaterequestdata.fields = JSON.stringify(changes);
+
+      if(this.isstatusdraft) {
+        this.updaterequestdata.fields = "";
+      }
 
       let formData = new FormData();
-
+      console.log("...string", changes.toString());
       for (const [key, value] of Object.entries(this.updaterequestdata)) {
         formData.append(key, value as string); // Ensure values are strings if needed
       }
@@ -4039,18 +4392,32 @@ showMechanicalWorks(): boolean {
 
       this.requestsserivies.UpdateRequest(formData as unknown as EditRequestDto).subscribe(
         (res) => {
-          this.spinner = false;
-          this.openSnackBar("Request Updated Successfully");
-          this.requestsserivies.SelectedRequestData = {};
-          this.route.navigateByUrl("/user/list-request");
+          if(this.addNotes.note) {
+          this.requestsserivies.AddListReqstNote(this.addNotes).subscribe((res) => {
+            this.spinner = false;
+            this.openSnackBar("Request Updated Successfully");
+            this.requestsserivies.SelectedRequestData = {};
+            this.route.navigateByUrl("/user/list-request");
+          })
+          // this.spinner = false;
+          // this.openSnackBar("Request Updated Successfully");
+          // this.requestsserivies.SelectedRequestData = {};
+          // this.route.navigateByUrl("/user/list-request");
+        } else {
+            this.spinner = false;
+            this.openSnackBar("Request Updated Successfully");
+            this.requestsserivies.SelectedRequestData = {};
+            this.route.navigateByUrl("/user/list-request");
+        }
         },
         (error) => {
           this.openSnackBar("Something went wrong. Plz try again later...");
         }
       );
+      
     } else {
       console.error("Form is invalid. Please check the validation errors.");
-
+      this.openSnackBar("Invalid form please check once.");
   Object.keys(this.RequestForm.controls).forEach((key) => {
     const control = this.RequestForm.get(key);
     if (control && control.invalid) {
@@ -4400,7 +4767,7 @@ showMechanicalWorks(): boolean {
   }
 
     if (this.RequestForm.valid) {
-
+      const originalData = { ...this.NewRequestData };
       var badarray = [];
       this.spinner = true;
 
@@ -4734,6 +5101,11 @@ showMechanicalWorks(): boolean {
       this.updaterequestdata.cancel_reason = this.RequestForm.controls["cancel_reason"].value;
 
       // this.updaterequestdata.rams_file = this.RequestForm.controls["rams_file"].value;
+
+      // Log field changes
+      const changes = this.logFieldChanges(originalData, this.updaterequestdata);
+      console.log('Field changes detected:', changes);
+      this.updaterequestdata.fields = JSON.stringify(changes);
 
       let formData = new FormData();
 
@@ -5695,12 +6067,12 @@ this.RequestForm.controls["mechanical_works"].setValue(mechanicalIds);
     this.RequestForm.controls["Pressurization"].setValue(parseInt(data["pressurization"] || '0'));
     this.RequestForm.controls["NEWHOTWORK"].setValue(parseInt(data["welding_activitiy"] || '0'));
     this.RequestForm.controls["NEWHOTWORK1"].setValue(parseInt(data["heat_treatment"] || '0'));
-    this.RequestForm.controls["NEWHOTWORK2"].setValue(parseInt(data["air_extraction_be_established"]));
+    this.RequestForm.controls["NEWHOTWORK2"].setValue(parseInt(data["air_extraction_be_established"] || '0'));
     this.RequestForm.controls["LOTONumber"].setValue(data["LOTO_Number"] || '');
     this.RequestForm.controls["LOTOPROCEDURE"].setValue(data["LOTO_Procedure"] || '');
     this.RequestForm.controls["Machinery"].setValue(data["Machinery"] || '');
     this.RequestForm.controls["SpecialInstruction"].setValue(data["Special_Instructions"] || '');
-    this.RequestForm.controls["Note"].setValue(data["Notes"] || '');
+    // this.RequestForm.controls["Note"].setValue(data["Notes"] || '');
     this.RequestForm.controls["Poweroff"].setValue(data["Power_Off_Required"] || '');
     this.RequestForm.controls["RoomType"].setValue(data["Room_Type"] || '');
     this.RequestForm.controls["Startdate"].setValue(data["Working_Date"] || '');
@@ -5760,6 +6132,12 @@ this.RequestForm.controls["mechanical_works"].setValue(mechanicalIds);
         ...file              
     })) || [];
 
+    // Notes Binding
+    this.notesArray = data.note?.map(notes => ({
+      Note : notes?.note,
+      Username : notes?.username,
+    }))
+
     // Set boolean flags based on data
     this.iscmsyes = data["Crane_Requested"] === "1";
     this.ishotworkyes = data["Hot_work"] == 1;
@@ -5776,7 +6154,10 @@ this.RequestForm.controls["mechanical_works"].setValue(mechanicalIds);
     this.isCraneLiftingyes = data["using_cranes_or_lifting"] == 1;
     this.isPoweronyes = data["power_on"] == 1;
     this.isPressurizationyes = data["pressurization"] == 1
-
+    if(data["Request_status"] == "Draft") {
+      this.isstatusdraft = true;
+    }
+    console.log('notesarray',this.notesArray);
     this.cdr.detectChanges();
 }
 
@@ -6445,32 +6826,59 @@ updateDependentValidators() {
   //   // this.base64Images.push(reader.result);
   // }
 
-   images: { name: string }[] = [];
+images: (File | { name: string })[] = [];
+notesArray: Note[] = [];
+
   imagesAdd: { name: string }[] = [];
 
+// csvInputChange(e: any): void {
+//   const files = e.target.files;
+//   this.images = []; // Clear previous selection
+
+//   if (files && files.length > 0) {
+//     for (let i = 0; i < files.length; i++) {
+//       const file = files[i];
+//       this.images.push(file);
+
+//       console.log(file);
+
+//       const reader = new FileReader();
+//       reader.onload = (event) => this._handleReaderLoaded(event, file);
+//       reader.readAsDataURL(file);
+//     }
+
+//     // Optional: store the whole file array in form control
+//     // this.RequestForm.controls["rams_file"].setValue(this.images);
+
+//     // Or just the first one (if your form only supports one)
+//     this.RequestForm.controls["rams_file"].setValue(this.images);
+//   }
+// }
+
 csvInputChange(e: any): void {
-  const files = e.target.files;
-  this.images = []; // Clear previous selection
+  const files: FileList = e.target.files;
 
   if (files && files.length > 0) {
-    for (let i = 0; i < files.length; i++) {
-      const file = files[i];
-      this.images.push(file);
+    const newFiles: File[] = Array.from(files);
 
+      this.images = [...(this.images || []), ...newFiles];
+
+    // Only run FileReader for real File objects
+    newFiles.forEach((file: File) => {
       console.log(file);
 
       const reader = new FileReader();
       reader.onload = (event) => this._handleReaderLoaded(event, file);
       reader.readAsDataURL(file);
-    }
+    });
 
-    // Optional: store the whole file array in form control
-    // this.RequestForm.controls["rams_file"].setValue(this.images);
-
-    // Or just the first one (if your form only supports one)
     this.RequestForm.controls["rams_file"].setValue(this.images);
   }
+
+  e.target.value = null;
 }
+
+
 
 csvInputChange1(e: any): void {
   const files = e.target.files;

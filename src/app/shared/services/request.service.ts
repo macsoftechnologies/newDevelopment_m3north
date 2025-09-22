@@ -5,7 +5,7 @@ import { environment } from 'environments/environment';
 import { RequestDto, EditRequestDto, DeleteRequestDto, UpdateRequestStatusListDto, CopyRequestDto, UpdateClose_Status, RequestsbyId, RequestBySubcontractorId, DeleteMultiRequestDto } from 'app/views/Models/RequestDto';
 import { PlansDto } from 'app/views/Models/PlansDto';
 import { SearchRequestDto } from 'app/views/Models/SearchRequestDto';
-import { UpdateNotes, UpdateSafety, UpdateTime } from 'app/views/Models/MultiRequestUpdateDto';
+import { AddNotes, UpdateNotes, UpdateSafety, UpdateTime } from 'app/views/Models/MultiRequestUpdateDto';
 import { EventEmitter } from '@angular/core';
 
 @Injectable({
@@ -19019,6 +19019,9 @@ export class RequestService {
   public GetAllRequestsByid(res: RequestBySubcontractorId): Observable<any[]> {
     return this.http.post<any[]>(environment.API_URL + 'request/readrequestid.php', res);
   }
+  public GetAllNotifications(): Observable<any[]> {
+    return this.http.get<any[]>(environment.API_URL + 'request/notificationlist.php');
+  }
 
   public GetRequestsImagesByid(id): Observable<any[]> {
     return this.http.get<any>(environment.API_URL + 'request/readImageslist.php?requestId=' + id);
@@ -19063,6 +19066,11 @@ export class RequestService {
   public UpdateListReqstNote(req: UpdateNotes): Observable<any> {
     return this.http.post<any>(environment.API_URL + 'request/updateNotes.php', req);
   }
+
+    public AddListReqstNote(req: AddNotes): Observable<any> {
+    return this.http.post<any>(environment.API_URL + 'request/addnote.php', req);
+  }
+
   public UpdateListReqstSafety(req: UpdateSafety): Observable<any> {
     return this.http.post<any>(environment.API_URL + 'request/updateSafety.php', req);
   }
