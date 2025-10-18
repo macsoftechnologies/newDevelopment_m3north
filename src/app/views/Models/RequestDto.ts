@@ -7,6 +7,7 @@ export class RequestDto {
     electrical_works: string;
     mechanical_works: string;
     permit_type: string;
+    permit_under: string;
     userId: string;
     username: string;
     Request_Date: string;

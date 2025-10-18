@@ -536,10 +536,10 @@ isValidDate(date: any): boolean {
         // )
         this.DownloadExcelData.push(
           {
-            PermitNo: x["PermitNo"], PermitType:x["permit_type"], ContractorName: x["subContractorName"], Sub_Contractor_Name: x['new_sub_contractor'], Building_Name: x["building_name"], Level: x["Room_Type"],
+            PermitNo: x["PermitNo"], PermitUnder: x["permit_under"] || 'Construction', PermitType:x["permit_type"] || 'Construction', ContractorName: x["subContractorName"], Sub_Contractor_Name: x['new_sub_contractor'], Building_Name: x["building_name"], Level: x["Room_Type"],
             Room_Nos: x['Room_Nos'], Activity: x["Activity"],description_of_activity: x["description_of_activity"], Rams_Number: x["rams_number"],HRAs: this.printHRAS(x),Auth:x[""],Comment: x[""],
             Start_Time: x["Start_Time"], End_Time: x["End_Time"], Night_Shift: this.nightShiftCheck(x), New_End_Time: x["new_end_time"], Request_status: x["Request_status"],
-            Notes: x["Notes"], Working_Date: x["Working_Date"], Day: this.days_Names[day], New_Date: x["new_date"], New_Day: this.findNewDay(x),
+            Notes: this.formatNotes(x["Notes"]), Working_Date: x["Working_Date"], Day: this.days_Names[day], New_Date: x["new_date"], New_Day: this.findNewDay(x),
           }
         )
       });
@@ -580,6 +580,18 @@ isValidDate(date: any): boolean {
     });
     return hrasValues.toString();
   }
+
+  formatNotes(notesArr: any[]): string {
+  if (!Array.isArray(notesArr) || notesArr.length === 0) return "";
+
+  return notesArr
+    .map(noteObj => {
+      const username = noteObj.username || ""; // adjust field name
+      const note = noteObj.note || "";      // adjust field name
+      return `${username}: ${note}`;
+    })
+    .join("; "); // separate entries with ;
+}
 
   Reset()
   {

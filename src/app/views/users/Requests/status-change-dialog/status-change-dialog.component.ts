@@ -1,5 +1,5 @@
 
-import { Component, OnInit, Inject } from "@angular/core";
+import { Component, OnInit, Inject, ChangeDetectorRef } from "@angular/core";
 import { MAT_DIALOG_DATA } from "@angular/material/dialog";
 import {
   EditRequestDto,
@@ -253,16 +253,21 @@ export class StatusChangeDialogComponent implements OnInit {
   spinner: boolean = false;
   CurrenttimeNow: string;
   requestDatas: any;
-  permitType: any;
+  // permitType: any;
+  // permitUnder: any;
   statusUpdateForm: FormGroup;
   statusApprovedForm: FormGroup;
   statusOpenForm: FormGroup;
+
+  permitType: string;
+  permitUnder: string;
 
   constructor(
     @Inject(MAT_DIALOG_DATA) public data: any,
     private requestdataservice: RequestService,
     private _snackBar: MatSnackBar,
     private authservice: JwtAuthService,
+    private cd: ChangeDetectorRef
     // private auditLogger: AuditLoggerService
   ) {
     this.userdata = this.authservice.getUser();
@@ -290,6 +295,9 @@ export class StatusChangeDialogComponent implements OnInit {
       // phone_number_of_fire_watcher1: new FormControl('', Validators.required),
     })
 
+    this.permitType = data?.payload?.permit_type || 'Construction';
+    this.permitUnder = data?.payload?.permit_under || 'Construction';
+
   }
 
   ngOnInit(): void {
@@ -298,7 +306,8 @@ export class StatusChangeDialogComponent implements OnInit {
     this.updaterequestdata.userId = this.userdata["id"];
     this.type = this.data["type"];
     this.requestDatas = this.data["payload"]["Request_status"];
-    this.permitType = this.data["payload"]["permit_type"];
+    this.permitType = this.data["payload"]["permit_type"] || 'Construction';
+    this.permitUnder = this.data["payload"]["permit_under"] || 'Construction';
     this.updaterequestdata.teamId = this.data["payload"]["teamId"];
     this.updaterequestdata.Activity = this.data["payload"]["Activity"];
     this.updaterequestdata.Assign_Start_Time =
@@ -560,6 +569,9 @@ export class StatusChangeDialogComponent implements OnInit {
     //   this.statusUpdateForm.get('h_start_time').clearValidators();
     //   this.statusUpdateForm.get('h_end_time').clearValidators();
     // }
+    this.cd.detectChanges();
+    console.log('permit under', this.permitUnder);
+    console.log("permit type", this.permitType);
   }
 
   Changestatus(statusdata) {

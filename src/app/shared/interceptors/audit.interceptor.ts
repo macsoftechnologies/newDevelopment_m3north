@@ -12,7 +12,8 @@ import { AuditService } from '../services/audit-logger.service';
 const EXCLUDED_APIS = [
   '/request',
   'employee/newuserlog.php',
-  '/search.php'
+  '/search.php',
+  '/read_zones.php'
 ];
 
 @Injectable()

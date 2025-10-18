@@ -1,68 +1,3 @@
-// import { Injectable } from "@angular/core";
-// import { BehaviorSubject } from "rxjs";
-
-// interface IMenuItem {
-//   type: string; // Possible values: link/dropDown/icon/separator/extLink
-//   name?: string; // Used as display text for item and title for separator type
-//   state?: string; // Router state
-//   icon?: string; // Material icon name
-//   tooltip?: string; // Tooltip text
-//   disabled?: boolean; // If true, item will not be appeared in sidenav.
-//   sub?: IChildItem[]; // Dropdown items
-//   badges?: IBadge[];
-// }
-// interface IChildItem {
-//   type?: string;
-//   name: string; // Display text
-//   state?: string; // Router state
-//   icon?: string;
-//   sub?: IChildItem[];
-// }
-
-// interface IBadge {
-//   color: string; // primary/accent/warn/hex color codes(#fff000)
-//   value: string; // Display text
-// }
-
-// @Injectable()
-// export class NavigationService {
-//   constructor() {}
-  
-
-//   plainMenu: IMenuItem[] = [
-//     {
-//       name: "OTHERS",
-//       type: "link",
-//       tooltip: "Others",
-//       icon: "blur_on",
-//       state: "others/blank",
-//     },
-//     {
-//       name: "DOC",
-//       type: "extLink",
-//       tooltip: "Documentation",
-//       icon: "library_books",
-//       state: "http://demos.ui-lib.com/egret-doc/"
-//     }
-//   ];
-
-//   // Icon menu TITLE at the very top of navigation.
-//   // This title will appear if any icon type item is present in menu.
-//   iconTypeMenuTitle: string = "Frequently Accessed";
-//   // sets iconMenu as default;
-//   menuItems = new BehaviorSubject<IMenuItem[]>(this.plainMenu);
-//   // navigation component has subscribed to this Observable
-//   menuItems$ = this.menuItems.asObservable();
-
-  
-//   // you can customize this method to supply different menu for
-//   // different user type.
-//   publishNavigationChange(menuType: string) {
-//     this.menuItems.next(this.plainMenu);
-//   }
-// }
-
-
 import { Injectable } from "@angular/core";
 import { BehaviorSubject } from "rxjs";
 import { JwtAuthService } from "./auth/jwt-auth.service";
@@ -164,6 +99,17 @@ export class NavigationService {
       sub: [
         { name: "New Employee", state: "admin/employee" ,icon: "fa fa-plus-square"},
         { name: "List Employees", state: "admin/listemployee", icon: "list" }
+      ]
+    },
+    {
+      name: "Zone Status",
+      type: "dropDown",
+      tooltip: "Zone Status",
+      icon: "event", 
+      state: "",
+      sub: [
+        { name: "New Zone", state: "admin/zonestatus" ,icon: "fa fa-plus-square"},
+        { name: "List Zones", state: "admin/list-zonestatus", icon: "list" }
       ]
     },
     {
@@ -286,14 +232,25 @@ export class NavigationService {
       ]
     },
     {
+      name: "Zone Status",
+      type: "dropDown",
+      tooltip: "Zone Status",
+      icon: "event", 
+      state: "",
+      sub: [
+        { name: "New Zone", state: "admin/zonestatus" ,icon: "fa fa-plus-square"},
+        { name: "List Zones", state: "admin/list-zonestatus", icon: "list" }
+      ]
+    },
+    {
       name: "Electrical Works",
       type: "dropDown",
       tooltip: "Electrical Works",
       icon: "event", 
       state: "",
       sub: [
-        { name: "New Electrical Work", state: "admin/electricalworks" ,icon: "fa fa-plus-square"},
-        { name: "List Electrical Works", state: "admin/list-electricalworks", icon: "list" }
+        { name: "New Electrical Work", state: "user/electricalworks" ,icon: "fa fa-plus-square"},
+        { name: "List Electrical Works", state: "user/list-electricalworks", icon: "list" }
       ]
     },
     {
@@ -303,8 +260,8 @@ export class NavigationService {
       icon: "event", 
       state: "",
       sub: [
-        { name: "New Mechanical Works", state: "admin/mechanicalworks" ,icon: "fa fa-plus-square"},
-        { name: "List Mechanical Works", state: "admin/list-mechanicalworks", icon: "list" }
+        { name: "New Mechanical Works", state: "user/mechanicalworks" ,icon: "fa fa-plus-square"},
+        { name: "List Mechanical Works", state: "user/list-mechanicalworks", icon: "list" }
       ]
     },
     // {
@@ -397,7 +354,7 @@ export class NavigationService {
     //   state: "user/notifications"
     // },
     {
-      name: "Logs-Histoy",
+      name: "Log-History",
       type: "link",
       tooltip: "Notifications",
       icon: "notifications", 
@@ -485,8 +442,86 @@ export class NavigationService {
     //   icon: "notifications", 
     //   state: "user/notifications"
     // },
+    {
+      name: "Log-History",
+      type: "link",
+      tooltip: "Notifications",
+      icon: "notifications", 
+      state: "user/log-history"
+    },
   ];
 
+  Operator1iconMenu: IMenuItem[] = [
+
+    {
+      name: "DASHBOARD",
+      type: "link",
+      tooltip: "Dashboard",
+      icon: "dashboard", 
+      state: "user/dashboard",
+    },
+    {
+      name: "Electrical Works",
+      type: "dropDown",
+      tooltip: "Electrical Works",
+      icon: "event", 
+      state: "",
+      sub: [
+        { name: "New Electrical Work", state: "user/electricalworks" ,icon: "fa fa-plus-square"},
+        { name: "List Electrical Works", state: "user/list-electricalworks", icon: "list" }
+      ]
+    },
+    {
+      name: "Mechanical Works",
+      type: "dropDown",
+      tooltip: "Mechanical Works",
+      icon: "event", 
+      state: "",
+      sub: [
+        { name: "New Mechanical Works", state: "user/mechanicalworks" ,icon: "fa fa-plus-square"},
+        { name: "List Mechanical Works", state: "user/list-mechanicalworks", icon: "list" }
+      ]
+    },
+    {
+      name: "Request",
+      type: "dropDown",
+      tooltip: "Request",
+      icon: "person", 
+      state: "",
+      sub: [
+        { name: "New Request", state: "user/new-request" ,icon: "fa fa-plus-square"},
+        { name: "List Request", state: "user/list-request", icon: "list" }
+      ]
+    },
+    // {
+    //   name: "Docs",
+    //   type: "link",
+    //   tooltip: "Mydocs",
+    //   icon: "notifications", 
+    //   state: "user/mydocs"
+    // },
+    {
+      name: "Reports",
+      type: "link",
+      tooltip: "Reports",
+      icon: "event", 
+      state: "user/plans"
+    },
+    // {
+    //   name: "Notifications",
+    //   type: "link",
+    //   tooltip: "Notifications",
+    //   icon: "notifications", 
+    //   state: "user/notifications"
+    // },
+    {
+      name: "Log-History",
+      type: "link",
+      tooltip: "Notifications",
+      icon: "notifications", 
+      state: "user/log-history"
+    },
+  ];
 
   ObservericonMenu: IMenuItem[] = [
     {
@@ -525,6 +560,11 @@ menuItems$:any={};
       this.menuItems = new BehaviorSubject<IMenuItem[]>(this.AdminiconMenu);
       this.menuItems$ = this.menuItems.asObservable();
 
+    }
+    else  if(this.user["role"].includes("Department1") || (this.user["role"].includes("Department1") && this.user["role"].includes("Department")))
+    {
+      this.menuItems = new BehaviorSubject<IMenuItem[]>(this.Operator1iconMenu);
+      this.menuItems$ = this.menuItems.asObservable();
     }
     else  if(this.user["role"].includes("Department"))
     {
