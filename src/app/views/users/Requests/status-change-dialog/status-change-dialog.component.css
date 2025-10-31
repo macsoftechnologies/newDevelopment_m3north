@@ -71,6 +71,12 @@
   margin-bottom: 5px;
 }
 
+.hotwork-sub1{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
 .time-picker-class{
   display: flex;
   /* display: flex; */

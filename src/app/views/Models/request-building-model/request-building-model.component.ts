@@ -4289,12 +4289,12 @@ loadingZones: Set<string> = new Set();
           isSelected: false
         },
         {
-          value: 'S.10',
+          value: 'MU91.1G',
           className: "MU91-zoneMU91_1G-1",
           isSelected: false
         },
         {
-          value: '1.01',
+          value: 'MU91.1H',
           className: "MU91-zoneMU91_1H-1",
           isSelected: false
         },
@@ -4339,7 +4339,7 @@ loadingZones: Set<string> = new Set();
           isSelected: false
         },
         {
-          value: '1.03',
+          value: 'MU91.1N',
           className: "MU91-zoneMU91_1N-8",
           isSelected: false
         },
