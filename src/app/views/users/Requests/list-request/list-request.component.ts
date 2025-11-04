@@ -1905,7 +1905,8 @@ canChangeStatus(row: any): boolean {
     Object.keys(this.SearchRequest).forEach((key) => {
       this.SearchRequest[key] = null;
     });
-    this.ngOnInit();
+    // this.ngOnInit();
+    window.location.reload();
   }
   selectFn(info) {
     console.log(info);
@@ -2107,10 +2108,10 @@ this.SearchRequest.permit_type =
             this.isoperator = false;
             this.IsNotSubCntr = false;
             this.IsNotASubCntr = false;
-            this.RequestlistForm.controls['Contractor'].setValue(
-              this.userdata['typeId']
-            );
-            this.RequestsbyidDto.SubContractorId = this.userdata['typeId'];
+            // this.RequestlistForm.controls['Contractor'].setValue(
+            //   this.userdata['typeId']
+            // );
+            // this.RequestsbyidDto.SubContractorId = this.userdata['typeId'];
             // this.requestservice
             //   .GetAllRequestsByid(this.RequestsbyidDto)
             //   .subscribe((res) => {
