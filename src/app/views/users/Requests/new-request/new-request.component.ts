@@ -2522,16 +2522,40 @@ private groupByModule(data: any[], displayProperty: string): any[] {
           this.planType = "MU91.0";
           this.pdfSrc = "assets/images/plans/MU91/MU91.0/GroundFloor.pdf";
           this.blocks = [
-            { name: "GroundFloor", pdfSrc: "assets/images/plans/MU91/MU91.0/GroundFloor.pdf", className: 'GroundFloor', planType: 'MU91.0' },
-
+            // { name: "GroundFloor", pdfSrc: "assets/images/plans/MU91/MU91.0/GroundFloor.pdf", className: 'GroundFloor', planType: 'MU91.0' },
+            { name: "MU91.0A", pdfSrc: "assets/images/plans/MU91/MU91.0/Zones/MU91.0A.pdf", className: 'MU91_0A', planType: 'MU91.0' },
+            { name: "MU91.0B", pdfSrc: "assets/images/plans/MU91/MU91.0/Zones/MU91.0B.pdf", className: 'MU91_0B', planType: 'MU91.0' },
+            { name: "MU91.0C", pdfSrc: "assets/images/plans/MU91/MU91.0/Zones/MU91.0C.pdf", className: 'MU91_0C', planType: 'MU91.0' },
+            { name: "MU91.0D", pdfSrc: "assets/images/plans/MU91/MU91.0/Zones/MU91.0D.pdf", className: 'MU91_0D', planType: 'MU91.0' },
+            { name: "MU91.0E", pdfSrc: "assets/images/plans/MU91/MU91.0/Zones/MU91.0E.pdf", className: 'MU91_0E', planType: 'MU91.0' },
+            { name: "MU91.0F", pdfSrc: "assets/images/plans/MU91/MU91.0/Zones/MU91.0F.pdf", className: 'MU91_0F', planType: 'MU91.0' },
+            { name: "MU91.0G", pdfSrc: "assets/images/plans/MU91/MU91.0/Zones/MU91.0G.pdf", className: 'MU91_0G', planType: 'MU91.0' },
+            { name: "MU91.0H", pdfSrc: "assets/images/plans/MU91/MU91.0/Zones/MU91.0H.pdf", className: 'MU91_0H', planType: 'MU91.0' },
+            { name: "MU91.0I", pdfSrc: "assets/images/plans/MU91/MU91.0/Zones/MU91.0I.pdf", className: 'MU91_0I', planType: 'MU91.0' },
+            { name: "MU91.0J", pdfSrc: "assets/images/plans/MU91/MU91.0/Zones/MU91.0J.pdf", className: 'MU91_0J', planType: 'MU91.0' },
+            { name: "MU91.0K", pdfSrc: "assets/images/plans/MU91/MU91.0/Zones/MU91.0K.pdf", className: 'MU91_0K', planType: 'MU91.0' },
+            { name: "MU91.0L", pdfSrc: "assets/images/plans/MU91/MU91.0/Zones/MU91.0L.pdf", className: 'MU91_0L', planType: 'MU91.0' },
+            { name: "MU91.0M", pdfSrc: "assets/images/plans/MU91/MU91.0/Zones/MU91.0M.pdf", className: 'MU91_0M', planType: 'MU91.0' },
+            { name: "MU91.0N", pdfSrc: "assets/images/plans/MU91/MU91.0/Zones/MU91.0N.pdf", className: 'MU91_0N', planType: 'MU91.0' },
+            { name: "MU91.0O", pdfSrc: "assets/images/plans/MU91/MU91.0/Zones/MU91.0O.pdf", className: 'MU91_0O', planType: 'MU91.0' },
+            { name: "MU91.0P", pdfSrc: "assets/images/plans/MU91/MU91.0/Zones/MU91.0P.pdf", className: 'MU91_0P', planType: 'MU91.0' },
+            { name: "MU91.0Q", pdfSrc: "assets/images/plans/MU91/MU91.0/Zones/MU91.0Q.pdf", className: 'MU91_0Q', planType: 'MU91.0' },
+            { name: "MU91.0R", pdfSrc: "assets/images/plans/MU91/MU91.0/Zones/MU91.0R.pdf", className: 'MU91_0R', planType: 'MU91.0' },
+            { name: "MU91.0S", pdfSrc: "assets/images/plans/MU91/MU91.0/Zones/MU91.0S.pdf", className: 'MU91_0S', planType: 'MU91.0' },
           ]
           break;
         case "MU91.1":
           this.planType = "MU91.1";
           this.pdfSrc = "assets/images/plans/MU91/MU91.1/FirstFloor.pdf";
           this.blocks = [
-            { name: "FirstFloor", pdfSrc: "assets/images/plans/MU91/MU91.1/FirstFloor.pdf", className: 'FirstFloor', planType: 'MU91.1' },
-
+            // { name: "FirstFloor", pdfSrc: "assets/images/plans/MU91/MU91.1/FirstFloor.pdf", className: 'FirstFloor', planType: 'MU91.1' },
+            { name: "MU91.1A", pdfSrc: "assets/images/plans/MU91/MU91.1/Zones/MU91.1A.pdf", className: 'MU91_1A', planType: 'MU91.1' },
+            { name: "MU91.1F", pdfSrc: "assets/images/plans/MU91/MU91.1/Zones/MU91.1F.pdf", className: 'MU91_1F', planType: 'MU91.1' },
+            { name: "MU91.1G", pdfSrc: "assets/images/plans/MU91/MU91.1/Zones/MU91.1G.pdf", className: 'MU91_1G', planType: 'MU91.1' },
+            { name: "MU91.1H", pdfSrc: "assets/images/plans/MU91/MU91.1/Zones/MU91.1H.pdf", className: 'MU91_1H', planType: 'MU91.1' },
+            { name: "MU91.1M", pdfSrc: "assets/images/plans/MU91/MU91.1/Zones/MU91.1M.pdf", className: 'MU91_1M', planType: 'MU91.1' },
+            { name: "MU91.1N", pdfSrc: "assets/images/plans/MU91/MU91.1/Zones/MU91.1N.pdf", className: 'MU91_1N', planType: 'MU91.1' },
+            { name: "MU91.1P", pdfSrc: "assets/images/plans/MU91/MU91.1/Zones/MU91.1P.pdf", className: 'MU91_1P', planType: 'MU91.1' },
           ]
           break;
         case "MU91.2":

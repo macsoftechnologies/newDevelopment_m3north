@@ -1787,98 +1787,97 @@ mat-checkbox ::ng-deep .mat-checkbox-inner-container {
   position: absolute;
   z-index: 9999;
   top: 50%;
-  left: 15%;
+  left: 23%;
 }
 
 .MU91-zoneMU91_0C-1 {
   position: absolute;
   z-index: 9999;
   top: 51%;
-  left: 57%;
+  left: 50%;
 }
 
 .MU91-zoneMU91_0D-1 {
   position: absolute;
   z-index: 9999;
-  top: 13%;
-  left: 28%;
+  top: 50%;
+  left: 21%;
 }
 
 .MU91-zoneMU91_0E-1 {
   position: absolute;
   z-index: 9999;
-  top: 16%;
-  left: 45%;
+  top: 35%;
+  left: 36%;
 }
 
 .MU91-zoneMU91_0F-1 {
   position: absolute;
   z-index: 9999;
-  top: 16%;
+  top: 37%;
   right: 26%;
 }
 
 .MU91-zoneMU91_0G-1 {
   position: absolute;
   z-index: 9999;
-  top: 25%;
-  right: 32%;
+  top: 10%;
+  right: 34%;
 }
 
 .MU91-zoneMU91_0H-1 {
   position: absolute;
   z-index: 9999;
   top: 35%;
-  right: 24%;
+  left: 13%;
 }
 
 .MU91-zoneMU91_0H-2 {
   position: absolute;
   z-index: 9999;
-  top: 37%;
-  right: 18%;
+  top: 7%;
+  left: 29%;
 }
 
 .MU91-zoneMU91_0H-3 {
   position: absolute;
   z-index: 9999;
-  top: 35%;
-  right: 10%;
+  top: 46%;
+  left: 21%;
 }
 
 .MU91-zoneMU91_0H-4 {
   position: absolute;
   z-index: 9999;
-  top: 38%;
-  right: 32%;
+  top: 65%;
+  left: 44%;
 }
-
 .MU91-zoneMU91_0H-5 {
   position: absolute;
   z-index: 9999;
-  top: 42%;
-  right: 27%;
+  top: 33%;
+  right: 32%;
 }
 
 .MU91-zoneMU91_0H-6 {
   position: absolute;
   z-index: 9999;
-  top: 42%;
-  right: 21%;
+  top: 7%;
+  right: 19%;
 }
 
 .MU91-zoneMU91_0H-7 {
   position: absolute;
   z-index: 9999;
-  top: 42%;
-  right: 13%;
+  top: 46%;
+  right: 25%;
 }
 
 .MU91-zoneMU91_0H-8 {
   position: absolute;
   z-index: 9999;
-  top: 42%;
-  right: 7%;
+  top: 61%;
+  right: 3%;
 }
 
 .MU91-zoneMU91_0I-1 {
@@ -1892,20 +1891,20 @@ mat-checkbox ::ng-deep .mat-checkbox-inner-container {
   position: absolute;
   z-index: 9999;
   top: 57%;
-  right: 20%;
+  right: 37%;
 }
 
 .MU91-zoneMU91_0K-1 {
   position: absolute;
   z-index: 9999;
   top: 57%;
-  right: 9%;
+  right: 24%;
 }
 
 .MU91-zoneMU91_0L-1 {
   position: absolute;
   z-index: 9999;
-  top: 63%;
+  top: 30%;
   right: 32%;
 }
 
@@ -1919,78 +1918,64 @@ mat-checkbox ::ng-deep .mat-checkbox-inner-container {
 .MU91-zoneMU91_0N-1 {
   position: absolute;
   z-index: 9999;
-  bottom: 33%;
-  right: 15%;
+  top: 8%;
+  left: 15%;
 }
 
 .MU91-zoneMU91_0N-2 {
   position: absolute;
   z-index: 9999;
-  bottom: 33%;
-  right: 9%;
+  top: 6%;
+  right: 5%;
 }
 
 .MU91-zoneMU91_0N-3 {
   position: absolute;
   z-index: 9999;
-  bottom: 29%;
-  right: 9%;
+  top: 22%;
+  right: 4%;
 }
 
 .MU91-zoneMU91_0N-4 {
   position: absolute;
   z-index: 9999;
-  bottom: 25%;
-  right: 9%;
+  top: 36%;
+  right: 4%;
 }
 
 .MU91-zoneMU91_0N-5 {
   position: absolute;
   z-index: 9999;
-  bottom: 20%;
-  right: 16%;
+  top: 47%;
+  left: 17%;
 }
 
 .MU91-zoneMU91_0N-6 {
   position: absolute;
   z-index: 9999;
-  bottom: 20%;
-  right: 9%;
+  top: 47%;
+  right: 24%;
 }
 
 .MU91-zoneMU91_0N-7 {
   position: absolute;
   z-index: 9999;
-  bottom: 15%;
-  right: 14%;
-}
-
-.MU91-zoneMU91_0N-6 {
-  position: absolute;
-  z-index: 9999;
-  bottom: 20%;
-  right: 9%;
-}
-
-.MU91-zoneMU91_0N-7 {
-  position: absolute;
-  z-index: 9999;
-  bottom: 15%;
-  right: 14%;
+  bottom: 16%;
+  left: 12%;
 }
 
 .MU91-zoneMU91_0N-8 {
   position: absolute;
   z-index: 9999;
-  bottom: 16%;
-  right: 9%;
+  bottom: 13%;
+  right: 21%;
 }
 
 .MU91-zoneMU91_0N-9 {
   position: absolute;
   z-index: 9999;
-  bottom: 12%;
-  right: 13%;
+  bottom: 2%;
+  right: 21%;
 }
 
 .MU91-zoneMU91_0O-1 {
@@ -2004,7 +1989,7 @@ mat-checkbox ::ng-deep .mat-checkbox-inner-container {
   position: absolute;
   z-index: 9999;
   bottom: 9%;
-  right: 33%;
+  right: 45%;
 }
 
 .MU91-zoneMU91_0Q-1 {
@@ -2036,26 +2021,24 @@ mat-checkbox ::ng-deep .mat-checkbox-inner-container {
   top: 56%;
   left: 32%;
 }
-
 .MU91-zoneMU91_1F-1 {
   position: absolute;
   z-index: 9999;
-  top: 17%;
-  right: 23%;
+  top: 45%;
+  right: 45%;
 }
-
 .MU91-zoneMU91_1G-1 {
   position: absolute;
   z-index: 9999;
-  top: 27%;
+  top: 19%;
   right: 34%;
 }
 
 .MU91-zoneMU91_1H-1 {
   position: absolute;
   z-index: 9999;
-  top: 38%;
-  right: 26%;
+  top: 31%;
+  right: 43%;
 }
 
 .MU91-zoneMU91_1M-1 {
@@ -2068,73 +2051,64 @@ mat-checkbox ::ng-deep .mat-checkbox-inner-container {
 .MU91-zoneMU91_1N-1 {
   position: absolute;
   z-index: 9999;
-  bottom: 32%;
-  right: 17%;
+  top: 13%;
+  left: 22%;
 }
 
 .MU91-zoneMU91_1N-2 {
   position: absolute;
   z-index: 9999;
-  bottom: 32.5%;
+    top: 10.5%;
   right: 9%;
 }
-
 .MU91-zoneMU91_1N-3 {
   position: absolute;
   z-index: 9999;
-  bottom: 30.5%;
-  right: 13%;
+  top: 13.5%;
+  right: 17%;
 }
-
 .MU91-zoneMU91_1N-4 {
   position: absolute;
   z-index: 9999;
-  bottom: 29.5%;
-  right: 9%;
+  top: 20.5%;
+  right: 31%;
 }
-
 .MU91-zoneMU91_1N-5 {
   position: absolute;
   z-index: 9999;
-  bottom: 25.5%;
-  right: 13%;
+  top: 30.5%;
+  right: 45%;
 }
-
 .MU91-zoneMU91_1N-6 {
   position: absolute;
   z-index: 9999;
-  bottom: 25.5%;
-  right: 9%;
+  top: 35.5%;
+  right: 10%;
 }
-
 .MU91-zoneMU91_1N-7 {
   position: absolute;
   z-index: 9999;
-  bottom: 18.5%;
-  right: 19%;
+  bottom: 43.5%;
+  left: 21%;
 }
-
 .MU91-zoneMU91_1N-8 {
   position: absolute;
   z-index: 9999;
-  bottom: 19.5%;
-  right: 9%;
+  top: 46.5%;
+  right: 18%;
 }
-
 .MU91-zoneMU91_1N-9 {
   position: absolute;
   z-index: 9999;
-  bottom: 11.5%;
-  right: 16%;
+  bottom: 18.5%;
+  right: 37%;
 }
-
 .MU91-zoneMU91_1P-1 {
   position: absolute;
   z-index: 9999;
   bottom: 17%;
-  right: 34%;
+  right: 55%;
 }
-
 .MU91-zoneMU91_2F-1 {
   position: absolute;
   z-index: 9999;

@@ -4528,23 +4528,258 @@ input {
 
 /* END MU90.R */
 
-.GroundFloor {
+/* .......MU91.0 ......*/
+
+
+.MU91_0A {
   position: absolute;
-  top: 8%;
-  left: 22%;
+  top: 23%;
+  left: 29%;
   z-index: 9999;
-  height: 83%;
-  width: 59%;
+  height: 64%;
+  width: 27%;
+  padding: 0px;
+}
+.MU91_0B {
+  position: absolute;
+  top: 23%;
+  left: 26.5%;
+  z-index: 9999;
+  height: 65.5%;
+  min-width: 26px;
   padding: 0px;
 }
 
-.FirstFloor {
+.MU91_0C {
+  position: absolute;
+  top: 24%;
+  right: 41.2%;
+  z-index: 9999;
+  height: 64.5%;
+  width: 3%;
+  min-width: 0px;
+}
+.MU91_0D {
+  position: absolute;
+  top: 10%;
+  left: 31.5%;
+  z-index: 9999;
+  height: 10.5%;
+  width: 12.5%;
+  padding: 0px;
+}
+.MU91_0E {
+  position: absolute;
+  top: 19%;
+  left: 47%;
+  z-index: 9999;
+  height: 3%;
+  width: 4.5%;
+  min-width: 61px;
+  padding: 0px;
+}
+.MU91_0F {
   position: absolute;
   top: 13%;
+  right: 18%;
+  z-index: 9999;
+  height: 12%;
+  width: 22.5%;
+  min-width: 61px;
+  padding: 0px;
+}
+.MU91_0G {
+  position: absolute;
+  top: 25%;
+  right: 34%;
+  z-index: 9999;
+  height: 9%;
+  width: 6.5%;
+  min-width: 61px;
+  padding: 0px;
+}
+.MU91_0H {
+  position: absolute;
+  top: 34%;
+  right: 18%;
+  z-index: 9999;
+  height: 10.5%;
+  width: 22.5%;
+  padding: 0px;
+}
+.MU91_0I {
+  position: absolute;
+  top: 57%;
+  right: 37%;
+  z-index: 9999;
+  height: 4.2%;
+  width: 2%;
+  min-width: 38px;
+  padding: 0px;
+}
+.MU91_0J {
+  position: absolute;
+  top: 53%;
+  right: 24.8%;
+  z-index: 9999;
+  height: 9.2%;
+  width: 9%;
+  min-width: 42px;
+  padding: 0px;
+}
+.MU91_0K {
+  position: absolute;
+  top: 53%;
+  right: 17.8%;
+  z-index: 9999;
+  height: 9.5%;
+  width: 7%;
+  min-width: 42px;
+  padding: 0px;
+}
+.MU91_0L {
+  position: absolute;
+  top: 62%;
+  right: 32.5%;
+  z-index: 9999;
+  height: 5%;
+  width: 8%;
+  min-width: 38px;
+  padding: 0px;
+}
+.MU91_0M {
+  position: absolute;
+  top: 68%;
+  right: 30.5%;
+  z-index: 9999;
+  height: 19.5%;
+  width: 8%;
+  min-width: 38px;
+  padding: 0px;
+}
+.MU91_0N {
+  position: absolute;
+  top: 64%;
+  right: 18.5%;
+  z-index: 9999;
+  height: 23.5%;
+  width: 10%;
+  min-width: 38px;
+  padding: 0px;
+}
+.MU91_0O {
+  position: absolute;
+  bottom: 9%;
+  right: 50.5%;
+  z-index: 9999;
+  height: 3%;
+  width: 7%;
+  min-width: 38px;
+  padding: 0px;
+}
+.MU91_0P {
+  position: absolute;
+  top: 67%;
+  right: 37.5%;
+  z-index: 9999;
+  height: 21.5%;
+  width: 3%;
+  min-width: 38px;
+  padding: 0px;
+}
+.MU91_0Q {
+  position: absolute;
+  bottom: 6%;
+  right: 17.5%;
+  z-index: 9999;
+  height: 6.5%;
+  width: 16%;
+  min-width: 38px;
+  padding: 0px;
+}
+.MU91_0R {
+  position: absolute;
+  top: 30.5%;
+  left: 23%;
+  z-index: 9999;
+  height: 7%;
+  width: 1.5%;
+  min-width: 45px;
+  padding: 0px;
+}
+.MU91_0S {
+  position: absolute;
+  bottom: 25.5%;
+  left: 23%;
+  z-index: 9999;
+  height: 4.5%;
+  width: 1.5%;
+  min-width: 45px;
+  padding: 0px;
+}
+
+.MU91_1A {
+  position: absolute;
+  top: 23%;
   left: 29%;
   z-index: 9999;
-  height: 75%;
-  width: 54%;
+  height: 65%;
+  width: 27%;
+  padding: 0px;
+
+}
+.MU91_1F {
+  position: absolute;
+  top: 13%;
+  right: 18%;
+  z-index: 9999;
+  height: 12%;
+  width: 22%;
+  padding: 0px;
+}
+.MU91_1G {
+  position: absolute;
+  top: 25%;
+  right: 34%;
+  z-index: 9999;
+  height: 9%;
+  width: 6%;
+  padding: 0px;
+}
+.MU91_1H {
+  position: absolute;
+  top: 34%;
+  right: 18%;
+  z-index: 9999;
+  height: 11%;  
+  width: 22%;
+  padding: 0px;
+}
+.MU91_1M {
+  position: absolute;
+  bottom: 12%;
+  right: 30%;
+  z-index: 9999;
+  height: 20%;
+  width: 8%;
+  padding: 0px;
+}
+.MU91_1N {
+  position: absolute;
+  bottom: 11.5%;
+  right: 19%;
+  z-index: 9999;
+  height: 25%;
+  width: 10%;
+  padding: 0px;
+}
+.MU91_1P {
+  position: absolute;
+  bottom: 11.5%;
+  right: 38%;
+  z-index: 9999;
+  height: 22%;
+  width: 3%;
   padding: 0px;
 }
 
@@ -15279,4 +15514,211 @@ input {
     right: 0px;
   }
   
+}
+@media (min-width: 2000px) and (max-width: 2200px) {
+  .MU91_0B {
+  position: absolute;
+  top: 23%;
+  left: 26.5%;
+  z-index: 9999;
+  height: 65.5%;
+  min-width: 37px;
+  padding: 0px;
+}.MU91_0R {
+  position: absolute;
+  top: 30.5%;
+  left: 23%;
+  z-index: 9999;
+  height: 7%;
+  width: 1.5%;
+  min-width: 60px;
+  padding: 0px;
+}
+.MU91_0S {
+  position: absolute;
+  bottom: 25.5%;
+  left: 23%;
+  z-index: 9999;
+  height: 4.5%;
+  width: 1.5%;
+  min-width: 58px;
+  padding: 0px;
+}
+.MU91_0I {
+  position: absolute;
+  top: 57%;
+  right: 37%;
+  z-index: 9999;
+  height: 4.2%;
+  width: 2%;
+  min-width: 54px;
+  padding: 0px;
+}
+
+}
+@media (min-width: 2200px) and (max-width: 2400px) {
+  .MU91_0B {
+  position: absolute;
+  top: 23%;
+  left: 26.5%;
+  z-index: 9999;
+  height: 65.5%;
+  min-width: 41px;
+  padding: 0px;
+}.MU91_0R {
+  position: absolute;
+  top: 30.5%;
+  left: 23%;
+  z-index: 9999;
+  height: 7%;
+  width: 1.5%;
+  min-width: 67px;
+  padding: 0px;
+}
+.MU91_0S {
+  position: absolute;
+  bottom: 25.5%;
+  left: 23%;
+  z-index: 9999;
+  height: 4.5%;
+  width: 1.5%;
+  min-width: 63px;
+  padding: 0px;
+}
+.MU91_0I {
+  position: absolute;
+  top: 57%;
+  right: 37%;
+  z-index: 9999;
+  height: 4.2%;
+  width: 2%;
+  min-width: 62px;
+  padding: 0px;
+}
+
+}
+@media (min-width: 2400px) and (max-width: 2600px) {
+  .MU91_0B {
+  position: absolute;
+  top: 23%;
+  left: 26.5%;
+  z-index: 9999;
+  height: 65.5%;
+  min-width: 45px;
+  padding: 0px;
+}.MU91_0R {
+  position: absolute;
+  top: 30.5%;
+  left: 23%;
+  z-index: 9999;
+  height: 7%;
+  width: 1.5%;
+  min-width: 71px;
+  padding: 0px;
+}
+.MU91_0S {
+  position: absolute;
+  bottom: 25.5%;
+  left: 23%;
+  z-index: 9999;
+  height: 4.5%;
+  width: 1.5%;
+  min-width: 69px;
+  padding: 0px;
+}
+.MU91_0I {
+  position: absolute;
+  top: 57%;
+  right: 37%;
+  z-index: 9999;
+  height: 4.2%;
+  width: 2%;
+  min-width: 70px;
+  padding: 0px;
+}
+
+}
+@media (min-width: 2600px) and (max-width: 2800px) {
+  .MU91_0B {
+  position: absolute;
+  top: 23%;
+  left: 26.5%;
+  z-index: 9999;
+  height: 65.5%;
+  min-width: 50px;
+  padding: 0px;
+}
+.MU91_0R {
+  position: absolute;
+  top: 30.5%;
+  left: 23%;
+  z-index: 9999;
+  height: 7%;
+  width: 3.5%;
+  min-width: 71px;
+  padding: 0px;
+}
+.MU91_0S {
+  position: absolute;
+  bottom: 25.5%;
+  left: 23%;
+  z-index: 9999;
+  height: 4.5%;
+  width: 3.5%;
+  min-width: 69px;
+  padding: 0px;
+}
+.MU91_0I {
+  position: absolute;
+  top: 57%;
+  right: 37%;
+  z-index: 9999;
+  height: 4.2%;
+  width: 2%;
+  min-width: 70px;
+  padding: 0px;
+}
+
+}
+@media (min-width: 2800px) and (max-width: 3000px) {
+  .MU91_0B {
+  position: absolute;
+  top: 23%;
+  left: 26.5%;
+  z-index: 9999;
+  height: 65.5%;
+  min-width: 50px;
+  padding: 0px;
+}
+.MU91_0R {
+  position: absolute;
+  top: 30.5%;
+  left: 23%;
+  z-index: 9999;
+  height: 7%;
+  width: 3.5%;
+  min-width: 71px;
+  padding: 0px;
+}
+.MU91_0S {
+  position: absolute;
+  bottom: 25.5%;
+  left: 23%;
+  z-index: 9999;
+  height: 4.5%;
+  width: 3.5%;
+  min-width: 69px;
+  padding: 0px;
+}
+.MU91_0I {
+  position: absolute;
+  top: 57%;
+  right: 37%;
+  z-index: 9999;
+  height: 4.2%;
+  width: 2%;
+  min-width: 70px;
+  padding: 0px;
+}
+
 }
